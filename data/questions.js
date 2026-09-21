@@ -1,0 +1,5562 @@
+window.WRONG_QUESTIONS = {
+  "title": "张宇《1000题》强化篇错题库",
+  "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
+  "generatedAt": "2026-09-17",
+  "count": 159,
+  "questions": [
+    {
+      "id": "高等数学-ch01-u001-p003",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 3,
+      "printedPage": 4,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P211",
+      "questionType": "填空题",
+      "stem": "计算极限：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left(x^{\\frac{2}{x}}-1\\right)^{\\frac{2}{\\ln x}}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u002-p004",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 4,
+      "printedPage": 5,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P212",
+      "questionType": "计算题",
+      "stem": "计算：\\(\\displaystyle \\lim_{x\\to0}\\frac{\\int_0^x\\left[e^{(t-x)^2}-1\\right]\\sin t\\,\\mathrm dt}{x^2\\left(e^{x^2}-1\\right)}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u003-p005",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 5,
+      "printedPage": 6,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P212",
+      "questionType": "计算题",
+      "stem": "设函数 \\(f(x)\\) 在点 \\(x=3\\) 的邻域内可微，且 \\(\\displaystyle \\lim_{x\\to3}f(x)=0\\)，\\(\\displaystyle \\lim_{x\\to3}f'(x)=4016\\)。求 \\(\\displaystyle \\lim_{x\\to3}\\frac{\\int_3^x\\left[\\int_t^3 f(s)\\,\\mathrm ds\\right]\\mathrm dt}{(3-x)^3}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u004-p006",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 6,
+      "printedPage": 7,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 8,
+      "sourceRef": "P213",
+      "questionType": "选择题",
+      "stem": "当 \\(x\\to0\\) 时，\\(\\displaystyle a\\int_0^{x^2}\\cos(t^2)\\,\\mathrm dt\\) 与 \\(\\sin x-b\\ln(1+x)\\) 是等价无穷小，则 \\((a,b)=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,2)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\left(\\frac12,1\\right)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\left(-\\frac12,1\\right)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u005-p006",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 6,
+      "printedPage": 7,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P213",
+      "questionType": "填空题",
+      "stem": "已知 \\(\\displaystyle \\lim_{x\\to3}\\frac{x^3-3x^2+bx^2+x-3bx-3}{x+a}=25\\)，则 \\(ab=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u006-p008",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 8,
+      "printedPage": 9,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 13,
+      "sourceRef": "P215",
+      "questionType": "选择题",
+      "stem": "设 \\(\\displaystyle f(x)=\\lim_{n\\to\\infty}n^x\\left[\\left(1+\\frac1n\\right)^n-e\\right]\\)，则 \\(f(x)\\) 在 \\(x=1\\) 处（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "左极限存在，右极限不存在"
+        },
+        {
+          "label": "B",
+          "text": "左极限不存在，右极限存在"
+        },
+        {
+          "label": "C",
+          "text": "左、右极限都存在，但不相等"
+        },
+        {
+          "label": "D",
+          "text": "连续"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u007-p008",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 8,
+      "printedPage": 9,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P215",
+      "questionType": "计算题",
+      "stem": "计算：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left[\\frac{x^{x+1}}{(1+x)^x}-\\frac{x}{e}\\right]\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u008-p009",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 9,
+      "printedPage": 10,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P215",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 在 \\(x=0\\) 的某邻域内有定义，且 \\(\\displaystyle \\lim_{x\\to0}\\frac{x-f(x)}{\\ln(1+x)}=1\\)。判断下列叙述：① \\(f(0)=0\\)；② \\(\\displaystyle \\lim_{x\\to0}f(x)=f(0)\\)；③ \\(\\displaystyle \\lim_{x\\to0}\\frac{f(x)}x=1\\)；④ 当 \\(x\\to0\\) 时，\\(f(x)\\) 是 \\(x\\) 的高阶无穷小。正确叙述的个数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u009-p010",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 10,
+      "printedPage": 11,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P216",
+      "questionType": "选择题",
+      "stem": "函数 \\(f(x)\\) 在 \\(x=0\\) 的某邻域内有定义，则“\\(\\displaystyle \\lim_{x\\to0}\\frac{|f(x)|}{x}\\) 存在”是“\\(\\displaystyle \\lim_{x\\to0}\\frac{f(x)}x=0\\)”的（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "充分必要条件"
+        },
+        {
+          "label": "B",
+          "text": "充分非必要条件"
+        },
+        {
+          "label": "C",
+          "text": "必要非充分条件"
+        },
+        {
+          "label": "D",
+          "text": "既非充分又非必要条件"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u010-p011",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 11,
+      "printedPage": 12,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 20,
+      "sourceRef": "P216",
+      "questionType": "计算题",
+      "stem": "设函数 \\(f(x)\\) 在点 \\(x=0\\) 的某一邻域内可导，且 \\(f(0)=0\\)，\\(f'(0)\\ne0\\)。求 \\(\\displaystyle \\lim_{x\\to0}\\frac{\\int_0^{x^2}f(t)\\,\\mathrm dt}{x^2\\int_0^x f(t)\\,\\mathrm dt}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u011-p013",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 13,
+      "printedPage": 14,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 25,
+      "sourceRef": "P218",
+      "questionType": "选择题",
+      "stem": "当 \\(x\\to0\\) 时，\\((3+2\\tan x)^x-3^x\\) 是 \\(3\\sin^2x+x^3\\cos\\frac1x\\) 的（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "高阶无穷小"
+        },
+        {
+          "label": "B",
+          "text": "低阶无穷小"
+        },
+        {
+          "label": "C",
+          "text": "等价无穷小"
+        },
+        {
+          "label": "D",
+          "text": "同阶但非等价无穷小"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u012-p015",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 15,
+      "printedPage": 16,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 32,
+      "sourceRef": "P220",
+      "questionType": "计算题",
+      "stem": "已知 \\(\\displaystyle \\lim_{x\\to0}\\left[a\\frac{2+e^{1/x}}{1+e^{4/x}}+(1+|x|)^{1/x}\\right]\\) 存在，求 \\(a\\) 的值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u013-p016",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 16,
+      "printedPage": 17,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 33,
+      "sourceRef": "P220",
+      "questionType": "选择题",
+      "stem": "设函数 \\(\\displaystyle f(x)=\\sqrt{\\frac{1+x}{1-x}}\\) 在 \\(x=0\\) 处的二阶泰勒多项式为 \\(a+bx+cx^2\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=1,b=1,c=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=1,b=1,c=\\frac12\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(a=0,b=-1,c=\\frac12\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(a=0,b=-1,c=1\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u014-p016",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 16,
+      "printedPage": 17,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 34,
+      "sourceRef": "P220",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 在 \\((0,+\\infty)\\) 内可导，\\(a\\) 为常数。判断：① 若 \\(\\displaystyle \\lim_{x\\to+\\infty}f'(x)=a\\)，则 \\(\\displaystyle \\lim_{x\\to+\\infty}\\frac{f(x)}x=a\\)；② 若 \\(\\displaystyle \\lim_{x\\to+\\infty}\\frac{f(x)}x=a\\)，则 \\(\\displaystyle \\lim_{x\\to+\\infty}f'(x)=a\\)。以下正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "①正确，②错误"
+        },
+        {
+          "label": "B",
+          "text": "①错误，②正确"
+        },
+        {
+          "label": "C",
+          "text": "①与②均正确"
+        },
+        {
+          "label": "D",
+          "text": "①与②均错误"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u015-p017",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 17,
+      "printedPage": 18,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 35,
+      "sourceRef": "P221",
+      "questionType": "选择题",
+      "stem": "函数 \\(\\displaystyle f(x)=\\frac{|\\ln|x||}{x^2-1}\\) 有（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "两个跳跃间断点，一个无穷间断点"
+        },
+        {
+          "label": "B",
+          "text": "两个可去间断点，一个无穷间断点"
+        },
+        {
+          "label": "C",
+          "text": "一个可去间断点，一个跳跃间断点，一个无穷间断点"
+        },
+        {
+          "label": "D",
+          "text": "三个无穷间断点"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch01-u016-p018",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 18,
+      "printedPage": 19,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "函数极限与连续"
+      ],
+      "note": "",
+      "questionNo": 37,
+      "sourceRef": "P222",
+      "questionType": "选择题",
+      "stem": "函数 \\(\\displaystyle f(x)=|x-1|^{\\frac{1}{x(2-x)}}\\) 的第二类间断点的个数是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "函数极限与连续"
+      ],
+      "similarQuestionPrompt": "围绕“函数极限与连续”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch02-u017-p020",
+      "subject": "高等数学",
+      "chapter": 2,
+      "chapterTitle": "数列极限",
+      "sourcePage": 20,
+      "printedPage": 21,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "数列极限"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P223",
+      "questionType": "选择题",
+      "stem": "已知数列 \\(\\{a_n\\}\\) 发散，\\(b_n=a_ne^{a_n}\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "当 \\(a_n>0\\) 时，\\(\\{b_n\\}\\) 收敛"
+        },
+        {
+          "label": "B",
+          "text": "当 \\(a_n<0\\) 时，\\(\\{b_n\\}\\) 收敛"
+        },
+        {
+          "label": "C",
+          "text": "当 \\(a_n>0\\) 时，\\(\\{b_n\\}\\) 发散"
+        },
+        {
+          "label": "D",
+          "text": "当 \\(a_n<0\\) 时，\\(\\{b_n\\}\\) 发散"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "数列极限"
+      ],
+      "similarQuestionPrompt": "围绕“数列极限”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch02-u018-p020",
+      "subject": "高等数学",
+      "chapter": 2,
+      "chapterTitle": "数列极限",
+      "sourcePage": 20,
+      "printedPage": 21,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "数列极限"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P223",
+      "questionType": "选择题",
+      "stem": "设 \\(\\displaystyle a_n=\\int_0^1x^n\\sqrt{1-x^2}\\,\\mathrm dx\\)，\\(\\displaystyle b_n=\\int_0^{\\pi/2}\\sin^n t\\,\\mathrm dt\\)，则 \\(\\displaystyle \\lim_{n\\to\\infty}\\left[\\frac{(n+1)a_n}{b_n}\\right]^n=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(e^{-1}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(+\\infty\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "数列极限"
+      ],
+      "similarQuestionPrompt": "围绕“数列极限”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch02-u019-p022",
+      "subject": "高等数学",
+      "chapter": 2,
+      "chapterTitle": "数列极限",
+      "sourcePage": 22,
+      "printedPage": 23,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "数列极限"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P224",
+      "questionType": "证明计算题",
+      "stem": "设数列 \\(\\{x_n\\}\\) 满足 \\(0<x_n<\\frac\\pi2\\)，\\(\\cos x_{n+1}-x_{n+1}=\\cos x_n\\)，\\(n=1,2,\\ldots\\)。(1) 证明 \\(\\displaystyle \\lim_{n\\to\\infty}x_n\\) 存在并求其值；(2) 计算 \\(\\displaystyle \\lim_{n\\to\\infty}\\frac{x_{n+1}}{x_n^2}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "数列极限"
+      ],
+      "similarQuestionPrompt": "围绕“数列极限”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch02-u020-p023",
+      "subject": "高等数学",
+      "chapter": 2,
+      "chapterTitle": "数列极限",
+      "sourcePage": 23,
+      "printedPage": 24,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "数列极限"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P226",
+      "questionType": "计算题",
+      "stem": "设数列 \\(\\{a_n\\}\\) 的通项为 \\(\\displaystyle a_n=\\int_0^{+\\infty}\\frac{\\mathrm dx}{(1+x^2)^n}\\)，\\(n=2,3,\\ldots\\)。计算 \\(\\displaystyle \\lim_{n\\to\\infty}\\left(\\frac{a_{n+1}}{a_n}\\right)^{\\ln(1+e^n)}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "数列极限"
+      ],
+      "similarQuestionPrompt": "围绕“数列极限”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u021-p025",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 25,
+      "printedPage": 26,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 1,
+      "sourceRef": "P227",
+      "questionType": "选择题",
+      "stem": "函数 \\(f(x)=(e^x-1)|x^3-x^2+x|\\) 的不可导点的个数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u022-p025",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 25,
+      "printedPage": 26,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 2,
+      "sourceRef": "P227",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x+x_0)=\\alpha f(x)\\) 恒成立，\\(f'(0)=\\beta\\)，其中 \\(\\alpha,\\beta\\) 为非零常数，则 \\(f(x)\\) 在点 \\(x_0\\) 处（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "可导且 \\(f'(x_0)=\\alpha\\beta\\)"
+        },
+        {
+          "label": "B",
+          "text": "可导且 \\(f'(x_0)=\\alpha\\)"
+        },
+        {
+          "label": "C",
+          "text": "可导且 \\(f'(x_0)=\\beta\\)"
+        },
+        {
+          "label": "D",
+          "text": "不可导"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u023-p026",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 26,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P227",
+      "questionType": "选择题",
+      "stem": "设 \\(\\displaystyle f(x)=\\begin{cases}x^2\\sin\\frac{t}{x},&x\\ne0,\\\\0,&x=0,\\end{cases}\\) 其中 \\(t\\) 为非零常数，则 \\(f(x)\\) 在 \\(x=0\\) 处（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "不连续"
+        },
+        {
+          "label": "B",
+          "text": "连续但不可导"
+        },
+        {
+          "label": "C",
+          "text": "可导但 \\(f'(x)\\) 不连续"
+        },
+        {
+          "label": "D",
+          "text": "可导且 \\(f'(x)\\) 连续"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u024-p027",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 27,
+      "printedPage": 28,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P228",
+      "questionType": "选择题",
+      "stem": "设函数 \\(y=f(x)\\) 由参数方程 \\(\\displaystyle \\begin{cases}x=t^3+\\frac\\pi2-1,\\\\y=e^{t^2}\\end{cases}\\) 确定，则 \\(\\displaystyle \\lim_{n\\to\\infty}n\\left[f\\left(\\frac\\pi2+\\frac2n\\right)-f\\left(\\frac\\pi2\\right)\\right]=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2e\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4e}{3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{2e}{3}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\frac{e}{3}\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u025-p028",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 28,
+      "printedPage": 29,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P228",
+      "questionType": "计算题",
+      "stem": "设 \\(f(0)=a>0\\)，\\(f'(0)=b\\)，求 \\(\\displaystyle \\lim_{x\\to0}\\frac{f(x)^{f(x)}-f(0)^{f(x)}}{x}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u026-p030",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 30,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P230",
+      "questionType": "证明计算题",
+      "stem": "设 \\(f(x)\\) 有二阶连续导函数，且 \\(f(0)=0\\)，令 \\(\\displaystyle g(x)=\\begin{cases}\\frac{f(x)}x,&x\\ne0,\\\\f'(0),&x=0.\\end{cases}\\) (1) 求 \\(g'(x)\\)；(2) 讨论 \\(g'(x)\\) 在点 \\(x=0\\) 处的连续性。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u027-p030",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 30,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 12,
+      "sourceRef": "P230",
+      "questionType": "讨论题",
+      "stem": "设 \\(\\displaystyle f(x)=\\begin{cases}x\\arctan\\frac1{\\sqrt{x}},&x>0,\\\\\\frac\\pi2(e^{\\sin x}-1),&x\\le0.\\end{cases}\\) 讨论 \\(f(x)\\) 在点 \\(x=0\\) 处的连续性和可导性；若可导，讨论其导函数 \\(f'(x)\\) 在 \\(x=0\\) 处的连续性。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u028-p032",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 32,
+      "printedPage": 33,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P232",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 在 \\(x=a\\) 的某邻域内有定义，在 \\(x=a\\) 的某去心邻域内可导，下述论断正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "若 \\(\\displaystyle \\lim_{x\\to a}f'(x)=A\\)，则 \\(f'(a)=A\\)"
+        },
+        {
+          "label": "B",
+          "text": "若 \\(f'(a)=A\\)，则 \\(\\displaystyle \\lim_{x\\to a}f'(x)=A\\)"
+        },
+        {
+          "label": "C",
+          "text": "若 \\(\\displaystyle \\lim_{x\\to a}f'(x)=\\infty\\)，则 \\(f'(a)\\) 不存在"
+        },
+        {
+          "label": "D",
+          "text": "若 \\(f'(a)\\) 不存在，则 \\(\\displaystyle \\lim_{x\\to a}f'(x)=\\infty\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch03-u029-p033",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学的概念",
+      "sourcePage": 33,
+      "printedPage": 34,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的概念"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P233",
+      "questionType": "填空题",
+      "stem": "设 \\(\\displaystyle f(x)=\\frac{\\ln|x|}{2x^2-\\ln|x|}\\)，则 \\(f'(-1)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的概念"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的概念”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u030-p035",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 35,
+      "printedPage": 36,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 2,
+      "sourceRef": "P235",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x)\\) 在 \\(x=0\\) 的某邻域内具有连续导数，且 \\(f(0)=1\\)，\\(\\displaystyle f'(x)=\\frac12f(x)[f(x)-1]\\)，求 \\(f''(0)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u031-p038",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 38,
+      "printedPage": 39,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 8,
+      "sourceRef": "P236",
+      "questionType": "填空题",
+      "stem": "设 \\(y=y(x)\\) 由方程 \\(\\displaystyle x=\\int_1^{y-x}\\sin^2\\left(\\frac{\\pi}{4}t\\right)\\mathrm dt\\) 确定，则 \\(\\displaystyle \\left.\\frac{\\mathrm d^2y}{\\mathrm dx^2}\\right|_{x=0}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u032-p038",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 38,
+      "printedPage": 39,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P236",
+      "questionType": "填空题",
+      "stem": "设函数 \\(y=y(x)\\) 由 \\(\\displaystyle \\begin{cases}x=t^2-2t+1,\\\\e^y\\sin t-y+1=0\\end{cases}\\) 确定，则 \\(\\displaystyle \\left.\\frac{\\mathrm d^2y}{\\mathrm dx^2}\\right|_{t=0}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u033-p038",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 38,
+      "printedPage": 39,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P237",
+      "questionType": "填空题",
+      "stem": "设 \\(x=x(y)\\) 由方程 \\(\\displaystyle y=\\int_1^{x-y}\\cos^2\\left(\\frac{\\pi t}{4}\\right)\\mathrm dt\\) 确定，则 \\(\\displaystyle \\lim_{n\\to\\infty}\\left[nx\\left(\\frac1n\\right)-n\\right]=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u034-p039",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 39,
+      "printedPage": 40,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 13,
+      "sourceRef": "P237",
+      "questionType": "填空题",
+      "stem": "设 \\(f(x)=\\ln(1+x+x^2)\\)，则 \\(f^{(5)}(0)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u035-p040",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 40,
+      "printedPage": 41,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P237",
+      "questionType": "填空题",
+      "stem": "设 \\(\\displaystyle f(x)=\\frac{1+x+x^2}{1-x+x^2}\\)，则 \\(f^{(4)}(0)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u036-p040",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 40,
+      "printedPage": 41,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P238",
+      "questionType": "填空题",
+      "stem": "设 \\(\\displaystyle f(x)=\\arctan\\frac{1+x}{1-x}\\)，整数 \\(n\\ge0\\)，则 \\(f^{(2n+1)}(0)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch04-u037-p040",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 40,
+      "printedPage": 41,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的计算"
+      ],
+      "note": "",
+      "questionNo": 16,
+      "sourceRef": "P238",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)=|x|\\sin^2x\\)，则使 \\(f^{(n)}(0)\\) 存在的阶数 \\(n\\) 的最大值为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的计算"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的计算”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u038-p041",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 41,
+      "printedPage": 42,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 1,
+      "sourceRef": "P239",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)=|\\ln|x||\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\) 不是 \\(f(x)\\) 的极值点"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,0)\\) 不是 \\(y=f(x)\\) 的拐点"
+        },
+        {
+          "label": "C",
+          "text": "\\(x=-1\\) 不是 \\(f(x)\\) 的驻点"
+        },
+        {
+          "label": "D",
+          "text": "\\(x=0\\) 不是 \\(y=f(x)\\) 的渐近线"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u039-p042",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 42,
+      "printedPage": 43,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P241",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)=(x^2+a)e^x\\)。若 \\(f(x)\\) 既没有极值点也没有拐点，则 \\(a\\) 的取值范围是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,+\\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\([1,2)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\([2,+\\infty)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u040-p042",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 42,
+      "printedPage": 43,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P241",
+      "questionType": "填空题",
+      "stem": "设 \\(e^{ax}\\ge1+x\\) 对任意实数 \\(x\\) 均成立，则 \\(a\\) 的取值范围为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u041-p043",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 43,
+      "printedPage": 44,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P241",
+      "questionType": "选择题",
+      "stem": "设函数 \\(\\displaystyle f(x)=\\int_0^1|t(t-x)|\\,\\mathrm dt\\)，\\(0<x<1\\)。则 \\(f(x)\\) 的单调区间及曲线 \\(y=f(x)\\) 的凹凸区间分别为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "单调增区间 \\(\\left(\\frac{\\sqrt2}{2},1\\right)\\)，单调减区间 \\(\\left(0,\\frac{\\sqrt2}{2}\\right)\\)；在 \\((0,1)\\) 内曲线为凹"
+        },
+        {
+          "label": "B",
+          "text": "单调减区间 \\(\\left(\\frac{\\sqrt2}{2},1\\right)\\)，单调增区间 \\(\\left(0,\\frac{\\sqrt2}{2}\\right)\\)；在 \\((0,1)\\) 内曲线为凹"
+        },
+        {
+          "label": "C",
+          "text": "单调增区间 \\(\\left(\\frac{\\sqrt2}{2},1\\right)\\)，单调减区间 \\(\\left(0,\\frac{\\sqrt2}{2}\\right)\\)；在 \\((0,1)\\) 内曲线为凸"
+        },
+        {
+          "label": "D",
+          "text": "单调减区间 \\(\\left(\\frac{\\sqrt2}{2},1\\right)\\)，单调增区间 \\(\\left(0,\\frac{\\sqrt2}{2}\\right)\\)；在 \\((0,1)\\) 内曲线为凸"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u042-p046",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 46,
+      "printedPage": 47,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P243",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x),g(x)\\) 在 \\([a,b]\\) 上连续，在 \\((a,b)\\) 内可导，且 \\(g'(x)>0\\)。则在 \\((a,b)\\) 上，“\\(\\displaystyle \\frac{f'(x)}{g'(x)}\\) 严格单调递增”是“\\(\\displaystyle \\frac{f(x)-f(a)}{g(x)-g(a)}\\) 严格单调递增”的（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "充分非必要条件"
+        },
+        {
+          "label": "B",
+          "text": "必要非充分条件"
+        },
+        {
+          "label": "C",
+          "text": "充分必要条件"
+        },
+        {
+          "label": "D",
+          "text": "既非充分又非必要条件"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u043-p047",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 47,
+      "printedPage": 48,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P244",
+      "questionType": "选择题",
+      "stem": "曲线 \\(y=(5x-3)e^{-1/x}\\) 有渐近线（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0,\\ y=5x+2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0,\\ y=5x-8\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x=0,\\ y=5x-3\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(x=0,\\ y=5x-2\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u044-p047",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 47,
+      "printedPage": 48,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 16,
+      "sourceRef": "P245",
+      "questionType": "选择题",
+      "stem": "曲线 \\(\\displaystyle y=\\frac{\\sqrt{x^2-x+1}}{e^x-1}\\) 的渐近线共有（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 条"
+        },
+        {
+          "label": "B",
+          "text": "2 条"
+        },
+        {
+          "label": "C",
+          "text": "3 条"
+        },
+        {
+          "label": "D",
+          "text": "4 条或 4 条以上"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u045-p047",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 47,
+      "printedPage": 48,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P245",
+      "questionType": "选择题",
+      "stem": "极坐标曲线 \\(r(3\\theta-\\pi)=1\\) 的斜渐近线为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\sqrt2x-\\frac32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\sqrt2x+\\frac32\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(y=\\sqrt3x-\\frac23\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(y=\\sqrt3x+\\frac23\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u046-p048",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 48,
+      "printedPage": 49,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 19,
+      "sourceRef": "P246",
+      "questionType": "计算题",
+      "stem": "求曲线 \\(\\displaystyle y=x^2\\left[\\frac{\\left(1+\\frac1x\\right)^x}{e}-1\\right]\\)，\\(x>0\\) 的斜渐近线。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u047-p048",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 48,
+      "printedPage": 49,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 20,
+      "sourceRef": "P246",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 在 \\(x=2\\) 的某邻域内连续，且 \\(\\displaystyle \\lim_{x\\to0}\\frac{\\ln\\left[f(x+2)+e^{x^2}\\right]}{1-\\cos x}=4\\)，则 \\(x=2\\) 是 \\(f(x)\\) 的（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "不可导点"
+        },
+        {
+          "label": "B",
+          "text": "驻点且是极大值点"
+        },
+        {
+          "label": "C",
+          "text": "驻点且是极小值点"
+        },
+        {
+          "label": "D",
+          "text": "可导点但不是驻点"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u048-p049",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 49,
+      "printedPage": 50,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 21,
+      "sourceRef": "P246",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 在 \\(( -\\infty,+\\infty)\\) 内连续，其一阶导函数 \\(f'(x)\\) 的图形具有如下特征：在 \\(x<0\\) 时为开口向上的曲线，与横轴有两个交点且有一个极小点；在 \\(x>0\\) 时 \\(f'(x)\\) 从正值严格下降，经过横轴后继续为负；\\(f'(x)\\) 存在处 \\(f''(x)\\) 也存在。则曲线 \\(y=f(x)\\) 的拐点个数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "transcriptionNote": "原题含 f'(x) 示意图，已转写为图形的定性特征。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u049-p050",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 50,
+      "printedPage": 51,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 24,
+      "sourceRef": "P248",
+      "questionType": "填空题",
+      "stem": "设 \\(y=\\tan^n x\\) 在 \\(x=\\frac\\pi4\\) 处的切线在 \\(x\\) 轴上的截距为 \\(x_n\\)，则 \\(\\displaystyle \\lim_{n\\to\\infty}y(x_n)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u050-p051",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 51,
+      "printedPage": 52,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 25,
+      "sourceRef": "P248",
+      "questionType": "计算题",
+      "stem": "过椭圆 \\(\\displaystyle \\frac{x^2}{4}+y^2=1\\)，\\(x>0,y>0\\) 上任意一点作该曲线的切线。切线夹在两坐标轴之间的部分为 \\(L\\)。求 \\(L\\) 的最小长度，以及 \\(L\\) 的长度达到最小时的切点坐标。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u051-p051",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 51,
+      "printedPage": 52,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 26,
+      "sourceRef": "P250",
+      "questionType": "计算题",
+      "stem": "求 \\(\\displaystyle f(x)=\\int_0^1|\\ln|x-t||\\,\\mathrm dt\\)，\\(0\\le x\\le1\\) 的最大值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u052-p052",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 52,
+      "printedPage": 53,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 27,
+      "sourceRef": "P250",
+      "questionType": "计算题",
+      "stem": "设 \\(y=y(x)\\) 满足微分方程 \\((xy'-2)\\ln x+y=0\\)，\\(y(e)=2\\)。(1) 求 \\(y=y(x)\\) 的表达式及其定义域；(2) 求函数 \\(y=y(x)\\) 的极值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u053-p054",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 54,
+      "printedPage": 55,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 31,
+      "sourceRef": "P251",
+      "questionType": "填空题",
+      "stem": "设函数 \\(y=y(x)\\) 由参数方程 \\(\\displaystyle \\begin{cases}x=2e^t+t+1,\\\\y=4(t-1)e^t+t^2\\end{cases}\\) 确定，则曲线 \\(y=y(x)\\) 在 \\(t=0\\) 对应点处的曲率为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch05-u054-p054",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 54,
+      "printedPage": 55,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 33,
+      "sourceRef": "P252",
+      "questionType": "填空题",
+      "stem": "设圆与曲线 \\(x=y^2\\) 在 \\((0,0)\\) 处有公切线，且它们关于 \\(y\\) 的二阶导数值相同，则该圆的方程为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u055-p055",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 55,
+      "printedPage": 56,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 2,
+      "sourceRef": "P253",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 在 \\((0,+\\infty)\\) 内可导。判断：① 若 \\(\\displaystyle \\lim_{x\\to+\\infty}f(x)\\) 存在，且 \\(\\displaystyle \\lim_{x\\to+\\infty}f'(x)\\) 存在，则 \\(\\displaystyle \\lim_{x\\to+\\infty}f'(x)=0\\)；② 若 \\(\\displaystyle \\lim_{x\\to+\\infty}[f(x)+f'(x)]\\) 存在，则 \\(\\displaystyle \\lim_{x\\to+\\infty}f'(x)=0\\)。正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "①正确，②错误"
+        },
+        {
+          "label": "B",
+          "text": "①错误，②正确"
+        },
+        {
+          "label": "C",
+          "text": "①与②均正确"
+        },
+        {
+          "label": "D",
+          "text": "①与②均错误"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u056-p056",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 56,
+      "printedPage": 57,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P253",
+      "questionType": "证明题",
+      "stem": "设函数 \\(f(x)\\) 在 \\([0,+\\infty)\\) 上可导。(1) 若 \\(\\displaystyle f(0)=\\lim_{x\\to+\\infty}f(x)=0\\)，证明：存在 \\(\\xi\\in(0,+\\infty)\\)，使 \\(f'(\\xi)=0\\)；(2) 若 \\(\\displaystyle 0\\le f(x)\\le\\ln\\frac{2x+1}{x+\\sqrt{1+x^2}}\\)，证明：存在 \\(\\xi\\in(0,+\\infty)\\)，使 \\(\\displaystyle f'(\\xi)=\\frac{2}{2\\xi+1}-\\frac1{\\sqrt{1+\\xi^2}}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u057-p059",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 59,
+      "printedPage": 60,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P255",
+      "questionType": "选择题",
+      "stem": "若可导函数 \\(f(x)\\) 满足 \\(f'(x)<2f(x)\\)，则当 \\(b>a>0\\) 时，有（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b^2f(a)>a^2f(b)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b^2f(\\ln a)>a^2f(\\ln b)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(b^2f(a)<a^2f(b)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(b^2f(\\ln a)<a^2f(\\ln b)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u058-p060",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 60,
+      "printedPage": 61,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P256",
+      "questionType": "证明题",
+      "stem": "设 \\(f(x)\\) 在 \\([2,4]\\) 上二阶可导，且 \\(f'(x)\\ge M>0\\)，\\(f(2)>0\\)。证明：(1) 对任意 \\(x\\in[3,4]\\)，均有 \\(f(x)>M\\)；(2) 存在 \\(\\xi\\in(3,4)\\)，使 \\(\\displaystyle f(\\xi)>M\\frac{e^{\\xi-3}}{e-1}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u059-p061",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 61,
+      "printedPage": 62,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 13,
+      "sourceRef": "P256",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 在 \\([0,1]\\) 上二阶可导，且 \\(\\displaystyle \\int_0^1f(x)\\,\\mathrm dx=0\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "当 \\(f'(x)<0\\) 时，\\(f(\\frac12)<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "当 \\(f''(x)<0\\) 时，\\(f(\\frac12)<0\\)"
+        },
+        {
+          "label": "C",
+          "text": "当 \\(f'(x)>0\\) 时，\\(f(\\frac12)<0\\)"
+        },
+        {
+          "label": "D",
+          "text": "当 \\(f''(x)>0\\) 时，\\(f(\\frac12)<0\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u060-p062",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 62,
+      "printedPage": 63,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 16,
+      "sourceRef": "P258",
+      "questionType": "计算题",
+      "stem": "确定常数 \\(k\\) 的取值范围，使方程 \\(x-\\arctan x=kx^3\\) 在 \\((0,1]\\) 内有实根。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch06-u061-p063",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 63,
+      "printedPage": 64,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P259",
+      "questionType": "选择题",
+      "stem": "设 \\(b>0>a\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(ae^a(e^b-1)>be^b(e^a-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(ae^a(e^b-1)<be^b(e^a-1)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(be^a(e^b-1)>ae^b(e^a-1)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(be^a(e^b-1)<ae^b(e^a-1)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数微分学的应用（二）—中值定理、微分等式与微分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u062-p068",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 68,
+      "printedPage": 69,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 1,
+      "sourceRef": "P262",
+      "questionType": "计算题",
+      "stem": "计算 \\(\\displaystyle \\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac{1-\\cos\\frac{\\pi}{\\sqrt n}}{1+\\cos\\frac{i\\pi}{2n}}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u063-p068",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 68,
+      "printedPage": 69,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 2,
+      "sourceRef": "P263",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 连续，则 \\(\\displaystyle \\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{k-\\frac12+n}{n^2}f\\left(\\frac{2k-1}{2n}\\right)=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\displaystyle \\int_0^1\\left(x+\\frac12\\right)f(x)\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\displaystyle \\int_0^1\\left(x+1-\\frac1{2n}\\right)f\\left(x-\\frac1{2n}\\right)\\mathrm dx\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\displaystyle \\int_0^1(x+1)f(x)\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\displaystyle \\int_0^1\\left(x+\\frac12+\\frac1n\\right)f\\left(x-\\frac1n\\right)\\mathrm dx\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u064-p069",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 69,
+      "printedPage": 70,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P263",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 在 \\([0,1]\\) 上可积，则 \\(\\displaystyle \\lim_{n\\to\\infty}\\sum_{i=0}^{n-1}\\ln\\left[1+\\frac1n f\\left(\\frac in\\right)\\right]=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\displaystyle \\int_0^1\\ln\\left[1+\\frac{f(x)}n\\right]\\mathrm dx\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\displaystyle \\int_0^1\\ln[1+f(x)]\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\displaystyle \\int_0^1f(x)\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\displaystyle \\int_0^1f^2(x)\\,\\mathrm dx\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u065-p069",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 69,
+      "printedPage": 70,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P263",
+      "questionType": "选择题",
+      "stem": "记 \\(I_1=\\int_0^{2\\pi}\\frac{\\sin x}{x}\\,\\mathrm dx\\)，\\(I_2=\\int_0^{2\\pi}\\frac{\\sin x}{2\\pi-x}\\,\\mathrm dx\\)，\\(I_3=\\int_0^{2\\pi}\\frac{\\sin x}{x(2\\pi-x)}\\,\\mathrm dx\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I_3<I_1<I_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I_3<I_2<I_1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(I_2<I_3<I_1\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(I_1<I_2<I_3\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u066-p070",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 70,
+      "printedPage": 71,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P264",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)=\\int_0^{|\\sin x|}e^{t^2}\\,\\mathrm dt\\)，\\(g(x)=\\int_0^{|x|}\\sin(t^2)\\,\\mathrm dt\\)，则在 \\((-\\pi,\\pi)\\) 内（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)\\) 是可导的奇函数"
+        },
+        {
+          "label": "B",
+          "text": "\\(g(x)\\) 是可导的偶函数"
+        },
+        {
+          "label": "C",
+          "text": "\\(f(x)\\) 是奇函数且 \\(f'(0)\\) 不存在"
+        },
+        {
+          "label": "D",
+          "text": "\\(g(x)\\) 是偶函数且 \\(g'(0)\\) 不存在"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u067-p071",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 71,
+      "printedPage": 72,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P265",
+      "questionType": "选择题",
+      "stem": "设常数 \\(m>0,n>0\\)，则 \\(\\displaystyle \\int_0^n\\sqrt{x}\\left[\\frac mx\\right]\\mathrm dx\\)（\\([\\cdot]\\) 为取整符号）的敛散性（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "仅与 \\(m\\) 有关"
+        },
+        {
+          "label": "B",
+          "text": "仅与 \\(n\\) 有关"
+        },
+        {
+          "label": "C",
+          "text": "与 \\(m,n\\) 均有关"
+        },
+        {
+          "label": "D",
+          "text": "与 \\(m,n\\) 均无关"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u068-p072",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 72,
+      "printedPage": 73,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P265",
+      "questionType": "选择题",
+      "stem": "设 \\(p,q\\) 为正常数。若 \\(\\displaystyle \\int_0^1\\frac{1}{x^p|\\ln x|^q}\\,\\mathrm dx\\) 收敛，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p<1,q<1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p>1,q<1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(p<1,q>1\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(p>1,q>1\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u069-p073",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 73,
+      "printedPage": 74,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 13,
+      "sourceRef": "P266",
+      "questionType": "选择题",
+      "stem": "设非负函数 \\(f(x)\\) 在 \\([0,+\\infty)\\) 上具有有界导数。判断：① \\(\\int_0^{+\\infty}f^2(x)\\,\\mathrm dx\\) 收敛可推出 \\(\\int_0^{+\\infty}f(x)\\,\\mathrm dx\\) 收敛；② 后者收敛可推出前者收敛；③ 若 \\(\\lim_{x\\to+\\infty}x^2f(x)\\) 存在，则 \\(\\int_0^{+\\infty}f(x)\\,\\mathrm dx\\) 收敛；④ 若该积分收敛，则 \\(\\lim_{x\\to+\\infty}x^2f(x)\\) 存在。真命题个数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u070-p074",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 74,
+      "printedPage": 75,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P267",
+      "questionType": "选择题",
+      "stem": "下列反常积分中发散的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\int_0^{+\\infty}\\frac{e^x}{\\sqrt{x}}\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\int_0^{+\\infty}x^2e^{-x^2}\\,\\mathrm dx\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\int_0^{+\\infty}\\frac{\\mathrm dx}{x\\ln^2x}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\int_0^{+\\infty}\\frac{\\mathrm dx}{(x+2)\\ln^2(x+2)}\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch08-u071-p075",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 75,
+      "printedPage": 76,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的概念与性质"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P268",
+      "questionType": "计算题",
+      "stem": "设 \\(\\displaystyle f(x)=\\lim_{n\\to\\infty}\\frac xn\\sum_{k=1}^ne^{-k^2x^2/n^2}\\)。(1) 求 \\(f(x)\\) 的表达式；(2) 求曲线 \\(y=e^xf(x)\\) 的拐点。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的概念与性质"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的概念与性质”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u072-p090",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 90,
+      "printedPage": 91,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P280",
+      "questionType": "填空题",
+      "stem": "曲线 \\(y=\\sqrt{x}\\) 与 \\(y=x^2\\) 所围平面有界区域绕直线 \\(y=x\\) 旋转一周所得旋转体的体积为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u073-p091",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 91,
+      "printedPage": 92,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P281",
+      "questionType": "计算题",
+      "stem": "过坐标原点作曲线 \\(y=e^x\\) 的切线，该切线与曲线 \\(y=e^x\\) 以及 \\(x\\) 轴围成的向 \\(x\\) 轴负向无限伸展的图形记为 \\(D\\)。(1) 求 \\(D\\) 的面积；(2) 求 \\(D\\) 绕直线 \\(x=1\\) 旋转一周所得旋转体体积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u074-p091",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 91,
+      "printedPage": 92,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P281",
+      "questionType": "计算题",
+      "stem": "求曲线 \\(y=e^{-x/2}\\sqrt{\\sin x}\\)，\\(x\\ge0\\) 绕 \\(x\\) 轴旋转一周所成旋转体的体积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u075-p092",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 92,
+      "printedPage": 93,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 8,
+      "sourceRef": "P281",
+      "questionType": "计算题",
+      "stem": "设曲线 \\(y=ax^2\\)，\\(x>0,a>0\\) 与 \\(y=1-x^2\\) 交于点 \\(A\\)，过原点 \\(O\\) 和点 \\(A\\) 的直线与曲线 \\(y=ax^2\\) 围成平面图形 \\(D\\)。(1) 求 \\(D\\) 绕 \\(x\\) 轴旋转一周所得体积 \\(V(a)\\)；(2) 求使 \\(V(a)\\) 最大的 \\(a\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u076-p092",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 92,
+      "printedPage": 93,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P282",
+      "questionType": "计算题",
+      "stem": "设函数 \\(f(x)\\) 在 \\([0,1]\\) 上连续，在 \\((0,1)\\) 内可导，且满足 \\(xf'(x)=f(x)+x^2\\)。已知曲线 \\(y=f(x)\\) 与 \\(x=0,x=1,y=0\\) 所围图形 \\(S\\) 的面积为 2。求 \\(f(x)\\) 的表达式，以及图形 \\(S\\) 绕 \\(x\\) 轴旋转一周所得旋转体的体积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u077-p093",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 93,
+      "printedPage": 94,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P282",
+      "questionType": "填空题",
+      "stem": "当 \\(x>0\\) 时，在曲线 \\(y=e^{-2x}\\) 上面作一个台阶曲线，台阶的宽度皆为 1。每一级台阶的左端点位于曲线上，求图中无穷多个阴影部分的面积之和 \\(S=\\underline{\\qquad}\\)。",
+      "options": [],
+      "transcriptionNote": "原题含示意图，已将图形关系转写为文字条件。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u078-p093",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 93,
+      "printedPage": 94,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P282",
+      "questionType": "计算题",
+      "stem": "设函数 \\(y=f(x)\\) 满足微分方程 \\(y'+y=\\dfrac{e^{-x}\\cos x}{2\\sqrt{\\sin x}}\\)，且 \\(f(\\pi)=0\\)，求曲线 \\(y=f(x)\\)（\\(x\\ge0\\)）绕 \\(x\\) 轴旋转一周所得旋转体的体积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u079-p094",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 94,
+      "printedPage": 95,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 12,
+      "sourceRef": "P283",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x)\\) 在 \\(( -\\infty,+\\infty)\\) 内非负连续，且 \\(\\displaystyle\\int_0^x t f(x^2)f(x^2-t^2)\\,dt=\\sin^2 x^2\\)，求 \\(f(x)\\) 在 \\([0,\\pi]\\) 上的平均值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u080-p094",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 94,
+      "printedPage": 95,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 13,
+      "sourceRef": "P284",
+      "questionType": "填空题",
+      "stem": "已知 \\(\\dfrac{1}{1+e^{1/x}}\\) 是函数 \\(f(x)\\) 的一个原函数，则 \\(f(x)\\) 在 \\([-1,1]\\) 上的平均值为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u081-p095",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 95,
+      "printedPage": 96,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P284",
+      "questionType": "填空题",
+      "stem": "设函数 \\(f(x)\\) 非负连续，且 \\(f(x)\\displaystyle\\int_0^1 f(xt)\\,dt=2x^2\\)，则 \\(f(x)\\) 在区间 \\([0,2]\\) 上的平均值为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u082-p095",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 95,
+      "printedPage": 96,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 16,
+      "sourceRef": "P285",
+      "questionType": "填空题",
+      "stem": "设 \\(f(x)\\) 为 \\([0,3]\\) 上的非负连续函数，且满足 \\(f(x)\\displaystyle\\int_1^2 f(xt-x)\\,dt=2x^2\\)，\\(x\\in[0,3]\\)，则 \\(f(x)\\) 在区间 \\([1,3]\\) 上的平均值为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u083-p095",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 95,
+      "printedPage": 96,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P285",
+      "questionType": "填空题",
+      "stem": "已知函数 \\(f(x)\\) 在 \\(\\left[0,\\dfrac{3\\pi}{2}\\right]\\) 上连续，在 \\(\\left(0,\\dfrac{3\\pi}{2}\\right)\\) 内是函数 \\(\\dfrac{\\cos x}{2x-3\\pi}\\) 的一个原函数，且 \\(f(0)=0\\)，则 \\(f(x)\\) 在区间 \\(\\left[0,\\dfrac{3\\pi}{2}\\right]\\) 上的平均值为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u084-p096",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 96,
+      "printedPage": 97,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P285",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x)=\\displaystyle\\int_{-1}^{x}t|t|\\,dt\\)，求曲线 \\(y=f(x)\\) 与 \\(x\\) 轴所围成的封闭图形的面积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u085-p096",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 96,
+      "printedPage": 97,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 19,
+      "sourceRef": "P285",
+      "questionType": "计算题",
+      "stem": "已知函数 \\(f(x),g(x)\\) 分别满足 \\(f'(x)=2\\sqrt{f(x)}\\)，\\(g'(x)=\\dfrac{g(x)}{x-2}+\\dfrac{x-2}{x}\\)，\\(f(0)=1\\)，\\(g(1)=0\\)，求曲线 \\(f(x)+g(y)=0\\) 所围图形绕直线 \\(x=-1\\) 旋转一周所得旋转体体积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u086-p097",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 97,
+      "printedPage": 98,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 20,
+      "sourceRef": "P286",
+      "questionType": "计算题",
+      "stem": "在曲线 \\(\\sqrt{x}+\\sqrt{y}=1\\) 上横坐标为 \\(a\\)（\\(0<a<1\\)）处作曲线的切线，将切线与 \\(x\\) 轴、\\(y\\) 轴所围成的图形绕 \\(y\\) 轴旋转一周，使所得旋转体的体积最大，求 \\(a\\) 的值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u087-p098",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 98,
+      "printedPage": 99,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 23,
+      "sourceRef": "P288",
+      "questionType": "计算题",
+      "stem": "设非负函数 \\(y(x)\\) 是微分方程 \\(2yy'=\\cos x\\) 满足条件 \\(y(0)=0\\) 的解，求曲线 \\(f_n(x)=n\\displaystyle\\int_0^{x/n}y(t)\\,dt\\)（\\(0\\le x\\le n\\pi\\)）的弧长。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u088-p099",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 99,
+      "printedPage": 100,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 24,
+      "sourceRef": "P288",
+      "questionType": "证明题",
+      "stem": "设函数 \\(y=f(x)\\) 在区间 \\([0,a]\\) 上非负，\\(f''(x)>0\\)，且 \\(f(0)=0\\)。有一块质量均匀分布的平板 \\(D\\)，其占据的区域是曲线 \\(y=f(x)\\)、直线 \\(x=a\\) 以及 \\(x\\) 轴围成的平面图形。用 \\(\\bar{x}\\) 表示平板 \\(D\\) 的质心的横坐标，证明：\\(\\bar{x}>\\dfrac{2}{3}a\\)。",
+      "options": [],
+      "transcriptionNote": "原题附区域示意图，区域边界已完整写入题干。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u089-p099",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 99,
+      "printedPage": 100,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 25,
+      "sourceRef": "P289",
+      "questionType": "计算题",
+      "stem": "求摆线的一拱 \\(\\begin{cases}x=a(t-\\sin t),\\\\y=a(1-\\cos t)\\end{cases}\\)（\\(0\\le t\\le2\\pi,\\ a>0\\)）与 \\(x\\) 轴围成的平面图形绕 \\(x\\) 轴旋转一周所形成的旋转体的体积与表面积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch10-u090-p100",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourcePage": 100,
+      "printedPage": 101,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "note": "",
+      "questionNo": 26,
+      "sourceRef": "P289",
+      "questionType": "计算题",
+      "stem": "已知摆线的参数方程为 \\(\\begin{cases}x=a(t-\\sin t),\\\\y=a(1-\\cos t)\\end{cases}\\)，其中 \\(0\\le t\\le2\\pi\\)，常数 \\(a>0\\)。设该摆线一拱的弧长的数值等于该弧段绕 \\(x\\) 轴旋转一周所形成的旋转曲面面积的数值，求 \\(a\\) 的值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（一）—几何应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（一）—几何应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch11-u091-p102",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（二）—积分等式与积分不等式",
+      "sourcePage": 102,
+      "printedPage": 103,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P290",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 是 \\([0,1]\\) 上的可导函数，\\(f(0)=f(1)=1\\)，\\(\\displaystyle\\max_{0\\le x\\le1}|f'(x)|=1\\)，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac14<\\displaystyle\\int_0^1f(x)\\,dx<\\dfrac12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac12<\\displaystyle\\int_0^1f(x)\\,dx<\\dfrac34\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\dfrac34<\\displaystyle\\int_0^1f(x)\\,dx<\\dfrac54\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\dfrac54<\\displaystyle\\int_0^1f(x)\\,dx<\\dfrac74\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（二）—积分等式与积分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch11-u092-p103",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（二）—积分等式与积分不等式",
+      "sourcePage": 103,
+      "printedPage": 104,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P291",
+      "questionType": "证明题",
+      "stem": "设函数 \\(f(x),g(x)\\) 在区间 \\([a,b]\\) 上连续，对任意的 \\(x\\in[a,b]\\)，满足 \\(\\displaystyle\\int_a^x g(t)\\,dt<\\int_a^x f(t)\\,dt\\)，且 \\(\\displaystyle\\int_a^b g(t)\\,dt=\\int_a^b f(t)\\,dt\\)。证明：\\(\\displaystyle\\int_a^b x f(x)\\,dx<\\int_a^b x g(x)\\,dx\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（二）—积分等式与积分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch11-u093-p103",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（二）—积分等式与积分不等式",
+      "sourcePage": 103,
+      "printedPage": 104,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P291",
+      "questionType": "证明题",
+      "stem": "设 \\(f(x)\\) 在 \\([a,b]\\) 上可导，且 \\(f'(x)\\) 连续，\\(f(a)=0\\)。证明：\\(\\displaystyle\\int_a^b f^2(x)\\,dx\\le\\dfrac{(b-a)^2}{2}\\int_a^b[f'(x)]^2\\,dx\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（二）—积分等式与积分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch11-u094-p104",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（二）—积分等式与积分不等式",
+      "sourcePage": 104,
+      "printedPage": 105,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P292",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 是 \\([0,1]\\) 上单调增加的连续函数，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\displaystyle\\int_0^{\\int_0^1e^{-t^2}\\,dt}f(x)\\,dx\\ge\\int_0^1f(x)e^{-x^2}\\,dx\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\displaystyle\\int_0^{\\int_0^1e^{-t^2}\\,dt}f(x)\\,dx\\le\\int_0^1f(x)e^{-x^2}\\,dx\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\displaystyle\\int_0^{\\int_0^1e^{-t^2}\\,dt}f(x)\\,dx\\ge\\int_0^1f(x)\\,dx\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\displaystyle\\int_0^{\\int_0^1e^{-t^2}\\,dt}f(x)\\,dx\\le\\int_0^1f(x)\\,dx\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（二）—积分等式与积分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch11-u095-p105",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（二）—积分等式与积分不等式",
+      "sourcePage": 105,
+      "printedPage": 106,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P293",
+      "questionType": "证明题",
+      "stem": "设 \\(f(x)\\) 在 \\([0,1]\\) 上具有二阶导数，\\(f(0)=f(1)=0\\)，\\(f''(x)<0\\)，\\(0<f(x)<1\\)。记曲线 \\(y=f(x)\\) 在 \\([0,1]\\) 上的长度为 \\(a\\)，证明：(1) 存在 \\(\\xi\\in(0,1)\\)，使得对任意 \\(x\\in(0,\\xi)\\)，有 \\(f'(x)>0\\)；(2) \\(a<3\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（二）—积分等式与积分不等式"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（二）—积分等式与积分不等式”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch12-u096-p107",
+      "subject": "高等数学",
+      "chapter": 12,
+      "chapterTitle": "一元函数积分学的应用（三）—物理应用",
+      "sourcePage": 107,
+      "printedPage": 108,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P295",
+      "questionType": "填空题",
+      "stem": "半径为 \\(a\\) 的球浸没在与其密度 \\(\\rho\\) 相同的某液体中，球与水面相切，\\(g\\) 为重力加速度。若将球取出，所做的功至少为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（三）—物理应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch12-u097-p107",
+      "subject": "高等数学",
+      "chapter": 12,
+      "chapterTitle": "一元函数积分学的应用（三）—物理应用",
+      "sourcePage": 107,
+      "printedPage": 108,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P295",
+      "questionType": "选择题",
+      "stem": "设有半圆形板 \\(x^2+y^2\\le a^2\\)（\\(y\\ge0\\)），它在点 \\(P(x,y)\\) 的密度与点 \\(P\\) 到原点的距离成正比，则半圆形板的重心坐标为（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0,\\dfrac{\\pi a}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0,\\dfrac{\\pi a}{2}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0,\\dfrac{4a}{3\\pi}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(0,\\dfrac{3a}{2\\pi}\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（三）—物理应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch12-u098-p107",
+      "subject": "高等数学",
+      "chapter": 12,
+      "chapterTitle": "一元函数积分学的应用（三）—物理应用",
+      "sourcePage": 107,
+      "printedPage": 108,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P295",
+      "questionType": "填空题",
+      "stem": "曲线 \\(y=e^x\\) 与直线 \\(x=1\\)、\\(x=-1\\) 及 \\(x\\) 轴所围平面有界区域 \\(D\\) 的形心为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "一元函数积分学的应用（三）—物理应用"
+      ],
+      "similarQuestionPrompt": "围绕“一元函数积分学的应用（三）—物理应用”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u099-p110",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 110,
+      "printedPage": 111,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P297",
+      "questionType": "计算题",
+      "stem": "设函数 \\(u(x,y)\\) 的全微分 \\(du=[e^x+f'(x)]y\\,dx+f'(x)\\,dy\\)，其中 \\(f(x)\\) 在 \\(( -\\infty,+\\infty)\\) 内具有一阶连续的导数，且 \\(f(0)=4\\)，\\(f'(0)=3\\)，求 \\(f(x)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u100-p112",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 112,
+      "printedPage": 113,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P299",
+      "questionType": "填空题",
+      "stem": "设函数 \\(f(x,y)=\\displaystyle\\int_0^{xy}e^{xt^2}\\,dt\\)，则 \\(\\left.\\dfrac{\\partial^2f}{\\partial x\\partial y}\\right|_{(1,1)}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u101-p112",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 112,
+      "printedPage": 113,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P299",
+      "questionType": "填空题",
+      "stem": "设 \\(z=z(x,y)\\) 是由 \\(z+e^z=xy\\) 所确定的二元函数，则 \\(\\left.\\dfrac{\\partial^2z}{\\partial x\\partial y}\\right|_{z=0}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u102-p113",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 113,
+      "printedPage": 114,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P300",
+      "questionType": "计算题",
+      "stem": "设 \\(z=z(x,y)\\) 是由方程 \\(z+\\ln z-\\displaystyle\\int_y^x e^{-t^2}\\,dt=1\\) 确定的函数，计算 \\(\\left.\\dfrac{\\partial^2z}{\\partial x\\partial y}\\right|_{(0,0)}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u103-p114",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 114,
+      "printedPage": 115,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P301",
+      "questionType": "选择题",
+      "stem": "设 \\(F(u,v)\\) 具有一阶连续偏导数，且 \\(z=z(x,y)\\) 由方程 \\(F\\!\\left(\\dfrac{x}{z},yz\\right)=0\\) 所确定。设题中出现的分母不为零，则 \\(x\\dfrac{\\partial z}{\\partial x}-y\\dfrac{\\partial z}{\\partial y}=\\)（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\dfrac1z\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u104-p115",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 115,
+      "printedPage": 116,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 20,
+      "sourceRef": "P302",
+      "questionType": "计算题",
+      "stem": "设 \\(f(u,v)\\) 存在二阶连续偏导数，\\(z=z(x,y)\\) 是由方程 \\(f(z-x,z-y)=1\\) 确定的隐函数，求 \\(\\dfrac{\\partial^2z}{\\partial x\\partial y}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u105-p116",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 116,
+      "printedPage": 117,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 21,
+      "sourceRef": "P302",
+      "questionType": "填空题",
+      "stem": "设 \\(u=e^{x+y+z}\\)，其中 \\(y(x)\\) 和 \\(z(x)\\) 由方程组 \\(\\begin{cases}\\displaystyle\\int_0^x e^{t^2}\\,dt+\\ln(1+y)=0,\\\\e^{y+z}=e+z\\ln z\\end{cases}\\) 确定，则 \\(\\left.\\dfrac{du}{dx}\\right|_{x=0}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u106-p116",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 116,
+      "printedPage": 117,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 22,
+      "sourceRef": "P302",
+      "questionType": "选择题",
+      "stem": "函数 \\(f(x,y)=x^2+y^2\\) 在约束条件 \\((x-1)^3=y^2\\) 下（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "有最大值，无最小值"
+        },
+        {
+          "label": "B",
+          "text": "无最大值，有最小值"
+        },
+        {
+          "label": "C",
+          "text": "有最大值，有最小值"
+        },
+        {
+          "label": "D",
+          "text": "无最大值，无最小值"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u107-p117",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 117,
+      "printedPage": 118,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 24,
+      "sourceRef": "P303",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x,y)=\\begin{cases}(y-e^{-1/x^2})(y-3e^{1/x^2}),&x\\ne0,\\\\y^2,&x=0,\\end{cases}\\) 则点 \\((0,0)\\)（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "是 \\(f(x,x)\\) 的极小值点，也是 \\(f(x,y)\\) 的极小值点"
+        },
+        {
+          "label": "B",
+          "text": "是 \\(f(x,x)\\) 的极小值点，不是 \\(f(x,y)\\) 的极小值点"
+        },
+        {
+          "label": "C",
+          "text": "不是 \\(f(x,x)\\) 的极小值点，是 \\(f(x,y)\\) 的极小值点"
+        },
+        {
+          "label": "D",
+          "text": "不是 \\(f(x,x)\\) 的极小值点，也不是 \\(f(x,y)\\) 的极小值点"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u108-p119",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 119,
+      "printedPage": 120,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 28,
+      "sourceRef": "P305",
+      "questionType": "计算题",
+      "stem": "求 \\(|z|\\) 在约束条件 \\(\\begin{cases}x^2+9y^2-2z^2=0,\\\\x+3y+3z=5\\end{cases}\\) 下的最大值与最小值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u109-p120",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 120,
+      "printedPage": 121,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 30,
+      "sourceRef": "P305",
+      "questionType": "计算题",
+      "stem": "求函数 \\(u=\\sqrt{x^2+y^2+z^2}\\) 在约束条件 \\(x+2y=1\\) 与 \\(x^2+2y^2+z^2=1\\) 下的最值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u110-p123",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 123,
+      "printedPage": 124,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 36,
+      "sourceRef": "P309",
+      "questionType": "计算题",
+      "stem": "设 \\(D=\\{(x,y)\\mid x+y\\le3,\\ x\\ge0,\\ y\\ge0\\}\\)，求函数 \\(f(x,y)=2x^3+2y^3-6x-6y+5\\) 在区域 \\(D\\) 上的最大值与最小值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u111-p123",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 123,
+      "printedPage": 124,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 37,
+      "sourceRef": "P309",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x,y)=4x^2(x-2y)+16y(xy-3)-33x\\)，求其在平面区域 \\(D=\\{(x,y)\\mid0\\le y\\le x\\le3\\}\\) 上的取值范围。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch13-u112-p124",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 124,
+      "printedPage": 125,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "多元函数微分学"
+      ],
+      "note": "",
+      "questionNo": 39,
+      "sourceRef": "P310",
+      "questionType": "计算题",
+      "stem": "已知可微函数 \\(f(u,v)\\) 满足 \\(\\dfrac{\\partial f(u,v)}{\\partial u}+\\dfrac{\\partial f(u,v)}{\\partial v}=6(u+v)-3u^2\\)，且 \\(f(u,0)=3u^2-u^3\\)。记 \\(g(x,y)=f(x,x-y)\\)。(1) 计算 \\(\\dfrac{\\partial g(x,y)}{\\partial x}\\)；(2) 求 \\(f(x,y)\\) 在有界闭区域 \\(D=\\{(x,y)\\mid x^2+y^2\\le16\\}\\) 上的最值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数微分学"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u113-p127",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 127,
+      "printedPage": 128,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P312",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x)\\) 是 \\([0,1]\\) 上的连续函数且其在 \\([0,1]\\) 上的平均值 \\(\\bar f=\\dfrac12\\)，满足 \\(f(x)+a\\displaystyle\\int_1^x f(y)f(y-x)\\,dy=1\\)，求常数 \\(a\\) 的值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u114-p128",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 128,
+      "printedPage": 129,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P313",
+      "questionType": "选择题",
+      "stem": "设 \\(I_1=\\displaystyle\\iint_{0\\le x\\le1,\\ 0\\le y\\le1}(\\sin x^2+\\cos y^2)\\,d\\sigma\\)，\\(I_2=\\displaystyle\\iint_{|x|+|y|\\le1/2}\\left[2+\\ln\\left(\\sqrt{x^2+y^2}+\\dfrac12\\right)\\right]\\,d\\sigma\\)，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\le I_1\\le I_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I_1\\le I_2\\le1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(I_2\\le I_1\\le1\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(I_2\\le1\\le I_1\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u115-p128",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 128,
+      "printedPage": 129,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P313",
+      "questionType": "填空题",
+      "stem": "计算 \\(\\displaystyle\\int_{-1}^{0}dx\\int_{(1-x^{2/3})^{3/2}}^{(1-x^2)^{1/2}}(1-\\sin x\\cos y)\\,dy+\\int_0^1dx\\int_{(1-x^{2/3})^{3/2}}^{(1-x^2)^{1/2}}(1-\\sin x\\cos y)\\,dy=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u116-p129",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 129,
+      "printedPage": 130,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P314",
+      "questionType": "计算题",
+      "stem": "设有界区域 \\(D\\) 是由圆 \\(x^2+y^2=1\\)、直线 \\(y=x\\) 以及 \\(x\\) 轴所围成的在第一象限的图形，计算二重积分 \\(\\displaystyle\\iint_D e^{(x+y)^2}(x^2-y^2)\\,dx\\,dy\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u117-p130",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 130,
+      "printedPage": 131,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P316",
+      "questionType": "填空题",
+      "stem": "设平面区域 \\(D=\\{(x,y)\\mid x^2+y^2\\le1\\}\\)，则 \\(\\displaystyle\\iint_D(x-2y)^2\\,dx\\,dy=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u118-p131",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 131,
+      "printedPage": 132,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 12,
+      "sourceRef": "P316",
+      "questionType": "计算题",
+      "stem": "设 \\(D=\\left\\{(x,y)\\middle|\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}\\le1\\right\\}\\)，常数 \\(a>0,b>0,a\\ne b\\)，计算 \\(I=\\displaystyle\\iint_D[(x-1)^2+(2y+3)^2]\\,dx\\,dy\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u119-p132",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 132,
+      "printedPage": 133,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P318",
+      "questionType": "填空题",
+      "stem": "计算 \\(\\displaystyle\\int_{-1}^{1}dy\\int_{-1}^{y}y\\sqrt{1+x^2-y^2}\\,dx=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u120-p132",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 132,
+      "printedPage": 133,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P318",
+      "questionType": "填空题",
+      "stem": "计算 \\(\\displaystyle\\int_{-1}^{1}dx\\int_{x^2}^{\\sqrt{2-x^2}}(x+1)y\\,dy=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u121-p133",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 133,
+      "printedPage": 134,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 17,
+      "sourceRef": "P318",
+      "questionType": "计算题",
+      "stem": "计算二重积分 \\(\\displaystyle\\iint_D\\left|x^2+y^2-\\sqrt2(x+y)\\right|\\,dx\\,dy\\)，其中 \\(D=\\{(x,y)\\mid x^2+y^2\\le4\\}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u122-p133",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 133,
+      "printedPage": 134,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P318",
+      "questionType": "计算题",
+      "stem": "设 \\(D=\\{(x,y)\\mid0\\le x\\le2,\\ 0\\le y\\le2\\}\\)，计算 \\(\\displaystyle\\iint_D|xy-1|\\,d\\sigma\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u123-p134",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 134,
+      "printedPage": 135,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 19,
+      "sourceRef": "P320",
+      "questionType": "计算题",
+      "stem": "设平面区域 \\(D=\\{(x,y)\\mid(x-1)^2+y^2\\ge1,\\ (x-2)^2+y^2\\le4,\\ y\\ge x\\}\\)，计算 \\(\\displaystyle\\iint_D(x^2+y^2)\\,d\\sigma\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch14-u124-p135",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 135,
+      "printedPage": 136,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "二重积分"
+      ],
+      "note": "",
+      "questionNo": 21,
+      "sourceRef": "P320",
+      "questionType": "计算题",
+      "stem": "设 \\(D=\\{(x,y)\\mid0\\le x\\le\\sqrt\\pi,\\ 0\\le y\\le\\sqrt\\pi\\}\\)，计算二重积分 \\(\\displaystyle\\iint_D\\sin(\\max\\{x^2,y^2\\})\\,d\\sigma\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u125-p145",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 145,
+      "printedPage": 146,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 2,
+      "sourceRef": "P333",
+      "questionType": "选择题",
+      "stem": "每一个解 \\(y=y(x)\\) 都满足 \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=0\\) 的微分方程是（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y'+\\dfrac{y}{\\sqrt{1+x^3}}=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y'-\\dfrac{y}{\\sqrt{1+x^3}}=0\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(y'+\\dfrac{y}{\\sqrt[4]{1+x^3}}=0\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(y'-\\dfrac{y}{\\sqrt[4]{1+x^3}}=0\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u126-p146",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 146,
+      "printedPage": 147,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 4,
+      "sourceRef": "P334",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)\\) 在 \\([0,+\\infty)\\) 上连续且有水平渐近线 \\(y=b\\ne0\\)，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "当 \\(a>0\\) 时，\\(y'+ay=f(x)\\) 的任意解都满足 \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=\\dfrac ba\\)"
+        },
+        {
+          "label": "B",
+          "text": "当 \\(a>0\\) 时，\\(y'+ay=f(x)\\) 的任意解都满足 \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=\\dfrac ab\\)"
+        },
+        {
+          "label": "C",
+          "text": "当 \\(a<0\\) 时，\\(y'+ay=f(x)\\) 的任意解都满足 \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=\\dfrac ba\\)"
+        },
+        {
+          "label": "D",
+          "text": "当 \\(a<0\\) 时，\\(y'+ay=f(x)\\) 的任意解都满足 \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=\\dfrac ab\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u127-p146",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 146,
+      "printedPage": 147,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 5,
+      "sourceRef": "P335",
+      "questionType": "选择题",
+      "stem": "若二阶常系数齐次微分方程 \\(y''+ay'+by=0\\) 的解在 \\(( -\\infty,+\\infty)\\) 上均有周期性，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a<0,b<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a>0,b>0\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(a=0,b<0\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(a=0,b>0\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u128-p147",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 147,
+      "printedPage": 148,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 6,
+      "sourceRef": "P335",
+      "questionType": "选择题",
+      "stem": "如果对于微分方程 \\(y''-(2k-4)y'+ky=0\\) 的任一解 \\(y(x)\\)，反常积分 \\(\\displaystyle\\int_0^{+\\infty}y(x)\\,dx\\) 均收敛，则 \\(k\\) 的取值范围为（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(( -\\infty,1]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,1]\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(( -\\infty,2)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\((0,2)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u129-p148",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 148,
+      "printedPage": 149,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P336",
+      "questionType": "填空题",
+      "stem": "微分方程 \\((x+y)\\,dy+(y+1)\\,dx=0\\) 满足 \\(y|_{x=1}=2\\) 的特解是 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u130-p148",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 148,
+      "printedPage": 149,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P336",
+      "questionType": "填空题",
+      "stem": "设当 \\(x\\ge0\\) 时，\\(f(x)\\) 有连续的一阶导数，并且满足 \\(f(x)=-1+x+2\\displaystyle\\int_0^x(x-t)f(t)f'(t)\\,dt\\)，则 \\(f(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u131-p150",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 150,
+      "printedPage": 151,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P337",
+      "questionType": "填空题",
+      "stem": "已知函数 \\(y=y(x)\\) 满足 \\(y'+2\\sqrt2\\,x\\sqrt y=0\\)，且其积分曲线的拐点的横坐标为 \\(-2\\)，则 \\(y(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch15-u132-p150",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourcePage": 150,
+      "printedPage": 151,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "微分方程"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P337",
+      "questionType": "计算题",
+      "stem": "若函数 \\(f(x)\\) 满足关系式 \\(f'(x)+af(x)=\\displaystyle\\int_x^0f(t)\\,dt\\)，\\(a>0\\)，求 \\(\\displaystyle\\int_0^{+\\infty}f(x)\\,dx\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "微分方程"
+      ],
+      "similarQuestionPrompt": "围绕“微分方程”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u133-p162",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 162,
+      "printedPage": 163,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 1,
+      "sourceRef": "P348",
+      "questionType": "选择题",
+      "stem": "设级数 ① \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{1+1/n}}\\)，② \\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{1}{n^{1+1/\\sqrt{\\ln n}}}\\)，则（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "①收敛，②发散"
+        },
+        {
+          "label": "B",
+          "text": "①发散，②收敛"
+        },
+        {
+          "label": "C",
+          "text": "①②均收敛"
+        },
+        {
+          "label": "D",
+          "text": "①②均发散"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u134-p163",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 163,
+      "printedPage": 164,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 3,
+      "sourceRef": "P349",
+      "questionType": "选择题",
+      "stem": "设数列 \\(\\{a_n\\},\\{b_n\\}\\) 满足 \\(0\\le a_{n+1}\\le a_n+b_n\\)，\\(n\\in\\mathbb N_+\\)，则“\\(\\{a_n\\}\\) 收敛”是“\\(\\displaystyle\\sum_{n=1}^{\\infty}b_n\\) 收敛”的（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "充分非必要条件"
+        },
+        {
+          "label": "B",
+          "text": "必要非充分条件"
+        },
+        {
+          "label": "C",
+          "text": "充分必要条件"
+        },
+        {
+          "label": "D",
+          "text": "既非充分又非必要条件"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u135-p165",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 165,
+      "printedPage": 166,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 7,
+      "sourceRef": "P351",
+      "questionType": "证明题",
+      "stem": "设数列 \\(\\{a_n\\},\\{b_n\\}\\) 满足 \\(e^{a_n}-e^{-a_n}=a_n(e^{b_n}+e^{-b_n})\\)，\\(0<a_n<1\\)，\\(0<b_n<1\\)，\\(n=1,2,\\cdots\\)，且 \\(\\displaystyle\\sum_{n=1}^{\\infty}b_n\\) 收敛。证明：(1) \\(a_n>b_n\\)，\\(n=1,2,\\cdots\\)；(2) \\(\\displaystyle\\sum_{n=1}^{\\infty}(b_n-a_n)\\) 收敛。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u136-p166",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 166,
+      "printedPage": 167,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 9,
+      "sourceRef": "P352",
+      "questionType": "计算题",
+      "stem": "设 \\(n\\) 为正整数，\\(y=y_n(x)\\) 是微分方程 \\(xy'-ny=0\\) 满足条件 \\(y_n(1)=(n+1)(n+3)\\) 的解。(1) 求 \\(y_n(x)\\)；(2) 求级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}y_n(x)\\) 的收敛域及和函数。",
+      "options": [],
+      "transcriptionNote": "原标记位于第 (2) 问，结构化题库保留了完整题干。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u137-p166",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 166,
+      "printedPage": 167,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 10,
+      "sourceRef": "P353",
+      "questionType": "计算题",
+      "stem": "设数列 \\(\\{x_n\\}\\) 满足 \\(x_{n+1}=\\dfrac{a+x_n}{1+x_n}\\)，\\(0<a<1\\)，\\(x_1\\ge0\\)。(1) 证明 \\(\\displaystyle\\sum_{n=1}^{\\infty}(x_{n+1}-x_n)\\) 绝对收敛；(2) 求 \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^{n}(x_{i+1}-x_i)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u138-p167",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 167,
+      "printedPage": 168,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 11,
+      "sourceRef": "P353",
+      "questionType": "计算题",
+      "stem": "已知函数 \\(f(x)\\) 满足 \\(f''(x)+f'(x)=0\\) 及 \\(f''(x)+2f'(x)+f(x)=-1\\)，且 \\(f(0)=0\\)。(1) 求 \\(f(x)\\) 的表达式；(2) 设 \\(a>0\\)，级数 \\(\\displaystyle\\sum_{n=2}^{\\infty}f(n^{-a}\\ln n)\\) 收敛，求 \\(a\\) 的取值范围。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u139-p167",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 167,
+      "printedPage": 168,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 12,
+      "sourceRef": "P354",
+      "questionType": "选择题",
+      "stem": "若数项级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n\\) 条件收敛，则幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}na_n(x+2)^n\\) 在 \\(x=-\\sqrt2\\) 处（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "绝对收敛"
+        },
+        {
+          "label": "B",
+          "text": "条件收敛"
+        },
+        {
+          "label": "C",
+          "text": "发散"
+        },
+        {
+          "label": "D",
+          "text": "敛散性不能确定"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u140-p168",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 168,
+      "printedPage": 169,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 14,
+      "sourceRef": "P354",
+      "questionType": "选择题",
+      "stem": "设 \\(\\displaystyle\\sum_{n=0}^{\\infty}a_nx^n\\)、\\(\\displaystyle\\sum_{n=0}^{\\infty}b_nx^n\\) 的收敛半径均为 \\(r\\)（\\(0<r<+\\infty\\)），则以下级数的收敛半径仍为 \\(r\\) 的是（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\displaystyle\\sum_{n=0}^{\\infty}(a_n+b_n)x^n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\displaystyle\\sum_{n=0}^{\\infty}(a_n+nb_n)x^n\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(a_n+\\dfrac{b_n}{2^n}\\right)x^n\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(a_n+\\dfrac{b_n}{n+1}\\right)x^n\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u141-p169",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 169,
+      "printedPage": 170,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 15,
+      "sourceRef": "P355",
+      "questionType": "计算题",
+      "stem": "设 \\(a_n\\) 表示由曲线 \\(y=x^n\\) 与 \\(y=x^{n+1}\\) 所围成的平面图形的面积，\\(n=1,2,\\cdots\\)。(1) 求幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的收敛域与和函数 \\(S(x)\\)；(2) 求数项级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n(n+1)2^n}\\) 的和。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u142-p169",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 169,
+      "printedPage": 170,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 16,
+      "sourceRef": "P356",
+      "questionType": "计算题",
+      "stem": "设 \\(a_n=\\displaystyle\\int_0^1x^n\\sqrt{1-x^2}\\,dx\\)，\\(b_n=\\displaystyle\\int_0^{\\pi/2}\\sin^nt\\,dt\\)，\\(n=1,2,\\cdots\\)，计算 \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{b_n}{(2n+1)a_n}x^{2n}\\)。",
+      "options": [],
+      "transcriptionNote": "求和下标按原题保留为 n=0；原题同时将 a_n、b_n 声明为 n=1,2,…。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u143-p170",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 170,
+      "printedPage": 171,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 18,
+      "sourceRef": "P357",
+      "questionType": "计算题",
+      "stem": "设 \\(a_n=\\displaystyle\\int_0^1x^2\\ln^n x\\,dx\\)，\\(n=0,1,2,\\cdots\\)。(1) 求 \\(a_n\\) 的表达式；(2) 计算 \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{a_n}{n!}\\)。",
+      "options": [],
+      "transcriptionNote": "原标记位于第 (2) 问，结构化题库保留了完整题干。",
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u144-p171",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 171,
+      "printedPage": 172,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 19,
+      "sourceRef": "P357",
+      "questionType": "计算题",
+      "stem": "设函数 \\(y=f(x)\\) 满足 \\(y''+2y'+5y=0\\)，且 \\(f(0)=1\\)，\\(f'(0)=-1\\)。(1) 求 \\(f(x)\\) 的表达式；(2) 设 \\(a_n=\\displaystyle\\int_{n\\pi}^{+\\infty}f(x)\\,dx\\)，求 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u145-p171",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 171,
+      "printedPage": 172,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 20,
+      "sourceRef": "P357",
+      "questionType": "证明题",
+      "stem": "设数列 \\(\\{a_n\\}\\) 满足 \\(a_1=1\\)，\\((n+1)a_{n+1}=\\left(n+\\dfrac12\\right)a_n\\)。证明：当 \\(|x|<1\\) 时，幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 收敛，并求其和函数。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u146-p172",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 172,
+      "printedPage": 173,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 21,
+      "sourceRef": "P358",
+      "questionType": "填空题",
+      "stem": "设级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的系数 \\(a_n\\) 满足关系式 \\(a_n=\\dfrac{a_{n-1}}{n}+1-\\dfrac1n\\)，\\(n=2,3,\\cdots\\)，\\(a_1=2\\)，则当 \\(|x|<1\\) 时，级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u147-p172",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 172,
+      "printedPage": 173,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 22,
+      "sourceRef": "P358",
+      "questionType": "选择题",
+      "stem": "当 \\(|x|<1\\) 时，\\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(1+\\dfrac1{2!}+\\dfrac1{3!}+\\cdots+\\dfrac1{n!}\\right)x^n=\\)（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{e^x-e^{-x}}{1+x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{e^x-e^{-x}}{1-x}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\dfrac{e^x-1}{1+x}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\dfrac{e^x-1}{1-x}\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u148-p173",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 173,
+      "printedPage": 174,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 24,
+      "sourceRef": "P359",
+      "questionType": "证明题",
+      "stem": "设数列 \\(\\{a_n\\},\\{b_n\\}\\) 满足 \\(\\displaystyle\\int_{a_n}^{\\tan a_n}e^{x^2}\\,dx=\\ln(1+b_n)^{b_n}\\)，\\(a_n>0\\)，\\(b_n>0\\)，\\(n=1,2,\\cdots\\)，且级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n\\) 收敛。证明：(1) \\(\\displaystyle\\lim_{n\\to\\infty}b_n=0\\)；(2) 级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{b_n^2}{a_n^2}\\) 收敛。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u149-p174",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 174,
+      "printedPage": 175,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 25,
+      "sourceRef": "P360",
+      "questionType": "计算题",
+      "stem": "求级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n n^2}{2^n}\\) 的和。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u150-p174",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 174,
+      "printedPage": 175,
+      "markerColor": "mixed",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 26,
+      "sourceRef": "P360",
+      "questionType": "计算题",
+      "stem": "设曲线 \\(y=x^{1/n}\\) 与其在点 \\((1,1)\\) 处的切线和 \\(y\\) 轴所围成的平面图形的面积为 \\(a_n\\)，其中 \\(n=2,3,\\cdots\\)。(1) 求 \\(a_n\\) 的表达式；(2) 求幂级数 \\(\\displaystyle\\sum_{n=2}^{\\infty}a_nx^n\\) 的收敛域与和函数 \\(S(x)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u151-p175",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 175,
+      "printedPage": 176,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 28,
+      "sourceRef": "P361",
+      "questionType": "计算题",
+      "stem": "将函数 \\(f(x)=\\dfrac1{x^2}\\) 展开成 \\(x+1\\) 的幂级数，求该幂级数的收敛域，并求 \\(\\displaystyle\\sum_{n=1}^{\\infty}n^2(x+1)^n\\) 的和函数 \\(S(x)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u152-p177",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 177,
+      "printedPage": 178,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 31,
+      "sourceRef": "P362",
+      "questionType": "计算题",
+      "stem": "设 \\(a_n=\\displaystyle\\int_0^{+\\infty}e^{-n^2x^2}\\,dx\\)，\\(n=1,2,\\cdots\\)，求 \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^n a_na_{n+2}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u153-p177",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 177,
+      "printedPage": 178,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 32,
+      "sourceRef": "P362",
+      "questionType": "填空题",
+      "stem": "级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2n-1}{n!}\\) 的和为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u154-p177",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 177,
+      "printedPage": 178,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 33,
+      "sourceRef": "P363",
+      "questionType": "填空题",
+      "stem": "\\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac1{(n+2)\\cdot n!}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u155-p178",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 178,
+      "printedPage": 179,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 34,
+      "sourceRef": "P363",
+      "questionType": "填空题",
+      "stem": "\\(\\displaystyle\\sum_{n=0}^{\\infty}x^2 2^{-nx}\\)（\\(x>0\\)）的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u156-p178",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 178,
+      "printedPage": 179,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 35,
+      "sourceRef": "P363",
+      "questionType": "计算题",
+      "stem": "求级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n(2n-1)}\\) 的和。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u157-p179",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 179,
+      "printedPage": 180,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 37,
+      "sourceRef": "P365",
+      "questionType": "选择题",
+      "stem": "设 \\(f(x)=\\begin{cases}x+1,&0\\le x\\le\\pi,\\\\0,&-\\pi\\le x<0,\\end{cases}\\) \\(S(x)=\\dfrac{a_0}{2}+\\displaystyle\\sum_{n=1}^{\\infty}(a_n\\cos nx+b_n\\sin nx)\\) 是 \\(f(x)\\) 以 \\(2\\pi\\) 为周期的傅里叶级数，则 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n=\\)（　）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\dfrac\\pi4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac\\pi4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-\\dfrac\\pi2\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\dfrac\\pi2\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u158-p180",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 180,
+      "printedPage": 181,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 39,
+      "sourceRef": "P365",
+      "questionType": "填空题",
+      "stem": "设 \\(f(x)\\) 在 \\([-\\pi,\\pi]\\) 上连续且满足 \\(f(x+\\pi)=-f(x)\\)，则 \\(f(x)\\) 的傅里叶系数 \\(a_{2n}=\\underline{\\qquad}\\)（\\(n=1,2,\\cdots\\)）。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    },
+    {
+      "id": "高等数学-ch16-u159-p181",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 181,
+      "printedPage": 182,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "tags": [
+        "无穷级数"
+      ],
+      "note": "",
+      "questionNo": 40,
+      "sourceRef": "P366",
+      "questionType": "计算题",
+      "stem": "设 \\(f(x)=1-x^2\\)（\\(0\\le x\\le\\pi\\)），\\(S(x)=\\dfrac{a_0}{2}+\\displaystyle\\sum_{n=1}^{\\infty}a_n\\cos nx\\)，\\(x\\in\\mathbb R\\)，其中 \\(a_n=\\dfrac2\\pi\\displaystyle\\int_0^\\pi f(x)\\cos nx\\,dx\\)，计算 \\(S(-\\pi)+\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n+1}}{n^2}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "无穷级数"
+      ],
+      "similarQuestionPrompt": "围绕“无穷级数”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "transcriptionStatus": "verified"
+    }
+  ],
+  "schemaVersion": 2,
+  "contentFormat": "markdown+latex"
+};

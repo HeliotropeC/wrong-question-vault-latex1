@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>错题仓 · 数一</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">MISTAKE VAULT · 数学一</p>
+      <h1>错题仓</h1>
+      <p class="subtitle">159 道错题已转写为结构化文本与 LaTeX，可筛选、分析并随时组卷。</p>
+    </div>
+    <div class="header-actions">
+      <button id="backupButton" class="button ghost">备份进度</button>
+      <label class="button ghost file-button">恢复进度<input id="restoreInput" type="file" accept="application/json"></label>
+      <button id="openExportButton" class="button primary">生成错题卷</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="filters" aria-label="错题筛选">
+      <div class="filter-heading">
+        <h2>筛选</h2>
+        <button id="resetButton" class="text-button">重置</button>
+      </div>
+      <label>搜索
+        <input id="searchInput" type="search" placeholder="章节、题号、标签或笔记">
+      </label>
+      <label>科目<select id="subjectFilter"><option value="">全部科目</option></select></label>
+      <label>章节<select id="chapterFilter"><option value="">全部章节</option></select></label>
+      <label>题型<select id="questionTypeFilter"><option value="">全部题型</option></select></label>
+      <label>复习状态
+        <select id="statusFilter">
+          <option value="">全部状态</option>
+          <option>未复习</option><option>复习中</option><option>已掌握</option>
+        </select>
+      </label>
+      <label>错误原因
+        <select id="mistakeFilter">
+          <option value="">全部原因</option>
+          <option>待归类</option><option>概念不清</option><option>思路缺失</option>
+          <option>计算错误</option><option>审题错误</option><option>方法不熟</option>
+        </select>
+      </label>
+      <label>难度
+        <select id="difficultyFilter">
+          <option value="">全部难度</option>
+          <option>未标注</option><option>基础</option><option>中等</option><option>困难</option>
+        </select>
+      </label>
+      <label>原始标记<select id="colorFilter"><option value="">全部颜色</option><option value="red">红圈</option><option value="blue">蓝圈</option><option value="mixed">双色圈</option></select></label>
+      <div class="source-note">
+        <span>数据源</span>
+        <strong id="sourceTitle">张宇《1000题》强化篇</strong>
+        <small>题干和选项为人工校对的文本与 LaTeX；所有个人修改只保存在本机浏览器。</small>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="summary-row">
+        <div><strong id="visibleCount">0</strong><span>当前错题</span></div>
+        <div><strong id="selectedCount">0</strong><span>已选题目</span></div>
+        <div><strong id="masteredCount">0</strong><span>已掌握</span></div>
+        <div class="summary-actions">
+          <button id="selectVisibleButton" class="button compact">全选当前</button>
+          <button id="clearSelectionButton" class="button compact ghost">清空选择</button>
+        </div>
+      </div>
+      <div id="chapterChips" class="chips" aria-label="章节快速筛选"></div>
+      <div id="questionGrid" class="question-grid"></div>
+      <div id="emptyState" class="empty" hidden>没有符合条件的错题，试试放宽筛选。</div>
+    </section>
+  </main>
+
+  <dialog id="exportDialog">
+    <form method="dialog" class="export-panel">
+      <button class="dialog-close" value="cancel" aria-label="关闭">×</button>
+      <p class="eyebrow">PRACTICE SET</p>
+      <h2>生成错题卷</h2>
+      <p id="exportSourceHint" class="muted"></p>
+      <div class="export-options">
+        <label>题目数量<input id="exportCount" type="number" min="1" value="10"></label>
+        <label>排列方式<select id="exportOrder"><option value="random">随机抽取</option><option value="ordered">按章节顺序</option></select></label>
+        <label>每页题数<select id="questionsPerPage"><option value="1">1 题</option><option value="2" selected>2 题</option><option value="3">3 题</option></select></label>
+        <label class="checkbox-line"><input id="includeNotes" type="checkbox"> 包含复盘笔记</label>
+        <label class="checkbox-line"><input id="includeAnswers" type="checkbox"> 包含答案与解析</label>
+      </div>
+      <div class="export-actions">
+        <button id="printPdfButton" type="button" class="button primary">导出 PDF</button>
+        <button id="downloadMarkdownButton" type="button" class="button">Markdown</button>
+        <button id="downloadCsvButton" type="button" class="button">CSV</button>
+        <button id="downloadJsonButton" type="button" class="button">JSON</button>
+      </div>
+      <small>PDF 会打开系统打印窗口，选择“存储为 PDF”即可。</small>
+    </form>
+  </dialog>
+
+  <template id="questionTemplate">
+    <article class="question-card">
+      <div class="card-topline">
+        <label class="select-question"><input type="checkbox"><span>选入题卷</span></label>
+        <div class="card-badges"><span class="type-badge"></span><span class="marker-badge"></span></div>
+      </div>
+      <div class="card-body">
+        <div class="question-title"><strong></strong><span></span></div>
+        <p class="chapter-name"></p>
+        <div class="question-content">
+          <div class="question-stem"></div>
+          <ol class="option-list"></ol>
+        </div>
+        <div class="editor-grid">
+          <label>状态<select data-field="status"><option>未复习</option><option>复习中</option><option>已掌握</option></select></label>
+          <label>难度<select data-field="difficulty"><option>未标注</option><option>基础</option><option>中等</option><option>困难</option></select></label>
+          <label>错误原因<select data-field="mistakeType"><option>待归类</option><option>概念不清</option><option>思路缺失</option><option>计算错误</option><option>审题错误</option><option>方法不熟</option></select></label>
+          <label>题号<input data-field="questionNo" inputmode="numeric" placeholder="可手动补录"></label>
+        </div>
+        <details class="analysis-panel">
+          <summary>答案、解析与同类题数据</summary>
+          <label class="note-label">知识点<textarea data-field="knowledgePoints" rows="2" placeholder="用逗号分隔，如：洛必达法则，等价无穷小"></textarea></label>
+          <label class="note-label">答案<textarea data-field="answer" rows="2" placeholder="填写最终答案，支持 LaTeX"></textarea></label>
+          <label class="note-label">解题分析<textarea data-field="analysis" rows="4" placeholder="记录关键步骤、方法选择和易错点，支持 LaTeX"></textarea></label>
+          <label class="note-label">具体错因<textarea data-field="errorCause" rows="2" placeholder="本题具体错在哪里？"></textarea></label>
+          <label class="note-label">同类题生成提示<textarea data-field="similarQuestionPrompt" rows="3"></textarea></label>
+        </details>
+        <label class="note-label review-note">复盘笔记<textarea data-field="note" rows="2" placeholder="下次如何识别并避免？"></textarea></label>
+      </div>
+    </article>
+  </template>
+
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
