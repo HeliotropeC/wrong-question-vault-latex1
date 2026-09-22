@@ -1,0 +1,298 @@
+{
+  "batchId": "history-2026-09-22-complete-search-v1",
+  "importedAt": "2026-09-22",
+  "scope": "对当前可访问的历史对话索引与错题图片进行全量检索和逐题核对；只导入题干完整、可独立复核的题目，不完整材料进入 pending。",
+  "reviewedSourceFiles": [
+    {"fileName": "052CAC1F-F477-45B6-9D8A-D2480B1EC5D3.png"},
+    {"fileName": "0DBEDA0D-A895-4797-A1A5-D6192E46DB61.png"},
+    {"fileName": "11B69658-1CB2-4769-966C-4D3896195406.png"},
+    {"fileName": "3D8DC7C3-97F8-413C-9715-B5967EA46676.png"},
+    {"fileName": "4D855D79-2293-435F-8BD5-788B9BB69116.png"},
+    {"fileName": "589F50F9-568C-47F9-852F-73D9FB63B90C.png"},
+    {"fileName": "63FDCDCA-8F3C-4A01-B0C9-CF8FBEBBE301.png"},
+    {"fileName": "7117C14A-4B96-4EEC-8850-871E91CBA0F1.png"},
+    {"fileName": "E5A0D032-2145-4A9B-BDD2-B33FCB708792.png"},
+    {"fileName": "IMG_FFF60CED-1272-4C85-AF08-078E545F7BB2.jpeg"}
+  ],
+  "records": [
+    {
+      "candidateId": "20260902-calc-tangent-plane",
+      "action": "add",
+      "question": {
+        "id": "hist-20260902-calc-tangent-plane",
+        "subject": "高等数学", "chapter": 13, "chapterTitle": "多元函数微分学", "questionNo": 1,
+        "sourceRef": "历史对话 2026-09-02 · 切平面", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "切平面", "方向向量", "法向量"], "note": "", "questionType": "计算题",
+        "stem": "平面 \\(\\pi\\) 平行于直线 \\(\\dfrac{x}{2}=\\dfrac{y}{-2}=\\dfrac{z}{1}\\) 和直线 \\(2x=y=z\\)，且与曲面 \\(z=x^2+y^2+1\\) 相切。求平面 \\(\\pi\\) 的方程。",
+        "options": [], "knowledgePoints": ["多元函数微分学", "切平面", "向量叉积"],
+        "answer": "\\(16x+8y-16z+11=0\\)。",
+        "analysis": "两直线的方向向量可取 \\(\\boldsymbol u=(2,-2,1)\\)、\\(\\boldsymbol v=(1,2,2)\\)，故 \\(\\pi\\) 的法向量可取 \\(\\boldsymbol n=\\boldsymbol u\\times\\boldsymbol v=(-6,-3,6)\\sim(2,1,-2)\\)。曲面写为 \\(F=x^2+y^2-z+1=0\\)，切平面法向量为 \\((2x_0,2y_0,-1)\\)。令其与 \\((2,1,-2)\\) 平行，得 \\(x_0=\\frac12,y_0=\\frac14,z_0=\\frac{21}{16}\\)，代入点法式即得结论。",
+        "errorCause": "", "reviewFocus": "先由两条平行直线确定平面法向量，再与曲面梯度建立平行关系。",
+        "similarQuestionPrompt": "改变两条直线的方向向量与二次曲面参数，生成一道求平行于两直线且与曲面相切的平面题，并验证切点与方程。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-conversation", "date": "2026-09-02", "verification": "历史题干与订正记录交叉核对"}],
+        "answerVerification": "独立向量计算复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260902-calc-arc-length",
+      "action": "add",
+      "question": {
+        "id": "hist-20260902-calc-arc-length", "subject": "高等数学", "chapter": 10, "chapterTitle": "一元函数积分学的应用（一）—几何应用", "questionNo": 2,
+        "sourceRef": "历史对话 2026-09-02 · 弧长", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "平面曲线弧长", "三角代换", "sec三次积分"], "note": "", "questionType": "计算题",
+        "stem": "求曲线 \\(y=\\dfrac12x^2\\) 在区间 \\(-2\\le x\\le2\\) 上的弧长。",
+        "options": [], "knowledgePoints": ["定积分几何应用", "弧长公式", "三角代换"],
+        "answer": "\\(2\\sqrt5+\\ln(2+\\sqrt5)\\)。",
+        "analysis": "由弧长公式，\\(L=\\int_{-2}^{2}\\sqrt{1+(y')^2}\\,\\mathrm dx=2\\int_0^2\\sqrt{1+x^2}\\,\\mathrm dx\\)。使用原函数 \\(\\int\\sqrt{1+x^2}\\,\\mathrm dx=\\frac12\\bigl(x\\sqrt{1+x^2}+\\ln(x+\\sqrt{1+x^2})\\bigr)\\)，代入端点得结论。",
+        "errorCause": "三角代换后停在 \\(\\int\\sec^3\\theta\\,\\mathrm d\\theta\\)，未完成该积分。", "reviewFocus": "熟记 \\(\\int\\sqrt{1+x^2}\\,\\mathrm dx\\) 或 \\(\\int\\sec^3\\theta\\,\\mathrm d\\theta\\) 的处理。",
+        "similarQuestionPrompt": "把抛物线系数和积分区间换成新参数，生成一道同难度弧长题，并分别用直接原函数与三角代换核验。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-conversation", "date": "2026-09-02", "verification": "历史题干与计算过程核对"}],
+        "answerVerification": "独立积分复核", "errorCauseEvidence": "历史解题过程"
+      }
+    },
+    {
+      "candidateId": "20260902-la-inverse-matrix",
+      "action": "add",
+      "question": {
+        "id": "hist-20260902-la-inverse-matrix", "subject": "线性代数", "chapter": 2, "chapterTitle": "矩阵", "questionNo": 3,
+        "sourceRef": "历史对话 2026-09-02 · 逆矩阵", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "计算错误",
+        "tags": ["历史对话导入", "逆矩阵", "伴随矩阵", "行列式"], "note": "", "questionType": "计算题",
+        "stem": "求矩阵 \\[P=\\begin{pmatrix}1&1&1\\\\-2&0&1\\\\1&-1&1\\end{pmatrix}\\] 的逆矩阵。",
+        "options": [], "knowledgePoints": ["矩阵", "逆矩阵", "伴随矩阵"],
+        "answer": "\\(P^{-1}=\\dfrac16\\begin{pmatrix}1&-2&1\\\\3&0&-3\\\\2&2&2\\end{pmatrix}\\)。",
+        "analysis": "计算得 \\(|P|=6\\)，余子式转置后得到 \\(P^*=\\begin{pmatrix}1&-2&1\\\\3&0&-3\\\\2&2&2\\end{pmatrix}\\)，故 \\(P^{-1}=|P|^{-1}P^*\\)。可用 \\(PP^{-1}=E\\) 再验算。",
+        "errorCause": "把逆矩阵前的系数写成 \\(\\frac12\\)，没有使用正确的 \\(|P|^{-1}=\\frac16\\)。", "reviewFocus": "伴随矩阵法最后必须除以原矩阵行列式，并用乘积验算。",
+        "similarQuestionPrompt": "生成一个行列式不为零的三阶整数矩阵，要求用伴随矩阵法求逆并通过矩阵乘法核验。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-conversation", "date": "2026-09-02", "verification": "历史矩阵与错因记录核对"}],
+        "answerVerification": "独立计算行列式、伴随矩阵并乘法复核", "errorCauseEvidence": "历史订正记录"
+      }
+    },
+    {
+      "candidateId": "20260905-la-nullspace-choice",
+      "action": "add",
+      "question": {
+        "id": "hist-20260905-la-nullspace-choice", "subject": "线性代数", "chapter": 3, "chapterTitle": "向量", "questionNo": 4,
+        "sourceRef": "历史对话 2026-09-05 · 齐次方程", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "概念不清",
+        "tags": ["历史对话导入", "齐次线性方程组", "基础解系", "秩"], "note": "", "questionType": "选择题",
+        "stem": "已知 \\(\\boldsymbol\\xi_1=(1,0,2)^{\\mathsf T}\\)、\\(\\boldsymbol\\xi_2=(0,1,-1)^{\\mathsf T}\\) 都是齐次线性方程组 \\(A\\boldsymbol x=\\boldsymbol0\\) 的解，则矩阵 \\(A\\) 可能是（　）。",
+        "options": [
+          {"label": "A", "text": "\\(\\begin{pmatrix}-2&1&1\\end{pmatrix}\\)"},
+          {"label": "B", "text": "\\(\\begin{pmatrix}2&0&-1\\\\0&1&1\\end{pmatrix}\\)"},
+          {"label": "C", "text": "\\(\\begin{pmatrix}-1&0&2\\\\0&1&-1\\end{pmatrix}\\)"},
+          {"label": "D", "text": "\\(\\begin{pmatrix}0&1&-1\\\\4&-2&-2\\\\0&1&1\\end{pmatrix}\\)"}
+        ],
+        "knowledgePoints": ["向量", "齐次线性方程组", "秩与零空间"], "answer": "A。",
+        "analysis": "\\(\\boldsymbol\\xi_1,\\boldsymbol\\xi_2\\) 线性无关，所以零空间维数至少为 \\(2\\)，三列矩阵必须满足 \\(r(A)\\le1\\)。同时每个行向量都须与两解正交。向量 \\((-2,1,1)\\) 同时满足 \\((-2,1,1)\\boldsymbol\\xi_1=0\\)、\\((-2,1,1)\\boldsymbol\\xi_2=0\\)，故选 A。",
+        "errorCause": "", "reviewFocus": "先用零空间维数限制矩阵的秩，再逐行检验正交条件。",
+        "similarQuestionPrompt": "给出两个线性无关的三维向量作为齐次方程组的解，设计四个候选矩阵，要求同时用秩和代入检验。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "052CAC1F-F477-45B6-9D8A-D2480B1EC5D3.png", "date": "2026-09-05", "verification": "原始题图目视转写"}],
+        "answerVerification": "逐项代入并用秩—零度定理复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260905-la-left-full-rank",
+      "action": "add",
+      "question": {
+        "id": "hist-20260905-la-left-full-rank", "subject": "线性代数", "chapter": 3, "chapterTitle": "向量", "questionNo": 5,
+        "sourceRef": "历史对话 2026-09-05 · 解集判断", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "概念不清",
+        "tags": ["历史对话导入", "满列秩", "零空间", "同解方程组"], "note": "", "questionType": "判断题",
+        "stem": "设矩阵 \\(P\\) 满列秩。判断齐次线性方程组 \\(PA\\boldsymbol x=\\boldsymbol0\\) 与 \\(A\\boldsymbol x=\\boldsymbol0\\) 是否同解，并说明理由。",
+        "options": [], "knowledgePoints": ["向量", "满列秩", "零空间"],
+        "answer": "同解。",
+        "analysis": "由 \\(A\\boldsymbol x=\\boldsymbol0\\) 显然推出 \\(PA\\boldsymbol x=\\boldsymbol0\\)。反之，令 \\(\\boldsymbol y=A\\boldsymbol x\\)，则 \\(P\\boldsymbol y=\\boldsymbol0\\)。因为 \\(P\\) 满列秩，其零空间只有零向量，所以 \\(\\boldsymbol y=\\boldsymbol0\\)，即 \\(A\\boldsymbol x=\\boldsymbol0\\)。",
+        "errorCause": "", "reviewFocus": "满列秩意味着线性映射 \\(\\boldsymbol y\\mapsto P\\boldsymbol y\\) 为单射。",
+        "similarQuestionPrompt": "改变为满行秩、可逆或秩不足等条件，生成一道判断两个齐次方程组是否同解的题并给反例或证明。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-conversation", "date": "2026-09-05", "verification": "历史命题与结论记录核对"}],
+        "answerVerification": "用零空间定义独立证明", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-cdf-jumps",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-cdf-jumps", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 4,
+        "sourceRef": "历史对话 2026-09-22 · 例2.4", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "概念不清",
+        "tags": ["历史对话导入", "分布函数", "离散型随机变量", "跳跃量"], "note": "", "questionType": "计算题",
+        "stem": "设随机变量 \\(X\\) 的分布函数为 \\[F(x)=\\begin{cases}0,&x<1,\\\\\\frac12,&1\\le x<2,\\\\\\frac56,&2\\le x<3,\\\\1,&x\\ge3.\\end{cases}\\] 求 \\(X\\) 的分布律，并计算 \\(P(2\\le X\\le4)\\)。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "分布函数的跳跃", "离散分布律"],
+        "answer": "\\(P(X=1)=\\frac12,\\ P(X=2)=\\frac13,\\ P(X=3)=\\frac16\\)，且 \\(P(2\\le X\\le4)=\\frac12\\)。",
+        "analysis": "离散点的概率等于分布函数在该点的跳跃量：\\(\\frac12-0=\\frac12\\)、\\(\\frac56-\\frac12=\\frac13\\)、\\(1-\\frac56=\\frac16\\)。所求区间包含取值 \\(2,3\\)，概率为 \\(\\frac13+\\frac16=\\frac12\\)。",
+        "errorCause": "", "reviewFocus": "用 \\(P(X=x_0)=F(x_0)-F(x_0-)\\) 读取跳跃量。",
+        "similarQuestionPrompt": "给出具有三个跳跃点的阶梯型分布函数，要求恢复分布律并计算一个含端点的区间概率。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "3D8DC7C3-97F8-413C-9715-B5967EA46676.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "按跳跃量独立复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-binomial-tail",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-binomial-tail", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 5,
+        "sourceRef": "历史对话 2026-09-22 · 例2.5", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "计算错误",
+        "tags": ["历史对话导入", "连续型随机变量", "二项分布", "至少"], "note": "", "questionType": "计算题",
+        "stem": "随机变量 \\(X\\) 的概率密度为 \\[f(x)=\\begin{cases}\\frac12\\cos\\frac x2,&0\\le x\\le\\pi,\\\\0,&\\text{其他}.\\end{cases}\\] 对 \\(X\\) 作 \\(4\\) 次独立观测，求至少有 \\(3\\) 次观测值大于 \\(\\frac\\pi3\\) 的概率。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "概率密度", "二项分布"],
+        "answer": "\\(\\frac5{16}\\)。",
+        "analysis": "单次成功概率 \\(p=P(X>\\frac\\pi3)=\\int_{\\pi/3}^{\\pi}\\frac12\\cos\\frac x2\\,\\mathrm dx=\\left.\\sin\\frac x2\\right|_{\\pi/3}^{\\pi}=\\frac12\\)。令成功次数 \\(N\\sim B(4,\\frac12)\\)，则 \\(P(N\\ge3)=\\binom43(\\frac12)^4+(\\frac12)^4=\\frac5{16}\\)。",
+        "errorCause": "单次事件概率积分计算错误，导致后续二项分布参数错误。", "reviewFocus": "先准确计算单次成功概率，再识别独立重复试验的二项分布。",
+        "similarQuestionPrompt": "更换三角密度、阈值与观测次数，生成一道先积分求成功概率再计算二项分布尾概率的题。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "0DBEDA0D-A895-4797-A1A5-D6192E46DB61.png", "date": "2026-09-22", "verification": "原始题图及手写过程目视核对"}],
+        "answerVerification": "独立积分并按二项分布复核", "errorCauseEvidence": "历史手写过程"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-binomial-modes",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-binomial-modes", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 7,
+        "sourceRef": "历史对话 2026-09-22 · 例2.7", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "二项分布", "众数", "独立抽样"], "note": "", "questionType": "计算题",
+        "stem": "随机变量 \\(X\\) 的分布律为 \\[\\begin{array}{c|ccc}X&1&2&3\\\\\\hline P&0.2&0.5&0.3\\end{array}\\]。独立观测 \\(X\\) 共 \\(9\\) 次，以 \\(K\\) 表示观测值等于 \\(2\\) 的次数。求使 \\(P(K=k)\\) 取得最大值的 \\(k\\)。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "二项分布", "二项分布众数"],
+        "answer": "\\(k=4\\) 或 \\(k=5\\)。",
+        "analysis": "每次观测到 \\(2\\) 的概率为 \\(p=0.5\\)，故 \\(K\\sim B(9,0.5)\\)。二项分布众数由 \\((n+1)p=5\\) 决定；当该数为整数时有两个相邻众数 \\(4,5\\)。也可比较相邻概率之比验证。",
+        "errorCause": "", "reviewFocus": "当 \\((n+1)p\\) 为整数时，二项分布有两个众数。",
+        "similarQuestionPrompt": "更换离散分布概率与样本量，使二项分布分别出现一个众数和两个众数。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "63FDCDCA-8F3C-4A01-B0C9-CF8FBEBBE301.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "按二项分布众数公式与相邻概率比双重复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-geometric-recurrence",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-geometric-recurrence", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 8,
+        "sourceRef": "历史对话 2026-09-22 · 例2.8", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "离散型随机变量", "递推分布律", "几何级数"], "note": "", "questionType": "计算题",
+        "stem": "设离散型随机变量 \\(X\\) 的可能取值为正整数，且 \\[P(X=k)=\\frac15P(X=k-1),\\qquad k=2,3,\\ldots\\] 求 \\(X\\) 的分布律。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "递推关系", "几何级数归一化"],
+        "answer": "\\(P(X=k)=\\dfrac45\\left(\\dfrac15\\right)^{k-1},\\ k=1,2,\\ldots\\)。",
+        "analysis": "令 \\(p_1=P(X=1)\\)，递推得 \\(P(X=k)=p_1(\\frac15)^{k-1}\\)。利用总概率为 \\(1\\)：\\(p_1\\sum_{j=0}^{\\infty}(\\frac15)^j=p_1\\frac54=1\\)，故 \\(p_1=\\frac45\\)。",
+        "errorCause": "", "reviewFocus": "递推式只确定比例，还要用概率和为 \\(1\\) 求首项。",
+        "similarQuestionPrompt": "把递推比例改为另一个 \\((0,1)\\) 内常数，要求用归一化条件求完整分布律。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "E5A0D032-2145-4A9B-BDD2-B33FCB708792.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "递推与无穷级数归一化复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-negative-binomial",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-negative-binomial", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 9,
+        "sourceRef": "历史对话 2026-09-22 · 例2.9", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "指数分布", "负二项分布", "停止试验"], "note": "", "questionType": "计算题",
+        "stem": "随机变量 \\(X\\) 的概率密度为 \\[f(x)=\\begin{cases}2^{-x}\\ln2,&x>0,\\\\0,&\\text{其他}.\\end{cases}\\] 对 \\(X\\) 作独立重复观测，直到第 \\(2\\) 次出现观测值大于 \\(3\\) 时停止。以 \\(Y\\) 表示总观测次数，求 \\(Y\\) 的分布律。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "指数分布尾概率", "负二项分布"],
+        "answer": "\\(P(Y=k)=\\binom{k-1}{1}\\left(\\frac18\\right)^2\\left(\\frac78\\right)^{k-2},\\quad k=2,3,\\ldots\\)。",
+        "analysis": "单次成功概率 \\(p=P(X>3)=\\int_3^\\infty2^{-x}\\ln2\\,\\mathrm dx=2^{-3}=\\frac18\\)。事件 \\(Y=k\\) 要求前 \\(k-1\\) 次中恰有一次成功且第 \\(k\\) 次成功，因此概率为 \\(\\binom{k-1}{1}p(1-p)^{k-2}p\\)。",
+        "errorCause": "", "reviewFocus": "停止时刻的最后一次必须成功，组合位置只在前 \\(k-1\\) 次中选择。",
+        "similarQuestionPrompt": "更换指数分布参数、阈值和目标成功次数，生成一道停止试验的负二项分布题。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "E5A0D032-2145-4A9B-BDD2-B33FCB708792.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "尾概率积分与停止时刻组合计数复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-symmetric-density",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-symmetric-density", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 11,
+        "sourceRef": "历史对话 2026-09-22 · 例2.11", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "概念不清",
+        "tags": ["历史对话导入", "对称分布", "概率密度", "分布函数"], "note": "", "questionType": "选择题",
+        "stem": "设连续型随机变量 \\(X\\) 的分布函数为 \\(F(x)\\)，概率密度为 \\(f(x)\\)。若 \\(X\\) 与 \\(-X\\) 同分布，则下列结论正确的是（　）。",
+        "options": [
+          {"label": "A", "text": "\\(F(x)=F(-x)\\)"}, {"label": "B", "text": "\\(F(x)=-F(-x)\\)"},
+          {"label": "C", "text": "\\(f(x)=f(-x)\\)"}, {"label": "D", "text": "\\(f(x)=-f(-x)\\)"}
+        ],
+        "knowledgePoints": ["随机变量及其分布", "对称分布", "密度函数奇偶性"], "answer": "C。",
+        "analysis": "\\(X\\) 与 \\(-X\\) 同分布表示分布关于原点对称。连续情形下密度为偶函数，即 \\(f(x)=f(-x)\\)。相应的分布函数关系是 \\(F(x)=1-F(-x)\\)，而不是选项 A 或 B。",
+        "errorCause": "", "reviewFocus": "区分对称分布的密度关系与分布函数关系。",
+        "similarQuestionPrompt": "围绕关于某个非零中心对称的连续分布，设计密度与分布函数关系的选择题。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "11B69658-1CB2-4769-966C-4D3896195406.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "由变量变换与连续分布对称性复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-density-transform",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-density-transform", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 12,
+        "sourceRef": "历史对话 2026-09-22 · 例2.12", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "概念不清",
+        "tags": ["历史对话导入", "概率密度性质", "归一化", "变量替换"], "note": "", "questionType": "选择题",
+        "stem": "已知 \\(f(x)\\) 是概率密度，则下列函数中必为概率密度的是（　）。",
+        "options": [
+          {"label": "A", "text": "\\(f(2x)\\)"}, {"label": "B", "text": "\\(2f(x)\\)"},
+          {"label": "C", "text": "\\(\\lvert f(-x+2)\\rvert\\)"}, {"label": "D", "text": "\\(f(\\lvert x\\rvert)\\)"}
+        ],
+        "knowledgePoints": ["随机变量及其分布", "概率密度的非负性", "概率密度归一化"], "answer": "C。",
+        "analysis": "概率密度必须非负且在全实轴积分为 \\(1\\)。因 \\(f\\ge0\\)，C 中绝对值不改变函数；令 \\(u=-x+2\\)，斜率绝对值为 \\(1\\)，故积分仍为 \\(1\\)。A 的积分为 \\(\\frac12\\)，B 的积分为 \\(2\\)，D 的积分一般不等于 \\(1\\)。",
+        "errorCause": "只检查了函数非负，没有检查全实轴积分是否等于 \\(1\\)。", "reviewFocus": "判断概率密度时必须同时检验非负性和归一化。",
+        "similarQuestionPrompt": "设计四个由已知密度经伸缩、平移、反射或取绝对值得到的函数，要求判断哪个仍必为密度。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "4D855D79-2293-435F-8BD5-788B9BB69116.png", "date": "2026-09-22", "verification": "原始题图目视转写"}],
+        "answerVerification": "逐项换元计算积分复核", "errorCauseEvidence": "历史订正记录"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-floor-function",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-floor-function", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 13,
+        "sourceRef": "历史对话 2026-09-22 · 例2.13", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "建模错误",
+        "tags": ["历史对话导入", "概率密度", "取整函数", "分段讨论"], "note": "", "questionType": "计算题",
+        "stem": "设随机变量 \\(X\\) 的概率密度为 \\[f(x)=\\begin{cases}kx,&0<x<2,\\\\0,&\\text{其他},\\end{cases}\\] 令 \\(Y=\\lfloor X\\rfloor\\)，其中 \\(\\lfloor x\\rfloor\\) 表示不超过 \\(x\\) 的最大整数。求 \\(P(X+Y<2)\\)。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "取整函数", "分段事件"],
+        "answer": "\\(\\frac14\\)。",
+        "analysis": "先由 \\(\\int_0^2kx\\,\\mathrm dx=1\\) 得 \\(k=\\frac12\\)。当 \\(0<X<1\\) 时 \\(Y=0\\)，不等式恒成立；当 \\(1\\le X<2\\) 时 \\(Y=1\\)，要求 \\(X<1\\)，无解。因此事件等价于 \\(0<X<1\\)，概率为 \\(\\int_0^1\\frac x2\\,\\mathrm dx=\\frac14\\)。",
+        "errorCause": "没有按 \\(\\lfloor X\\rfloor\\) 的取值区间分段，把含取整函数的不等式直接作普通代数变形。", "reviewFocus": "遇到取整函数先按整数区间划分样本空间。",
+        "similarQuestionPrompt": "更换密度区间和含取整函数的不等式，生成一道必须分段讨论事件区域的概率题。",
+        "transcriptionStatus": "verified", "historySources": [{"kind": "history-image", "fileName": "7117C14A-4B96-4EEC-8850-871E91CBA0F1.png", "date": "2026-09-22", "verification": "原始题图及手写答案目视核对"}],
+        "answerVerification": "归一化与分段积分独立复核", "errorCauseEvidence": "历史手写过程"
+      }
+    },
+    {
+      "candidateId": "20260922-prob-exponential-wait",
+      "action": "add",
+      "question": {
+        "id": "hist-20260922-prob-exponential-wait", "subject": "概率论与数理统计", "chapter": 2, "chapterTitle": "随机变量及其分布", "questionNo": 14,
+        "sourceRef": "历史对话 2026-09-22 · 例2.14", "sourceType": "history", "sourcePage": null, "printedPage": null,
+        "markerColor": "history", "status": "未复习", "difficulty": "未标注", "mistakeType": "方法不熟",
+        "tags": ["历史对话导入", "指数分布", "无记忆性", "等待时间"], "note": "", "questionType": "计算题",
+        "stem": "甲办理一项业务所需时间 \\(T\\) 服从参数为 \\(\\lambda\\) 的指数分布，且 \\(P(T>2)=P(T\\le2)\\)。当甲正在办理业务时，乙到达并排队等候。求乙等待时间超过 \\(5\\) 的概率。",
+        "options": [], "knowledgePoints": ["随机变量及其分布", "指数分布", "无记忆性"],
+        "answer": "\\(2^{-5/2}=\\dfrac{\\sqrt2}{8}\\)。",
+        "analysis": "由 \\(e^{-2\\lambda}=1-e^{-2\\lambda}\\) 得 \\(e^{-2\\lambda}=\\frac12\\)，所以 \\(\\lambda=\\frac{\\ln2}{2}\\)。指数分布具有无记忆性，乙到达后甲的剩余办理时间仍服从同参数指数分布，故 \\(P(W>5)=e^{-5\\lambda}=2^{-5/2}=\\frac{\\sqrt2}{8}\\)。",
+        "errorCause": "", "reviewFocus": "由等概率条件先确定参数，再用指数分布的无记忆性处理剩余时间。",
+        "similarQuestionPrompt": "改变已知尾概率时点与等待阈值，生成一道利用指数分布无记忆性的排队等待题。",
+        "transcriptionStatus": "verified", "historySources": [
+          {"kind": "history-image", "fileName": "589F50F9-568C-47F9-852F-73D9FB63B90C.png", "date": "2026-09-22", "verification": "原始题图目视转写"},
+          {"kind": "history-image", "fileName": "IMG_FFF60CED-1272-4C85-AF08-078E545F7BB2.jpeg", "date": "2026-09-22", "verification": "手写过程交叉核对"}
+        ],
+        "answerVerification": "参数方程与无记忆性独立复核", "errorCauseEvidence": "未确认个人具体错因"
+      }
+    }
+  ],
+  "pending": [
+    {"key": "20260731-log-tangent-area", "date": "2026-07-31", "topic": "曲线 y=ln(sqrt(x)) 的切线与面积函数", "reason": "可恢复函数、切点和部分答案，但面积区域的完整边界条件未恢复，不猜写题干。"},
+    {"key": "20260828-ode-system", "date": "2026-08-28", "topic": "含 f''+f' 与 f''+2f'+f=-1 的微分方程", "reason": "历史摘要包含两组关系但未恢复原题完整问法，无法确定它们是并列条件还是推导过程。"},
+    {"key": "20260904-generalized-eigenvectors", "date": "2026-09-04", "topic": "Aalpha=alpha+beta 的广义特征向量", "reason": "恢复出的矩阵条件与历史结论存在维数冲突，需原题图确认后才能入库。"},
+    {"key": "20260907-vector-linear-relation", "date": "2026-09-07", "topic": "alpha3=3alpha1+2alpha2 的齐次关系", "reason": "仅恢复向量关系和一个基础解，原题的完整求问与其他条件缺失。"},
+    {"key": "20260907-adjugate-parameter", "date": "2026-09-07", "topic": "含参数矩阵的伴随矩阵与基础解系", "reason": "恢复了一个数值矩阵、参数答案和伴随矩阵，但参数在原矩阵中的位置及完整问法缺失。"},
+    {"key": "20260907-max-independent-group", "date": "2026-09-07", "topic": "向量组的极大线性无关组", "reason": "只恢复结论为 alpha1、alpha2、alpha4，原向量坐标未恢复。"}
+  ],
+  "excluded": [
+    {"topic": "梯度场与闭曲线积分讲解", "reason": "属于概念讲解，未发现可确认的个人错题题干。"},
+    {"topic": "GitHub 连接及仓库截图", "reason": "非数学错题材料。"}
+  ]
+}
