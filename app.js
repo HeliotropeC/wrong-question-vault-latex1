@@ -1,7 +1,7 @@
 (() => {
   const source = window.WRONG_QUESTIONS || { questions: [], count: 0 };
   const storageKey = "wrong-question-vault:v2";
-  const colorNames = { red: "红圈", blue: "蓝圈", mixed: "双色圈" };
+  const colorNames = { red: "红圈", blue: "蓝圈", mixed: "双色圈", history: "历史对话" };
   const editableFields = [
     "status", "difficulty", "mistakeType", "questionNo", "note", "answer",
     "analysis", "errorCause", "knowledgePoints", "similarQuestionPrompt"
@@ -15,7 +15,7 @@
   const elements = {
     grid: $("questionGrid"), template: $("questionTemplate"), empty: $("emptyState"),
     search: $("searchInput"), subject: $("subjectFilter"), chapter: $("chapterFilter"),
-    questionType: $("questionTypeFilter"), status: $("statusFilter"),
+    origin: $("sourceFilter"), questionType: $("questionTypeFilter"), status: $("statusFilter"),
     mistake: $("mistakeFilter"), difficulty: $("difficultyFilter"), color: $("colorFilter"),
     chips: $("chapterChips"), exportDialog: $("exportDialog")
   };
@@ -33,6 +33,14 @@
   function chapterKey(q) { return `${q.subject}|${q.chapter}`; }
   function questionLabel(q) { return `第${q.questionNo}题`; }
   function listText(value) { return Array.isArray(value) ? value.join("，") : (value || ""); }
+  function sourceLabel(q) {
+    return q.sourcePage == null ? q.sourceRef : q.sourceRef + " · PDF 第 " + q.sourcePage + " 页";
+  }
+  function compareQuestions(a, b) {
+    return a.subject.localeCompare(b.subject, "zh-CN") ||
+      a.chapter - b.chapter || (a.sourcePage ?? Infinity) - (b.sourcePage ?? Infinity) ||
+      a.questionNo - b.questionNo || a.id.localeCompare(b.id);
+  }
 
   function persist(question, field, value) {
     saved[question.id] ||= {};
@@ -51,14 +59,14 @@
       elements.questionType.add(new Option(type, type));
     });
     const chapters = [...new Map(questions.map(q => [chapterKey(q), q])).values()]
-      .sort((a, b) => a.sourcePage - b.sourcePage);
+      .sort(compareQuestions);
     chapters.forEach(q => {
       const label = `${q.subject} · 第${q.chapter}章 ${q.chapterTitle}`;
       elements.chapter.add(new Option(label, chapterKey(q)));
       const chip = document.createElement("button");
       chip.className = "chip";
       chip.dataset.chapter = chapterKey(q);
-      chip.textContent = `第${q.chapter}章 ${q.chapterTitle}`;
+      chip.textContent = q.subject + " · " + q.chapterTitle;
       chip.addEventListener("click", () => {
         elements.chapter.value = elements.chapter.value === chip.dataset.chapter ? "" : chip.dataset.chapter;
         render();
@@ -72,12 +80,17 @@
     return allQuestions().filter(q => {
       const haystack = [
         q.subject, q.chapterTitle, q.questionType, questionLabel(q), q.sourceRef,
-        q.stem, q.note, q.answer, q.analysis, q.errorCause, q.similarQuestionPrompt,
+        q.stem, q.note, q.answer, q.analysis, q.errorCause, q.reviewFocus,
+        q.transcriptionNote, q.similarQuestionPrompt,
         ...(q.tags || []), ...(q.knowledgePoints || []),
         ...(q.options || []).map(option => `${option.label} ${option.text}`)
       ].join(" ").toLowerCase();
       return (!term || haystack.includes(term)) &&
         (!elements.subject.value || q.subject === elements.subject.value) &&
+        (!elements.origin.value ||
+          (elements.origin.value === "history" && q.historySources?.length) ||
+          (elements.origin.value === "new-history" && q.sourceType === "history") ||
+          (elements.origin.value === "book" && q.sourceType !== "history")) &&
         (!elements.chapter.value || chapterKey(q) === elements.chapter.value) &&
         (!elements.questionType.value || q.questionType === elements.questionType.value) &&
         (!elements.status.value || q.status === elements.status.value) &&
@@ -120,9 +133,16 @@
     badge.classList.add(question.markerColor);
     card.querySelector(".type-badge").textContent = question.questionType;
     card.querySelector(".question-title strong").textContent = questionLabel(question);
-    card.querySelector(".question-title span").textContent = `${question.sourceRef} · PDF 第 ${question.sourcePage} 页`;
+    card.querySelector(".question-title span").textContent = sourceLabel(question);
     card.querySelector(".chapter-name").textContent = `${question.subject} · 第${question.chapter}章 ${question.chapterTitle}`;
     card.querySelector(".question-stem").textContent = question.stem;
+    const context = card.querySelector(".history-context");
+    const contextParts = [
+      question.transcriptionNote && "来源说明：" + question.transcriptionNote,
+      question.reviewFocus && "复盘重点：" + question.reviewFocus
+    ].filter(Boolean);
+    if (!contextParts.length) context.remove();
+    else context.querySelector("p").textContent = contextParts.join("\n");
     const optionList = card.querySelector(".option-list");
     if (!question.options?.length) optionList.remove();
     else question.options.forEach(option => {
@@ -157,7 +177,7 @@
         [pool[i], pool[j]] = [pool[j], pool[i]];
       }
     } else {
-      pool.sort((a, b) => a.sourcePage - b.sourcePage || a.questionNo - b.questionNo);
+      pool.sort(compareQuestions);
     }
     return pool.slice(0, count);
   }
@@ -231,7 +251,7 @@
       lines.push(
         `## ${index + 1}. ${questionLabel(q)}`, "",
         `- 分类：${q.subject} / 第${q.chapter}章 ${q.chapterTitle} / ${q.questionType}`,
-        `- 来源：${q.sourceRef}（PDF 第 ${q.sourcePage} 页）`,
+        `- 来源：${sourceLabel(q)}`,
         `- 知识点：${listText(q.knowledgePoints)}`, "", q.stem, ""
       );
       (q.options || []).forEach(option => lines.push(`${option.label}. ${option.text}`));
@@ -271,10 +291,10 @@
     } catch (error) { alert(`恢复失败：${error.message}`); }
   }
 
-  [elements.search, elements.subject, elements.chapter, elements.questionType, elements.status, elements.mistake, elements.difficulty, elements.color]
+  [elements.search, elements.subject, elements.origin, elements.chapter, elements.questionType, elements.status, elements.mistake, elements.difficulty, elements.color]
     .forEach(control => control.addEventListener(control === elements.search ? "input" : "change", render));
   $("resetButton").addEventListener("click", () => {
-    [elements.search, elements.subject, elements.chapter, elements.questionType, elements.status, elements.mistake, elements.difficulty, elements.color]
+    [elements.search, elements.subject, elements.origin, elements.chapter, elements.questionType, elements.status, elements.mistake, elements.difficulty, elements.color]
       .forEach(control => control.value = "");
     render();
   });
@@ -288,6 +308,7 @@
   $("backupButton").addEventListener("click", backup);
   $("restoreInput").addEventListener("change", event => event.target.files[0] && restore(event.target.files[0]));
   $("sourceTitle").textContent = source.title || "错题库";
+  $("questionCountSubtitle").textContent = source.questions.length + " 道文本与 LaTeX 错题，支持科目、章节、错因和历史来源筛选。";
   populateFilters();
   render();
 })();

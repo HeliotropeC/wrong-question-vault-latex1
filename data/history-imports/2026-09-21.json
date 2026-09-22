@@ -1,0 +1,1587 @@
+{
+  "batchId": "history-2026-09-21-v1",
+  "importedAt": "2026-09-21",
+  "scope": "本次可检索并核对的历史错题，不代表已遍历全部历史对话。",
+  "reviewedSourceFiles": [
+    {
+      "fileId": "libfile_57546c1e4cac8191840ecc95b50b9567",
+      "fileName": "FC56C887-664C-4078-BC44-4B367DB6C239.png"
+    },
+    {
+      "fileId": "libfile_86427e78c3e08191b8330c3d2bb66331",
+      "fileName": "0873C077-A863-4F51-8895-026128B08F5B.png"
+    },
+    {
+      "fileId": "libfile_99b86f00534881918da18733e49c055c",
+      "fileName": "B719C792-7012-438E-ADF4-8D53193A4150.png"
+    },
+    {
+      "fileId": "libfile_b6341d3deedc8191a47877dd4965299a",
+      "fileName": "38CC60C5-A1ED-4AFC-B492-99DFC14BE290.png"
+    },
+    {
+      "fileId": "libfile_14f60ced8ef48191981be4dd194d93eb",
+      "fileName": "38868ED9-D6F6-4779-ADAA-32097C11F981.png"
+    },
+    {
+      "fileId": "libfile_6d66139c4cdc8191a1b243a1a1db6cd4",
+      "fileName": "76010D83-1985-4D06-BE24-2F069A919EBA.png"
+    },
+    {
+      "fileId": "libfile_a174b15e728481919900313d59c3b679",
+      "fileName": "A973F71D-CFC0-49DF-ADB1-CC42BF3939B2.png"
+    },
+    {
+      "fileId": "libfile_ac4d117ee7448191918287f702dd1ddf",
+      "fileName": "E2960067-DDE1-4390-A132-12053F7065B5.png"
+    },
+    {
+      "fileId": "libfile_c9b7f5029cdc8191870ace7c796704f5",
+      "fileName": "474B3CB0-5623-424D-8D3D-8146A5849EE4.png"
+    },
+    {
+      "fileId": "libfile_ac7f52c9178c8191b3d28c0266622bb1",
+      "fileName": "186AD621-DA45-4B3B-A2D3-19D81AD74F11.png"
+    },
+    {
+      "fileId": "libfile_2dfb42e5f0688191bd3d61f906abac29",
+      "fileName": "C8196F87-DAA6-4B6A-8121-17B6668EABA3.png",
+      "date": "2026-09-14"
+    },
+    {
+      "fileId": "libfile_c687eca708d48191a1591500a3441492",
+      "fileName": "1BE99A56-B842-41A0-B22E-38160F5E4304.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_ede1c6ee961c8191b1d4f81b8dea0b68",
+      "fileName": "9EFD4DD6-7ECC-4465-BEED-5E88036A6092.png",
+      "date": "2026-09-14"
+    },
+    {
+      "fileId": "libfile_eb04befc1ed88191ad906d5f24fd95a4",
+      "fileName": "158C8B99-36F6-45AE-99DB-A9DE25BB5112.png",
+      "date": "2026-09-14"
+    },
+    {
+      "fileId": "libfile_4a0329ced6a08191b9e71298786d75d0",
+      "fileName": "CBC490FD-65C7-4374-A175-A7822AFD2406.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_d7d0c1436fa88191a7b496082c71e726",
+      "fileName": "08FF0C9E-5B6A-426F-9CB9-7EB29F791938.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_4aae80a535b88191a2618c3da234ced0",
+      "fileName": "7E460139-9F12-4105-A765-B412437CA826.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_422b79215cd881919aae4b1a79137864",
+      "fileName": "162A1CAA-C719-412A-A40F-632D9889DDF7.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_1f55eff9ec60819186d5a10242fe3539",
+      "fileName": "B438CEA1-7A2E-4F12-B45E-E812ECE30457.png",
+      "date": "2026-09-15"
+    },
+    {
+      "fileId": "libfile_a492f535b3c081919fcff6f8f4c3e4e7",
+      "fileName": "DED5FF56-AAE2-4B2A-B365-A750617344F9.png",
+      "date": "2026-09-20"
+    },
+    {
+      "fileId": "libfile_c138ff23a0108191a77af6420ff5dc91",
+      "fileName": "4126ED82-5185-40B0-B0C2-005E190D6FE3.png",
+      "date": "2026-09-20"
+    },
+    {
+      "fileId": "libfile_d0eb9844567c81918cc55fc663ca6c51",
+      "fileName": "D3CB4AA8-DB72-4034-AE70-971C04E82EC5.png",
+      "date": "2026-09-16"
+    },
+    {
+      "fileId": "libfile_49c454fbd2788191b7570d6426a3c9f9",
+      "fileName": "6597BF2B-CF0D-40B2-86F5-EBC9E480BAF5.png",
+      "date": "2026-09-20"
+    },
+    {
+      "fileId": "libfile_487fcde2cdfc8191b0403649449f0c2f",
+      "fileName": "2CE55EE7-5862-4C07-8A68-5020B78AA451.png",
+      "date": "2026-09-20"
+    },
+    {
+      "fileId": "libfile_15f55a9e8ecc81919bb0a44a240ad629",
+      "fileName": "4362DB18-7C96-4AD0-B153-7E8D1EF25C47.jpeg",
+      "date": "2026-09-20"
+    }
+  ],
+  "records": [
+    {
+      "candidateId": "20260921-prob-cdf-mixture",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-cdf-mixture",
+        "subject": "概率论与数理统计",
+        "chapter": 2,
+        "chapterTitle": "随机变量及其分布",
+        "questionNo": 3,
+        "sourceRef": "历史对话 2026-09-21 · 例2.3",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "混合型分布",
+          "条件均匀分布",
+          "分布函数右连续"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "假设随机变量 \\(X\\) 的绝对值不大于 \\(1\\)，\\(P(X=-1)=\\frac18\\)，\\(P(X=1)=\\frac14\\)。在事件 \\(\\{-1<X<1\\}\\) 出现的条件下，\\(X\\) 在 \\((-1,1)\\) 内任一子区间上取值的条件概率与该子区间长度成正比。求分布函数 \\(F(x)=P(X\\le x)\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "混合型分布",
+          "条件均匀分布",
+          "分布函数右连续"
+        ],
+        "answer": "\\(F(x)=\\begin{cases}0,&x<-1,\\\\\\frac18+\\frac5{16}(x+1),&-1\\le x<1,\\\\1,&x\\ge1.\\end{cases}\\)",
+        "analysis": "区间内概率质量为 \\(1-\\frac18-\\frac14=\\frac58\\)。条件密度为 \\(\\frac12\\)，故无条件连续部分密度为 \\(\\frac58\\cdot\\frac12=\\frac5{16}\\)。对 \\(-1\\le x<1\\)，累计概率必须加左端点质量 \\(\\frac18\\)；在 \\(x=1\\) 再跳跃 \\(\\frac14\\)。",
+        "errorCause": "",
+        "reviewFocus": "区分条件分布和无条件分布；累计概率不能漏掉端点质量。",
+        "similarQuestionPrompt": "围绕混合型分布、条件均匀分布、分布函数右连续生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_57546c1e4cac8191840ecc95b50b9567",
+            "fileName": "FC56C887-664C-4078-BC44-4B367DB6C239.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "sourceLabel": "例2.3",
+        "relatedGroup": "mixed-cdf-endpoints"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-cdf-parameters",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-cdf-parameters",
+        "subject": "概率论与数理统计",
+        "chapter": 2,
+        "chapterTitle": "随机变量及其分布",
+        "questionNo": 2,
+        "sourceRef": "历史对话 2026-09-21 · 例2.2",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "概念不清",
+        "tags": [
+          "历史对话导入",
+          "分布函数右连续",
+          "端点开闭",
+          "左极限"
+        ],
+        "note": "",
+        "questionType": "填空题",
+        "stem": "已知随机变量 \\(X\\) 的分布函数为 \\[F(x)=\\begin{cases}0,&x<-1,\\\\\\frac18,&x=-1,\\\\ax+b,&-1<x<1,\\\\1,&x\\ge1.\\end{cases}\\] 若 \\(P(-1<X<1)=\\frac58\\)，求 \\(a,b\\) 及 \\(P(-1\\le X<0)\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "分布函数右连续",
+          "端点开闭",
+          "左极限"
+        ],
+        "answer": "\\(a=\\frac5{16},\\quad b=\\frac7{16},\\quad P(-1\\le X<0)=\\frac7{16}\\)。",
+        "analysis": "由右连续性 \\(F(-1+)=F(-1)\\)，得 \\(-a+b=\\frac18\\)。又 \\(P(-1<X<1)=F(1-)-F(-1)=a+b-\\frac18=\\frac58\\)，故 \\(a+b=\\frac34\\)。解得 \\(a=\\frac5{16},b=\\frac7{16}\\)。最后 \\(P(-1\\le X<0)=F(0-)-F(-1-)=b-0=\\frac7{16}\\)。",
+        "errorCause": "混淆分布函数与区间概率，忽略左极限及端点是否计入。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕分布函数右连续、端点开闭、左极限生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_86427e78c3e08191b8330c3d2bb66331",
+            "fileName": "0873C077-A863-4F51-8895-026128B08F5B.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "历史订正检索；未将系统复盘建议冒充用户原始笔迹",
+        "sourceLabel": "例2.2",
+        "relatedGroup": "mixed-cdf-endpoints"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-zero-event",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-zero-event",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 1,
+        "sourceRef": "历史对话 2026-09-21 · 题1",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "概念不清",
+        "tags": [
+          "历史对话导入",
+          "零概率事件",
+          "事件包含",
+          "互斥与独立"
+        ],
+        "note": "",
+        "questionType": "选择题",
+        "stem": "设 \\(P(A)=P(AB)\\)，且 \\(P(A),P(B)\\in(0,1)\\)。下列四个结论中，必然正确的个数为（ ）。① \\(A\\) 与 \\(\\overline B\\) 互斥；② \\(A\\subset B\\)；③ \\(A\\) 与 \\(B\\) 独立；④ \\(\\overline A\\cup B=\\Omega\\)。",
+        "options": [
+          {
+            "label": "A",
+            "text": "0"
+          },
+          {
+            "label": "B",
+            "text": "1"
+          },
+          {
+            "label": "C",
+            "text": "2"
+          },
+          {
+            "label": "D",
+            "text": "3"
+          }
+        ],
+        "knowledgePoints": [
+          "零概率事件",
+          "事件包含",
+          "互斥与独立"
+        ],
+        "answer": "A（0个；按一般概率空间的严格集合定义）。",
+        "analysis": "由条件只能推出 \\(P(A\\cap\\overline B)=0\\)，不能推出 \\(A\\cap\\overline B=\\varnothing\\)。例如 \\(\\Omega=[0,1]\\) 上均匀取点，\\(B=[0,\\frac12]\\)，\\(A=B\\cup\\{1\\}\\)，①②④均不成立。若独立，则 \\(P(A)=P(A)P(B)\\)，因 \\(P(A)>0\\) 得 \\(P(B)=1\\)，与题设矛盾。",
+        "errorCause": "将概率为0的事件等同于空事件，从而把概率相等误推为严格集合包含。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕零概率事件、事件包含、互斥与独立生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_99b86f00534881918da18733e49c055c",
+            "fileName": "B719C792-7012-438E-ADF4-8D53193A4150.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "历史订正检索；未将系统复盘建议冒充用户原始笔迹",
+        "transcriptionNote": "将原题“正确”解释为由题设必然推出。若另加有限等可能且每个样本点概率为正的假设，①②④才可推出；原题未给此假设。"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-match",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-match",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 9,
+        "sourceRef": "历史对话 2026-09-21 · 题9",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "计算错误",
+        "tags": [
+          "历史对话导入",
+          "独立重复试验",
+          "二项分布",
+          "比赛提前结束"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "甲、乙进行围棋比赛，甲每局获胜的概率为 \\(0.6\\)，各局互不干扰。比赛可采用三局两胜制或五局三胜制，哪种赛制对甲更有利？",
+        "options": [],
+        "knowledgePoints": [
+          "独立重复试验",
+          "二项分布",
+          "比赛提前结束"
+        ],
+        "answer": "三局两胜胜率 \\(0.648\\)，五局三胜胜率 \\(0.68256\\)；五局三胜更有利。",
+        "analysis": "可补足未实际进行的独立比赛，不改变最终获胜事件。三局胜率为 \\(\\binom32 0.6^2 0.4+0.6^3=0.648\\)。五局胜率为 \\(\\binom53 0.6^3 0.4^2+\\binom54 0.6^4 0.4+0.6^5=0.68256\\)。",
+        "errorCause": "用反面事件计算三局胜率时漏减三局全输的概率 \\(0.4^3\\)。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕独立重复试验、二项分布、比赛提前结束生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_b6341d3deedc8191a47877dd4965299a",
+            "fileName": "38CC60C5-A1ED-4AFC-B492-99DFC14BE290.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "历史订正检索；未将系统复盘建议冒充用户原始笔迹"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-first-hit",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-first-hit",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 10,
+        "sourceRef": "历史对话 2026-09-21 · 题10",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "计算错误",
+        "tags": [
+          "历史对话导入",
+          "首次成功",
+          "等比级数",
+          "独立事件乘法"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "甲乙两人轮流射击，甲先射，甲乙每次中靶的概率分别为 \\(0.3\\) 和 \\(0.4\\)，各次射击相互独立。求甲首先中靶的概率。",
+        "options": [],
+        "knowledgePoints": [
+          "首次成功",
+          "等比级数",
+          "独立事件乘法"
+        ],
+        "answer": "\\(\\frac{15}{29}\\)。",
+        "analysis": "若前 \\(k\\) 轮两人都未中，第 \\(k+1\\) 轮甲命中，其概率为 \\((0.7\\cdot0.6)^k0.3\\)。这些事件互斥，故所求为 \\(\\sum_{k=0}^{\\infty}0.42^k0.3=\\frac{0.3}{1-0.42}=\\frac{15}{29}\\)。",
+        "errorCause": "第二轮甲首次命中的一项漏乘第一轮甲未中的概率 \\(0.7\\)；应为 \\(0.7\\cdot0.6\\cdot0.3\\)。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕首次成功、等比级数、独立事件乘法生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_14f60ced8ef48191981be4dd194d93eb",
+            "fileName": "38868ED9-D6F6-4779-ADAA-32097C11F981.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "历史订正检索；未将系统复盘建议冒充用户原始笔迹"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-basketball",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-basketball",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 12,
+        "sourceRef": "历史对话 2026-09-21 · 题12",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "二项分布",
+          "互斥分类",
+          "独立事件乘法"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "甲、乙两人投篮，命中率分别为 \\(0.7\\) 和 \\(0.6\\)，每人投两次。求甲比乙进球数多的概率。",
+        "options": [],
+        "knowledgePoints": [
+          "二项分布",
+          "互斥分类",
+          "独立事件乘法"
+        ],
+        "answer": "\\(0.3808\\)（按各次投篮独立的通常模型）。",
+        "analysis": "设甲乙进球数分别为 \\(X,Y\\)。按独立投篮模型，\\(X\\sim B(2,0.7),Y\\sim B(2,0.6)\\)，且相互独立。枚举 \\((X,Y)=(1,0),(2,0),(2,1)\\)：\\(P(X>Y)=0.42\\cdot0.16+0.49\\cdot0.16+0.49\\cdot0.48=0.3808\\)。",
+        "errorCause": "",
+        "reviewFocus": "先列出互斥的进球数组合，再分别计算概率，不混用排列与组合。",
+        "similarQuestionPrompt": "围绕二项分布、互斥分类、独立事件乘法生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_6d66139c4cdc8191a1b243a1a1db6cd4",
+            "fileName": "76010D83-1985-4D06-BE24-2F069A919EBA.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "transcriptionNote": "原图未显式写明各次投篮独立。上述解答基于通常独立投篮模型；只给边际命中率而不约定独立性，概率不能唯一确定。"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-defects",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-defects",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 8,
+        "sourceRef": "历史对话 2026-09-21 · 题8",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "审题错误",
+        "tags": [
+          "历史对话导入",
+          "古典概型",
+          "位置法",
+          "抽样停止时刻",
+          "题意辨析"
+        ],
+        "note": "",
+        "questionType": "填空题",
+        "stem": "10个同规格的零件中混入3个次品，现进行逐个检查，则查完5个零件时正好查出3个次品的概率为 \\(\\underline{\\qquad}\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "古典概型",
+          "位置法",
+          "抽样停止时刻",
+          "题意辨析"
+        ],
+        "answer": "配套解析采用“第5次首次找齐3个次品”：\\(\\frac{\\binom42}{\\binom{10}3}=\\frac1{20}\\)。若仅表示“前5个中共有3个次品”，则为 \\(\\frac{\\binom53}{\\binom{10}3}=\\frac1{12}\\)。",
+        "analysis": "按配套解析，第5个位置必须为次品，另两个次品的位置从前4个位置选，共 \\(\\binom42\\) 种；全部次品位置共 \\(\\binom{10}3\\) 种。位置样本空间中不再乘 \\(\\binom72\\)，否则混用了“选零件身份”和“选次品位置”两个空间。若不要求第5个首次找齐，则次品位置可为前5个任取3个，得另一答案。",
+        "errorCause": "历史提问集中于为什么不乘组合数C(7,2)；历史回答与后续配套解析对“正好查出”的解释存在冲突，不能单据其中一条判定个人错误。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕古典概型、位置法、抽样停止时刻、题意辨析生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_a174b15e728481919900313d59c3b679",
+            "fileName": "A973F71D-CFC0-49DF-ADB1-CC42BF3939B2.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_ac4d117ee7448191918287f702dd1ddf",
+            "fileName": "E2960067-DDE1-4390-A132-12053F7065B5.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "历史订正检索；未将系统复盘建议冒充用户原始笔迹",
+        "transcriptionNote": "保留原题歧义，配套解析截图明确为1/20；历史回答出现1/12，已同时注明适用题意。",
+        "interpretationStatus": "ambiguous-source-resolved-by-supplied-solution"
+      }
+    },
+    {
+      "candidateId": "20260920-prob-event-simplify",
+      "action": "add",
+      "question": {
+        "id": "hist-20260920-prob-event-simplify",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 1,
+        "sourceRef": "历史对话 2026-09-20 · 例1.1",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "事件运算",
+          "德摩根律",
+          "条件概率"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "已知 \\(P(A)=\\frac12\\)，\\(P(ABC)=\\frac14\\)。求 \\[P\\!\\left[(A+B)(A+\\overline B)+\\overline{\\overline A+B}\\,\\middle|\\,(\\overline A+\\overline B+\\overline C)\\right].\\] 其中加号表示事件的并，乘积表示交。",
+        "options": [],
+        "knowledgePoints": [
+          "事件运算",
+          "德摩根律",
+          "条件概率"
+        ],
+        "answer": "\\(\\frac13\\)。",
+        "analysis": "条件左侧事件：\\((A+B)(A+\\overline B)=A\\)，且 \\(\\overline{\\overline A+B}=A\\overline B\\subseteq A\\)，故整个事件化为 \\(A\\)。条件事件为 \\(\\overline{ABC}\\)。所以 \\(P(A\\mid\\overline{ABC})=\\frac{P(A)-P(ABC)}{1-P(ABC)}=\\frac{1/4}{3/4}=\\frac13\\)。",
+        "errorCause": "",
+        "reviewFocus": "先做事件集合化简；条件概率的分母是条件事件概率。",
+        "similarQuestionPrompt": "围绕事件运算、德摩根律、条件概率生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_c9b7f5029cdc8191870ace7c796704f5",
+            "fileName": "474B3CB0-5623-424D-8D3D-8146A5849EE4.png",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原图目视核对条件概率竖线及双层补号"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260921-prob-pairwise",
+      "action": "add",
+      "question": {
+        "id": "hist-20260921-prob-pairwise",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 9,
+        "sourceRef": "历史对话 2026-09-21 · 题9",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "几何概率",
+          "两两独立",
+          "相互独立"
+        ],
+        "note": "",
+        "questionType": "选择题",
+        "stem": "在区域 \\(D=\\{(x,y):|x|\\le1,\\ |y|\\le1\\}\\) 上等可能取点。设 \\(A_1=\\{x\\ge0\\}\\)，\\(A_2=\\{y\\ge0\\}\\)，\\(A_3=\\{xy\\ge0\\}\\)，\\(A_4=\\{|x|+|y|\\le1\\}\\)。下列哪组事件两两独立但不相互独立？",
+        "options": [
+          {
+            "label": "A",
+            "text": "\\(A_1,A_2,A_3\\)"
+          },
+          {
+            "label": "B",
+            "text": "\\(A_1,A_2,A_4\\)"
+          },
+          {
+            "label": "C",
+            "text": "\\(A_1,A_3,A_4\\)"
+          },
+          {
+            "label": "D",
+            "text": "\\(A_2,A_3,A_4\\)"
+          }
+        ],
+        "knowledgePoints": [
+          "几何概率",
+          "两两独立",
+          "相互独立"
+        ],
+        "answer": "A。",
+        "analysis": "四个事件概率均为 \\(\\frac12\\)。\\(A_1,A_2,A_3\\) 任意两事件交集概率均为 \\(\\frac14\\)，但三者交集为第一象限，概率 \\(\\frac14\\ne\\frac18\\)，故不相互独立。其余三组的任意二重交为 \\(\\frac14\\)，三重交均为 \\(\\frac18\\)。",
+        "errorCause": "",
+        "reviewFocus": "两两独立只检查二重交；三个事件相互独立还必须检查三重交。",
+        "similarQuestionPrompt": "围绕几何概率、两两独立、相互独立生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_ac7f52c9178c8191b3d28c0266622bb1",
+            "fileName": "186AD621-DA45-4B3B-A2D3-19D81AD74F11.png",
+            "kind": "history-image",
+            "date": "2026-09-21",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260920-prob-exactly-one",
+      "action": "add",
+      "question": {
+        "id": "hist-20260920-prob-exactly-one",
+        "subject": "概率论与数理统计",
+        "chapter": 1,
+        "chapterTitle": "随机事件与概率",
+        "questionNo": 3,
+        "sourceRef": "历史对话 2026-09-20 · 例1.3（2020）",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "恰有一个发生",
+          "容斥原理",
+          "事件分解"
+        ],
+        "note": "",
+        "questionType": "选择题",
+        "stem": "设 \\(A,B,C\\) 为三个随机事件，\\(P(A)=P(B)=P(C)=\\frac14\\)，\\(P(AB)=0\\)，\\(P(AC)=P(BC)=\\frac1{12}\\)。求三事件中恰有一个发生的概率。",
+        "options": [
+          {
+            "label": "A",
+            "text": "\\(\\frac34\\)"
+          },
+          {
+            "label": "B",
+            "text": "\\(\\frac23\\)"
+          },
+          {
+            "label": "C",
+            "text": "\\(\\frac12\\)"
+          },
+          {
+            "label": "D",
+            "text": "\\(\\frac5{12}\\)"
+          }
+        ],
+        "knowledgePoints": [
+          "恰有一个发生",
+          "容斥原理",
+          "事件分解"
+        ],
+        "answer": "D，\\(\\frac5{12}\\)。",
+        "analysis": "由 \\(ABC\\subseteq AB\\) 得 \\(P(ABC)=0\\)。恰有一个发生的概率为 \\(P(A)+P(B)+P(C)-2[P(AB)+P(AC)+P(BC)]+3P(ABC)=\\frac34-2\\cdot\\frac16=\\frac5{12}\\)。",
+        "errorCause": "",
+        "reviewFocus": "“恰有一个”不是“至少一个”，二重交应减两次。",
+        "similarQuestionPrompt": "围绕恰有一个发生、容斥原理、事件分解生成一道同类型但不同参数的考研数学题；使用文本和LaTeX，明确所有条件，并独立验证答案与解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_487fcde2cdfc8191b0403649449f0c2f",
+            "fileName": "2CE55EE7-5862-4C07-8A68-5020B78AA451.png",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；历史答案不直接作为正确性依据",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "sourceLabel": "例1.3（2020）"
+      }
+    },
+    {
+      "candidateId": "20260914-linear-jordan",
+      "action": "add",
+      "question": {
+        "id": "hist-20260914-linear-jordan",
+        "subject": "线性代数",
+        "chapter": 5,
+        "chapterTitle": "特征值、特征向量与相似",
+        "questionNo": 21,
+        "sourceRef": "历史对话 2026-09-14 · 题21",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "相似变换",
+          "按列比较",
+          "广义特征向量",
+          "几何重数"
+        ],
+        "note": "",
+        "questionType": "证明与计算题",
+        "stem": "设 \\(A\\) 为三阶方阵，存在可逆矩阵 \\(P=(p_1,p_2,p_3)\\)，使 \\(P^{-1}AP=J=\\begin{pmatrix}1&0&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}\\)。\n（1）证明 \\(p_1,p_2\\) 是 \\((E-A)x=0\\) 的解，\\(p_3\\) 是 \\((E-A)x=-p_2\\) 的解，且 \\(A\\) 不可相似对角化。\n（2）当 \\(A=\\begin{pmatrix}2&-1&-1\\\\2&-1&-2\\\\-1&1&2\\end{pmatrix}\\) 时，求一个满足上述等式的可逆矩阵 \\(P\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "相似变换",
+          "按列比较",
+          "广义特征向量",
+          "几何重数"
+        ],
+        "answer": "可取 \\(P=\\begin{pmatrix}1&1&1\\\\1&2&0\\\\0&-1&0\\end{pmatrix}\\)，此时 \\(\\det P=-1\\)，\\(AP=PJ\\)。",
+        "analysis": "由 \\(AP=PJ\\) 按列得 \\(Ap_1=p_1,Ap_2=p_2,Ap_3=p_2+p_3\\)，即所需方程。\\(A\\) 的唯一特征值是1，但 \\(A\\ne E\\)（否则 \\(J=E\\)），故不可能相似对角化。具体矩阵满足 \\(A-E=\\begin{pmatrix}1&-1&-1\\\\2&-2&-2\\\\-1&1&1\\end{pmatrix}\\)，核空间为 \\(x_1=x_2+x_3\\)。选 \\(p_3=(1,0,0)^T\\)，则 \\(p_2=(A-E)p_3=(1,2,-1)^T\\)，再取与之无关的核向量 \\(p_1=(1,1,0)^T\\)。",
+        "errorCause": "行变换把相关行误化成额外主元；混淆任意特征向量与可作为(A-E)p3的p2；移项时遗漏负号。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕相似变换、按列比较、广义特征向量、几何重数生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_2dfb42e5f0688191bd3d61f906abac29",
+            "fileName": "C8196F87-DAA6-4B6A-8121-17B6668EABA3.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_c687eca708d48191a1591500a3441492",
+            "fileName": "1BE99A56-B842-41A0-B22E-38160F5E4304.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "历史订正检索"
+      }
+    },
+    {
+      "candidateId": "20260914-linear-rayleigh",
+      "action": "add",
+      "question": {
+        "id": "hist-20260914-linear-rayleigh",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 1,
+        "sourceRef": "历史对话 2026-09-14 · 二次型最值例1（2022数二、三）",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "正交对角化",
+          "特征向量单位化",
+          "瑞利商"
+        ],
+        "note": "",
+        "questionType": "证明与计算题",
+        "stem": "已知二次型 \\(f(x_1,x_2,x_3)=3x_1^2+4x_2^2+3x_3^2+2x_1x_3\\)。（1）求正交变换 \\(x=Qy\\) 化为标准形；（2）证明 \\(\\min_{x\\ne0}\\frac{f(x)}{x^Tx}=2\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "正交对角化",
+          "特征向量单位化",
+          "瑞利商"
+        ],
+        "answer": "可取 \\(Q=\\begin{pmatrix}1/\\sqrt2&0&1/\\sqrt2\\\\0&1&0\\\\1/\\sqrt2&0&-1/\\sqrt2\\end{pmatrix}\\)，标准形 \\(4y_1^2+4y_2^2+2y_3^2\\)；最小值为2。",
+        "analysis": "矩阵 \\(A=\\begin{pmatrix}3&0&1\\\\0&4&0\\\\1&0&3\\end{pmatrix}\\) 的特征值为 \\(4,4,2\\)，选取正交单位特征向量作为 \\(Q\\) 的列。因 \\(Q^TQ=E\\)，\\(x^Tx=y^Ty\\)，商值为 \\(\\frac{4y_1^2+4y_2^2+2y_3^2}{y_1^2+y_2^2+y_3^2}\\ge2\\)，在 \\(y_1=y_2=0,y_3\\ne0\\) 时等号成立。",
+        "errorCause": "取特征向量(1,0,±1)后未单位化，不能直接把该矩阵当正交矩阵。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕正交对角化、特征向量单位化、瑞利商生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_ede1c6ee961c8191b1d4f81b8dea0b68",
+            "fileName": "9EFD4DD6-7ECC-4465-BEED-5E88036A6092.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_eb04befc1ed88191ad906d5f24fd95a4",
+            "fileName": "158C8B99-36F6-45AE-99DB-A9DE25BB5112.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "历史订正检索",
+        "sourceLabel": "二次型最值例1（2022数二、三）"
+      }
+    },
+    {
+      "candidateId": "20260914-linear-adjugate-bound",
+      "action": "add",
+      "question": {
+        "id": "hist-20260914-linear-adjugate-bound",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 2,
+        "sourceRef": "历史对话 2026-09-14 · 二次型最值例2",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "伴随矩阵特征值",
+          "实对称矩阵",
+          "二次型界"
+        ],
+        "note": "",
+        "questionType": "填空题",
+        "stem": "设三阶实对称矩阵 \\(A\\) 的特征值为 \\(2,3,4\\)，\\(A^*\\) 为伴随矩阵。若任意三维实列向量 \\(x\\) 都满足 \\(\\left|x^TA^*x-x^TAx\\right|\\le a x^Tx\\)，求 \\(a\\) 的最小值。",
+        "options": [],
+        "knowledgePoints": [
+          "伴随矩阵特征值",
+          "实对称矩阵",
+          "二次型界"
+        ],
+        "answer": "\\(a_{\\min}=10\\)。",
+        "analysis": "因 \\(\\det A=24\\)，\\(A^*=24A^{-1}\\)。在 \\(A\\) 的正交特征基下，\\(A^*-A\\) 的特征值依次为 \\(12-2=10,8-3=5,6-4=2\\)。故 \\(|x^T(A^*-A)x|\\le10x^Tx\\)，且在特征值2对应的非零特征向量上取等号。",
+        "errorCause": "",
+        "reviewFocus": "对A*与A使用同一组特征向量，先算差矩阵的特征值，再取绝对值最大者。",
+        "similarQuestionPrompt": "围绕伴随矩阵特征值、实对称矩阵、二次型界生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_ede1c6ee961c8191b1d4f81b8dea0b68",
+            "fileName": "9EFD4DD6-7ECC-4465-BEED-5E88036A6092.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_eb04befc1ed88191ad906d5f24fd95a4",
+            "fileName": "158C8B99-36F6-45AE-99DB-A9DE25BB5112.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "sourceLabel": "二次型最值例2"
+      }
+    },
+    {
+      "candidateId": "20260914-linear-congruence-maximum",
+      "action": "add",
+      "question": {
+        "id": "hist-20260914-linear-congruence-maximum",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 3,
+        "sourceRef": "历史对话 2026-09-14 · 二次型最值例3",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "合同变换",
+          "惯性定律",
+          "单位球面最值"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "已知二次型 \\(f(x_1,x_2,x_3)=x_1^2+2x_2^2+ax_3^2+2x_1x_3\\) 经可逆线性变换 \\(x=Py\\) 化为 \\(y_1^2+y_3^2\\)。\n（1）求 \\(a\\) 及一个可逆矩阵 \\(P\\)。\n（2）在 \\(x^Tx=1\\) 时求 \\(f\\) 的最大值，并求满足 \\(x_1=x_2>0\\) 的最大值点。",
+        "options": [],
+        "knowledgePoints": [
+          "合同变换",
+          "惯性定律",
+          "单位球面最值"
+        ],
+        "answer": "\\(a=1\\)，可取 \\(P=\\begin{pmatrix}1&-1&0\\\\0&0&1/\\sqrt2\\\\0&1&0\\end{pmatrix}\\)。最大值为2；所求点为 \\((1/\\sqrt3,1/\\sqrt3,1/\\sqrt3)\\)。",
+        "analysis": "目标二次型秩为2且半正定。原矩阵行列式为 \\(2(a-1)\\)，故 \\(a=1\\)，这时 \\(f=(x_1+x_3)^2+2x_2^2\\)。令 \\(x_1=y_1-y_2,x_3=y_2,x_2=y_3/\\sqrt2\\) 即得所需合同变换。另 \\(f\\le2(x_1^2+x_2^2+x_3^2)=2\\)，等号条件为 \\(x_1=x_3\\)。再由 \\(x_1=x_2>0\\) 和单位长度，得三个坐标均为 \\(1/\\sqrt3\\)。",
+        "errorCause": "",
+        "reviewFocus": "一般可逆变换不保持长度，不能直接在合同标准形上把原约束替换成y的单位球面。",
+        "similarQuestionPrompt": "围绕合同变换、惯性定律、单位球面最值生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_ede1c6ee961c8191b1d4f81b8dea0b68",
+            "fileName": "9EFD4DD6-7ECC-4465-BEED-5E88036A6092.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_eb04befc1ed88191ad906d5f24fd95a4",
+            "fileName": "158C8B99-36F6-45AE-99DB-A9DE25BB5112.png",
+            "date": "2026-09-14",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "sourceLabel": "二次型最值例3"
+      }
+    },
+    {
+      "candidateId": "20260915-linear-congruence",
+      "action": "add",
+      "question": {
+        "id": "hist-20260915-linear-congruence",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 5,
+        "sourceRef": "历史对话 2026-09-15 · 题5",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "概念不清",
+        "tags": [
+          "历史对话导入",
+          "合同与相似",
+          "正负惯性指数",
+          "特征多项式"
+        ],
+        "note": "",
+        "questionType": "选择题",
+        "stem": "二次型 \\(f=x_1^2+ax_2^2+x_3^2+2bx_1x_3\\) 经可逆线性变换 \\(x=Py\\) 可化为 \\(g=-y_1^2-3y_2^2+3y_3^2+8y_2y_3\\)。求参数 \\(a,b\\) 的取值范围。",
+        "options": [
+          {
+            "label": "A",
+            "text": "\\(a>0,-1<b<1\\)"
+          },
+          {
+            "label": "B",
+            "text": "\\(a<0,-1<b<1\\)"
+          },
+          {
+            "label": "C",
+            "text": "\\(a>0,b>1\\text{或}b<-1\\)"
+          },
+          {
+            "label": "D",
+            "text": "\\(a<0,b>1\\text{或}b<-1\\)"
+          }
+        ],
+        "knowledgePoints": [
+          "合同与相似",
+          "正负惯性指数",
+          "特征多项式"
+        ],
+        "answer": "D：\\(a<0,\\ |b|>1\\)。",
+        "analysis": "目标矩阵 \\(B=\\begin{pmatrix}-1&0&0\\\\0&-3&4\\\\0&4&3\\end{pmatrix}\\) 的特征值为 \\(-1,-5,5\\)，正负惯性指数为 \\((1,2)\\)。原矩阵特征值为 \\(a,1+b,1-b\\)。后两者之和为2，若要整体只有1个正值、2个负值，必须 \\(a<0\\) 且 \\(1+b,1-b\\) 一正一负，即 \\(|b|>1\\)。",
+        "errorCause": "将合同关系误当成相似关系，要求特征值相同；并在(λ+3)(λ-3)-16的常数项计算中出错。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕合同与相似、正负惯性指数、特征多项式生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_4a0329ced6a08191b9e71298786d75d0",
+            "fileName": "CBC490FD-65C7-4374-A175-A7822AFD2406.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_1f55eff9ec60819186d5a10242fe3539",
+            "fileName": "B438CEA1-7A2E-4F12-B45E-E812ECE30457.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "历史订正检索"
+      }
+    },
+    {
+      "candidateId": "20260915-linear-matrix-expression",
+      "action": "add",
+      "question": {
+        "id": "hist-20260915-linear-matrix-expression",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 1,
+        "sourceRef": "历史对话 2026-09-15 · 题1",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "二次型矩阵表示",
+          "对称化",
+          "交叉项系数"
+        ],
+        "note": "",
+        "questionType": "选择题",
+        "stem": "已知二次型 \\(f=x_1^2+3x_2^2+5x_3^2-4x_1x_2+8x_2x_3\\)。下列哪个矩阵表达式等于 \\(f\\)？",
+        "options": [
+          {
+            "label": "A",
+            "text": "\\(x^T\\begin{pmatrix}1&-1&2\\\\-3&3&2\\\\-2&6&5\\end{pmatrix}x\\)"
+          },
+          {
+            "label": "B",
+            "text": "\\(x^T\\begin{pmatrix}1&-2&0\\\\-2&5&4\\\\0&4&3\\end{pmatrix}x\\)"
+          },
+          {
+            "label": "C",
+            "text": "\\(x^T\\begin{pmatrix}1&0&-2\\\\0&3&4\\\\-2&4&5\\end{pmatrix}x\\)"
+          },
+          {
+            "label": "D",
+            "text": "\\(x^T\\begin{pmatrix}1&-2&4\\\\-2&3&0\\\\4&0&5\\end{pmatrix}x\\)"
+          }
+        ],
+        "knowledgePoints": [
+          "二次型矩阵表示",
+          "对称化",
+          "交叉项系数"
+        ],
+        "answer": "A。",
+        "analysis": "一般矩阵 \\(M\\) 也可以放入 \\(x^TMx\\)，且 \\(x^TMx=x^T\\frac{M+M^T}{2}x\\)。交叉项 \\(x_ix_j\\) 的系数是 \\(m_{ij}+m_{ji}\\)。A项的对角元为1、3、5，交叉项系数依次为 \\(-1-3=-4,\\ 2-2=0,\\ 2+6=8\\)，完全符合。",
+        "errorCause": "",
+        "reviewFocus": "标准二次型矩阵取对称矩阵，但表达式x^TMx里的M本身不必对称。",
+        "similarQuestionPrompt": "围绕二次型矩阵表示、对称化、交叉项系数生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_d7d0c1436fa88191a7b496082c71e726",
+            "fileName": "08FF0C9E-5B6A-426F-9CB9-7EB29F791938.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260915-linear-inertia-equal",
+      "action": "add",
+      "question": {
+        "id": "hist-20260915-linear-inertia-equal",
+        "subject": "线性代数",
+        "chapter": 6,
+        "chapterTitle": "二次型",
+        "questionNo": 6,
+        "sourceRef": "历史对话 2026-09-15 · 题6",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "计算错误",
+        "tags": [
+          "历史对话导入",
+          "惯性指数",
+          "零特征值",
+          "特征值移项"
+        ],
+        "note": "",
+        "questionType": "填空题",
+        "stem": "设二次型 \\(f=x_1^2+ax_2^2+x_3^2+2x_1x_2+2ax_1x_3+2x_2x_3\\) 的正、负惯性指数相同，求 \\(a\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "惯性指数",
+          "零特征值",
+          "特征值移项"
+        ],
+        "answer": "\\(a=-2\\)。",
+        "analysis": "矩阵 \\(A=\\begin{pmatrix}1&1&a\\\\1&a&1\\\\a&1&1\\end{pmatrix}\\) 的特征值为 \\(1-a,a-1,a+2\\)。三维空间中正负惯性指数相同，必须有零特征值。候选 \\(a=1\\) 给出 \\(0,0,3\\)，不满足；\\(a=-2\\) 给出 \\(3,-3,0\\)，满足。",
+        "errorCause": "把 \\(\\lambda-a+1=0\\) 解成 \\(1-a\\)，正确应为 \\(\\lambda=a-1\\)。",
+        "reviewFocus": "",
+        "similarQuestionPrompt": "围绕惯性指数、零特征值、特征值移项生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_4aae80a535b88191a2618c3da234ced0",
+            "fileName": "7E460139-9F12-4105-A765-B412437CA826.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_422b79215cd881919aae4b1a79137864",
+            "fileName": "162A1CAA-C719-412A-A40F-632D9889DDF7.png",
+            "date": "2026-09-15",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "历史订正检索"
+      }
+    },
+    {
+      "candidateId": "20260920-calculus-stokes",
+      "action": "add",
+      "question": {
+        "id": "hist-20260920-calculus-stokes",
+        "subject": "高等数学",
+        "chapter": 17,
+        "chapterTitle": "曲线积分与曲面积分",
+        "questionNo": 18,
+        "sourceRef": "历史对话 2026-09-20 · 曲线曲面积分例18",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "第二类曲线积分",
+          "斯托克斯公式",
+          "格林公式",
+          "方向一致性"
+        ],
+        "note": "",
+        "questionType": "填空题",
+        "stem": "设 \\(L\\) 是柱面 \\(x^2+y^2=1\\) 与平面 \\(z=x+y\\) 的交线，从 \\(z\\) 轴正向往负向看为逆时针方向。计算 \\(\\displaystyle\\oint_L xz\\,dx+x\\,dy+\\frac{y^2}{2}\\,dz\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "第二类曲线积分",
+          "斯托克斯公式",
+          "格林公式",
+          "方向一致性"
+        ],
+        "answer": "\\(\\pi\\)。",
+        "analysis": "在曲线上 \\(z=x+y,dz=dx+dy\\)，原积分化为 \\(\\oint_C(x^2+xy+y^2/2)\\,dx+(x+y^2/2)\\,dy\\)，其中 \\(C\\) 为单位圆正向。用格林公式得 \\(\\iint_{x^2+y^2\\le1}[1-(x+y)]\\,dx\\,dy=\\pi\\)。也可用旋度 \\((y,x,1)\\) 与向上面积向量 \\((-1,-1,1)dxdy\\) 的点积得到相同结果。",
+        "errorCause": "",
+        "reviewFocus": "投影方向必须与曲线方向一致；代入z后，dz也要同步替换。",
+        "similarQuestionPrompt": "围绕第二类曲线积分、斯托克斯公式、格林公式、方向一致性生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_a492f535b3c081919fcff6f8f4c3e4e7",
+            "fileName": "DED5FF56-AAE2-4B2A-B365-A750617344F9.png",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          },
+          {
+            "fileId": "libfile_49c454fbd2788191b7570d6426a3c9f9",
+            "fileName": "6597BF2B-CF0D-40B2-86F5-EBC9E480BAF5.png",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "未确认个人具体错因",
+        "sourceLabel": "曲线曲面积分例18"
+      }
+    },
+    {
+      "candidateId": "20260920-calculus-rotation-flux",
+      "action": "add",
+      "question": {
+        "id": "hist-20260920-calculus-rotation-flux",
+        "subject": "高等数学",
+        "chapter": 17,
+        "chapterTitle": "曲线积分与曲面积分",
+        "questionNo": 20,
+        "sourceRef": "历史对话 2026-09-20 · 题20",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "旋转曲面方程",
+          "高斯公式",
+          "补面法",
+          "对称性"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "已知 \\(A(1,0,0),B(1,1,1)\\)。\\(\\Sigma\\) 为直线 \\(AB\\) 绕 \\(Oz\\) 轴旋转一周所得曲面在 \\(z=0\\) 与 \\(z=1\\) 之间部分的外侧，\\(f\\) 在实数范围内有连续导数。\n（1）求 \\(\\Sigma\\) 的方程；\n（2）计算 \\[I=\\iint_\\Sigma [xf(xy)-2x]\\,dy\\,dz+[y^2-yf(xy)]\\,dz\\,dx+(z+1)^2\\,dx\\,dy.\\]",
+        "options": [],
+        "knowledgePoints": [
+          "旋转曲面方程",
+          "高斯公式",
+          "补面法",
+          "对称性"
+        ],
+        "answer": "\\(\\Sigma:x^2+y^2=1+z^2,\\ 0\\le z\\le1\\)；\\(I=-\\frac{11\\pi}{2}\\)。",
+        "analysis": "母线可取 \\((1,t,t)\\)，旋转半径平方为 \\(1+t^2\\)，故得曲面方程。补上上下圆盘构成闭曲面。散度为 \\(f(xy)+xyf'(xy)-2+2y-f(xy)-xyf'(xy)+2(z+1)=2y+2z\\)。利用对称性，总通量为 \\(\\int_0^1 2z\\pi(1+z^2)\\,dz=\\frac{3\\pi}{2}\\)。上盘外向通量为 \\(4\\cdot2\\pi=8\\pi\\)，下盘为 \\(-\\pi\\)，侧面通量为 \\(\\frac{3\\pi}{2}-8\\pi+\\pi=-\\frac{11\\pi}{2}\\)。",
+        "errorCause": "",
+        "reviewFocus": "绕z轴旋转保留z及到z轴距离，而不是简单令x=y；闭曲面总通量必须扣掉两个补面。",
+        "similarQuestionPrompt": "围绕旋转曲面方程、高斯公式、补面法、对称性生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_c138ff23a0108191a77af6420ff5dc91",
+            "fileName": "4126ED82-5185-40B0-B0C2-005E190D6FE3.png",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "20260920-calculus-hemisphere",
+      "action": "add",
+      "question": {
+        "id": "hist-20260920-calculus-hemisphere",
+        "subject": "高等数学",
+        "chapter": 17,
+        "chapterTitle": "曲线积分与曲面积分",
+        "questionNo": 15,
+        "sourceRef": "历史对话 2026-09-20 · 曲线曲面积分例15",
+        "sourceType": "history",
+        "sourcePage": null,
+        "printedPage": null,
+        "markerColor": "history",
+        "status": "未复习",
+        "difficulty": "未标注",
+        "mistakeType": "概念不清",
+        "tags": [
+          "历史对话导入",
+          "第二类曲面积分",
+          "高斯公式",
+          "曲面代入与空间延拓",
+          "补面方向"
+        ],
+        "note": "",
+        "questionType": "计算题",
+        "stem": "计算 \\[\\iint_\\Sigma\\frac{ax\\,dy\\,dz+(z+a)^2\\,dx\\,dy}{\\sqrt{x^2+y^2+z^2}},\\] 其中 \\(\\Sigma\\) 为下半球面 \\(z=-\\sqrt{a^2-x^2-y^2}\\) 的上侧，\\(a>0\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "第二类曲面积分",
+          "高斯公式",
+          "曲面代入与空间延拓",
+          "补面方向"
+        ],
+        "answer": "\\(-\\frac{\\pi a^3}{2}\\)。",
+        "analysis": "先在曲面上将分母化为常数 \\(a\\)，再对新空间向量场 \\((x,0,(z+a)^2/a)\\) 用高斯公式。其散度为 \\(3+2z/a\\)。下半球体体积为 \\(2\\pi a^3/3\\)，且 \\(\\iiint_\\Omega z\\,dV=-\\pi a^4/4\\)，所以内向闭曲面通量为 \\(-3\\pi a^3/2\\)。补上的赤道圆盘取下侧，通量为 \\(-\\pi a^3\\)，原上侧半球通量为 \\(-3\\pi a^3/2-(-\\pi a^3)=-\\pi a^3/2\\)。",
+        "errorCause": "未区分在曲面上先化简被积函数与在空间求导时强行使用边界约束。",
+        "reviewFocus": "允许先在曲面化简并选取新的光滑空间延拓；但求某个已固定空间场的散度时，x、y、z必须作为独立变量。",
+        "similarQuestionPrompt": "围绕第二类曲面积分、高斯公式、曲面代入与空间延拓、补面方向生成一道同类型不同参数的考研数学题；使用LaTeX，独立验证条件、答案和解析。",
+        "transcriptionStatus": "verified",
+        "historySources": [
+          {
+            "fileId": "libfile_15f55a9e8ecc81919bb0a44a240ad629",
+            "fileName": "4362DB18-7C96-4AD0-B153-7E8D1EF25C47.jpeg",
+            "date": "2026-09-20",
+            "kind": "history-image",
+            "verification": "原始图片目视转写"
+          }
+        ],
+        "answerVerification": "本次独立推导复核；不直接照抄历史答案",
+        "errorCauseEvidence": "历史订正检索",
+        "sourceLabel": "曲线曲面积分例15"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch01-u001-p003",
+      "action": "merge",
+      "targetId": "高等数学-ch01-u001-p003",
+      "expectedStem": "计算极限：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left(x^{\\frac{2}{x}}-1\\right)^{\\frac{2}{\\ln x}}=\\underline{\\qquad}\\)。",
+      "matchReason": "历史式 \\(e^{2\\ln x/x}-1\\) 与原库 \\(x^{2/x}-1\\) 在 \\(x>0\\) 完全相同，指数和极限方向相同。",
+      "question": {
+        "stem": "计算极限：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left(x^{\\frac{2}{x}}-1\\right)^{\\frac{2}{\\ln x}}=\\underline{\\qquad}\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "幂指函数极限",
+          "对数变换",
+          "等价无穷小"
+        ],
+        "answer": "\\(e^{-2}\\)。",
+        "analysis": "设 \\(u=x^{2/x}-1\\sim2\\ln x/x\\)。对原式取对数，得 \\(\\frac2{\\ln x}\\ln u=\\frac2{\\ln x}[\\ln2+\\ln\\ln x-\\ln x+o(1)]\\to-2\\)，原式极限为 \\(e^{-2}\\)。",
+        "errorCause": "把 \\(\\ln u\\) 与 \\(u\\) 当作等价无穷小；这里 \\(u\\to0^+\\)，而 \\(\\ln u\\to-\\infty\\)。",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "幂指函数极限",
+          "对数变换",
+          "等价无穷小"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-07-26",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第3题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "历史订正检索；保留原题正文"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch01-u002-p004",
+      "action": "merge",
+      "targetId": "高等数学-ch01-u002-p004",
+      "expectedStem": "计算：\\(\\displaystyle \\lim_{x\\to0}\\frac{\\int_0^x\\left[e^{(t-x)^2}-1\\right]\\sin t\\,\\mathrm dt}{x^2\\left(e^{x^2}-1\\right)}\\)。",
+      "matchReason": "积分上下限、分子函数、分母均与现有第4题一致。",
+      "question": {
+        "stem": "计算：\\(\\displaystyle \\lim_{x\\to0}\\frac{\\int_0^x\\left[e^{(t-x)^2}-1\\right]\\sin t\\,\\mathrm dt}{x^2\\left(e^{x^2}-1\\right)}\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "积分极限",
+          "定积分换元",
+          "一致渐近展开"
+        ],
+        "answer": "\\(\\frac1{12}\\)。",
+        "analysis": "令 \\(t=xu,dt=x\\,du\\)，积分区间恒为 \\(0\\le u\\le1\\)。分子为 \\(\\int_0^1[e^{x^2(u-1)^2}-1]\\sin(xu)x\\,du=x^4\\int_0^1u(u-1)^2\\,du+o(x^4)\\)。分母 \\(x^2(e^{x^2}-1)\\sim x^4\\)，所以极限为 \\(\\int_0^1u(u-1)^2du=1/12\\)。",
+        "errorCause": "换元 \\(t=xu\\) 后误把微分写为 \\(dt=du/x\\)，应为 \\(dt=x\\,du\\)。",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "积分极限",
+          "定积分换元",
+          "一致渐近展开"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-07-26",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第4题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "历史订正检索；保留原题正文"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch01-u007-p008",
+      "action": "merge",
+      "targetId": "高等数学-ch01-u007-p008",
+      "expectedStem": "计算：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left[\\frac{x^{x+1}}{(1+x)^x}-\\frac{x}{e}\\right]\\)。",
+      "matchReason": "题号14、原函数和极限方向完全一致。",
+      "question": {
+        "stem": "计算：\\(\\displaystyle \\lim_{x\\to+\\infty}\\left[\\frac{x^{x+1}}{(1+x)^x}-\\frac{x}{e}\\right]\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "泰勒展开",
+          "指数型极限",
+          "代数提取因子"
+        ],
+        "answer": "\\(\\frac1{2e}\\)。",
+        "analysis": "原式为 \\(\\frac xe\\{\\exp[1-x\\ln(1+1/x)]-1\\}\\)。因 \\(1-x\\ln(1+1/x)=\\frac1{2x}+O(x^{-2})\\)，再用 \\(e^t-1\\sim t\\)，得极限 \\(1/(2e)\\)。",
+        "errorCause": "提取 \\(x/e\\) 时把括号内应补的因子 \\(e\\) 写成 \\(1/e\\)，同时混淆指数中的常数项。",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "泰勒展开",
+          "指数型极限",
+          "代数提取因子"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-07-26",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第14题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "历史订正检索；保留原题正文"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch16-u146-p172",
+      "action": "merge",
+      "targetId": "高等数学-ch16-u146-p172",
+      "expectedStem": "设级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的系数 \\(a_n\\) 满足关系式 \\(a_n=\\dfrac{a_{n-1}}{n}+1-\\dfrac1n\\)，\\(n=2,3,\\cdots\\)，\\(a_1=2\\)，则当 \\(|x|<1\\) 时，级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+      "matchReason": "历史递推na_n=a_(n-1)+n-1与原库递推代数等价，首项、求和起点及范围相同。",
+      "question": {
+        "stem": "设级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的系数 \\(a_n\\) 满足关系式 \\(a_n=\\dfrac{a_{n-1}}{n}+1-\\dfrac1n\\)，\\(n=2,3,\\cdots\\)，\\(a_1=2\\)，则当 \\(|x|<1\\) 时，级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_nx^n\\) 的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "递推幂级数",
+          "生成函数",
+          "首项修正"
+        ],
+        "answer": "\\(S(x)=\\frac{x}{1-x}+e^x-1,\\quad |x|<1\\)。",
+        "analysis": "将递推改写为 \\(a_n-1=(a_{n-1}-1)/n\\)，且 \\(a_1-1=1\\)，可得 \\(a_n=1+1/n!\\)。因此 \\(S(x)=\\sum_{n\\ge1}x^n+\\sum_{n\\ge1}x^n/n!=x/(1-x)+e^x-1\\)。也可求得 \\(S'-S=2+x/(1-x)^2\\)，用 \\(S(0)=0\\) 定常数。",
+        "errorCause": "",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "递推幂级数",
+          "生成函数",
+          "首项修正"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-08-30",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第21题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch16-u152-p177",
+      "action": "merge",
+      "targetId": "高等数学-ch16-u152-p177",
+      "expectedStem": "设 \\(a_n=\\displaystyle\\int_0^{+\\infty}e^{-n^2x^2}\\,dx\\)，\\(n=1,2,\\cdots\\)，求 \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^n a_na_{n+2}\\)。",
+      "matchReason": "历史提问为原库高斯积分求和题的中间消项步骤；按完整原题合并，不把中间级数单独新增成新题。",
+      "question": {
+        "stem": "设 \\(a_n=\\displaystyle\\int_0^{+\\infty}e^{-n^2x^2}\\,dx\\)，\\(n=1,2,\\cdots\\)，求 \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^n a_na_{n+2}\\)。",
+        "options": [],
+        "knowledgePoints": [
+          "高斯积分",
+          "交错消项",
+          "有限部分和"
+        ],
+        "answer": "\\(-\\frac{\\pi}{16}\\)。",
+        "analysis": "\\(a_n=\\sqrt\\pi/(2n)\\)。故所求为 \\(\\frac\\pi4\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n(n+2)}=\\frac\\pi8\\sum_{n=1}^{\\infty}(-1)^n(\\frac1n-\\frac1{n+2})\\)。后一有限部分和为 \\(-\\frac12+(-1)^N(\\frac1{N+1}-\\frac1{N+2})\\)，令 \\(N\\to\\infty\\) 得 \\(-\\pi/16\\)。",
+        "errorCause": "在无穷和中直接写不存在的“最后一项”，混淆求和变量n与部分和上限N。",
+        "mistakeType": "方法不熟",
+        "tags": [
+          "历史对话导入",
+          "高斯积分",
+          "交错消项",
+          "有限部分和"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-08-30",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第31题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "历史订正检索；保留原题正文"
+      }
+    },
+    {
+      "candidateId": "merge-高等数学-ch16-u157-p179",
+      "action": "merge",
+      "targetId": "高等数学-ch16-u157-p179",
+      "expectedStem": "设 \\(f(x)=\\begin{cases}x+1,&0\\le x\\le\\pi,\\\\0,&-\\pi\\le x<0,\\end{cases}\\) \\(S(x)=\\dfrac{a_0}{2}+\\displaystyle\\sum_{n=1}^{\\infty}(a_n\\cos nx+b_n\\sin nx)\\) 是 \\(f(x)\\) 以 \\(2\\pi\\) 为周期的傅里叶级数，则 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n=\\)（　）。",
+      "matchReason": "分段函数、区间、周期和所求系数之和与现有原题相同。",
+      "question": {
+        "stem": "设 \\(f(x)=\\begin{cases}x+1,&0\\le x\\le\\pi,\\\\0,&-\\pi\\le x<0,\\end{cases}\\) \\(S(x)=\\dfrac{a_0}{2}+\\displaystyle\\sum_{n=1}^{\\infty}(a_n\\cos nx+b_n\\sin nx)\\) 是 \\(f(x)\\) 以 \\(2\\pi\\) 为周期的傅里叶级数，则 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_n=\\)（　）。",
+        "options": [
+          {
+            "label": "A",
+            "text": "\\(-\\dfrac\\pi4\\)"
+          },
+          {
+            "label": "B",
+            "text": "\\(\\dfrac\\pi4\\)"
+          },
+          {
+            "label": "C",
+            "text": "\\(-\\dfrac\\pi2\\)"
+          },
+          {
+            "label": "D",
+            "text": "\\(\\dfrac\\pi2\\)"
+          }
+        ],
+        "knowledgePoints": [
+          "傅里叶级数",
+          "狄利克雷收敛定理",
+          "跳跃点左右极限"
+        ],
+        "answer": "A，\\(-\\frac\\pi4\\)。",
+        "analysis": "\\(a_0=\\frac1\\pi\\int_0^\\pi(x+1)\\,dx=\\frac\\pi2+1\\)。在跳跃点0，傅里叶级数之和为 \\(S(0)=[f(0-)+f(0+)]/2=1/2\\)，不是 \\(f(0)=1\\)。因此 \\(\\sum_{n\\ge1}a_n=S(0)-a_0/2=-\\pi/4\\)。",
+        "errorCause": "",
+        "mistakeType": "待归类",
+        "tags": [
+          "历史对话导入",
+          "傅里叶级数",
+          "狄利克雷收敛定理",
+          "跳跃点左右极限"
+        ],
+        "historySources": [
+          {
+            "kind": "history-conversation",
+            "date": "2026-08-30",
+            "verification": "历史订正检索与现有原题交叉核对",
+            "sourceLabel": "历史订正：第37题"
+          }
+        ],
+        "answerVerification": "本次独立推导复核",
+        "errorCauseEvidence": "未确认个人具体错因"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "key": "limit-sign-conflict",
+      "date": "2026-07-26",
+      "topic": "第17题函数极限",
+      "reason": "历史检索返回x+f(x)，现有原题为x-f(x)；未核对该次原图，不自动合并错因或改写原题。",
+      "existingCandidate": "高等数学-ch01-u008-p009"
+    },
+    {
+      "key": "series-incomplete",
+      "date": "2026-08-26",
+      "topic": "正项级数四项判断",
+      "reason": "历史检索只恢复其中部分选项，完整题干不足，不入正式题库。"
+    },
+    {
+      "key": "series-exponential-integral",
+      "date": "2026-08-30",
+      "topic": "含(n+1)(n+1)!分母的幂级数",
+      "reason": "检索返回较完整中间级数，但未恢复原题全部问法和原图，避免把中间步骤单独建题。"
+    },
+    {
+      "key": "symmetric-a-matrix",
+      "date": "2026-09-14",
+      "topic": "含参数a的实对称矩阵及(A-aE)^2合同变换",
+      "reason": "仅恢复矩阵与部分订正，第二问完整要求未核对原图。"
+    },
+    {
+      "key": "adjugate-judgement",
+      "date": "2026-09-15",
+      "topic": "伴随矩阵判断题",
+      "reason": "历史检索只有反例和选D，未恢复①②的完整命题。"
+    },
+    {
+      "key": "endpoint-series",
+      "date": "2026-08-30",
+      "topic": "交错幂级数x=-1处的敛散性",
+      "reason": "只恢复端点讨论，未确认是否只是完整原题的一个步骤。"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceFileId": "libfile_d0eb9844567c81918cc55fc663ca6c51",
+      "reason": "梯度场闭曲线积分概念说明，未确认属于个人做错或求订正的具体题，未导入。"
+    }
+  ]
+}

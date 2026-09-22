@@ -19,7 +19,7 @@
     <div>
       <p class="eyebrow">MISTAKE VAULT · 数学一</p>
       <h1>错题仓</h1>
-      <p class="subtitle">159 道错题已转写为结构化文本与 LaTeX，可筛选、分析并随时组卷。</p>
+      <p id="questionCountSubtitle" class="subtitle">错题已转写为结构化文本与 LaTeX，可筛选、分析并随时组卷。</p>
     </div>
     <div class="header-actions">
       <button id="backupButton" class="button ghost">备份进度</button>
@@ -38,6 +38,14 @@
         <input id="searchInput" type="search" placeholder="章节、题号、标签或笔记">
       </label>
       <label>科目<select id="subjectFilter"><option value="">全部科目</option></select></label>
+      <label>题目来源
+        <select id="sourceFilter">
+          <option value="">全部来源</option>
+          <option value="history">历史对话相关</option>
+          <option value="new-history">历史对话新增</option>
+          <option value="book">原做题本</option>
+        </select>
+      </label>
       <label>章节<select id="chapterFilter"><option value="">全部章节</option></select></label>
       <label>题型<select id="questionTypeFilter"><option value="">全部题型</option></select></label>
       <label>复习状态
@@ -59,7 +67,7 @@
           <option>未标注</option><option>基础</option><option>中等</option><option>困难</option>
         </select>
       </label>
-      <label>原始标记<select id="colorFilter"><option value="">全部颜色</option><option value="red">红圈</option><option value="blue">蓝圈</option><option value="mixed">双色圈</option></select></label>
+      <label>原始标记<select id="colorFilter"><option value="">全部标记</option><option value="red">红圈</option><option value="blue">蓝圈</option><option value="mixed">双色圈</option><option value="history">历史对话</option></select></label>
       <div class="source-note">
         <span>数据源</span>
         <strong id="sourceTitle">张宇《1000题》强化篇</strong>
@@ -118,6 +126,7 @@
         <div class="question-content">
           <div class="question-stem"></div>
           <ol class="option-list"></ol>
+          <details class="history-context"><summary>来源说明与复盘重点</summary><p></p></details>
         </div>
         <div class="editor-grid">
           <label>状态<select data-field="status"><option>未复习</option><option>复习中</option><option>已掌握</option></select></label>

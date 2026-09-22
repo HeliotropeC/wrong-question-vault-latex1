@@ -56,6 +56,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 .marker-badge.red { color: #8d2f25; background: #f6ded9; }
 .marker-badge.blue { color: #235689; background: #dcebf7; }
 .marker-badge.mixed { color: #69406f; background: linear-gradient(90deg, #f6ded9, #dcebf7); }
+.marker-badge.history { color: #5a4720; background: #f5e7b8; }
 .card-body { padding: 16px; }
 .question-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .question-title strong { font: 700 1.1rem Georgia, "Songti SC", serif; }
@@ -75,6 +76,9 @@ textarea { resize: vertical; min-height: 58px; }
 .analysis-panel summary { padding: 11px 12px; color: var(--green); cursor: pointer; font-size: .8rem; font-weight: 800; }
 .analysis-panel[open] summary { border-bottom: 1px solid var(--line); }
 .analysis-panel > label { margin: 12px; }
+.history-context { margin-top: 12px; color: var(--muted); font-size: .78rem; }
+.history-context summary { color: var(--green); cursor: pointer; font-weight: 700; }
+.history-context p { white-space: pre-wrap; line-height: 1.7; }
 .review-note { margin-top: 10px; }
 .empty { padding: 80px 20px; text-align: center; color: var(--muted); }
 dialog { width: min(650px, calc(100vw - 28px)); border: 1px solid var(--line); border-radius: 18px; padding: 0; color: var(--ink); background: var(--card); box-shadow: 0 30px 80px rgba(25,20,14,.25); }

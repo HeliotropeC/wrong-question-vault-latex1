@@ -23,7 +23,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--status")
     parser.add_argument("--difficulty")
     parser.add_argument("--mistake-type")
-    parser.add_argument("--marker-color", choices=["red", "blue", "mixed"])
+    parser.add_argument("--marker-color", choices=["red", "blue", "mixed", "history"])
+    parser.add_argument("--source", choices=["history", "new-history", "book"])
     parser.add_argument("--ordered", action="store_true", help="按原书顺序抽取；默认随机")
     parser.add_argument("--seed", type=int)
     parser.add_argument("--include-answers", action="store_true")
@@ -46,6 +47,12 @@ def select_questions(payload: dict, args: argparse.Namespace) -> list[dict]:
             questions = [question for question in questions if question.get(field) == expected]
     if args.knowledge_point:
         questions = [question for question in questions if args.knowledge_point in question.get("knowledgePoints", [])]
+    if args.source == "history":
+        questions = [question for question in questions if question.get("historySources")]
+    elif args.source == "new-history":
+        questions = [question for question in questions if question.get("sourceType") == "history"]
+    elif args.source == "book":
+        questions = [question for question in questions if question.get("sourceType") != "history"]
     if not questions:
         raise SystemExit("筛选后没有题目。")
     if args.count < 1:
@@ -53,7 +60,10 @@ def select_questions(payload: dict, args: argparse.Namespace) -> list[dict]:
     if args.count > len(questions):
         raise SystemExit(f"仅有 {len(questions)} 题符合条件，不能导出 {args.count} 题。")
     if args.ordered:
-        questions.sort(key=lambda q: (q["sourcePage"], q["questionNo"]))
+        questions.sort(key=lambda q: (
+            q["subject"], q["chapter"], q.get("sourcePage") or float("inf"),
+            q["questionNo"], q["id"],
+        ))
         return questions[: args.count]
     return random.Random(args.seed).sample(questions, args.count)
 
@@ -66,13 +76,18 @@ def options_text(question: dict) -> str:
     return "\n".join(f"{option['label']}. {option['text']}" for option in question.get("options", []))
 
 
+def source_text(question: dict) -> str:
+    page = question.get("sourcePage")
+    return question["sourceRef"] if page is None else f"{question['sourceRef']}（PDF 第 {page} 页）"
+
+
 def export_markdown(questions: list[dict], output: Path, include_answers: bool) -> None:
     lines = ["# 错题练习清单", ""]
     for index, question in enumerate(questions, start=1):
         lines.extend([
             f"## {index}. {label(question)}", "",
             f"- 分类：{question['subject']} / 第{question['chapter']}章 {question['chapterTitle']} / {question['questionType']}",
-            f"- 来源：{question['sourceRef']}（PDF 第 {question['sourcePage']} 页）",
+            f"- 来源：{source_text(question)}",
             f"- 知识点：{'，'.join(question.get('knowledgePoints', []))}", "",
             question["stem"], "",
         ])
@@ -94,7 +109,7 @@ def export_csv(questions: list[dict], output: Path) -> None:
                 question["questionNo"], question["subject"], question["chapter"], question["chapterTitle"], question["questionType"],
                 question["stem"], options_text(question), "，".join(question.get("knowledgePoints", [])), question["status"],
                 question["difficulty"], question["mistakeType"], question.get("answer", ""), question.get("analysis", ""),
-                question.get("similarQuestionPrompt", ""), question["sourcePage"], question["sourceRef"],
+                question.get("similarQuestionPrompt", ""), question.get("sourcePage"), question["sourceRef"],
             ])
 
 
