@@ -1,0 +1,1100 @@
+{
+  "date": "2026-09-27",
+  "batch": "daily-2026-09-27-v1",
+  "scope": "当日 ChatGPT 对话中做错、订正、不会、卡壳、方法选择不稳、范围判断困难及追问解题思路的考研数学题",
+  "repository": "HeliotropeC/wrong-question-vault-latex1",
+  "deduplication": {
+    "comparedAgainstExistingCount": 193,
+    "method": [
+      "稳定题目 ID",
+      "规范化题干精确比对",
+      "知识点与题意人工复核"
+    ],
+    "skippedDuplicateIds": []
+  },
+  "importedCount": 18,
+  "questions": [
+    {
+      "id": "daily-20260927-prob-joint-transform-square",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "questionNo": 1,
+      "sourceRef": "2026-09-27 当日对话 · 联合密度与平方变换",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "联合密度",
+        "分布函数",
+        "随机变量函数",
+        "积分区域",
+        "概念错误",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设二维随机变量 \\((X,Y)\\) 的联合密度为\n\\[\n f(x,y)=\\begin{cases}4xy,&0<x<1,\\ 0<y<1,\\\\0,&\\text{其他}.\\end{cases}\n\\]\n(1) 判断 \\(X,Y\\) 是否独立；(2) 令 \\(U=X^2,V=Y^2\\)，求边缘密度并指出 \\((U,V)\\) 的联合分布；(3) 求 \\(P(U^2+V^2\\le1)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "联合密度",
+        "分布函数",
+        "随机变量函数",
+        "积分区域"
+      ],
+      "answer": "\\(X,Y\\) 独立；\\(U,V\\) 独立且均服从 \\(U(0,1)\\)；\\(P(U^2+V^2\\le1)=\\pi/4\\)。",
+      "analysis": "边缘密度为 \\(f_X(x)=2x, f_Y(y)=2y\\)，且 \\(f(x,y)=f_X(x)f_Y(y)\\)，故独立。对 \\(0<u<1\\)，\\(F_U(u)=P(X^2\\le u)=\\int_0^{\\sqrt u}2x\\,dx=u\\)，故 \\(f_U(u)=1\\)；同理 \\(f_V(v)=1\\)。独立性在分别作函数变换后仍保留，所以 \\(f_{U,V}(u,v)=1\\)（单位正方形内）。最后概率等于单位正方形内第一象限四分之一圆的面积：\\(\\int_0^1\\int_0^{\\sqrt{1-u^2}}dv\\,du=\\pi/4\\)。",
+      "errorCause": "错误类型：概念错误、边界或范围判断困难。卡在把 \\(F_{U,V}(u,v)=uv\\) 直接称为密度，并且没有先写分布函数在区间外的分段。",
+      "reviewFocus": "考场识别信号：平方变换且原变量只在 \\((0,1)\\) 取值。第一步先求 CDF，再求导得密度；看到 \\(U^2+V^2\\le1\\) 立即在 \\((u,v)\\) 平面画第一象限四分之一圆。记住：积分得到 \\(F\\)，对 \\(F\\) 求偏导才得到 \\(f\\)。",
+      "similarQuestionPrompt": "将原密度改为 \\(9x^2y^2\\)，令 \\(U=X^3,V=Y^3\\)，求联合密度及 \\(P(U+V\\le1)\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "3545FC32-95F7-4496-A2BB-09D15F662706.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_D44D565D-5BBD-4E30-AC6B-9A5C9BC842FC.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "ae677d67c2b524619b31305458802c224c67a12214421ec4a5edaa987113f379"
+    },
+    {
+      "id": "daily-20260927-prob-singular-cdf-min",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "questionNo": 2,
+      "sourceRef": "2026-09-27 当日对话 · 奇异联合分布",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "联合分布函数",
+        "奇异分布",
+        "边缘分布",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "二维随机变量 \\((X,Y)\\) 的联合分布函数为\n\\[F(x,y)=\\begin{cases}0,&\\min\\{x,y\\}<0,\\\\\\min\\{x,y\\},&0\\le\\min\\{x,y\\}<1,\\\\1,&\\min\\{x,y\\}\\ge1.\\end{cases}\\]\n(1) 求 \\(X,Y\\) 的边缘密度；(2) 令 \\(Z=F(X,Y)\\)，求 \\(Z\\) 的密度。",
+      "options": [],
+      "knowledgePoints": [
+        "联合分布函数",
+        "奇异分布",
+        "边缘分布"
+      ],
+      "answer": "\\(X=Y\\) 几乎处处，且 \\(X,Y\\sim U(0,1)\\)；\\(Z\\sim U(0,1)\\)，故 \\(f_Z(z)=1\\ (0<z<1)\\)。",
+      "analysis": "令另一个变量趋于 \\(+\\infty\\)，得 \\(F_X(x)=F_Y(x)=0,x<0;\\ x,0\\le x<1;\\ 1,x\\ge1\\)，故边缘密度均为 1。关键不是对 \\(F(x,y)\\) 求二阶偏导：该分布的全部概率集中在直线 \\(x=y\\) 上，不存在通常意义下的二维联合密度。因为 \\(F(x,y)=P(X\\le x,Y\\le y)=P(T\\le\\min\\{x,y\\})\\)，可表示为 \\(X=Y=T\\sim U(0,1)\\)。于是 \\(Z=F(X,Y)=\\min(X,Y)=T\\)。",
+      "errorCause": "错误类型：概念错误、方法选择困难。卡在默认“有联合分布函数就一定能二阶求导得到联合密度”，忽略概率可能集中在一条曲线上。",
+      "reviewFocus": "识别信号：联合 CDF 只依赖 \\(\\min\\{x,y\\}\\)。第一步检查它是否对应 \\(X=Y\\) 的完全相关结构；若概率集中在低维集合上，就不能硬套二维密度积分。",
+      "similarQuestionPrompt": "设 \\(F(x,y)=\\Phi(\\min\\{x,y\\})\\)，判断联合密度是否存在，并求 \\(\\max(X,Y)\\) 的分布。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "B01298AA-D319-4E73-B64B-444784BE9BAF.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_D51BB64D-FA45-44FE-8B26-A0F4D0E74B3C.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_FA843A40-99EE-435E-AEEE-AFBA469454A3.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_13670CF2-CE40-4C0A-8721-424EA951F54A.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "166ccd5f7cfeb827126fbcb905aa9f6985c253e6d57ed794877f2524dbe549fe"
+    },
+    {
+      "id": "daily-20260927-prob-exp-min-normal-convolution-max",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "随机变量函数的分布",
+      "questionNo": 3,
+      "sourceRef": "2026-09-27 当日对话 · 最小值、卷积与最大值",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "指数分布",
+        "最小值",
+        "卷积",
+        "最大值",
+        "思路卡壳",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X_1,X_2,X_3\\) 相互独立，\\(X_1\\sim N(0,1)\\)，\\(X_2,X_3\\) 均服从参数为 \\(1/2\\) 的指数分布。令 \\(X=X_1\\)，\\(Y=\\min(X_2,X_3)\\)，\\(Z=X+Y\\)，\\(U=\\max(X,Y)\\)。分别求 \\(X,Y,Z,U\\) 的密度。",
+      "options": [],
+      "knowledgePoints": [
+        "指数分布",
+        "最小值",
+        "卷积",
+        "最大值"
+      ],
+      "answer": "\\(f_X(x)=\\varphi(x)\\)；\\(f_Y(y)=e^{-y},y>0\\)；\\(f_Z(z)=e^{1/2-z}\\Phi(z-1),z\\in\\mathbb R\\)；\\(f_U(u)=\\varphi(u)(1-e^{-u})+\\Phi(u)e^{-u},u>0\\)，其他处为 0。",
+      "analysis": "最小值用生存函数：\\(P(Y>y)=P(X_2>y)P(X_3>y)=e^{-y}\\)，所以 \\(Y\\sim E(1)\\)。卷积时由 \\(Y=z-x>0\\) 得 \\(x<z\\)：\\(f_Z(z)=\\int_{-\\infty}^{z}\\varphi(x)e^{-(z-x)}dx=e^{1/2-z}\\Phi(z-1)\\)。注意 \\(X\\) 可取任意实数，所以 \\(Z\\) 的支持也是全体实数。最大值先求 CDF：当 \\(u<0\\)，\\(F_U(u)=0\\)；当 \\(u\\ge0\\)，\\(F_U(u)=P(X\\le u)P(Y\\le u)=\\Phi(u)(1-e^{-u})\\)，再求导。",
+      "errorCause": "错误类型：知识点不熟、边界或范围判断困难。最小值仍误写成原指数率，卷积积分上下限没有由 \\(z-x>0\\) 推出，并一度误判 \\(Z\\) 只能取正值。",
+      "reviewFocus": "考场识别信号：min/max 优先用 CDF 或生存函数；和变量才用卷积。第一步写每个变量的支持集。避免再次卡壳：把卷积中的第二个变量写成 \\(y=z-x\\)，所有上下限只从原支持条件推出。",
+      "similarQuestionPrompt": "令 \\(X_2,X_3\\) 的指数率分别为 \\(a,b\\)，重新求 \\(Y=\\min(X_2,X_3)\\) 及 \\(X_1+Y\\) 的密度。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "35E6372D-2037-4B30-AFEB-DE326A12EBD0.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "2D1C8DC1-EF40-452A-A6E7-C400D9850150.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_49D95729-8D2B-4F82-9236-0DD765B9EFCE.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_25173763-2A7F-4F71-A14B-17AE7450D3E0.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "1c366caff4d64cc21a499c9fc5cac0bd032b4233e0dbade9ea6c9a1f31a0d2ba"
+    },
+    {
+      "id": "daily-20260927-prob-continuous-discrete-max",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "随机变量函数的分布",
+      "questionNo": 4,
+      "sourceRef": "2026-09-27 当日对话 · 连续与离散混合最大值",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "审题错误",
+      "tags": [
+        "当日对话导入",
+        "最大值",
+        "混合分布",
+        "分布函数",
+        "审题错误",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 相互独立，\\(f_X(x)=2x\\ (0<x<1)\\)，且 \\(Y\\sim B(1,1/2)\\)。求 \\(Z=\\max\\{X,Y\\}\\) 的分布函数。",
+      "options": [],
+      "knowledgePoints": [
+        "最大值",
+        "混合分布",
+        "分布函数"
+      ],
+      "answer": "\\(F_Z(z)=0\\ (z<0);\\ F_Z(z)=z^2/2\\ (0\\le z<1);\\ F_Z(z)=1\\ (z\\ge1)\\)。在 \\(z=1\\) 处有大小为 \\(1/2\\) 的跳跃。",
+      "analysis": "\\(F_Z(z)=P(X\\le z,Y\\le z)=F_X(z)F_Y(z)\\)。当 \\(0\\le z<1\\) 时，事件 \\(Y\\le z\\) 只允许 \\(Y=0\\)，概率为 \\(1/2\\)，故 \\(F_Z(z)=z^2/2\\)。当 \\(z\\ge1\\) 时两个变量都必然不超过 \\(z\\)，故为 1。",
+      "errorCause": "错误类型：审题错误、边界判断困难。计算 \\(0<z<1\\) 时把 \\(Y=1\\) 的情形也计入，得到错误的 \\(z^2\\)。",
+      "reviewFocus": "第一步不要直接相乘符号式，要先按 \\(z<0,0\\le z<1,z\\ge1\\) 判断离散变量哪些取值能进入事件。混合分布的 CDF 可以有跳跃，不能强行求成纯连续密度。",
+      "similarQuestionPrompt": "保持 \\(X\\) 不变，令 \\(P(Y=0)=a,P(Y=2)=1-a\\)，求 \\(\\max(X,Y)\\) 的 CDF 并标出跳点。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "406297CE-C76D-4AC5-ADF9-4E5F8F2AF76C.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_C54C455E-0139-45E4-BF14-112E084E2D97.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_573D9477-7A89-483E-8859-8124624A4A0F.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "b37bfd9bd487a121eb0cd05c72e01230e32d672190fc42d5e551ad3c887fb2c8"
+    },
+    {
+      "id": "daily-20260927-prob-bivariate-normal-quadrant-rho",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维正态分布",
+      "questionNo": 5,
+      "sourceRef": "2026-09-27 当日对话 · 二维正态相关系数",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "二维正态",
+        "相关系数",
+        "象限概率",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\((X,Y)\\sim N(\\mu_1,\\mu_2;\\sigma_1^2,\\sigma_2^2;\\rho)\\)，联合分布函数为 \\(F(x,y)\\)。已知 \\(F(\\mu_1,\\mu_2)=1/4\\)，求 \\(\\rho\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "二维正态",
+        "相关系数",
+        "象限概率"
+      ],
+      "answer": "\\(\\rho=0\\)。",
+      "analysis": "标准化后问题为 \\(P(U\\le0,V\\le0)=1/4\\)。二维标准正态的象限概率公式为 \\(P(U\\le0,V\\le0)=1/4+\\arcsin\\rho/(2\\pi)\\)。因此 \\(\\arcsin\\rho=0\\)，从而 \\(\\rho=0\\)。",
+      "errorCause": "错误类型：知识点不熟。没有把均值点标准化为原点象限概率。",
+      "reviewFocus": "识别信号：题目给的是 \\(F(\\mu_1,\\mu_2)\\)，这正是标准化后的左下象限。二维正态中 \\(\\rho=0\\) 还可推出独立。",
+      "similarQuestionPrompt": "若 \\(P(X>\\mu_1,Y>\\mu_2)=1/3\\)，求相关系数 \\(\\rho\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "4E902C10-20C0-4089-977B-D9EE2D0E9D0B.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "ace8da39b10c3c925eb1765128920d7d86a3e8f9a5e55a79c203e180581774e3"
+    },
+    {
+      "id": "daily-20260927-prob-product-discrete-multiplier",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "随机变量函数的分布",
+      "questionNo": 6,
+      "sourceRef": "2026-09-27 当日对话 · 乘积的混合分布",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "乘积分布",
+        "混合分布",
+        "离散连续混合",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X\\) 的密度为 \\(f(x)\\)，且与 \\(Y\\) 独立，令 \\(Z=XY\\)。(1) 若 \\(P(Y=-1)=1-p,P(Y=1)=p\\)，求 \\(f_Z\\)；(2) 若 \\(P(Y=0)=1-p,P(Y=1)=p\\)，求 \\(F_Z\\) 与 \\(P(Z=0)\\)，并判断 \\(Z\\) 是否为连续型随机变量。",
+      "options": [],
+      "knowledgePoints": [
+        "乘积分布",
+        "混合分布",
+        "离散连续混合"
+      ],
+      "answer": "(1) \\(f_Z(z)=(1-p)f(-z)+pf(z)\\)；(2) \\(F_Z(z)=pF_X(z)\\)（\\(z<0\\)），\\(F_Z(z)=1-p+pF_X(z)\\)（\\(z\\ge0\\)）；\\(P(Z=0)=1-p\\)，故不是连续型。",
+      "analysis": "按 \\(Y\\) 的取值使用全概率。(1) 条件于 \\(Y=-1\\) 时 \\(Z=-X\\)，密度为 \\(f(-z)\\)；条件于 \\(Y=1\\) 时 \\(Z=X\\)。(2) 条件于 \\(Y=0\\) 时 \\(Z\\) 恒等于 0，产生原子概率 \\(1-p\\)；条件于 \\(Y=1\\) 时保持 \\(X\\) 的分布。连续型 \\(X\\) 满足 \\(P(X=0)=0\\)。",
+      "errorCause": "错误类型：概念错误、方法选择困难。把含原子点的混合分布仍当作纯连续密度处理，并混淆 CDF 在 \\(0\\) 点的跳跃与密度。",
+      "reviewFocus": "考场信号：一个连续变量乘上可取 0 的离散变量，结果必在 0 处堆积概率。第一步列出离散变量各取值下 \\(Z\\) 的条件分布，再加权；不要先套连续变量换元公式。",
+      "similarQuestionPrompt": "令 \\(Y\\) 取 \\(-2,0,3\\) 三个值，给定其概率，求 \\(Z=XY\\) 的分布并指出所有原子点。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "C3C8C1D2-3379-4170-8A16-95F9DF64A219.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_B9E50220-13FF-4CF8-BAED-7342CC968388.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "865c7c2807ad4f8dd5f1c81b6d9e5f3448f6969abdc00d8f703c8dad63195417"
+    },
+    {
+      "id": "daily-20260927-prob-geometric-diagonal",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维离散型随机变量",
+      "questionNo": 7,
+      "sourceRef": "2026-09-27 当日对话 · 几何分布对角线事件",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "几何分布",
+        "独立",
+        "无穷级数",
+        "思路卡壳",
+        "看不懂题意"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 相互独立且同分布，\\(P(X=k)=pq^{k-1}\\ (k=1,2,\\ldots)\\)，其中 \\(q=1-p\\)。求 \\(P(X=Y)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "几何分布",
+        "独立",
+        "无穷级数"
+      ],
+      "answer": "\\(P(X=Y)=\\dfrac{p}{2-p}\\)。",
+      "analysis": "事件 \\(X=Y\\) 是互不相交事件 \\(\\{X=1,Y=1\\},\\{X=2,Y=2\\},\\ldots\\) 的并。因此 \\(P(X=Y)=\\sum_{k=1}^{\\infty}P(X=k)P(Y=k)=\\sum_{k=1}^{\\infty}p^2q^{2k-2}=p^2/(1-q^2)=p/(2-p)\\)。",
+      "errorCause": "错误类型：思路卡壳、看不懂题意。没有把“两个随机变量相等”翻译成联合分布表主对角线上所有点的概率之和。",
+      "reviewFocus": "第一步固定共同取值 \\(k\\)：\\(X=Y=k\\)。看到离散型的“相等”就想对角线求和；独立只用于把联合概率拆成乘积。",
+      "similarQuestionPrompt": "若 \\(X,Y\\) 分别服从参数 \\(p_1,p_2\\) 的几何分布，求 \\(P(X=Y)\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "61318BBE-C972-409E-AD86-F62FBC4023B8.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "bbf6c219f2db1e878d60a840d094423ee6c75c3ad77cc643fc6ba2b980857a5d"
+    },
+    {
+      "id": "daily-20260927-prob-exp-quadratic-real-root",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维连续型随机变量",
+      "questionNo": 8,
+      "sourceRef": "2026-09-27 当日对话 · 全概率与条件化",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "指数分布",
+        "全概率公式",
+        "条件化",
+        "独立",
+        "方法选择困难",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 相互独立，且均服从参数 \\(1\\) 的指数分布。求关于 \\(t\\) 的方程 \\(t^2+\\sqrt X\\,t+Y=0\\) 有实根的概率。",
+      "options": [],
+      "knowledgePoints": [
+        "指数分布",
+        "全概率公式",
+        "条件化",
+        "独立"
+      ],
+      "answer": "\\(1/5\\)。",
+      "analysis": "有实根等价于判别式 \\(X-4Y\\ge0\\)。固定 \\(Y=y\\)，由独立性 \\(P(X\\ge4y\\mid Y=y)=P(X\\ge4y)=e^{-4y}\\)，但还必须按 \\(Y\\) 的密度加权：\\(P(X\\ge4Y)=\\int_0^{\\infty}e^{-4y}e^{-y}dy=1/5\\)。",
+      "errorCause": "错误类型：方法选择困难、概念错误。误把“独立可去掉条件”理解成可以删掉事件中的随机变量，并在固定一个变量后漏乘该变量的密度；同时混淆大写 \\(F\\) 与小写 \\(f\\)。",
+      "reviewFocus": "识别信号：事件边界含两个随机变量 \\(X\\ge4Y\\)，适合固定其中一个变量做全概率。第一步写判别式，再选择固定 \\(Y=y\\)。独立性只能把条件分布换成边缘分布，不能把 \\(y\\) 从阈值 \\(4y\\) 中删掉。",
+      "similarQuestionPrompt": "若 \\(X\\sim E(a),Y\\sim E(b)\\) 独立，求 \\(t^2+\\sqrt X t+cY=0\\) 有实根的概率。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "070594CB-D372-49F6-BA47-D102ACFAB9CC.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_A685784D-0C28-4372-8D32-A1AF70E885C2.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "5eb4fca985281c3991e2a5e7e6d63207dbf915d1f6362407acaddc9f36ab765d"
+    },
+    {
+      "id": "daily-20260927-prob-normal-discrete-total-prob",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "全概率公式与混合变量",
+      "questionNo": 9,
+      "sourceRef": "2026-09-27 当日对话 · 正态变量与离散变量",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "正态分布",
+        "离散分布",
+        "全概率公式",
+        "标准化",
+        "计算错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 相互独立，\\(X\\sim N(0,4)\\)，且 \\(P(Y=1)=1/5,P(Y=2)=1/2,P(Y=3)=3/10\\)。已知 \\(\\Phi(1)=0.84\\)，求 \\(P(X+2Y\\le4)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "正态分布",
+        "离散分布",
+        "全概率公式",
+        "标准化"
+      ],
+      "answer": "\\(0.466\\)。",
+      "analysis": "按 \\(Y\\) 取值分类：\\(Y=1\\) 时 \\(X\\le2\\)，概率 \\(\\Phi(1)=0.84\\)；\\(Y=2\\) 时 \\(X\\le0\\)，概率 \\(0.5\\)；\\(Y=3\\) 时 \\(X\\le-2\\)，概率 \\(\\Phi(-1)=0.16\\)。加权得 \\((1/5)0.84+(1/2)0.5+(3/10)0.16=0.466\\)。",
+      "errorCause": "错误类型：计算错误、方法选择不稳定。已经想到全概率，但标准化和最后加权相加出现错误。",
+      "reviewFocus": "第一步列三行表：\\(Y\\) 的取值、对应的 \\(X\\) 阈值、条件概率。正态标准化必须除以标准差 \\(2\\)，不是方差 \\(4\\)；最后检查三项权重之和为 1。",
+      "similarQuestionPrompt": "将 \\(X\\) 改为 \\(N(1,9)\\)，改变 \\(Y\\) 的三点分布，求类似线性组合概率。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "7A0B5EE5-EBA4-4BB1-B5F4-DA8E4D9C004F.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_BECEFCD9-D4EF-491A-848A-B31B8BB76E38.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "e7e1014cafff702beff7a073cf46b0aa298d679bf31f8fa2325b3bf10b847d7a"
+    },
+    {
+      "id": "daily-20260927-prob-independent-not-iid-sum-cdf",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维离散型随机变量",
+      "questionNo": 10,
+      "sourceRef": "2026-09-27 当日对话 · 独立不等于同分布",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "审题错误",
+      "tags": [
+        "当日对话导入",
+        "全概率公式",
+        "独立",
+        "不同分布",
+        "和的分布",
+        "审题错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X_1,X_2\\) 相互独立，分布函数分别为 \\(F_1,F_2\\)，其中 \\(F_1(x)=0\\ (x<0),1/4\\ (0\\le x<1),1\\ (x\\ge1)\\)。求 \\(X_1+X_2\\) 的分布函数（用 \\(F_2\\) 表示）。",
+      "options": [],
+      "knowledgePoints": [
+        "全概率公式",
+        "独立",
+        "不同分布",
+        "和的分布"
+      ],
+      "answer": "\\(F_{X_1+X_2}(x)=\\frac14F_2(x)+\\frac34F_2(x-1)\\)。",
+      "analysis": "由 \\(F_1\\) 的跳跃可知 \\(P(X_1=0)=1/4,P(X_1=1)=3/4\\)。按 \\(X_1\\) 分类：\\(P(X_1+X_2\\le x)=\\frac14P(X_2\\le x\\mid X_1=0)+\\frac34P(X_2\\le x-1\\mid X_1=1)\\)。独立性使两个条件分布分别化为 \\(F_2(x),F_2(x-1)\\)。",
+      "errorCause": "错误类型：审题错误、概念错误。题目只说独立，没有说同分布，却把 \\(X_2\\) 也当成与 \\(X_1\\) 相同的两点分布。",
+      "reviewFocus": "识别信号：题干明确写“分布函数分别为 \\(F_1,F_2\\)”。第一步只从 \\(F_1\\) 读出 \\(X_1\\) 的概率，再按其取值条件化；独立用于去掉条件，不用于推出同分布。",
+      "similarQuestionPrompt": "令 \\(X_1\\) 取 \\(-1,2\\) 两点，概率已知，写出 \\(X_1+X_2\\) 的 CDF 与 \\(F_2\\) 的关系。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "445C5C14-3EBC-46BD-A869-14B0981F45EB.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_D0819FF1-AC4B-41F0-A015-D7B8E9F2F9A7.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_A0CD00AF-53AA-484C-BBDB-DDDEB34324CA.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "fe76c0f8271a1d0008ce701e86475b0d83d5f76fcda1fff909b6e5afdbadc25c"
+    },
+    {
+      "id": "daily-20260927-prob-discrete-max-min",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维离散型随机变量函数",
+      "questionNo": 11,
+      "sourceRef": "2026-09-27 当日对话 · 最大值与最小值联合分布",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "离散均匀分布",
+        "最大值",
+        "最小值",
+        "联合分布",
+        "独立性",
+        "思路卡壳"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 独立同分布，且 \\(P(X=i)=1/3\\ (i=1,2,3)\\)。令 \\(U=\\max(X,Y),V=\\min(X,Y)\\)。(1) 求 \\((U,V)\\) 的联合分布；(2) 求 \\(Z=UV\\) 的分布；(3) 判断 \\(U,V\\) 是否独立；(4) 求 \\(P(U=V)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "离散均匀分布",
+        "最大值",
+        "最小值",
+        "联合分布",
+        "独立性"
+      ],
+      "answer": "当 \\(1\\le v<u\\le3\\) 时 \\(P(U=u,V=v)=2/9\\)，当 \\(u=v=1,2,3\\) 时为 \\(1/9\\)，其他为 0。\\(P(Z=1,2,3,4,6,9)=(1,2,2,1,2,1)/9\\)。\\(U,V\\) 不独立；\\(P(U=V)=1/3\\)。",
+      "analysis": "当 \\(u>v\\) 时，原有序对可以是 \\((u,v)\\) 或 \\((v,u)\\)，共两种，各概率 \\(1/9\\)；当 \\(u=v\\) 时只有 \\((u,u)\\)。将每个 \\((u,v)\\) 映射到乘积即可得到 \\(Z\\)。例如 \\(P(U=1,V=2)=0\\)，但 \\(P(U=1)>0,P(V=2)>0\\)，故不独立。\\(U=V\\) 当且仅当 \\(X=Y\\)，概率为三条对角点概率之和 \\(3/9\\)。",
+      "errorCause": "错误类型：思路卡壳、审题困难。没有先列出 \\((X,Y)\\) 的九个等可能点，因此对最大值、最小值的联合取值缺乏直观。",
+      "reviewFocus": "有限离散型题第一步画 \\(3\\times3\\) 表或列九个点；对角线只有一种排列，非对角线有两种排列。独立性用一个反例点即可否定。",
+      "similarQuestionPrompt": "把取值集合改为 \\(\\{0,1,2,3\\}\\)，求最大值和最小值的联合分布及两者相等的概率。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "87B78EDC-7D37-4909-8FAD-D23261864706.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "6a2588004fba51e23d2774f2080453627989e93c579b7e8c810fbe470f055b74"
+    },
+    {
+      "id": "daily-20260927-prob-poisson-sum-conditional",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维离散型随机变量",
+      "questionNo": 12,
+      "sourceRef": "2026-09-27 当日对话 · 泊松和与条件分布",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "泊松分布",
+        "离散卷积",
+        "条件分布",
+        "二项分布",
+        "方法选择困难",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X,Y\\) 相互独立，\\(X\\sim P(\\lambda_1),Y\\sim P(\\lambda_2)\\)。(1) 证明 \\(X+Y\\sim P(\\lambda_1+\\lambda_2)\\)；(2) 求在 \\(X+Y=n\\) 条件下 \\(X\\) 的条件分布。",
+      "options": [],
+      "knowledgePoints": [
+        "泊松分布",
+        "离散卷积",
+        "条件分布",
+        "二项分布"
+      ],
+      "answer": "\\(X+Y\\sim P(\\lambda_1+\\lambda_2)\\)；\\(X\\mid(X+Y=n)\\sim B\\left(n,\\lambda_1/(\\lambda_1+\\lambda_2)\\right)\\)。",
+      "analysis": "令 \\(Z=X+Y\\)。离散卷积为 \\(P(Z=n)=\\sum_{k=0}^{n}P(X=k)P(Y=n-k)=e^{-(\\lambda_1+\\lambda_2)}(\\lambda_1+\\lambda_2)^n/n!\\)。条件概率为 \\(P(X=k\\mid Z=n)=P(X=k,Y=n-k)/P(Z=n)=\\binom nk(\\lambda_1/(\\lambda_1+\\lambda_2))^k(\\lambda_2/(\\lambda_1+\\lambda_2))^{n-k}\\)，\\(k=0,\\ldots,n\\)。",
+      "errorCause": "错误类型：方法选择困难、边界或范围判断困难。曾把离散型概率质量当密度并尝试积分；不清楚求和指标为什么只到 \\(n\\)，以及 \\(Y=n-k\\ge0\\) 如何限制 \\(k\\)。",
+      "reviewFocus": "识别信号：泊松变量是离散型，和的分布用求和卷积。第一步写 \\(X=k,Y=n-k\\)，再由二者非负整数得到 \\(k=0,\\ldots,n\\)。看到条件“总数为 \\(n\\)”要联想到二项分配。",
+      "similarQuestionPrompt": "三个独立泊松变量之和给定为 \\(n\\) 时，求其中两个变量的联合条件分布。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_BBB57A22-AC2D-4510-A543-D02E9EAD8872.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "6F8C52AD-56B9-40C6-B068-28B3B40CBDF9.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "535fb3b719949229fb949134c38d09ef7becc0d8deb0deb6800298c606b4a471"
+    },
+    {
+      "id": "daily-20260927-prob-triangle-sum-product",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维连续型随机变量函数",
+      "questionNo": 13,
+      "sourceRef": "2026-09-27 当日对话 · 三角形区域上的和与积",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "联合密度",
+        "卷积",
+        "变量变换",
+        "积分区域",
+        "边界或范围判断困难",
+        "分布函数密度混淆"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "二维随机变量 \\((X,Y)\\) 的联合密度为 \\(f(x,y)=1/x\\)（\\(0<x<1,0<y<x\\)），其他处为 0。(1) 令 \\(Z_1=X+Y\\)，求密度；(2) 令 \\(Z_2=XY\\)，求密度。",
+      "options": [],
+      "knowledgePoints": [
+        "联合密度",
+        "卷积",
+        "变量变换",
+        "积分区域",
+        "分布函数密度混淆"
+      ],
+      "answer": "\\(f_{Z_1}(z)=\\ln2\\ (0<z<1),\\ \\ln(2/z)\\ (1\\le z<2)\\)，其他处为 0；\\(f_{Z_2}(z)=z^{-1/2}-1\\ (0<z<1)\\)，其他处为 0。",
+      "analysis": "原区域是三角形 \\(0<y<x<1\\)。对和变量，固定 \\(x+y=z\\)，条件变为 \\(z/2<x<\\min(z,1)\\)，故 \\(0<z<1\\) 时积分 \\(\\int_{z/2}^{z}dx/x=\\ln2\\)，\\(1\\le z<2\\) 时积分 \\(\\int_{z/2}^{1}dx/x=\\ln(2/z)\\)。对积变量，令 \\(y=z/x\\)，雅可比为 \\(1/x\\)，条件 \\(0<z/x<x<1\\) 给出 \\(\\sqrt z<x<1\\)，故 \\(f_{Z_2}(z)=\\int_{\\sqrt z}^{1}dx/x^2=z^{-1/2}-1\\)。",
+      "errorCause": "错误类型：边界或范围判断困难、概念错误。没有固定 \\(z\\) 看直线与原三角形的交段，而是把整个原区域直接积分，算出不可能作为密度的常数 2；同时混淆 \\(F_Z\\) 与 \\(f_Z\\)。",
+      "reviewFocus": "考场识别信号：题目给 \\(Z=X+Y\\) 或 \\(XY\\)，先画原区域，再固定一个 \\(z\\)。第一步把 \\(y=z-x\\) 或 \\(y=z/x\\) 代回全部不等式，逐条解出 \\(x\\) 的交集；密度最后必须积分为 1。",
+      "similarQuestionPrompt": "在同一区域上改成联合密度 \\(2\\)，分别求 \\(X+Y\\) 与 \\(XY\\) 的密度。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "9BB1396A-4D7A-4A6B-8AFD-AD8C2F687C00.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_EBF53CCA-3A07-4F14-BED3-05B80AE52F71.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "ea7ded06ec9f8711bd7a75a84fabe87f47bf77ed52d7de8b667f084c171276f1"
+    },
+    {
+      "id": "daily-20260927-prob-expectation-absolute-convergence",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 14,
+      "sourceRef": "2026-09-27 当日对话 · 期望存在性",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "数学期望",
+        "绝对收敛",
+        "级数",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设随机变量满足 \\(P\\{X=(-1)^k2^k/k\\}=2^{-k}\\ (k=1,2,\\ldots)\\)。求 \\(EX\\)。某解答把它写成 \\(\\sum_{k=1}^{\\infty}(-1)^k/k=-\\ln2\\)，判断是否正确。",
+      "options": [],
+      "knowledgePoints": [
+        "数学期望",
+        "绝对收敛",
+        "级数"
+      ],
+      "answer": "不正确；\\(EX\\) 不存在。",
+      "analysis": "离散型随机变量的期望存在要求 \\(\\sum |x_k|p_k<\\infty\\)。本题 \\(\\sum_{k=1}^{\\infty}|(-1)^k2^k/k|2^{-k}=\\sum_{k=1}^{\\infty}1/k\\) 发散。虽然带符号级数条件收敛到 \\(-\\ln2\\)，但不能作为概率论意义下的数学期望。",
+      "errorCause": "错误类型：概念错误、知识点不熟。只计算了带符号级数，没有先检查绝对可积性。",
+      "reviewFocus": "看到正负交替且取值绝对值增长时，第一步检查 \\(E|X|\\)，而不是直接求 \\(EX\\)。条件收敛的数值不能充当随机变量的期望。",
+      "similarQuestionPrompt": "将概率改为 \\(c/3^k\\)，判断期望是否存在并求其值。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "5C36EEAC-F607-4072-B177-874DFC38DB11.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_1AA3360E-DCC1-4553-B53F-652C319E8B95.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "0ac42e2e527cec026e65de8eaf228425e19a94a903795174a98b0108aa076403"
+    },
+    {
+      "id": "daily-20260927-prob-expectation-max-piecewise",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量函数的数学期望",
+      "questionNo": 15,
+      "sourceRef": "2026-09-27 当日对话 · 分段函数期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "数学期望",
+        "分段函数",
+        "最大值",
+        "思路卡壳"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "已知连续型随机变量 \\(X\\) 的密度为 \\(f(x)\\)，求 \\(E\\max\\{X,1\\}\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "数学期望",
+        "分段函数",
+        "最大值"
+      ],
+      "answer": "\\(E\\max\\{X,1\\}=F_X(1)+\\int_1^{\\infty}x f(x)\\,dx\\)。",
+      "analysis": "先把函数分段：当 \\(x<1\\) 时 \\(\\max(x,1)=1\\)，当 \\(x\\ge1\\) 时为 \\(x\\)。因此 \\(E\\max\\{X,1\\}=\\int_{-\\infty}^{1}f(x)dx+\\int_1^{\\infty}xf(x)dx\\)。",
+      "errorCause": "错误类型：思路卡壳、审题错误。曾直接写成 1，没有把最大值函数随 \\(X\\) 的取值分段。",
+      "reviewFocus": "看到绝对值、最大值、最小值时，第一步永远是找分界点并把 \\(g(x)\\) 写成分段函数，再套 \\(E[g(X)]\\)。",
+      "similarQuestionPrompt": "求 \\(E\\min\\{X,a\\}\\) 与 \\(E|X-a|\\) 的通用积分表达式。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "EB8F7156-E113-4605-9923-88899C060351.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_1AA3360E-DCC1-4553-B53F-652C319E8B95.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "5825f9ec7019e8e1a05225fb76c0d3f3a560c4639c23533983bf23f088a3f0cb"
+    },
+    {
+      "id": "daily-20260927-prob-central-moments-variance",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "方差与中心矩",
+      "questionNo": 16,
+      "sourceRef": "2026-09-27 当日对话 · 中心矩展开",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "方差",
+        "中心矩",
+        "公式展开",
+        "计算错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设有关期望存在。(1) 化简 \\(E(X-EX)^3\\)；(2) 化简 \\(E(X-\\theta)^2\\)，并说明它与方差的关系。",
+      "options": [],
+      "knowledgePoints": [
+        "方差",
+        "中心矩",
+        "公式展开"
+      ],
+      "answer": "\\(E(X-EX)^3=E(X^3)-3EX\\,E(X^2)+2(EX)^3\\)；\\(E(X-\\theta)^2=DX+(EX-\\theta)^2\\)。",
+      "analysis": "令 \\(\\mu=EX\\)。展开并利用 \\(E(X)=\\mu\\)：\\(E[(X-\\mu)^3]=E(X^3)-3\\mu E(X^2)+3\\mu^2E(X)-\\mu^3=E(X^3)-3\\mu E(X^2)+2\\mu^3\\)。另有 \\(X-\\theta=(X-\\mu)+(\\mu-\\theta)\\)，平方取期望后交叉项因 \\(E(X-\\mu)=0\\) 消失，得到 \\(DX+(\\mu-\\theta)^2\\)。",
+      "errorCause": "错误类型：计算错误、概念错误。展开三次方时系数与 \\(E\\) 的作用对象混乱，并把 \\(D(X)\\) 与一阶中心矩混淆。",
+      "reviewFocus": "避免硬展开出错：先令 \\(\\mu=EX\\)。对偏差平方优先使用“加减均值”分解；由结果可知 \\(E(X-\\theta)^2\\) 在 \\(\\theta=EX\\) 时最小，最小值为方差。",
+      "similarQuestionPrompt": "化简四阶中心矩 \\(E(X-EX)^4\\)，并求使 \\(E(X-a)^2\\) 最小的 \\(a\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "E41B0C6F-AA6B-471B-A428-3EB0B3FE12E0.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "C3480DF3-1F5F-4D0F-9F09-3F1DCA1BC585.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_7AA056CF-A2BC-4F11-916A-7325120CF083.jpeg",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "53c296049eca899ce48634837b2c7877ae8242adb54e1e8f40df68fdcf0fd248"
+    },
+    {
+      "id": "daily-20260927-prob-bivariate-function-expectation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量函数的数学期望",
+      "questionNo": 17,
+      "sourceRef": "2026-09-27 当日对话 · 一维与二维期望公式",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "数学期望",
+        "联合密度",
+        "LOTUS",
+        "独立",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "讨论题",
+      "stem": "写出一维随机变量函数 \\(Y=g(X)\\) 与二维随机变量函数 \\(Z=g(X,Y)\\) 的数学期望公式，并判断连续型二维情形是否总能写成 \\(\\iint g(x,y)f_X(x)f_Y(y)dxdy\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "数学期望",
+        "联合密度",
+        "LOTUS",
+        "独立"
+      ],
+      "answer": "离散型一维：\\(E[g(X)]=\\sum g(x_k)p_k\\)；连续型一维：\\(\\int g(x)f_X(x)dx\\)；离散型二维：\\(\\sum_i\\sum_j g(x_i,y_j)p_{ij}\\)；连续型二维：\\(\\iint g(x,y)f_{X,Y}(x,y)dxdy\\)。只有 \\(X,Y\\) 独立时才可把联合密度换成 \\(f_Xf_Y\\)。",
+      "analysis": "期望是对随机变量的真实分布加权。二维情况下真实权重是联合分布，而边缘密度的乘积只在独立时等于联合密度。套公式前还要检查绝对可积条件。",
+      "errorCause": "错误类型：概念错误、知识点不熟。把二维公式中的联合密度 \\(f_{X,Y}\\) 误写为两个边缘密度的乘积，相当于无条件假设独立。",
+      "reviewFocus": "第一步先判断离散/连续和一维/二维；二维公式默认写联合质量或联合密度，看到“独立”二字后才能拆成乘积。",
+      "similarQuestionPrompt": "给定一个不独立的联合密度，分别计算 \\(E(XY)\\) 与 \\(EX\\,EY\\)，比较两者。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "80AA24F9-C7C6-4757-AB67-8D6ABFCD0F83.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "C0B57C60-CCD2-4981-83B5-B6C669D8738D.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "A6725426-5174-46F4-813C-A01D5063ED25.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "a7df573da7bb73389099a40337fccb7a70176af14dcf70e21c05a236660513fc"
+    },
+    {
+      "id": "daily-20260927-prob-lognormal-mean",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量函数的数学期望",
+      "questionNo": 18,
+      "sourceRef": "2026-09-27 当日对话 · 对数正态期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "对数正态分布",
+        "正态矩母函数",
+        "数学期望",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "若 \\(Z=\\ln X\\sim N(\\mu,\\sigma^2)\\)，求 \\(E(X)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "对数正态分布",
+        "正态矩母函数",
+        "数学期望"
+      ],
+      "answer": "\\(E(X)=e^{\\mu+\\sigma^2/2}\\)。",
+      "analysis": "由 \\(X=e^Z\\)，故 \\(E(X)=E(e^Z)\\)。正态变量的指数矩为 \\(E(e^{tZ})=\\exp(\\mu t+\\sigma^2t^2/2)\\)，取 \\(t=1\\) 即得结果。",
+      "errorCause": "错误类型：知识点不熟。没有先由 \\(Z=\\ln X\\) 反解成 \\(X=e^Z\\)，也未联想到正态变量的指数矩。",
+      "reviewFocus": "考场第一步：见到 \\(\\ln X\\) 正态，立即写 \\(X=e^Z\\)。不要误认为 \\(E(e^Z)=e^{EZ}\\)；非线性函数通常不能把期望直接移入。",
+      "similarQuestionPrompt": "求对数正态变量的 \\(E(X^r)\\) 与 \\(DX\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "D4C9DB53-332E-46A3-9F9A-BA8506904AA0.png",
+          "date": "2026-09-27",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-27-v1"
+      ],
+      "contentFingerprint": "76295889e30f4b5104a6b096763e2f97e1bf2742df4aae93e000baa97cacecfa"
+    }
+  ]
+}
