@@ -2,7 +2,7 @@
   "title": "考研数学错题库（原书圈题 + 历史对话）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 211,
+  "count": 224,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -8701,14 +8701,898 @@
         "daily-2026-09-27-v1"
       ],
       "contentFingerprint": "76295889e30f4b5104a6b096763e2f97e1bf2742df4aae93e000baa97cacecfa"
+    },
+    {
+      "id": "daily-20260928-prob-iid-sample-moments",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "样本与统计量",
+      "questionNo": 1,
+      "sourceRef": "2026-09-28 当日对话 · 独立同分布样本的矩与方差",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "独立同分布",
+        "样本矩",
+        "方差性质",
+        "绝对值随机变量",
+        "概念错误",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\) 是来自总体 \\(X\\) 的简单随机样本，分别求\n\\[E\\!\\left(\frac1n\\sum_{i=1}^nX_i\right),\\quad E\\!\\left(\frac1n\\sum_{i=1}^nX_i^2\right),\\quad E\\!\\left(\frac1n\\sum_{i=1}^n|X_i|\right),\\quad D\\!\\left(\frac1n\\sum_{i=1}^n|X_i|\right).\\]",
+      "options": [],
+      "knowledgePoints": [
+        "独立同分布",
+        "样本矩",
+        "方差性质",
+        "绝对值随机变量"
+      ],
+      "answer": "依次为 \\(E(X)\\)、\\(E(X^2)\\)、\\(E|X|\\)、\\(D(|X|)/n\\)。",
+      "analysis": "期望只用线性性与同分布：\\(E(X_i)=E(X)\\)、\\(E(X_i^2)=E(X^2)\\)、\\(E|X_i|=E|X|\\)。方差还要使用独立性：\\[D\\!\\left(\frac1n\\sum_{i=1}^n|X_i|\right)=\frac1{n^2}\\sum_{i=1}^nD(|X_i|)=\frac{nD(|X|)}{n^2}=\frac{D(|X|)}n.\\]",
+      "errorCause": "错误类型：概念错误、知识点不熟。卡在“同分布为何推出 \\(D(|X_i|)=D(|X|)\\)”以及方差求和后怎样约去一个 \\(n\\)。",
+      "reviewFocus": "考场识别信号：出现简单随机样本时，立即写“独立且同分布”。第一步区分期望与方差：期望直接拆和；方差拆和必须依赖独立性，外部系数要平方。绝对值不能擅自去掉，\\(D(|X|)\\) 通常不等于 \\(D(X)\\)。",
+      "similarQuestionPrompt": "若 \\(X_1,\\ldots,X_n\\) 独立同分布，求 \\(E(\\overline{X^2})\\) 与 \\(D(\\overline X)\\)，并说明分别用了哪些条件。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "2448A1B1-5C1A-4EB6-BEE6-7E5B9E3184E3.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_D1E76A61-2CD7-4BC6-9699-F9372A06B2C5.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_8AE53B73-2976-4DAD-B9EF-638E242F4F5B.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_65F3C4A1-D40B-4735-96D4-F8815DE18463.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "bc6c42109e13b1af03b7d3a9047540c40b8b98fbcb29ed678775996127e0b92b"
+    },
+    {
+      "id": "daily-20260928-prob-two-exponential-samples-variance",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "questionNo": 2,
+      "sourceRef": "2026-09-28 当日对话 · 两个指数总体估计量的方差",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "指数分布",
+        "独立样本",
+        "估计量方差",
+        "计算错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 是均值为 \\(\theta\\) 的指数总体的简单随机样本，\\(Y_1,\\ldots,Y_m\\) 是均值为 \\(2\theta\\) 的指数总体的简单随机样本，且两组样本相互独立。令\n\\[\\widehat\theta=\frac1{m+n}\\left(\\sum_{i=1}^nX_i+\frac12\\sum_{j=1}^mY_j\right).\\]\n求 \\(D(\\widehat\theta)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "指数分布",
+        "独立样本",
+        "估计量方差"
+      ],
+      "answer": "\\(D(\\widehat\theta)=\\dfrac{\theta^2}{m+n}\\)。",
+      "analysis": "指数分布的方差等于均值的平方，因此 \\(D(X_i)=\theta^2\\)，\\(D(Y_j)=4\theta^2\\)。由两组内外均独立，\\[D(\\widehat\theta)=\frac1{(m+n)^2}\\left(n\theta^2+\frac14m\\cdot4\theta^2\right)=\frac{\theta^2}{m+n}.\\]",
+      "errorCause": "错误类型：计算错误、概念错误。曾把外部系数按一次方处理，并把指数分布的均值与方差混淆；求和项个数 \\(n,m\\) 也容易漏乘。",
+      "reviewFocus": "第一步把每类变量的方差单独写出。考场检查清单：系数平方、独立才可方差相加、同类共有多少项。指数分布若以均值 \\(a\\) 参数化，则方差为 \\(a^2\\)。",
+      "similarQuestionPrompt": "若第二组总体均值改为 \\(3\theta\\)，求使 \\(a\\overline X+b\\overline Y\\) 无偏且方差最小的 \\(a,b\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "EB4CA042-8ED5-4307-9CB6-EB536AB9450E.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_C74121E9-7677-40E5-AD38-52855B2AE3EB.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_A9422723-0ACE-4961-9F0C-B24164DC2723.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_2ABE4AC5-CAE1-45BA-ADA4-55FF32E23170.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_2524E88D-96C2-4541-A400-8F066B327F5F.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "b59e3505e81297a058f48fb5d97ab5eced7bbbd90ab2d335f905ab8ba119caf5"
+    },
+    {
+      "id": "daily-20260928-prob-discrete-function-expectations",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 3,
+      "sourceRef": "2026-09-28 当日对话 · 离散型随机变量函数的期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "离散型随机变量",
+        "随机变量函数",
+        "数学期望",
+        "思路卡壳",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设离散型随机变量 \\(X\\) 的分布律为 \\(P(X=k)=p_k\\)，\\(k=2,3,\\ldots\\)。求\n\\[(1)\\ E\\!\\left(\frac1{1+X}\right);\\qquad (2)\\ E|X-EX|.\\]",
+      "options": [],
+      "knowledgePoints": [
+        "离散型随机变量",
+        "随机变量函数",
+        "数学期望"
+      ],
+      "answer": "\\[(1)\\ \\sum_{k=2}^{\\infty}\frac{p_k}{1+k};\\qquad (2)\\ \\sum_{k=2}^{\\infty}\\left|k-\\sum_{j=2}^{\\infty}jp_j\right|p_k.\\]",
+      "analysis": "离散型变量函数的期望统一使用 \\(E[g(X)]=\\sum_k g(k)P(X=k)\\)。第二问先令 \\(\\mu=EX=\\sum_{j=2}^{\\infty}jp_j\\)，再取 \\(g(k)=|k-\\mu|\\)，所以 \\(E|X-EX|=\\sum_{k=2}^{\\infty}|k-\\mu|p_k\\)。",
+      "errorCause": "错误类型：思路卡壳、知识点不熟。第二问没看出 \\(EX\\) 是一个常数，导致不会把 \\(|X-EX|\\) 作为 \\(X\\) 的函数代入通式。",
+      "reviewFocus": "考场识别信号：题目给分布律并要求 \\(E[g(X)]\\)，第一步直接写求和通式。遇到嵌套的 \\(EX\\)，先另记为常数 \\(\\mu\\)，不要把两个求和指标混为同一个。",
+      "similarQuestionPrompt": "在同一分布律下写出 \\(E[(X-EX)^2]\\) 与 \\(E[1/(X+2)^2]\\) 的求和表达式。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "C6AF2E1A-995A-49CE-B587-3FC6CC987969.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "5DFAAC2E-1F56-42C3-8147-86B1F94141EF.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "59214425-FDF2-42C6-BED6-BF7AA1B010D1.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "851d842cc9f1e482d45bfd48dd377da0fbb75e2ca0496aaf1a9377300aa822f5"
+    },
+    {
+      "id": "daily-20260928-prob-second-moment-from-density",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 4,
+      "sourceRef": "2026-09-28 当日对话 · 从密度积分识别二阶矩",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "连续型随机变量",
+        "二阶矩",
+        "方差",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设随机变量 \\(Y\\) 的概率密度为 \\(f_Y(y)\\)。计算并化简\n\\[\\int_{-\\infty}^{+\\infty}y^2f_Y(y)\\,dy.\\]",
+      "options": [],
+      "knowledgePoints": [
+        "连续型随机变量",
+        "二阶矩",
+        "方差"
+      ],
+      "answer": "\\(E(Y^2)=D(Y)+[E(Y)]^2\\)。",
+      "analysis": "由连续型随机变量函数期望公式，积分就是 \\(E(Y^2)\\)。再由 \\(D(Y)=E(Y^2)-[E(Y)]^2\\)，得 \\(E(Y^2)=D(Y)+[E(Y)]^2\\)。",
+      "errorCause": "错误类型：方法选择困难。看到积分后先想着直接计算，没有先识别其概率论含义。",
+      "reviewFocus": "考场识别信号：\\(\\int g(y)f_Y(y)\\,dy\\) 就是 \\(E[g(Y)]\\)。第一步先翻译成期望，再调用矩与方差关系；不要把 \\(E(Y^2)\\) 误写成 \\([EY]^2\\)。",
+      "similarQuestionPrompt": "把被积函数改为 \\((y-a)^2\\)，用 \\(EY\\) 和 \\(DY\\) 表示该积分，并求使其最小的 \\(a\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "CF9C7ADD-C8F5-4909-9357-57C3AE115715.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "9090f01948360ad01bfc35a33d53bc4214704cb7ef920cdf4137c8bd81c7a731"
+    },
+    {
+      "id": "daily-20260928-prob-normal-exponential-tilt",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 5,
+      "sourceRef": "2026-09-28 当日对话 · 标准正态变量的指数型期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "标准正态分布",
+        "矩母函数",
+        "指数倾斜",
+        "数学期望",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X\\sim N(0,1)\\)，求 \\(E(X^2+Xe^{2X})\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "标准正态分布",
+        "矩母函数",
+        "指数倾斜",
+        "数学期望"
+      ],
+      "answer": "\\(E(X^2+Xe^{2X})=1+2e^2\\)。",
+      "analysis": "\\(E(X^2)=1\\)。正态变量的矩母函数为 \\(M_X(t)=E(e^{tX})=e^{t^2/2}\\)，故 \\(E(Xe^{tX})=M_X'(t)=te^{t^2/2}\\)。取 \\(t=2\\)，得 \\(E(Xe^{2X})=2e^2\\)。也可在积分中把 \\(-x^2/2+2x\\) 配方为 \\(-(x-2)^2/2+2\\)。",
+      "errorCause": "错误类型：概念错误、方法选择困难。曾把 \\(E(Xe^{2X})\\) 错拆为 \\(EX\\cdot E(e^{2X})\\)，但 \\(X\\) 与 \\(e^{2X}\\) 由同一个随机变量生成，并不独立。",
+      "reviewFocus": "考场识别信号：正态变量乘 \\(e^{tX}\\) 时，优先想到矩母函数求导或配方。第一步不要拆乘积期望；只有独立随机变量的乘积才能这样拆。",
+      "similarQuestionPrompt": "设 \\(X\\sim N(0,1)\\)，求 \\(E(X^2e^{tX})\\)，并在 \\(t=1\\) 时给出数值。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "8BD5A72B-6135-4E3D-9422-3E3CAA9B5B24.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_BC88B2AD-FDA7-4718-87A7-A2401C5C94EE.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_A25102EC-F570-4AE6-8FB6-EE2AD26F7D97.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "7f4b247bae8da7dfd3f0996e23093624c819095c4bd13e4342f512b068a72e5f"
+    },
+    {
+      "id": "daily-20260928-prob-modulo-three-expectation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 6,
+      "sourceRef": "2026-09-28 当日对话 · 按模分类求余数期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "离散型随机变量",
+        "等比级数",
+        "分类求和",
+        "数学期望",
+        "计算错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(P(X=k)=2^{-k}\\)，\\(k=1,2,\\ldots\\)。令 \\(Y\\) 为 \\(X\\) 除以 \\(3\\) 所得的余数，求 \\(EY\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "离散型随机变量",
+        "等比级数",
+        "分类求和",
+        "数学期望"
+      ],
+      "answer": "\\(P(Y=0)=1/7\\)、\\(P(Y=1)=4/7\\)、\\(P(Y=2)=2/7\\)，故 \\(EY=8/7\\)。",
+      "analysis": "按 \\(k\\) 对 \\(3\\) 的余数分组：\\[P(Y=1)=\\sum_{j=0}^{\\infty}2^{-(3j+1)}=\frac{1/2}{1-1/8}=\frac47,\\]\\[P(Y=2)=\\sum_{j=0}^{\\infty}2^{-(3j+2)}=\frac27,\\qquad P(Y=0)=\\sum_{j=1}^{\\infty}2^{-3j}=\frac17.\\]于是 \\(EY=0\\cdot\frac17+1\\cdot\frac47+2\\cdot\frac27=\frac87\\)。",
+      "errorCause": "错误类型：计算错误。已求出余数的概率，却在求期望时忘记分别乘以余数取值 \\(0,1,2\\)。",
+      "reviewFocus": "第一步列出 \\(Y\\) 的所有取值，再按同余类写三列等比级数。求期望必须做“取值乘概率”；最后检查三类概率之和应为 \\(1\\)。",
+      "similarQuestionPrompt": "在同一分布下，令 \\(Z\\) 为 \\(X\\) 除以 \\(4\\) 的余数，求 \\(EZ\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "847302DF-2C45-435C-B13B-3DE807EE45CD.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "A6BEEE5B-F107-4D49-9752-D2D172BECAAB.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_7281074B-7AF3-4F1E-9BE6-AEDFD5C6981B.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_1C197123-265A-446D-9C0C-C8BD8C3DD64D.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "fc9de1246c855607f7d127ce2c9c8b2ffd7701d75e4e768f5f2e1c4362e84988"
+    },
+    {
+      "id": "daily-20260928-prob-random-diameter-area",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 7,
+      "sourceRef": "2026-09-28 当日对话 · 随机直径对应的期望面积",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "均匀分布",
+        "随机变量函数",
+        "数学期望",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "某圆形横截面的直径 \\(X\\sim U(1,2)\\)。求横截面积 \\(S\\) 的数学期望。",
+      "options": [],
+      "knowledgePoints": [
+        "均匀分布",
+        "随机变量函数",
+        "数学期望"
+      ],
+      "answer": "\\(E(S)=7\\pi/12\\)。",
+      "analysis": "面积是 \\(S=\\pi(X/2)^2=\\pi X^2/4\\)。因 \\(X\\sim U(1,2)\\)，密度在 \\((1,2)\\) 上为 \\(1\\)，所以\\[E(S)=\frac\\pi4E(X^2)=\frac\\pi4\\int_1^2x^2\\,dx=\frac{7\\pi}{12}.\\]",
+      "errorCause": "错误类型：概念错误。曾用平均直径对应的面积 \\(S(EX)=9\\pi/16\\) 代替平均面积 \\(E[S(X)]\\)。",
+      "reviewFocus": "考场第一步先把目标量写成随机变量的函数。非线性函数通常满足 \\(E[g(X)]\ne g(EX)\\)；平方会使两者相差方差项。",
+      "similarQuestionPrompt": "若半径 \\(R\\sim U(1,2)\\)，分别求圆面积的期望与方差。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "C85669E0-DC9E-4ACE-8655-7CCBCC76B314.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_755BBD04-7135-48D3-8F4D-99600F96B23A.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_4E715BAC-1DC7-4212-854D-DB5C8D3706C5.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "6a005752743ab02971bfcbfe8e1ce28668992c22d4a4da852304c6ef774576ef"
+    },
+    {
+      "id": "daily-20260928-prob-absolute-normal-variance",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 8,
+      "sourceRef": "2026-09-28 当日对话 · 正态差的绝对值方差",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "正态分布",
+        "半正态分布",
+        "绝对值",
+        "方差",
+        "概念错误",
+        "思路卡壳"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X,Y\\) 相互独立，且都服从 \\(N(0,1/2)\\)，求 \\(D(|X-Y|)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "正态分布",
+        "半正态分布",
+        "绝对值",
+        "方差"
+      ],
+      "answer": "\\(D(|X-Y|)=1-2/\\pi\\)。",
+      "analysis": "令 \\(Z=X-Y\\)。由独立性，\\(Z\\sim N(0,1/2+1/2)=N(0,1)\\)。因此 \\(E|Z|=\\sqrt{2/\\pi}\\)，且 \\(|Z|^2=Z^2\\)，所以 \\(E(|Z|^2)=EZ^2=1\\)。从而\\[D(|X-Y|)=D(|Z|)=E(|Z|^2)-(E|Z|)^2=1-\frac2\\pi.\\]",
+      "errorCause": "错误类型：概念错误、思路卡壳。曾把 \\(EZ=0\\) 误当成 \\(EZ^2=0\\)，并对半轴积分为何不是 \\(EZ\\) 感到混乱。",
+      "reviewFocus": "考场信号：独立正态变量的线性组合仍为正态；看到绝对值先令 \\(Z=X-Y\\)。第一步先确定 \\(Z\\) 的分布，再用 \\(D|Z|=EZ^2-(E|Z|)^2\\)。偶函数在全轴积分可化为两倍半轴积分，但 \\(z\\varphi(z)\\) 是奇函数，不能混同。",
+      "similarQuestionPrompt": "若 \\(X,Y\\) 独立且均服从 \\(N(0,\\sigma^2)\\)，求 \\(E|X-Y|\\) 与 \\(D|X-Y|\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "52E66BB1-61C7-44A9-8EE6-8E9D196D26EA.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_38A4C019-5C50-4B0F-9F6E-D9FE07ACFB8D.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_207718E6-3C68-440E-905B-79064066642B.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_92723A92-E0B2-4CF5-AA85-6430385968EC.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "1dcdc50ca50658b3efd50863990e9cf5eb9804f3fc2d898cdecfec368afa02c7"
+    },
+    {
+      "id": "daily-20260928-prob-exponential-max-min-expectations",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 9,
+      "sourceRef": "2026-09-28 当日对话 · 指数变量最大最小值",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "指数分布",
+        "最大值",
+        "最小值",
+        "次序统计量",
+        "计算错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X,Y\\) 相互独立且均服从参数为 \\(1\\) 的指数分布。令 \\(U=\\max(X,Y)\\)，\\(V=\\min(X,Y)\\)，求 \\(EU,EV,E(UV)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "指数分布",
+        "最大值",
+        "最小值",
+        "次序统计量"
+      ],
+      "answer": "\\(EU=3/2\\)、\\(EV=1/2\\)、\\(E(UV)=1\\)。",
+      "analysis": "对 \\(t\\ge0\\)，\\(P(V>t)=P(X>t,Y>t)=e^{-2t}\\)，故 \\(V\\sim\\operatorname{Exp}(2)\\)，\\(EV=1/2\\)。又有恒等式 \\(U+V=X+Y\\)，所以 \\(EU=EX+EY-EV=2-1/2=3/2\\)。最大值与最小值的乘积恒为 \\(UV=XY\\)，由独立性 \\(E(UV)=E(XY)=EX\\,EY=1\\)。",
+      "errorCause": "错误类型：计算错误、方法选择困难。用 \\(\\max(X,Y)=(X+Y+|X-Y|)/2\\) 时漏掉了整体的 \\(1/2\\)，一度得到错误的 \\(EU=2\\)。",
+      "reviewFocus": "考场优先用恒等式 \\(\\max+\\min=X+Y\\)、\\(\\max\\cdot\\min=XY\\)，比直接求最大值密度更快。最小值的尾概率在独立时相乘；若使用绝对值公式，先检查整体是否除以 \\(2\\)。",
+      "similarQuestionPrompt": "设 \\(X,Y\\) 独立且分别服从参数 \\(\\lambda_1,\\lambda_2\\) 的指数分布，求 \\(E\\min(X,Y)\\) 与 \\(E\\max(X,Y)\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "E6197BE7-15BB-48CC-B4D6-A1803F028530.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_F530890B-7F85-4DED-AF7E-44DFADE62A77.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_4ED8C7EB-AFFA-4161-8D1F-650C95C62FE9.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_C75217EC-A0F8-43B1-824B-0493297CC1E0.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "d7fa61af3dedf5d8cc7383348254ce37a89f65f1c27a5d823da6353afa25bb60"
+    },
+    {
+      "id": "daily-20260928-prob-uniform-sample-range",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "样本与统计量",
+      "questionNo": 10,
+      "sourceRef": "2026-09-28 当日对话 · 均匀样本的极差期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "均匀分布",
+        "次序统计量",
+        "样本极差",
+        "数学期望",
+        "思路卡壳"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "在区间 \\([0,1]\\) 上独立、均匀地任取 \\(n\\) 个点，求最远两点间距离的数学期望。",
+      "options": [],
+      "knowledgePoints": [
+        "均匀分布",
+        "次序统计量",
+        "样本极差",
+        "数学期望"
+      ],
+      "answer": "\\(\\dfrac{n-1}{n+1}\\)。",
+      "analysis": "最远两点间距离就是样本极差 \\(R=X_{(n)}-X_{(1)}\\)。均匀样本最大值的密度为 \\(f_{X_{(n)}}(x)=nx^{n-1}\\)，故 \\(EX_{(n)}=n/(n+1)\\)。由对称性 \\(EX_{(1)}=1/(n+1)\\)。因此\\[ER=EX_{(n)}-EX_{(1)}=\frac{n-1}{n+1}.\\]",
+      "errorCause": "错误类型：思路卡壳。未能立即把“最远两点”翻译为最大次序统计量减最小次序统计量。",
+      "reviewFocus": "考场识别信号：一维区间上的最远距离就是极差。第一步写 \\(R=X_{(n)}-X_{(1)}\\)，再利用期望线性性；不要求两者独立。均匀 \\([0,1]\\) 样本应记住 \\(EX_{(k)}=k/(n+1)\\)。",
+      "similarQuestionPrompt": "在 \\([0,a]\\) 上独立均匀取 \\(n\\) 点，求最远两点间距离的期望。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "B87B4523-1850-4C44-9B0A-1DABAA304EDC.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "8f44a06e52d79f0f3481c5a278fd5baa1c56588326a48b92ac1b57f9b0d6afb2"
+    },
+    {
+      "id": "daily-20260928-prob-uniform-max-unbiased",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "questionNo": 11,
+      "sourceRef": "2026-09-28 当日对话 · 均匀总体上限的无偏估计",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "均匀分布",
+        "最大次序统计量",
+        "无偏估计",
+        "分布函数法",
+        "思路卡壳",
+        "方法选择困难",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 是来自均匀总体 \\(U(0,\theta)\\) 的简单随机样本，\\(X_{(n)}=\\max(X_1,\\ldots,X_n)\\)。若 \\(T_c=cX_{(n)}\\) 是 \\(\theta\\) 的无偏估计量，求常数 \\(c\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "均匀分布",
+        "最大次序统计量",
+        "无偏估计",
+        "分布函数法"
+      ],
+      "answer": "\\(c=(n+1)/n\\)。",
+      "analysis": "对 \\(0<x<\theta\\)，\\[F_{X_{(n)}}(x)=P(X_1\\le x,\\ldots,X_n\\le x)=\\prod_{i=1}^nP(X_i\\le x)=\\left(\frac{x}{\theta}\right)^n.\\]求导得 \\(f_{X_{(n)}}(x)=nx^{n-1}/\theta^n\\)。于是\\[EX_{(n)}=\\int_0^\theta x\frac{nx^{n-1}}{\theta^n}\\,dx=\frac{n}{n+1}\theta.\\]无偏条件 \\(E(T_c)=cEX_{(n)}=\theta\\) 给出 \\(c=(n+1)/n\\)。",
+      "errorCause": "错误类型：思路卡壳、方法选择困难、边界或范围判断困难。曾把 \\(X_{(n)}\\le x\\) 误读成“最小值小于 \\(x\\)”，并在独立性相乘、均匀分布 CDF、由 CDF 求密度处需要提示。",
+      "reviewFocus": "考场识别信号：最大值 \\(\\le x\\) 等价于“每一个样本都 \\(\\le x\\)”；第一步写这个等价事件。随后用独立性把概率相乘。务必补上范围：\\(x\\le0\\) 时 CDF 为 \\(0\\)，\\(0<x<\theta\\) 时为 \\((x/\theta)^n\\)，\\(x\\ge\theta\\) 时为 \\(1\\)。",
+      "similarQuestionPrompt": "若 \\(X_1,\\ldots,X_n\\sim U(-\theta,\theta)\\)，尝试用 \\(\\max_i|X_i|\\) 构造 \\(\theta\\) 的无偏估计量。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "80F1E21E-9B33-448D-BA4E-777ABC7B73D0.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_379E07D2-F54A-44BB-86EE-687FA04B340E.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_01143252-3B7E-46A4-99CF-B672DBDBF58F.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_141A6031-9627-4B58-808E-132B6FFB7CCD.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "875f935cefff8f258f3560520bcb46b270e7acc215875754a6c29b8f13ee13a1"
+    },
+    {
+      "id": "daily-20260928-prob-urn-waiting-counts",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 12,
+      "sourceRef": "2026-09-28 当日对话 · 放回抽球的等待次数",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "审题错误",
+      "tags": [
+        "当日对话导入",
+        "几何分布",
+        "负二项分布",
+        "二项分布",
+        "等待时间",
+        "审题错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "袋中有 \\(2\\) 个白球、\\(8\\) 个红球，每次有放回抽取一球。设白球概率 \\(p=1/5\\)。\n(1) \\(X\\) 表示连续两次抽到白球之间出现的红球数，求 \\(EX,DX\\)；\n(2) 抽到第 \\(3\\) 个白球时停止，求总抽取次数 \\(Y\\) 的期望；\n(3) 抽取 \\(4\\) 次，令 \\(Z\\) 为白球数，求 \\(EZ\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "几何分布",
+        "负二项分布",
+        "二项分布",
+        "等待时间"
+      ],
+      "answer": "\\(EX=4\\)、\\(DX=20\\)、\\(EY=15\\)、\\(EZ=4/5\\)。",
+      "analysis": "(1) \\(X\\) 是首次成功前的失败数，\\(P(X=k)=(4/5)^k(1/5)\\)，\\(k=0,1,\\ldots\\)，故 \\(EX=q/p=4\\)，\\(DX=q/p^2=20\\)。\n(2) 到第 \\(3\\) 个白球的总次数可写成三个独立的几何等待时间之和，每个均值为 \\(1/p=5\\)，故 \\(EY=15\\)。\n(3) \\(Z\\sim B(4,1/5)\\)，所以 \\(EZ=np=4/5\\)。",
+      "errorCause": "错误类型：审题错误、概念错误。第一问把“两个白球之间的红球数”错当成“直到抽到白球所需的总次数”，因而误取均值 \\(1/p=5\\)；二者相差 \\(1\\)。",
+      "reviewFocus": "先判断随机变量数的是“试验总次数”还是“成功前失败次数”。前者取值从 \\(1\\) 开始、均值 \\(1/p\\)；后者取值从 \\(0\\) 开始、均值 \\(q/p\\)。看到“第 \\(r\\) 次成功时停止”联想负二项或 \\(r\\) 个几何等待时间之和；固定抽取次数中的成功数才是二项分布。",
+      "similarQuestionPrompt": "将白球数改为 \\(3\\)、红球数改为 \\(7\\)，分别求第 \\(4\\) 个白球出现前红球总数的期望与方差。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "944AEB23-FFCA-43C8-BFB5-F9440C752926.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_2C74045B-82B0-4CD7-BD75-B7B00F4FCC8C.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_504C5CB0-5B87-4356-8046-F4B4CB732036.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_2D1CA663-2607-4FD3-9FB6-F5977B796653.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_97B21257-5525-4ABC-AECC-C46DB93D65B2.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_350227F0-1B20-4914-BF06-4DD3C2E50EF6.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "6c39354c7ec299875d5ad0605a2ad020ed5b9c9d3247490d97c8fdc555c40c0f"
+    },
+    {
+      "id": "daily-20260928-prob-normal-mixture-mean",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 13,
+      "sourceRef": "2026-09-28 当日对话 · 正态混合分布的期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "混合分布",
+        "正态分布",
+        "分布函数",
+        "数学期望",
+        "方法选择困难",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设随机变量 \\(X\\) 的分布函数为\n\\[F(x)=\frac12\\Phi(x)+\frac12\\Phi\\!\\left(\frac{x-4}{2}\right),\\]\n其中 \\(\\Phi\\) 是标准正态分布函数。求 \\(EX\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "混合分布",
+        "正态分布",
+        "分布函数",
+        "数学期望"
+      ],
+      "answer": "\\(EX=2\\)。",
+      "analysis": "\\(\\Phi(x)\\) 是 \\(N(0,1)\\) 的 CDF，而 \\(\\Phi((x-4)/2)\\) 是 \\(N(4,4)\\) 的 CDF。因此 \\(X\\) 是以 \\(1/2,1/2\\) 为权重的正态混合分布。混合分布的期望等于各分量期望的加权和：\\[EX=\frac12\\cdot0+\frac12\\cdot4=2.\\]",
+      "errorCause": "错误类型：方法选择困难、概念错误。曾直接求导并在标准化时出现符号错误，未先识别 CDF 的混合结构，一度得到错误的负值。",
+      "reviewFocus": "考场识别信号：CDF 写成若干合法 CDF 的加权和，就是混合分布。第一步对照 \\(\\Phi((x-\\mu)/\\sigma)\\) 读出 \\(\\mu,\\sigma\\)，求期望时直接按权重加权，无须先求密度积分。",
+      "similarQuestionPrompt": "若 \\(F(x)=p\\Phi((x-a)/\\sigma_1)+(1-p)\\Phi((x-b)/\\sigma_2)\\)，求 \\(EX\\) 与 \\(DX\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "634831BD-A6CA-43DD-A713-AA9BCA97218F.png",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_507AC364-AE48-4753-A790-1363D4CFEE8D.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_19892F2F-7D9B-44B0-93A9-337EB90C271E.jpeg",
+          "date": "2026-09-28",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、区域怎么取”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-28-v1"
+      ],
+      "contentFingerprint": "e6b2bd475110a936aadd269af78b5bd449950cd363baf09076fb68d85421c8ba"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-28",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
-    "daily-2026-09-27-v1"
+    "daily-2026-09-27-v1",
+    "daily-2026-09-28-v1"
   ]
 }
