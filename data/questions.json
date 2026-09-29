@@ -2,7 +2,7 @@
   "title": "考研数学错题库（原书圈题 + 历史对话）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 224,
+  "count": 225,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -9584,15 +9584,72 @@
         "daily-2026-09-28-v1"
       ],
       "contentFingerprint": "e6b2bd475110a936aadd269af78b5bd449950cd363baf09076fb68d85421c8ba"
+    },
+    {
+      "id": "daily-20260929-prob-correlation-methods",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 1,
+      "sourceRef": "2026-09-29 当日对话 · 相关系数的求法与快速判断",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "相关系数",
+        "协方差",
+        "方差公式",
+        "线性关系",
+        "独立性",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "讨论题",
+      "stem": "总结求相关系数 \\(\\rho_{XY}\\) 的常用方法，并说明考场上的快速判断顺序，以及“\\(\\rho=0\\)”与“独立”之间能否互相推出。",
+      "options": [],
+      "knowledgePoints": [
+        "相关系数",
+        "协方差",
+        "方差公式",
+        "线性关系",
+        "独立性"
+      ],
+      "answer": "常用方法有：①定义式 \\(\\rho_{XY}=\\operatorname{Cov}(X,Y)/\\sqrt{D(X)D(Y)}\\)；②由 \\(D(X\\pm Y)=D(X)+D(Y)\\pm2\\operatorname{Cov}(X,Y)\\) 反求协方差；③若 \\(Y=aX+b\\) 且方差非零，则 \\(\\rho_{XY}=\\operatorname{sgn}(a)\\)；④若 \\(X,Y\\) 独立，则 \\(\\rho_{XY}=0\\)。一般不能由 \\(\\rho=0\\) 反推独立；若 \\((X,Y)\\) 联合正态，则可以。",
+      "analysis": "定义法最通用：先算 \\(EX,EY,E(XY)\\)，由 \\(\\operatorname{Cov}(X,Y)=E(XY)-EX\\,EY\\) 得协方差，再除以标准差乘积。若题目给出 \\(D(X+Y)\\) 或 \\(D(X-Y)\\)，直接展开可少算 \\(E(XY)\\)。若变量间存在确定的线性关系，则无需积分：\\(Y=aX+b\\) 时 \\(\\operatorname{Cov}(X,Y)=aD(X)\\)、\\(D(Y)=a^2D(X)\\)，所以相关系数只由 \\(a\\) 的符号决定。若已知独立，协方差为零。反例说明“不相关”一般弱于“独立”：取 \\(X\\sim U(-1,1)\\)、\\(Y=X^2\\)，则 \\(E(XY)=EX^3=0\\)，且 \\(EX=0\\)，所以 \\(\\rho=0\\)，但 \\(Y\\) 完全由 \\(X\\) 决定，显然不独立。",
+      "errorCause": "错误类型：方法选择困难、知识点不熟。用户主动追问“求相关系数的几种方法”，说明会使用定义式，但遇到不同题设时还不能稳定判断应优先用线性关系、独立性、和差方差还是直接计算。",
+      "reviewFocus": "考场判断顺序：①先找 \\(Y=aX+b\\) 等确定线性关系；②再看是否明确独立；③若给了 \\(D(X\\pm Y)\\)，用方差展开反求协方差；④最后才按定义计算 \\(E(XY)\\)。第一步始终写 \\(\\rho=\\operatorname{Cov}/(\\sigma_X\\sigma_Y)\\)。易错点：独立 \\(\\Rightarrow\\rho=0\\)，反向一般不成立；只有联合正态等特殊条件下才可反推。",
+      "similarQuestionPrompt": "设 \\(EX=EY=0\\)，\\(D(X)=1\\)，\\(D(Y)=4\\)，且 \\(D(X+Y)=9\\)，求 \\(\\rho_{XY}\\)；再判断能否据此断定 \\(X,Y\\) 独立。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "conversationTitle": "学习建议",
+          "date": "2026-09-29",
+          "verification": "依据当日用户原始追问与独立推导复核"
+        }
+      ],
+      "answerVerification": "当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "用户当日主动追问“求相关系数的几种方法”，反映方法选择尚不稳定",
+      "historyImportBatches": [
+        "daily-2026-09-29-v1"
+      ],
+      "contentFingerprint": "38eed55ca12cdfff8d39681f601611cac7ae7347275bd6ba71cf5b0ab8a8d5b8"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-09-29",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
     "daily-2026-09-27-v1",
-    "daily-2026-09-28-v1"
+    "daily-2026-09-28-v1",
+    "daily-2026-09-29-v1"
   ]
 }
