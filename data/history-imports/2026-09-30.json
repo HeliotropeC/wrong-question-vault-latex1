@@ -1,0 +1,722 @@
+{
+  "date": "2026-09-30",
+  "batch": "daily-2026-09-30-v1",
+  "scope": "当日 ChatGPT 对话中做错、订正、不会、卡壳、方法选择不稳、范围判断困难及追问解题思路的考研数学题",
+  "repository": "HeliotropeC/wrong-question-vault-latex1",
+  "deduplication": {
+    "comparedAgainstExistingCount": 225,
+    "method": [
+      "稳定题目 ID",
+      "内容指纹",
+      "规范化题干精确比对",
+      "知识点与题意人工复核"
+    ],
+    "skippedDuplicateIds": [
+      "daily-20260928-prob-urn-waiting-counts"
+    ],
+    "skippedReason": "“废品出现前的合格品数”与 2026-09-28 的“成功前失败次数”在数学结构、期望和方差上完全相同，未重复建卡；当天的有限 5 件截断版本因新增截断边界单独收录。"
+  },
+  "qualityNotes": [
+    "候车题题面明确为 8:30 与 9:30 发车；题图所附解析把正确积分误算为 0.25 小时，本批次按独立复核结果记录为 0.5 小时。"
+  ],
+  "importedCount": 11,
+  "questions": [
+    {
+      "id": "daily-20260930-prob-normal-sum-difference-independence",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "questionNo": 1,
+      "sourceRef": "2026-09-30 当日对话 · 正态变量和差的独立性",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "联合正态分布",
+        "线性组合",
+        "独立性",
+        "协方差",
+        "联合密度",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设随机变量 \\(X\\sim N(2\\mu,\\sigma^2)\\)、\\(Y\\sim N(\\mu,\\sigma^2)\\)，且 \\(X,Y\\) 相互独立。令 \\(U=X+Y\\)、\\(V=X-Y\\)。求 \\(U,V\\) 的分布，判断二者是否独立，并求联合概率密度 \\(f_{U,V}(u,v)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "联合正态分布",
+        "线性组合",
+        "独立性",
+        "协方差",
+        "联合密度"
+      ],
+      "answer": "\\(U\\sim N(3\\mu,2\\sigma^2)\\)、\\(V\\sim N(\\mu,2\\sigma^2)\\)，且 \\(U,V\\) 独立；\\[f_{U,V}(u,v)=\\frac1{4\\pi\\sigma^2}\\exp\\!\\left[-\\frac{(u-3\\mu)^2+(v-\\mu)^2}{4\\sigma^2}\\right].\\]",
+      "analysis": "独立正态变量的线性组合仍构成联合正态。均值和方差分别为 \\(EU=3\\mu\\)、\\(EV=\\mu\\)、\\(DU=DV=2\\sigma^2\\)。再算\\[\\operatorname{Cov}(U,V)=\\operatorname{Cov}(X+Y,X-Y)=DX-DY=0.\\]联合正态情形下，不相关等价于独立，因此联合密度等于两个边缘密度之积，得到答案。",
+      "errorCause": "错误类型：方法选择困难、知识点不熟。卡在如何判断 \\(U,V\\) 独立，以及第三问怎样由边缘分布写联合密度。",
+      "reviewFocus": "考场信号：原变量独立正态、目标是线性组合。第一步先算均值、方差和协方差；必须先确认“联合正态”，才能由协方差为零推出独立。独立后联合密度直接写 \\(f_Uf_V\\)。",
+      "similarQuestionPrompt": "若 \\(DX\\ne DY\\)，仍令 \\(U=X+Y,V=X-Y\\)，求相关系数并判断何时独立。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "image-1790748423169.jpg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "c4ef4f6b81519aad15500e7cf71fa906af8ada864d2ae02a7ca39a25ac001702"
+    },
+    {
+      "id": "daily-20260930-prob-expectation-shift-integral",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 2,
+      "sourceRef": "2026-09-30 当日对话 · 期望的平移积分",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "数学期望",
+        "密度函数",
+        "换元积分",
+        "中心化",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设连续型随机变量 \\(X\\) 的概率密度为 \\(f(x)\\)，且 \\(EX=a\\)。判断下列恒等式中必然成立的是哪一个：\\n\\[(A)\\ \\int_{-\\infty}^{\\infty}x f(x-a)\\,dx=0;\\qquad (B)\\ \\int_{-\\infty}^{\\infty}x f(x+a)\\,dx=0;\\]\\n\\[(C)\\ \\int_{-\\infty}^{a}f(x)\\,dx=\\frac12;\\qquad (D)\\ \\int_{-\\infty}^{a}x f(x)\\,dx=\\frac12.\\]",
+      "options": [],
+      "knowledgePoints": [
+        "数学期望",
+        "密度函数",
+        "换元积分",
+        "中心化"
+      ],
+      "answer": "选 \\((B)\\)。",
+      "analysis": "令 \\(t=x+a\\)，则\\[\\int_{-\\infty}^{\\infty}x f(x+a)\\,dx=\\int_{-\\infty}^{\\infty}(t-a)f(t)\\,dt=EX-a=0.\\]而 \\(f(x-a)\\) 对应右移，积分等于 \\(EX+a=2a\\)。均值为 \\(a\\) 并不意味着 \\(a\\) 是中位数，所以 (C)、(D) 均不一定成立。",
+      "errorCause": "错误类型：概念错误、方法选择困难。没有把 \\(f(x+a)\\) 识别为平移后的密度，也容易把“均值”误当成把概率平分的中位数。",
+      "reviewFocus": "第一步对 \\(f(x\\pm a)\\) 换元，不要凭图像猜。记住中心化变量 \\(X-EX\\) 的期望为零；均值一般不能把面积一分为二。",
+      "similarQuestionPrompt": "已知 \\(EX=a\\)，分别计算 \\(\\int x f(x+c)dx\\) 与 \\(\\int (x-c)^2f(x)dx\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "C58D3A42-3C1F-4690-ADE1-87BB37E7094E.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_F5BB50DD-05D7-4F83-A8B7-36C4C1A1194D.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "fe6ad1e830e3e4f4352993f9dd41eefe30aa887fd833abaffbf6e044acd3f3ab"
+    },
+    {
+      "id": "daily-20260930-prob-tail-sum-expectation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 3,
+      "sourceRef": "2026-09-30 当日对话 · 非负整数变量的尾和公式",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "离散型随机变量",
+        "尾和公式",
+        "数学期望",
+        "指示变量",
+        "思路卡壳",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设随机变量 \\(X\\) 只取非负整数值 \\(0,1,2,\\ldots\\)，且 \\(EX\\) 存在。判断并证明正确的期望公式：\\[EX=\\sum_{k=1}^{\\infty}P(X\\ge k),\\quad EX=\\sum_{k=1}^{\\infty}P(X\\le k),\\quad EX=\\sum_{k=1}^{\\infty}P(X>k),\\quad EX=\\sum_{k=1}^{\\infty}P(X<k).\\]",
+      "options": [],
+      "knowledgePoints": [
+        "离散型随机变量",
+        "尾和公式",
+        "数学期望",
+        "指示变量"
+      ],
+      "answer": "\\[EX=\\sum_{k=1}^{\\infty}P(X\\ge k).\\]等价地，\\(EX=\\sum_{k=0}^{\\infty}P(X>k)\\)。",
+      "analysis": "对每个样本点，若 \\(X=n\\)，则恰有 \\(n\\) 个事件 \\(X\\ge1,\\ldots,X\\ge n\\) 成立，所以逐点恒有\\[X=\\sum_{k=1}^{\\infty}I\\{X\\ge k\\}.\\]两边取期望，并用单调收敛或非负项换序，得到尾和公式。也可从 \\(EX=\\sum_{n\\ge0}nP(X=n)\\) 展开 \\(n=1+\\cdots+1\\) 后交换求和。",
+      "errorCause": "错误类型：思路卡壳、知识点不熟。觉得公式“想不到”，并混淆了 \\(P(X\\ge k)\\) 与从 \\(k=1\\) 开始的 \\(P(X>k)\\)。",
+      "reviewFocus": "考场识别信号：非负整数变量、求期望、尾概率容易算。第一步写 \\(X=\\sum_{k\\ge1}I\\{X\\ge k\\}\\)。等号与下标要配套：\\(k\\ge1\\) 用 \\(X\\ge k\\)；\\(k\\ge0\\) 用 \\(X>k\\)。",
+      "similarQuestionPrompt": "设 \\(P(X\\ge k)=q^k\\ (k=0,1,\\ldots)\\)，用尾和公式求 \\(EX\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "790D9C53-A431-49CD-98C3-5631DD28744D.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "be7bff3c554080565e9e2de1ad1a32d7edbed6997b9be9c5db0d5f10e9dd7d6f"
+    },
+    {
+      "id": "daily-20260930-prob-discrete-cdf-function-expectation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 4,
+      "sourceRef": "2026-09-30 当日对话 · 由离散分布函数求函数期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "离散型随机变量",
+        "分布函数跳跃",
+        "随机变量函数",
+        "数学期望",
+        "计算错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X\\) 的分布函数为\\[F(x)=\\begin{cases}0,&x<-2,\\\\0.3,&-2\\le x<1,\\\\0.8,&1\\le x<2,\\\\1,&x\\ge2.\\end{cases}\\]令 \\(Y=X^2-1\\)，求 \\(E(XY)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "离散型随机变量",
+        "分布函数跳跃",
+        "随机变量函数",
+        "数学期望"
+      ],
+      "answer": "\\(E(XY)=-0.6=-3/5\\)。",
+      "analysis": "CDF 在 \\(-2,1,2\\) 处的跳跃量给出\\[P(X=-2)=0.3,\\quad P(X=1)=0.5,\\quad P(X=2)=0.2.\\]因为 \\(XY=X(X^2-1)=X^3-X\\)，对应取值为 \\(-6,0,6\\)，所以\\[E(XY)=(-6)(0.3)+0(0.5)+6(0.2)=-0.6.\\]",
+      "errorCause": "错误类型：计算错误、概念错误。容易把 CDF 的平台高度直接当概率，或另求 \\(Y\\) 的分布后再绕远；手算 \\(E(XY)\\) 时也出现符号与加法错误。",
+      "reviewFocus": "第一步取 CDF 的跳跃量而不是平台高度。求 \\(E[g(X)]\\) 时优先直接把 \\(g(x)\\) 作用到 \\(X\\) 的各个取值，原概率保持不变。",
+      "similarQuestionPrompt": "在同一分布下令 \\(Z=|X-1|\\)，求 \\(EZ\\) 与 \\(E(XZ)\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "02B0708C-8808-4869-B32D-EC925E768068.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_CB2B6C2C-F907-4F29-B571-CC06345C2E29.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "5cef74a02e81d12ec96114355be77f34501a7089daec7eee6fbbcb5886fedd18"
+    },
+    {
+      "id": "daily-20260930-prob-poisson-linear-correlation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 5,
+      "sourceRef": "2026-09-30 当日对话 · 泊松变量线性组合的相关系数",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "相关系数",
+        "协方差",
+        "线性组合",
+        "泊松分布",
+        "双线性",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X,Y\\) 均服从参数为 \\(\\lambda\\) 的泊松分布，且相关系数 \\(\\rho_{XY}=1/2\\)。令 \\(U=2X+Y\\)、\\(V=X+2Y\\)，求 \\(\\rho_{UV}\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "相关系数",
+        "协方差",
+        "线性组合",
+        "泊松分布",
+        "双线性"
+      ],
+      "answer": "\\(\\rho_{UV}=13/14\\)。",
+      "analysis": "泊松变量满足 \\(DX=DY=\\lambda\\)，故\\[\\operatorname{Cov}(X,Y)=\\rho_{XY}\\sqrt{DX\\,DY}=\\frac\\lambda2.\\]利用协方差的双线性，\\[\\operatorname{Cov}(U,V)=2DX+2DY+5\\operatorname{Cov}(X,Y)=\\frac{13}{2}\\lambda.\\]又\\[DU=4DX+DY+4\\operatorname{Cov}(X,Y)=7\\lambda,\\quad DV=7\\lambda.\\]因此 \\(\\rho_{UV}=(13\\lambda/2)/(7\\lambda)=13/14\\)。",
+      "errorCause": "错误类型：方法选择困难、知识点不熟。卡在 \\(\\operatorname{Cov}(aX+bY,cX+dY)\\) 的展开，并追问“\\(\\operatorname{Cov}(X,X)\\) 是否等于 1”；实际上它等于 \\(DX\\)。",
+      "reviewFocus": "第一步由相关系数还原协方差。记住 \\(\\operatorname{Cov}(X,X)=DX\\)，不是固定为 1；展开后再分别计算 \\(DU,DV\\)，不要只算分子。",
+      "similarQuestionPrompt": "若 \\(DX=1,DY=4,\\rho_{XY}=-1/2\\)，求 \\(X+Y\\) 与 \\(2X-Y\\) 的相关系数。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "2B7CB77F-BD58-463F-AA78-8480DC524AC6.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "3c9a4b3058a0a87db38e03b6cf28bf12697e28a120d5828124e483ba94d404de"
+    },
+    {
+      "id": "daily-20260930-prob-product-normal-variance",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 6,
+      "sourceRef": "2026-09-30 当日对话 · 独立正态变量乘积的方差",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "独立随机变量",
+        "正态分布",
+        "乘积方差",
+        "二阶矩",
+        "思路卡壳",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,X_2,X_3\\) 相互独立且均服从 \\(N(0,\\sigma^2)\\)。令 \\(Y=X_1X_2X_3\\)，已知 \\(DY=1/8\\)，求 \\(\\sigma^2\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "独立随机变量",
+        "正态分布",
+        "乘积方差",
+        "二阶矩"
+      ],
+      "answer": "\\(\\sigma^2=1/2\\)。",
+      "analysis": "因为每个 \\(EX_i=0\\)，独立性给出 \\(EY=\\prod EX_i=0\\)。再由\\[E(Y^2)=E(X_1^2X_2^2X_3^2)=\\prod_{i=1}^3E(X_i^2)=(\\sigma^2)^3=\\sigma^6.\\]所以 \\(DY=E(Y^2)-(EY)^2=\\sigma^6=1/8\\)，从而 \\(\\sigma^2=1/2\\)。",
+      "errorCause": "错误类型：思路卡壳、方法选择困难。不知道乘积随机变量的方差怎样起步，容易误写为各方差直接相乘而不核查均值项。",
+      "reviewFocus": "第一步永远写 \\(DY=E(Y^2)-(EY)^2\\)。独立性用于拆 \\(EY\\) 与 \\(E(Y^2)\\)；本题恰因各均值为零，结果才等于三个方差的乘积。",
+      "similarQuestionPrompt": "若 \\(X_i\\) 独立且 \\(EX_i=\\mu\\)、\\(DX_i=\\sigma^2\\)，求 \\(D(X_1X_2)\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "8616F37C-A602-4826-AB22-925EF02AC1C3.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "593a0a3975830b23e1c800a0dc101335c981aff066578c595af0d770a97fa740"
+    },
+    {
+      "id": "daily-20260930-prob-bus-waiting-time",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 7,
+      "sourceRef": "2026-09-30 当日对话 · 分段候车时间的期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "审题错误",
+      "tags": [
+        "当日对话导入",
+        "均匀分布",
+        "分段函数",
+        "数学期望",
+        "候车时间",
+        "审题错误",
+        "计算错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "某汽车站每天在 \\(8{:}30\\) 和 \\(9{:}30\\) 各发出一辆客车。乘客在 \\(8{:}00\\) 至 \\(9{:}00\\) 之间任一时刻等可能到站，求平均候车时间。",
+      "options": [],
+      "knowledgePoints": [
+        "均匀分布",
+        "分段函数",
+        "数学期望",
+        "候车时间"
+      ],
+      "answer": "\\(0.5\\) 小时，即 \\(30\\) 分钟。",
+      "analysis": "以小时为单位令到站时刻 \\(X\\sim U(8,9)\\)，其密度为 \\(1\\)。候车时间\\[T=\\begin{cases}8.5-X,&8\\le X\\le8.5,\\\\9.5-X,&8.5<X\\le9.\\end{cases}\\]故\\[ET=\\int_8^{8.5}(8.5-x)\\,dx+\\int_{8.5}^{9}(9.5-x)\\,dx=\\frac18+\\frac38=\\frac12.\\]题图所附解析把同一积分误算为 \\(0.25\\)，与题面和积分本身均不一致。",
+      "errorCause": "错误类型：审题错误、计算错误。曾把候车时间函数当成密度或在期望中多乘一个 \\(x\\)，同时受现成解析“15 分钟”的错误结果干扰。",
+      "reviewFocus": "第一步分清“到站时刻的密度”与“候车时间函数”：密度是 \\(f_X(x)=1\\)，被积函数是 \\(T(x)f_X(x)\\)。分段点是 8:30；第二段必须等到 9:30。算后做量级检查：后半小时到站者至少等 30 分钟，平均值不可能只有 15 分钟。",
+      "similarQuestionPrompt": "车辆在 8:20 与 9:00 发车，乘客在 8:00 至 9:00 均匀到站，求平均候车时间。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "28D0F9AE-44FD-4369-8B9A-07C7384DE961.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "438C63AD-0AAA-4794-B0C2-54716E22EF26.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_47C4B9FD-B7AE-4909-859A-60E1B6127648.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_5B375F2E-1000-457E-B26F-99767A0C0A99.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "c79b5682905c2894983e1b799469ef9424aa1a67c7da44fc54d71c1d5b4efabe"
+    },
+    {
+      "id": "daily-20260930-prob-without-replacement-correlation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 8,
+      "sourceRef": "2026-09-30 当日对话 · 不放回抽球的相关系数",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误",
+      "tags": [
+        "当日对话导入",
+        "联合分布律",
+        "不放回抽样",
+        "协方差",
+        "相关系数",
+        "计算错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "袋中有 \\(4\\) 只球，编号为 \\(1,2,2,3\\)。从中不放回任取两只，以 \\(X,Y\\) 分别表示第一次和第二次取到球的号码。求 \\((X,Y)\\) 的联合分布律及相关系数 \\(\\rho_{XY}\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "联合分布律",
+        "不放回抽样",
+        "协方差",
+        "相关系数"
+      ],
+      "answer": "非零联合概率为\\[p_{12}=p_{21}=p_{22}=p_{23}=p_{32}=\\frac16,\\qquad p_{13}=p_{31}=\\frac1{12}.\\]相关系数 \\(\\rho_{XY}=-1/3\\)。",
+      "analysis": "把两个编号为 2 的球视为可区分，共有 \\(4\\times3=12\\) 个等可能有序结果。边缘分布均为 \\(P(1)=1/4,P(2)=1/2,P(3)=1/4\\)，故 \\(EX=EY=2\\)、\\(DX=DY=1/2\\)。再算\\[E(XY)=\\frac{23}{6},\\qquad \\operatorname{Cov}(X,Y)=\\frac{23}{6}-4=-\\frac16.\\]于是\\[\\rho_{XY}=\\frac{-1/6}{\\sqrt{(1/2)(1/2)}}=-\\frac13.\\]",
+      "errorCause": "错误类型：计算错误。联合分布表已经正确，但把计算 \\(E(XY)\\) 中的若干分数相加错，导致一度得到 \\(\\rho=-1\\)。",
+      "reviewFocus": "第一步把重复编号的实物球仍视为不同球，数出 12 个等可能有序结果；填表后先检查总概率和每个边缘分布。相关系数达到 \\(-1\\) 意味着严格负线性关系，本题显然不满足，可用作反查。",
+      "similarQuestionPrompt": "袋中球编号改为 \\(1,1,2,3\\)，仍不放回有序取两只，求相关系数。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "EAA608E2-B674-4C54-985E-43680A865F27.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_F4C3EF3B-EC79-4262-A48E-903585FEB8DC.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "38136739c8d7a4b37db617fe71a35489508d2d776b1c100849ba702941c4f92a"
+    },
+    {
+      "id": "daily-20260930-prob-truncated-geometric-inspection",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 9,
+      "sourceRef": "2026-09-30 当日对话 · 截断几何分布的期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "几何分布",
+        "截断分布",
+        "尾和公式",
+        "数学期望",
+        "方法选择困难",
+        "审题错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "某生产线产品的正品率为 \\(p\\ (0<p<1)\\)。连续检查 \\(5\\) 件产品，令 \\(X\\) 表示查到次品之前已经取得的正品数；若前 \\(5\\) 件全为正品，则 \\(X=5\\)。求 \\(EX\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "几何分布",
+        "截断分布",
+        "尾和公式",
+        "数学期望"
+      ],
+      "answer": "\\[EX=p+p^2+p^3+p^4+p^5=\\frac{p(1-p^5)}{1-p}.\\]",
+      "analysis": "直接分布为 \\(P(X=k)=p^k(1-p)\\ (k=0,1,\\ldots,4)\\)，而 \\(P(X=5)=p^5\\)。更快的方法是尾和公式：对 \\(k=1,\\ldots,5\\)，事件 \\(X\\ge k\\) 等价于前 \\(k\\) 件均为正品，所以 \\(P(X\\ge k)=p^k\\)。相加即得答案。",
+      "errorCause": "错误类型：方法选择困难、审题错误。逐项展开期望计算冗长，且容易给 \\(X=5\\) 的概率再多乘一次 \\((1-p)\\)，没有意识到检查在 5 件处被截断。",
+      "reviewFocus": "考场信号：计数变量非负整数且“最多 5 次”。第一步优先写尾和；末端事件“5 件全正品”没有随后出现次品，因此概率只是 \\(p^5\\)。",
+      "similarQuestionPrompt": "连续检查 \\(n\\) 件，求首次次品前正品数的期望与分布律。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "3873A9C1-F039-4974-A3AD-10E1C94437F7.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_F92F2897-A817-429F-8E1F-EC7D73AC2990.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_FFF8F61F-FECB-49F7-B757-10332F192B9A.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_1E918EF0-F08D-4163-9704-C47679A47C30.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "bc51f1b2fb1ba536f074a4864ac45aff28b4ca27ef005a9ab997538932431303"
+    },
+    {
+      "id": "daily-20260930-prob-normal-density-comprehensive",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 10,
+      "sourceRef": "2026-09-30 当日对话 · 指数型正态密度综合题",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "正态分布",
+        "配方法",
+        "矩母函数",
+        "随机变量函数",
+        "分布函数",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "随机变量 \\(X\\) 的密度为 \\(f(x)=Ae^{x(B-x)}\\ (-\\infty<x<\\infty)\\)，且 \\(EX=2DX\\)。求：(1) 常数 \\(A,B\\)；(2) \\(E(X^2+e^X)\\)；(3) 令 \\(Y=\\sqrt2|X-1|\\)，求 \\(F_Y(y)\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "正态分布",
+        "配方法",
+        "矩母函数",
+        "随机变量函数",
+        "分布函数"
+      ],
+      "answer": "\\[A=\\frac1{e\\sqrt\\pi},\\qquad B=2;\\qquad E(X^2+e^X)=\\frac32+e^{5/4}.\\]\\[F_Y(y)=\\begin{cases}0,&y<0,\\\\2\\Phi(y)-1,&y\\ge0,\\end{cases}\\]其中 \\(\\Phi\\) 为标准正态分布函数。",
+      "analysis": "配方得 \\(x(B-x)=-(x-B/2)^2+B^2/4\\)，故 \\(X\\sim N(B/2,1/2)\\)。条件 \\(EX=2DX\\) 给出 \\(B/2=1\\)，所以 \\(B=2\\)；归一化再得 \\(A=e^{-1}/\\sqrt\\pi\\)。于是 \\(EX^2=DX+(EX)^2=3/2\\)，且正态指数矩给出 \\(E(e^X)=e^{EX+DX/2}=e^{5/4}\\)。最后令 \\(Z=\\sqrt2(X-1)\\sim N(0,1)\\)，则 \\(Y=|Z|\\)，所以 \\(F_Y(y)=P(-y\\le Z\\le y)=2\\Phi(y)-1\\)。",
+      "errorCause": "错误类型：概念错误、方法选择困难。曾只用密度归一化就同时求 \\(A,B\\)，并把配方后的正态方差、\\(E(e^X)\\) 的指数以及绝对值变换的标准化弄混。",
+      "reviewFocus": "第一步先配方识别正态分布，再分别用题设矩条件与归一化确定两个常数。看到 \\(E(e^X)\\) 用正态指数矩；看到 \\(|X-\\mu|\\) 先标准化为 \\(|Z|\\)。",
+      "similarQuestionPrompt": "设 \\(f(x)=Ce^{-2(x-a)^2}\\) 且 \\(EX=DX\\)，求 \\(C,a\\) 与 \\(E(e^{2X})\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "16FD5B62-136F-4D97-8739-2D30588AFA23.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_62FA9106-72D5-4086-87F6-B9307C09E93F.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_4C8FB6AD-7CA4-4028-A83C-A4F16F0DED2C.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_0CFBB886-2069-44F9-8544-A192E36F7A7D.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_BEB79CA2-BFD7-4A92-B0F9-1CFF916E7B97.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "e99cd69e5dc00eb37ec18d11543f62abf6ef7ec080bb681b9da2b09a91f518fb"
+    },
+    {
+      "id": "daily-20260930-prob-floor-chi-square-expectation",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "questionNo": 11,
+      "sourceRef": "2026-09-30 当日对话 · 正态平方和取整的期望",
+      "sourceType": "daily-chat",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误",
+      "tags": [
+        "当日对话导入",
+        "卡方分布",
+        "指数分布",
+        "取整函数",
+        "尾和公式",
+        "数学期望",
+        "概念错误",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目。",
+      "questionType": "计算题",
+      "stem": "设 \\(X,Y\\) 相互独立且均服从 \\(N(0,1)\\)。令 \\(U=\\lfloor X^2+Y^2\\rfloor\\)，其中 \\(\\lfloor\\cdot\\rfloor\\) 表示向下取整。求 \\(EU\\)。",
+      "options": [],
+      "knowledgePoints": [
+        "卡方分布",
+        "指数分布",
+        "取整函数",
+        "尾和公式",
+        "数学期望"
+      ],
+      "answer": "\\[EU=\\frac1{\\sqrt e-1}.\\]",
+      "analysis": "令 \\(Z=X^2+Y^2\\)，则 \\(Z\\sim\\chi^2(2)\\)，即参数为 \\(1/2\\) 的指数分布，故 \\(P(Z\\ge k)=e^{-k/2}\\)。由于 \\(U=\\lfloor Z\\rfloor\\) 是非负整数变量，\\[EU=\\sum_{k=1}^{\\infty}P(U\\ge k)=\\sum_{k=1}^{\\infty}P(Z\\ge k)=\\sum_{k=1}^{\\infty}e^{-k/2}=\\frac{e^{-1/2}}{1-e^{-1/2}}=\\frac1{\\sqrt e-1}.\\]",
+      "errorCause": "错误类型：概念错误、知识点不熟。曾把 \\(E(X^2+Y^2)=2\\) 直接当成 \\(E\\lfloor X^2+Y^2\\rfloor\\)，并把标准正态密度的指数误写成 \\(-x^2\\)。",
+      "reviewFocus": "考场第一步识别 \\(X^2+Y^2\\sim\\chi^2(2)\\)，再把取整变量用尾和公式处理。非线性运算通常不能穿过期望：\\(E\\lfloor Z\\rfloor\\ne\\lfloor EZ\\rfloor\\)。标准正态密度是 \\((2\\pi)^{-1/2}e^{-x^2/2}\\)。",
+      "similarQuestionPrompt": "若 \\(X_1,\\ldots,X_4\\) 独立标准正态，求 \\(E\\lfloor (X_1^2+\\cdots+X_4^2)/2\\rfloor\\)。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "6EB40E23-351B-44C3-B0D8-3A6B795827E4.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "7A4492D0-E924-403E-BE6B-F9A08EB69E85.png",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_AFF3ACD3-4140-4579-94C9-1898192E34CB.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_2BC5A259-A802-4075-8B92-91F2DDC53985.jpeg",
+          "date": "2026-09-30",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“不会、为什么、怎么想到、公式如何用、考场如何分析”等追问",
+      "historyImportBatches": [
+        "daily-2026-09-30-v1"
+      ],
+      "contentFingerprint": "74712c2f017b6ef70e1608ae39e9e5d95c2c8377936f97694375af47d4e8d521"
+    }
+  ]
+}
