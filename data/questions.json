@@ -10394,7 +10394,8 @@
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "08c1d220ac1482083b8e42f471d9de5e5d012e7ea6d4e82e4b35de3f95373faf",
-      "questionNo": 1
+      "questionNo": 1,
+      "reviewFocus": "第一步先认清 \\(B(n,p)\\) 的第一个参数：\\(EX=np,DX=np(1-p)\\)。随机变量独立时，和的方差才可直接相加。使用切比雪夫不等式前，把目标区间改写成以均值为中心的绝对值事件。"
     },
     {
       "id": "daily-20261001-prob-sample-variance-n-minus-one",
@@ -10460,7 +10461,8 @@
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "b1745ad2b4a7cb522a0d4e722aa12bc058efa21c6accdc81a513d1520e2627ce",
-      "questionNo": 2
+      "questionNo": 2,
+      "reviewFocus": "考场第一步区分随机量与其期望：\\(S^2\\) 每次会变，但长期平均等于 \\(\\sigma^2\\)。记住三个信号：估计了一个均值会损失一个自由度；\\(n=1\\) 无法由一个观测衡量离散程度；\\(S^2\\) 的量纲是平方，故它的方差量纲必为四次方。"
     },
     {
       "id": "daily-20261001-prob-sample-mean-covariance-correlation",
@@ -10512,7 +10514,8 @@
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "0ca76799145f8feb7df6ba98ec93299b49b66dac5c649200eabea1184db40e7d",
-      "questionNo": 3
+      "questionNo": 3,
+      "reviewFocus": "第一步把两个样本均值写成双重求和的协方差。画出 \\(n\\times n\\) 下标表：非对角项因独立为零，仅主对角线保留 \\(n\\) 项。样本平均会缩小协方差和方差，但不会改变相关系数。"
     },
     {
       "id": "daily-20261001-prob-normal-sample-statistics-comprehensive",
@@ -10578,7 +10581,8 @@
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "c7eec0471ee840bb6be070be59540dc0756996d1290de5e24826223e141ed730",
-      "questionNo": 4
+      "questionNo": 4,
+      "reviewFocus": "先判断每问调用哪条结论：独立和的方差、样本方差无偏性、中心正态的对称性、正态样本中 \\(\\overline X\\) 与 \\(S^2\\) 独立。第四问第一步标准化 \\(Z=\\sqrt n\\,\\overline X/\\sigma\\)，用 \\(EZ^4=3\\) 得平方正态变量的方差。"
     },
     {
       "id": "daily-20261001-prob-chi-square-t-f-statements",
@@ -10638,7 +10642,8 @@
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "d78b334c0152b9f8637e382e3168b49bdbf787d9d39cf7205659db294cbc383b",
-      "questionNo": 5
+      "questionNo": 5,
+      "reviewFocus": "考场第一步把每个统计量改写成标准模板：\\(\\chi^2\\) 是独立标准正态平方和；\\(t=Z/\\sqrt{Q/r}\\) 要求 \\(Z\\perp Q\\)；\\(F=(Q_1/r_1)/(Q_2/r_2)\\) 要求两个卡方独立。牢记 \\(t_r^2\\sim F(1,r)\\)，顺序不可倒。"
     }
   ],
   "schemaVersion": 2,
