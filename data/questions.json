@@ -2,7 +2,7 @@
   "title": "考研数学错题库（原书圈题 + 历史对话）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 241,
+  "count": 253,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -10644,11 +10644,736 @@
       "contentFingerprint": "d78b334c0152b9f8637e382e3168b49bdbf787d9d39cf7205659db294cbc383b",
       "questionNo": 5,
       "reviewFocus": "考场第一步把每个统计量改写成标准模板：\\(\\chi^2\\) 是独立标准正态平方和；\\(t=Z/\\sqrt{Q/r}\\) 要求 \\(Z\\perp Q\\)；\\(F=(Q_1/r_1)/(Q_2/r_2)\\) 要求两个卡方独立。牢记 \\(t_r^2\\sim F(1,r)\\)，顺序不可倒。"
+    },
+    {
+      "id": "daily-20261004-prob-estimator-basics-moment-mle",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "知识点不熟 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "矩估计",
+        "最大似然估计",
+        "指数分布",
+        "正态总体",
+        "知识点不熟",
+        "思路卡壳"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 矩估计与最大似然估计基础",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 为简单随机样本。\n(1) 若 \\(X\\sim E(\\lambda)\\)，密度为 \\(f(x;\\lambda)=\\lambda e^{-\\lambda x}\\ (x>0)\\)，分别求 \\(\\lambda\\) 的矩估计量与最大似然估计量。\n(2) 若 \\(X\\sim N(\\mu,\\sigma^2)\\)，求 \\(\\mu,\\sigma^2\\) 的矩估计量，并说明“参数、估计量、估计值”的区别。",
+      "options": [],
+      "answer": "(1) \\(\\widehat\\lambda_M=\\widehat\\lambda_L=1/\\overline X\\)。\n(2) \\(\\widehat\\mu_M=\\overline X\\)，\\(\\widehat{\\sigma^2}_M=\\frac1n\\sum_{i=1}^n(X_i-\\overline X)^2\\)。参数是未知常数；估计量是样本的函数、因而是随机变量；代入观测值后得到的数才是估计值。",
+      "analysis": "(1) 指数分布满足 \\(EX=1/\\lambda\\)。令样本一阶矩等于总体一阶矩：\n\\[\n\\overline X=\\frac1\\lambda,\\qquad \\widehat\\lambda_M=\\frac1{\\overline X}.\n\\]\n似然函数为\n\\[\nL(\\lambda)=\\lambda^n\\exp\\!\\left(-\\lambda\\sum_{i=1}^nX_i\\right),\n\\quad\n\\ell(\\lambda)=n\\ln\\lambda-\\lambda\\sum X_i.\n\\]\n由 \\(\\ell'(\\lambda)=n/\\lambda-\\sum X_i=0\\) 得\n\\[\n\\widehat\\lambda_L=\\frac n{\\sum X_i}=\\frac1{\\overline X},\n\\]\n且 \\(\\ell''(\\lambda)=-n/\\lambda^2<0\\)。\n\n(2) 正态总体有 \\(EX=\\mu\\)、\\(EX^2=\\sigma^2+\\mu^2\\)。令\n\\[\n\\overline X=\\mu,\\qquad \\frac1n\\sum X_i^2=\\sigma^2+\\mu^2,\n\\]\n解得\n\\[\n\\widehat\\mu_M=\\overline X,\\qquad\n\\widehat{\\sigma^2}_M=\\frac1n\\sum X_i^2-\\overline X^2\n=\\frac1n\\sum(X_i-\\overline X)^2.\n\\]",
+      "errorCause": "把未知参数、由样本构成的估计量以及代入样本后的估计值混在一起；做矩估计时没有先写清总体矩。",
+      "knowledgePoints": [
+        "矩估计",
+        "最大似然估计",
+        "指数分布",
+        "正态总体"
+      ],
+      "similarQuestionPrompt": "仿考研真题：设总体密度为 (f(x;\theta)=2x/\theta^2, 0<x<\theta)，分别求矩估计与最大似然估计，并比较两种方法的第一步。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "DE841671-52C4-4172-BF47-F18382B8CF2C.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "85272B28-A266-42B4-A46D-4509C2B125EF.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_206FEF20-DF28-4505-8A14-E0BC140D1252.jpeg",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_AAF8B9D1-8DB2-4302-A5B7-7103C932F391.jpeg",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "40255ED2-001D-4FBA-99A9-662EC7BB64FA.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "791c337697fa332531e26bd56747bcfde9f15fa1f4618abb3998330fb6efb9af",
+      "questionNo": 1,
+      "reviewFocus": "考场第一步先写“总体矩 = 样本矩”。遇到最大似然估计则固定样本值，写 \\(L(\\theta)\\)、取对数、求极值。看到 \\(\\widehat\\theta(X_1,\\ldots,X_n)\\) 要意识到它仍是随机变量；只有 \\(\\widehat\\theta(x_1,\\ldots,x_n)\\) 才是数值。"
+    },
+    {
+      "id": "daily-20261004-prob-heavy-tail-estimation-consistency",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "矩估计",
+        "最大似然估计",
+        "一致性",
+        "大数定律",
+        "重尾分布",
+        "思路卡壳",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 重尾分布的矩估计、一致性与 MLE",
+      "questionType": "计算题",
+      "stem": "设总体 \\(X\\) 的密度为\n\\[\nf(x;\\theta)=\n\\begin{cases}\n\\dfrac{\\theta^2}{x^3}e^{-\\theta/x},&x>0,\\\\\n0,&\\text{其他},\n\\end{cases}\\qquad \\theta>0,\n\\]\n\\(X_1,\\ldots,X_n\\) 为简单随机样本。\n(1) 求 \\(\\theta\\) 的矩估计量，并证明其为一致估计量；\n(2) 求 \\(\\theta\\) 的最大似然估计量。",
+      "options": [],
+      "answer": "\\[\n\\widehat\\theta_M=\\overline X,\\qquad\n\\widehat\\theta_M\\xrightarrow P\\theta;\n\\qquad\n\\widehat\\theta_L=\\frac{2n}{\\sum_{i=1}^n1/X_i}.\n\\]",
+      "analysis": "先求一阶矩。令 \\(t=\\theta/x\\)，则 \\(x=\\theta/t\\)、\\(dx=-\\theta t^{-2}dt\\)，从而\n\\[\nEX=\\int_0^\\infty x\\frac{\\theta^2}{x^3}e^{-\\theta/x}\\,dx\n=\\theta\\int_0^\\infty e^{-t}\\,dt=\\theta.\n\\]\n所以矩估计量为 \\(\\widehat\\theta_M=\\overline X\\)。\n\n一致性不必硬算方差。因为 \\(E|X|=EX=\\theta<\\infty\\)，由大数定律\n\\[\n\\overline X\\xrightarrow P EX=\\theta.\n\\]\n注意本题 \\(EX^2=\\infty\\)，因此不能套用需要有限方差的切比雪夫证明，但大数定律仍可用。\n\n似然函数为\n\\[\nL(\\theta)=\\theta^{2n}\\left(\\prod_{i=1}^nX_i^{-3}\\right)\n\\exp\\!\\left(-\\theta\\sum_{i=1}^n\\frac1{X_i}\\right).\n\\]\n对数似然\n\\[\n\\ell(\\theta)=2n\\ln\\theta-3\\sum\\ln X_i-\\theta\\sum\\frac1{X_i}.\n\\]\n令 \\(\\ell'(\\theta)=2n/\\theta-\\sum1/X_i=0\\)，得\n\\[\n\\widehat\\theta_L=\\frac{2n}{\\sum1/X_i},\n\\]\n且 \\(\\ell''(\\theta)=-2n/\\theta^2<0\\)，故为极大值。",
+      "errorCause": "一致性证明时只想到切比雪夫不等式，忽略了本题二阶矩发散但一阶绝对矩有限；最大似然推导中也容易漏掉指数项中的 (sum 1/X_i)。",
+      "knowledgePoints": [
+        "矩估计",
+        "最大似然估计",
+        "一致性",
+        "大数定律",
+        "重尾分布"
+      ],
+      "similarQuestionPrompt": "仿考研真题：把密度改为 (f(x;\theta)=\theta x^{-2}e^{-\theta/x} (x>0))，判断哪些总体矩存在，并求一个可用的最大似然估计量及其一致性。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "79A24618-098F-4B7C-897B-C69F40734199.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_730777B9-4569-4D6A-A415-B03AA3924323.jpeg",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "bd68052744943f387e3853f6306e3b1f8cf4ca98d7a010d1621e2571fe159bf9",
+      "questionNo": 2,
+      "reviewFocus": "看到“证明一致性”，第一步检查估计量能否写成样本均值或其连续函数：若 \\(E|X|<\\infty\\)，优先用大数定律；只有需要切比雪夫时才检查方差。看到 \\(e^{-\\theta/x}\\) 时，似然指数必须写成 \\(-\\theta\\sum 1/X_i\\)，不是 \\(-\\theta\\sum X_i\\)。"
+    },
+    {
+      "id": "daily-20261004-prob-piecewise-density-mle",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难 / 审题错误",
+      "tags": [
+        "当日对话导入",
+        "最大似然估计",
+        "分段密度",
+        "样本计数",
+        "约束参数",
+        "方法选择困难",
+        "审题错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 分段常数密度的最大似然估计",
+      "questionType": "计算题",
+      "stem": "总体 \\(X\\) 的密度为\n\\[\nf(x;\\alpha,\\beta)=\n\\begin{cases}\n\\alpha,&-1<x<0,\\\\\n\\beta,&0<x<1,\\\\\n0,&\\text{其他},\n\\end{cases}\n\\]\n其中 \\(\\alpha,\\beta\\) 为未知参数。样本值为\n\\[\n-0.5,\\ 0.3,\\ -0.2,\\ -0.6,\\ -0.1,\\ 0.4,\\ 0.5,\\ -0.8.\n\\]\n求 \\(\\alpha\\) 的最大似然估计值。",
+      "options": [],
+      "answer": "\\[\n\\widehat\\alpha_L=\\frac58.\n\\]",
+      "analysis": "密度必须积分为 \\(1\\)，故\n\\[\n\\alpha+\\beta=1,\\qquad \\beta=1-\\alpha,\\qquad 0\\le\\alpha\\le1.\n\\]\n样本中落在 \\((-1,0)\\) 的有 \\(5\\) 个，落在 \\((0,1)\\) 的有 \\(3\\) 个，因此\n\\[\nL(\\alpha)=\\alpha^5(1-\\alpha)^3.\n\\]\n取对数后\n\\[\n\\ell'(\\alpha)=\\frac5\\alpha-\\frac3{1-\\alpha}=0\n\\]\n解得 \\(5(1-\\alpha)=3\\alpha\\)，所以 \\(\\widehat\\alpha_L=5/8\\)。二阶导数为负，故为最大值。",
+      "errorCause": "把两个区间的密度参数当成相互独立的未知量，忘记先用密度归一化条件 (alpha+\beta=1)；也没有先统计样本落入两个区间的个数。",
+      "knowledgePoints": [
+        "最大似然估计",
+        "分段密度",
+        "样本计数",
+        "约束参数"
+      ],
+      "similarQuestionPrompt": "仿考研真题：密度在 ((0,1))、((1,2)) 上分别为 (2p)、(1-p)，给出 10 个样本，求 (p) 的最大似然估计。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "950F75CD-700C-495B-A17C-00060AF048A0.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "fcb40fc51977be754a5a4b6c94fd46aa111c1da45ebad40605133a328e1093e0",
+      "questionNo": 3,
+      "reviewFocus": "考场识别信号是“分段常数密度 + 给出具体样本”。第一步不是积分求导，而是先写归一化约束，再数各区间中的样本数；似然立即化成二项型 \\(\\alpha^{n_-}(1-\\alpha)^{n_+}\\)。"
+    },
+    {
+      "id": "daily-20261004-prob-support-dependent-uniform-mle",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "边界或范围判断困难 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "最大似然估计",
+        "均匀分布",
+        "次序统计量",
+        "参数支持集",
+        "边界或范围判断困难",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 支持集含参数的均匀分布 MLE",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 为简单随机样本。\n(1) 总体分布函数为\n\\[\nF(x;\\theta)=\n\\begin{cases}\n0,&x<\\theta,\\\\\n\\dfrac{x-\\theta}{\\theta},&\\theta\\le x<2\\theta,\\\\\n1,&x\\ge2\\theta,\n\\end{cases}\\qquad \\theta>0.\n\\]\n求 \\(\\theta\\) 的最大似然估计量，并判断其是否无偏。\n(2) 若总体密度改为\n\\[\nf(x;\\theta)=\n\\begin{cases}\n1,&\\theta-\\frac12<x<\\theta+\\frac12,\\\\\n0,&\\text{其他},\n\\end{cases}\n\\]\n说明最大似然估计是否唯一，并给出一个最大似然估计量。",
+      "options": [],
+      "answer": "(1) \\(\\widehat\\theta_L=X_{(n)}/2\\)，不是无偏估计量。\n(2) 最大似然估计不唯一；任意满足 \\(X_{(n)}-\\frac12<\\widehat\\theta_L<X_{(1)}+\\frac12\\) 的统计量均可，常取\n\\[\n\\widehat\\theta_L=\\frac{X_{(1)}+X_{(n)}}2.\n\\]",
+      "analysis": "(1) 由分布函数可知 \\(X\\sim U(\\theta,2\\theta)\\)，密度为 \\(1/\\theta\\)。似然非零要求所有样本满足\n\\[\n\\theta\\le X_i\\le2\\theta,\n\\]\n即\n\\[\n\\frac{X_{(n)}}2\\le\\theta\\le X_{(1)}.\n\\]\n在可行区间内 \\(L(\\theta)=\\theta^{-n}\\) 单调递减，所以取最小允许值：\n\\[\n\\widehat\\theta_L=\\frac{X_{(n)}}2.\n\\]\n若 \\(U\\sim U(\\theta,2\\theta)\\)，则\n\\[\nE[X_{(n)}]=\\theta+\\theta\\frac n{n+1}\n=\\theta\\frac{2n+1}{n+1},\n\\]\n故\n\\[\nE\\widehat\\theta_L=\\theta\\frac{2n+1}{2(n+1)}\\ne\\theta.\n\\]\n\n(2) 似然非零的条件为\n\\[\nX_{(n)}-\\frac12<\\theta<X_{(1)}+\\frac12.\n\\]\n在该区间内 \\(L(\\theta)=1\\)，所有可行的 \\(\\theta\\) 都使似然达到同一最大值，所以 MLE 不唯一。区间中点\n\\[\n\\frac{X_{(1)}+X_{(n)}}2\n\\]\n必在可行区间内，是常用选取。",
+      "errorCause": "对“所有样本都必须落在支持集内”的条件不会转化为关于 (\theta) 的范围；把单调似然题仍按求导法处理，并误以为最大似然估计必唯一。",
+      "knowledgePoints": [
+        "最大似然估计",
+        "均匀分布",
+        "次序统计量",
+        "参数支持集"
+      ],
+      "similarQuestionPrompt": "仿考研真题：设 (Xsim U(0,\theta))，求 (\theta) 的 MLE、无偏修正以及一致性；再将支持集改为 ((\theta,\theta+2)) 判断 MLE 是否唯一。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "7CB6C710-052C-4C6B-B349-4B553C00145E.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "6D2B6AB3-E673-43D7-B413-0DF4689177E1.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_8231680D-9B6F-4CB5-8794-4FB3A70E74E9.jpeg",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "e2d4d245d92adda2e76b2774cd763df7f0d15cba8651a802fdd776554a375e76",
+      "questionNo": 4,
+      "reviewFocus": "看到密度的取值范围含 \\(\\theta\\)，第一步写指示条件并用 \\(X_{(1)},X_{(n)}\\) 压缩成参数区间。随后只需看似然在该区间单调还是常数：单调则取边界，常数则 MLE 不唯一。"
+    },
+    {
+      "id": "daily-20261004-prob-mle-invariance-tail-probability",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "最大似然估计",
+        "不变性原理",
+        "正态总体",
+        "指数分布",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · MLE 不变性与尾概率估计",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 来自 \\(N(\\mu,\\sigma^2)\\)，其中 \\(\\mu,\\sigma^2\\) 均未知。另有 \\(Y\\) 服从以 \\(\\sigma\\) 为率参数的指数分布，令\n\\[\n\\theta=P(Y>1).\n\\]\n求 \\(\\theta\\) 的最大似然估计量。",
+      "options": [],
+      "answer": "\\[\n\\widehat\\theta_L=\n\\exp\\!\\left[-\\sqrt{\\frac1n\\sum_{i=1}^n(X_i-\\overline X)^2}\\right].\n\\]",
+      "analysis": "率参数为 \\(\\sigma\\) 的指数分布满足\n\\[\nP(Y>1)=e^{-\\sigma},\n\\]\n所以 \\(\\theta=g(\\sigma)=e^{-\\sigma}\\)。\n\n对正态总体且 \\(\\mu,\\sigma^2\\) 均未知，\n\\[\n\\widehat\\mu_L=\\overline X,\\qquad\n\\widehat{\\sigma^2}_L=\\frac1n\\sum_{i=1}^n(X_i-\\overline X)^2,\n\\]\n从而\n\\[\n\\widehat\\sigma_L=\n\\sqrt{\\frac1n\\sum_{i=1}^n(X_i-\\overline X)^2}.\n\\]\n由最大似然估计的不变性原理，\\(g(\\widehat\\sigma_L)\\) 是 \\(g(\\sigma)\\) 的 MLE，因此得到答案。注意 MLE 的方差分母是 \\(n\\)，不是无偏样本方差中的 \\(n-1\\)。",
+      "errorCause": "不知道题目真正要估计的是函数 (\theta=e^{-sigma})，而不是重新对 (\theta) 构造似然；同时容易把 (sigma^2) 的 MLE 与无偏样本方差混淆。",
+      "knowledgePoints": [
+        "最大似然估计",
+        "不变性原理",
+        "正态总体",
+        "指数分布"
+      ],
+      "similarQuestionPrompt": "仿考研真题：已知 (widehatlambda_L) 是指数率参数的 MLE，求 (P_lambda(X>c)) 和 (1/lambda) 的 MLE。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "24865DE0-02CE-4E6C-B6FA-D4E8A0E73B7E.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "A0E7A002-E3F5-48B3-83E0-F901166210DD.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "ecb4f89ed7b575e6287599b5a627e06f96684cead6fd1266980501e887031c4f",
+      "questionNo": 5,
+      "reviewFocus": "看到“令 \\(\\theta=g(\\text{原参数})\\)”时，第一步先求原参数的 MLE，再直接代入 \\(g\\)。这是最大似然估计不变性；不要重新从头求导。正态总体方差的 MLE 用分母 \\(n\\)。"
+    },
+    {
+      "id": "daily-20261004-prob-estimator-efficiency",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "估计量的评价",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "计算错误 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "无偏估计",
+        "有效性",
+        "估计量方差",
+        "线性组合",
+        "计算错误",
+        "概念错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 三个无偏估计量的有效性比较",
+      "questionType": "证明题",
+      "stem": "设 \\(X_1,X_2,X_3\\) 为来自均值 \\(\\mu\\)、方差 \\(\\sigma^2\\) 的总体的简单随机样本。证明下列三个统计量均为 \\(\\mu\\) 的无偏估计量，并比较其有效性：\n\\[\n\\widehat\\mu_1=\\overline X=\\frac{X_1+X_2+X_3}{3},\\quad\n\\widehat\\mu_2=\\frac12X_1+\\frac13X_2+\\frac16X_3,\\quad\n\\widehat\\mu_3=X_1.\n\\]",
+      "options": [],
+      "answer": "三者均无偏，且\n\\[\nD(\\widehat\\mu_1)=\\frac{\\sigma^2}{3}\n< D(\\widehat\\mu_2)=\\frac{7\\sigma^2}{18}\n< D(\\widehat\\mu_3)=\\sigma^2.\n\\]\n因此 \\(\\widehat\\mu_1\\) 最有效。",
+      "analysis": "三个估计量的系数和均为 \\(1\\)，故\n\\[\nE\\widehat\\mu_j=\\mu\\qquad(j=1,2,3).\n\\]\n利用样本独立性，线性组合的方差等于“系数平方乘方差之和”：\n\\[\nD(\\widehat\\mu_1)=3\\left(\\frac13\\right)^2\\sigma^2=\\frac{\\sigma^2}{3},\n\\]\n\\[\nD(\\widehat\\mu_2)=\\left[\\left(\\frac12\\right)^2+\\left(\\frac13\\right)^2+\\left(\\frac16\\right)^2\\right]\\sigma^2\n=\\frac{7\\sigma^2}{18},\n\\]\n\\[\nD(\\widehat\\mu_3)=\\sigma^2.\n\\]\n在同为无偏估计量的前提下，方差越小越有效。",
+      "errorCause": "把“估计量的方差”误写成样本离差平方和，展开了与题目无关的式子；没有利用独立样本线性组合方差公式。",
+      "knowledgePoints": [
+        "无偏估计",
+        "有效性",
+        "估计量方差",
+        "线性组合"
+      ],
+      "similarQuestionPrompt": "仿考研真题：对 (n=4)，在所有形如 (sum a_iX_i)、满足 (sum a_i=1) 的无偏估计量中，证明等权平均方差最小。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "57CC2231-3922-41A6-B97C-389D78B2B55E.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "51E77BA3-A696-43D7-AC35-05468BC1C02B.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_9B1B8DC3-A033-48D2-B08A-9CB1564CE735.jpeg",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "995f526f4e1399f84d2d6590c92a19b4761b98f6441d5d7337665d395046fced",
+      "questionNo": 6,
+      "reviewFocus": "考场第一步先验无偏：系数和是否为 \\(1\\)。比较有效性前必须确认两者估计同一参数且无偏，然后直接算方差。线性组合的方差使用系数平方，不能把系数直接相加，也不要引入样本方差公式。"
+    },
+    {
+      "id": "daily-20261004-prob-sample-standard-deviation-consistency",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "估计量的评价",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "一致估计",
+        "样本方差",
+        "样本标准差",
+        "连续映射定理",
+        "概念错误",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 样本标准差的一致性判断",
+      "questionType": "选择题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 独立同分布，\\(DX_1=\\sigma^2<\\infty\\)，\n\\[\n\\overline X=\\frac1n\\sum_{i=1}^nX_i,\\qquad\nS^2=\\frac1{n-1}\\sum_{i=1}^n(X_i-\\overline X)^2.\n\\]\n判断下列说法中必然正确的是：\n(A) \\(S\\) 是 \\(\\sigma\\) 的无偏估计量；\n(B) \\(S\\) 是 \\(\\sigma\\) 的最大似然估计量；\n(C) \\(S\\) 是 \\(\\sigma\\) 的一致估计量；\n(D) \\(S\\) 与 \\(\\overline X\\) 相互独立。",
+      "options": [],
+      "answer": "选择 (C)。",
+      "analysis": "由恒等式\n\\[\nS^2=\\frac n{n-1}\\left(\\frac1n\\sum_{i=1}^nX_i^2-\\overline X^2\\right).\n\\]\n因 \\(EX^2<\\infty\\)，大数定律给出\n\\[\n\\frac1n\\sum X_i^2\\xrightarrow P EX^2,\\qquad\n\\overline X\\xrightarrow P EX.\n\\]\n故\n\\[\nS^2\\xrightarrow P EX^2-(EX)^2=\\sigma^2.\n\\]\n由连续映射定理且 \\(\\sigma\\ge0\\)，\n\\[\nS=\\sqrt{S^2}\\xrightarrow P\\sigma.\n\\]\n所以 (C) 正确。一般 \\(ES\\ne\\sigma\\)，故 (A) 错；未给总体分布，不能断言 MLE，故 (B) 错；\\(S\\) 与 \\(\\overline X\\) 的独立性是正态总体的特殊结论，题目只给独立同分布，故 (D) 错。",
+      "errorCause": "把 (S^2) 对 (sigma^2) 的无偏性误传给 (S) 对 (sigma)；把正态样本中的独立性结论当作任意总体都成立。",
+      "knowledgePoints": [
+        "一致估计",
+        "样本方差",
+        "样本标准差",
+        "连续映射定理"
+      ],
+      "similarQuestionPrompt": "仿考研真题：判断 (S^2)、(S)、(overline X) 分别对哪些参数无偏或一致，并指出每个结论需要的最弱常用条件。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "FED6BB33-8AEE-48CB-9A6D-06E26C2885BB.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "846317ed8a79d0167c638d594715f9b4bc899f03494f680ff1e97f173a78d2a3",
+      "questionNo": 7,
+      "reviewFocus": "识别“必然正确”时逐项检查结论所需前提。无偏性不能穿过平方根；MLE 必须知道分布；\\(\\overline X\\perp S^2\\) 需要正态性；一致性可由大数定律和连续映射直接证明。"
+    },
+    {
+      "id": "daily-20261004-prob-normal-mean-t-confidence-interval",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "区间估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "区间估计",
+        "正态总体",
+        "t分布",
+        "自由度",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 方差未知时均值的 t 置信区间",
+      "questionType": "选择题",
+      "stem": "某批零件长度服从 \\(N(\\mu,\\sigma^2)\\)，其中 \\(\\mu,\\sigma^2\\) 均未知。随机抽取 \\(16\\) 个零件，得到\n\\[\n\\overline x=20\\text{ cm},\\qquad s=1\\text{ cm}.\n\\]\n求 \\(\\mu\\) 的置信度为 \\(0.90\\) 的双侧置信区间。",
+      "options": [],
+      "answer": "\\[\n\\left(20-\\frac14t_{0.05}(15),\\ 20+\\frac14t_{0.05}(15)\\right).\n\\]\n对应选项 (C)。",
+      "analysis": "正态总体均值的区间估计中，方差未知，应选枢轴量\n\\[\nT=\\frac{\\overline X-\\mu}{S/\\sqrt n}\\sim t(n-1).\n\\]\n置信度 \\(1-\\alpha=0.90\\)，故 \\(\\alpha=0.10\\)，双侧各留 \\(\\alpha/2=0.05\\)。因此\n\\[\nP\\!\\left(-t_{0.05}(15)<\\frac{\\overline X-\\mu}{S/\\sqrt{16}}<t_{0.05}(15)\\right)=0.90.\n\\]\n移项得\n\\[\n\\mu\\in\\left(\\overline X-t_{0.05}(15)\\frac S4,\\ \n\\overline X+t_{0.05}(15)\\frac S4\\right).\n\\]\n代入 \\(\\overline x=20,s=1\\) 即得答案。",
+      "errorCause": "没有先根据“正态总体、方差未知”选择 (t) 枢轴量；混淆显著性水平 (alpha=0.10)、双侧尾概率 (0.05) 和自由度 (n-1=15)。",
+      "knowledgePoints": [
+        "区间估计",
+        "正态总体",
+        "t分布",
+        "自由度"
+      ],
+      "similarQuestionPrompt": "仿考研真题：将样本量改为 (25)、置信度改为 (0.95)，分别在 (sigma) 已知和未知时写出 (mu) 的区间并比较所用分位数。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "E4E22A6D-665E-4FE4-8C5D-86C3574B1DCF.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "8FCEFFFC-0E3A-494A-9B0E-5EA19E9E2BF0.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "3E74946F-A78A-4611-AFB2-2030AC93F735.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "ee48ff4e4c19c499e7314fa03d45d7fe15820a8cd72d235b290ba32e905f3722",
+      "questionNo": 8,
+      "reviewFocus": "考场第一步看三件事：估计谁、方差是否已知、单侧还是双侧。均值且方差未知用 \\(t(n-1)\\)；双侧置信度 \\(1-\\alpha\\) 必须把 \\(\\alpha\\) 平分到两侧。"
+    },
+    {
+      "id": "daily-20261004-prob-variance-confidence-mixed-chi-square",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "区间估计",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "思路卡壳 / 自由度判断困难",
+      "tags": [
+        "当日对话导入",
+        "区间估计",
+        "正态总体",
+        "卡方分布",
+        "自由度",
+        "独立样本",
+        "思路卡壳",
+        "边界或范围判断困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 混合平方和构造方差置信区间",
+      "questionType": "计算题",
+      "stem": "设 \\(X_1,\\ldots,X_{2n}\\) 为来自 \\(N(\\mu,\\sigma^2)\\) 的简单随机样本，记\n\\[\n\\overline X=\\frac1n\\sum_{i=1}^nX_i,\\qquad\nT=\\sum_{i=1}^n(X_i-\\overline X)^2+\\sum_{i=n+1}^{2n}(X_i-\\mu)^2.\n\\]\n当 \\(\\mu\\) 已知时，基于 \\(T\\) 构造 \\(\\sigma^2\\) 的置信水平为 \\(1-\\alpha\\) 的双侧置信区间。",
+      "options": [],
+      "answer": "\\[\n\\left(\n\\frac{T}{\\chi^2_{\\alpha/2}(2n-1)},\\\n\\frac{T}{\\chi^2_{1-\\alpha/2}(2n-1)}\n\\right),\n\\]\n其中 \\(\\chi^2_\\gamma(r)\\) 表示上侧 \\(\\gamma\\) 分位点。",
+      "analysis": "把 \\(T\\) 分成两块：\n\\[\nT_1=\\sum_{i=1}^n(X_i-\\overline X)^2,\\qquad\nT_2=\\sum_{i=n+1}^{2n}(X_i-\\mu)^2.\n\\]\n第一块用前 \\(n\\) 个样本并估计了一个均值，故\n\\[\n\\frac{T_1}{\\sigma^2}\\sim\\chi^2(n-1).\n\\]\n第二块的总体均值 \\(\\mu\\) 已知，直接有\n\\[\n\\frac{T_2}{\\sigma^2}\\sim\\chi^2(n).\n\\]\n两块使用互不重叠的独立样本，所以相互独立，因而\n\\[\n\\frac T{\\sigma^2}\\sim\\chi^2(2n-1).\n\\]\n若采用上侧分位点记号，则\n\\[\nP\\!\\left(\\chi^2_{1-\\alpha/2}(2n-1)\n<\\frac T{\\sigma^2}<\n\\chi^2_{\\alpha/2}(2n-1)\\right)=1-\\alpha.\n\\]\n对不等式取倒数并乘 \\(T\\)，注意方向反转，即得答案。",
+      "errorCause": "直接把两段各看成 (n) 个标准正态平方和，漏掉第一段使用样本均值导致损失一个自由度；推导置信区间时倒数后容易写反上下限。",
+      "knowledgePoints": [
+        "区间估计",
+        "正态总体",
+        "卡方分布",
+        "自由度",
+        "独立样本"
+      ],
+      "similarQuestionPrompt": "仿考研真题：把第二段也改成围绕其自身样本均值的平方和，求合并后的自由度及 (sigma^2) 置信区间。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "3E74946F-A78A-4611-AFB2-2030AC93F735.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "48cb3968ecd75cb36f5794a7f30b34af939fb1571d2896f252c69c344725680d",
+      "questionNo": 9,
+      "reviewFocus": "第一步把平方和按样本组拆开并逐块数自由度：围绕样本均值为 \\(n-1\\)，围绕已知总体均值为 \\(n\\)。只有独立卡方才能相加。由枢轴量解 \\(\\sigma^2\\) 时，取倒数必须反向。"
+    },
+    {
+      "id": "daily-20261004-prob-significance-level-change",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "假设检验",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误 / 审题错误",
+      "tags": [
+        "当日对话导入",
+        "假设检验",
+        "显著性水平",
+        "拒绝域",
+        "p值",
+        "第一类错误",
+        "概念错误",
+        "审题错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 显著性水平改变后的结论",
+      "questionType": "选择题",
+      "stem": "设 \\(X\\sim N(\\mu,\\sigma^2)\\)，\\(\\sigma^2\\) 未知。对假设\n\\[\nH_0:\\mu=\\mu_0\n\\]\n进行检验。若在显著性水平 \\(\\alpha=0.05\\) 下拒绝了 \\(H_0\\)，则当显著性水平改为 \\(\\alpha=0.01\\) 时，下列结论正确的是：\n(A) 必须拒绝 \\(H_0\\)；\n(B) 必须接受 \\(H_0\\)；\n(C) 犯第一类错误的概率更大；\n(D) 可能不拒绝，也可能拒绝 \\(H_0\\)。",
+      "options": [],
+      "answer": "选择 (D)。",
+      "analysis": "显著性水平越小，拒绝域越小。已知在 \\(\\alpha=0.05\\) 时拒绝，只能说明对应的 \\(p\\) 值满足\n\\[\np<0.05.\n\\]\n若 \\(p<0.01\\)，改为 \\(\\alpha=0.01\\) 后仍拒绝；若\n\\[\n0.01\\le p<0.05,\n\\]\n则改为 \\(\\alpha=0.01\\) 后不拒绝。因此只能选 (D)。\n\n同时，显著性水平从 \\(0.05\\) 降到 \\(0.01\\)，第一类错误概率的控制上限变小，不会变大。规范表述是“不拒绝 \\(H_0\\)”，不能说“证明或接受 \\(H_0\\) 正确”。",
+      "errorCause": "把“显著性水平更严格”误解成结论必然反转，未用 (p) 值区间判断；同时把“不拒绝”说成“接受并证明正确”。",
+      "knowledgePoints": [
+        "假设检验",
+        "显著性水平",
+        "拒绝域",
+        "p值",
+        "第一类错误"
+      ],
+      "similarQuestionPrompt": "仿考研真题：已知在 (alpha=0.01) 下拒绝 (H_0)，问改为 (alpha=0.05) 后结论是否确定，并解释拒绝域的包含关系。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "36ADCF5A-B534-4BB7-BFED-6446456F0C17.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "F88E8C3F-6E94-4F7B-A903-1D49342B04FC.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "0a43ff14ae21e414a39d0afede8529425730213429ea2bfebc02a560bcf43257",
+      "questionNo": 10,
+      "reviewFocus": "考场遇到“改变 \\(\\alpha\\)”时，立刻转成 \\(p\\) 值比较：拒绝当且仅当 \\(p<\\alpha\\)。\\(\\alpha\\) 变小，拒绝域缩小；原来拒绝并不能保证新水平仍拒绝。"
+    },
+    {
+      "id": "daily-20261004-prob-one-sided-normal-rejection-region",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "假设检验",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "方法选择困难 / 计算错误",
+      "tags": [
+        "当日对话导入",
+        "假设检验",
+        "单侧检验",
+        "正态总体",
+        "拒绝域",
+        "标准化",
+        "方法选择困难",
+        "计算错误"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 单侧正态均值检验拒绝域",
+      "questionType": "选择题",
+      "stem": "（2025 考研数学一）设 \\(X_1,\\ldots,X_n\\) 为来自 \\(N(\\mu,2)\\) 的样本，记\n\\[\n\\overline X=\\frac1n\\sum_{i=1}^nX_i.\n\\]\n\\(Z_\\alpha\\) 表示标准正态分布的上侧 \\(\\alpha\\) 分位数。对\n\\[\nH_0:\\mu\\le1,\\qquad H_1:\\mu>1\n\\]\n作显著性水平为 \\(\\alpha\\) 的检验，求拒绝域。",
+      "options": [],
+      "answer": "\\[\nW=\\left\\{(x_1,\\ldots,x_n):\\overline X>\n1+\\sqrt{\\frac2n}\\,Z_\\alpha\\right\\}.\n\\]\n对应选项 (D)。",
+      "analysis": "备择假设为 \\(\\mu>1\\)，所以是右侧检验。已知总体方差为 \\(2\\)，故\n\\[\n\\overline X\\sim N\\!\\left(\\mu,\\frac2n\\right).\n\\]\n原假设的边界 \\(\\mu=1\\) 使拒绝概率最大，因此在该边界下构造统计量\n\\[\nZ=\\frac{\\overline X-1}{\\sqrt{2/n}}\\sim N(0,1).\n\\]\n上侧 \\(\\alpha\\) 分位数满足 \\(P(Z>Z_\\alpha)=\\alpha\\)，所以拒绝条件为\n\\[\n\\frac{\\overline X-1}{\\sqrt{2/n}}>Z_\\alpha,\n\\]\n即\n\\[\n\\overline X>1+\\sqrt{\\frac2n}Z_\\alpha.\n\\]",
+      "errorCause": "看到方差 (2) 时把标准差错写成 (2)，或把样本均值的标准差错写成 (2/n)；也没有根据 (H_1:mu>1) 判断右侧拒绝域。",
+      "knowledgePoints": [
+        "假设检验",
+        "单侧检验",
+        "正态总体",
+        "拒绝域",
+        "标准化"
+      ],
+      "similarQuestionPrompt": "仿考研真题：将备择假设改为 (H_1:mu<1) 或 (H_1:mu\ne1)，分别写出同一总体下的拒绝域。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "78FCFE39-F436-4B9A-A8BD-9E41F979EC78.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "e94c06f003a5d4c3ee07ab5a218e521316c9e67745cf2c031b8a78fa52f2ef7b",
+      "questionNo": 11,
+      "reviewFocus": "第一步由 \\(H_1\\) 决定方向：大于号对应右侧。第二步标准化 \\(\\overline X\\)，牢记标准误是 \\(\\sigma/\\sqrt n=\\sqrt{2/n}\\)，不是方差 \\(2/n\\)。复合原假设取边界 \\(\\mu=1\\) 定临界值。"
+    },
+    {
+      "id": "daily-20261004-prob-type-two-error",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "假设检验",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "假设检验",
+        "第二类错误",
+        "正态总体",
+        "接受域",
+        "标准化",
+        "概念错误",
+        "方法选择困难"
+      ],
+      "note": "纳入做错、卡壳、方法判断不稳及追问原因的题目；变式题按考研真题常见设问设计。",
+      "sourceRef": "2026-10-04 当日对话 · 第二类错误概率",
+      "questionType": "选择题",
+      "stem": "设 \\(X_1,\\ldots,X_{16}\\) 为来自 \\(N(\\mu,4)\\) 的简单随机样本。检验\n\\[\nH_0:\\mu\\le10,\\qquad H_1:\\mu>10,\n\\]\n拒绝域为 \\(W=\\{\\overline X\\ge11\\}\\)。当真实参数 \\(\\mu=11.5\\) 时，求犯第二类错误的概率。",
+      "options": [],
+      "answer": "\\[\n\\beta(11.5)=1-\\Phi(1).\n\\]\n对应选项 (B)。",
+      "analysis": "当 \\(\\mu=11.5\\) 时，备择假设为真。第二类错误是“\\(H_1\\) 为真却没有拒绝 \\(H_0\\)”，所以应计算接受域概率：\n\\[\n\\beta(11.5)=P_{11.5}(\\overline X<11).\n\\]\n因为总体方差为 \\(4\\)，总体标准差为 \\(2\\)，而 \\(n=16\\)，所以\n\\[\n\\overline X\\sim N\\!\\left(11.5,\\frac4{16}\\right),\n\\]\n标准差为 \\(1/2\\)。于是\n\\[\n\\beta(11.5)\n=P\\!\\left(Z<\\frac{11-11.5}{1/2}\\right)\n=P(Z<-1)\n=\\Phi(-1)=1-\\Phi(1).\n\\]",
+      "errorCause": "没有先把第二类错误翻译成“备择为真时落入接受域”，容易误算拒绝域概率；标准化时也可能混淆总体方差、样本均值方差与标准差。",
+      "knowledgePoints": [
+        "假设检验",
+        "第二类错误",
+        "正态总体",
+        "接受域",
+        "标准化"
+      ],
+      "similarQuestionPrompt": "仿考研真题：保持拒绝域 ({overline Xge11})，求一般的功效函数 (1-\beta(mu))，并判断 (mu) 增大时功效如何变化。",
+      "transcriptionStatus": "verified",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "56BB3569-0684-4556-86BE-48BFD08E36DD.png",
+          "date": "2026-10-04",
+          "verification": "题目截图、手写过程与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、当日对话答案与独立推导交叉复核",
+      "errorCauseEvidence": "来自用户当日手写过程及“为什么、没看懂、这里估计的是谁、一致性证明步骤、跳步了”等追问",
+      "historyImportBatches": [
+        "daily-2026-10-04-v1"
+      ],
+      "contentFingerprint": "5e90d5c4c34694878bb82a534f7516d76242cc0e7d20d578d4b9a807c4dacc15",
+      "questionNo": 12,
+      "reviewFocus": "考场第一步先写事件：第一类错误是 \\(H_0\\) 真却落入拒绝域；第二类错误是 \\(H_1\\) 真却落入接受域。题目给出具体 \\(\\mu\\) 后，再在该参数下写 \\(\\overline X\\) 的分布并标准化。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-04",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -10656,6 +11381,7 @@
     "daily-2026-09-28-v1",
     "daily-2026-09-29-v1",
     "daily-2026-09-30-v1",
-    "daily-2026-10-01-v1"
+    "daily-2026-10-01-v1",
+    "daily-2026-10-04-v1"
   ]
 }
