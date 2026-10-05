@@ -2,7 +2,7 @@
   "title": "考研数学错题库（原书圈题 + 历史对话）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 253,
+  "count": 260,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -11369,6 +11369,404 @@
       "contentFingerprint": "5e90d5c4c34694878bb82a534f7516d76242cc0e7d20d578d4b9a807c4dacc15",
       "questionNo": 12,
       "reviewFocus": "考场第一步先写事件：第一类错误是 \\(H_0\\) 真却落入拒绝域；第二类错误是 \\(H_1\\) 真却落入接受域。题目给出具体 \\(\\mu\\) 后，再在该参数下写 \\(\\overline X\\) 的分布并标准化。"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-calc-path-independent-line-integral",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "曲线积分",
+        "路径无关",
+        "全微分",
+        "单连通区域",
+        "思路卡壳",
+        "方法选择困难",
+        "边界或范围判断困难"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 曲线积分路径无关条件",
+      "questionType": "填空题",
+      "stem": "若曲线积分\n\\[\n\\int_L\\frac{x\\,\\mathrm dx-a y\\,\\mathrm dy}{x^2+y^2-1}\n\\]\n在区域 \\(D=\\{(x,y)\\mid x^2+y^2<1\\}\\) 内与路径无关，求 \\(a\\)。",
+      "answer": "\\(a=-1\\)。",
+      "analysis": "记\n\\[\nP(x,y)=\\frac{x}{x^2+y^2-1},\\qquad Q(x,y)=\\frac{-ay}{x^2+y^2-1}.\n\\]\n区域 \\(D\\) 是单连通区域，且在 \\(D\\) 内分母恒不为零，所以 \\(P,Q\\) 具有连续一阶偏导。曲线积分与路径无关当且仅当\n\\[\n\\frac{\\partial P}{\\partial y}=\\frac{\\partial Q}{\\partial x}.\n\\]\n计算得\n\\[\n\\frac{\\partial P}{\\partial y}=-\\frac{2xy}{(x^2+y^2-1)^2},\\qquad\n\\frac{\\partial Q}{\\partial x}=\\frac{2axy}{(x^2+y^2-1)^2}.\n\\]\n要使两式在整个区域内恒等，必须有 \\(-2=2a\\)，故 \\(a=-1\\)。此时被积表达式实际上是\n\\[\n\\frac{x\\,\\mathrm dx+y\\,\\mathrm dy}{x^2+y^2-1}=\\frac12\\,\\mathrm d\\ln(1-x^2-y^2),\n\\]\n也可直接验证路径无关。",
+      "errorCause": "没有把第一类曲线积分改写成 \\(P\\,\\mathrm dx+Q\\,\\mathrm dy\\)，或只机械使用偏导相等而忘记检查区域是否单连通、分母在区域内是否为零。",
+      "knowledgePoints": [
+        "曲线积分",
+        "路径无关",
+        "全微分",
+        "单连通区域",
+        "偏导交叉判别"
+      ],
+      "similarQuestionPrompt": "仿考研填空题：将分母改为 \\(1+x^2+y^2\\)，分子改为 \\(bx\\,\\mathrm dx+c y\\,\\mathrm dy\\)，给出路径无关的参数条件及势函数。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "EB178794-932F-4D23-9BD1-CA2A53FD3A69.png",
+          "date": "2026-10-05",
+          "verification": "题目截图与当日对话交叉核对"
+        }
+      ],
+      "answerVerification": "题图、路径无关判别与势函数反向求导交叉复核",
+      "errorCauseEvidence": "用户要求补全题目，反映题意读取和方法起步不稳。",
+      "questionNo": 1,
+      "reviewFocus": "卡壳位置：不知道“与路径无关”怎样落笔。突破口与第一步：立即写成 \\(P\\,\\mathrm dx+Q\\,\\mathrm dy\\)，先查区域与奇点，再列 \\(P_y=Q_x\\)。考场信号：出现“与路径无关/只与端点有关/求参数”。易错点：漏掉分母求导的负号，或不检查定义域。防卡方法：固定口令“区域—奇点—交叉偏导—势函数复核”。",
+      "contentFingerprint": "010da8730c15a4a8807614c74a65c8211d3fd9c66f565b3ac2b767129695d09c"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-prob-normal-absolute-moment",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "mistakeType": "知识点不熟 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "正态分布",
+        "绝对矩",
+        "期望",
+        "方差",
+        "高阶矩",
+        "知识点不熟",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 正态总体绝对矩与高阶矩证明",
+      "questionType": "证明题",
+      "stem": "设 \\(X\\sim N(0,\\sigma^2)\\)。证明\n\\[\nE|X|=\\sqrt{\\frac2\\pi}\\,\\sigma,\\qquad D|X|=\\left(1-\\frac2\\pi\\right)\\sigma^2,\n\\]\n并求 \\(EX^n\\)（\\(n\\) 为正整数）。",
+      "answer": "\\[\nE|X|=\\sqrt{\\frac2\\pi}\\,\\sigma,\\qquad D|X|=\\left(1-\\frac2\\pi\\right)\\sigma^2,\n\\]\n且\n\\[\nEX^n=\\begin{cases}\n0,&n\\text{ 为奇数},\\\\\n(n-1)!!\\,\\sigma^n,&n\\text{ 为偶数}.\n\\end{cases}\n\\]",
+      "analysis": "由密度的对称性，\n\\[\nE|X|=2\\int_0^{\\infty}x\\frac1{\\sqrt{2\\pi}\\sigma}e^{-x^2/(2\\sigma^2)}\\,\\mathrm dx.\n\\]\n利用\n\\[\n\\frac{\\mathrm d}{\\mathrm dx}e^{-x^2/(2\\sigma^2)}=-\\frac{x}{\\sigma^2}e^{-x^2/(2\\sigma^2)},\n\\]\n可得\n\\[\n\\int_0^{\\infty}x e^{-x^2/(2\\sigma^2)}\\,\\mathrm dx=\\sigma^2,\n\\]\n从而 \\(E|X|=\\sqrt{2/\\pi}\\,\\sigma\\)。又因 \\(|X|^2=X^2\\)，\n\\[\nD|X|=E|X|^2-(E|X|)^2=EX^2-\\frac2\\pi\\sigma^2=\\left(1-\\frac2\\pi\\right)\\sigma^2.\n\\]\n若 \\(n\\) 为奇数，则 \\(x^nf_X(x)\\) 为奇函数，故 \\(EX^n=0\\)。若 \\(n=2k\\)，令 \\(X=\\sigma Z\\)、\\(Z\\sim N(0,1)\\)，并对积分分部可得递推 \\(EZ^{2k}=(2k-1)EZ^{2k-2}\\)，于是\n\\[\nEX^{2k}=\\sigma^{2k}(2k-1)!!.\n\\]",
+      "errorCause": "把 \\(E|X|\\) 与 \\(EX\\) 混为一谈，误用“奇函数在对称区间积分为零”；或计算方差时忘记 \\(E|X|^2=EX^2\\)。",
+      "knowledgePoints": [
+        "正态分布",
+        "绝对矩",
+        "期望",
+        "方差",
+        "对称性",
+        "正态高阶矩"
+      ],
+      "similarQuestionPrompt": "仿考研题：设 \\(X\\sim N(\\mu,\\sigma^2)\\)，先令 \\(Y=X-\\mu\\)，求 \\(E|Y|\\) 与 \\(D|Y|\\)，再计算 \\(E(Y^6)\\)。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "06949CF6-FE35-4A49-94DC-C5683E0740EE.png",
+          "date": "2026-10-05",
+          "verification": "结论截图与当日“给出证明”的追问交叉核对"
+        }
+      ],
+      "answerVerification": "结论图、积分推导与标准正态矩递推交叉复核",
+      "errorCauseEvidence": "用户主动要求证明，且当日追问集中在绝对值期望与奇偶矩的区别。",
+      "questionNo": 2,
+      "reviewFocus": "卡壳位置：看到绝对值后不知道如何积分。第一步：利用密度偶性把积分化为 \\(2\\int_0^{\\infty}\\)。考场信号：零均值正态加 \\(|X|\\) 立即想到半正态分布；偶次矩想到双阶乘。易错点：\\(E|X|\\neq0\\)，但奇数阶原点矩 \\(EX^{2k+1}=0\\)。防卡方法：先判断被积函数的奇偶性，再决定能否直接用对称性。",
+      "contentFingerprint": "31a0d0c7877dd3eebcc43c515f368de9caa64003a3797b0998d2df3d27b291d0"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-calc-even-function-third-derivative",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "mistakeType": "审题错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "高阶导数",
+        "奇偶性",
+        "麦克劳林展开",
+        "答案纠错",
+        "审题错误",
+        "知识点不熟"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 偶函数三阶导数与答案纠错",
+      "questionType": "填空题",
+      "stem": "已知 \\(f(x)=\\dfrac1{1+x^2}\\)，求 \\(f^{(3)}(0)\\)。",
+      "answer": "\\(f^{(3)}(0)=0\\)。",
+      "analysis": "最快方法是利用奇偶性：\\(f\\) 为偶函数，因此所有奇数阶导数在原点都为零，故 \\(f^{(3)}(0)=0\\)。也可用麦克劳林展开验证：\n\\[\n\\frac1{1+x^2}=1-x^2+x^4-x^6+\\cdots,\n\\]\n展开式中没有 \\(x^3\\) 项，而 \\(x^3\\) 项系数应为 \\(f^{(3)}(0)/3!\\)，所以仍得零。题图中“\\(f(0)=-6\\)”与其下方推导“\\(f^{(3)}(0)=0\\)”互相矛盾，应判为答案栏笔误。",
+      "errorCause": "过度相信题后答案，未先做奇偶性和量级检查；或连续求导时忽略了题目只要求原点处的奇数阶导数。",
+      "knowledgePoints": [
+        "高阶导数",
+        "奇偶性",
+        "麦克劳林展开",
+        "系数与导数关系",
+        "答案纠错"
+      ],
+      "similarQuestionPrompt": "仿考研填空题：设 \\(g(x)=e^{-x^2}\\cos x\\)，求 \\(g^{(5)}(0)\\)，并分别用奇偶性与展开式验证。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "649C3B6E-FF08-4BF7-BBB0-F2CBEDC07B7E.png",
+          "date": "2026-10-05",
+          "verification": "题目、答案栏与解析截图交叉核对"
+        }
+      ],
+      "answerVerification": "奇偶性、麦克劳林展开及题图解析三重核对",
+      "errorCauseEvidence": "用户询问题目答案；题图答案栏与解析矛盾，存在明显审题和答案辨伪风险。",
+      "questionNo": 3,
+      "reviewFocus": "卡壳位置：被错误答案 \\(-6\\) 干扰。突破口与第一步：先看函数奇偶性，偶函数在原点的奇数阶导数必为零。考场信号：求 \\(f^{(2k+1)}(0)\\) 且函数显然为偶函数。易错点：把展开式求导下标写错，或盲信答案。防卡方法：用奇偶性与麦克劳林系数做 10 秒双检。",
+      "contentFingerprint": "9b8eeefe8a563581889a978f19d9ca4363c257c784090c491162202f5c9daabf"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-linear-rank-eigenvalues-system",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "mistakeType": "概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "矩阵秩",
+        "列向量",
+        "特征值",
+        "值域",
+        "齐次方程组",
+        "概念错误",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 列相关、非零特征值与方程组通解",
+      "questionType": "证明题",
+      "stem": "设三阶矩阵 \\(A=(\\alpha_1,\\alpha_2,\\alpha_3)\\) 有三个不同的特征值，且 \\(\\alpha_3=\\alpha_1+2\\alpha_2\\)。\n(1) 证明 \\(r(A)=2\\)；\n(2) 设 \\(\\beta=\\alpha_1+\\alpha_2+\\alpha_3\\)，求方程组 \\(Ax=\\beta\\) 的通解。",
+      "answer": "(1) \\(r(A)=2\\)。\n\n(2)\n\\[\nx=\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}+t\\begin{pmatrix}1\\\\2\\\\-1\\end{pmatrix},\\qquad t\\in\\mathbb R.\n\\]",
+      "analysis": "由 \\(\\alpha_3=\\alpha_1+2\\alpha_2\\)，三列线性相关，故 \\(r(A)\\le2\\)，从而 \\(\\det A=0\\)，所以 \\(0\\) 是 \\(A\\) 的一个特征值。矩阵有三个不同特征值，因此另外两个特征值 \\(\\lambda_1,\\lambda_2\\) 均非零，其对应特征向量 \\(v_1,v_2\\) 线性无关。又\n\\[\nv_i=\\frac1{\\lambda_i}Av_i\\in R(A),\\qquad i=1,2,\n\\]\n故值域 \\(R(A)\\) 至少含有两个线性无关向量，\\(r(A)\\ge2\\)。结合上界得 \\(r(A)=2\\)。\n\n对第二问，\n\\[\nA\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}=\\alpha_1+\\alpha_2+\\alpha_3=\\beta,\n\\]\n所以 \\(x_0=(1,1,1)^T\\) 是特解。又\n\\[\nA\\begin{pmatrix}1\\\\2\\\\-1\\end{pmatrix}=\\alpha_1+2\\alpha_2-\\alpha_3=0.\n\\]\n因 \\(r(A)=2\\)，齐次方程 \\(Ax=0\\) 的解空间维数为 \\(3-2=1\\)，故其基础解系就是 \\((1,2,-1)^T\\)，于是得到全部解。",
+      "errorCause": "把矩阵的列向量 \\(\\alpha_i\\) 直接当成 \\(A\\) 的特征向量；只由列相关得到 \\(r(A)\\le2\\)，却没有利用非零特征值的特征向量属于 \\(R(A)\\) 来证明下界。",
+      "knowledgePoints": [
+        "矩阵秩",
+        "列向量相关",
+        "特征值",
+        "非零特征向量属于值域",
+        "秩-零度定理",
+        "非齐次方程组"
+      ],
+      "similarQuestionPrompt": "仿考研解答题：设四阶矩阵四列满足一个线性关系，且矩阵有四个互异特征值、其中恰有一个为零，证明其秩为 3，并求给定列组合对应的非齐次方程组通解。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "F0622F79-FDB2-4D57-8535-A9A48F663DB5.png",
+          "date": "2026-10-05",
+          "verification": "原题截图核对"
+        },
+        {
+          "kind": "daily-image",
+          "fileName": "IMG_D1C101B5-8122-4AE6-88B4-63C1D6A79573.jpeg",
+          "date": "2026-10-05",
+          "verification": "用户手写过程与批改结果核对"
+        }
+      ],
+      "answerVerification": "题图、秩上下界证明与方程组代入复核",
+      "errorCauseEvidence": "批改中明确发现将列向量当作特征向量；用户随后继续追问相似条件和特征向量。",
+      "questionNo": 4,
+      "reviewFocus": "卡壳位置：证明 \\(r(A)\\ge2\\) 时错误地把列向量当特征向量。突破口：非零特征值满足 \\(Av=\\lambda v\\Rightarrow v=Av/\\lambda\\in R(A)\\)。第一步先用列关系得上界和零特征值，再用另外两个互异非零特征值给下界。易错点：列相关只给 \\(r\\le2\\)，不能直接推出等号。防卡方法：遇到“秩+特征值”固定从“值域容纳多少个非零特征向量”切入。",
+      "contentFingerprint": "91bb8134c80b66bd251c2043ee300be02573b79efcefb2509b81463d1b9485a5"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-calc-directional-derivative-unit-vector",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "mistakeType": "概念错误 / 计算错误",
+      "tags": [
+        "当日对话导入",
+        "方向导数",
+        "梯度",
+        "单位方向向量",
+        "点积",
+        "概念错误",
+        "计算错误"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 方向导数中的方向单位化",
+      "questionType": "选择题",
+      "stem": "函数 \\(f(x,y,z)=x^2y+z^2\\) 在点 \\((1,2,0)\\) 处沿向量 \\(n=(1,2,2)\\) 的方向导数为（ ）。\n\n(A) \\(12\\)；(B) \\(6\\)；(C) \\(4\\)；(D) \\(2\\)。",
+      "answer": "选择 (D)，方向导数为 \\(2\\)。",
+      "analysis": "先求梯度：\n\\[\n\\nabla f=(2xy,x^2,2z),\n\\]\n所以\n\\[\n\\nabla f(1,2,0)=(4,1,0).\n\\]\n题目给的是方向向量而非单位向量，故先单位化：\n\\[\n|n|=\\sqrt{1^2+2^2+2^2}=3,qquad e_n=\\frac n{|n|}=\\left(\\frac13,\\frac23,\\frac23\\right).\n\\]\n于是\n\\[\nD_{e_n}f(1,2,0)=\\nabla f(1,2,0)\\cdot e_n\n=4\\cdot\\frac13+1\\cdot\\frac23=2.\n\\]",
+      "errorCause": "直接计算 \\(\\nabla f\\cdot n\\) 得到 6，没有先把给定方向向量单位化；也可能把梯度分量 \\(f_x=2xy\\) 误写成 \\(2x\\)。",
+      "knowledgePoints": [
+        "方向导数",
+        "梯度",
+        "单位方向向量",
+        "点积",
+        "多元复合函数"
+      ],
+      "similarQuestionPrompt": "仿考研选择题：把方向改为从点 \\((1,2,0)\\) 指向点 \\((2,0,2)\\)，求沿该方向的方向导数，突出“终点减起点”和单位化两步。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "9A837BA1-9527-41F1-B02D-9767EAEF7E5A.png",
+          "date": "2026-10-05",
+          "verification": "题目截图与当日解答交叉核对"
+        }
+      ],
+      "answerVerification": "梯度计算、方向单位化和选项代入交叉复核",
+      "errorCauseEvidence": "用户在批改对话中继续追问并表示看不懂，方法步骤不稳定。",
+      "questionNo": 5,
+      "reviewFocus": "卡壳位置：把“沿向量”直接理解为与原向量点乘。第一步：看到“方向导数”立刻写 \\(\\nabla f\\cdot e\\)，其中 \\(e\\) 必须是单位向量。考场信号：题目给坐标向量时先算模长；给两点时先做终点减起点。易错点：漏除 \\(|n|\\)。防卡方法：在草稿上强制写出 \\(e=n/|n|\\) 再点乘。",
+      "contentFingerprint": "5bc583b7dfc91b6fae3497cfe0a7d93a42d98adac4817abe5dae1302a45a9e7a"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-linear-similarity-geometric-multiplicity",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "mistakeType": "方法选择困难 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "矩阵相似",
+        "几何重数",
+        "代数重数",
+        "可对角化",
+        "若尔当形",
+        "方法选择困难",
+        "概念错误"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 相似判定与特征向量个数",
+      "questionType": "选择题",
+      "stem": "已知\n\\[\nA=\\begin{pmatrix}2&0&0\\\\0&2&1\\\\0&0&1\\end{pmatrix},\\quad\nB=\\begin{pmatrix}2&1&0\\\\0&2&0\\\\0&0&1\\end{pmatrix},\\quad\nC=\\begin{pmatrix}1&0&0\\\\0&2&0\\\\0&0&2\\end{pmatrix}.\n\\]\n判断下列结论正确的是：\n\n(A) \\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 相似；\n(B) \\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 不相似；\n(C) \\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 相似；\n(D) \\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 不相似。",
+      "answer": "选择 (B)。",
+      "analysis": "三矩阵的特征值都为 \\(1,2,2\\)，但特征值相同只是相似的必要条件。矩阵 \\(C\\) 已对角化，因此另一个矩阵与 \\(C\\) 相似，当且仅当它也可对角化。\n\n对 \\(A\\)，\n\\[\nA-2I=\\begin{pmatrix}0&0&0\\\\0&0&1\\\\0&0&-1\\end{pmatrix},\n\\]\n其秩为 1，故 \\(\\dim\\ker(A-2I)=2\\)。特征值 2 的几何重数等于代数重数 2，再加上特征值 1 的一个特征向量，\\(A\\) 有三个线性无关特征向量，所以 \\(A\\sim C\\)。\n\n对 \\(B\\)，\n\\[\nB-2I=\\begin{pmatrix}0&1&0\\\\0&0&0\\\\0&0&-1\\end{pmatrix},\n\\]\n其秩为 2，故 \\(\\dim\\ker(B-2I)=1\\)。特征值 2 的几何重数小于代数重数，\\(B\\) 不可对角化，因此 \\(B\\not\\sim C\\)。若 \\(B=P^{-1}AP\\)，则 \\(Av=\\lambda v\\) 对应 \\(B(P^{-1}v)=\\lambda(P^{-1}v)\\)；相似矩阵的特征向量一般不相同，而是经 \\(P^{-1}\\) 对应。",
+      "errorCause": "把“特征值相同”误当成相似的充分条件；没有检查重特征值对应特征空间的维数，也把相似矩阵的特征向量误认为必须相同。",
+      "knowledgePoints": [
+        "矩阵相似",
+        "特征值",
+        "代数重数",
+        "几何重数",
+        "可对角化",
+        "特征向量对应"
+      ],
+      "similarQuestionPrompt": "仿考研选择题：给出三个具有同一特征多项式的四阶上三角矩阵，要求通过 \\(r(A-\\lambda I)\\) 判定它们是否相似于同一对角矩阵。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "820129F7-446A-4CBB-8D4B-A2AC10062B74.png",
+          "date": "2026-10-05",
+          "verification": "矩阵与选项截图核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-05",
+          "verification": "用户连续追问“相似的条件”“特征向量呢”"
+        }
+      ],
+      "answerVerification": "特征空间维数、可对角化条件与相似变换关系交叉复核",
+      "errorCauseEvidence": "用户明确追问相似条件及特征向量关系，表明相似判定标准不稳定。",
+      "questionNo": 6,
+      "reviewFocus": "卡壳位置：只会比较特征值。突破口：目标 \\(C\\) 是对角矩阵，所以问题转化为“是否可对角化”。第一步算重特征值 \\(2\\) 的 \\(\\dim\\ker(M-2I)\\)。考场信号：同特征值但有上三角非零元，立即检查几何重数。易错点：特征值相同不保证相似，特征向量也不要求相同。防卡方法：固定检查“特征多项式—最小多项式/几何重数—若尔当块”。",
+      "contentFingerprint": "dc359e3013ad48da6acd3ae2d6ac59c0f57ea6774be56fe6ef72e507f0735555"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-05-v1"
+      ],
+      "id": "daily-20261005-prob-positive-association-conditional-probability",
+      "subject": "概率论与数理统计",
+      "chapter": 1,
+      "chapterTitle": "随机事件与概率",
+      "mistakeType": "方法选择困难 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "条件概率",
+        "贝叶斯公式",
+        "事件相关性",
+        "正相关",
+        "等价变形",
+        "方法选择困难",
+        "概念错误"
+      ],
+      "sourceRef": "2026-10-05 当日对话 · 条件概率不等式的等价条件",
+      "questionType": "选择题",
+      "stem": "设 \\(A,B\\) 为随机事件，且 \\(0<P(A)<1\\)、\\(0<P(B)<1\\)。则\n\\[\nP(A\\mid B)>P(A\\mid \\overline B)\n\\]\n的充分必要条件是（ ）。\n\n(A) \\(P(B\\mid A)>P(B\\mid \\overline A)\\)；\n(B) \\(P(B\\mid A)<P(B\\mid \\overline A)\\)；\n(C) \\(P(\\overline B\\mid A)>P(B\\mid \\overline A)\\)；\n(D) \\(P(\\overline B\\mid A)<P(B\\mid \\overline A)\\)。",
+      "answer": "选择 (A)。",
+      "analysis": "原不等式表示“知道 \\(B\\) 发生后，\\(A\\) 更可能发生”，即 \\(A,B\\) 正相关。直接通分：\n\\[\n\\frac{P(AB)}{P(B)}>\\frac{P(A)-P(AB)}{1-P(B)}\n\\]\n等价于\n\\[\nP(AB)>P(A)P(B).\n\\]\n另一方面，\n\\[\nP(B\\mid A)>P(B\\mid\\overline A)\n\\]\n等价于\n\\[\n\\frac{P(AB)}{P(A)}>\\frac{P(B)-P(AB)}{1-P(A)},\n\\]\n通分后同样得到 \\(P(AB)>P(A)P(B)\\)。因此两条件等价，选择 (A)。也可先由全概率公式\n\\[\nP(A)=P(A\\mid B)P(B)+P(A\\mid\\overline B)P(\\overline B)\n\\]\n看出原条件等价于 \\(P(A\\mid B)>P(A)\\)，再利用贝叶斯公式转为 \\(P(B\\mid A)>P(B)\\)，最终得到同一结论。",
+      "errorCause": "凭直觉交换条件概率中的 \\(A,B\\)，却没有用通分或全概率公式证明；同时容易把补事件放错位置，误选 (C) 或 (D)。",
+      "knowledgePoints": [
+        "条件概率",
+        "全概率公式",
+        "贝叶斯公式",
+        "正相关",
+        "联合概率",
+        "补事件"
+      ],
+      "similarQuestionPrompt": "仿考研选择题：设 \\(0<P(A),P(B)<1\\)，判断 \\(P(A\\mid B)>P(A)\\)、\\(P(B\\mid A)>P(B)\\)、\\(P(AB)>P(A)P(B)\\) 三者的等价关系，并加入两个含补事件的干扰项。",
+      "historySources": [
+        {
+          "kind": "daily-image",
+          "fileName": "07601182-C2CF-4F6F-AEB0-5AFD1CA2E710.png",
+          "date": "2026-10-05",
+          "verification": "题目截图与当日“看不懂”的追问交叉核对"
+        }
+      ],
+      "answerVerification": "两组条件概率分别通分，均化为正相关判据后复核",
+      "errorCauseEvidence": "用户上传圈题并表示看不懂，属于条件概率等价变形的明确卡壳。",
+      "questionNo": 7,
+      "reviewFocus": "卡壳位置：不知道怎样比较条件概率，也不敢交换 \\(A,B\\)。第一步：把两边都按定义展开并通分，目标是化成 \\(P(AB)>P(A)P(B)\\)。考场信号：出现 \\(P(A\\mid B)\\) 与 \\(P(A\\mid\\bar B)\\) 的大小比较，想到事件正相关。易错点：条件概率不能直接交换，补事件位置必须逐项核对。防卡方法：统一化到联合概率乘积判据再比较选项。",
+      "contentFingerprint": "783c9faba2b7ea3787d0cf7ca432cdd1a70180e527dd2cbfdb0c945f6eb1d6aa"
     }
   ],
   "schemaVersion": 2,
