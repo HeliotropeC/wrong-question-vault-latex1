@@ -90,7 +90,8 @@
         (!elements.origin.value ||
           (elements.origin.value === "history" && q.historySources?.length) ||
           (elements.origin.value === "new-history" && q.sourceType === "history") ||
-          (elements.origin.value === "book" && q.sourceType !== "history")) &&
+          (elements.origin.value === "exam" && q.sourceCategory === "考研真题") ||
+          (elements.origin.value === "book" && q.sourceType !== "history" && q.sourceCategory !== "考研真题")) &&
         (!elements.chapter.value || chapterKey(q) === elements.chapter.value) &&
         (!elements.questionType.value || q.questionType === elements.questionType.value) &&
         (!elements.status.value || q.status === elements.status.value) &&
@@ -308,7 +309,7 @@
   $("backupButton").addEventListener("click", backup);
   $("restoreInput").addEventListener("change", event => event.target.files[0] && restore(event.target.files[0]));
   $("sourceTitle").textContent = source.title || "错题库";
-  $("questionCountSubtitle").textContent = source.questions.length + " 道文本与 LaTeX 错题，支持科目、章节、错因和历史来源筛选。";
+  $("questionCountSubtitle").textContent = source.questions.length + " 道文本与 LaTeX 错题，支持科目、章节、错因和考研真题来源筛选。";
   populateFilters();
   render();
 })();

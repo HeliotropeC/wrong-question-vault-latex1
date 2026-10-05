@@ -1,8 +1,8 @@
 window.WRONG_QUESTIONS = {
-  "title": "考研数学错题库（原书圈题 + 历史对话）",
+  "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 260,
+  "count": 270,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -6872,7 +6872,6 @@ window.WRONG_QUESTIONS = {
       "subject": "高等数学",
       "chapter": 13,
       "chapterTitle": "多元函数微分学",
-      "questionNo": 1,
       "sourceRef": "历史对话 2026-09-02 · 切平面",
       "sourceType": "history",
       "sourcePage": null,
@@ -6914,14 +6913,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "ad05b4f094c84f4556afde4ac378bcad3cd85638f41c3a52f9946fef9aa1e9fd"
+      "contentFingerprint": "ad05b4f094c84f4556afde4ac378bcad3cd85638f41c3a52f9946fef9aa1e9fd",
+      "questionNo": 1
     },
     {
       "id": "hist-20260902-calc-arc-length",
       "subject": "高等数学",
       "chapter": 10,
       "chapterTitle": "一元函数积分学的应用（一）—几何应用",
-      "questionNo": 2,
       "sourceRef": "历史对话 2026-09-02 · 弧长",
       "sourceType": "history",
       "sourcePage": null,
@@ -6963,14 +6962,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "f69c4994cdd2b018c89191bc1b4b5f38cb7104001fb5dcbbe5d4eb19e7583c28"
+      "contentFingerprint": "f69c4994cdd2b018c89191bc1b4b5f38cb7104001fb5dcbbe5d4eb19e7583c28",
+      "questionNo": 2
     },
     {
       "id": "hist-20260902-la-inverse-matrix",
       "subject": "线性代数",
       "chapter": 2,
       "chapterTitle": "矩阵",
-      "questionNo": 3,
       "sourceRef": "历史对话 2026-09-02 · 逆矩阵",
       "sourceType": "history",
       "sourcePage": null,
@@ -7012,14 +7011,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "3a113dde51c9371961ae109108cb19902795748fa35a1e11889175e882a093d5"
+      "contentFingerprint": "3a113dde51c9371961ae109108cb19902795748fa35a1e11889175e882a093d5",
+      "questionNo": 3
     },
     {
       "id": "hist-20260905-la-nullspace-choice",
       "subject": "线性代数",
       "chapter": 3,
       "chapterTitle": "向量",
-      "questionNo": 4,
       "sourceRef": "历史对话 2026-09-05 · 齐次方程",
       "sourceType": "history",
       "sourcePage": null,
@@ -7079,14 +7078,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "a58a90f0c68692b6b4fe053816182f15a5032a87ccde310d0bf9cf26b71429c4"
+      "contentFingerprint": "a58a90f0c68692b6b4fe053816182f15a5032a87ccde310d0bf9cf26b71429c4",
+      "questionNo": 4
     },
     {
       "id": "hist-20260905-la-left-full-rank",
       "subject": "线性代数",
       "chapter": 3,
       "chapterTitle": "向量",
-      "questionNo": 5,
       "sourceRef": "历史对话 2026-09-05 · 解集判断",
       "sourceType": "history",
       "sourcePage": null,
@@ -7128,14 +7127,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "ec23818a3645c4035efd85c39eceb1a5a68aa78d4066834da730a30d9b4748c2"
+      "contentFingerprint": "ec23818a3645c4035efd85c39eceb1a5a68aa78d4066834da730a30d9b4748c2",
+      "questionNo": 5
     },
     {
       "id": "hist-20260922-prob-cdf-jumps",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 4,
       "sourceRef": "历史对话 2026-09-22 · 例2.4",
       "sourceType": "history",
       "sourcePage": null,
@@ -7178,14 +7177,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "a517696b670c39d8ff2e298955aaf1524bfa58c75b1c46a58d6b6bc38b43d926"
+      "contentFingerprint": "a517696b670c39d8ff2e298955aaf1524bfa58c75b1c46a58d6b6bc38b43d926",
+      "questionNo": 4
     },
     {
       "id": "hist-20260922-prob-binomial-tail",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 5,
       "sourceRef": "历史对话 2026-09-22 · 例2.5",
       "sourceType": "history",
       "sourcePage": null,
@@ -7228,14 +7227,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "f7abbb325c69bec985336074cb393076bbc47622b9c47ce0fdd0a028f297c549"
+      "contentFingerprint": "f7abbb325c69bec985336074cb393076bbc47622b9c47ce0fdd0a028f297c549",
+      "questionNo": 5
     },
     {
       "id": "hist-20260922-prob-binomial-modes",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 7,
       "sourceRef": "历史对话 2026-09-22 · 例2.7",
       "sourceType": "history",
       "sourcePage": null,
@@ -7278,14 +7277,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "0c1161eee48366e689113b9695908b6434850740245aa618b361440f06904ae2"
+      "contentFingerprint": "0c1161eee48366e689113b9695908b6434850740245aa618b361440f06904ae2",
+      "questionNo": 7
     },
     {
       "id": "hist-20260922-prob-geometric-recurrence",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 8,
       "sourceRef": "历史对话 2026-09-22 · 例2.8",
       "sourceType": "history",
       "sourcePage": null,
@@ -7328,14 +7327,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "4b9dbc63dcc6d1a022f1f14a71b4fd975849fc33f10bc99c131f704a3d4a87c8"
+      "contentFingerprint": "4b9dbc63dcc6d1a022f1f14a71b4fd975849fc33f10bc99c131f704a3d4a87c8",
+      "questionNo": 8
     },
     {
       "id": "hist-20260922-prob-negative-binomial",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 9,
       "sourceRef": "历史对话 2026-09-22 · 例2.9",
       "sourceType": "history",
       "sourcePage": null,
@@ -7378,14 +7377,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "6a1efc52909cff75171c044f362c2e1411479020a7dc80c3da9f18953eccd573"
+      "contentFingerprint": "6a1efc52909cff75171c044f362c2e1411479020a7dc80c3da9f18953eccd573",
+      "questionNo": 9
     },
     {
       "id": "hist-20260922-prob-symmetric-density",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 11,
       "sourceRef": "历史对话 2026-09-22 · 例2.11",
       "sourceType": "history",
       "sourcePage": null,
@@ -7445,14 +7444,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "1b8d7687e25c9ba3139efb1dd066f915415f6305d4458bef64e78d162c14a6f2"
+      "contentFingerprint": "1b8d7687e25c9ba3139efb1dd066f915415f6305d4458bef64e78d162c14a6f2",
+      "questionNo": 11
     },
     {
       "id": "hist-20260922-prob-density-transform",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 12,
       "sourceRef": "历史对话 2026-09-22 · 例2.12",
       "sourceType": "history",
       "sourcePage": null,
@@ -7512,14 +7511,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "fca67480911f3b84b8b30941fa5a15b7ef311b46bc495352c0fa4d59af85019f"
+      "contentFingerprint": "fca67480911f3b84b8b30941fa5a15b7ef311b46bc495352c0fa4d59af85019f",
+      "questionNo": 12
     },
     {
       "id": "hist-20260922-prob-floor-function",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 13,
       "sourceRef": "历史对话 2026-09-22 · 例2.13",
       "sourceType": "history",
       "sourcePage": null,
@@ -7562,14 +7561,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "e91937b3f3fb4c7e24ef569be0ec495d015c3f281850170da6d201e74bfeb070"
+      "contentFingerprint": "e91937b3f3fb4c7e24ef569be0ec495d015c3f281850170da6d201e74bfeb070",
+      "questionNo": 13
     },
     {
       "id": "hist-20260922-prob-exponential-wait",
       "subject": "概率论与数理统计",
       "chapter": 2,
       "chapterTitle": "随机变量及其分布",
-      "questionNo": 14,
       "sourceRef": "历史对话 2026-09-22 · 例2.14",
       "sourceType": "history",
       "sourcePage": null,
@@ -7618,14 +7617,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "history-2026-09-22-complete-search-v1"
       ],
-      "contentFingerprint": "93ac379334b01a10ee14b622144e5d74002be32d4af8b85d1d07a17c1b1ea2c8"
+      "contentFingerprint": "93ac379334b01a10ee14b622144e5d74002be32d4af8b85d1d07a17c1b1ea2c8",
+      "questionNo": 14
     },
     {
       "id": "daily-20260927-prob-joint-transform-square",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "多维随机变量及其分布",
-      "questionNo": 1,
       "sourceRef": "2026-09-27 当日对话 · 联合密度与平方变换",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7678,14 +7677,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "ae677d67c2b524619b31305458802c224c67a12214421ec4a5edaa987113f379"
+      "contentFingerprint": "ae677d67c2b524619b31305458802c224c67a12214421ec4a5edaa987113f379",
+      "questionNo": 1
     },
     {
       "id": "daily-20260927-prob-singular-cdf-min",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "多维随机变量及其分布",
-      "questionNo": 2,
       "sourceRef": "2026-09-27 当日对话 · 奇异联合分布",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7748,14 +7747,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "166ccd5f7cfeb827126fbcb905aa9f6985c253e6d57ed794877f2524dbe549fe"
+      "contentFingerprint": "166ccd5f7cfeb827126fbcb905aa9f6985c253e6d57ed794877f2524dbe549fe",
+      "questionNo": 2
     },
     {
       "id": "daily-20260927-prob-exp-min-normal-convolution-max",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "随机变量函数的分布",
-      "questionNo": 3,
       "sourceRef": "2026-09-27 当日对话 · 最小值、卷积与最大值",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7820,14 +7819,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "1c366caff4d64cc21a499c9fc5cac0bd032b4233e0dbade9ea6c9a1f31a0d2ba"
+      "contentFingerprint": "1c366caff4d64cc21a499c9fc5cac0bd032b4233e0dbade9ea6c9a1f31a0d2ba",
+      "questionNo": 3
     },
     {
       "id": "daily-20260927-prob-continuous-discrete-max",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "随机变量函数的分布",
-      "questionNo": 4,
       "sourceRef": "2026-09-27 当日对话 · 连续与离散混合最大值",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7884,14 +7883,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "b37bfd9bd487a121eb0cd05c72e01230e32d672190fc42d5e551ad3c887fb2c8"
+      "contentFingerprint": "b37bfd9bd487a121eb0cd05c72e01230e32d672190fc42d5e551ad3c887fb2c8",
+      "questionNo": 4
     },
     {
       "id": "daily-20260927-prob-bivariate-normal-quadrant-rho",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维正态分布",
-      "questionNo": 5,
       "sourceRef": "2026-09-27 当日对话 · 二维正态相关系数",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7935,14 +7934,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "ace8da39b10c3c925eb1765128920d7d86a3e8f9a5e55a79c203e180581774e3"
+      "contentFingerprint": "ace8da39b10c3c925eb1765128920d7d86a3e8f9a5e55a79c203e180581774e3",
+      "questionNo": 5
     },
     {
       "id": "daily-20260927-prob-product-discrete-multiplier",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "随机变量函数的分布",
-      "questionNo": 6,
       "sourceRef": "2026-09-27 当日对话 · 乘积的混合分布",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -7993,14 +7992,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "865c7c2807ad4f8dd5f1c81b6d9e5f3448f6969abdc00d8f703c8dad63195417"
+      "contentFingerprint": "865c7c2807ad4f8dd5f1c81b6d9e5f3448f6969abdc00d8f703c8dad63195417",
+      "questionNo": 6
     },
     {
       "id": "daily-20260927-prob-geometric-diagonal",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维离散型随机变量",
-      "questionNo": 7,
       "sourceRef": "2026-09-27 当日对话 · 几何分布对角线事件",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8045,14 +8044,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "bbf6c219f2db1e878d60a840d094423ee6c75c3ad77cc643fc6ba2b980857a5d"
+      "contentFingerprint": "bbf6c219f2db1e878d60a840d094423ee6c75c3ad77cc643fc6ba2b980857a5d",
+      "questionNo": 7
     },
     {
       "id": "daily-20260927-prob-exp-quadratic-real-root",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维连续型随机变量",
-      "questionNo": 8,
       "sourceRef": "2026-09-27 当日对话 · 全概率与条件化",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8105,14 +8104,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "5eb4fca985281c3991e2a5e7e6d63207dbf915d1f6362407acaddc9f36ab765d"
+      "contentFingerprint": "5eb4fca985281c3991e2a5e7e6d63207dbf915d1f6362407acaddc9f36ab765d",
+      "questionNo": 8
     },
     {
       "id": "daily-20260927-prob-normal-discrete-total-prob",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "全概率公式与混合变量",
-      "questionNo": 9,
       "sourceRef": "2026-09-27 当日对话 · 正态变量与离散变量",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8164,14 +8163,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "e7e1014cafff702beff7a073cf46b0aa298d679bf31f8fa2325b3bf10b847d7a"
+      "contentFingerprint": "e7e1014cafff702beff7a073cf46b0aa298d679bf31f8fa2325b3bf10b847d7a",
+      "questionNo": 9
     },
     {
       "id": "daily-20260927-prob-independent-not-iid-sum-cdf",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维离散型随机变量",
-      "questionNo": 10,
       "sourceRef": "2026-09-27 当日对话 · 独立不等于同分布",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8230,14 +8229,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "fe76c0f8271a1d0008ce701e86475b0d83d5f76fcda1fff909b6e5afdbadc25c"
+      "contentFingerprint": "fe76c0f8271a1d0008ce701e86475b0d83d5f76fcda1fff909b6e5afdbadc25c",
+      "questionNo": 10
     },
     {
       "id": "daily-20260927-prob-discrete-max-min",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维离散型随机变量函数",
-      "questionNo": 11,
       "sourceRef": "2026-09-27 当日对话 · 最大值与最小值联合分布",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8285,14 +8284,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "6a2588004fba51e23d2774f2080453627989e93c579b7e8c810fbe470f055b74"
+      "contentFingerprint": "6a2588004fba51e23d2774f2080453627989e93c579b7e8c810fbe470f055b74",
+      "questionNo": 11
     },
     {
       "id": "daily-20260927-prob-poisson-sum-conditional",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维离散型随机变量",
-      "questionNo": 12,
       "sourceRef": "2026-09-27 当日对话 · 泊松和与条件分布",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8345,14 +8344,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "535fb3b719949229fb949134c38d09ef7becc0d8deb0deb6800298c606b4a471"
+      "contentFingerprint": "535fb3b719949229fb949134c38d09ef7becc0d8deb0deb6800298c606b4a471",
+      "questionNo": 12
     },
     {
       "id": "daily-20260927-prob-triangle-sum-product",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "二维连续型随机变量函数",
-      "questionNo": 13,
       "sourceRef": "2026-09-27 当日对话 · 三角形区域上的和与积",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8406,14 +8405,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "ea7ded06ec9f8711bd7a75a84fabe87f47bf77ed52d7de8b667f084c171276f1"
+      "contentFingerprint": "ea7ded06ec9f8711bd7a75a84fabe87f47bf77ed52d7de8b667f084c171276f1",
+      "questionNo": 13
     },
     {
       "id": "daily-20260927-prob-expectation-absolute-convergence",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 14,
       "sourceRef": "2026-09-27 当日对话 · 期望存在性",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8463,14 +8462,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "0ac42e2e527cec026e65de8eaf228425e19a94a903795174a98b0108aa076403"
+      "contentFingerprint": "0ac42e2e527cec026e65de8eaf228425e19a94a903795174a98b0108aa076403",
+      "questionNo": 14
     },
     {
       "id": "daily-20260927-prob-expectation-max-piecewise",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量函数的数学期望",
-      "questionNo": 15,
       "sourceRef": "2026-09-27 当日对话 · 分段函数期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8520,14 +8519,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "5825f9ec7019e8e1a05225fb76c0d3f3a560c4639c23533983bf23f088a3f0cb"
+      "contentFingerprint": "5825f9ec7019e8e1a05225fb76c0d3f3a560c4639c23533983bf23f088a3f0cb",
+      "questionNo": 15
     },
     {
       "id": "daily-20260927-prob-central-moments-variance",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "方差与中心矩",
-      "questionNo": 16,
       "sourceRef": "2026-09-27 当日对话 · 中心矩展开",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8584,14 +8583,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "53c296049eca899ce48634837b2c7877ae8242adb54e1e8f40df68fdcf0fd248"
+      "contentFingerprint": "53c296049eca899ce48634837b2c7877ae8242adb54e1e8f40df68fdcf0fd248",
+      "questionNo": 16
     },
     {
       "id": "daily-20260927-prob-bivariate-function-expectation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量函数的数学期望",
-      "questionNo": 17,
       "sourceRef": "2026-09-27 当日对话 · 一维与二维期望公式",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8649,14 +8648,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "a7df573da7bb73389099a40337fccb7a70176af14dcf70e21c05a236660513fc"
+      "contentFingerprint": "a7df573da7bb73389099a40337fccb7a70176af14dcf70e21c05a236660513fc",
+      "questionNo": 17
     },
     {
       "id": "daily-20260927-prob-lognormal-mean",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量函数的数学期望",
-      "questionNo": 18,
       "sourceRef": "2026-09-27 当日对话 · 对数正态期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8700,14 +8699,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-27-v1"
       ],
-      "contentFingerprint": "76295889e30f4b5104a6b096763e2f97e1bf2742df4aae93e000baa97cacecfa"
+      "contentFingerprint": "76295889e30f4b5104a6b096763e2f97e1bf2742df4aae93e000baa97cacecfa",
+      "questionNo": 18
     },
     {
       "id": "daily-20260928-prob-iid-sample-moments",
       "subject": "概率论与数理统计",
       "chapter": 6,
       "chapterTitle": "样本与统计量",
-      "questionNo": 1,
       "sourceRef": "2026-09-28 当日对话 · 独立同分布样本的矩与方差",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8772,14 +8771,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "bc6c42109e13b1af03b7d3a9047540c40b8b98fbcb29ed678775996127e0b92b"
+      "contentFingerprint": "bc6c42109e13b1af03b7d3a9047540c40b8b98fbcb29ed678775996127e0b92b",
+      "questionNo": 1
     },
     {
       "id": "daily-20260928-prob-two-exponential-samples-variance",
       "subject": "概率论与数理统计",
       "chapter": 6,
       "chapterTitle": "参数估计",
-      "questionNo": 2,
       "sourceRef": "2026-09-28 当日对话 · 两个指数总体估计量的方差",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8848,14 +8847,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "b59e3505e81297a058f48fb5d97ab5eced7bbbd90ab2d335f905ab8ba119caf5"
+      "contentFingerprint": "b59e3505e81297a058f48fb5d97ab5eced7bbbd90ab2d335f905ab8ba119caf5",
+      "questionNo": 2
     },
     {
       "id": "daily-20260928-prob-discrete-function-expectations",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 3,
       "sourceRef": "2026-09-28 当日对话 · 离散型随机变量函数的期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8912,14 +8911,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "851d842cc9f1e482d45bfd48dd377da0fbb75e2ca0496aaf1a9377300aa822f5"
+      "contentFingerprint": "851d842cc9f1e482d45bfd48dd377da0fbb75e2ca0496aaf1a9377300aa822f5",
+      "questionNo": 3
     },
     {
       "id": "daily-20260928-prob-second-moment-from-density",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 4,
       "sourceRef": "2026-09-28 当日对话 · 从密度积分识别二阶矩",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -8963,14 +8962,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "9090f01948360ad01bfc35a33d53bc4214704cb7ef920cdf4137c8bd81c7a731"
+      "contentFingerprint": "9090f01948360ad01bfc35a33d53bc4214704cb7ef920cdf4137c8bd81c7a731",
+      "questionNo": 4
     },
     {
       "id": "daily-20260928-prob-normal-exponential-tilt",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 5,
       "sourceRef": "2026-09-28 当日对话 · 标准正态变量的指数型期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9029,14 +9028,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "7f4b247bae8da7dfd3f0996e23093624c819095c4bd13e4342f512b068a72e5f"
+      "contentFingerprint": "7f4b247bae8da7dfd3f0996e23093624c819095c4bd13e4342f512b068a72e5f",
+      "questionNo": 5
     },
     {
       "id": "daily-20260928-prob-modulo-three-expectation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 6,
       "sourceRef": "2026-09-28 当日对话 · 按模分类求余数期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9100,14 +9099,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "fc9de1246c855607f7d127ce2c9c8b2ffd7701d75e4e768f5f2e1c4362e84988"
+      "contentFingerprint": "fc9de1246c855607f7d127ce2c9c8b2ffd7701d75e4e768f5f2e1c4362e84988",
+      "questionNo": 6
     },
     {
       "id": "daily-20260928-prob-random-diameter-area",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 7,
       "sourceRef": "2026-09-28 当日对话 · 随机直径对应的期望面积",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9163,14 +9162,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "6a005752743ab02971bfcbfe8e1ce28668992c22d4a4da852304c6ef774576ef"
+      "contentFingerprint": "6a005752743ab02971bfcbfe8e1ce28668992c22d4a4da852304c6ef774576ef",
+      "questionNo": 7
     },
     {
       "id": "daily-20260928-prob-absolute-normal-variance",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 8,
       "sourceRef": "2026-09-28 当日对话 · 正态差的绝对值方差",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9235,14 +9234,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "1dcdc50ca50658b3efd50863990e9cf5eb9804f3fc2d898cdecfec368afa02c7"
+      "contentFingerprint": "1dcdc50ca50658b3efd50863990e9cf5eb9804f3fc2d898cdecfec368afa02c7",
+      "questionNo": 8
     },
     {
       "id": "daily-20260928-prob-exponential-max-min-expectations",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 9,
       "sourceRef": "2026-09-28 当日对话 · 指数变量最大最小值",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9307,14 +9306,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "d7fa61af3dedf5d8cc7383348254ce37a89f65f1c27a5d823da6353afa25bb60"
+      "contentFingerprint": "d7fa61af3dedf5d8cc7383348254ce37a89f65f1c27a5d823da6353afa25bb60",
+      "questionNo": 9
     },
     {
       "id": "daily-20260928-prob-uniform-sample-range",
       "subject": "概率论与数理统计",
       "chapter": 6,
       "chapterTitle": "样本与统计量",
-      "questionNo": 10,
       "sourceRef": "2026-09-28 当日对话 · 均匀样本的极差期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9360,14 +9359,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "8f44a06e52d79f0f3481c5a278fd5baa1c56588326a48b92ac1b57f9b0d6afb2"
+      "contentFingerprint": "8f44a06e52d79f0f3481c5a278fd5baa1c56588326a48b92ac1b57f9b0d6afb2",
+      "questionNo": 10
     },
     {
       "id": "daily-20260928-prob-uniform-max-unbiased",
       "subject": "概率论与数理统计",
       "chapter": 6,
       "chapterTitle": "参数估计",
-      "questionNo": 11,
       "sourceRef": "2026-09-28 当日对话 · 均匀总体上限的无偏估计",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9433,14 +9432,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "875f935cefff8f258f3560520bcb46b270e7acc215875754a6c29b8f13ee13a1"
+      "contentFingerprint": "875f935cefff8f258f3560520bcb46b270e7acc215875754a6c29b8f13ee13a1",
+      "questionNo": 11
     },
     {
       "id": "daily-20260928-prob-urn-waiting-counts",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 12,
       "sourceRef": "2026-09-28 当日对话 · 放回抽球的等待次数",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9517,14 +9516,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "6c39354c7ec299875d5ad0605a2ad020ed5b9c9d3247490d97c8fdc555c40c0f"
+      "contentFingerprint": "6c39354c7ec299875d5ad0605a2ad020ed5b9c9d3247490d97c8fdc555c40c0f",
+      "questionNo": 12
     },
     {
       "id": "daily-20260928-prob-normal-mixture-mean",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 13,
       "sourceRef": "2026-09-28 当日对话 · 正态混合分布的期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9583,14 +9582,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-28-v1"
       ],
-      "contentFingerprint": "e6b2bd475110a936aadd269af78b5bd449950cd363baf09076fb68d85421c8ba"
+      "contentFingerprint": "e6b2bd475110a936aadd269af78b5bd449950cd363baf09076fb68d85421c8ba",
+      "questionNo": 13
     },
     {
       "id": "daily-20260929-prob-correlation-methods",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 1,
       "sourceRef": "2026-09-29 当日对话 · 相关系数的求法与快速判断",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9639,14 +9638,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-29-v1"
       ],
-      "contentFingerprint": "38eed55ca12cdfff8d39681f601611cac7ae7347275bd6ba71cf5b0ab8a8d5b8"
+      "contentFingerprint": "38eed55ca12cdfff8d39681f601611cac7ae7347275bd6ba71cf5b0ab8a8d5b8",
+      "questionNo": 1
     },
     {
       "id": "daily-20260930-prob-normal-sum-difference-independence",
       "subject": "概率论与数理统计",
       "chapter": 3,
       "chapterTitle": "多维随机变量及其分布",
-      "questionNo": 1,
       "sourceRef": "2026-09-30 当日对话 · 正态变量和差的独立性",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9695,14 +9694,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "c4ef4f6b81519aad15500e7cf71fa906af8ada864d2ae02a7ca39a25ac001702"
+      "contentFingerprint": "c4ef4f6b81519aad15500e7cf71fa906af8ada864d2ae02a7ca39a25ac001702",
+      "questionNo": 1
     },
     {
       "id": "daily-20260930-prob-expectation-shift-integral",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 2,
       "sourceRef": "2026-09-30 当日对话 · 期望的平移积分",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9755,14 +9754,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "fe6ad1e830e3e4f4352993f9dd41eefe30aa887fd833abaffbf6e044acd3f3ab"
+      "contentFingerprint": "fe6ad1e830e3e4f4352993f9dd41eefe30aa887fd833abaffbf6e044acd3f3ab",
+      "questionNo": 2
     },
     {
       "id": "daily-20260930-prob-tail-sum-expectation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 3,
       "sourceRef": "2026-09-30 当日对话 · 非负整数变量的尾和公式",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9809,14 +9808,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "be7bff3c554080565e9e2de1ad1a32d7edbed6997b9be9c5db0d5f10e9dd7d6f"
+      "contentFingerprint": "be7bff3c554080565e9e2de1ad1a32d7edbed6997b9be9c5db0d5f10e9dd7d6f",
+      "questionNo": 3
     },
     {
       "id": "daily-20260930-prob-discrete-cdf-function-expectation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 4,
       "sourceRef": "2026-09-30 当日对话 · 由离散分布函数求函数期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9869,14 +9868,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "5cef74a02e81d12ec96114355be77f34501a7089daec7eee6fbbcb5886fedd18"
+      "contentFingerprint": "5cef74a02e81d12ec96114355be77f34501a7089daec7eee6fbbcb5886fedd18",
+      "questionNo": 4
     },
     {
       "id": "daily-20260930-prob-poisson-linear-correlation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 5,
       "sourceRef": "2026-09-30 当日对话 · 泊松变量线性组合的相关系数",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9925,14 +9924,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "3c9a4b3058a0a87db38e03b6cf28bf12697e28a120d5828124e483ba94d404de"
+      "contentFingerprint": "3c9a4b3058a0a87db38e03b6cf28bf12697e28a120d5828124e483ba94d404de",
+      "questionNo": 5
     },
     {
       "id": "daily-20260930-prob-product-normal-variance",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 6,
       "sourceRef": "2026-09-30 当日对话 · 独立正态变量乘积的方差",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -9979,14 +9978,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "593a0a3975830b23e1c800a0dc101335c981aff066578c595af0d770a97fa740"
+      "contentFingerprint": "593a0a3975830b23e1c800a0dc101335c981aff066578c595af0d770a97fa740",
+      "questionNo": 6
     },
     {
       "id": "daily-20260930-prob-bus-waiting-time",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 7,
       "sourceRef": "2026-09-30 当日对话 · 分段候车时间的期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -10051,14 +10050,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "c79b5682905c2894983e1b799469ef9424aa1a67c7da44fc54d71c1d5b4efabe"
+      "contentFingerprint": "c79b5682905c2894983e1b799469ef9424aa1a67c7da44fc54d71c1d5b4efabe",
+      "questionNo": 7
     },
     {
       "id": "daily-20260930-prob-without-replacement-correlation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 8,
       "sourceRef": "2026-09-30 当日对话 · 不放回抽球的相关系数",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -10110,14 +10109,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "38136739c8d7a4b37db617fe71a35489508d2d776b1c100849ba702941c4f92a"
+      "contentFingerprint": "38136739c8d7a4b37db617fe71a35489508d2d776b1c100849ba702941c4f92a",
+      "questionNo": 8
     },
     {
       "id": "daily-20260930-prob-truncated-geometric-inspection",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 9,
       "sourceRef": "2026-09-30 当日对话 · 截断几何分布的期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -10182,14 +10181,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "bc51f1b2fb1ba536f074a4864ac45aff28b4ca27ef005a9ab997538932431303"
+      "contentFingerprint": "bc51f1b2fb1ba536f074a4864ac45aff28b4ca27ef005a9ab997538932431303",
+      "questionNo": 9
     },
     {
       "id": "daily-20260930-prob-normal-density-comprehensive",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 10,
       "sourceRef": "2026-09-30 当日对话 · 指数型正态密度综合题",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -10262,14 +10261,14 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "e99cd69e5dc00eb37ec18d11543f62abf6ef7ec080bb681b9da2b09a91f518fb"
+      "contentFingerprint": "e99cd69e5dc00eb37ec18d11543f62abf6ef7ec080bb681b9da2b09a91f518fb",
+      "questionNo": 10
     },
     {
       "id": "daily-20260930-prob-floor-chi-square-expectation",
       "subject": "概率论与数理统计",
       "chapter": 4,
       "chapterTitle": "随机变量的数字特征",
-      "questionNo": 11,
       "sourceRef": "2026-09-30 当日对话 · 正态平方和取整的期望",
       "sourceType": "daily-chat",
       "sourcePage": null,
@@ -10336,7 +10335,8 @@ window.WRONG_QUESTIONS = {
       "historyImportBatches": [
         "daily-2026-09-30-v1"
       ],
-      "contentFingerprint": "74712c2f017b6ef70e1608ae39e9e5d95c2c8377936f97694375af47d4e8d521"
+      "contentFingerprint": "74712c2f017b6ef70e1608ae39e9e5d95c2c8377936f97694375af47d4e8d521",
+      "questionNo": 11
     },
     {
       "id": "daily-20261001-prob-chebyshev-binomial-sum",
@@ -10394,8 +10394,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "08c1d220ac1482083b8e42f471d9de5e5d012e7ea6d4e82e4b35de3f95373faf",
-      "questionNo": 1,
-      "reviewFocus": "第一步先认清 \\(B(n,p)\\) 的第一个参数：\\(EX=np,DX=np(1-p)\\)。随机变量独立时，和的方差才可直接相加。使用切比雪夫不等式前，把目标区间改写成以均值为中心的绝对值事件。"
+      "reviewFocus": "第一步先认清 \\(B(n,p)\\) 的第一个参数：\\(EX=np,DX=np(1-p)\\)。随机变量独立时，和的方差才可直接相加。使用切比雪夫不等式前，把目标区间改写成以均值为中心的绝对值事件。",
+      "questionNo": 1
     },
     {
       "id": "daily-20261001-prob-sample-variance-n-minus-one",
@@ -10461,8 +10461,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "b1745ad2b4a7cb522a0d4e722aa12bc058efa21c6accdc81a513d1520e2627ce",
-      "questionNo": 2,
-      "reviewFocus": "考场第一步区分随机量与其期望：\\(S^2\\) 每次会变，但长期平均等于 \\(\\sigma^2\\)。记住三个信号：估计了一个均值会损失一个自由度；\\(n=1\\) 无法由一个观测衡量离散程度；\\(S^2\\) 的量纲是平方，故它的方差量纲必为四次方。"
+      "reviewFocus": "考场第一步区分随机量与其期望：\\(S^2\\) 每次会变，但长期平均等于 \\(\\sigma^2\\)。记住三个信号：估计了一个均值会损失一个自由度；\\(n=1\\) 无法由一个观测衡量离散程度；\\(S^2\\) 的量纲是平方，故它的方差量纲必为四次方。",
+      "questionNo": 2
     },
     {
       "id": "daily-20261001-prob-sample-mean-covariance-correlation",
@@ -10514,8 +10514,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "0ca76799145f8feb7df6ba98ec93299b49b66dac5c649200eabea1184db40e7d",
-      "questionNo": 3,
-      "reviewFocus": "第一步把两个样本均值写成双重求和的协方差。画出 \\(n\\times n\\) 下标表：非对角项因独立为零，仅主对角线保留 \\(n\\) 项。样本平均会缩小协方差和方差，但不会改变相关系数。"
+      "reviewFocus": "第一步把两个样本均值写成双重求和的协方差。画出 \\(n\\times n\\) 下标表：非对角项因独立为零，仅主对角线保留 \\(n\\) 项。样本平均会缩小协方差和方差，但不会改变相关系数。",
+      "questionNo": 3
     },
     {
       "id": "daily-20261001-prob-normal-sample-statistics-comprehensive",
@@ -10581,8 +10581,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "c7eec0471ee840bb6be070be59540dc0756996d1290de5e24826223e141ed730",
-      "questionNo": 4,
-      "reviewFocus": "先判断每问调用哪条结论：独立和的方差、样本方差无偏性、中心正态的对称性、正态样本中 \\(\\overline X\\) 与 \\(S^2\\) 独立。第四问第一步标准化 \\(Z=\\sqrt n\\,\\overline X/\\sigma\\)，用 \\(EZ^4=3\\) 得平方正态变量的方差。"
+      "reviewFocus": "先判断每问调用哪条结论：独立和的方差、样本方差无偏性、中心正态的对称性、正态样本中 \\(\\overline X\\) 与 \\(S^2\\) 独立。第四问第一步标准化 \\(Z=\\sqrt n\\,\\overline X/\\sigma\\)，用 \\(EZ^4=3\\) 得平方正态变量的方差。",
+      "questionNo": 4
     },
     {
       "id": "daily-20261001-prob-chi-square-t-f-statements",
@@ -10642,8 +10642,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-01-v1"
       ],
       "contentFingerprint": "d78b334c0152b9f8637e382e3168b49bdbf787d9d39cf7205659db294cbc383b",
-      "questionNo": 5,
-      "reviewFocus": "考场第一步把每个统计量改写成标准模板：\\(\\chi^2\\) 是独立标准正态平方和；\\(t=Z/\\sqrt{Q/r}\\) 要求 \\(Z\\perp Q\\)；\\(F=(Q_1/r_1)/(Q_2/r_2)\\) 要求两个卡方独立。牢记 \\(t_r^2\\sim F(1,r)\\)，顺序不可倒。"
+      "reviewFocus": "考场第一步把每个统计量改写成标准模板：\\(\\chi^2\\) 是独立标准正态平方和；\\(t=Z/\\sqrt{Q/r}\\) 要求 \\(Z\\perp Q\\)；\\(F=(Q_1/r_1)/(Q_2/r_2)\\) 要求两个卡方独立。牢记 \\(t_r^2\\sim F(1,r)\\)，顺序不可倒。",
+      "questionNo": 5
     },
     {
       "id": "daily-20261004-prob-estimator-basics-moment-mle",
@@ -10719,8 +10719,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "791c337697fa332531e26bd56747bcfde9f15fa1f4618abb3998330fb6efb9af",
-      "questionNo": 1,
-      "reviewFocus": "考场第一步先写“总体矩 = 样本矩”。遇到最大似然估计则固定样本值，写 \\(L(\\theta)\\)、取对数、求极值。看到 \\(\\widehat\\theta(X_1,\\ldots,X_n)\\) 要意识到它仍是随机变量；只有 \\(\\widehat\\theta(x_1,\\ldots,x_n)\\) 才是数值。"
+      "reviewFocus": "考场第一步先写“总体矩 = 样本矩”。遇到最大似然估计则固定样本值，写 \\(L(\\theta)\\)、取对数、求极值。看到 \\(\\widehat\\theta(X_1,\\ldots,X_n)\\) 要意识到它仍是随机变量；只有 \\(\\widehat\\theta(x_1,\\ldots,x_n)\\) 才是数值。",
+      "questionNo": 1
     },
     {
       "id": "daily-20261004-prob-heavy-tail-estimation-consistency",
@@ -10781,8 +10781,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "bd68052744943f387e3853f6306e3b1f8cf4ca98d7a010d1621e2571fe159bf9",
-      "questionNo": 2,
-      "reviewFocus": "看到“证明一致性”，第一步检查估计量能否写成样本均值或其连续函数：若 \\(E|X|<\\infty\\)，优先用大数定律；只有需要切比雪夫时才检查方差。看到 \\(e^{-\\theta/x}\\) 时，似然指数必须写成 \\(-\\theta\\sum 1/X_i\\)，不是 \\(-\\theta\\sum X_i\\)。"
+      "reviewFocus": "看到“证明一致性”，第一步检查估计量能否写成样本均值或其连续函数：若 \\(E|X|<\\infty\\)，优先用大数定律；只有需要切比雪夫时才检查方差。看到 \\(e^{-\\theta/x}\\) 时，似然指数必须写成 \\(-\\theta\\sum 1/X_i\\)，不是 \\(-\\theta\\sum X_i\\)。",
+      "questionNo": 2
     },
     {
       "id": "daily-20261004-prob-piecewise-density-mle",
@@ -10834,8 +10834,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "fcb40fc51977be754a5a4b6c94fd46aa111c1da45ebad40605133a328e1093e0",
-      "questionNo": 3,
-      "reviewFocus": "考场识别信号是“分段常数密度 + 给出具体样本”。第一步不是积分求导，而是先写归一化约束，再数各区间中的样本数；似然立即化成二项型 \\(\\alpha^{n_-}(1-\\alpha)^{n_+}\\)。"
+      "reviewFocus": "考场识别信号是“分段常数密度 + 给出具体样本”。第一步不是积分求导，而是先写归一化约束，再数各区间中的样本数；似然立即化成二项型 \\(\\alpha^{n_-}(1-\\alpha)^{n_+}\\)。",
+      "questionNo": 3
     },
     {
       "id": "daily-20261004-prob-support-dependent-uniform-mle",
@@ -10899,8 +10899,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "e2d4d245d92adda2e76b2774cd763df7f0d15cba8651a802fdd776554a375e76",
-      "questionNo": 4,
-      "reviewFocus": "看到密度的取值范围含 \\(\\theta\\)，第一步写指示条件并用 \\(X_{(1)},X_{(n)}\\) 压缩成参数区间。随后只需看似然在该区间单调还是常数：单调则取边界，常数则 MLE 不唯一。"
+      "reviewFocus": "看到密度的取值范围含 \\(\\theta\\)，第一步写指示条件并用 \\(X_{(1)},X_{(n)}\\) 压缩成参数区间。随后只需看似然在该区间单调还是常数：单调则取边界，常数则 MLE 不唯一。",
+      "questionNo": 4
     },
     {
       "id": "daily-20261004-prob-mle-invariance-tail-probability",
@@ -10958,8 +10958,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "ecb4f89ed7b575e6287599b5a627e06f96684cead6fd1266980501e887031c4f",
-      "questionNo": 5,
-      "reviewFocus": "看到“令 \\(\\theta=g(\\text{原参数})\\)”时，第一步先求原参数的 MLE，再直接代入 \\(g\\)。这是最大似然估计不变性；不要重新从头求导。正态总体方差的 MLE 用分母 \\(n\\)。"
+      "reviewFocus": "看到“令 \\(\\theta=g(\\text{原参数})\\)”时，第一步先求原参数的 MLE，再直接代入 \\(g\\)。这是最大似然估计不变性；不要重新从头求导。正态总体方差的 MLE 用分母 \\(n\\)。",
+      "questionNo": 5
     },
     {
       "id": "daily-20261004-prob-estimator-efficiency",
@@ -11023,8 +11023,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "995f526f4e1399f84d2d6590c92a19b4761b98f6441d5d7337665d395046fced",
-      "questionNo": 6,
-      "reviewFocus": "考场第一步先验无偏：系数和是否为 \\(1\\)。比较有效性前必须确认两者估计同一参数且无偏，然后直接算方差。线性组合的方差使用系数平方，不能把系数直接相加，也不要引入样本方差公式。"
+      "reviewFocus": "考场第一步先验无偏：系数和是否为 \\(1\\)。比较有效性前必须确认两者估计同一参数且无偏，然后直接算方差。线性组合的方差使用系数平方，不能把系数直接相加，也不要引入样本方差公式。",
+      "questionNo": 6
     },
     {
       "id": "daily-20261004-prob-sample-standard-deviation-consistency",
@@ -11076,8 +11076,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "846317ed8a79d0167c638d594715f9b4bc899f03494f680ff1e97f173a78d2a3",
-      "questionNo": 7,
-      "reviewFocus": "识别“必然正确”时逐项检查结论所需前提。无偏性不能穿过平方根；MLE 必须知道分布；\\(\\overline X\\perp S^2\\) 需要正态性；一致性可由大数定律和连续映射直接证明。"
+      "reviewFocus": "识别“必然正确”时逐项检查结论所需前提。无偏性不能穿过平方根；MLE 必须知道分布；\\(\\overline X\\perp S^2\\) 需要正态性；一致性可由大数定律和连续映射直接证明。",
+      "questionNo": 7
     },
     {
       "id": "daily-20261004-prob-normal-mean-t-confidence-interval",
@@ -11141,8 +11141,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "ee48ff4e4c19c499e7314fa03d45d7fe15820a8cd72d235b290ba32e905f3722",
-      "questionNo": 8,
-      "reviewFocus": "考场第一步看三件事：估计谁、方差是否已知、单侧还是双侧。均值且方差未知用 \\(t(n-1)\\)；双侧置信度 \\(1-\\alpha\\) 必须把 \\(\\alpha\\) 平分到两侧。"
+      "reviewFocus": "考场第一步看三件事：估计谁、方差是否已知、单侧还是双侧。均值且方差未知用 \\(t(n-1)\\)；双侧置信度 \\(1-\\alpha\\) 必须把 \\(\\alpha\\) 平分到两侧。",
+      "questionNo": 8
     },
     {
       "id": "daily-20261004-prob-variance-confidence-mixed-chi-square",
@@ -11196,8 +11196,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "48cb3968ecd75cb36f5794a7f30b34af939fb1571d2896f252c69c344725680d",
-      "questionNo": 9,
-      "reviewFocus": "第一步把平方和按样本组拆开并逐块数自由度：围绕样本均值为 \\(n-1\\)，围绕已知总体均值为 \\(n\\)。只有独立卡方才能相加。由枢轴量解 \\(\\sigma^2\\) 时，取倒数必须反向。"
+      "reviewFocus": "第一步把平方和按样本组拆开并逐块数自由度：围绕样本均值为 \\(n-1\\)，围绕已知总体均值为 \\(n\\)。只有独立卡方才能相加。由枢轴量解 \\(\\sigma^2\\) 时，取倒数必须反向。",
+      "questionNo": 9
     },
     {
       "id": "daily-20261004-prob-significance-level-change",
@@ -11257,8 +11257,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "0a43ff14ae21e414a39d0afede8529425730213429ea2bfebc02a560bcf43257",
-      "questionNo": 10,
-      "reviewFocus": "考场遇到“改变 \\(\\alpha\\)”时，立刻转成 \\(p\\) 值比较：拒绝当且仅当 \\(p<\\alpha\\)。\\(\\alpha\\) 变小，拒绝域缩小；原来拒绝并不能保证新水平仍拒绝。"
+      "reviewFocus": "考场遇到“改变 \\(\\alpha\\)”时，立刻转成 \\(p\\) 值比较：拒绝当且仅当 \\(p<\\alpha\\)。\\(\\alpha\\) 变小，拒绝域缩小；原来拒绝并不能保证新水平仍拒绝。",
+      "questionNo": 10
     },
     {
       "id": "daily-20261004-prob-one-sided-normal-rejection-region",
@@ -11312,8 +11312,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "e94c06f003a5d4c3ee07ab5a218e521316c9e67745cf2c031b8a78fa52f2ef7b",
-      "questionNo": 11,
-      "reviewFocus": "第一步由 \\(H_1\\) 决定方向：大于号对应右侧。第二步标准化 \\(\\overline X\\)，牢记标准误是 \\(\\sigma/\\sqrt n=\\sqrt{2/n}\\)，不是方差 \\(2/n\\)。复合原假设取边界 \\(\\mu=1\\) 定临界值。"
+      "reviewFocus": "第一步由 \\(H_1\\) 决定方向：大于号对应右侧。第二步标准化 \\(\\overline X\\)，牢记标准误是 \\(\\sigma/\\sqrt n=\\sqrt{2/n}\\)，不是方差 \\(2/n\\)。复合原假设取边界 \\(\\mu=1\\) 定临界值。",
+      "questionNo": 11
     },
     {
       "id": "daily-20261004-prob-type-two-error",
@@ -11367,8 +11367,8 @@ window.WRONG_QUESTIONS = {
         "daily-2026-10-04-v1"
       ],
       "contentFingerprint": "5e90d5c4c34694878bb82a534f7516d76242cc0e7d20d578d4b9a807c4dacc15",
-      "questionNo": 12,
-      "reviewFocus": "考场第一步先写事件：第一类错误是 \\(H_0\\) 真却落入拒绝域；第二类错误是 \\(H_1\\) 真却落入接受域。题目给出具体 \\(\\mu\\) 后，再在该参数下写 \\(\\overline X\\) 的分布并标准化。"
+      "reviewFocus": "考场第一步先写事件：第一类错误是 \\(H_0\\) 真却落入拒绝域；第二类错误是 \\(H_1\\) 真却落入接受域。题目给出具体 \\(\\mu\\) 后，再在该参数下写 \\(\\overline X\\) 的分布并标准化。",
+      "questionNo": 12
     },
     {
       "sourcePage": null,
@@ -11421,9 +11421,9 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "题图、路径无关判别与势函数反向求导交叉复核",
       "errorCauseEvidence": "用户要求补全题目，反映题意读取和方法起步不稳。",
-      "questionNo": 1,
       "reviewFocus": "卡壳位置：不知道“与路径无关”怎样落笔。突破口与第一步：立即写成 \\(P\\,\\mathrm dx+Q\\,\\mathrm dy\\)，先查区域与奇点，再列 \\(P_y=Q_x\\)。考场信号：出现“与路径无关/只与端点有关/求参数”。易错点：漏掉分母求导的负号，或不检查定义域。防卡方法：固定口令“区域—奇点—交叉偏导—势函数复核”。",
-      "contentFingerprint": "010da8730c15a4a8807614c74a65c8211d3fd9c66f565b3ac2b767129695d09c"
+      "contentFingerprint": "010da8730c15a4a8807614c74a65c8211d3fd9c66f565b3ac2b767129695d09c",
+      "questionNo": 1
     },
     {
       "sourcePage": null,
@@ -11477,9 +11477,9 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "结论图、积分推导与标准正态矩递推交叉复核",
       "errorCauseEvidence": "用户主动要求证明，且当日追问集中在绝对值期望与奇偶矩的区别。",
-      "questionNo": 2,
       "reviewFocus": "卡壳位置：看到绝对值后不知道如何积分。第一步：利用密度偶性把积分化为 \\(2\\int_0^{\\infty}\\)。考场信号：零均值正态加 \\(|X|\\) 立即想到半正态分布；偶次矩想到双阶乘。易错点：\\(E|X|\\neq0\\)，但奇数阶原点矩 \\(EX^{2k+1}=0\\)。防卡方法：先判断被积函数的奇偶性，再决定能否直接用对称性。",
-      "contentFingerprint": "31a0d0c7877dd3eebcc43c515f368de9caa64003a3797b0998d2df3d27b291d0"
+      "contentFingerprint": "31a0d0c7877dd3eebcc43c515f368de9caa64003a3797b0998d2df3d27b291d0",
+      "questionNo": 2
     },
     {
       "sourcePage": null,
@@ -11531,9 +11531,9 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "奇偶性、麦克劳林展开及题图解析三重核对",
       "errorCauseEvidence": "用户询问题目答案；题图答案栏与解析矛盾，存在明显审题和答案辨伪风险。",
-      "questionNo": 3,
       "reviewFocus": "卡壳位置：被错误答案 \\(-6\\) 干扰。突破口与第一步：先看函数奇偶性，偶函数在原点的奇数阶导数必为零。考场信号：求 \\(f^{(2k+1)}(0)\\) 且函数显然为偶函数。易错点：把展开式求导下标写错，或盲信答案。防卡方法：用奇偶性与麦克劳林系数做 10 秒双检。",
-      "contentFingerprint": "9b8eeefe8a563581889a978f19d9ca4363c257c784090c491162202f5c9daabf"
+      "contentFingerprint": "9b8eeefe8a563581889a978f19d9ca4363c257c784090c491162202f5c9daabf",
+      "questionNo": 3
     },
     {
       "sourcePage": null,
@@ -11560,9 +11560,14 @@ window.WRONG_QUESTIONS = {
         "值域",
         "齐次方程组",
         "概念错误",
-        "思路卡壳"
+        "思路卡壳",
+        "考研真题",
+        "2017年",
+        "数学一",
+        "列向量相关",
+        "非齐次方程组"
       ],
-      "sourceRef": "2026-10-05 当日对话 · 列相关、非零特征值与方程组通解",
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第20题",
       "questionType": "证明题",
       "stem": "设三阶矩阵 \\(A=(\\alpha_1,\\alpha_2,\\alpha_3)\\) 有三个不同的特征值，且 \\(\\alpha_3=\\alpha_1+2\\alpha_2\\)。\n(1) 证明 \\(r(A)=2\\)；\n(2) 设 \\(\\beta=\\alpha_1+\\alpha_2+\\alpha_3\\)，求方程组 \\(Ax=\\beta\\) 的通解。",
       "answer": "(1) \\(r(A)=2\\)。\n\n(2)\n\\[\nx=\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}+t\\begin{pmatrix}1\\\\2\\\\-1\\end{pmatrix},\\qquad t\\in\\mathbb R.\n\\]",
@@ -11593,9 +11598,35 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "题图、秩上下界证明与方程组代入复核",
       "errorCauseEvidence": "批改中明确发现将列向量当作特征向量；用户随后继续追问相似条件和特征向量。",
-      "questionNo": 4,
       "reviewFocus": "卡壳位置：证明 \\(r(A)\\ge2\\) 时错误地把列向量当特征向量。突破口：非零特征值满足 \\(Av=\\lambda v\\Rightarrow v=Av/\\lambda\\in R(A)\\)。第一步先用列关系得上界和零特征值，再用另外两个互异非零特征值给下界。易错点：列相关只给 \\(r\\le2\\)，不能直接推出等号。防卡方法：遇到“秩+特征值”固定从“值域容纳多少个非零特征向量”切入。",
-      "contentFingerprint": "91bb8134c80b66bd251c2043ee300be02573b79efcefb2509b81463d1b9485a5"
+      "contentFingerprint": "91a9a189d81db9289f076412016044b3190d661e1e1f084c33d7287e89824046",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [
+            1
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "wrongSubquestions": [
+        1
+      ],
+      "originalSourceRef": "2026-10-05 当日对话 · 列相关、非零特征值与方程组通解",
+      "originalQuestionNo": 4,
+      "transcriptionNote": "；已与上传2017年数学一试卷核对，归入考研真题。",
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "questionNo": 20
     },
     {
       "sourcePage": null,
@@ -11621,13 +11652,16 @@ window.WRONG_QUESTIONS = {
         "单位方向向量",
         "点积",
         "概念错误",
-        "计算错误"
+        "计算错误",
+        "考研真题",
+        "2017年",
+        "数学一"
       ],
-      "sourceRef": "2026-10-05 当日对话 · 方向导数中的方向单位化",
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第3题",
       "questionType": "选择题",
       "stem": "函数 \\(f(x,y,z)=x^2y+z^2\\) 在点 \\((1,2,0)\\) 处沿向量 \\(n=(1,2,2)\\) 的方向导数为（ ）。\n\n(A) \\(12\\)；(B) \\(6\\)；(C) \\(4\\)；(D) \\(2\\)。",
       "answer": "选择 (D)，方向导数为 \\(2\\)。",
-      "analysis": "先求梯度：\n\\[\n\\nabla f=(2xy,x^2,2z),\n\\]\n所以\n\\[\n\\nabla f(1,2,0)=(4,1,0).\n\\]\n题目给的是方向向量而非单位向量，故先单位化：\n\\[\n|n|=\\sqrt{1^2+2^2+2^2}=3,qquad e_n=\\frac n{|n|}=\\left(\\frac13,\\frac23,\\frac23\\right).\n\\]\n于是\n\\[\nD_{e_n}f(1,2,0)=\\nabla f(1,2,0)\\cdot e_n\n=4\\cdot\\frac13+1\\cdot\\frac23=2.\n\\]",
+      "analysis": "先求梯度：\n\\[\n\\nabla f=(2xy,x^2,2z),\n\\]\n所以\n\\[\n\\nabla f(1,2,0)=(4,1,0).\n\\]\n题目给的是方向向量而非单位向量，故先单位化：\n\\[\n|n|=\\sqrt{1^2+2^2+2^2}=3,\\qquad e_n=\\frac n{|n|}=\\left(\\frac13,\\frac23,\\frac23\\right).\n\\]\n于是\n\\[\nD_{e_n}f(1,2,0)=\\nabla f(1,2,0)\\cdot e_n\n=4\\cdot\\frac13+1\\cdot\\frac23=2.\n\\]",
       "errorCause": "直接计算 \\(\\nabla f\\cdot n\\) 得到 6，没有先把给定方向向量单位化；也可能把梯度分量 \\(f_x=2xy\\) 误写成 \\(2x\\)。",
       "knowledgePoints": [
         "方向导数",
@@ -11647,9 +11681,31 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "梯度计算、方向单位化和选项代入交叉复核",
       "errorCauseEvidence": "用户在批改对话中继续追问并表示看不懂，方法步骤不稳定。",
-      "questionNo": 5,
       "reviewFocus": "卡壳位置：把“沿向量”直接理解为与原向量点乘。第一步：看到“方向导数”立刻写 \\(\\nabla f\\cdot e\\)，其中 \\(e\\) 必须是单位向量。考场信号：题目给坐标向量时先算模长；给两点时先做终点减起点。易错点：漏除 \\(|n|\\)。防卡方法：在草稿上强制写出 \\(e=n/|n|\\) 再点乘。",
-      "contentFingerprint": "5bc583b7dfc91b6fae3497cfe0a7d93a42d98adac4817abe5dae1302a45a9e7a"
+      "contentFingerprint": "d43bbdab889b461937b8d808e312a56f36111420ced666cc275208c12aac5c3e",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 3,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "wrongSubquestions": [],
+      "originalSourceRef": "2026-10-05 当日对话 · 方向导数中的方向单位化",
+      "originalQuestionNo": 5,
+      "transcriptionNote": "；已与上传2017年数学一试卷核对，归入考研真题。",
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "questionNo": 3
     },
     {
       "sourcePage": null,
@@ -11676,9 +11732,12 @@ window.WRONG_QUESTIONS = {
         "可对角化",
         "若尔当形",
         "方法选择困难",
-        "概念错误"
+        "概念错误",
+        "考研真题",
+        "2017年",
+        "数学一"
       ],
-      "sourceRef": "2026-10-05 当日对话 · 相似判定与特征向量个数",
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第6题",
       "questionType": "选择题",
       "stem": "已知\n\\[\nA=\\begin{pmatrix}2&0&0\\\\0&2&1\\\\0&0&1\\end{pmatrix},\\quad\nB=\\begin{pmatrix}2&1&0\\\\0&2&0\\\\0&0&1\\end{pmatrix},\\quad\nC=\\begin{pmatrix}1&0&0\\\\0&2&0\\\\0&0&2\\end{pmatrix}.\n\\]\n判断下列结论正确的是：\n\n(A) \\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 相似；\n(B) \\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 不相似；\n(C) \\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 相似；\n(D) \\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 不相似。",
       "answer": "选择 (B)。",
@@ -11708,9 +11767,31 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "特征空间维数、可对角化条件与相似变换关系交叉复核",
       "errorCauseEvidence": "用户明确追问相似条件及特征向量关系，表明相似判定标准不稳定。",
-      "questionNo": 6,
       "reviewFocus": "卡壳位置：只会比较特征值。突破口：目标 \\(C\\) 是对角矩阵，所以问题转化为“是否可对角化”。第一步算重特征值 \\(2\\) 的 \\(\\dim\\ker(M-2I)\\)。考场信号：同特征值但有上三角非零元，立即检查几何重数。易错点：特征值相同不保证相似，特征向量也不要求相同。防卡方法：固定检查“特征多项式—最小多项式/几何重数—若尔当块”。",
-      "contentFingerprint": "dc359e3013ad48da6acd3ae2d6ac59c0f57ea6774be56fe6ef72e507f0735555"
+      "contentFingerprint": "67363be7c5bbf949d2719d65e0012c7adb0c3f7b896827b2fbdd5009ac8406ac",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 6,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "wrongSubquestions": [],
+      "originalSourceRef": "2026-10-05 当日对话 · 相似判定与特征向量个数",
+      "originalQuestionNo": 6,
+      "transcriptionNote": "；已与上传2017年数学一试卷核对，归入考研真题。",
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "questionNo": 6
     },
     {
       "sourcePage": null,
@@ -11737,9 +11818,14 @@ window.WRONG_QUESTIONS = {
         "正相关",
         "等价变形",
         "方法选择困难",
-        "概念错误"
+        "概念错误",
+        "考研真题",
+        "2017年",
+        "数学一",
+        "全概率公式",
+        "事件正相关"
       ],
-      "sourceRef": "2026-10-05 当日对话 · 条件概率不等式的等价条件",
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第7题",
       "questionType": "选择题",
       "stem": "设 \\(A,B\\) 为随机事件，且 \\(0<P(A)<1\\)、\\(0<P(B)<1\\)。则\n\\[\nP(A\\mid B)>P(A\\mid \\overline B)\n\\]\n的充分必要条件是（ ）。\n\n(A) \\(P(B\\mid A)>P(B\\mid \\overline A)\\)；\n(B) \\(P(B\\mid A)<P(B\\mid \\overline A)\\)；\n(C) \\(P(\\overline B\\mid A)>P(B\\mid \\overline A)\\)；\n(D) \\(P(\\overline B\\mid A)<P(B\\mid \\overline A)\\)。",
       "answer": "选择 (A)。",
@@ -11751,7 +11837,8 @@ window.WRONG_QUESTIONS = {
         "贝叶斯公式",
         "正相关",
         "联合概率",
-        "补事件"
+        "补事件",
+        "事件正相关"
       ],
       "similarQuestionPrompt": "仿考研选择题：设 \\(0<P(A),P(B)<1\\)，判断 \\(P(A\\mid B)>P(A)\\)、\\(P(B\\mid A)>P(B)\\)、\\(P(AB)>P(A)P(B)\\) 三者的等价关系，并加入两个含补事件的干扰项。",
       "historySources": [
@@ -11764,14 +11851,692 @@ window.WRONG_QUESTIONS = {
       ],
       "answerVerification": "两组条件概率分别通分，均化为正相关判据后复核",
       "errorCauseEvidence": "用户上传圈题并表示看不懂，属于条件概率等价变形的明确卡壳。",
-      "questionNo": 7,
       "reviewFocus": "卡壳位置：不知道怎样比较条件概率，也不敢交换 \\(A,B\\)。第一步：把两边都按定义展开并通分，目标是化成 \\(P(AB)>P(A)P(B)\\)。考场信号：出现 \\(P(A\\mid B)\\) 与 \\(P(A\\mid\\bar B)\\) 的大小比较，想到事件正相关。易错点：条件概率不能直接交换，补事件位置必须逐项核对。防卡方法：统一化到联合概率乘积判据再比较选项。",
-      "contentFingerprint": "783c9faba2b7ea3787d0cf7ca432cdd1a70180e527dd2cbfdb0c945f6eb1d6aa"
+      "contentFingerprint": "e7ed2e50a2e7e5507c614c72856b88ba71cbb59538c711908a18a89ed1198b9a",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 7,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "wrongSubquestions": [],
+      "originalSourceRef": "2026-10-05 当日对话 · 条件概率不等式的等价条件",
+      "originalQuestionNo": 7,
+      "transcriptionNote": "；已与上传2017年数学一试卷核对，归入考研真题。",
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "questionNo": 7
+    },
+    {
+      "id": "exam-2017-math1-q02",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 1,
+      "printedPage": 32,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第2题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 可导，且 \\(f(x)f\\prime(x)>0\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(1)>f(-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(1)<f(-1)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(|f(1)|>|f(-1)|\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(|f(1)|<|f(-1)|\\)"
+        }
+      ],
+      "answer": "C",
+      "analysis": "令 \\(g(x)=f^2(x)\\)，则 \\(g\\prime(x)=2f(x)f\\prime(x)>0\\)，所以 \\(f^2(1)>f^2(-1)\\)，从而 \\(|f(1)|>|f(-1)|\\)。函数可以始终为正或始终为负，故不能确定 \\(f(1)\\) 与 \\(f(-1)\\) 的大小。",
+      "knowledgePoints": [
+        "导数与单调性",
+        "辅助函数",
+        "绝对值比较"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "导数与单调性",
+        "辅助函数",
+        "绝对值比较"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第2题，围绕导数与单调性、辅助函数、绝对值比较设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 2,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "56c62e4a404dd79ea98819d122266d09ae06a21a9ff56adc1b8fdc8496891b09",
+      "questionNo": 2
+    },
+    {
+      "id": "exam-2017-math1-q08",
+      "subject": "概率论与数理统计",
+      "chapter": 7,
+      "chapterTitle": "数理统计基本概念",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第8题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\ (n\\ge2)\\) 为来自总体 \\(N(\\mu,1)\\) 的简单随机样本，记 \\(\\overline X=\\frac1n\\sum_{i=1}^nX_i\\)，则下列结论中不正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sum_{i=1}^n(X_i-\\mu)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "B",
+          "text": "\\(2(X_n-X_1)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\sum_{i=1}^n(X_i-\\overline X)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "D",
+          "text": "\\(n(\\overline X-\\mu)^2\\) 服从 \\(\\chi^2\\) 分布"
+        }
+      ],
+      "answer": "B",
+      "analysis": "A项服从 \\(\\chi^2(n)\\)；C项服从 \\(\\chi^2(n-1)\\)；D项服从 \\(\\chi^2(1)\\)。由于 \\((X_n-X_1)/\\sqrt2\\sim N(0,1)\\)，应有 \\((X_n-X_1)^2/2\\sim\\chi^2(1)\\)，而B项 \\(2(X_n-X_1)^2\\) 是该卡方变量的4倍，故不服从卡方分布。",
+      "knowledgePoints": [
+        "正态样本",
+        "卡方分布",
+        "自由度",
+        "标准化"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "正态样本",
+        "卡方分布",
+        "自由度",
+        "标准化"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第8题，围绕正态样本、卡方分布、自由度、标准化设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 8,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "f956fb4668112381aebe6792c91e938cfc67e58b635c58944fab2c9192fdaca9",
+      "questionNo": 8
+    },
+    {
+      "id": "exam-2017-math1-q12",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第12题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "填空题",
+      "stem": "幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^{n-1}nx^{n-1}\\) 在区间 \\((-1,1)\\) 内的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(S(x)=\\dfrac1{(1+x)^2}\\)。",
+      "analysis": "当 \\(|x|<1\\) 时，几何级数 \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}x^n=x/(1+x)\\)。在收敛区间内逐项求导，得到 \\(S(x)=[x/(1+x)]\\prime=1/(1+x)^2\\)。",
+      "knowledgePoints": [
+        "幂级数求和",
+        "逐项求导",
+        "几何级数"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "幂级数求和",
+        "逐项求导",
+        "几何级数"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第12题，围绕幂级数求和、逐项求导、几何级数设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "74a62740bf8c3a6d62f72a8c7ff595576b8281aa888b97d0dd164e69f033f151",
+      "questionNo": 12
+    },
+    {
+      "id": "exam-2017-math1-q15",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第15题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设函数 \\(f(u,v)\\) 具有2阶连续偏导数，\\(y=f(e^x,\\cos x)\\)，求 \\(\\left.\\frac{\\mathrm dy}{\\mathrm dx}\\right|_{x=0}\\)、\\(\\left.\\frac{\\mathrm d^2y}{\\mathrm dx^2}\\right|_{x=0}\\)。",
+      "options": [],
+      "answer": "\\(y\\prime(0)=f_u(1,1)\\)，\\(y\\prime\\prime(0)=f_{uu}(1,1)+f_u(1,1)-f_v(1,1)\\)。",
+      "analysis": "令 \\(u=e^x,v=\\cos x\\)。链式法则给出 \\(y\\prime=f_u u\\prime+f_v v\\prime\\)，以及 \\[y\\prime\\prime=f_{uu}(u\\prime)^2+2f_{uv}u\\prime v\\prime+f_{vv}(v\\prime)^2+f_u u\\prime\\prime+f_v v\\prime\\prime.\\]在 \\(x=0\\) 时，\\((u,v)=(1,1)\\)，\\(u\\prime=u\\prime\\prime=1\\)，\\(v\\prime=0,v\\prime\\prime=-1\\)，代入即得答案。",
+      "knowledgePoints": [
+        "多元复合函数",
+        "二阶导数",
+        "链式法则"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "多元复合函数",
+        "二阶导数",
+        "链式法则"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第15题，围绕多元复合函数、二阶导数、链式法则设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：二阶导数；保留整题用于复习。",
+      "wrongSubquestions": [
+        "二阶导数"
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [
+            "二阶导数"
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "bd9da05f4281634f7121e8699215375dd6340781fa7fd8997d228c19a1edbdf4",
+      "questionNo": 15
+    },
+    {
+      "id": "exam-2017-math1-q16",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第16题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "求 \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{k}{n^2}\\ln\\left(1+\\frac{k}{n}\\right)\\)。",
+      "options": [],
+      "answer": "\\(\\dfrac14\\)。",
+      "analysis": "写成黎曼和 \\(\\frac1n\\sum_{k=1}^n\\frac kn\\ln(1+k/n)\\)，极限等于 \\(\\int_0^1x\\ln(1+x)\\,\\mathrm dx\\)。分部积分得 \\[\\frac12\\ln2-\\frac12\\int_0^1\\frac{x^2}{1+x}\\,\\mathrm dx=\\frac12\\ln2-\\frac12\\left(\\frac12-1+\\ln2\\right)=\\frac14.\\]",
+      "knowledgePoints": [
+        "黎曼和",
+        "定积分定义",
+        "分部积分"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "黎曼和",
+        "定积分定义",
+        "分部积分"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第16题，围绕黎曼和、定积分定义、分部积分设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "8a4149ea55d2021a83a2a622e5ea91b8e73282ff048c9d397e4329ad39079b7d",
+      "questionNo": 16
+    },
+    {
+      "id": "exam-2017-math1-q17",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第17题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "已知函数 \\(y(x)\\) 由方程 \\(x^3+y^3-3x+3y-2=0\\) 确定，求 \\(y(x)\\) 的极值。",
+      "options": [],
+      "answer": "\\(x=-1\\) 时取得极小值 \\(0\\)；\\(x=1\\) 时取得极大值 \\(1\\)。",
+      "analysis": "对 \\(x\\) 求导，得 \\(y\\prime=(1-x^2)/(1+y^2)\\)。分母恒正，故 \\(y\\prime\\) 在 \\(( -\\infty,-1)\\)、\\((-1,1)\\)、\\((1,+\\infty)\\) 上依次为负、正、负，极小点为 \\(x=-1\\)，极大点为 \\(x=1\\)。代回方程：在 \\(x=-1\\) 得 \\(y(y^2+3)=0\\)，故 \\(y=0\\)；在 \\(x=1\\) 得 \\((y-1)(y^2+y+4)=0\\)，故 \\(y=1\\)。",
+      "knowledgePoints": [
+        "隐函数求导",
+        "极值",
+        "导数符号"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "隐函数求导",
+        "极值",
+        "导数符号"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第17题，围绕隐函数求导、极值、导数符号设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "90621dccfae45dbfc7bb10f585214c8f4984d21082958d6c80bb6381e995cbc5",
+      "questionNo": 17
+    },
+    {
+      "id": "exam-2017-math1-q18",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第18题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设函数 \\(f(x)\\) 在区间 \\([0,1]\\) 上具有2阶导数，且 \\(f(1)>0,\\ \\lim_{x\\to0^+}\\frac{f(x)}x<0\\)。证明：\\n(1) 方程 \\(f(x)=0\\) 在区间 \\((0,1)\\) 内至少存在一个实根；\\n(2) 方程 \\(f(x)f\\prime\\prime(x)+[f\\prime(x)]^2=0\\) 在区间 \\((0,1)\\) 内至少存在两个不同的实根。",
+      "options": [],
+      "answer": "两结论均成立。",
+      "analysis": "由极限及连续性可知 \\(f(0)=0\\)，且存在 \\(a\\in(0,1)\\) 使 \\(f(a)<0\\)。结合 \\(f(1)>0\\)，由零点定理得 \\(c\\in(a,1)\\) 使 \\(f(c)=0\\)，证明(1)。\\n由 \\(f(0)=f(c)=0\\)，罗尔定理给出 \\(t\\in(0,c)\\) 使 \\(f\\prime(t)=0\\)。令 \\(g(x)=f(x)f\\prime(x)\\)，则 \\(g(0)=g(t)=g(c)=0\\)。分别在 \\([0,t]\\) 和 \\([t,c]\\) 上对 \\(g\\) 用罗尔定理，得到 \\(\\xi_1\\in(0,t),\\xi_2\\in(t,c)\\) 满足 \\(g\\prime(\\xi_i)=f(\\xi_i)f\\prime\\prime(\\xi_i)+[f\\prime(\\xi_i)]^2=0\\)，且两根不同。",
+      "knowledgePoints": [
+        "零点定理",
+        "罗尔定理",
+        "辅助函数",
+        "多根存在性"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "零点定理",
+        "罗尔定理",
+        "辅助函数",
+        "多根存在性"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第18题，围绕零点定理、罗尔定理、辅助函数、多根存在性设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：2；保留整题用于复习。",
+      "wrongSubquestions": [
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [
+            2
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "619920f4b54c9f378ee46a92ecba5ef37e878d36b73f7e9c3ab6cf43628810ac",
+      "questionNo": 18
+    },
+    {
+      "id": "exam-2017-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第19题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设薄片型物体 \\(S\\) 是圆锥面 \\(z=\\sqrt{x^2+y^2}\\) 被柱面 \\(z^2=2x\\) 所截的有限部分，其上任一点的密度为 \\(\\mu(x,y,z)=9\\sqrt{x^2+y^2+z^2}\\)。记圆锥面与柱面的交线为 \\(C\\)。\\n(1) 求 \\(C\\) 在 \\(xOy\\) 平面上的投影曲线的方程；\\n(2) 求 \\(S\\) 的质量 \\(M\\)。",
+      "options": [],
+      "answer": "(1) \\(x^2+y^2=2x\\)；(2) \\(M=64\\)。",
+      "analysis": "(1) 消去 \\(z\\)，得 \\(x^2+y^2=2x\\)，即 \\((x-1)^2+y^2=1\\)。\\n(2) 投影区域 \\(D\\) 为该圆盘。令 \\(r=\\sqrt{x^2+y^2}\\)，锥面上 \\(z=r\\)，故 \\(\\mu=9\\sqrt2r\\)，\\(\\mathrm dS=\\sqrt2\\,\\mathrm dx\\mathrm dy\\)（锥顶为零面积点，不影响积分）。极坐标下 \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta\\)，于是 \\[M=18\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r^2\\,\\mathrm dr\\mathrm d\\theta=48\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,\\mathrm d\\theta=64.\\]",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "曲面质量",
+        "投影区域",
+        "极坐标"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "第一类曲面积分",
+        "曲面质量",
+        "投影区域",
+        "极坐标"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第19题，围绕第一类曲面积分、曲面质量、投影区域、极坐标设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "3e34c99b10d0cc690520544029877ce6f0766de544b57fd1a7907f6445a00992",
+      "questionNo": 19
+    },
+    {
+      "id": "exam-2017-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "sourcePage": 3,
+      "printedPage": 34,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第22题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设随机变量 \\(X,Y\\) 相互独立，且 \\(X\\) 的概率分布为 \\(P(X=0)=P(X=2)=\\frac12\\)，\\(Y\\) 的概率密度为 \\[f(y)=\\begin{cases}2y,&0<y<1,\\\\0,&\\text{其他}.\\end{cases}\\]\\n(1) 求 \\(P\\{Y\\le E(Y)\\}\\)；\\n(2) 求 \\(Z=X+Y\\) 的概率密度。",
+      "options": [],
+      "answer": "(1) \\(4/9\\)；(2) \\[f_Z(z)=\\begin{cases}z,&0<z<1,\\\\z-2,&2<z<3,\\\\0,&\\text{其他}.\\end{cases}\\]",
+      "analysis": "(1) \\(E(Y)=\\int_0^1y\\cdot2y\\,\\mathrm dy=2/3\\)，所以 \\(P(Y\\le E(Y))=\\int_0^{2/3}2y\\,\\mathrm dy=4/9\\)。\\n(2) 按 \\(X=0,2\\) 条件分解，利用独立性得 \\(f_Z(z)=\\frac12f_Y(z)+\\frac12f_Y(z-2)\\)。两段支撑分别为 \\((0,1)\\) 和 \\((2,3)\\)，代入即得分段密度。",
+      "knowledgePoints": [
+        "期望积分",
+        "全概率公式",
+        "离散与连续变量之和",
+        "混合密度"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "期望积分",
+        "全概率公式",
+        "离散与连续变量之和",
+        "混合密度"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第22题，围绕期望积分、全概率公式、离散与连续变量之和、混合密度设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：1；保留整题用于复习。",
+      "wrongSubquestions": [
+        1
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [
+            1
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "351779cf04fe43119791988f996090ee2ef89d66f0ecf50e48aaf317b28c2c80",
+      "questionNo": 22
+    },
+    {
+      "id": "exam-2017-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 8,
+      "chapterTitle": "参数估计",
+      "sourcePage": 3,
+      "printedPage": 34,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第23题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "某工程师为了解一台天平的精度，用该天平对一物体的质量做 \\(n\\) 次测量，该物体的质量 \\(\\mu\\) 是已知的。\\(n\\) 次测量结果 \\(X_1,\\ldots,X_n\\) 相互独立且均服从正态分布 \\(N(\\mu,\\sigma^2)\\)，该工程师记录的是 \\(n\\) 次测量的绝对误差 \\(Z_i=|X_i-\\mu|\\ (i=1,\\ldots,n)\\)。利用 \\(Z_1,\\ldots,Z_n\\) 估计 \\(\\sigma\\)。\\n(1) 求 \\(Z_1\\) 的概率密度；\\n(2) 利用一阶矩求 \\(\\sigma\\) 的矩估计量；\\n(3) 求 \\(\\sigma\\) 的最大似然估计量。",
+      "options": [],
+      "answer": "(1) \\[f_Z(z;\\sigma)=\\begin{cases}\\dfrac{\\sqrt{2/\\pi}}{\\sigma}e^{-z^2/(2\\sigma^2)},&z>0,\\\\0,&\\text{其他};\\end{cases}\\]\\n(2) \\(\\widehat\\sigma_M=\\sqrt{\\pi/2}\\,\\overline Z\\)；(3) \\(\\widehat\\sigma_L=\\sqrt{\\frac1n\\sum_{i=1}^n Z_i^2}\\)。",
+      "analysis": "(1) \\(X_i-\\mu\\sim N(0,\\sigma^2)\\)，绝对值将左右两半折叠，故正半轴密度加倍。\\n(2) \\(E(Z)=\\sigma\\sqrt{2/\\pi}\\)。以样本一阶矩 \\(\\overline Z\\) 替代总体一阶矩，解得矩估计量。\\n(3) 样本相互独立，记 \\(S=\\sum z_i^2\\)。对数似然为 \\(\\ell(\\sigma)=C-n\\ln\\sigma-S/(2\\sigma^2)\\)，其导数为 \\(\\ell\\prime(\\sigma)=-n/\\sigma+S/\\sigma^3\\)。当 \\(S>0\\) 时，在 \\(\\sigma=\\sqrt{S/n}\\) 两侧分别为正、负，故该点为唯一最大值；全零样本发生概率为零。",
+      "knowledgePoints": [
+        "半正态分布",
+        "绝对误差",
+        "矩估计",
+        "最大似然估计"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "半正态分布",
+        "绝对误差",
+        "矩估计",
+        "最大似然估计"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第23题，围绕半正态分布、绝对误差、矩估计、最大似然估计设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2017-math1-20261005"
+      ],
+      "contentFingerprint": "56a9c548df43f4b05ad54238f42c9c2e0d765792f6815e5d64b50bdbd7322706",
+      "questionNo": 23
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -11781,5 +12546,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-09-30-v1",
     "daily-2026-10-01-v1",
     "daily-2026-10-04-v1"
+  ],
+  "examImportBatches": [
+    "exam-2017-math1-20261005"
   ]
 };

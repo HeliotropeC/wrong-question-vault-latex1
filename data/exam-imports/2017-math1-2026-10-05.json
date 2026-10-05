@@ -1,0 +1,1010 @@
+{
+  "batchId": "exam-2017-math1-20261005",
+  "importedAt": "2026-10-05",
+  "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+  "sourceLibraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2",
+  "sourceCategory": "考研真题",
+  "examYear": 2017,
+  "examPaper": "数学一",
+  "selectionRule": "红圈、叉号、局部圈选或扣分均计入；无错题标记的题目不导入。",
+  "counts": {
+    "marked": 14,
+    "added": 10,
+    "merged": 4,
+    "before": 260,
+    "after": 270
+  },
+  "decisions": [
+    {
+      "questionNo": 2,
+      "targetId": "exam-2017-math1-q02",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 3,
+      "targetId": "daily-20261005-calc-directional-derivative-unit-vector",
+      "decision": "merged-existing",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 6,
+      "targetId": "daily-20261005-linear-similarity-geometric-multiplicity",
+      "decision": "merged-existing",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 7,
+      "targetId": "daily-20261005-prob-positive-association-conditional-probability",
+      "decision": "merged-existing",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 8,
+      "targetId": "exam-2017-math1-q08",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 12,
+      "targetId": "exam-2017-math1-q12",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 15,
+      "targetId": "exam-2017-math1-q15",
+      "decision": "added",
+      "wrongSubquestions": [
+        "二阶导数"
+      ]
+    },
+    {
+      "questionNo": 16,
+      "targetId": "exam-2017-math1-q16",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 17,
+      "targetId": "exam-2017-math1-q17",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 18,
+      "targetId": "exam-2017-math1-q18",
+      "decision": "added",
+      "wrongSubquestions": [
+        2
+      ]
+    },
+    {
+      "questionNo": 19,
+      "targetId": "exam-2017-math1-q19",
+      "decision": "added",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 20,
+      "targetId": "daily-20261005-linear-rank-eigenvalues-system",
+      "decision": "merged-existing",
+      "wrongSubquestions": [
+        1
+      ]
+    },
+    {
+      "questionNo": 22,
+      "targetId": "exam-2017-math1-q22",
+      "decision": "added",
+      "wrongSubquestions": [
+        1
+      ]
+    },
+    {
+      "questionNo": 23,
+      "targetId": "exam-2017-math1-q23",
+      "decision": "added",
+      "wrongSubquestions": []
+    }
+  ],
+  "reviewedQuestions": [
+    {
+      "id": "exam-2017-math1-q02",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "questionNo": 2,
+      "sourcePage": 1,
+      "printedPage": 32,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第2题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 可导，且 \\(f(x)f\\prime(x)>0\\)，则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(1)>f(-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(1)<f(-1)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(|f(1)|>|f(-1)|\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(|f(1)|<|f(-1)|\\)"
+        }
+      ],
+      "answer": "C",
+      "analysis": "令 \\(g(x)=f^2(x)\\)，则 \\(g\\prime(x)=2f(x)f\\prime(x)>0\\)，所以 \\(f^2(1)>f^2(-1)\\)，从而 \\(|f(1)|>|f(-1)|\\)。函数可以始终为正或始终为负，故不能确定 \\(f(1)\\) 与 \\(f(-1)\\) 的大小。",
+      "knowledgePoints": [
+        "导数与单调性",
+        "辅助函数",
+        "绝对值比较"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "导数与单调性",
+        "辅助函数",
+        "绝对值比较"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第2题，围绕导数与单调性、辅助函数、绝对值比较设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 2,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q03",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "questionNo": 3,
+      "sourcePage": 1,
+      "printedPage": 32,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第3题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "函数 \\(f(x,y,z)=x^2y+z^2\\) 在点 \\((1,2,0)\\) 处沿向量 \\(n=(1,2,2)\\) 的方向导数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "D",
+      "analysis": "\\(\\nabla f(1,2,0)=(4,1,0)\\)，\\(|n|=3\\)，所以方向导数为 \\((4,1,0)\\cdot(1,2,2)/3=2\\)。",
+      "knowledgePoints": [
+        "方向导数",
+        "梯度",
+        "单位方向向量"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "方向导数",
+        "梯度",
+        "单位方向向量"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第3题，围绕方向导数、梯度、单位方向向量设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 3,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q06",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "questionNo": 6,
+      "sourcePage": 1,
+      "printedPage": 32,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第6题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "已知矩阵 \\[A=\\begin{pmatrix}2&0&0\\\\0&2&1\\\\0&0&1\\end{pmatrix},\\quad B=\\begin{pmatrix}2&1&0\\\\0&2&0\\\\0&0&1\\end{pmatrix},\\quad C=\\begin{pmatrix}1&0&0\\\\0&2&0\\\\0&0&2\\end{pmatrix},\\]则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 相似"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\) 与 \\(C\\) 相似，\\(B\\) 与 \\(C\\) 不相似"
+        },
+        {
+          "label": "C",
+          "text": "\\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 相似"
+        },
+        {
+          "label": "D",
+          "text": "\\(A\\) 与 \\(C\\) 不相似，\\(B\\) 与 \\(C\\) 不相似"
+        }
+      ],
+      "answer": "B",
+      "analysis": "三矩阵特征值均为 \\(1,2,2\\)。\\(r(A-2I)=1\\)，故特征值2的特征空间维数为2，\\(A\\) 可对角化并与 \\(C\\) 相似；\\(r(B-2I)=2\\)，故该特征空间维数为1，\\(B\\) 不可对角化，与 \\(C\\) 不相似。",
+      "knowledgePoints": [
+        "矩阵相似",
+        "几何重数",
+        "可对角化"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "矩阵相似",
+        "几何重数",
+        "可对角化"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第6题，围绕矩阵相似、几何重数、可对角化设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 6,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q07",
+      "subject": "概率论与数理统计",
+      "chapter": 1,
+      "chapterTitle": "随机事件与概率",
+      "questionNo": 7,
+      "sourcePage": 1,
+      "printedPage": 32,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第7题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(A,B\\) 为随机事件。若 \\(0<P(A)<1,\\ 0<P(B)<1\\)，则 \\(P(A\\mid B)>P(A\\mid\\overline B)\\) 的充分必要条件是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(B\\mid A)>P(B\\mid\\overline A)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(B\\mid A)<P(B\\mid\\overline A)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(P(\\overline B\\mid A)>P(B\\mid\\overline A)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(P(\\overline B\\mid A)<P(B\\mid\\overline A)\\)"
+        }
+      ],
+      "answer": "A",
+      "analysis": "设 \\(a=P(A),b=P(B),c=P(AB)\\)。原条件等价于 \\(c/b>(a-c)/(1-b)\\)，即 \\(c>ab\\)。选项A等价于 \\(c/a>(b-c)/(1-a)\\)，同样得到 \\(c>ab\\)，故选择A。",
+      "knowledgePoints": [
+        "条件概率",
+        "全概率公式",
+        "事件正相关"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "条件概率",
+        "全概率公式",
+        "事件正相关"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第7题，围绕条件概率、全概率公式、事件正相关设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 7,
+          "pdfPage": 1,
+          "printedPage": 32,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q08",
+      "subject": "概率论与数理统计",
+      "chapter": 7,
+      "chapterTitle": "数理统计基本概念",
+      "questionNo": 8,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第8题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\ (n\\ge2)\\) 为来自总体 \\(N(\\mu,1)\\) 的简单随机样本，记 \\(\\overline X=\\frac1n\\sum_{i=1}^nX_i\\)，则下列结论中不正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sum_{i=1}^n(X_i-\\mu)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "B",
+          "text": "\\(2(X_n-X_1)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\sum_{i=1}^n(X_i-\\overline X)^2\\) 服从 \\(\\chi^2\\) 分布"
+        },
+        {
+          "label": "D",
+          "text": "\\(n(\\overline X-\\mu)^2\\) 服从 \\(\\chi^2\\) 分布"
+        }
+      ],
+      "answer": "B",
+      "analysis": "A项服从 \\(\\chi^2(n)\\)；C项服从 \\(\\chi^2(n-1)\\)；D项服从 \\(\\chi^2(1)\\)。由于 \\((X_n-X_1)/\\sqrt2\\sim N(0,1)\\)，应有 \\((X_n-X_1)^2/2\\sim\\chi^2(1)\\)，而B项 \\(2(X_n-X_1)^2\\) 是该卡方变量的4倍，故不服从卡方分布。",
+      "knowledgePoints": [
+        "正态样本",
+        "卡方分布",
+        "自由度",
+        "标准化"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "正态样本",
+        "卡方分布",
+        "自由度",
+        "标准化"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第8题，围绕正态样本、卡方分布、自由度、标准化设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 8,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q12",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "questionNo": 12,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第12题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "填空题",
+      "stem": "幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^{n-1}nx^{n-1}\\) 在区间 \\((-1,1)\\) 内的和函数 \\(S(x)=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(S(x)=\\dfrac1{(1+x)^2}\\)。",
+      "analysis": "当 \\(|x|<1\\) 时，几何级数 \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}x^n=x/(1+x)\\)。在收敛区间内逐项求导，得到 \\(S(x)=[x/(1+x)]\\prime=1/(1+x)^2\\)。",
+      "knowledgePoints": [
+        "幂级数求和",
+        "逐项求导",
+        "几何级数"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "幂级数求和",
+        "逐项求导",
+        "几何级数"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第12题，围绕幂级数求和、逐项求导、几何级数设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q15",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "questionNo": 15,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第15题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设函数 \\(f(u,v)\\) 具有2阶连续偏导数，\\(y=f(e^x,\\cos x)\\)，求 \\(\\left.\\frac{\\mathrm dy}{\\mathrm dx}\\right|_{x=0}\\)、\\(\\left.\\frac{\\mathrm d^2y}{\\mathrm dx^2}\\right|_{x=0}\\)。",
+      "options": [],
+      "answer": "\\(y\\prime(0)=f_u(1,1)\\)，\\(y\\prime\\prime(0)=f_{uu}(1,1)+f_u(1,1)-f_v(1,1)\\)。",
+      "analysis": "令 \\(u=e^x,v=\\cos x\\)。链式法则给出 \\(y\\prime=f_u u\\prime+f_v v\\prime\\)，以及 \\[y\\prime\\prime=f_{uu}(u\\prime)^2+2f_{uv}u\\prime v\\prime+f_{vv}(v\\prime)^2+f_u u\\prime\\prime+f_v v\\prime\\prime.\\]在 \\(x=0\\) 时，\\((u,v)=(1,1)\\)，\\(u\\prime=u\\prime\\prime=1\\)，\\(v\\prime=0,v\\prime\\prime=-1\\)，代入即得答案。",
+      "knowledgePoints": [
+        "多元复合函数",
+        "二阶导数",
+        "链式法则"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "多元复合函数",
+        "二阶导数",
+        "链式法则"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第15题，围绕多元复合函数、二阶导数、链式法则设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：二阶导数；保留整题用于复习。",
+      "wrongSubquestions": [
+        "二阶导数"
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [
+            "二阶导数"
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q16",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "questionNo": 16,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第16题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "求 \\(\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{k}{n^2}\\ln\\left(1+\\frac{k}{n}\\right)\\)。",
+      "options": [],
+      "answer": "\\(\\dfrac14\\)。",
+      "analysis": "写成黎曼和 \\(\\frac1n\\sum_{k=1}^n\\frac kn\\ln(1+k/n)\\)，极限等于 \\(\\int_0^1x\\ln(1+x)\\,\\mathrm dx\\)。分部积分得 \\[\\frac12\\ln2-\\frac12\\int_0^1\\frac{x^2}{1+x}\\,\\mathrm dx=\\frac12\\ln2-\\frac12\\left(\\frac12-1+\\ln2\\right)=\\frac14.\\]",
+      "knowledgePoints": [
+        "黎曼和",
+        "定积分定义",
+        "分部积分"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "黎曼和",
+        "定积分定义",
+        "分部积分"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第16题，围绕黎曼和、定积分定义、分部积分设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q17",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "questionNo": 17,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第17题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "已知函数 \\(y(x)\\) 由方程 \\(x^3+y^3-3x+3y-2=0\\) 确定，求 \\(y(x)\\) 的极值。",
+      "options": [],
+      "answer": "\\(x=-1\\) 时取得极小值 \\(0\\)；\\(x=1\\) 时取得极大值 \\(1\\)。",
+      "analysis": "对 \\(x\\) 求导，得 \\(y\\prime=(1-x^2)/(1+y^2)\\)。分母恒正，故 \\(y\\prime\\) 在 \\(( -\\infty,-1)\\)、\\((-1,1)\\)、\\((1,+\\infty)\\) 上依次为负、正、负，极小点为 \\(x=-1\\)，极大点为 \\(x=1\\)。代回方程：在 \\(x=-1\\) 得 \\(y(y^2+3)=0\\)，故 \\(y=0\\)；在 \\(x=1\\) 得 \\((y-1)(y^2+y+4)=0\\)，故 \\(y=1\\)。",
+      "knowledgePoints": [
+        "隐函数求导",
+        "极值",
+        "导数符号"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "隐函数求导",
+        "极值",
+        "导数符号"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第17题，围绕隐函数求导、极值、导数符号设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q18",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "questionNo": 18,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第18题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设函数 \\(f(x)\\) 在区间 \\([0,1]\\) 上具有2阶导数，且 \\(f(1)>0,\\ \\lim_{x\\to0^+}\\frac{f(x)}x<0\\)。证明：\\n(1) 方程 \\(f(x)=0\\) 在区间 \\((0,1)\\) 内至少存在一个实根；\\n(2) 方程 \\(f(x)f\\prime\\prime(x)+[f\\prime(x)]^2=0\\) 在区间 \\((0,1)\\) 内至少存在两个不同的实根。",
+      "options": [],
+      "answer": "两结论均成立。",
+      "analysis": "由极限及连续性可知 \\(f(0)=0\\)，且存在 \\(a\\in(0,1)\\) 使 \\(f(a)<0\\)。结合 \\(f(1)>0\\)，由零点定理得 \\(c\\in(a,1)\\) 使 \\(f(c)=0\\)，证明(1)。\\n由 \\(f(0)=f(c)=0\\)，罗尔定理给出 \\(t\\in(0,c)\\) 使 \\(f\\prime(t)=0\\)。令 \\(g(x)=f(x)f\\prime(x)\\)，则 \\(g(0)=g(t)=g(c)=0\\)。分别在 \\([0,t]\\) 和 \\([t,c]\\) 上对 \\(g\\) 用罗尔定理，得到 \\(\\xi_1\\in(0,t),\\xi_2\\in(t,c)\\) 满足 \\(g\\prime(\\xi_i)=f(\\xi_i)f\\prime\\prime(\\xi_i)+[f\\prime(\\xi_i)]^2=0\\)，且两根不同。",
+      "knowledgePoints": [
+        "零点定理",
+        "罗尔定理",
+        "辅助函数",
+        "多根存在性"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "零点定理",
+        "罗尔定理",
+        "辅助函数",
+        "多根存在性"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第18题，围绕零点定理、罗尔定理、辅助函数、多根存在性设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：2；保留整题用于复习。",
+      "wrongSubquestions": [
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [
+            2
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 19,
+      "sourcePage": 2,
+      "printedPage": 33,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第19题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设薄片型物体 \\(S\\) 是圆锥面 \\(z=\\sqrt{x^2+y^2}\\) 被柱面 \\(z^2=2x\\) 所截的有限部分，其上任一点的密度为 \\(\\mu(x,y,z)=9\\sqrt{x^2+y^2+z^2}\\)。记圆锥面与柱面的交线为 \\(C\\)。\\n(1) 求 \\(C\\) 在 \\(xOy\\) 平面上的投影曲线的方程；\\n(2) 求 \\(S\\) 的质量 \\(M\\)。",
+      "options": [],
+      "answer": "(1) \\(x^2+y^2=2x\\)；(2) \\(M=64\\)。",
+      "analysis": "(1) 消去 \\(z\\)，得 \\(x^2+y^2=2x\\)，即 \\((x-1)^2+y^2=1\\)。\\n(2) 投影区域 \\(D\\) 为该圆盘。令 \\(r=\\sqrt{x^2+y^2}\\)，锥面上 \\(z=r\\)，故 \\(\\mu=9\\sqrt2r\\)，\\(\\mathrm dS=\\sqrt2\\,\\mathrm dx\\mathrm dy\\)（锥顶为零面积点，不影响积分）。极坐标下 \\(-\\pi/2\\le\\theta\\le\\pi/2,\\ 0\\le r\\le2\\cos\\theta\\)，于是 \\[M=18\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r^2\\,\\mathrm dr\\mathrm d\\theta=48\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,\\mathrm d\\theta=64.\\]",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "曲面质量",
+        "投影区域",
+        "极坐标"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "第一类曲面积分",
+        "曲面质量",
+        "投影区域",
+        "极坐标"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第19题，围绕第一类曲面积分、曲面质量、投影区域、极坐标设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 33,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q20",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "questionNo": 20,
+      "sourcePage": 3,
+      "printedPage": 34,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第20题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设3阶矩阵 \\(A=(\\alpha_1,\\alpha_2,\\alpha_3)\\) 有3个不同的特征值，且 \\(\\alpha_3=\\alpha_1+2\\alpha_2\\)。\\n(1) 证明 \\(r(A)=2\\)；\\n(2) 设 \\(\\beta=\\alpha_1+\\alpha_2+\\alpha_3\\)，求方程组 \\(Ax=\\beta\\) 的通解。",
+      "options": [],
+      "answer": "(1) \\(r(A)=2\\)；(2) \\(x=(1,1,1)^T+t(1,2,-1)^T,\\ t\\in\\mathbb R\\)。",
+      "analysis": "列关系给出 \\(r(A)\\le2\\) 和特征值0。另两个特征值互异且非零，矩阵有3个不同特征值，可相似对角化为 \\(\\operatorname{diag}(0,\\lambda_1,\\lambda_2)\\)，故秩为2。\\(A(1,1,1)^T=\\beta\\)，\\(A(1,2,-1)^T=0\\)，又齐次解空间维数为1，因此通解为所列形式。",
+      "knowledgePoints": [
+        "矩阵秩",
+        "特征值",
+        "列向量相关",
+        "非齐次方程组"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "矩阵秩",
+        "特征值",
+        "列向量相关",
+        "非齐次方程组"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第20题，围绕矩阵秩、特征值、列向量相关、非齐次方程组设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：1；保留整题用于复习。",
+      "wrongSubquestions": [
+        1
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [
+            1
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "questionNo": 22,
+      "sourcePage": 3,
+      "printedPage": 34,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第22题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设随机变量 \\(X,Y\\) 相互独立，且 \\(X\\) 的概率分布为 \\(P(X=0)=P(X=2)=\\frac12\\)，\\(Y\\) 的概率密度为 \\[f(y)=\\begin{cases}2y,&0<y<1,\\\\0,&\\text{其他}.\\end{cases}\\]\\n(1) 求 \\(P\\{Y\\le E(Y)\\}\\)；\\n(2) 求 \\(Z=X+Y\\) 的概率密度。",
+      "options": [],
+      "answer": "(1) \\(4/9\\)；(2) \\[f_Z(z)=\\begin{cases}z,&0<z<1,\\\\z-2,&2<z<3,\\\\0,&\\text{其他}.\\end{cases}\\]",
+      "analysis": "(1) \\(E(Y)=\\int_0^1y\\cdot2y\\,\\mathrm dy=2/3\\)，所以 \\(P(Y\\le E(Y))=\\int_0^{2/3}2y\\,\\mathrm dy=4/9\\)。\\n(2) 按 \\(X=0,2\\) 条件分解，利用独立性得 \\(f_Z(z)=\\frac12f_Y(z)+\\frac12f_Y(z-2)\\)。两段支撑分别为 \\((0,1)\\) 和 \\((2,3)\\)，代入即得分段密度。",
+      "knowledgePoints": [
+        "期望积分",
+        "全概率公式",
+        "离散与连续变量之和",
+        "混合密度"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "期望积分",
+        "全概率公式",
+        "离散与连续变量之和",
+        "混合密度"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第22题，围绕期望积分、全概率公式、离散与连续变量之和、混合密度设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。明确标记的小问：1；保留整题用于复习。",
+      "wrongSubquestions": [
+        1
+      ],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [
+            1
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    },
+    {
+      "id": "exam-2017-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 8,
+      "chapterTitle": "参数估计",
+      "questionNo": 23,
+      "sourcePage": 3,
+      "printedPage": 34,
+      "sourceRef": "2017年全国硕士研究生招生考试数学（一）第23题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2017,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "某工程师为了解一台天平的精度，用该天平对一物体的质量做 \\(n\\) 次测量，该物体的质量 \\(\\mu\\) 是已知的。\\(n\\) 次测量结果 \\(X_1,\\ldots,X_n\\) 相互独立且均服从正态分布 \\(N(\\mu,\\sigma^2)\\)，该工程师记录的是 \\(n\\) 次测量的绝对误差 \\(Z_i=|X_i-\\mu|\\ (i=1,\\ldots,n)\\)。利用 \\(Z_1,\\ldots,Z_n\\) 估计 \\(\\sigma\\)。\\n(1) 求 \\(Z_1\\) 的概率密度；\\n(2) 利用一阶矩求 \\(\\sigma\\) 的矩估计量；\\n(3) 求 \\(\\sigma\\) 的最大似然估计量。",
+      "options": [],
+      "answer": "(1) \\[f_Z(z;\\sigma)=\\begin{cases}\\dfrac{\\sqrt{2/\\pi}}{\\sigma}e^{-z^2/(2\\sigma^2)},&z>0,\\\\0,&\\text{其他};\\end{cases}\\]\\n(2) \\(\\widehat\\sigma_M=\\sqrt{\\pi/2}\\,\\overline Z\\)；(3) \\(\\widehat\\sigma_L=\\sqrt{\\frac1n\\sum_{i=1}^n Z_i^2}\\)。",
+      "analysis": "(1) \\(X_i-\\mu\\sim N(0,\\sigma^2)\\)，绝对值将左右两半折叠，故正半轴密度加倍。\\n(2) \\(E(Z)=\\sigma\\sqrt{2/\\pi}\\)。以样本一阶矩 \\(\\overline Z\\) 替代总体一阶矩，解得矩估计量。\\n(3) 样本相互独立，记 \\(S=\\sum z_i^2\\)。对数似然为 \\(\\ell(\\sigma)=C-n\\ln\\sigma-S/(2\\sigma^2)\\)，其导数为 \\(\\ell\\prime(\\sigma)=-n/\\sigma+S/\\sigma^3\\)。当 \\(S>0\\) 时，在 \\(\\sigma=\\sqrt{S/n}\\) 两侧分别为正、负，故该点为唯一最大值；全零样本发生概率为零。",
+      "knowledgePoints": [
+        "半正态分布",
+        "绝对误差",
+        "矩估计",
+        "最大似然估计"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2017年",
+        "数学一",
+        "半正态分布",
+        "绝对误差",
+        "矩估计",
+        "最大似然估计"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "附件只提供错题标记，未提供作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2017年考研数学一第23题，围绕半正态分布、绝对误差、矩估计、最大似然估计设计同类型典型变式；保持考研常见难度与设问，提供LaTeX题干、答案及分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "依据附件逐项转写并独立推导复核",
+      "transcriptionNote": "来自上传PDF的2017年数学一试卷；红圈、叉号或扣分标记判定为错题。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2017,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 34,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+          "libraryFileId": "libfile_8ebff38e48c8819198e86c0932b483b2"
+        }
+      ]
+    }
+  ]
+}

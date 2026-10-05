@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--difficulty")
     parser.add_argument("--mistake-type")
     parser.add_argument("--marker-color", choices=["red", "blue", "mixed", "history"])
-    parser.add_argument("--source", choices=["history", "new-history", "book"])
+    parser.add_argument("--source", choices=["history", "new-history", "book", "exam"])
     parser.add_argument("--ordered", action="store_true", help="按原书顺序抽取；默认随机")
     parser.add_argument("--seed", type=int)
     parser.add_argument("--include-answers", action="store_true")
@@ -52,7 +52,9 @@ def select_questions(payload: dict, args: argparse.Namespace) -> list[dict]:
     elif args.source == "new-history":
         questions = [question for question in questions if question.get("sourceType") == "history"]
     elif args.source == "book":
-        questions = [question for question in questions if question.get("sourceType") != "history"]
+        questions = [question for question in questions if question.get("sourceType") != "history" and question.get("sourceCategory") != "考研真题"]
+    elif args.source == "exam":
+        questions = [question for question in questions if question.get("sourceCategory") == "考研真题"]
     if not questions:
         raise SystemExit("筛选后没有题目。")
     if args.count < 1:
