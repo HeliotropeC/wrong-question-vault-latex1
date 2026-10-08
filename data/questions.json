@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 270,
+  "count": 273,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -12532,11 +12532,176 @@
       ],
       "contentFingerprint": "56a9c548df43f4b05ad54238f42c9c2e0d765792f6815e5d64b50bdbd7322706",
       "questionNo": 23
+    },
+    {
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "三重积分",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入当日不会起步、积分区域判断卡壳及换元步骤不稳定的题目；变式题按考研数学一常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-08-v1"
+      ],
+      "id": "daily-20261008-calc-triple-integral-iterated-bounds",
+      "mistakeType": "思路卡壳 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "三重积分",
+        "累次积分",
+        "积分次序",
+        "积分上下限",
+        "空间区域",
+        "思路卡壳",
+        "边界或范围判断困难"
+      ],
+      "sourceRef": "2026-10-08 当日对话 · 累次积分的上下限与计算",
+      "questionType": "计算题",
+      "stem": "设空间区域\n\\[\n\\Omega=\\{(x,y,z)\\mid 0\\le x\\le2,\\ 0\\le y\\le x,\\ 0\\le z\\le x+y\\}.\n\\]\n写出 \\(\\iiint_{\\Omega}1\\,\\mathrm dV\\) 的先 \\(z\\)、再 \\(y\\)、最后 \\(x\\) 的累次积分，并求其值。",
+      "answer": "\\[\n\\iiint_{\\Omega}1\\,\\mathrm dV\n=\\int_0^2\\mathrm dx\\int_0^x\\mathrm dy\\int_0^{x+y}\\mathrm dz=4.\n\\]",
+      "analysis": "积分次序已经指定为先 \\(z\\)、再 \\(y\\)、最后 \\(x\\)。固定 \\((x,y)\\) 后，沿 \\(z\\) 方向从 \\(z=0\\) 进入区域，在 \\(z=x+y\\) 离开，因此最内层为\n\\[\n\\int_0^{x+y}\\mathrm dz.\n\\]\n将区域投影到 \\(xy\\) 平面，得到三角形\n\\[\nD=\\{(x,y)\\mid 0\\le x\\le2,\\ 0\\le y\\le x\\}.\n\\]\n故\n\\[\n\\iiint_{\\Omega}1\\,\\mathrm dV\n=\\int_0^2\\int_0^x\\int_0^{x+y}\\mathrm dz\\,\\mathrm dy\\,\\mathrm dx.\n\\]\n逐层计算：\n\\[\n\\int_0^{x+y}\\mathrm dz=x+y,\n\\]\n\\[\n\\int_0^x(x+y)\\,\\mathrm dy=x^2+\\frac{x^2}{2}=\\frac32x^2,\n\\]\n所以\n\\[\n\\int_0^2\\frac32x^2\\,\\mathrm dx=\\frac32\\cdot\\frac83=4.\n\\]",
+      "errorCause": "没有按照“最内层变量先固定其余变量”的方式读区域，容易把不同变量的上限错放到外层，或把 \\(z=x+y\\) 误当成常数上界。",
+      "knowledgePoints": [
+        "三重积分",
+        "累次积分",
+        "积分次序",
+        "空间区域投影",
+        "积分上下限"
+      ],
+      "similarQuestionPrompt": "仿考研数学一计算题：把区域改为 \\(0\\le x\\le1,\\ x\\le y\\le2x,\\ 0\\le z\\le x+2y\\)，要求按 \\(\\mathrm dz\\,\\mathrm dy\\,\\mathrm dx\\) 写出并计算三重积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-08",
+          "verification": "当日“三重积分”教学对话中的区域、积分次序与数值选项交叉核对"
+        }
+      ],
+      "answerVerification": "区域逐层复原、直接积分与几何体积非负性复核",
+      "errorCauseEvidence": "用户从零学习三重积分并连续追问积分上下限的确定方法，需要提示后才能继续。",
+      "questionNo": 1,
+      "reviewFocus": "卡壳位置：看见三个变量后不知道谁放最内层。第一步：按积分次序从里向外读；对最内层变量固定另外两个变量，找沿该方向“先进入、后离开”的两个边界。考场信号：题目已给 \\(\\mathrm dz\\,\\mathrm dy\\,\\mathrm dx\\)，就先写 \\(z\\) 的上下限，再画 \\(xy\\) 投影。易错点：外层上限不能含内层变量。防卡方法：写完后逐层检查——\\(z\\) 限只含 \\(x,y\\)，\\(y\\) 限只含 \\(x\\)，\\(x\\) 限为常数。",
+      "contentFingerprint": "bbc0f050bb3a5cc7028e37d77452b3a2d4e70b3c9c820d61c291ba1fbb9a7767"
+    },
+    {
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "三重积分",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入当日不会起步、积分区域判断卡壳及换元步骤不稳定的题目；变式题按考研数学一常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-08-v1"
+      ],
+      "id": "daily-20261008-calc-paraboloid-plane-z-bounds",
+      "mistakeType": "审题错误 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "三重积分",
+        "抛物面",
+        "积分区域",
+        "上下表面",
+        "投影区域",
+        "审题错误",
+        "边界或范围判断困难"
+      ],
+      "sourceRef": "2026-10-08 当日对话 · 抛物面与平面之间的积分限",
+      "questionType": "选择题",
+      "stem": "区域 \\(\\Omega\\) 由抛物面 \\(z=x^2+y^2\\) 与平面 \\(z=4\\) 围成。固定 \\((x,y)\\) 后，\\(z\\) 的取值范围是（ ）。\n\n(A) \\(0\\le z\\le4\\)；\n(B) \\(x^2+y^2\\le z\\le4\\)；\n(C) \\(4\\le z\\le x^2+y^2\\)；\n(D) \\(0\\le z\\le x^2+y^2\\)。",
+      "answer": "选择 (B)。完整区域为\n\\[\n\\Omega=\\{(x,y,z)\\mid x^2+y^2\\le4,\\ x^2+y^2\\le z\\le4\\}.\n\\]",
+      "analysis": "两曲面相交时\n\\[\nx^2+y^2=4,\n\\]\n所以在 \\(xy\\) 平面上的投影是圆盘 \\(x^2+y^2\\le4\\)。对投影圆盘内任意固定点 \\((x,y)\\)，沿 \\(z\\) 轴从下向上移动，先碰到抛物面 \\(z=x^2+y^2\\)，后碰到平面 \\(z=4\\)，因此\n\\[\nx^2+y^2\\le z\\le4.\n\\]\n选项 (C) 把下、上表面颠倒。在圆盘内部有 \\(x^2+y^2<4\\)，若写成 \\(4\\le z\\le x^2+y^2\\)，下限反而大于上限，不可能描述该实体。作为复核，体积应为正：\n\\[\nV=\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{4}r\\,\\mathrm dz\\,\\mathrm dr\\,\\mathrm d\\theta=8\\pi.\n\\]",
+      "errorCause": "把“先写哪个曲面”当成记忆题，没有比较同一投影点处两个曲面的高度；因此将上、下表面颠倒而误选 (C)。",
+      "knowledgePoints": [
+        "三重积分",
+        "抛物面",
+        "上下表面判断",
+        "投影区域",
+        "柱坐标"
+      ],
+      "similarQuestionPrompt": "仿考研选择题：区域由 \\(z=x^2+y^2\\) 与 \\(z=2x\\) 围成，要求写出投影区域和按 \\(\\mathrm dz\\) 积分时的上下限。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-08",
+          "verification": "当日对话中的曲面、四个选项、用户误选 C 与正确解释交叉核对"
+        }
+      ],
+      "answerVerification": "交线、上下表面比较与柱坐标体积积分交叉复核",
+      "errorCauseEvidence": "用户明确追问“第一个选择为什么不能选 C”，属于上下边界方向判断错误。",
+      "questionNo": 2,
+      "reviewFocus": "卡壳位置：不知道平面和抛物面谁是上界。第一步：先求交线得到投影，再在投影内部任选一点（最方便取 \\((0,0)\\)）比较高度：抛物面为 0，平面为 4。考场信号：题面出现“两个曲面围成区域”，先做交线和高低比较。易错点：不能只按题目出现顺序写上下限。防卡方法：固定一句话——沿积分正方向，先进入的面是下界，后离开的面是上界。",
+      "contentFingerprint": "4b18f6b71bb70b65accd856b4825da02a45c2283938e766041748bbf7ead980e"
+    },
+    {
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "三重积分",
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入当日不会起步、积分区域判断卡壳及换元步骤不稳定的题目；变式题按考研数学一常见设问设计。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-08-v1"
+      ],
+      "id": "daily-20261008-calc-ellipsoid-jacobian-substitution",
+      "mistakeType": "方法选择困难 / 知识点不熟 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "三重积分",
+        "椭球",
+        "变量替换",
+        "雅可比行列式",
+        "体积元",
+        "是否回代",
+        "方法选择困难",
+        "知识点不熟",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-08 当日对话 · 椭球换元、雅可比与回代",
+      "questionType": "计算题",
+      "stem": "计算椭球体积\n\\[\nI=\\iiint_{x^2+4y^2+z^2\\le1}1\\,\\mathrm dx\\,\\mathrm dy\\,\\mathrm dz,\n\\]\n并说明作换元 \\(u=x,\\ v=2y,\\ w=z\\) 时雅可比行列式应如何计算，以及定积分算完后是否需要回代。",
+      "answer": "\\[\nI=\\frac{2\\pi}{3}.\n\\]\n体积元为\n\\[\n\\mathrm dx\\,\\mathrm dy\\,\\mathrm dz=\\frac12\\,\\mathrm du\\,\\mathrm dv\\,\\mathrm dw.\n\\]\n换元后得到数值，不需要再回代。",
+      "analysis": "先写逆变换：\n\\[\nx=u,\\qquad y=\\frac v2,\\qquad z=w.\n\\]\n体积元需要使用“旧变量对新变量”的雅可比：\n\\[\nJ=\\frac{\\partial(x,y,z)}{\\partial(u,v,w)}\n=\\begin{vmatrix}\n1&0&0\\\\\n0&\\frac12&0\\\\\n0&0&1\n\\end{vmatrix}=\\frac12.\n\\]\n因此\n\\[\n\\mathrm dx\\,\\mathrm dy\\,\\mathrm dz=|J|\\,\\mathrm du\\,\\mathrm dv\\,\\mathrm dw=\\frac12\\,\\mathrm du\\,\\mathrm dv\\,\\mathrm dw.\n\\]\n原区域变为单位球\n\\[\nu^2+v^2+w^2\\le1.\n\\]\n所以\n\\[\nI=\\frac12\\iiint_{u^2+v^2+w^2\\le1}1\\,\\mathrm du\\,\\mathrm dv\\,\\mathrm dw\n=\\frac12\\cdot\\frac{4\\pi}{3}=\frac{2\\pi}{3}.\n\\]\n这是定积分，最终结果是数值，不含 \\(u,v,w\\)，故无需回代。只有换元后的不定积分原函数仍含新变量时，才需要换回原变量。若右端改为 \\(9\\)，新区域是半径 3 的球，结果为 \\(\\frac12\\cdot\\frac{4\\pi}{3}\\cdot3^3=18\\pi\\)。",
+      "errorCause": "只替换了区域方程却漏乘雅可比；把 \\(\\partial(u,v,w)/\\partial(x,y,z)\\) 直接当成体积元系数而忘记取倒数；或认为任何换元结束后都必须回代。",
+      "knowledgePoints": [
+        "三重积分换元",
+        "椭球体积",
+        "雅可比行列式",
+        "体积元",
+        "逆变换",
+        "定积分回代"
+      ],
+      "similarQuestionPrompt": "仿考研计算题：计算 \\(\\iiint_{4x^2+9y^2+z^2\\le1}(x^2+9y^2)\\,\\mathrm dV\\)，要求完整写出线性换元、雅可比和球坐标积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-08",
+          "verification": "当日对话中的椭球区域、换元、雅可比步骤与“是否回代”追问交叉核对"
+        }
+      ],
+      "answerVerification": "逆变换雅可比、椭球半轴体积公式与单位球体积交叉复核",
+      "errorCauseEvidence": "用户连续追问“y 前面有系数怎么办”“雅可比行列式具体步骤”“换元之后还需要回带吗”，表明方法链条不稳定。",
+      "questionNo": 3,
+      "reviewFocus": "卡壳位置：系数椭球不会化球，且雅可比方向混乱。突破口与第一步：先选 \\(u=x,\\ v=2y,\\ w=z\\) 把区域化为球，再立即写逆变换。考场信号：区域是平方项系数不同的椭球，优先做线性伸缩。易错点：体积元用 \\(\\left|\\partial(x,y,z)/\\partial(u,v,w)\\right|\\)，不是反方向；行列式必须取绝对值。防卡方法：固定四步“化球—写逆变换—算旧对新的雅可比—替换区域与体积元”；定积分得数后不回代。",
+      "contentFingerprint": "8888a163201d2d237f7349eef262d7458daf4037ed15f06e1819a1bf52010715"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-08",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -12545,7 +12710,8 @@
     "daily-2026-09-29-v1",
     "daily-2026-09-30-v1",
     "daily-2026-10-01-v1",
-    "daily-2026-10-04-v1"
+    "daily-2026-10-04-v1",
+    "daily-2026-10-08-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005"
