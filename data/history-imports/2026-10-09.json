@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-09",
+  "batch": "daily-2026-10-09-v1",
+  "scope": "北京时间当日 ChatGPT 对话中做错、方法选择困难、概念不稳、结果不一致及主动追问解题思路的考研数学题",
+  "repository": "HeliotropeC/wrong-question-vault-latex1",
+  "exclusions": {
+    "outsideDate": [
+      "解析切平面题",
+      "求边界最值（均发生于北京时间 2026-10-08）"
+    ],
+    "nonMath": [
+      "女生礼物推荐",
+      "手机、汽车与院校监控等非数学对话"
+    ],
+    "note": "数学仓库仅收高等数学、线性代数和概率统计；未发现当天传热学待入库题，所有非数学内容均未写入。"
+  },
+  "deduplication": {
+    "comparedAgainstExistingCount": 273,
+    "method": [
+      "稳定题目 ID",
+      "内容指纹",
+      "规范化题干精确比对",
+      "知识点与题意人工复核"
+    ],
+    "skippedDuplicateIds": [],
+    "consolidationNote": "将二次型判定追问合并进题20；将 k<0、分布律/分布函数/密度区别等追问合并进题22；重复上传的同一题截图只建一张卡；未把助手绘制的泊松分布示意图单独建题。"
+  },
+  "importedCount": 4,
+  "questions": [
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-09 当日明确做错、不会判断方法、结果不一致或连续追问概念的考研数学题；相关追问合并到原题复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-09-v1"
+      ],
+      "id": "daily-20261009-la-quadratic-form-sum-of-squares",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "二次型",
+        "规范形",
+        "正定二次型",
+        "半正定二次型",
+        "秩",
+        "平方和结构",
+        "思路卡壳",
+        "方法选择困难",
+        "知识点不熟"
+      ],
+      "sourceRef": "2026-10-09 当日对话 · 二次型规范形求解（题20）",
+      "questionType": "解答题",
+      "stem": "设实二次型\n\\[\nf(x_1,x_2,x_3)=(x_1-x_2+x_3)^2+(x_2+x_3)^2+(x_1+ax_3)^2,\n\\]\n其中 \\(a\\) 是参数。\n(1) 求方程 \\(f(x_1,x_2,x_3)=0\\) 的解；\n(2) 求 \\(f\\) 的规范形。",
+      "answer": "令\n\\[\nC=\\begin{pmatrix}1&-1&1\\\\0&1&1\\\\1&0&a\\end{pmatrix}.\n\\]\n当 \\(a\\ne2\\) 时，\\(f=0\\) 只有零解，规范形为\n\\[\ny_1^2+y_2^2+y_3^2.\n\\]\n当 \\(a=2\\) 时，\n\\[\n(x_1,x_2,x_3)^{\\mathsf T}=t(-2,-1,1)^{\\mathsf T}\\quad(t\\in\\mathbb R),\n\\]\n规范形为\n\\[\ny_1^2+y_2^2\n\\]\n（也可写成 \\(y_1^2+y_2^2+0y_3^2\\)）。",
+      "analysis": "题目已经把二次型写成三个平方的和，先不要展开求特征值。记\n\\[\nCx=\\begin{pmatrix}x_1-x_2+x_3\\\\x_2+x_3\\\\x_1+ax_3\\end{pmatrix},\n\\qquad f=x^{\\mathsf T}C^{\\mathsf T}Cx=\\|Cx\\|^2.\n\\]\n所以\n\\[\nf=0\\iff Cx=0.\n\\]\n计算\n\\[\n\\det C=a-2.\n\\]\n若 \\(a\\ne2\\)，则 \\(C\\) 可逆，故 \\(x=0\\)。此时 \\(C^{\\mathsf T}C\\) 正定，正惯性指数为 \\(3\\)，规范形为 \\(y_1^2+y_2^2+y_3^2\\)。\n\n若 \\(a=2\\)，方程组\n\\[\nx_1-x_2+x_3=0,\\qquad x_2+x_3=0,\\qquad x_1+2x_3=0\n\\]\n给出\n\\[\nx_3=t,\\quad x_2=-t,\\quad x_1=-2t.\n\\]\n又 \\(\\operatorname{rank}C=2\\)，因而 \\(\\operatorname{rank}(C^{\\mathsf T}C)=2\\)。该二次型始终非负，所以正惯性指数为 \\(2\\)、负惯性指数为 \\(0\\)，规范形为 \\(y_1^2+y_2^2\\)。",
+      "errorCause": "把“平方和”结构忽略掉，先展开并尝试对 \\(C^{\\mathsf T}C\\) 求特征值，计算量陡增且容易在特征多项式处出错；同时没有把“正定、半正定、不定”与正负惯性指数对应起来。",
+      "knowledgePoints": [
+        "二次型规范形",
+        "正定与半正定",
+        "平方和二次型",
+        "矩阵秩",
+        "惯性定理"
+      ],
+      "similarQuestionPrompt": "设 \\(f=(x_1+x_2)^2+(x_2+ax_3)^2+(x_1-x_3)^2\\)。求 \\(f=0\\) 的解并讨论其规范形。要求优先利用平方和结构，不展开求特征值。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-09",
+          "verification": "题目截图、用户手写展开过程及“第二问/正定判据/顺序主子式/半正定与不定”连续追问交叉核对"
+        }
+      ],
+      "answerVerification": "以 f=||Cx||^2、det C 与 rank(C^TC)=rank C 三条路径复核",
+      "errorCauseEvidence": "用户明确表示第二问不会，并连续追问正定判定、顺序主子式以及半正定和不定的含义。",
+      "questionNo": 20,
+      "reviewFocus": "卡壳位置：看到“求规范形”就直接展开求特征值。第一步：识别 \\(f=\\sum \\ell_i(x)^2\\)，把各线性式的系数组成矩阵 \\(C\\)。正确突破口：\\(f=0\\iff Cx=0\\)，而规范形只需判断 \\(\\operatorname{rank}C\\)；平方和保证不存在负平方项。考场信号：题干直接给出若干线性式的平方和。易错点：当 \\(\\det C=0\\) 时不能说二次型不定，它仍然半正定。防卡方法：固定检查“平方和—系数矩阵—行列式/秩—正惯性指数”四步。",
+      "contentFingerprint": "d4dae6f5bf6bd595344eb03413fc5a04b2d0cf5794a5e2f48187314222fa102d"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-09 当日明确做错、不会判断方法、结果不一致或连续追问概念的考研数学题；相关追问合并到原题复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-09-v1"
+      ],
+      "id": "daily-20261009-la-column-equivalence-apb",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵",
+      "mistakeType": "方法选择困难 / 概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "矩阵",
+        "初等列变换",
+        "矩阵方程",
+        "AP=B",
+        "线性方程组",
+        "通解",
+        "可逆条件",
+        "方法选择困难",
+        "概念错误",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-09 当日对话 · 初等列变换与矩阵方程 AP=B（题21）",
+      "questionType": "解答题",
+      "stem": "已知 \\(a\\) 是常数，且矩阵\n\\[\nA=\\begin{pmatrix}1&2&a\\\\1&3&0\\\\2&7&-a\\end{pmatrix}\n\\]\n可经初等列变换化为\n\\[\nB=\\begin{pmatrix}1&a&2\\\\0&1&1\\\\-1&1&1\\end{pmatrix}.\n\\]\n(1) 求 \\(a\\)；\n(2) 求满足 \\(AP=B\\) 的可逆矩阵 \\(P\\)。",
+      "answer": "(1) \\(a=2\\)。\n\n(2) 满足条件的全部矩阵为\n\\[\nP=\\begin{pmatrix}\n3-6k_1&4-6k_2&4-6k_3\\\\\n-1+2k_1&-1+2k_2&-1+2k_3\\\\\nk_1&k_2&k_3\n\\end{pmatrix},\n\\qquad k_1,k_2,k_3\\in\\mathbb R,\\quad k_2\\ne k_3.\n\\]",
+      "analysis": "“\\(A\\) 经初等列变换化为 \\(B\\)”等价于存在可逆矩阵 \\(P\\) 使 \\(AP=B\\)。初等变换保持秩，而\n\\[\n\\det A=0,\\qquad \\det B=2-a.\n\\]\n因此 \\(B\\) 必须奇异，故 \\(a=2\\)。\n\n代入 \\(a=2\\)，把 \\(AP=B\\) 按列拆成三个方程\n\\[\nAp_j=b_j\\qquad(j=1,2,3).\n\\]\n对增广矩阵 \\((A,B)\\) 同时作行变换，可得\n\\[\n\\left(\n\\begin{array}{ccc|ccc}\n1&0&6&3&4&4\\\\\n0&1&-2&-1&-1&-1\\\\\n0&0&0&0&0&0\n\\end{array}\n\\right).\n\\]\n齐次方程 \\(Ax=0\\) 的一个基础解系为\n\\[\nn=(-6,2,1)^{\\mathsf T}.\n\\]\n于是\n\\[\np_1=(3,-1,0)^{\\mathsf T}+k_1n,\n\\quad\np_2=(4,-1,0)^{\\mathsf T}+k_2n,\n\\quad\np_3=(4,-1,0)^{\\mathsf T}+k_3n.\n\\]\n把三列合在一起即得答案中的 \\(P\\)。最后不能忘记题目要求 \\(P\\) 可逆：\n\\[\n\\det P=k_3-k_2,\n\\]\n所以且仅所以 \\(k_2\\ne k_3\\)。",
+      "errorCause": "把 \\(AP=B\\) 直接写成 \\(P=A^{-1}B\\)，但此题 \\(A\\) 奇异、\\(A^{-1}\\) 不存在；随后虽按列解方程，却把通解中的“特解 + 齐次解”写错，并未把三个自由参数代回 \\(\\det P\\) 检查可逆性。",
+      "knowledgePoints": [
+        "初等列变换",
+        "右乘可逆矩阵",
+        "矩阵方程 AP=B",
+        "非齐次线性方程组通解",
+        "可逆矩阵判定"
+      ],
+      "similarQuestionPrompt": "设 \\(A\\) 与 \\(B\\) 为同阶矩阵，已知 \\(A\\) 可经初等列变换化为 \\(B\\)，且 \\(\\operatorname{rank}A=n-1\\)。给出具体三阶 \\(A,B\\)，求满足 \\(AP=B\\) 的全部可逆矩阵 \\(P\\)，并写出参数的非退化条件。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-09",
+          "verification": "原题截图、用户列方程手写稿、参考答案及“p2 与 p3 线性相关怎么办/与答案不一致”追问交叉核对"
+        }
+      ],
+      "answerVerification": "逐列代入 AP=B，并以 det P=k3-k2 复核可逆条件",
+      "errorCauseEvidence": "用户先尝试 P=A^{-1}B，后得到线性相关列并追问如何处理，最终又指出与答案不一致。",
+      "questionNo": 21,
+      "reviewFocus": "卡壳位置：默认任何 \\(AP=B\\) 都能左乘 \\(A^{-1}\\)。第一步：先由“初等列变换”写出 \\(AP=B\\)，再检查 \\(A\\) 是否可逆。正确突破口：\\(A\\) 奇异时把问题拆成三个 \\(Ap_j=b_j\\)，每列都写成“特解 + 齐次解”。考场信号：题目强调“初等列变换”并要求可逆 \\(P\\)，通常要在通解后另加 \\(\\det P\\ne0\\) 的参数条件。易错点：\\(p_2,p_3\\) 的特解相同不等于两列必然相关；只要取 \\(k_2\\ne k_3\\)，两列就被不同的齐次解分开。防卡方法：最后固定做两项验算——\\(AP=B\\) 与 \\(\\det P\\ne0\\)。",
+      "contentFingerprint": "248ddd9e26728b58cb1f5a6516c697f27ec37f02656b44ecf1e2f9cc8403501b"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-09 当日明确做错、不会判断方法、结果不一致或连续追问概念的考研数学题；相关追问合并到原题复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-09-v1"
+      ],
+      "id": "daily-20261009-prob-poisson-sign-product",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "mistakeType": "概念错误 / 边界或范围判断困难 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "概率统计",
+        "泊松分布",
+        "离散型随机变量",
+        "随机变量函数的分布",
+        "分布律",
+        "分布函数",
+        "全概率公式",
+        "协方差",
+        "边界或范围判断困难",
+        "概念错误"
+      ],
+      "sourceRef": "2026-10-09 当日对话 · 符号变量与泊松变量的乘积分布（题22）",
+      "questionType": "解答题",
+      "stem": "设随机变量 \\(X\\) 与 \\(Y\\) 相互独立，\n\\[\nP(X=1)=P(X=-1)=\\frac12,\n\\]\n且 \\(Y\\) 服从参数为 \\(\\lambda\\) 的泊松分布。令 \\(Z=XY\\)。\n(1) 求 \\(\\operatorname{Cov}(X,Z)\\)；\n(2) 求 \\(Z\\) 的概率分布。",
+      "answer": "(1)\n\\[\n\\operatorname{Cov}(X,Z)=\\lambda.\n\\]\n\n(2) \\(Z\\) 的分布律为\n\\[\nP(Z=k)=\n\\begin{cases}\n\\dfrac12e^{-\\lambda}\\dfrac{\\lambda^k}{k!},&k=1,2,\\ldots,\\\\[6pt]\ne^{-\\lambda},&k=0,\\\\[6pt]\n\\dfrac12e^{-\\lambda}\\dfrac{\\lambda^{-k}}{(-k)!},&k=-1,-2,\\ldots,\\\\[6pt]\n0,&\\text{其他}.\n\\end{cases}\n\\]",
+      "analysis": "由 \\(Z=XY\\) 和 \\(X^2=1\\)，\n\\[\n\\operatorname{Cov}(X,Z)\n=E(XZ)-E(X)E(Z)\n=E(X^2Y)-0\n=E(Y)=\\lambda.\n\\]\n\n求分布时先按 \\(X\\) 的取值分类，而不是在不分正负的情况下把不等式直接除以 \\(X\\)：\n\\[\nX=1\\Rightarrow Z=Y\\in\\{0,1,2,\\ldots\\},\n\\]\n\\[\nX=-1\\Rightarrow Z=-Y\\in\\{0,-1,-2,\\ldots\\}.\n\\]\n对 \\(k>0\\)，只有 \\(X=1,Y=k\\) 能产生 \\(Z=k\\)；对 \\(k<0\\)，只有 \\(X=-1,Y=-k\\) 能产生 \\(Z=k\\)。当 \\(k=0\\) 时两种 \\(X\\) 都可发生且必须有 \\(Y=0\\)，故\n\\[\nP(Z=0)=P(Y=0)=e^{-\\lambda},\n\\]\n不能少算成 \\(\\frac12e^{-\\lambda}\\)。\n\n题目中的“概率分布”对离散型随机变量通常要求分布律。若另求分布函数，则\n\\[\nF_Z(z)=\n\\begin{cases}\n\\dfrac12P\\!\\left(Y\\ge\\lceil -z\\rceil\\right),&z<0,\\\\[4pt]\n\\dfrac12+\\dfrac12P\\!\\left(Y\\le\\lfloor z\\rfloor\\right),&z\\ge0.\n\\end{cases}\n\\]",
+      "errorCause": "没有先按 \\(X=1\\) 与 \\(X=-1\\) 分类，就把事件 \\(XY\\le z\\) 直接“除以 \\(X\\)”，忽略负数会使不等号反向；同时混淆离散型随机变量的分布律、分布函数与连续型密度，并在 \\(Z=0\\) 处漏掉两种 \\(X\\) 的共同贡献。",
+      "knowledgePoints": [
+        "泊松分布",
+        "离散型随机变量函数的分布",
+        "全概率公式",
+        "分布律与分布函数",
+        "协方差"
+      ],
+      "similarQuestionPrompt": "设 \\(P(X=1)=p,\\ P(X=-1)=1-p\\)，\\(Y\\sim\\operatorname{Bin}(n,q)\\)，且 \\(X,Y\\) 独立，令 \\(Z=XY\\)。求 \\(Z\\) 的分布律与分布函数，并特别说明 \\(Z=0\\) 处的概率。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-09",
+          "verification": "题目截图、两版用户手写分段结果及“k<0 不理解/概率分布是分布函数还是密度/分布函数是否只适用于连续型”连续追问交叉核对"
+        }
+      ],
+      "answerVerification": "按 X 条件分解、支持集枚举与总概率求和为 1 三重复核",
+      "errorCauseEvidence": "用户明确表示不理解 k<0，并连续追问离散型分布函数、概率分布与密度函数的区别以及为何本题不宜按分布函数作答。",
+      "questionNo": 22,
+      "reviewFocus": "卡壳位置：不知道负整数值从哪里来，也不确定题目要分布律还是分布函数。第一步：列出条件映射 \\(X=1\\Rightarrow Z=Y\\)、\\(X=-1\\Rightarrow Z=-Y\\)。正确突破口：按 \\(Z=k\\) 分 \\(k>0,k=0,k<0\\) 枚举原像。考场信号：一个离散符号变量乘另一个离散变量，优先用全概率公式列分布律。易错点：\\(k=0\\) 同时来自两条分支；处理 \\(XY\\le z\\) 时 \\(X=-1\\) 会反向不等号。防卡方法：先写支持集，再逐点求概率，最后检查概率和是否为 \\(1\\)。",
+      "contentFingerprint": "9c8ceaaeb09033f0dd09c81d16e0b0f735c957d1e42c832ed31d02b60b9d5327"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-09 当日明确做错、不会判断方法、结果不一致或连续追问概念的考研数学题；相关追问合并到原题复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-09-v1"
+      ],
+      "id": "daily-20261009-prob-laplace-mle-variance",
+      "subject": "概率论与数理统计",
+      "chapter": 8,
+      "chapterTitle": "参数估计",
+      "mistakeType": "计算错误 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "概率统计",
+        "最大似然估计",
+        "Laplace分布",
+        "指数分布",
+        "估计量期望",
+        "估计量方差",
+        "独立样本",
+        "计算错误",
+        "概念错误"
+      ],
+      "sourceRef": "2026-10-09 当日对话 · Laplace 总体的最大似然估计及方差（题23）",
+      "questionType": "解答题",
+      "stem": "设总体 \\(X\\) 的概率密度为\n\\[\nf(x;\\sigma)=\\frac1{2\\sigma}e^{-|x|/\\sigma},\\qquad -\\infty<x<+\\infty,\n\\]\n其中 \\(\\sigma>0\\) 为未知参数。\\(X_1,\\ldots,X_n\\) 是来自总体 \\(X\\) 的简单随机样本，记 \\(\\sigma\\) 的最大似然估计量为 \\(\\widehat\\sigma\\)。\n(1) 求 \\(\\widehat\\sigma\\)；\n(2) 求 \\(E(\\widehat\\sigma)\\) 和 \\(D(\\widehat\\sigma)\\)。",
+      "answer": "令 \\(S=\\sum_{i=1}^n|X_i|\\)，则\n\\[\n\\widehat\\sigma=\\frac Sn=\\frac1n\\sum_{i=1}^n|X_i|,\n\\qquad\nE(\\widehat\\sigma)=\\sigma,\n\\qquad\nD(\\widehat\\sigma)=\\frac{\\sigma^2}{n}.\n\\]",
+      "analysis": "似然函数为\n\\[\nL(\\sigma)=(2\\sigma)^{-n}\\exp\\!\\left(-\\frac1\\sigma\\sum_{i=1}^n|x_i|\\right).\n\\]\n记 \\(S=\\sum|x_i|\\)，对数似然为\n\\[\n\\ell(\\sigma)=-n\\ln(2\\sigma)-\\frac S\\sigma.\n\\]\n因此\n\\[\n\\ell'(\\sigma)=-\\frac n\\sigma+\\frac S{\\sigma^2}=0\n\\quad\\Longrightarrow\\quad\n\\widehat\\sigma=\\frac Sn.\n\\]\n在该点 \\(\\ell''(\\widehat\\sigma)<0\\)，故为最大值点。\n\n关键识别是\n\\[\n|X_i|\\sim \\operatorname{Exp}\\!\\left(\\text{均值参数 }\\sigma\\right).\n\\]\n直接积分也可得\n\\[\nE|X_i|=\\sigma,\\qquad D(|X_i|)=\\sigma^2.\n\\]\n而 \\(\\widehat\\sigma\\) 是 \\(n\\) 个独立同分布的 \\(|X_i|\\) 的样本均值，所以\n\\[\nE(\\widehat\\sigma)=\\frac1n\\sum_{i=1}^nE|X_i|=\\sigma,\n\\]\n\\[\nD(\\widehat\\sigma)=D\\!\\left(\\frac1n\\sum_{i=1}^n|X_i|\\right)\n=\\frac1{n^2}\\sum_{i=1}^nD(|X_i|)\n=\\frac{\\sigma^2}{n}.\n\\]",
+      "errorCause": "算出单个 \\(|X|\\) 的方差为 \\(\\sigma^2\\) 后，直接把它当成 \\(\\widehat\\sigma\\) 的方差，忽略 \\(\\widehat\\sigma=\\frac1n\\sum|X_i|\\) 是独立样本均值；因此漏掉方差缩小因子 \\(1/n\\)。",
+      "knowledgePoints": [
+        "最大似然估计",
+        "Laplace分布",
+        "绝对值的指数分布",
+        "样本均值的期望与方差",
+        "独立性"
+      ],
+      "similarQuestionPrompt": "设总体密度 \\(f(x;\\theta)=\\frac1{2\\theta}e^{-|x-\\mu|/\\theta}\\)，其中 \\(\\mu\\) 已知、\\(\\theta>0\\) 未知。求 \\(\\theta\\) 的最大似然估计量及其期望、方差，并判断是否为无偏估计。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-09",
+          "verification": "原题截图、最大似然推导手写稿、期望积分及方差错误订正稿交叉核对"
+        }
+      ],
+      "answerVerification": "由 |X| 的指数分布矩公式与独立样本均值方差公式复核",
+      "errorCauseEvidence": "用户上传完整计算并请求方差纠错；手写答案得到 D(σhat)=σ²，订正标出应为 σ²/n。",
+      "questionNo": 23,
+      "reviewFocus": "卡壳位置：会算 \\(D(|X|)\\)，但忘了估计量是 \\(n\\) 项的平均。第一步：求出 MLE 后立刻把它改写成样本均值 \\(\\widehat\\sigma=\\overline{|X|}\\)。正确突破口：识别 \\(|X|\\) 为均值 \\(\\sigma\\) 的指数变量。考场信号：估计量形如 \\(\\frac1n\\sum g(X_i)\\)，期望不变而方差通常带 \\(1/n\\)。易错点：\\(D(cY)=c^2D(Y)\\)，且独立和的方差才能相加。防卡方法：固定写出 \\(D(\\overline Y)=D(Y)/n\\)，不要重复展开二重求和。",
+      "contentFingerprint": "4163f58379f8ac8ede068a54543860b23de00edfebe4b3406bc1a13a8f3eb181"
+    }
+  ]
+}
