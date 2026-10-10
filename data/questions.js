@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 277,
+  "count": 280,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -12923,11 +12923,175 @@ window.WRONG_QUESTIONS = {
       "questionNo": 23,
       "reviewFocus": "卡壳位置：会算 \\(D(|X|)\\)，但忘了估计量是 \\(n\\) 项的平均。第一步：求出 MLE 后立刻把它改写成样本均值 \\(\\widehat\\sigma=\\overline{|X|}\\)。正确突破口：识别 \\(|X|\\) 为均值 \\(\\sigma\\) 的指数变量。考场信号：估计量形如 \\(\\frac1n\\sum g(X_i)\\)，期望不变而方差通常带 \\(1/n\\)。易错点：\\(D(cY)=c^2D(Y)\\)，且独立和的方差才能相加。防卡方法：固定写出 \\(D(\\overline Y)=D(Y)/n\\)，不要重复展开二重求和。",
       "contentFingerprint": "4163f58379f8ac8ede068a54543860b23de00edfebe4b3406bc1a13a8f3eb181"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-10 当日做错、批改发现方法不稳或主动追问关键步骤的考研数学题；同题截图与连续追问合并为一张复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-10-v1"
+      ],
+      "id": "daily-20261010-la-generalized-vector-chain",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "向量",
+      "mistakeType": "计算错误 / 方法选择困难 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "线性代数",
+        "向量方程",
+        "非齐次线性方程组",
+        "通解",
+        "线性无关",
+        "矩阵幂",
+        "方法选择困难",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-10 当日对话 · 向量方程与线性无关证明（题20）",
+      "questionType": "解答题",
+      "stem": "设\n\\[\nA=\\begin{pmatrix}\n1&-1&-1\\\\\n-1&1&1\\\\\n0&-4&-2\n\\end{pmatrix},\n\\qquad\n\\boldsymbol\\xi_1=\\begin{pmatrix}-1\\\\1\\\\-2\\end{pmatrix}.\n\\]\n(1) 求满足\n\\[\nA\\boldsymbol\\xi_2=\\boldsymbol\\xi_1,\\qquad\nA^2\\boldsymbol\\xi_3=\\boldsymbol\\xi_1\n\\]\n的所有向量 \\(\\boldsymbol\\xi_2,\\boldsymbol\\xi_3\\)；\n(2) 对第一问中的任意向量 \\(\\boldsymbol\\xi_2,\\boldsymbol\\xi_3\\)，证明 \\(\\boldsymbol\\xi_1,\\boldsymbol\\xi_2,\\boldsymbol\\xi_3\\) 线性无关。",
+      "answer": "(1)\n\\[\n\\boldsymbol\\xi_2=\n\\begin{pmatrix}0\\\\0\\\\1\\end{pmatrix}\n+s\\begin{pmatrix}-1\\\\1\\\\-2\\end{pmatrix},\n\\qquad s\\in\\mathbb R,\n\\]\n\\[\n\\boldsymbol\\xi_3=\n\\begin{pmatrix}-\\frac12\\\\0\\\\0\\end{pmatrix}\n+u\\begin{pmatrix}-1\\\\1\\\\0\\end{pmatrix}\n+v\\begin{pmatrix}0\\\\0\\\\1\\end{pmatrix},\n\\qquad u,v\\in\\mathbb R.\n\\]\n\n(2) 对上述任意参数取值，\\(\\boldsymbol\\xi_1,\\boldsymbol\\xi_2,\\boldsymbol\\xi_3\\) 均线性无关。",
+      "analysis": "先直接计算\n\\[\nA\\boldsymbol\\xi_1=\\boldsymbol0.\n\\]\n解 \\(A\\boldsymbol\\xi_2=\\boldsymbol\\xi_1\\)。令 \\(\\boldsymbol\\xi_2=(x,y,z)^{\\mathsf T}\\)，独立方程可写为\n\\[\nx-y-z=-1,\\qquad 2y+z=1.\n\\]\n取 \\(y=s\\)，得 \\(x=-s,\\ z=1-2s\\)，故\n\\[\n\\boldsymbol\\xi_2=(0,0,1)^{\\mathsf T}+s\\boldsymbol\\xi_1.\n\\]\n\n再算\n\\[\nA^2=\\begin{pmatrix}\n2&2&0\\\\\n-2&-2&0\\\\\n4&4&0\n\\end{pmatrix}.\n\\]\n方程 \\(A^2\\boldsymbol\\xi_3=\\boldsymbol\\xi_1\\) 等价于\n\\[\nx+y=-\\frac12,\n\\]\n而 \\(z\\) 自由，因此得到答案中的两参数通解。\n\n证明线性无关时不需要把带三个参数的行列式完全展开。设\n\\[\nc_1\\boldsymbol\\xi_1+c_2\\boldsymbol\\xi_2+c_3\\boldsymbol\\xi_3=\\boldsymbol0.\n\\]\n两边先作用 \\(A^2\\)。因为\n\\[\nA^2\\boldsymbol\\xi_1=\\boldsymbol0,\\qquad\nA^2\\boldsymbol\\xi_2=A\\boldsymbol\\xi_1=\\boldsymbol0,\\qquad\nA^2\\boldsymbol\\xi_3=\\boldsymbol\\xi_1,\n\\]\n所以\n\\[\nc_3\\boldsymbol\\xi_1=\\boldsymbol0\\Rightarrow c_3=0.\n\\]\n原关系再作用 \\(A\\)，得到\n\\[\nc_2\\boldsymbol\\xi_1=\\boldsymbol0\\Rightarrow c_2=0.\n\\]\n最后 \\(c_1\\boldsymbol\\xi_1=\\boldsymbol0\\)，故 \\(c_1=0\\)。",
+      "errorCause": "解两个矩阵方程时行变换与参数表示不稳定；证明线性无关又直接展开含多个参数的三阶行列式，导致符号混乱并误以为某些参数取值会使行列式为零。没有利用题设给出的递推关系 \\(A\\boldsymbol\\xi_1=0,\\ A\\boldsymbol\\xi_2=\\boldsymbol\\xi_1,\\ A^2\\boldsymbol\\xi_3=\\boldsymbol\\xi_1\\)。",
+      "knowledgePoints": [
+        "非齐次线性方程组通解",
+        "矩阵幂",
+        "向量组线性无关",
+        "线性映射作用",
+        "自由变量"
+      ],
+      "similarQuestionPrompt": "设非零向量 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 满足 \\(A\\alpha_1=0,\\ A\\alpha_2=\\alpha_1,\\ A\\alpha_3=\\alpha_2\\)。证明 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 线性无关，并给出一个具体三阶矩阵例子。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-10",
+          "verification": "原题截图、用户完整手写解答与批改请求交叉核对"
+        }
+      ],
+      "answerVerification": "将两组通解逐项代回矩阵方程，并用连续作用 A²、A 的证明复核",
+      "errorCauseEvidence": "用户提交完整解答要求批改；第二问采用参数行列式展开后得到矛盾结果，说明证明方法和符号运算均不稳定。",
+      "questionNo": 20,
+      "reviewFocus": "卡壳位置：第二问面对任意参数时仍想硬算行列式。第一步：先算 \\(A\\boldsymbol\\xi_1\\)，再把线性组合关系依次作用 \\(A^2\\) 和 \\(A\\)。正确突破口：矩阵作用会逐层消掉 \\(\\boldsymbol\\xi_1,\\boldsymbol\\xi_2\\)，依次逼出 \\(c_3,c_2,c_1\\)。考场信号：题设出现 \\(A\\alpha_2=\\alpha_1\\)、\\(A^2\\alpha_3=\\alpha_1\\) 这类链式关系，优先对线性组合反复作用 \\(A\\)，不要展开参数行列式。易错点：\\(A^2\\boldsymbol\\xi_2=A(A\\boldsymbol\\xi_2)=A\\boldsymbol\\xi_1=0\\)。防卡方法：在草稿上画“\\(\\boldsymbol\\xi_3\\xrightarrow{A^2}\\boldsymbol\\xi_1\\)、\\(\\boldsymbol\\xi_2\\xrightarrow{A}\\boldsymbol\\xi_1\\xrightarrow{A}0\\)”消元链。",
+      "contentFingerprint": "13c5deff778a184ed1c556e3ed1ddb0c951e64b9949c36aa6cecd3476d285f48"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-10 当日做错、批改发现方法不稳或主动追问关键步骤的考研数学题；同题截图与连续追问合并为一张复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-10-v1"
+      ],
+      "id": "daily-20261010-calc-equivalent-infinitesimal-taylor",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "mistakeType": "计算错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "高等数学",
+        "等价无穷小",
+        "泰勒展开",
+        "最低次幂",
+        "系数匹配",
+        "计算错误",
+        "知识点不熟"
+      ],
+      "sourceRef": "2026-10-10 当日对话 · 泰勒展开系数纠错（题1）",
+      "questionType": "选择题",
+      "stem": "当 \\(x\\to0\\) 时，\n\\[\nf(x)=x-\\sin(ax),\\qquad g(x)=x^2\\ln(1-bx)\n\\]\n是等价无穷小，则 \\((a,b)\\) 为（ ）。\n\nA. \\(a=1,\\ b=-\\dfrac16\\)；\n\nB. \\(a=1,\\ b=\\dfrac16\\)；\n\nC. \\(a=-1,\\ b=-\\dfrac16\\)；\n\nD. \\(a=-1,\\ b=\\dfrac16\\)。",
+      "answer": "选择 A，即 \\(a=1,\\ b=-\\dfrac16\\)。",
+      "analysis": "分别展开到首个非零项：\n\\[\n\\sin(ax)=ax-\\frac{a^3x^3}{6}+O(x^5),\n\\]\n所以\n\\[\nx-\\sin(ax)=(1-a)x+\\frac{a^3x^3}{6}+O(x^5).\n\\]\n另一方面，\n\\[\n\\ln(1-bx)=-bx-\\frac{b^2x^2}{2}+O(x^3),\n\\]\n故\n\\[\nx^2\\ln(1-bx)=-bx^3+O(x^4).\n\\]\n\n若两者等价，最低非零阶必须相同。分母从 \\(x^3\\) 起，因此先令一次项消失：\n\\[\n1-a=0\\Rightarrow a=1.\n\\]\n此时\n\\[\nf(x)\\sim\\frac{x^3}{6},\\qquad g(x)\\sim-bx^3.\n\\]\n再由等价无穷小的系数比为 \\(1\\)，\n\\[\n\\frac{1/6}{-b}=1\\Rightarrow b=-\\frac16.\n\\]",
+      "errorCause": "把 \\(\\sin(ax)\\) 的三次项系数误写成 \\(-a^3x^3/3\\)，从而得到 \\(b=-1/3\\)。同时没有先按“最低次幂一致”消去分子的一次项。",
+      "knowledgePoints": [
+        "泰勒公式",
+        "等价无穷小",
+        "最低次幂匹配",
+        "待定参数"
+      ],
+      "similarQuestionPrompt": "当 \\(x\\to0\\) 时，\\(x-\\tan(ax)\\) 与 \\(x^2\\ln(1-bx)\\) 同阶，求使二者等价时的 \\(a,b\\)，并说明最低次项如何匹配。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-10",
+          "verification": "原题截图与用户泰勒展开手写稿交叉核对"
+        }
+      ],
+      "answerVerification": "分别以泰勒展开和极限比值复核",
+      "errorCauseEvidence": "用户上传订正图片，手写展开将 (sin(ax)) 的三次项系数写成 (1/3)，与选项答案不一致。",
+      "questionNo": 1,
+      "reviewFocus": "卡壳位置：记错 \\(\\sin u\\) 的三次项系数。第一步：写标准式 \\(\\sin u=u-u^3/3!+O(u^5)\\)，再令 \\(u=ax\\)。正确突破口：先比较最低次幂，再比较系数；不是一开始就把所有高阶项都展开。考场信号：题目说“等价无穷小”并含参数，通常要做“消低阶项 + 首项系数匹配”。易错点：\\(3!=6\\)，且 \\(\\ln(1-bx)\\) 的首项是 \\(-bx\\)。防卡方法：把三条基本展开固定写在草稿首行：\\(\\sin u=u-u^3/6+\\cdots\\)、\\(\\ln(1+u)=u-u^2/2+\\cdots\\)、\\(e^u=1+u+u^2/2+\\cdots\\)。",
+      "contentFingerprint": "d989b95e8dff9d1ffed0cef3d422cf8e8f9290966f1ab88ac34de104790b5977"
+    },
+    {
+      "sourcePage": null,
+      "printedPage": null,
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "note": "纳入北京时间 2026-10-10 当日做错、批改发现方法不稳或主动追问关键步骤的考研数学题；同题截图与连续追问合并为一张复盘卡。",
+      "options": [],
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-10-v1"
+      ],
+      "id": "daily-20261010-calc-nonhomogeneous-ode-particular",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "常微分方程",
+      "mistakeType": "概念错误 / 方法选择困难 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "高等数学",
+        "二阶常系数线性微分方程",
+        "齐次解",
+        "非齐次特解",
+        "待定系数法",
+        "初值问题",
+        "概念错误",
+        "方法选择困难",
+        "思路卡壳"
+      ],
+      "sourceRef": "2026-10-10 当日对话 · 非齐次方程特解不能套齐次通解（题10）",
+      "questionType": "填空题",
+      "stem": "若二阶常系数线性齐次微分方程\n\\[\ny''+ay'+by=0\n\\]\n的通解为\n\\[\ny=(C_1+C_2x)e^x,\n\\]\n则非齐次方程\n\\[\ny''+ay'+by=x\n\\]\n满足条件 \\(y(0)=2,\\ y'(0)=0\\) 的解为 \\(y=\\underline{\\qquad}\\)。",
+      "answer": "\\[y=-xe^x+x+2.\\]",
+      "analysis": "齐次通解为 \\((C_1+C_2x)e^x\\)，说明特征方程有二重根 \\(r=1\\)，因此\n\\[\na=-2,\\qquad b=1.\n\\]\n原方程化为\n\\[\ny''-2y'+y=x.\n\\]\n\n右端为一次多项式 \\(x\\)，对应指数因子是 \\(e^{0x}\\)，而 \\(0\\) 不是特征根，所以设非齐次特解\n\\[\ny_p=Ax+B.\n\\]\n代入得\n\\[\n0-2A+(Ax+B)=x,\n\\]\n比较系数：\n\\[\nA=1,\\qquad B=2.\n\\]\n故\n\\[\ny=y_h+y_p=(C_1+C_2x)e^x+x+2.\n\\]\n由\n\\[\ny(0)=C_1+2=2\n\\]\n得 \\(C_1=0\\)。又\n\\[\ny'=(C_1+C_2x+C_2)e^x+1,\n\\]\n所以\n\\[\ny'(0)=C_1+C_2+1=0\\Rightarrow C_2=-1.\n\\]\n最终\n\\[\ny=-xe^x+x+2.\n\\]\n\n不能把 \\((Ax+B)e^x\\) 当作本题特解，因为它本身属于齐次解空间，代入算子 \\(D^2-2D+1=(D-1)^2\\) 后恒为 \\(0\\)，不可能产生右端 \\(x\\)。",
+      "errorCause": "把齐次方程的通解形式 \\((C_1+C_2x)e^x\\) 误当成非齐次方程的完整解或特解，直接套初值后只得到齐次解；没有先写“通解 = 齐次通解 + 一个非齐次特解”。",
+      "knowledgePoints": [
+        "二阶常系数线性微分方程",
+        "特征方程",
+        "非齐次通解结构",
+        "待定系数法",
+        "初值问题"
+      ],
+      "similarQuestionPrompt": "已知齐次方程的通解为 \\((C_1+C_2x)e^{2x}\\)。求 \\(y''+ay'+by=e^{2x}\\) 满足给定初值的解，并说明此时试探特解为什么必须乘 \\(x^2\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-10",
+          "verification": "原题截图、用户手写求解过程及“为什么特解不能直接代入”追问交叉核对"
+        }
+      ],
+      "answerVerification": "将结果代回 y''-2y'+y=x 并核验两个初值",
+      "errorCauseEvidence": "用户先用齐次形式直接套初值，得到 ((-2x+2)e^x)，随后明确追问“为什么特解不能直接代入”。",
+      "questionNo": 10,
+      "reviewFocus": "卡壳位置：不清楚齐次通解与非齐次特解的分工。第一步：由齐次通解反推出特征根和方程系数，然后写 \\(y=y_h+y_p\\)。正确突破口：根据右端 \\(x=e^{0x}P_1(x)\\) 选 \\(y_p=Ax+B\\)；只有当指数 \\(0\\) 是特征根时才乘额外的 \\(x^s\\)。考场信号：题目同时给齐次通解和非齐次方程，必先保留 \\(y_h\\)，再另设 \\(y_p\\)。易错点：初值条件要代入完整的 \\(y_h+y_p\\)，不能只代齐次部分。防卡方法：固定三行模板“反推特征方程—设特解并代入—合并后再用初值”。",
+      "contentFingerprint": "050b0905376a629f697f6f962a0a7bf81ff4238313db9e566abfd65ba045f498"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-10",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -12938,7 +13102,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-01-v1",
     "daily-2026-10-04-v1",
     "daily-2026-10-08-v1",
-    "daily-2026-10-09-v1"
+    "daily-2026-10-09-v1",
+    "daily-2026-10-10-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005"
