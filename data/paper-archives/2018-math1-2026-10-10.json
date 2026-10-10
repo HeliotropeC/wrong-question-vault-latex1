@@ -1,0 +1,226 @@
+{
+  "archiveId": "paper-2018-math1-2026-10-10",
+  "archivedAt": "2026-10-10",
+  "paper": "2018年全国硕士研究生招生考试数学（一）",
+  "sourceFilename": "【无间隔】数学一09-26年真题做题本6.10(2).pdf",
+  "sourceLibraryPath": "/真题/【无间隔】数学一09-26年真题做题本6.10(2).pdf",
+  "sourceLibraryFileId": "libfile_f3db3cebfa548191b1febf75db44a9b6",
+  "pages": 3,
+  "printedPages": [
+    35,
+    36,
+    37
+  ],
+  "status": "archived_pdf_and_marked_questions",
+  "importStatus": "marked_question_index_only; detailed_stems_and_answers_not_yet_imported_into_transcriptions.jsonl",
+  "selectionRule": "红圈题号或小问/表达式为复习标记，不在无作答细节时臆断具体错因与准确分数",
+  "markedQuestionCount": 13,
+  "markedQuestions": [
+    {
+      "questionNo": 1,
+      "pdfPage": 1,
+      "title": "函数在原点的可导性",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "导数定义",
+        "绝对值与复合函数"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 2,
+      "pdfPage": 1,
+      "title": "过两点且与曲面相切的平面",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "曲面切平面",
+        "法向量"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 11,
+      "pdfPage": 2,
+      "title": "向量场的旋度",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "旋度",
+        "偏导数"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 12,
+      "pdfPage": 2,
+      "title": "球面与平面交线的曲线积分",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "第一类曲线积分",
+        "积分路径"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 15,
+      "pdfPage": 2,
+      "title": "不定积分",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "换元积分",
+        "分部积分"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 16,
+      "pdfPage": 2,
+      "title": "固定长度线段围图形的面积极值",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "优化",
+        "几何面积"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 17,
+      "pdfPage": 2,
+      "title": "第二类曲面积分",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "曲面方向"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 18,
+      "pdfPage": 2,
+      "title": "周期微分方程解的唯一性",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "一阶线性微分方程",
+        "周期性证明"
+      ],
+      "wrongSubquestions": [
+        "(2)"
+      ],
+      "markType": "partial_red_circle_or_underline",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 19,
+      "pdfPage": 2,
+      "title": "数列收敛性及极限证明",
+      "subject": "高等数学",
+      "knowledgePoints": [
+        "递推数列",
+        "单调有界",
+        "极限"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 20,
+      "pdfPage": 2,
+      "title": "含参二次型零点与规范形",
+      "subject": "线性代数",
+      "knowledgePoints": [
+        "二次型",
+        "正交变换或配方法",
+        "规范形"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 21,
+      "pdfPage": 3,
+      "title": "初等列变换与可逆矩阵",
+      "subject": "线性代数",
+      "knowledgePoints": [
+        "矩阵初等变换",
+        "AP=B"
+      ],
+      "wrongSubquestions": [],
+      "markType": "red_circle",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 22,
+      "pdfPage": 3,
+      "title": "独立随机变量乘积的分布",
+      "subject": "概率论与数理统计",
+      "knowledgePoints": [
+        "离散与连续型随机变量",
+        "分布变换"
+      ],
+      "wrongSubquestions": [
+        "(2)"
+      ],
+      "markType": "partial_red_circle_or_underline",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    },
+    {
+      "questionNo": 23,
+      "pdfPage": 3,
+      "title": "最大似然估计量的方差",
+      "subject": "概率论与数理统计",
+      "knowledgePoints": [
+        "最大似然估计",
+        "估计量方差"
+      ],
+      "wrongSubquestions": [
+        "(2)中的D(σ̂)"
+      ],
+      "markType": "partial_red_circle_or_underline",
+      "mistakeType": "待归类",
+      "reviewStatus": "待复习"
+    }
+  ],
+  "handwrittenPageNotes": [
+    {
+      "pdfPage": 1,
+      "text": "-8"
+    },
+    {
+      "pdfPage": 2,
+      "text": "-8"
+    },
+    {
+      "pdfPage": 3,
+      "text": "-4"
+    }
+  ],
+  "scoreInterpretation": "unknown; margin notes are preserved as written, not treated as verified deducted points or score",
+  "note": "仅有标注版试卷图片，未提供逐题作答过程。后续练习按2018年已标记的知识点和对应真题进行，不应将全题标记与局部标记混淆。"
+}
