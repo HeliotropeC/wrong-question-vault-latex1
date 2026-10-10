@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 280,
+  "count": 292,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -12950,7 +12950,10 @@ window.WRONG_QUESTIONS = {
         "线性无关",
         "矩阵幂",
         "方法选择困难",
-        "思路卡壳"
+        "思路卡壳",
+        "考研真题",
+        "2009年",
+        "数学一"
       ],
       "sourceRef": "2026-10-10 当日对话 · 向量方程与线性无关证明（题20）",
       "questionType": "解答题",
@@ -12977,7 +12980,19 @@ window.WRONG_QUESTIONS = {
       "errorCauseEvidence": "用户提交完整解答要求批改；第二问采用参数行列式展开后得到矛盾结果，说明证明方法和符号运算均不稳定。",
       "questionNo": 20,
       "reviewFocus": "卡壳位置：第二问面对任意参数时仍想硬算行列式。第一步：先算 \\(A\\boldsymbol\\xi_1\\)，再把线性组合关系依次作用 \\(A^2\\) 和 \\(A\\)。正确突破口：矩阵作用会逐层消掉 \\(\\boldsymbol\\xi_1,\\boldsymbol\\xi_2\\)，依次逼出 \\(c_3,c_2,c_1\\)。考场信号：题设出现 \\(A\\alpha_2=\\alpha_1\\)、\\(A^2\\alpha_3=\\alpha_1\\) 这类链式关系，优先对线性组合反复作用 \\(A\\)，不要展开参数行列式。易错点：\\(A^2\\boldsymbol\\xi_2=A(A\\boldsymbol\\xi_2)=A\\boldsymbol\\xi_1=0\\)。防卡方法：在草稿上画“\\(\\boldsymbol\\xi_3\\xrightarrow{A^2}\\boldsymbol\\xi_1\\)、\\(\\boldsymbol\\xi_2\\xrightarrow{A}\\boldsymbol\\xi_1\\xrightarrow{A}0\\)”消元链。",
-      "contentFingerprint": "13c5deff778a184ed1c556e3ed1ddb0c951e64b9949c36aa6cecd3476d285f48"
+      "contentFingerprint": "13c5deff778a184ed1c556e3ed1ddb0c951e64b9949c36aa6cecd3476d285f48",
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "transcriptionNote": "2009年数学一第20题题号红圈，合并到当日同题。"
     },
     {
       "sourcePage": null,
@@ -13004,7 +13019,10 @@ window.WRONG_QUESTIONS = {
         "最低次幂",
         "系数匹配",
         "计算错误",
-        "知识点不熟"
+        "知识点不熟",
+        "考研真题",
+        "2009年",
+        "数学一"
       ],
       "sourceRef": "2026-10-10 当日对话 · 泰勒展开系数纠错（题1）",
       "questionType": "选择题",
@@ -13030,7 +13048,19 @@ window.WRONG_QUESTIONS = {
       "errorCauseEvidence": "用户上传订正图片，手写展开将 (sin(ax)) 的三次项系数写成 (1/3)，与选项答案不一致。",
       "questionNo": 1,
       "reviewFocus": "卡壳位置：记错 \\(\\sin u\\) 的三次项系数。第一步：写标准式 \\(\\sin u=u-u^3/3!+O(u^5)\\)，再令 \\(u=ax\\)。正确突破口：先比较最低次幂，再比较系数；不是一开始就把所有高阶项都展开。考场信号：题目说“等价无穷小”并含参数，通常要做“消低阶项 + 首项系数匹配”。易错点：\\(3!=6\\)，且 \\(\\ln(1-bx)\\) 的首项是 \\(-bx\\)。防卡方法：把三条基本展开固定写在草稿首行：\\(\\sin u=u-u^3/6+\\cdots\\)、\\(\\ln(1+u)=u-u^2/2+\\cdots\\)、\\(e^u=1+u+u^2/2+\\cdots\\)。",
-      "contentFingerprint": "d989b95e8dff9d1ffed0cef3d422cf8e8f9290966f1ab88ac34de104790b5977"
+      "contentFingerprint": "d989b95e8dff9d1ffed0cef3d422cf8e8f9290966f1ab88ac34de104790b5977",
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 1,
+          "pdfPage": 1,
+          "printedPage": 8,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "transcriptionNote": "2009年数学一第1题题号红圈，合并到当日同题。"
     },
     {
       "sourcePage": null,
@@ -13059,7 +13089,10 @@ window.WRONG_QUESTIONS = {
         "初值问题",
         "概念错误",
         "方法选择困难",
-        "思路卡壳"
+        "思路卡壳",
+        "考研真题",
+        "2009年",
+        "数学一"
       ],
       "sourceRef": "2026-10-10 当日对话 · 非齐次方程特解不能套齐次通解（题10）",
       "questionType": "填空题",
@@ -13086,7 +13119,749 @@ window.WRONG_QUESTIONS = {
       "errorCauseEvidence": "用户先用齐次形式直接套初值，得到 ((-2x+2)e^x)，随后明确追问“为什么特解不能直接代入”。",
       "questionNo": 10,
       "reviewFocus": "卡壳位置：不清楚齐次通解与非齐次特解的分工。第一步：由齐次通解反推出特征根和方程系数，然后写 \\(y=y_h+y_p\\)。正确突破口：根据右端 \\(x=e^{0x}P_1(x)\\) 选 \\(y_p=Ax+B\\)；只有当指数 \\(0\\) 是特征根时才乘额外的 \\(x^s\\)。考场信号：题目同时给齐次通解和非齐次方程，必先保留 \\(y_h\\)，再另设 \\(y_p\\)。易错点：初值条件要代入完整的 \\(y_h+y_p\\)，不能只代齐次部分。防卡方法：固定三行模板“反推特征方程—设特解并代入—合并后再用初值”。",
-      "contentFingerprint": "050b0905376a629f697f6f962a0a7bf81ff4238313db9e566abfd65ba045f498"
+      "contentFingerprint": "050b0905376a629f697f6f962a0a7bf81ff4238313db9e566abfd65ba045f498",
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 10,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "transcriptionNote": "2009年数学一第10题题号红圈，合并到当日同题。"
+    },
+    {
+      "id": "exam-2009-math1-q02",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "questionNo": 2,
+      "sourcePage": 1,
+      "printedPage": 8,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第2题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "正方形 \\(|x|\\le1,\\ |y|\\le1\\) 被直线 \\(y=\\pm x\\) 分为四个三角形区域 \\(D_1,D_2,D_3,D_4\\)，分别位于上、左、下、右。设 \\(I_k=\\iint_{D_k}y\\cos x\\,\\mathrm dx\\,\\mathrm dy\\)，则 \\(\\max_{1\\le k\\le4}I_k\\) 为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I_1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I_2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(I_3\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(I_4\\)"
+        }
+      ],
+      "answer": "A",
+      "analysis": "因 \\(\\cos x>0\\)，上三角形积分 \\(I_1>0\\)，下三角形 \\(I_3<0\\)。左右三角形均关于 \\(x\\) 轴对称，\\(y\\cos x\\) 关于 \\(y\\) 为奇函数，故 \\(I_2=I_4=0\\)。最大为 \\(I_1\\)。",
+      "knowledgePoints": [
+        "二重积分对称性",
+        "奇偶性"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "二重积分对称性",
+        "奇偶性"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第2题，围绕二重积分对称性、奇偶性设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号圈选，扣12分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 2,
+          "pdfPage": 1,
+          "printedPage": 8,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q04",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "questionNo": 4,
+      "sourcePage": 1,
+      "printedPage": 8,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第4题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设数列 \\(\\{a_n\\},\\{b_n\\}\\) 满足 \\(\\lim_{n\\to\\infty}a_n=0\\)，下列断言正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "若 \\(\\sum b_n\\) 收敛，则 \\(\\sum a_nb_n\\) 收敛"
+        },
+        {
+          "label": "B",
+          "text": "若 \\(\\sum b_n\\) 发散，则 \\(\\sum a_nb_n\\) 发散"
+        },
+        {
+          "label": "C",
+          "text": "若 \\(\\sum |b_n|\\) 收敛，则 \\(\\sum a_n^2b_n^2\\) 收敛"
+        },
+        {
+          "label": "D",
+          "text": "若 \\(\\sum |b_n|\\) 发散，则 \\(\\sum a_n^2b_n^2\\) 发散"
+        }
+      ],
+      "answer": "C",
+      "analysis": "由于 \\(a_n\\to0\\)，存在常数 \\(M\\) 使 \\(|a_n|\\le M\\)。若 \\(\\sum|b_n|\\) 收敛，则 \\(b_n\\to0\\)，从某项起 \\(b_n^2\\le|b_n|\\)，进而 \\(\\sum a_n^2b_n^2\\) 依比较判别法收敛。其余三项均不能普遍成立，圈选 A 应复盘。",
+      "knowledgePoints": [
+        "绝对收敛",
+        "比较审敛法",
+        "收敛数列"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "错误选择 / 待复盘",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "绝对收敛",
+        "比较审敛法",
+        "收敛数列"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第4题，围绕绝对收敛、比较审敛法、收敛数列设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：红圈选项A（错误选择）。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 4,
+          "pdfPage": 1,
+          "printedPage": 8,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q05",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "向量",
+      "questionNo": 5,
+      "sourcePage": 2,
+      "printedPage": 9,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第5题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 为 \\(\\mathbb R^3\\) 的一组基，则由基 \\(\\alpha_1,\\frac12\\alpha_2,\\frac13\\alpha_3\\) 到基 \\(\\alpha_1+\\alpha_2,\\alpha_2+\\alpha_3,\\alpha_3+\\alpha_1\\) 的过渡矩阵为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}1&0&1\\\\2&2&0\\\\0&3&3\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}1&2&0\\\\0&2&3\\\\1&0&3\\end{pmatrix}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\begin{pmatrix}\\frac12&\\frac14&-\\frac16\\\\-\\frac12&\\frac14&\\frac16\\\\\\frac12&-\\frac14&\\frac16\\end{pmatrix}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\begin{pmatrix}\\frac12&-\\frac12&\\frac12\\\\\\frac14&\\frac14&-\\frac14\\\\-\\frac16&\\frac16&\\frac16\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "analysis": "旧基记作 \\(\\beta_1=\\alpha_1,\\beta_2=\\alpha_2/2,\\beta_3=\\alpha_3/3\\)。三条新基依次为 \\(\\beta_1+2\\beta_2,\\ 2\\beta_2+3\\beta_3,\\ \\beta_1+3\\beta_3\\)。按列取其旧基坐标，过渡矩阵为 \\(\\begin{pmatrix}1&0&1\\\\2&2&0\\\\0&3&3\\end{pmatrix}\\)。坐标变换矩阵则为其逆矩阵。",
+      "knowledgePoints": [
+        "过渡矩阵",
+        "基变换",
+        "坐标"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "概念不熟 / 卡壳",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "过渡矩阵",
+        "基变换",
+        "坐标"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第5题，围绕过渡矩阵、基变换、坐标设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：“过渡矩阵”关键概念红圈。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 5,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q06",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵",
+      "questionNo": 6,
+      "sourcePage": 2,
+      "printedPage": 9,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第6题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(A,B\\) 为2阶矩阵，\\(A^*,B^*\\) 为其伴随矩阵，且 \\(|A|=2,|B|=3\\)。则分块矩阵 \\(\\begin{pmatrix}O&A\\\\B&O\\end{pmatrix}\\) 的伴随矩阵为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}O&3B^*\\\\2A^*&O\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}O&2B^*\\\\3A^*&O\\end{pmatrix}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\begin{pmatrix}O&3A^*\\\\2B^*&O\\end{pmatrix}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\begin{pmatrix}O&2A^*\\\\3B^*&O\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "analysis": "分块矩阵 \\(M\\) 满足 \\(|M|=|A||B|=6\\)，\\(M^{-1}=\\begin{pmatrix}O&B^{-1}\\\\A^{-1}&O\\end{pmatrix}\\)。所以 \\(M^*=6M^{-1}=\\begin{pmatrix}O&2B^*\\\\3A^*&O\\end{pmatrix}\\)。",
+      "knowledgePoints": [
+        "分块矩阵",
+        "伴随矩阵"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "分块矩阵",
+        "伴随矩阵"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第6题，围绕分块矩阵、伴随矩阵设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号红圈。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 6,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q14",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "估计量的评价",
+      "questionNo": 14,
+      "sourcePage": 2,
+      "printedPage": 9,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第14题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "填空题",
+      "stem": "设 \\(X_1,\\ldots,X_n\\) 为来自二项分布总体 \\(B(n,p)\\) 的简单随机样本，\\(\\bar X\\) 与 \\(S^2\\) 分别为样本均值和样本方差。若 \\(\\bar X+kS^2\\) 为 \\(np^2\\) 的无偏估计量，则 \\(k=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(-1\\)",
+      "analysis": " \\(E\\bar X=np\\)，\\(ES^2=np(1-p)\\)。由 \\(np+k np(1-p)=np^2\\) 得 \\(k=-1\\)。",
+      "knowledgePoints": [
+        "无偏估计",
+        "样本均值",
+        "样本方差"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "无偏估计",
+        "样本均值",
+        "样本方差"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第14题，围绕无偏估计、样本均值、样本方差设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号及“无偏”红圈。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 14,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q15",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "questionNo": 15,
+      "sourcePage": 2,
+      "printedPage": 9,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第15题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "求函数 \\(f(x,y)=x^2(2+y^2)+y\\ln y\\) 在定义域 \\(y>0\\) 上的极值。",
+      "options": [],
+      "answer": "在 \\((0,e^{-1})\\) 处有极小值 \\(-e^{-1}\\)，无极大值。",
+      "analysis": " \\(x^2(2+y^2)\\ge0\\)。而 \\(h(y)=y\\ln y\\) 满足 \\(h'(y)=\\ln y+1=0\\) 当且仅当 \\(y=e^{-1}\\)，且 \\(h''(y)=1/y>0\\)。于是 \\(f(x,y)\\ge-1/e\\)，等号当且仅当 \\(x=0,y=e^{-1}\\) 成立。",
+      "knowledgePoints": [
+        "多元函数极值",
+        "驻点与 Hessian"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "多元函数极值",
+        "驻点与 Hessian"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第15题，围绕多元函数极值、驻点与 Hessian设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：第15题扣2分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q16",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "questionNo": 16,
+      "sourcePage": 2,
+      "printedPage": 9,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第16题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "设 \\(a_n\\) 为曲线 \\(y=x^n\\) 与 \\(y=x^{n+1}\\)（\\(n=1,2,\\ldots\\)）围成区域的面积，记 \\(S_1=\\sum_{n=1}^\\infty a_n,\\ S_2=\\sum_{n=1}^\\infty a_{2n-1}\\)。求 \\(S_1,S_2\\)。",
+      "options": [],
+      "answer": " \\(S_1=\\frac12,\\quad S_2=1-\\ln2\\)。",
+      "analysis": " \\(a_n=\\int_0^1(x^n-x^{n+1})\\,\\mathrm dx=\\frac1{(n+1)(n+2)}\\)。由裂项求和 \\(S_1=\\frac12\\)；而 \\(S_2=\\sum_{n=1}^\\infty(\\frac1{2n}-\\frac1{2n+1})=1-\\ln2\\)。",
+      "knowledgePoints": [
+        "旋转前平面面积",
+        "定积分",
+        "级数裂项"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "旋转前平面面积",
+        "定积分",
+        "级数裂项"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第16题，围绕旋转前平面面积、定积分、级数裂项设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号红圈、扣9分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 2,
+          "printedPage": 9,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q17",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "三重积分",
+      "questionNo": 17,
+      "sourcePage": 3,
+      "printedPage": 10,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第17题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "椭球面 \\(S_1\\) 是椭圆 \\(\\frac{x^2}{4}+\\frac{y^2}{3}=1\\) 绕 \\(x\\) 轴旋转而成，圆锥面 \\(S_2\\) 由过 \\((4,0)\\) 且与此椭圆相切的直线绕 \\(x\\) 轴旋转而成。(1) 求 \\(S_1,S_2\\) 方程；(2) 求两曲面之间的有界立体体积。",
+      "options": [],
+      "answer": " \\(S_1:\\frac{x^2}{4}+\\frac{y^2+z^2}{3}=1\\)，\\(S_2:y^2+z^2=\\frac{(4-x)^2}{4}\\)；体积 \\(V=\\frac{3\\pi}{4}\\)。",
+      "analysis": "切点横坐标 \\(x_0=1\\)，切线是 \\(\\frac x4\\pm\\frac y2=1\\)。圆锥截面半径平方 \\(r_c^2=(4-x)^2/4\\)，椭球截面半径平方 \\(r_e^2=3(1-x^2/4)\\)，差为 \\((x-1)^2\\)。有界体积 \\(\\pi\\int_1^2(r_c^2-r_e^2)\\,\\mathrm dx+\\pi\\int_2^4r_c^2\\,\\mathrm dx=3\\pi/4\\)。",
+      "knowledgePoints": [
+        "旋转曲面",
+        "椭圆切线",
+        "三重积分与体积"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "旋转曲面",
+        "椭圆切线",
+        "三重积分与体积"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第17题，围绕旋转曲面、椭圆切线、三重积分与体积设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号红圈、扣9分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q18",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "一元函数微分学的应用（二）—中值定理、微分等式与微分不等式",
+      "questionNo": 18,
+      "sourcePage": 3,
+      "printedPage": 10,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第18题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "证明题",
+      "stem": "(1) 证明拉格朗日中值定理：若 \\(f\\) 在 \\([a,b]\\) 上连续、在 \\((a,b)\\) 内可导，则存在 \\(\\xi\\in(a,b)\\)，使 \\(f(b)-f(a)=f'(\\xi)(b-a)\\)。(2) 证明：若 \\(f\\) 在0处连续，在 \\((0,\\delta)\\) 内可导，且 \\(\\lim_{x\\to0^+}f'(x)=A\\)，则右导数 \\(f'_+(0)\\) 存在且等于 \\(A\\)。",
+      "options": [],
+      "answer": "(1) 拉格朗日中值定理成立；(2) \\(f'_+(0)=A\\)。",
+      "analysis": "(1) 构造 \\(g(x)=f(x)-f(a)-\\frac{f(b)-f(a)}{b-a}(x-a)\\)，利用罗尔定理。(2) 对每个 \\(h\\in(0,\\delta)\\)，在 \\([0,h]\\) 上应用拉格朗日中值定理，存在 \\(\\xi_h\\in(0,h)\\) 使 \\(\\frac{f(h)-f(0)}h=f'(\\xi_h)\\)。由 \\(h\\to0^+\\Rightarrow\\xi_h\\to0^+\\)，取极限为 \\(A\\)。",
+      "knowledgePoints": [
+        "拉格朗日中值定理",
+        "导数极限",
+        "右导数"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "拉格朗日中值定理",
+        "导数极限",
+        "右导数"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第18题，围绕拉格朗日中值定理、导数极限、右导数设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：第(2)问红圈、扣11分。已记录标记小问，原题保持完整。",
+      "wrongSubquestions": [
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [
+            2
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 19,
+      "sourcePage": 3,
+      "printedPage": 10,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第19题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "计算曲面积分 \\(I=\\iint_{\\Sigma}\\frac{x\\,\\mathrm dy\\,\\mathrm dz+y\\,\\mathrm dz\\,\\mathrm dx+z\\,\\mathrm dx\\,\\mathrm dy}{(x^2+y^2+z^2)^{3/2}}\\)，其中 \\(\\Sigma\\) 是椭球面 \\(2x^2+2y^2+z^2=4\\) 的外侧。",
+      "options": [],
+      "answer": " \\(4\\pi\\)。",
+      "analysis": "由于向量场 \\(\\boldsymbol F=(x,y,z)/(x^2+y^2+z^2)^{3/2}\\) 在原点有奇点，不能直接对椭球内部用高斯公式。挖去原点附近小球，对挖空体 \\(\\nabla\\cdot\\boldsymbol F=0\\)。小球内侧边界通量为 \\(-4\\pi\\)，所以椭球外侧通量为 \\(4\\pi\\)。",
+      "knowledgePoints": [
+        "高斯公式",
+        "奇点",
+        "曲面通量"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "高斯公式",
+        "奇点",
+        "曲面通量"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第19题，围绕高斯公式、奇点、曲面通量设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号红圈、扣10分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q21",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "questionNo": 21,
+      "sourcePage": 3,
+      "printedPage": 10,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第21题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "设二次型 \\(f(x_1,x_2,x_3)=ax_1^2+ax_2^2+(a-1)x_3^2+2x_1x_3-2x_2x_3\\)。(1) 求二次型矩阵的所有特征值；(2) 若二次型的规范形为 \\(y_1^2+y_2^2\\)，求 \\(a\\)。",
+      "options": [],
+      "answer": "(1) \\(a,\\ a+1,\\ a-2\\)；(2) \\(a=2\\)。",
+      "analysis": "矩阵为 \\(A=\\begin{pmatrix}a&0&1\\\\0&a&-1\\\\1&-1&a-1\\end{pmatrix}\\)，特征多项式分解为 \\((\\lambda-a)(\\lambda-a-1)(\\lambda-a+2)\\)。规范形 \\(y_1^2+y_2^2\\) 表示两个正特征值、一个零特征值；仅 \\(a=2\\) 满足。",
+      "knowledgePoints": [
+        "二次型矩阵",
+        "特征值",
+        "惯性定律与规范形"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "二次型矩阵",
+        "特征值",
+        "惯性定律与规范形"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第21题，围绕二次型矩阵、特征值、惯性定律与规范形设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：题号红圈、扣11分。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 21,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
+    },
+    {
+      "id": "exam-2009-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维离散型随机变量",
+      "questionNo": 22,
+      "sourcePage": 3,
+      "printedPage": 10,
+      "sourceRef": "2009年全国硕士研究生招生考试数学（一）第22题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2009,
+      "examPaper": "数学一",
+      "questionType": "计算题",
+      "stem": "袋中有1个红球、2个黑球与3个白球。有放回地取两次，每次一个球。\\(X,Y,Z\\) 分别表示两次取到的红、黑、白球个数。(1) 求 \\(P(X=1\\mid Z=0)\\)；(2) 求二维随机变量 \\((X,Y)\\) 的概率分布。",
+      "options": [],
+      "answer": "(1) \\(\\frac49\\)。(2) 当 \\(x,y\\in\\{0,1,2\\}\\)、\\(x+y\\le2\\) 时，\\(P(X=x,Y=y)=\\frac{2!}{x!y!(2-x-y)!}(\\frac16)^x(\\frac13)^y(\\frac12)^{2-x-y}\\)，其他情况为0。",
+      "analysis": "单次红、黑、白的概率分别为 \\(1/6,1/3,1/2\\)。给定 \\(Z=0\\) 时，红球条件概率为 \\(1/3\\)，两次恰一红概率为 \\(2(1/3)(2/3)=4/9\\)。因有放回，\\((X,Y,2-X-Y)\\) 服从三类多项分布。",
+      "knowledgePoints": [
+        "二维离散型分布",
+        "有放回抽样",
+        "多项分布"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "",
+      "tags": [
+        "考研真题",
+        "2009年",
+        "数学一",
+        "二维离散型分布",
+        "有放回抽样",
+        "多项分布"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
+      "similarQuestionPrompt": "仿2009年数学一第22题，围绕二维离散型分布、有放回抽样、多项分布设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "从附件逐题人工转写并独立计算或证明",
+      "transcriptionNote": "标记：第(2)问红圈、扣7分。已记录标记小问，原题保持完整。",
+      "wrongSubquestions": [
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2009,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 10,
+          "wrongSubquestions": [
+            2
+          ],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ]
     }
   ],
   "schemaVersion": 2,
