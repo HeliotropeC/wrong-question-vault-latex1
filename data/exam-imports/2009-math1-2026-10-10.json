@@ -1,0 +1,126 @@
+{
+  "batchId": "exam-2009-math1-20261010",
+  "importedAt": "2026-10-10",
+  "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(1).pdf",
+  "examYear": 2009,
+  "examPaper": "数学一",
+  "selectionRule": "卷面红圈、选项和术语圈选、局部小问标记、扣分均纳入。重复题合并保留旧ID与原笔记。",
+  "counts": {
+    "marked": 15,
+    "added": 12,
+    "merged": 3,
+    "before": 280,
+    "after": 292
+  },
+  "decisions": [
+    {
+      "questionNo": 1,
+      "decision": "merged-existing",
+      "targetId": "daily-20261010-calc-equivalent-infinitesimal-taylor",
+      "marker": "题号红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 2,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q02",
+      "marker": "题号圈选，扣12分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 4,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q04",
+      "marker": "红圈选项A（错误选择）",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 5,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q05",
+      "marker": "“过渡矩阵”关键概念红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 6,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q06",
+      "marker": "题号红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 10,
+      "decision": "merged-existing",
+      "targetId": "daily-20261010-calc-nonhomogeneous-ode-particular",
+      "marker": "题号红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 14,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q14",
+      "marker": "题号及“无偏”红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 15,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q15",
+      "marker": "第15题扣2分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 16,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q16",
+      "marker": "题号红圈、扣9分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 17,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q17",
+      "marker": "题号红圈、扣9分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 18,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q18",
+      "marker": "第(2)问红圈、扣11分",
+      "wrongSubquestions": [
+        2
+      ]
+    },
+    {
+      "questionNo": 19,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q19",
+      "marker": "题号红圈、扣10分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 20,
+      "decision": "merged-existing",
+      "targetId": "daily-20261010-la-generalized-vector-chain",
+      "marker": "题号红圈",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 21,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q21",
+      "marker": "题号红圈、扣11分",
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 22,
+      "decision": "added",
+      "targetId": "exam-2009-math1-q22",
+      "marker": "第(2)问红圈、扣7分",
+      "wrongSubquestions": [
+        2
+      ]
+    }
+  ]
+}
