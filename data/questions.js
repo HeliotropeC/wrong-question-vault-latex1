@@ -13542,7 +13542,7 @@ window.WRONG_QUESTIONS = {
       "stem": "设 \\(a_n\\) 为曲线 \\(y=x^n\\) 与 \\(y=x^{n+1}\\)（\\(n=1,2,\\ldots\\)）围成区域的面积，记 \\(S_1=\\sum_{n=1}^\\infty a_n,\\ S_2=\\sum_{n=1}^\\infty a_{2n-1}\\)。求 \\(S_1,S_2\\)。",
       "options": [],
       "answer": " \\(S_1=\\frac12,\\quad S_2=1-\\ln2\\)。",
-      "analysis": " \\(a_n=\\int_0^1(x^n-x^{n+1})\\,\\mathrm dx=\\frac1{(n+1)(n+2)}\\)。由裂项求和 \\(S_1=\\frac12\\)；而 \\(S_2=\\sum_{n=1}^\\infty(\\frac1{2n}-\\frac1{2n+1})=1-\\ln2\\)。",
+      "analysis": "在 \\(0\\le x\\le1\\) 上有 \\(x^n\\ge x^{n+1}\\)，故\n\\[\na_n=\\int_0^1\\bigl(x^n-x^{n+1}\\bigr)\\,\\mathrm dx\n=\\frac1{n+1}-\\frac1{n+2}\n=\\frac1{(n+1)(n+2)}.\n\\]\n于是\n\\[\nS_1=\\sum_{n=1}^{\\infty}\\left(\\frac1{n+1}-\\frac1{n+2}\\right)=\\frac12.\n\\]\n又\n\\[\nS_2=\\sum_{n=1}^{\\infty}a_{2n-1}\n=\\sum_{n=1}^{\\infty}\\left(\\frac1{2n}-\\frac1{2n+1}\\right).\n\\]\n利用交错调和级数\n\\[\n\\ln2=1-\\frac12+\\frac13-\\frac14+\\cdots,\n\\]\n可得\n\\[\nS_2=\\frac12-\\frac13+\\frac14-\\frac15+\\cdots=1-\\ln2.\n\\]",
       "knowledgePoints": [
         "旋转前平面面积",
         "定积分",
@@ -13551,19 +13551,20 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "",
+      "mistakeType": "计算错误 / 方法选择困难",
+      "note": "与当天真题导入的同题合并，不重复建卡；补充用户实际演算与卡壳证据。",
       "tags": [
         "考研真题",
         "2009年",
         "数学一",
         "旋转前平面面积",
         "定积分",
-        "级数裂项"
+        "级数裂项",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
-      "similarQuestionPrompt": "仿2009年数学一第16题，围绕旋转前平面面积、定积分、级数裂项设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "errorCause": "计算面积时没有先固定 \\([0,1]\\) 上两曲线的上下关系；求 \\(S_2\\) 时虽已写出 \\(\\frac12-\\frac13+\\frac14-\\cdots\\)，却又引入幂级数中的自由变量 \\(x\\)，没有明确在 \\(x=1\\) 处代入并识别它是交错调和级数去掉首项后的尾和，导致常数项和最终结果不稳定。",
+      "errorCauseEvidence": "手写过程显示面积被积函数次序一度混乱；求 \\(S_2\\) 时转向 \\(\\sum(-1)^{n+1}x^n/n\\)，积分后未正确确定常数及代入点，卷面该题扣9分。",
+      "similarQuestionPrompt": "设 \\(b_n\\) 为曲线 \\(y=x^{2n}\\) 与 \\(y=x^{2n+1}\\) 在 \\([0,1]\\) 上围成的面积。求 \\(\\sum_{n=1}^{\\infty}b_n\\)，并说明它与 \\(\\ln2\\) 的关系；给出完整 LaTeX 解答。",
       "transcriptionStatus": "verified",
       "answerVerification": "从附件逐题人工转写并独立计算或证明",
       "transcriptionNote": "标记：题号红圈、扣9分。",
@@ -13577,6 +13578,18 @@ window.WRONG_QUESTIONS = {
           "printedPage": 9,
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "reviewFocus": "卡壳位置：已得到交错分数串，却不知道怎样与 \\(\\ln2\\) 对接。第一步：先在 \\([0,1]\\) 比较 \\(x^n\\) 与 \\(x^{n+1}\\)，算出通项 \\(a_n\\)。正确突破口：把 \\(S_2\\) 直接写成 \\(\\frac12-\\frac13+\\frac14-\\cdots\\)，再与 \\(\\ln2=1-\\frac12+\\frac13-\\cdots\\) 对照。考场信号：面积通项带相邻分母时先裂项；出现奇偶抽取后的交错倒数时联想 \\(\\ln(1+x)\\) 在 \\(x=1\\) 的展开。易错点：不要保留未代入的自由变量，也不要漏掉交错级数的首项 \\(1\\)。防卡方法：写成“目标级数 \\(=1-\\ln2\\)”的逐项对照式后再落答案。",
+      "historyImportBatches": [
+        "daily-2026-10-11-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-11",
+          "verification": "原题截图、用户手写过程与连续追问交叉核对",
+          "sourceLabel": "2009年数学一第16题当日复盘"
         }
       ]
     },
@@ -13652,7 +13665,7 @@ window.WRONG_QUESTIONS = {
       "stem": "(1) 证明拉格朗日中值定理：若 \\(f\\) 在 \\([a,b]\\) 上连续、在 \\((a,b)\\) 内可导，则存在 \\(\\xi\\in(a,b)\\)，使 \\(f(b)-f(a)=f'(\\xi)(b-a)\\)。(2) 证明：若 \\(f\\) 在0处连续，在 \\((0,\\delta)\\) 内可导，且 \\(\\lim_{x\\to0^+}f'(x)=A\\)，则右导数 \\(f'_+(0)\\) 存在且等于 \\(A\\)。",
       "options": [],
       "answer": "(1) 拉格朗日中值定理成立；(2) \\(f'_+(0)=A\\)。",
-      "analysis": "(1) 构造 \\(g(x)=f(x)-f(a)-\\frac{f(b)-f(a)}{b-a}(x-a)\\)，利用罗尔定理。(2) 对每个 \\(h\\in(0,\\delta)\\)，在 \\([0,h]\\) 上应用拉格朗日中值定理，存在 \\(\\xi_h\\in(0,h)\\) 使 \\(\\frac{f(h)-f(0)}h=f'(\\xi_h)\\)。由 \\(h\\to0^+\\Rightarrow\\xi_h\\to0^+\\)，取极限为 \\(A\\)。",
+      "analysis": "(1) 用割线减原函数构造罗尔定理的端点同值条件：\n\\[\ng(x)=f(x)-f(a)-\\frac{f(b)-f(a)}{b-a}(x-a).\n\\]\n则 \\(g(a)=g(b)=0\\)。由罗尔定理，存在 \\(\\xi\\in(a,b)\\) 使 \\(g'(\\xi)=0\\)，从而\n\\[\nf(b)-f(a)=f'(\\xi)(b-a).\n\\]\n\n(2) 对任意 \\(h\\in(0,\\delta)\\)，函数 \\(f\\) 在 \\([0,h]\\) 上连续、在 \\((0,h)\\) 内可导。由第(1)问，存在 \\(\\xi_h\\in(0,h)\\) 使\n\\[\n\\frac{f(h)-f(0)}h=f'(\\xi_h).\n\\]\n由于 \\(0<\\xi_h<h\\) 且 \\(h\\to0^+\\)，故 \\(\\xi_h\\to0^+\\)，于是\n\\[\nf'_+(0)=\\lim_{h\\to0^+}\\frac{f(h)-f(0)}h\n=\\lim_{h\\to0^+}f'(\\xi_h)=A.\n\\]\n注意：连续性只保证 \\(f(h)\\to f(0)\\)，并不推出 \\(f(0)=0\\)。",
       "knowledgePoints": [
         "拉格朗日中值定理",
         "导数极限",
@@ -13661,19 +13674,20 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 概念错误",
+      "note": "与当天真题导入的同题合并，不重复建卡；补充“怎么想到”和第(2)问不会起步的复盘记录。",
       "tags": [
         "考研真题",
         "2009年",
         "数学一",
         "拉格朗日中值定理",
         "导数极限",
-        "右导数"
+        "右导数",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
-      "similarQuestionPrompt": "仿2009年数学一第18题，围绕拉格朗日中值定理、导数极限、右导数设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "errorCause": "第(1)问没有抓住“构造端点函数值相等”这一罗尔定理入口，尝试了过于复杂的辅助函数；第(2)问又把差商拆开取极限，并误把连续性理解成 \\(f(0)=0\\)，没有想到在小区间 \\([0,h]\\) 上直接使用刚证明的拉格朗日中值定理。",
+      "errorCauseEvidence": "用户明确追问“这怎么可能想到”和表示不知道如何继续；手写第(2)问出现由连续性推出 \\(f(0)=0\\) 的错误，并未把差商转化为某个中间点的导数。",
+      "similarQuestionPrompt": "设 \\(f\\) 在 \\([0,1]\\) 上连续、在 \\((0,1]\\) 上可导，且 \\(\\lim_{x\\to0^+}f'(x)=0\\)。证明 \\(f(x)-f(0)=o(x)\\ (x\\to0^+)\\)，并指出证明中拉格朗日中值定理的使用位置。",
       "transcriptionStatus": "verified",
       "answerVerification": "从附件逐题人工转写并独立计算或证明",
       "transcriptionNote": "标记：第(2)问红圈、扣11分。已记录标记小问，原题保持完整。",
@@ -13691,6 +13705,18 @@ window.WRONG_QUESTIONS = {
             2
           ],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "reviewFocus": "卡壳位置：面对 \\(\\frac{f(h)-f(0)}h\\) 想直接拆分极限。第一步：看到“端点差商”和“区间内导数极限”同时出现，立刻在 \\([0,h]\\) 上写拉格朗日中值定理。正确突破口：用 \\(\\xi_h\\in(0,h)\\) 把差商变为 \\(f'(\\xi_h)\\)，再由夹逼得到 \\(\\xi_h\\to0^+\\)。考场信号：结论是端点导数，而条件给的是邻域内导数极限，通常用中值定理搭桥。易错点：连续不等于函数值为零；证明中必须说明 \\(\\xi_h\\to0^+\\)。防卡方法：记住模板“差商 \\(\\xrightarrow{\\text{MVT}}\\) 中间点导数”。",
+      "historyImportBatches": [
+        "daily-2026-10-11-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-11",
+          "verification": "原题截图、用户手写过程与连续追问交叉核对",
+          "sourceLabel": "2009年数学一第18题当日复盘"
         }
       ]
     },
@@ -13711,7 +13737,7 @@ window.WRONG_QUESTIONS = {
       "stem": "计算曲面积分 \\(I=\\iint_{\\Sigma}\\frac{x\\,\\mathrm dy\\,\\mathrm dz+y\\,\\mathrm dz\\,\\mathrm dx+z\\,\\mathrm dx\\,\\mathrm dy}{(x^2+y^2+z^2)^{3/2}}\\)，其中 \\(\\Sigma\\) 是椭球面 \\(2x^2+2y^2+z^2=4\\) 的外侧。",
       "options": [],
       "answer": " \\(4\\pi\\)。",
-      "analysis": "由于向量场 \\(\\boldsymbol F=(x,y,z)/(x^2+y^2+z^2)^{3/2}\\) 在原点有奇点，不能直接对椭球内部用高斯公式。挖去原点附近小球，对挖空体 \\(\\nabla\\cdot\\boldsymbol F=0\\)。小球内侧边界通量为 \\(-4\\pi\\)，所以椭球外侧通量为 \\(4\\pi\\)。",
+      "analysis": "令\n\\[\n\\boldsymbol F(x,y,z)=\\frac{(x,y,z)}{(x^2+y^2+z^2)^{3/2}}.\n\\]\n在 \\(\\boldsymbol r\\ne\\boldsymbol0\\) 处，\\(\\nabla\\cdot\\boldsymbol F=0\\)，但原点是奇点，不能直接对整个椭球内部使用高斯公式。取以原点为球心、半径为 \\(\\varepsilon\\) 的小球 \\(B_\\varepsilon\\)，对挖空区域\n\\[\n\\Omega_\\varepsilon=\\{2x^2+2y^2+z^2\\le4\\}\\setminus B_\\varepsilon\n\\]\n应用高斯公式。其边界由椭球外侧 \\(\\Sigma\\) 与小球的“内侧边界”组成；后者相对于 \\(\\Omega_\\varepsilon\\) 的外法向为 \\(-\\boldsymbol e_r\\)。因此\n\\[\n0=\\iiint_{\\Omega_\\varepsilon}\\nabla\\cdot\\boldsymbol F\\,\\mathrm dV\n=I+\\iint_{S_\\varepsilon}\\boldsymbol F\\cdot(-\\boldsymbol e_r)\\,\\mathrm dS.\n\\]\n在 \\(S_\\varepsilon\\) 上，\\(\\boldsymbol F=\\boldsymbol e_r/\\varepsilon^2\\)，故\n\\[\n\\iint_{S_\\varepsilon}\\boldsymbol F\\cdot\\boldsymbol e_r\\,\\mathrm dS\n=\\frac1{\\varepsilon^2}\\cdot4\\pi\\varepsilon^2=4\\pi.\n\\]\n于是内侧边界通量为 \\(-4\\pi\\)，从而 \\(I=4\\pi\\)。",
       "knowledgePoints": [
         "高斯公式",
         "奇点",
@@ -13720,19 +13746,20 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "",
+      "mistakeType": "概念错误 / 方法选择困难 / 边界或范围判断困难",
+      "note": "与当天真题导入的同题合并，不重复建卡；补充奇点检查、挖球边界方向及小球通量复盘。",
       "tags": [
         "考研真题",
         "2009年",
         "数学一",
         "高斯公式",
         "奇点",
-        "曲面通量"
+        "曲面通量",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
-      "similarQuestionPrompt": "仿2009年数学一第19题，围绕高斯公式、奇点、曲面通量设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "errorCause": "算出 \\(\\nabla\\cdot\\boldsymbol F=0\\) 后险些直接判定闭曲面通量为零，忽略了高斯公式要求向量场在所围区域内连续可微，而原点是奇点；同时对“挖去小球后小球边界的法向为何指向球心”以及小球通量为何恒为 \\(4\\pi\\) 不稳定。",
+      "errorCauseEvidence": "用户连续追问其与散度的关系、完整步骤、代数化简和小球通量；手写过程直接计算散度但未先处理原点奇性，卷面该题扣10分。",
+      "similarQuestionPrompt": "设 \\(\\Sigma\\) 是任意包围原点的分片光滑闭曲面，取外侧，计算 \\(\\iint_\\Sigma \\frac{x\\,\\mathrm dy\\,\\mathrm dz+y\\,\\mathrm dz\\,\\mathrm dx+z\\,\\mathrm dx\\,\\mathrm dy}{(x^2+y^2+z^2)^{3/2}}\\)；再讨论当 \\(\\Sigma\\) 不包围原点时的结果，并给出严格说明。",
       "transcriptionStatus": "verified",
       "answerVerification": "从附件逐题人工转写并独立计算或证明",
       "transcriptionNote": "标记：题号红圈、扣10分。",
@@ -13746,6 +13773,18 @@ window.WRONG_QUESTIONS = {
           "printedPage": 10,
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
+        }
+      ],
+      "reviewFocus": "卡壳位置：得到散度为零后，不知道为何答案不为零。第一步：使用高斯公式前先检查分母为零的位置是否落在闭曲面内部。正确突破口：原点在椭球内且为奇点，必须挖去小球；对挖空区域应用高斯公式并正确处理内边界方向。考场信号：场形如 \\(\\boldsymbol r/\\|\\boldsymbol r\\|^3\\) 时立即联想原点奇点和总通量 \\(4\\pi\\)。易错点：小球相对于挖空区域的外法向是 \\(-\\boldsymbol e_r\\)，所以内边界通量为 \\(-4\\pi\\)。防卡方法：草稿固定写三行——“查奇点 → 挖球 → 外边界通量 + 内边界通量 = 0”。",
+      "historyImportBatches": [
+        "daily-2026-10-11-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-11",
+          "verification": "原题截图、用户手写过程与连续追问交叉核对",
+          "sourceLabel": "2009年数学一第19题当日复盘"
         }
       ]
     },
@@ -13821,7 +13860,7 @@ window.WRONG_QUESTIONS = {
       "stem": "袋中有1个红球、2个黑球与3个白球。有放回地取两次，每次一个球。\\(X,Y,Z\\) 分别表示两次取到的红、黑、白球个数。(1) 求 \\(P(X=1\\mid Z=0)\\)；(2) 求二维随机变量 \\((X,Y)\\) 的概率分布。",
       "options": [],
       "answer": "(1) \\(\\frac49\\)。(2) 当 \\(x,y\\in\\{0,1,2\\}\\)、\\(x+y\\le2\\) 时，\\(P(X=x,Y=y)=\\frac{2!}{x!y!(2-x-y)!}(\\frac16)^x(\\frac13)^y(\\frac12)^{2-x-y}\\)，其他情况为0。",
-      "analysis": "单次红、黑、白的概率分别为 \\(1/6,1/3,1/2\\)。给定 \\(Z=0\\) 时，红球条件概率为 \\(1/3\\)，两次恰一红概率为 \\(2(1/3)(2/3)=4/9\\)。因有放回，\\((X,Y,2-X-Y)\\) 服从三类多项分布。",
+      "analysis": "单次取到红、黑、白球的概率分别为\n\\[\np_R=\\frac16,\\qquad p_B=\\frac13,\\qquad p_W=\\frac12.\n\\]\n(1) 在条件 \\(Z=0\\) 下，每次只能取红或黑，条件红球概率为\n\\[\nP(R\\mid R\\cup B)=\\frac{1/6}{1/6+1/3}=\\frac13.\n\\]\n所以\n\\[\nP(X=1\\mid Z=0)=\\binom21\\frac13\\frac23=\\frac49.\n\\]\n\n(2) 因为有放回，且 \\(X+Y+Z=2\\)，故对 \\(x,y\\in\\{0,1,2\\}\\)、\\(x+y\\le2\\)，\n\\[\nP(X=x,Y=y)=\\frac{2!}{x!y!(2-x-y)!}\n\\left(\\frac16\\right)^x\n\\left(\\frac13\\right)^y\n\\left(\\frac12\\right)^{2-x-y}.\n\\]\n联合分布表的六个非零值为\n\\[\n\\begin{array}{c|ccc}\n &Y=0&Y=1&Y=2\\\\\\hline\nX=0&\\frac14&\\frac13&\\frac19\\\\\nX=1&\\frac16&\\frac19&0\\\\\nX=2&\\frac1{36}&0&0\n\\end{array}\n\\]\n各项之和为 \\(1\\)，其余点概率为 \\(0\\)。",
       "knowledgePoints": [
         "二维离散型分布",
         "有放回抽样",
@@ -13830,19 +13869,20 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "",
+      "mistakeType": "计算错误 / 概念错误 / 审题错误",
+      "note": "与当天真题导入的同题合并，不重复建卡；补充条件概率归一化、排列系数和联合分布完备性检查。",
       "tags": [
         "考研真题",
         "2009年",
         "数学一",
         "二维离散型分布",
         "有放回抽样",
-        "多项分布"
+        "多项分布",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "据卷面标记收录，未提供完整作答过程；具体错因待复盘。",
-      "similarQuestionPrompt": "仿2009年数学一第22题，围绕二维离散型分布、有放回抽样、多项分布设计高频典型同类题，给出LaTeX公式、答案和分步解析。",
+      "errorCause": "第(1)问没有先在条件事件 \\(Z=0\\) 下重新归一化红、黑两类概率；第(2)问按颜色概率直接相乘时漏乘两次抽取的排列数，且遗漏支持点 \\((2,0)\\)，导致概率表不完备、总和不为 \\(1\\)。",
+      "errorCauseEvidence": "手写联合分布出现漏项与排列系数错误，概率和曾算成大于1；卷面第(2)问红圈并扣7分。",
+      "similarQuestionPrompt": "袋中有2个红球、1个黑球、3个白球，有放回抽取3次。令 \\(X,Y\\) 分别为红球和黑球出现次数。求 \\(P(X=1\\mid X+Y=3)\\) 及 \\((X,Y)\\) 的联合分布，并核对概率和。",
       "transcriptionStatus": "verified",
       "answerVerification": "从附件逐题人工转写并独立计算或证明",
       "transcriptionNote": "标记：第(2)问红圈、扣7分。已记录标记小问，原题保持完整。",
@@ -13861,12 +13901,24 @@ window.WRONG_QUESTIONS = {
           ],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
         }
+      ],
+      "reviewFocus": "卡壳位置：把“两个球的颜色组合”当成无序事件，直接相乘单次概率。第一步：写出 \\(p_R=1/6,p_B=1/3,p_W=1/2\\) 以及约束 \\(X+Y+Z=2\\)。正确突破口：条件题先在 \\(Z=0\\) 下归一化；联合分布按 \\(x+y\\le2\\) 枚举六个支持点，并使用多项式系数。考场信号：有放回、多次独立抽取、统计各类别个数，优先识别多项分布。易错点：\\((R,B)\\) 与 \\((B,R)\\) 是两个次序，恰一红一黑需乘 \\(2\\)；最后必须检查概率和为 \\(1\\)。防卡方法：先画三角支持集，再填概率，最后做总和校验。",
+      "historyImportBatches": [
+        "daily-2026-10-11-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-11",
+          "verification": "原题截图、用户手写过程与连续追问交叉核对",
+          "sourceLabel": "2009年数学一第22题当日复盘"
+        }
       ]
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -13878,7 +13930,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-04-v1",
     "daily-2026-10-08-v1",
     "daily-2026-10-09-v1",
-    "daily-2026-10-10-v1"
+    "daily-2026-10-10-v1",
+    "daily-2026-10-11-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005"
