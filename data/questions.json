@@ -11539,7 +11539,7 @@
       "sourcePage": null,
       "printedPage": null,
       "markerColor": "daily",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
       "options": [],
@@ -11598,7 +11598,7 @@
       ],
       "answerVerification": "题图、秩上下界证明与方程组代入复核",
       "errorCauseEvidence": "批改中明确发现将列向量当作特征向量；用户随后继续追问相似条件和特征向量。",
-      "reviewFocus": "卡壳位置：证明 \\(r(A)\\ge2\\) 时错误地把列向量当特征向量。突破口：非零特征值满足 \\(Av=\\lambda v\\Rightarrow v=Av/\\lambda\\in R(A)\\)。第一步先用列关系得上界和零特征值，再用另外两个互异非零特征值给下界。易错点：列相关只给 \\(r\\le2\\)，不能直接推出等号。防卡方法：遇到“秩+特征值”固定从“值域容纳多少个非零特征向量”切入。",
+      "reviewFocus": "卡壳位置：证明 \\(r(A)\\ge2\\) 时错误地把列向量当特征向量。突破口：非零特征值满足 \\(Av=\\lambda v\\Rightarrow v=Av/\\lambda\\in R(A)\\)。第一步先用列关系得上界和零特征值，再用另外两个互异非零特征值给下界。易错点：列相关只给 \\(r\\le2\\)，不能直接推出等号。防卡方法：遇到“秩+特征值”固定从“值域容纳多少个非零特征向量”切入。\n2026-10-12第1套第10题遗忘。复练记忆链：列相关→零特征值→三个互异特征值→可对角化→秩为2。",
       "contentFingerprint": "91a9a189d81db9289f076412016044b3190d661e1e1f084c33d7287e89824046",
       "sourceCategory": "考研真题",
       "examYear": 2017,
@@ -11626,7 +11626,22 @@
       "examImportBatches": [
         "exam-2017-math1-20261005"
       ],
-      "questionNo": 20
+      "questionNo": 20,
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 10,
+          "scope": "第(1)问",
+          "result": "遗忘思路",
+          "earnedPoints": 0,
+          "maxPoints": 12,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "reviewPriority": "高",
+      "lastReviewIssue": "忘记第(1)问的证明思路：列相关推出 det(A)=0、0 是特征值，利用3个互不相同特征值确保可相似对角化，再根据非零特征值个数得 r(A)=2。"
     },
     {
       "sourcePage": null,
@@ -11711,7 +11726,7 @@
       "sourcePage": null,
       "printedPage": null,
       "markerColor": "daily",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
       "options": [],
@@ -11791,13 +11806,27 @@
       "examImportBatches": [
         "exam-2017-math1-20261005"
       ],
-      "questionNo": 6
+      "questionNo": 6,
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 3,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 4,
+          "maxPoints": 4,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "sourcePage": null,
       "printedPage": null,
       "markerColor": "daily",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "note": "纳入做错、卡壳、方法判断不稳及追问解题思路的题目；变式题按考研真题常见设问设计。",
       "options": [],
@@ -11875,7 +11904,21 @@
       "examImportBatches": [
         "exam-2017-math1-20261005"
       ],
-      "questionNo": 7
+      "questionNo": 7,
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 4,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 4,
+          "maxPoints": 4,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2017-math1-q02",
@@ -12116,7 +12159,7 @@
         "链式法则"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "待归类",
       "note": "",
@@ -12155,7 +12198,21 @@
         "exam-2017-math1-20261005"
       ],
       "contentFingerprint": "bd9da05f4281634f7121e8699215375dd6340781fa7fd8997d228c19a1edbdf4",
-      "questionNo": 15
+      "questionNo": 15,
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 6,
+          "scope": "原题二阶导数部分",
+          "result": "自查正确",
+          "earnedPoints": 10,
+          "maxPoints": 10,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2017-math1-q16",
@@ -13305,7 +13362,7 @@
         "收敛数列"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "错误选择 / 待复盘",
       "note": "",
@@ -13334,7 +13391,21 @@
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 1,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 4,
+          "maxPoints": 4,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q05",
@@ -13377,7 +13448,7 @@
         "坐标"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "概念不熟 / 卡壳",
       "note": "",
@@ -13406,7 +13477,21 @@
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 2,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 4,
+          "maxPoints": 4,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q06",
@@ -13502,7 +13587,7 @@
         "样本方差"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "待归类",
       "note": "",
@@ -13531,7 +13616,21 @@
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 5,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 4,
+          "maxPoints": 4,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q15",
@@ -13610,7 +13709,7 @@
         "级数裂项"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "计算错误 / 方法选择困难",
       "note": "与当天真题导入的同题合并，不重复建卡；补充用户实际演算与卡壳证据。",
@@ -13652,7 +13751,21 @@
           "verification": "原题截图、用户手写过程与连续追问交叉核对",
           "sourceLabel": "2009年数学一第16题当日复盘"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 7,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 12,
+          "maxPoints": 12,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q17",
@@ -13733,7 +13846,7 @@
         "右导数"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "思路卡壳 / 方法选择困难 / 概念错误",
       "note": "与当天真题导入的同题合并，不重复建卡；补充“怎么想到”和第(2)问不会起步的复盘记录。",
@@ -13779,7 +13892,21 @@
           "verification": "原题截图、用户手写过程与连续追问交叉核对",
           "sourceLabel": "2009年数学一第18题当日复盘"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 8,
+          "scope": "第(2)问",
+          "result": "自查正确",
+          "earnedPoints": 10,
+          "maxPoints": 10,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q19",
@@ -13805,7 +13932,7 @@
         "曲面通量"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "概念错误 / 方法选择困难 / 边界或范围判断困难",
       "note": "与当天真题导入的同题合并，不重复建卡；补充奇点检查、挖球边界方向及小球通量复盘。",
@@ -13847,7 +13974,21 @@
           "verification": "原题截图、用户手写过程与连续追问交叉核对",
           "sourceLabel": "2009年数学一第19题当日复盘"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 9,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 14,
+          "maxPoints": 14,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q21",
@@ -13873,7 +14014,7 @@
         "惯性定律与规范形"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "待归类",
       "note": "",
@@ -13902,7 +14043,21 @@
           "wrongSubquestions": [],
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(1).pdf"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 11,
+          "scope": "全题",
+          "result": "自查正确",
+          "earnedPoints": 12,
+          "maxPoints": 12,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2009-math1-q22",
@@ -13928,7 +14083,7 @@
         "多项分布"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "计算错误 / 概念错误 / 审题错误",
       "note": "与当天真题导入的同题合并，不重复建卡；补充条件概率归一化、排列系数和联合分布完备性检查。",
@@ -13974,7 +14129,21 @@
           "verification": "原题截图、用户手写过程与连续追问交叉核对",
           "sourceLabel": "2009年数学一第22题当日复盘"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+          "date": "2026-10-12",
+          "practiceSet": "考研数学一·真题错题重练卷 第1套",
+          "practiceQuestionNumber": 12,
+          "scope": "第(2)问",
+          "result": "自查正确",
+          "earnedPoints": 10,
+          "maxPoints": 10,
+          "verification": "用户自查，尚未逐题核验手写解答"
+        }
+      ],
+      "lastReviewResult": "2026-10-12第1套：自查正确（未独立核验），仍建议间隔复练以确认掌握。"
     },
     {
       "id": "exam-2018-math1-q01",
