@@ -1,0 +1,143 @@
+{
+  "batchId": "exam-2018-math1-20261012",
+  "importedAt": "2026-10-12",
+  "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(2).pdf",
+  "sourceLibraryFileId": "libfile_f3db3cebfa548191b1febf75db44a9b6",
+  "sourceArchive": "paper-2018-math1-2026-10-10",
+  "examYear": 2018,
+  "examPaper": "数学一",
+  "selectionRule": "红圈题号或小问/表达式为复习标记，不在无作答细节时臆断具体错因与准确分数",
+  "counts": {
+    "marked": 13,
+    "added": 10,
+    "merged": 3,
+    "before": 292,
+    "after": 302
+  },
+  "decisions": [
+    {
+      "questionNo": 1,
+      "targetId": "exam-2018-math1-q01",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 1,
+      "printedPage": 35
+    },
+    {
+      "questionNo": 2,
+      "targetId": "exam-2018-math1-q02",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 1,
+      "printedPage": 35
+    },
+    {
+      "questionNo": 11,
+      "targetId": "exam-2018-math1-q11",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 12,
+      "targetId": "exam-2018-math1-q12",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 15,
+      "targetId": "exam-2018-math1-q15",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 16,
+      "targetId": "exam-2018-math1-q16",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 17,
+      "targetId": "exam-2018-math1-q17",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 18,
+      "targetId": "exam-2018-math1-q18",
+      "decision": "added",
+      "marker": "partial_red_circle_or_underline",
+      "wrongSubquestions": [
+        "(2)"
+      ],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 19,
+      "targetId": "exam-2018-math1-q19",
+      "decision": "added",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 20,
+      "targetId": "daily-20261009-la-quadratic-form-sum-of-squares",
+      "decision": "merged-existing",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 2,
+      "printedPage": 36
+    },
+    {
+      "questionNo": 21,
+      "targetId": "daily-20261009-la-column-equivalence-apb",
+      "decision": "merged-existing",
+      "marker": "red_circle",
+      "wrongSubquestions": [],
+      "pdfPage": 3,
+      "printedPage": 37
+    },
+    {
+      "questionNo": 22,
+      "targetId": "exam-2018-math1-q22",
+      "decision": "added",
+      "marker": "partial_red_circle_or_underline",
+      "wrongSubquestions": [
+        "(2)"
+      ],
+      "pdfPage": 3,
+      "printedPage": 37
+    },
+    {
+      "questionNo": 23,
+      "targetId": "daily-20261009-prob-laplace-mle-variance",
+      "decision": "merged-existing",
+      "marker": "partial_red_circle_or_underline",
+      "wrongSubquestions": [
+        "(2)中的D(σ̂)"
+      ],
+      "pdfPage": 3,
+      "printedPage": 37
+    }
+  ],
+  "note": "已使用原始3页标注版试卷逐题核对；个人错因不从红圈或边注推断；重复题保留原历史错题卡片并补上2018来源。"
+}
