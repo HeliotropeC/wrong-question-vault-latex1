@@ -1,0 +1,134 @@
+{
+  "sessionKey": "2026-10-12-math1-wrong-exam-review-set1",
+  "date": "2026-10-12",
+  "title": "数学一真题错题重练卷第1套",
+  "sourceYears": [
+    2009,
+    2017
+  ],
+  "sourceFile": "数学一_真题错题重练卷_第1套.pdf",
+  "basedOn": "用户自行核对答案反馈：第10题忘记，其余题正确。",
+  "questionCount": 12,
+  "correctCount": 11,
+  "forgotCount": 1,
+  "maxPoints": 100,
+  "earnedPoints": 88,
+  "caution": "分数基于用户自查；第10题按未完成计0分。未审核解答过程，不认定其余11题已经永久掌握。",
+  "weakest": {
+    "practiceNumber": 10,
+    "originalExam": "2017年数学一第20题第(1)问",
+    "questionId": "daily-20261005-linear-rank-eigenvalues-system",
+    "keyIdea": "列向量相关→零特征值；三个不同特征值→可相似对角化；对角矩阵只有两个非零特征值→秩为2。",
+    "nextPractice": "次日闭卷重证一次，三天后再做结构相近的秩与特征值综合题。"
+  },
+  "entries": [
+    {
+      "practiceNumber": 1,
+      "questionId": "exam-2009-math1-q04",
+      "scope": "全题",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 2,
+      "questionId": "exam-2009-math1-q05",
+      "scope": "全题",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 3,
+      "questionId": "daily-20261005-linear-similarity-geometric-multiplicity",
+      "scope": "全题",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 4,
+      "questionId": "daily-20261005-prob-positive-association-conditional-probability",
+      "scope": "全题",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 5,
+      "questionId": "exam-2009-math1-q14",
+      "scope": "全题",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 6,
+      "questionId": "exam-2017-math1-q15",
+      "scope": "原题二阶导数部分",
+      "maxPoints": 10,
+      "earnedPoints": 10,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 7,
+      "questionId": "exam-2009-math1-q16",
+      "scope": "全题",
+      "maxPoints": 12,
+      "earnedPoints": 12,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 8,
+      "questionId": "exam-2009-math1-q18",
+      "scope": "第(2)问",
+      "maxPoints": 10,
+      "earnedPoints": 10,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 9,
+      "questionId": "exam-2009-math1-q19",
+      "scope": "全题",
+      "maxPoints": 14,
+      "earnedPoints": 14,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 10,
+      "questionId": "daily-20261005-linear-rank-eigenvalues-system",
+      "scope": "第(1)问",
+      "maxPoints": 12,
+      "earnedPoints": 0,
+      "result": "遗忘思路",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 11,
+      "questionId": "exam-2009-math1-q21",
+      "scope": "全题",
+      "maxPoints": 12,
+      "earnedPoints": 12,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    },
+    {
+      "practiceNumber": 12,
+      "questionId": "exam-2009-math1-q22",
+      "scope": "第(2)问",
+      "maxPoints": 10,
+      "earnedPoints": 10,
+      "result": "自查正确",
+      "verifiedBy": "用户自查，尚未逐题核验手写解答"
+    }
+  ]
+}
