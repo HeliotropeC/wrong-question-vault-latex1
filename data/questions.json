@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 323,
+  "count": 324,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -16196,6 +16196,64 @@
         }
       ],
       "reviewFocus": "卡壳位置：不知道为什么方差可以直接相加，也不熟悉 \\(D(S^2)\\)。第一步：先列四个标准结论：\\(E\\overline X=\\mu\\)、\\(D\\overline X=\\sigma^2/n\\)、\\(ES^2=\\sigma^2\\)、正态总体下 \\(\\overline X\\perp S^2\\)。正确突破口：把 \\(n\\overline X^2\\) 与 \\((n-1)S^2\\) 都化为卡方变量。考场信号：“正态样本 + \\(\\overline X,S^2\\)”立即检查能否用独立性和卡方分布。易错点：\\(D(cY)=c^2D(Y)\\)，且负号平方后变正。防卡方法：先写完整公式 \\(D(U-cV)=D(U)+c^2D(V)-2c\\operatorname{Cov}(U,V)\\)，再由独立性划掉协方差。"
+    },
+    {
+      "id": "daily-2026-10-14-quadratic-form-q21",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "questionNo": 21,
+      "sourceRef": "用户上传的二次型第21题（原卷年份未核实）",
+      "questionType": "解答题",
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "符号错误 / 矩阵乘法顺序错误",
+      "tags": [
+        "当日对话导入",
+        "二次型",
+        "正交对角化",
+        "两个相同特征值",
+        "符号错误",
+        "外积与内积",
+        "正定矩阵",
+        "计算错误"
+      ],
+      "note": "第一问已能正确列出特征值，但捷径公式的系数符号和向量乘法顺序出现错误。复习时先写 A-E 的非零特征值 -1，再检查 alpha alpha^T 必须为 3×3。",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "stem": "已知二次型 \\(f(x_1,x_2,x_3)=x^{\\mathsf T}Ax\\) 在正交变换 \\(x=Qy\\) 下的标准形为 \\(y_1^2+y_2^2\\)，且 \\(Q\\) 的第三列为 \\(\\alpha=(\\frac{\\sqrt2}{2},0,\\frac{\\sqrt2}{2})^{\\mathsf T}\\)。(I) 求矩阵 \\(A\\)；(II) 证明 \\(A+E\\) 为正定矩阵，其中 \\(E\\) 是三阶单位矩阵。",
+      "options": [],
+      "answer": "(I) \\(\\displaystyle A=\\begin{pmatrix}\\frac12&0&-\\frac12\\\\0&1&0\\\\-\\frac12&0&\\frac12\\end{pmatrix}\\)；(II) \\(A+E\\) 的特征值为 \\(2,2,1\\)，全为正，故正定。",
+      "analysis": "由标准形可知 \\(Q^{\\mathsf T}AQ=\\operatorname{diag}(1,1,0)\\)，故 \\(A\\) 的特征值为 \\(1,1,0\\)。已知 \\(Q\\) 第三列 \\(\\alpha\\) 是特征值 \\(0\\) 对应的单位特征向量，且 \\(Q\\) 正交，于是 \\(A=Q\\operatorname{diag}(1,1,0)Q^{\\mathsf T}=E-\\alpha\\alpha^{\\mathsf T}\\)。计算 \\(\\alpha\\alpha^{\\mathsf T}=\\begin{pmatrix}\\frac12&0&\\frac12\\\\0&0&0\\\\\\frac12&0&\\frac12\\end{pmatrix}\\)，所以 \\(A=\\begin{pmatrix}\\frac12&0&-\\frac12\\\\0&1&0\\\\-\\frac12&0&\\frac12\\end{pmatrix}\\)。又 \\(A+E\\) 的特征值为 \\(2,2,1>0\\)，实对称矩阵全部特征值为正，故 \\(A+E\\) 正定。考场速用：若实对称 \\(A\\) 的特征值为 \\(\\lambda,\\lambda,\\mu\\)，且 \\(\\mu\\) 对应单位特征向量为 \\(\\alpha\\)，则 \\(A=\\lambda E+(\\mu-\\lambda)\\alpha\\alpha^{\\mathsf T}\\)。本题 \\(\\lambda=1,\\mu=0\\)，必须减去外积。",
+      "errorCause": "用户先正确写出 \\(A\\) 特征值 \\(1,1,0\\) 和 \\(A-E\\) 特征值 \\(0,0,-1\\)，但把 \\(A=E-\\alpha\\alpha^{\\mathsf T}\\) 写成了 \\(A=E+\\alpha\\alpha^{\\mathsf T}\\)：忽略 \\(\\mu-\\lambda=-1\\) 导致符号写反；又把 \\(\\alpha\\alpha^{\\mathsf T}\\) 写成 \\(\\alpha^{\\mathsf T}\\alpha\\)，混淆矩阵外积与标量内积（应做 \\(3\\times1\\) 乘 \\(1\\times3\\)，所得为 \\(3\\times3\\) 矩阵）。",
+      "knowledgePoints": [
+        "二次型标准形与特征值",
+        "正交相似对角化",
+        "重特征值矩阵快速重构",
+        "单位特征向量外积",
+        "矩阵乘法维数检查",
+        "实对称正定判定"
+      ],
+      "similarQuestionPrompt": "生成考研数学一同难度真题风格：设三阶实对称矩阵的特征值为 \\(2,2,5\\)，给出对应特征值 \\(5\\) 的单位特征向量 \\(\\alpha\\)，要求直接构造矩阵并证明移位矩阵正定。着重考查 \\(A=\\lambda E+(\\mu-\\lambda)\\alpha\\alpha^{\\mathsf T}\\) 的系数符号和 \\(\\alpha\\alpha^{\\mathsf T}\\) 的乘法维数；给出完整答案。",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-14-q21-correction-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "依据用户上传的第21题题图与手写答题过程逐项核对",
+          "sourceLabel": "二次型正交变换第21题：捷径算法符号和外积顺序"
+        }
+      ],
+      "answerVerification": "利用 Q diag(1,1,0) Q^T 与 A+E 特征值独立核验",
+      "errorCauseEvidence": "用户手写：先判 A-E 特征值 0,0,-1，却写 A=E+alpha alpha^T，末行又写 A-E=alpha^T alpha",
+      "wrongSubquestions": [
+        "I"
+      ],
+      "reviewFocus": "识别信号：三阶实对称、两个特征值相同、已知另一特征值的单位特征向量。第一步用标准形读出 λ=1,1,μ=0；第二步写 μ-λ=-1，符号不得写反；第三步按列向量×行向量做 αα^T，检查结果维数 3×3。若误写 α^Tα，所得只是标量 1；第二问用 A+E 全正特征值秒证正定。"
     }
   ],
   "schemaVersion": 2,
@@ -16214,7 +16272,8 @@
     "daily-2026-10-09-v1",
     "daily-2026-10-10-v1",
     "daily-2026-10-11-v1",
-    "daily-2026-10-13-v1"
+    "daily-2026-10-13-v1",
+    "daily-2026-10-14-q21-correction-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
