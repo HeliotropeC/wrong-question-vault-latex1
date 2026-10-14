@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 305,
+  "count": 316,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -14970,11 +14970,688 @@
       "dedupNote": "与题库条目“高等数学-ch16-u159-p181”使用同一函数，但现有条目要求计算组合量，2008真题要求完整余弦展开并由特殊点求和，设问与复盘重点不同，故保留为独立真题卡。",
       "reviewFocus": "卡壳位置：不知道余弦展开从哪里开始，也不知道最后代哪个特殊点。第一步：写 \\(a_0=\\frac2\\pi\\int_0^\\pi f(x)dx\\)、\\(a_n=\\frac2\\pi\\int_0^\\pi f(x)\\cos nx,dx\\)。正确突破口：对 \\(x^2\\cos nx\\) 分部积分两次，再观察系数已有 \\((-1)^{n+1}\\)。考场信号：“半区间函数+余弦级数”就是偶延拓；“并求级数和”就是代入 \\(0,\\pi,\\pi/2\\) 等特殊点。易错点：取 \\(x=\\pi\\) 会再乘 \\((-1)^n\\)，得到非交错的 \\(\\sum1/n^2\\)；本题应取 \\(x=0\\)。防卡方法：先把目标符号与 \\(a_n\\cos nx\\) 的符号写成一行，再决定代入点。",
       "contentFingerprint": "f3cceacc06c89069d845970eaca142cba7aa0ba8e4c8f4e52177647a540b9177"
+    },
+    {
+      "id": "exam-2010-math1-q02",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "多元函数微分学",
+      "questionNo": 2,
+      "sourcePage": 1,
+      "printedPage": 11,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第2题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设函数 \\(z=z(x,y)\\) 由方程 \\(F\\!\\left(\\dfrac{y}{x},\\dfrac{z}{x}\\right)=0\\) 确定，其中 \\(F\\) 为可微函数，且 \\(F'_2\\ne0\\)。则 \\(x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=(\\quad)\\)。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-x\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(-z\\)"
+        }
+      ],
+      "answer": "B，\\(z\\)。",
+      "analysis": "由于 \\(F'_2\\neq0\\)，局部可将 \\(\\frac zx\\) 表为 \\(\\frac yx\\) 的函数，故 \\(z=x\\varphi(y/x)\\)，是关于 \\(x,y\\) 的一次齐次函数。由欧拉齐次函数定理，\\(xz_x+yz_y=z\\)。也可直接对 \\(F(y/x,z/x)=0\\) 分别关于 \\(x,y\\) 求偏导并消去 \\(F'_1,F'_2\\)。",
+      "knowledgePoints": [
+        "隐函数求导",
+        "齐次函数",
+        "欧拉定理"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第2题：题号红色方框，旁注“不理解”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "隐函数求导",
+        "齐次函数",
+        "欧拉定理"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷第2题旁手写“不理解”，尚不清楚具体错误步骤。",
+      "similarQuestionPrompt": "仿2010年数学一第2题，围绕隐函数求导、齐次函数生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第2题：题号红色方框，旁注“不理解”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 2,
+          "pdfPage": 1,
+          "printedPage": 11,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "起步识别：见到 F(y/x,z/x)=0，先想到 z=xφ(y/x) 的齐次性，而不是直接硬求两个偏导。"
+    },
+    {
+      "id": "exam-2010-math1-q03",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "questionNo": 3,
+      "sourcePage": 1,
+      "printedPage": 11,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第3题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设 \\(m,n\\) 均是正整数，则反常积分 \\(\\displaystyle\\int_0^1\\frac{\\sqrt[m]{\\ln^2(1-x)}}{\\sqrt[n]{x}}\\,\\mathrm dx\\) 的收敛性为 \\((\\quad)\\)。",
+      "options": [
+        {
+          "label": "A",
+          "text": "仅与 m 的取值有关"
+        },
+        {
+          "label": "B",
+          "text": "仅与 n 的取值有关"
+        },
+        {
+          "label": "C",
+          "text": "与 m,n 的取值都有关"
+        },
+        {
+          "label": "D",
+          "text": "与 m,n 的取值都无关"
+        }
+      ],
+      "answer": "D。对所有正整数 m、n 均收敛。",
+      "analysis": "考察两个端点。\\(x\\to0^+\\) 时 \\(\\ln(1-x)\\sim-x\\)，被积函数 \\(\\sim x^{2/m-1/n}\\)，因 \\(2/m-1/n>-1\\)，故在0端收敛。\\(x\\to1^-\\) 时 \\(x^{-1/n}\\) 有界，而 \\(|\\ln(1-x)|^{2/m}\\) 可积，因此在1端也收敛。",
+      "knowledgePoints": [
+        "反常积分",
+        "端点渐近比较",
+        "对数奇点"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第3题：题号红圈、题末红色斜线；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "反常积分",
+        "端点渐近比较",
+        "对数奇点"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第3题，围绕反常积分、端点渐近比较生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第3题：题号红圈、题末红色斜线；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 3,
+          "pdfPage": 1,
+          "printedPage": 11,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "先拆开两个瑕点 x=0 与 x=1，再分别用幂函数、对数函数比较收敛性。"
+    },
+    {
+      "id": "exam-2010-math1-q07",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "questionNo": 7,
+      "sourcePage": 1,
+      "printedPage": 11,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第7题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "选择题",
+      "stem": "设随机变量 \\(X\\) 的分布函数 \\(F(x)=\\begin{cases}0,&x<0,\\\\ \\frac12,&0\\le x<1,\\\\1-e^{-x},&x\\ge1.\\end{cases}\\) 则 \\(P(X=1)=(\\quad)\\)。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac12\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac12-e^{-1}\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(1-e^{-1}\\)"
+        }
+      ],
+      "answer": "C，\\(\\frac12-e^{-1}\\)。",
+      "analysis": "分布函数在点 \\(1\\) 的跳跃量即点概率，\\(P(X=1)=F(1)-F(1^-)=\\bigl(1-e^{-1}\\bigr)-\\frac12=\\frac12-e^{-1}\\)。注意 \\(F(1)\\) 不等于 \\(P(X=1)\\)。",
+      "knowledgePoints": [
+        "分布函数",
+        "跳跃点概率",
+        "离散连续混合分布"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第7题：题号红圈、页边红色记号；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "分布函数",
+        "跳跃点概率",
+        "离散连续混合分布"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第7题，围绕分布函数、跳跃点概率生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第7题：题号红圈、页边红色记号；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 7,
+          "pdfPage": 1,
+          "printedPage": 11,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "见到 P(X=a)，先写 F(a)-F(a^-)，不要直接代 F(a)。"
+    },
+    {
+      "id": "exam-2010-math1-q10",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "questionNo": 10,
+      "sourcePage": 2,
+      "printedPage": 12,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第10题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "填空题",
+      "stem": "计算 \\(\\displaystyle\\int_{0}^{\\pi^2}\\sqrt{x}\\cos\\sqrt{x}\\,\\mathrm dx=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(-4\\pi\\)。",
+      "analysis": "令 \\(t=\\sqrt{x}\\)，则 \\(x=t^2\\)，\\(\\mathrm dx=2t\\,\\mathrm dt\\)，原式 \\(=2\\int_0^\\pi t^2\\cos t\\,\\mathrm dt=2[t^2\\sin t+2t\\cos t-2\\sin t]_0^\\pi=-4\\pi\\)。",
+      "knowledgePoints": [
+        "定积分换元",
+        "分部积分"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第10题：答案横线红色斜线；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "定积分换元",
+        "分部积分"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第10题，围绕定积分换元、分部积分生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第10题：答案横线红色斜线；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 10,
+          "pdfPage": 2,
+          "printedPage": 12,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "含 √x 和 cos√x，第一步设 t=√x，务必同步改上下限和 dx。"
+    },
+    {
+      "id": "exam-2010-math1-q12",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "重积分",
+      "questionNo": 12,
+      "sourcePage": 2,
+      "printedPage": 12,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第12题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "填空题",
+      "stem": "设 \\(\\Omega=\\{(x,y,z)\\mid x^2+y^2\\le z\\le1\\}\\)，则 \\(\\Omega\\) 的形心的竖坐标 \\(\\bar z=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(\\bar z=\\frac23\\)。",
+      "analysis": "固定 \\(z\\in[0,1]\\)，水平截面为圆盘 \\(x^2+y^2\\le z\\)，面积 \\(S(z)=\\pi z\\)。故 \\(V=\\int_0^1\\pi z\\,\\mathrm dz=\\pi/2\\)，\\(M_z=\\int_0^1 z\\cdot\\pi z\\,\\mathrm dz=\\pi/3\\)，于是 \\(\\bar z=M_z/V=2/3\\)。",
+      "knowledgePoints": [
+        "形心",
+        "三重积分",
+        "截面法",
+        "抛物面围成的区域"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第12题：填空处红色斜线（未圈题号）；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "形心",
+        "三重积分",
+        "截面法",
+        "抛物面围成的区域"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第12题，围绕形心、三重积分生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第12题：填空处红色斜线（未圈题号）；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 12,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "见 z 上下界为 r² 与常数，改成按 z 切片：先求 S(z)，再算一阶矩/体积。"
+    },
+    {
+      "id": "exam-2010-math1-q16",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用",
+      "questionNo": 16,
+      "sourcePage": 2,
+      "printedPage": 12,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第16题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "求函数 \\(f(x)=\\displaystyle\\int_{1}^{x^2}(x^2-t)e^{-t^2}\\,\\mathrm dt\\) 的单调区间与极值。",
+      "options": [],
+      "answer": "单调递减区间为 \\((-\\infty,-1)\\)、\\((0,1)\\)；单调递增区间为 \\((-1,0)\\)、\\((1,+\\infty)\\)。\\(x=\\pm1\\) 为极小值点，极小值 \\(0\\)；\\(x=0\\) 为极大值点，极大值 \\(\\frac{1-e^{-1}}2\\)。",
+      "analysis": "由含参积分求导，\\(f'(x)=2x\\int_1^{x^2}e^{-t^2}\\,\\mathrm dt\\)（上限处的 \\((x^2-x^2)e^{-x^4}\\) 为0）。因 \\(e^{-t^2}>0\\)，积分的符号同 \\(x^2-1\\)，故 \\(f'\\) 在 \\((-\\infty,-1),(-1,0),(0,1),(1,\\infty)\\) 依次为负、正、负、正。于是 \\(\\pm1\\) 为极小值点，\\(f(\\pm1)=0\\)；\\(0\\) 为极大值点，\\(f(0)=\\int_0^1 te^{-t^2}\\,\\mathrm dt=(1-e^{-1})/2\\)。",
+      "knowledgePoints": [
+        "变上限积分求导",
+        "莱布尼茨公式",
+        "导数符号与极值"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第16题：题号红标、题旁红字“−6”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "变上限积分求导",
+        "莱布尼茨公式",
+        "导数符号与极值"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第16题，围绕变上限积分求导、莱布尼茨公式生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第16题：题号红标、题旁红字“−6”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 2,
+          "printedPage": 12,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "第一步先对含参积分求导，利用上下限使导数出现简单因子，再只判断积分的符号。"
+    },
+    {
+      "id": "exam-2010-math1-q18",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "questionNo": 18,
+      "sourcePage": 2,
+      "printedPage": 12,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第18题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "求幂级数 \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^{n-1}}{2n-1}x^{2n}\\) 的收敛域及和函数。",
+      "options": [],
+      "answer": "收敛域 \\([-1,1]\\)；和函数 \\(S(x)=x\\arctan x\\)（\\(|x|\\le1\\)）。",
+      "analysis": "由 \\(\\arctan x=\\sum_{n=0}^{\\infty}(-1)^n x^{2n+1}/(2n+1)\\)（\\(|x|<1\\)），两边乘 \\(x\\) 可得 \\(S(x)=x\\arctan x\\)。比值法或根值法得到收敛半径 \\(R=1\\)。在 \\(x=\\pm1\\) 时级数均化为交错级数 \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}/(2n-1)\\)，均收敛；两端和均为 \\(\\pi/4\\)，与 \\(x\\arctan x\\) 连续延拓一致。",
+      "knowledgePoints": [
+        "幂级数收敛域",
+        "端点单独判别",
+        "反正切函数幂级数",
+        "和函数"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第18题：题号红方框、题旁手写复习批注；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "幂级数收敛域",
+        "端点单独判别",
+        "反正切函数幂级数",
+        "和函数"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第18题，围绕幂级数收敛域、端点单独判别生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第18题：题号红方框、题旁手写复习批注；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 12,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "先看到 2n−1、交错号与 x^{2n}，联想 arctan x 的麦克劳林展开；再独立检查端点。"
+    },
+    {
+      "id": "exam-2010-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 19,
+      "sourcePage": 2,
+      "printedPage": 12,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第19题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设 \\(P\\) 为椭球面 \\(S:x^2+y^2+z^2-yz=1\\) 上的动点，若 \\(S\\) 在点 \\(P\\) 处的切平面与 \\(xOy\\) 面垂直，求点 \\(P\\) 的轨迹 \\(C\\)，并计算曲面积分 \\(\\displaystyle I=\\iint_{\\Sigma}\\frac{(x+\\sqrt3)|y-2z|}{\\sqrt{4+y^2+z^2-4yz}}\\,\\mathrm dS\\)，其中 \\(\\Sigma\\) 是椭球面 \\(S\\) 位于曲线 \\(C\\) 上方的部分。",
+      "options": [],
+      "answer": "轨迹 \\(C:\\begin{cases}y=2z,\\\\x^2+3z^2=1,\\end{cases}\\) 即椭球面与平面 \\(y=2z\\) 的交线；\\(I=2\\pi\\)。",
+      "analysis": "令 \\(G=x^2+y^2+z^2-yz-1\\)，法向量 \\(\\nabla G=(2x,2y-z,2z-y)\\)。切平面与 \\(xOy\\) 面垂直，当且仅当其法向量的第三分量为0，故 \\(2z-y=0\\)，再代入椭球方程得 \\(x^2+3z^2=1\\)。在曲线 \\(C\\) 上方的半椭球取 \\(2z-y\\ge0\\)，其向 \\(xOy\\) 面投影为 \\(D=\\{4x^2+3y^2\\le4\\}\\)。在 \\(S\\) 上，由 \\(x^2+y^2+z^2-yz=1\\) 得 \\(|\\nabla G|=\\sqrt{4+y^2+z^2-4yz}\\)。又 \\(|y-2z|=|G_z|\\)，故 \\(dS=|\\nabla G|/|G_z|\\,dx\\,dy\\)，原积分化为 \\(\\iint_D(x+\\sqrt3)\\,dx\\,dy\\)。对称性使 \\(x\\) 的积分为0，而 \\(D\\) 半轴为 \\(1,2/\\sqrt3\\)，因此 \\(I=\\sqrt3\\cdot(2\\pi/\\sqrt3)=2\\pi\\)。",
+      "knowledgePoints": [
+        "隐式曲面切平面",
+        "第二类坐标投影",
+        "第一类曲面积分",
+        "椭球面"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第19题：题号红圈、题旁红字“−8”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "隐式曲面切平面",
+        "第二类坐标投影",
+        "第一类曲面积分",
+        "椭球面"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第19题，围绕隐式曲面切平面、第二类坐标投影生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第19题：题号红圈、题旁红字“−8”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 12,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "切平面⊥xOy ⇒ ∇G 的 z 分量为0；然后尝试把积分的分母识别成 |∇G|，分子含 |G_z|，直接投影。"
+    },
+    {
+      "id": "exam-2010-math1-q20",
+      "subject": "线性代数",
+      "chapter": 4,
+      "chapterTitle": "线性方程组",
+      "questionNo": 20,
+      "sourcePage": 3,
+      "printedPage": 13,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第20题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设 \\(A=\\begin{pmatrix}\\lambda&1&1\\\\0&\\lambda-1&0\\\\1&1&\\lambda\\end{pmatrix}\\)，\\(b=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}\\)。已知线性方程组 \\(Ax=b\\) 存在两个不同的解。 (1) 求 \\(\\lambda,a\\)；(2) 求方程组 \\(Ax=b\\) 的通解。",
+      "options": [],
+      "answer": "(1) \\(\\lambda=-1,\\ a=-2\\)。(2) \\(x=\\begin{pmatrix}\\frac32\\\\-\\frac12\\\\0\\end{pmatrix}+t\\begin{pmatrix}1\\\\0\\\\1\\end{pmatrix}\\)，\\(t\\in\\mathbb R\\)。",
+      "analysis": "有两个不同解的线性方程组必有无穷多解，因此 \\(\\operatorname{rank}(A)=\\operatorname{rank}(A|b)<3\\)。\\(\\det A=(\\lambda-1)(\\lambda^2-1)=(\\lambda-1)^2(\\lambda+1)=0\\)，候选 \\(\\lambda=1,-1\\)。当 \\(\\lambda=1\\)，第二行成为 \\(0=1\\)，不相容；故 \\(\\lambda=-1\\)。此时第二行给出 \\(x_2=-\\frac12\\)，第三行得 \\(x_1-x_3=\\frac32\\)，第一行要求 \\(-x_1+x_2+x_3=a\\)，即 \\(a=-2\\)。令 \\(x_3=t\\)，得到所述通解。",
+      "knowledgePoints": [
+        "非齐次线性方程组",
+        "秩判定",
+        "无穷多解",
+        "基础解系"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第20题：题号红方框、题旁红字“−7”及手写批注；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "非齐次线性方程组",
+        "秩判定",
+        "无穷多解",
+        "基础解系"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第20题，围绕非齐次线性方程组、秩判定生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第20题：题号红方框、题旁红字“−7”及手写批注；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 13,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "看到“存在两个不同解”应立刻转换为“有无穷多解”：先 det A=0，再逐个验增广矩阵相容性。"
+    },
+    {
+      "id": "exam-2010-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "二维随机变量及其分布",
+      "questionNo": 22,
+      "sourcePage": 3,
+      "printedPage": 13,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第22题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设二维随机变量 \\((X,Y)\\) 的概率密度为 \\(f(x,y)=Ae^{-2x^2+2xy-y^2}\\)，其中 \\(-\\infty<x<+\\infty,\\ -\\infty<y<+\\infty\\)。求常数 \\(A\\) 及条件概率密度 \\(f_{Y\\mid X}(y\\mid x)\\)。",
+      "options": [],
+      "answer": "\\(A=\\frac1\\pi\\)，\\(f_{Y\\mid X}(y\\mid x)=\\frac1{\\sqrt\\pi}e^{-(y-x)^2}\\)，\\(x,y\\in\\mathbb R\\)。",
+      "analysis": "配方 \\(2x^2-2xy+y^2=x^2+(y-x)^2\\)。由归一化条件，\\(1=A\\int_{\\mathbb R}e^{-x^2}dx\\int_{\\mathbb R}e^{-(y-x)^2}dy=A\\pi\\)，故 \\(A=1/\\pi\\)。边缘密度 \\(f_X(x)=\\int_{\\mathbb R}f(x,y)\\,dy=e^{-x^2}/\\sqrt\\pi\\)。因此 \\(f_{Y\\mid X}(y\\mid x)=f(x,y)/f_X(x)=e^{-(y-x)^2}/\\sqrt\\pi\\)。",
+      "knowledgePoints": [
+        "二维连续型随机变量",
+        "条件概率密度",
+        "二次型配方",
+        "高斯积分"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第22题：题号红圈、题旁红字“−4”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "二维连续型随机变量",
+        "条件概率密度",
+        "二次型配方",
+        "高斯积分"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第22题，围绕二维连续型随机变量、条件概率密度生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第22题：题号红圈、题旁红字“−4”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 13,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "指数中见 xy 交叉项，先配方为 x²+(y−x)²；先求归一化，再除以边缘密度。"
+    },
+    {
+      "id": "exam-2010-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 7,
+      "chapterTitle": "参数估计",
+      "questionNo": 23,
+      "sourcePage": 3,
+      "printedPage": 13,
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第23题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2010,
+      "examPaper": "数学一",
+      "questionType": "解答题",
+      "stem": "设总体 \\(X\\) 的概率分布为 \\(P(X=1)=1-\\theta\\)，\\(P(X=2)=\\theta-\\theta^2\\)，\\(P(X=3)=\\theta^2\\)，其中 \\(\\theta\\in(0,1)\\) 未知。以 \\(N_i\\) 表示来自总体 \\(X\\) 的简单随机样本（容量为 \\(n\\)）中等于 \\(i\\) 的个数（\\(i=1,2,3\\)）。求常数 \\(a_1,a_2,a_3\\)，使 \\(T=\\sum_{i=1}^3 a_i N_i\\) 为 \\(\\theta\\) 的无偏估计量，并求 \\(T\\) 的方差。",
+      "options": [],
+      "answer": "\\(a_1=0,\\ a_2=a_3=1/n\\)；\\(T=(N_2+N_3)/n\\)，\\(\\operatorname{Var}(T)=\\theta(1-\\theta)/n\\)。",
+      "analysis": "利用 \\(E(N_i)=nP(X=i)\\)，得 \\(ET=n[a_1(1-\\theta)+a_2(\\theta-\\theta^2)+a_3\\theta^2]\\)。要对所有 \\(\\theta\\in(0,1)\\) 恒等于 \\(\\theta\\)，比较系数得 \\(a_1=0,\\ a_2=a_3=1/n\\)。因 \\(N_2+N_3\\) 是 \\(n\\) 次独立抽样中事件 \\(X\\ge2\\) 的出现次数，该事件概率为 \\(P(X\\ge2)=\\theta\\)，所以 \\(N_2+N_3\\sim B(n,\\theta)\\)。因此 \\(\\operatorname{Var}(T)=\\operatorname{Var}(N_2+N_3)/n^2=\\theta(1-\\theta)/n\\)。",
+      "knowledgePoints": [
+        "无偏估计",
+        "多项分布计数",
+        "二项分布",
+        "方差"
+      ],
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "未标注",
+      "mistakeType": "待归类",
+      "note": "2010年数学一第23题：题号红圈、题旁红字“−11”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "tags": [
+        "考研真题",
+        "2010年",
+        "数学一",
+        "无偏估计",
+        "多项分布计数",
+        "二项分布",
+        "方差"
+      ],
+      "errorCause": "",
+      "errorCauseEvidence": "原卷只有红笔题号或答题区标记及部分分数旁注，没有作答过程，不能推断具体错因。",
+      "similarQuestionPrompt": "仿2010年数学一第23题，围绕无偏估计、多项分布计数生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
+      "transcriptionStatus": "verified",
+      "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
+      "transcriptionNote": "2010年数学一第23题：题号红圈、题旁红字“−11”；只据原卷标记认定为复习题，未提供作答过程，具体错因待归类。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2010,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 13,
+          "wrongSubquestions": [],
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
+        }
+      ],
+      "reviewFocus": "先写 ET=nΣa_i p_i，按 θ 的幂次逐项比较系数；求方差时先识别 N₂+N₃∼B(n,θ)，不用硬算协方差。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-14",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -14991,6 +15668,7 @@
     "daily-2026-10-13-v1"
   ],
   "examImportBatches": [
-    "exam-2017-math1-20261005"
+    "exam-2017-math1-20261005",
+    "exam-2010-math1-20261014"
   ]
 }
