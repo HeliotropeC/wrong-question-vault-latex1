@@ -1,0 +1,603 @@
+{
+  "batchId": "daily-2026-10-14-v1",
+  "importedAt": "2026-10-14",
+  "scope": "检查上次日常同步后新增的 ChatGPT 对话，仅收录考研数学中做错、不会起步、方法选择不稳或主动追问解题思路的题目；传热学与其他非考研数学内容全部排除。",
+  "selectionRule": "按题干、年份题号、核心设问与现有题库去重；已有同题只补充新的卡壳证据和复盘策略，不重复建卡；只有截图但无明确错误、卡壳或追问证据且复盘价值低的题目不纳入。",
+  "counts": {
+    "reviewWorthyMathItems": 9,
+    "added": 7,
+    "enrichedExisting": 1,
+    "alreadyRecordedOrCovered": 1,
+    "before": 316,
+    "after": 323
+  },
+  "addedQuestionIds": [
+    "exam-2008-math1-q04",
+    "exam-2008-math1-q06",
+    "exam-2008-math1-q07",
+    "exam-2008-math1-q12",
+    "exam-2008-math1-q20",
+    "exam-2008-math1-q21",
+    "exam-2008-math1-q23"
+  ],
+  "enrichedQuestionIds": [
+    "exam-2010-math1-q02"
+  ],
+  "dedupDecisions": [
+    {
+      "source": "2008年数学一第19题傅里叶余弦级数求和",
+      "targetId": "exam-2008-math1-q19",
+      "decision": "already-recorded",
+      "reason": "与昨日已入库题卡题干、年份题号和复盘重点完全相同。"
+    },
+    {
+      "source": "2010年数学一第2题隐函数求导",
+      "targetId": "exam-2010-math1-q02",
+      "decision": "enriched-existing",
+      "reason": "刚才的2010真题导入已建卡；本次只补充“不知道欧拉公式”的明确错因、直接求导兜底解法与考场识别信号。"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "传热学",
+      "decision": "excluded",
+      "reason": "对流边界折算为体积热源及相关公式不属于考研数学错题库。"
+    },
+    {
+      "category": "行测/逻辑推理",
+      "decision": "excluded",
+      "reason": "数列推理题不属于考研数学一。"
+    },
+    {
+      "category": "低复盘证据题",
+      "decision": "not-imported",
+      "reason": "仅出现题图、没有明确错误或追问且解法过于直接的题目不做无意义入库。"
+    }
+  ],
+  "questions": [
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q04",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数、极限与连续",
+      "questionNo": 4,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第4题",
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "单调有界",
+        "复合数列",
+        "收敛性",
+        "概念错误",
+        "思路卡壳"
+      ],
+      "stem": "设函数 \\(f(x)\\) 在 \\((-\\infty,+\\infty)\\) 内单调有界，\\(\\{x_n\\}\\) 为数列。下列命题正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "若 \\(\\{x_n\\}\\) 收敛，则 \\(\\{f(x_n)\\}\\) 收敛"
+        },
+        {
+          "label": "B",
+          "text": "若 \\(\\{x_n\\}\\) 单调，则 \\(\\{f(x_n)\\}\\) 收敛"
+        },
+        {
+          "label": "C",
+          "text": "若 \\(\\{f(x_n)\\}\\) 收敛，则 \\(\\{x_n\\}\\) 收敛"
+        },
+        {
+          "label": "D",
+          "text": "若 \\(\\{f(x_n)\\}\\) 单调，则 \\(\\{x_n\\}\\) 收敛"
+        }
+      ],
+      "answer": "B。",
+      "analysis": "若 \\(\\{x_n\\}\\) 单调，而 \\(f\\) 也单调，则复合数列 \\(\\{f(x_n)\\}\\) 必单调；又因 \\(f\\) 有界，\\(\\{f(x_n)\\}\\) 有界，故由单调有界定理知其收敛。A 不一定成立，因为单调函数可在极限点处不连续，例如 \\(f(x)=\\mathbf 1_{\\{x\\ge0\\}}\\)、\\(x_n=(-1)^n/n\\)。C、D 也不成立，例如取常值函数 \\(f\\)，此时 \\(\\{f(x_n)\\}\\) 总收敛且单调，但 \\(\\{x_n\\}\\) 可发散。",
+      "errorCause": "把“外层函数单调”和“复合数列是否单调”割裂开，未按内外单调性的四种组合判断；同时误以为单调函数必连续，从而倾向选 A。",
+      "knowledgePoints": [
+        "单调有界定理",
+        "复合数列的单调性",
+        "单调函数的间断点",
+        "反例构造"
+      ],
+      "similarQuestionPrompt": "设 \\(f\\) 在 \\(\\mathbb R\\) 上单调且有上、下界，判断“若 \\(x_n\\to a\\)，则 \\(f(x_n)\\) 必收敛”是否成立，并分别在 \\(f\\) 于 \\(a\\) 连续与不连续时说明。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "题图与用户“我感觉不单调”的追问核对"
+        }
+      ],
+      "answerVerification": "按内外单调方向四种组合验证，并用阶跃函数和常值函数检验其余选项",
+      "errorCauseEvidence": "用户明确质疑复合数列的单调性，说明对“两个单调对象复合后仍单调”的方向判断不稳定。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 4,
+          "wrongSubquestions": [],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：认为 \\(x_n\\) 与 \\(f\\) 的单调方向不一致时，\\(f(x_n)\\) 就“不单调”。第一步：只比较 \\(n\\) 增大时 \\(x_n\\) 的方向，再用 \\(f\\) 的单调性把不等号传过去。正确突破口：同向时 \\(f(x_n)\\) 递增，反向时递减；四种组合都仍然单调。考场信号：“\\(f\\) 单调有界 + \\(x_n\\) 单调”立即联想到“复合数列单调有界”。易错点：单调不等于连续，所以 A 不能直接成立。防卡方法：先写 \\(x_{n+1}\\gtreqless x_n\\)，再套 \\(f\\) 的保序或反序关系。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q06",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "questionNo": 6,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第6题",
+      "questionType": "选择题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "实对称矩阵",
+        "二次型",
+        "正交变换",
+        "特征值符号",
+        "方法选择困难"
+      ],
+      "stem": "设 \\(A\\) 为三阶实对称矩阵。若二次曲面\n\\[\n(x,y,z)A\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}=1\n\\]\n在正交变换下的标准方程所表示的图形为沿某坐标轴张开的双叶双曲面，则 \\(A\\) 的正特征值个数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B，即 \\(1\\) 个。",
+      "analysis": "由谱定理，存在正交矩阵 \\(Q\\)，使\n\\[\nQ^{\\mathsf T}AQ=\\operatorname{diag}(\\lambda_1,\\lambda_2,\\lambda_3).\n\\]\n在新坐标下曲面为\n\\[\n\\lambda_1y_1^2+\\lambda_2y_2^2+\\lambda_3y_3^2=1.\n\\]\n双叶双曲面的标准式具有“一正两负”的符号结构，例如\n\\[\n\\frac{y_1^2}{a^2}-\\frac{y_2^2}{b^2}-\\frac{y_3^2}{c^2}=1.\n\\]\n因此 \\(A\\) 恰有一个正特征值。正交变换只改变坐标，不改变特征值，也不改变二次型的正、负惯性指数。",
+      "errorCause": "看到几何图形后不会先写二次曲面的标准代数式，未把“开口轴对应正平方项、另外两个方向为负平方项”翻译成特征值符号。",
+      "knowledgePoints": [
+        "实对称矩阵正交对角化",
+        "二次型标准形",
+        "正负惯性指数",
+        "双叶双曲面"
+      ],
+      "similarQuestionPrompt": "设三阶实对称矩阵 \\(A\\) 对应的二次曲面经正交变换后为单叶双曲面。判断 \\(A\\) 的正、负特征值个数，并说明若等号右端改为 \\(-1\\) 会怎样。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "题图与用户“第6题考试遇到该怎么着手写表达式”的追问核对"
+        }
+      ],
+      "answerVerification": "由双叶双曲面的标准式与实对称矩阵谱定理独立复核",
+      "errorCauseEvidence": "用户明确表示考场上不知道如何从图形起步写表达式，属于方法选择困难。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 6,
+          "wrongSubquestions": [],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：只看图，不知道怎样落到矩阵语言。第一步：先写双叶双曲面的标准式“一个正平方项减两个正平方项等于 \\(1\\)”。正确突破口：正交变换把 \\(A\\) 化为特征值对角阵，标准式中各平方项系数就是特征值。考场信号：“实对称矩阵 + 正交变换 + 二次曲面图形”就是数标准式中正、负平方项。易错点：把单叶双曲面与双叶双曲面的符号个数记反。防卡方法：用截面记忆——沿开口轴取大值时必须由唯一的正项支撑等号右侧 \\(1\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q07",
+      "subject": "概率统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "questionNo": 7,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第7题",
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 审题错误",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "分布函数",
+        "最大值分布",
+        "独立同分布",
+        "概念错误",
+        "审题错误"
+      ],
+      "stem": "随机变量 \\(X,Y\\) 独立同分布，且 \\(X\\) 的分布函数为 \\(F(x)\\)。令 \\(Z=\\max\\{X,Y\\}\\)，则 \\(Z\\) 的分布函数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F^2(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(F(x)F(y)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(1-[1-F(x)]^2\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\([1-F(x)][1-F(y)]\\)"
+        }
+      ],
+      "answer": "A，即 \\(F_Z(z)=F^2(z)\\)。",
+      "analysis": "按分布函数定义，\n\\[\nF_Z(z)=P(Z\\le z)=P(\\max\\{X,Y\\}\\le z).\n\\]\n“最大值不超过 \\(z\\)”等价于 \\(X\\le z\\) 且 \\(Y\\le z\\)。由独立同分布，\n\\[\nF_Z(z)=P(X\\le z,Y\\le z)=P(X\\le z)P(Y\\le z)=F(z)^2.\n\\]\nB 中 \\(F(x)F(y)\\) 是二维联合分布函数 \\(P(X\\le x,Y\\le y)\\) 的形式，含两个自变量，不是单个随机变量 \\(Z\\) 的分布函数。C 对应最小值的分布函数。",
+      "errorCause": "没有先把“(Zle z)”翻译成关于 (X,Y) 的联合事件；看到独立便直接写 (F(x)F(y))，忽略 (Z) 的分布函数只能有一个自变量。",
+      "knowledgePoints": [
+        "分布函数定义",
+        "最大值与最小值分布",
+        "独立性",
+        "联合事件"
+      ],
+      "similarQuestionPrompt": "设 \\(X_1,\\ldots,X_n\\) 独立同分布，公共分布函数为 \\(F\\)。分别求 \\(\\max_iX_i\\) 与 \\(\\min_iX_i\\) 的分布函数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "题图与“没看明白、为什么 B 不对”的连续追问核对"
+        }
+      ],
+      "answerVerification": "由事件等价关系与独立性直接推导",
+      "errorCauseEvidence": "用户明确追问 B 为什么错误，反映出联合分布函数与最大值分布函数的自变量结构混淆。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 7,
+          "wrongSubquestions": [],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：分不清 \\(F(x)F(y)\\) 与 \\(F(z)^2\\)。第一步：永远先写 \\(F_Z(z)=P(Z\\le z)\\)。正确突破口：最大值 \\(\\le z\\) 要求每个变量都 \\(\\le z\\)，所以两个概率都使用同一个阈值 \\(z\\)。考场信号：“独立同分布 + 最大/最小”直接用事件法。易错点：\\(1-[1-F(z)]^2\\) 是最小值，不是最大值。防卡方法：记口诀“最大看全小，最小看补集全大”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q12",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 12,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第12题",
+      "questionType": "填空题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "第二类曲面积分",
+        "投影法",
+        "上侧定向",
+        "奇偶对称",
+        "边界或范围判断困难"
+      ],
+      "stem": "设曲面 \\(\\Sigma\\) 是\n\\[\nz=\\sqrt{4-x^2-y^2}\n\\]\n的上侧，求\n\\[\n\\iint_{\\Sigma}xy\\,\\mathrm dy\\,\\mathrm dz+x\\,\\mathrm dz\\,\\mathrm dx+x^2\\,\\mathrm dx\\,\\mathrm dy.\n\\]",
+      "options": [],
+      "answer": "\\(4\\pi\\)。",
+      "analysis": "令 \\(z=z(x,y)=\\sqrt{4-x^2-y^2}\\)，其在 \\(xy\\) 平面上的投影为\n\\[\nD=\\{(x,y):x^2+y^2\\le4\\}.\n\\]\n取上侧时，\n\\[\n(\\mathrm dy\\,\\mathrm dz,\\mathrm dz\\,\\mathrm dx,\\mathrm dx\\,\\mathrm dy)\n=(-z_x,-z_y,1)\\,\\mathrm dx\\,\\mathrm dy,\n\\]\n且\n\\[\nz_x=-\\frac{x}{z},\\qquad z_y=-\\frac{y}{z}.\n\\]\n因此原积分化为\n\\[\n\\iint_D\\left(xy\\frac{x}{z}+x\\frac{y}{z}+x^2\\right)\\mathrm dx\\,\\mathrm dy\n=\\iint_D\\left(\\frac{2x^2y}{z}+x^2\\right)\\mathrm dx\\,\\mathrm dy.\n\\]\n第一项关于 \\(y\\) 为奇函数且 \\(D\\) 关于 \\(x\\) 轴对称，积分为 \\(0\\)。于是\n\\[\nI=\\iint_Dx^2\\,\\mathrm dA\n=\\frac12\\iint_D(x^2+y^2)\\,\\mathrm dA\n=\\frac12\\int_0^{2\\pi}\\int_0^2r^3\\,\\mathrm dr\\,\\mathrm d\\theta\n=4\\pi.\n\\]",
+      "errorCause": "不会把上侧第二类曲面积分转换成 (xy) 平面投影积分，或没有先用区域对称性消去含 (y) 的奇函数项。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "曲面投影法",
+        "定向曲面元",
+        "奇偶对称性",
+        "极坐标"
+      ],
+      "similarQuestionPrompt": "设 \\(\\Sigma\\) 为 \\(z=\\sqrt{a^2-x^2-y^2}\\) 的上侧，计算 \\(\\iint_\\Sigma yz\\,\\mathrm dz\\,\\mathrm dx+x^2\\,\\mathrm dx\\,\\mathrm dy\\)，要求先判断哪些项可由对称性消去。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "题图与用户点名“第12题”并继续表示“没看明白”的追问核对"
+        }
+      ],
+      "answerVerification": "分别用投影法与闭合曲面高斯公式补底面复核",
+      "errorCauseEvidence": "用户在讲解后仍表示未看明白，说明曲面元方向、投影区域和对称性判断均不稳定。",
+      "wrongSubquestions": [],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 12,
+          "wrongSubquestions": [],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：不知道 \\(\\mathrm dy\\,\\mathrm dz,\\mathrm dz\\,\\mathrm dx,\\mathrm dx\\,\\mathrm dy\\) 怎样统一成 \\(\\mathrm dx\\,\\mathrm dy\\)。第一步：由“上侧且 \\(z=z(x,y)\\)”写出 \\((-z_x,-z_y,1)\\mathrm dx\\mathrm dy\\)，并画出投影圆盘 \\(x^2+y^2\\le4\\)。正确突破口：化成平面积分后先看奇偶性，\\(\\frac{2x^2y}{z}\\) 关于 \\(y\\) 为奇函数。考场信号：曲面显式给成 \\(z=z(x,y)\\) 且方向为上侧，优先投影法。易错点：上侧是 \\((-z_x,-z_y,1)\\)，不是 \\((z_x,z_y,-1)\\)。防卡方法：先写法向量第三分量为正，再补前两分量。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q20",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵及其秩",
+      "questionNo": 20,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第20题",
+      "questionType": "证明题",
+      "mistakeType": "概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "矩阵秩",
+        "秩一矩阵",
+        "列空间",
+        "线性相关",
+        "转置",
+        "思路卡壳"
+      ],
+      "stem": "设 \\(\\alpha,\\beta\\) 为三维列向量，矩阵\n\\[\nA=\\alpha\\alpha^{\\mathsf T}+\\beta\\beta^{\\mathsf T}.\n\\]\n证明：(1) \\(r(A)\\le2\\)；(2) 若 \\(\\alpha,\\beta\\) 线性相关，则 \\(r(A)<2\\)。",
+      "options": [],
+      "answer": "(1) \\(r(A)\\le2\\)；(2) 线性相关时 \\(r(A)\\le1<2\\)。",
+      "analysis": "对任意 \\(x\\in\\mathbb R^3\\)，\n\\[\nAx=\\alpha(\\alpha^{\\mathsf T}x)+\\beta(\\beta^{\\mathsf T}x)\\in\\operatorname{span}\\{\\alpha,\\beta\\}.\n\\]\n故 \\(A\\) 的像空间包含于 \\(\\operatorname{span}\\{\\alpha,\\beta\\}\\)，从而\n\\[\nr(A)=\\dim\\operatorname{Im}A\\le\\dim\\operatorname{span}\\{\\alpha,\\beta\\}\\le2.\n\\]\n若 \\(\\alpha,\\beta\\) 线性相关，则 \\(\\dim\\operatorname{span}\\{\\alpha,\\beta\\}\\le1\\)，于是 \\(r(A)\\le1<2\\)。\n\n也可用秩不等式：\n\\[\nr(A)\\le r(\\alpha\\alpha^{\\mathsf T})+r(\\beta\\beta^{\\mathsf T})\\le1+1=2.\n\\]\n在线性相关且非零时，若 \\(\\beta=k\\alpha\\)，则\n\\[\n\\beta\\beta^{\\mathsf T}=(k\\alpha)(k\\alpha)^{\\mathsf T}=k^2\\alpha\\alpha^{\\mathsf T},\n\\quad\nA=(1+k^2)\\alpha\\alpha^{\\mathsf T},\n\\]\n故 \\(r(A)\\le1\\)；零向量情形同样成立。",
+      "errorCause": "对数乘与转置的关系不稳，把 \\((k\\alpha)^{\\mathsf T}\\) 中的标量误作变化或倒数；同时只会套 \\(r(B+C)\\le r(B)+r(C)\\)，没有看到 \\(A\\) 的所有输出都落在 \\(\\operatorname{span}\\{\\alpha,\\beta\\}\\) 中。",
+      "knowledgePoints": [
+        "矩阵的像空间",
+        "秩一矩阵",
+        "矩阵秩不等式",
+        "列向量外积",
+        "转置与数乘"
+      ],
+      "similarQuestionPrompt": "设 \\(A=\\sum_{i=1}^m\\alpha_i\\alpha_i^{\\mathsf T}\\)，其中 \\(\\alpha_i\\in\\mathbb R^n\\)。证明 \\(r(A)=r(\\alpha_1,\\ldots,\\alpha_m)\\)，并说明为何仅用秩不等式只能先得到“\\(\\le\\)”。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "原题、用户手写证明与“转置前后系数为什么不变”的追问交叉核对"
+        }
+      ],
+      "answerVerification": "用像空间包含关系与秩不等式两种方法独立复核",
+      "errorCauseEvidence": "用户连续追问标量经过转置后的处理，说明外积 ((kalpha)(kalpha)^{\\mathsf T}) 的系数规则不稳定。",
+      "wrongSubquestions": [
+        1,
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 20,
+          "wrongSubquestions": [
+            1,
+            2
+          ],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：\\(\\beta=k\\alpha\\) 代入后不知道为什么得到 \\(k^2\\alpha\\alpha^{\\mathsf T}\\)。第一步：把 \\(Ax\\) 写成 \\(\\alpha(\\alpha^{\\mathsf T}x)+\\beta(\\beta^{\\mathsf T}x)\\)，先看输出空间。正确突破口：秩等于像空间维数，而所有输出最多落在两个向量张成的空间。考场信号：看到若干“列向量×其转置”的和，立刻想到像空间包含于这些列向量的张成空间。易错点：转置不改变标量，\\((k\\alpha)^{\\mathsf T}=k\\alpha^{\\mathsf T}\\)，所以两边各贡献一个 \\(k\\)。防卡方法：不确定系数时先写完整乘积，不要一步跳成结果。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q21",
+      "subject": "线性代数",
+      "chapter": 4,
+      "chapterTitle": "线性方程组",
+      "questionNo": 21,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第21题",
+      "questionType": "解答题",
+      "mistakeType": "方法选择困难 / 思路卡壳 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "三对角行列式",
+        "递推",
+        "克拉默法则",
+        "参数方程组",
+        "通解",
+        "方法选择困难"
+      ],
+      "stem": "设 \\(n\\) 元线性方程组 \\(Ax=b\\)，其中\n\\[\nA=\\begin{pmatrix}\n2a&1&&&\\\\\na^2&2a&1&&\\\\\n&\\ddots&\\ddots&\\ddots&\\\\\n&&a^2&2a&1\\\\\n&&&a^2&2a\n\\end{pmatrix},\\qquad\nb=\\begin{pmatrix}1\\\\0\\\\ \\vdots\\\\0\\end{pmatrix}.\n\\]\n(1) 证明 \\(|A|=(n+1)a^n\\)；(2) 当 \\(a\\) 为何值时方程组有唯一解，并求 \\(x_1\\)；(3) 当 \\(a\\) 为何值时方程组有无穷多解，并求通解。",
+      "options": [],
+      "answer": "(1) \\(|A|=(n+1)a^n\\)；(2) 当 \\(a\\ne0\\) 时有唯一解，且\n\\[\nx_1=\\frac{n}{(n+1)a};\n\\]\n(3) 当 \\(a=0\\) 时有无穷多解，\n\\[\nx=(c,1,0,\\ldots,0)^{\\mathsf T},\\qquad c\\in\\mathbb R.\n\\]",
+      "analysis": "记 \\(D_n=|A_n|\\)。沿最后一列展开（沿第一行展开也可）得到\n\\[\nD_n=2aD_{n-1}-a^2D_{n-2},\n\\]\n且 \\(D_1=2a,\\ D_2=3a^2\\)。若 \\(D_{n-1}=na^{n-1}\\)、\\(D_{n-2}=(n-1)a^{n-2}\\)，则\n\\[\nD_n=2na^n-(n-1)a^n=(n+1)a^n,\n\\]\n故结论成立。\n\n当 \\(a\\ne0\\) 时，\\(D_n\\ne0\\)，方程组有唯一解。用克拉默法则求 \\(x_1\\)：把第一列替换为 \\(b\\) 后，沿第一列展开，余子式正是 \\(A_{n-1}\\)，故\n\\[\nx_1=\\frac{D_{n-1}}{D_n}\n=\\frac{na^{n-1}}{(n+1)a^n}\n=\\frac{n}{(n+1)a}.\n\\]\n\n当 \\(a=0\\) 时，\n\\[\nA=\\begin{pmatrix}\n0&1&&&\\\\\n&0&1&&\\\\\n&&\\ddots&\\ddots&\\\\\n&&&0&1\\\\\n&&&&0\n\\end{pmatrix}.\n\\]\n方程组化为\n\\[\nx_2=1,\\quad x_3=\\cdots=x_n=0,\n\\]\n而 \\(x_1\\) 为自由变量，因此有无穷多解，通解如上。",
+      "errorCause": "三对角行列式展开后不能稳定识别两个余子式，怀疑按列展开是否可行；参数退化到 (a=0) 后，对“主变量固定、自由变量任取”的通解写法不熟。",
+      "knowledgePoints": [
+        "三对角行列式递推",
+        "按行列展开",
+        "数学归纳法",
+        "克拉默法则",
+        "非齐次线性方程组通解",
+        "自由变量"
+      ],
+      "similarQuestionPrompt": "把主对角元改为 \\(3a\\)、上对角元改为 \\(1\\)、下对角元改为 \\(2a^2\\)，先建立 \\(D_n\\) 的递推式，再判断参数取何值时 \\(Ax=e_1\\) 有唯一解或无穷多解。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "题图、手写递推及“后面的矩阵怎么得到、按列展开是否可以、通解为什么这样写”的连续追问核对"
+        }
+      ],
+      "answerVerification": "用行列式递推、克拉默法则与 (a=0) 直接代回三种方式复核",
+      "errorCauseEvidence": "用户明确追问余子式来源、按列展开可否以及通解表示，覆盖了本题三处核心卡壳。",
+      "wrongSubquestions": [
+        1,
+        2,
+        3
+      ],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 21,
+          "wrongSubquestions": [
+            1,
+            2,
+            3
+          ],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：展开后看不出余子式，且 \\(a=0\\) 时不会写通解。第一步：给 \\(n\\) 阶行列式命名 \\(D_n\\)，选第一行或最后一列中非零元最少的位置展开。正确突破口：两个非零项分别产生 \\(D_{n-1}\\) 与 \\(a^2D_{n-2}\\)，从而得到二阶递推；求通解时先把 \\(a=0\\) 代回原矩阵。考场信号：“固定三条对角线的 \\(n\\) 阶行列式”优先建立 \\(D_n,D_{n-1},D_{n-2}\\) 递推。易错点：代数余子式的负号，以及把自由变量误写成主变量。防卡方法：展开时在删行删列后的矩阵上圈出仍是同型的块；通解最后代回每一行检查。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "examYear": 2008,
+      "examPaper": "数学一",
+      "historyImportBatches": [
+        "daily-2026-10-14-v1"
+      ],
+      "id": "exam-2008-math1-q23",
+      "subject": "概率统计",
+      "chapter": 5,
+      "chapterTitle": "数理统计的基本概念",
+      "questionNo": 23,
+      "sourceRef": "2008年全国硕士研究生招生考试数学（一）第23题",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 计算错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2008年",
+        "数学一",
+        "无偏估计",
+        "样本均值",
+        "样本方差",
+        "正态总体",
+        "独立性",
+        "方差",
+        "概念错误"
+      ],
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\) 是来自总体 \\(N(\\mu,\\sigma^2)\\) 的简单随机样本，记\n\\[\n\\overline X=\\frac1n\\sum_{i=1}^nX_i,\\qquad\nS^2=\\frac1{n-1}\\sum_{i=1}^n(X_i-\\overline X)^2,\\qquad\nT=\\overline X^{\\,2}-\\frac1nS^2.\n\\]\n(1) 证明 \\(T\\) 是 \\(\\mu^2\\) 的无偏估计量；(2) 当 \\(\\mu=0,\\sigma=1\\) 时，求 \\(DT\\)。",
+      "options": [],
+      "answer": "(1) \\(ET=\\mu^2\\)；(2)\n\\[\nDT=\\frac{2}{n(n-1)}.\n\\]",
+      "analysis": "由\n\\[\nE\\overline X=\\mu,\\qquad D\\overline X=\\frac{\\sigma^2}{n},\\qquad ES^2=\\sigma^2,\n\\]\n有\n\\[\nE\\overline X^{\\,2}=D\\overline X+(E\\overline X)^2\n=\\frac{\\sigma^2}{n}+\\mu^2.\n\\]\n所以\n\\[\nET=E\\overline X^{\\,2}-\\frac1nES^2\n=\\mu^2.\n\\]\n\n当 \\(\\mu=0,\\sigma=1\\) 时，\\(\\overline X\\sim N(0,1/n)\\)，故\n\\[\nn\\overline X^{\\,2}\\sim\\chi^2(1),\\qquad\nD(\\overline X^{\\,2})=\\frac1{n^2}D[\\chi^2(1)]=\\frac2{n^2}.\n\\]\n又有\n\\[\n(n-1)S^2\\sim\\chi^2(n-1),\n\\qquad\nD(S^2)=\\frac{2}{n-1}.\n\\]\n正态总体下 \\(\\overline X\\) 与 \\(S^2\\) 独立，因此 \\(\\overline X^{\\,2}\\) 与 \\(S^2\\) 也独立，协方差为 \\(0\\)。于是\n\\[\nDT=D\\left(\\overline X^{\\,2}-\\frac1nS^2\\right)\n=\\frac2{n^2}+\\frac1{n^2}\\frac2{n-1}\n=\\frac{2}{n(n-1)}.\n\\]",
+      "errorCause": "对 (Eoverline X^2=Doverline X+(Eoverline X)^2)、(chi^2(k)) 的方差 (2k) 以及“独立随机变量的函数仍独立”掌握不稳，容易漏掉或误加协方差项。",
+      "knowledgePoints": [
+        "无偏估计",
+        "样本均值与样本方差独立",
+        "卡方分布",
+        "随机变量函数的独立性",
+        "方差缩放"
+      ],
+      "similarQuestionPrompt": "设样本来自 \\(N(\\mu,\\sigma^2)\\)，构造 \\(T_c=\\overline X^2-cS^2\\)。求使 \\(T_c\\) 成为 \\(\\mu^2\\) 无偏估计的 \\(c\\)，并在 \\(\\mu=0,\\sigma=1\\) 时求其方差。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-14",
+          "verification": "原题与用户在解答末尾继续追问“为什么”的上下文核对"
+        }
+      ],
+      "answerVerification": "使用正态样本的独立性定理与卡方分布矩独立复核",
+      "errorCauseEvidence": "用户在样本均值平方与样本方差的方差合并处继续追问“为什么”，反映出独立性与方差公式不稳定。",
+      "wrongSubquestions": [
+        1,
+        2
+      ],
+      "examSources": [
+        {
+          "year": 2008,
+          "paper": "数学一",
+          "questionNo": 23,
+          "wrongSubquestions": [
+            1,
+            2
+          ],
+          "fileName": "当日对话中的2008年数学（一）真题题图"
+        }
+      ],
+      "reviewFocus": "卡壳位置：不知道为什么方差可以直接相加，也不熟悉 \\(D(S^2)\\)。第一步：先列四个标准结论：\\(E\\overline X=\\mu\\)、\\(D\\overline X=\\sigma^2/n\\)、\\(ES^2=\\sigma^2\\)、正态总体下 \\(\\overline X\\perp S^2\\)。正确突破口：把 \\(n\\overline X^2\\) 与 \\((n-1)S^2\\) 都化为卡方变量。考场信号：“正态样本 + \\(\\overline X,S^2\\)”立即检查能否用独立性和卡方分布。易错点：\\(D(cY)=c^2D(Y)\\)，且负号平方后变正。防卡方法：先写完整公式 \\(D(U-cV)=D(U)+c^2D(V)-2c\\operatorname{Cov}(U,V)\\)，再由独立性划掉协方差。"
+    }
+  ],
+  "enrichedQuestions": [
+    {
+      "id": "exam-2010-math1-q02",
+      "sourceRef": "2010年全国硕士研究生招生考试数学（一）第2题",
+      "mistakeType": "知识点不熟 / 思路卡壳 / 方法选择困难",
+      "errorCause": "不知道欧拉齐次函数定理，也未识别 \\(F(y/x,z/x)=0\\) 只含零次齐次比值，因此不能把 \\(\\frac zx\\) 看成 \\(\\frac yx\\) 的函数，导致不会起步。",
+      "reviewFocus": "卡壳位置：不知道欧拉公式便完全停住。第一步：观察方程只含 \\(y/x,z/x\\)，先尝试写成 \\(z=x\\varphi(y/x)\\)。正确突破口：这是一次齐次结构，所以 \\(xz_x+yz_y=z\\)；若忘记定理，就对原隐式方程分别关于 \\(x,y\\) 求偏导并消去 \\(F_1,F_2\\)。考场信号：出现 \\(y/x,z/x\\) 或各变量同比例缩放不改变关系时，优先检查齐次性。易错点：\\(\\partial(z/x)/\\partial x=(xz_x-z)/x^2\\)，不能漏掉 \\(-z\\)。防卡方法：记住欧拉公式 \\(xf_x+yf_y=kf\\)，同时保留“直接求导消元”作为兜底。"
+    }
+  ]
+}
