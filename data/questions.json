@@ -16028,7 +16028,7 @@
         }
       ],
       "answerVerification": "用像空间包含关系与秩不等式两种方法独立复核",
-      "errorCauseEvidence": "用户连续追问标量经过转置后的处理，说明外积 ((kalpha)(kalpha)^{\\mathsf T}) 的系数规则不稳定。",
+      "errorCauseEvidence": "用户连续追问标量经过转置后的处理，说明外积 \\((k\\alpha)(k\\alpha)^{\\mathsf T}\\) 的系数规则不稳定。",
       "wrongSubquestions": [
         1,
         2
