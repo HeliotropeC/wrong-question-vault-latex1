@@ -1,0 +1,123 @@
+{
+  "batchId": "exam-2010-math1-20261014",
+  "importedAt": "2026-10-14",
+  "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(2).pdf",
+  "examYear": 2010,
+  "examPaper": "数学一",
+  "sourcePages": 3,
+  "printedPages": [
+    11,
+    12,
+    13
+  ],
+  "selectionRule": "红圈/红方框的题号与答题区红色斜线均计入待复习题；不以边注猜测逐题扣分和具体错因",
+  "counts": {
+    "marked": 11,
+    "added": 11,
+    "merged": 0,
+    "before": 305,
+    "after": 316
+  },
+  "decisions": [
+    {
+      "questionNo": 2,
+      "targetId": "exam-2010-math1-q02",
+      "decision": "added",
+      "marker": "题号红色方框，旁注“不理解”",
+      "pdfPage": 1,
+      "printedPage": 11,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 3,
+      "targetId": "exam-2010-math1-q03",
+      "decision": "added",
+      "marker": "题号红圈、题末红色斜线",
+      "pdfPage": 1,
+      "printedPage": 11,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 7,
+      "targetId": "exam-2010-math1-q07",
+      "decision": "added",
+      "marker": "题号红圈、页边红色记号",
+      "pdfPage": 1,
+      "printedPage": 11,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 10,
+      "targetId": "exam-2010-math1-q10",
+      "decision": "added",
+      "marker": "答案横线红色斜线",
+      "pdfPage": 2,
+      "printedPage": 12,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 12,
+      "targetId": "exam-2010-math1-q12",
+      "decision": "added",
+      "marker": "填空处红色斜线（未圈题号）",
+      "pdfPage": 2,
+      "printedPage": 12,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 16,
+      "targetId": "exam-2010-math1-q16",
+      "decision": "added",
+      "marker": "题号红标、题旁红字“−6”",
+      "pdfPage": 2,
+      "printedPage": 12,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 18,
+      "targetId": "exam-2010-math1-q18",
+      "decision": "added",
+      "marker": "题号红方框、题旁手写复习批注",
+      "pdfPage": 2,
+      "printedPage": 12,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 19,
+      "targetId": "exam-2010-math1-q19",
+      "decision": "added",
+      "marker": "题号红圈、题旁红字“−8”",
+      "pdfPage": 2,
+      "printedPage": 12,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 20,
+      "targetId": "exam-2010-math1-q20",
+      "decision": "added",
+      "marker": "题号红方框、题旁红字“−7”及手写批注",
+      "pdfPage": 3,
+      "printedPage": 13,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 22,
+      "targetId": "exam-2010-math1-q22",
+      "decision": "added",
+      "marker": "题号红圈、题旁红字“−4”",
+      "pdfPage": 3,
+      "printedPage": 13,
+      "wrongSubquestions": []
+    },
+    {
+      "questionNo": 23,
+      "targetId": "exam-2010-math1-q23",
+      "decision": "added",
+      "marker": "题号红圈、题旁红字“−11”",
+      "pdfPage": 3,
+      "printedPage": 13,
+      "wrongSubquestions": []
+    }
+  ],
+  "notes": "原始三页图像人工核对；不存放原始PDF或截图；完全使用文本及LaTeX公式。"
+}
