@@ -1,0 +1,345 @@
+{
+  "batchId": "daily-2026-10-17-v1",
+  "importedAt": "2026-10-17",
+  "sourceWindow": "2026-10-16 19:07 至 2026-10-17 19:03（北京时间）",
+  "scope": "补查上次同步后的新对话，仅处理考研数学中做错、不会起步、方法选择不稳或主动追问原因的题目；传热学、普通物理、心理咨询及其他非数学内容全部排除。",
+  "selectionRule": "与仓库最新主分支按题干、核心设问与知识点组合查重；已存在的空间曲线积分题原位补强，其余新题按可核实题图与对话证据建卡。",
+  "counts": {
+    "reviewWorthyMathItems": 6,
+    "added": 5,
+    "enrichedExisting": 1,
+    "before": 325,
+    "after": 330
+  },
+  "addedQuestionIds": [
+    "daily-20261017-prob-density-product-rule",
+    "daily-20261017-linear-quadric-standard-form-parameter",
+    "daily-20261017-calc-double-integral-parts-mixed-derivative",
+    "daily-20261017-prob-joint-distribution-constraint",
+    "daily-20261017-prob-normal-known-mean-variance-mle"
+  ],
+  "enrichedQuestionIds": [
+    "hist-20260920-calculus-stokes"
+  ],
+  "dedupDecisions": [
+    {
+      "source": "空间曲线积分：柱面 x^2+y^2=1 与平面 z=x+y 的交线",
+      "targetId": "hist-20260920-calculus-stokes",
+      "decision": "enriched-existing",
+      "reason": "题干与历史卡完全相同；本次新增的是 dz 与有向面积元的真实卡壳证据。"
+    },
+    {
+      "source": "2026-10-17 早间起步训练推送题",
+      "decision": "not-imported",
+      "reason": "只有系统推送，没有用户作答、错误或追问证据，不具备新增复盘价值。"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "传热学与普通物理",
+      "decision": "excluded",
+      "reason": "非稳态导热、傅里叶数、半无限大物体、温度计套管及相关题图不属于考研数学错题库。"
+    },
+    {
+      "category": "心理探索",
+      "decision": "excluded",
+      "reason": "不属于考研数学题目。"
+    }
+  ],
+  "addedQuestions": [
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-17-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261017-prob-density-product-rule",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "sourceRef": "2026-10-16 晚间对话 · 概率密度判定中误选 A",
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "概率密度",
+        "分布函数",
+        "乘积求导",
+        "归一化",
+        "概念错误"
+      ],
+      "note": "原题完整选项未全部保留，按已核实的 A、D 两项重述为自洽判断题；用户误认为两个密度的乘积仍必为密度。",
+      "stem": "设 \\(f_1(x),f_2(x)\\) 是两个概率密度，\\(F_1(x),F_2(x)\\) 是相应的分布函数。判断下列两个函数中哪一个必为概率密度，并说明理由：\n\\[\ng_A(x)=f_1(x)f_2(x),\\qquad\ng_D(x)=f_1(x)F_2(x)+f_2(x)F_1(x).\n\\]",
+      "options": [
+        "A. \\(g_A(x)\\) 必为概率密度",
+        "D. \\(g_D(x)\\) 必为概率密度"
+      ],
+      "answer": "D。\\(g_D(x)\\) 必为概率密度；\\(g_A(x)\\) 不一定。",
+      "analysis": "概率密度必须同时满足非负性和归一化。虽然\n\\[\ng_A(x)=f_1(x)f_2(x)\\ge0,\n\\]\n但一般没有\n\\[\n\\int_{-\\infty}^{+\\infty}f_1(x)f_2(x)\\,dx=1.\n\\]\n例如取\n\\[\nf_1(x)=f_2(x)=\n\\begin{cases}\n2x,&0<x<1,\\\\\n0,&\\text{其他},\n\\end{cases}\n\\]\n则\n\\[\n\\int_{-\\infty}^{+\\infty}f_1(x)f_2(x)\\,dx\n=\\int_0^1 4x^2\\,dx=\\frac43\\ne1.\n\\]\n所以 A 不成立。\n\n另一方面，\n\\[\ng_D(x)=f_1(x)F_2(x)+f_2(x)F_1(x)\n=\\frac{d}{dx}\\bigl[F_1(x)F_2(x)\\bigr]\\ge0,\n\\]\n且\n\\[\n\\int_{-\\infty}^{+\\infty}g_D(x)\\,dx\n=\\left[F_1(x)F_2(x)\\right]_{-\\infty}^{+\\infty}\n=1.\n\\]\n故 D 必为概率密度。它也可理解为两个相互独立随机变量最大值的密度。",
+      "errorCause": "只检查了函数非负，默认“两个密度相乘仍是密度”，遗漏最关键的归一化条件；没有识别 D 是乘积 \\(F_1F_2\\) 的导数。",
+      "knowledgePoints": [
+        "概率密度的两条条件",
+        "分布函数的边界值",
+        "乘积求导",
+        "最大值分布"
+      ],
+      "similarQuestionPrompt": "设 \\(f_1,f_2\\) 为概率密度，\\(F_1,F_2\\) 为对应分布函数，判断 \\(f_1(1-F_2)+f_2(1-F_1)\\) 是否为概率密度，并从最小值分布角度解释；给出完整证明。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "verification": "依据用户误选 A 及随后“为什么不对”的追问，并结合对话中核实的 A、D 表达式重述"
+        }
+      ],
+      "answerVerification": "分别用反例检验 A 的归一化、用乘积求导和边界值验证 D",
+      "errorCauseEvidence": "用户选择 A 并追问原因；对话核实 A=f1f2、正确项 D=f1F2+f2F1。",
+      "reviewFocus": "卡壳位置：把“非负”误当成“概率密度”的充分条件。第一步固定检查\n\\[\ng(x)\\ge0,\\qquad \\int_{-\\infty}^{+\\infty}g(x)\\,dx=1.\n\\]\n正确突破口：出现 \\(f_1F_2+f_2F_1\\) 时立即识别乘积求导 \\((F_1F_2)'\\)。考场信号：选项同时出现密度 \\(f\\) 和分布函数 \\(F\\)，优先寻找某个 CDF 的导数。易错点：\\(f_1f_2\\) 只有非负性，积分值没有固定为 1。防卡方法：无法直接证明归一化时，用简单三角密度或均匀密度构造反例。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-17-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261017-linear-quadric-standard-form-parameter",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "questionNo": 13,
+      "sourceRef": "用户上传第13题（原卷年份未核实）· 2026-10-16 晚间对话",
+      "questionType": "填空题",
+      "mistakeType": "概念错误 / 知识点不熟 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "二次型矩阵",
+        "正交变换",
+        "特征值",
+        "退化二次曲面",
+        "概念错误"
+      ],
+      "note": "用户不确定右端常数是否影响二次型、缺少一个变量的对角式是否算标准形。",
+      "stem": "若二次曲面的方程\n\\[\nx^2+3y^2+z^2+2axy+2xz+2yz=4\n\\]\n经正交变换化为\n\\[\ny_1^2+4z_1^2=4,\n\\]\n求参数 \\(a\\)。",
+      "options": [],
+      "answer": "\\(a=1\\)。",
+      "analysis": "原二次项的对称矩阵为\n\\[\nA=\\begin{pmatrix}\n1&a&1\\\\\na&3&1\\\\\n1&1&1\n\\end{pmatrix}.\n\\]\n正交变换后的二次型可写成\n\\[\ny_1^2+0\\cdot y_2^2+4z_1^2,\n\\]\n所以 \\(A\\) 的特征值为 \\(1,0,4\\)。其中出现零特征值并不妨碍它成为二次型的标准形，只说明曲面是退化的、方程中有一个自由方向。\n\n特征值含 \\(0\\)，故\n\\[\n\\det A=0.\n\\]\n计算\n\\[\n\\det A=\n\\begin{vmatrix}\n1&a&1\\\\\na&3&1\\\\\n1&1&1\n\\end{vmatrix}\n=2-a(a-1)+(a-3)\n=-(a-1)^2.\n\\]\n于是\n\\[\na=1.\n\\]\n代回后，\\(\\operatorname{tr}A=5=1+0+4\\)，三个二阶主子式之和为 \\(4=1\\cdot4\\)，与特征值 \\(0,1,4\\) 一致。\n\n右端常数 \\(4\\) 不参与矩阵 \\(A\\) 的构造，也不改变特征值；它只影响曲面的尺度。若研究几何标准方程，可再把等式两边同除以 \\(4\\)。",
+      "errorCause": "把二次曲面方程右端的常数与左端二次型的系数矩阵混在一起；认为“标准形”必须三个平方项都出现，未把缺失项理解为系数为零。",
+      "knowledgePoints": [
+        "二次型矩阵",
+        "正交变换与特征值",
+        "标准形中的零系数",
+        "行列式等于特征值之积",
+        "二次曲面尺度"
+      ],
+      "similarQuestionPrompt": "设二次曲面 \\(2x^2+y^2+2z^2+2axy+2xz+2yz=9\\) 经正交变换化为含一个零平方项的对角方程，给出另外两个特征值，求 \\(a\\)。要求说明右端常数为何不影响特征值。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_281dfab3a8608191bbc3d9d8898f70fb",
+          "fileName": "466D56E6-65A5-4329-9263-F3542523D6E0.png",
+          "verification": "依据题图和连续追问核对"
+        }
+      ],
+      "answerVerification": "用行列式求参，并以迹和二阶主子式之和复核特征值 0、1、4",
+      "errorCauseEvidence": "用户连续追问“这一题不是二次型的标准形，可以吗”“等式最右边的数对计算有影响吗”“二次项正常形式”。",
+      "reviewFocus": "卡壳位置：看到 \\(y_1^2+4z_1^2=4\\) 少一个变量，就怀疑不能读特征值。第一步补写成\n\\[\n1\\cdot y_1^2+0\\cdot y_2^2+4\\cdot z_1^2=4,\n\\]\n立刻读出特征值 \\(1,0,4\\)。正确突破口：有零特征值就先用 \\(\\det A=0\\) 求参数。考场信号：题目给“经正交变换化为对角式”，对角系数就是原实对称矩阵的特征值。易错点：右端常数不进入二次型矩阵；交叉项 \\(2axy\\) 对应矩阵元 \\(a\\)，不是 \\(2a\\)。防卡方法：先只抄左端二次项构造 \\(A\\)，最后再处理右端尺度。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-17-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261017-calc-double-integral-parts-mixed-derivative",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "重积分",
+      "questionNo": 19,
+      "sourceRef": "用户上传第19题（原卷年份未核实）· 2026-10-16 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "计算错误 / 概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "二重积分",
+        "分部积分",
+        "混合偏导",
+        "边界条件",
+        "计算错误"
+      ],
+      "note": "用户知道要分部积分，但在第一步后混淆了积分变量、边界偏导和剩余积分，未能把条件 f(x,1)=0、f(1,y)=0 用到底。",
+      "stem": "已知函数 \\(f(x,y)\\) 具有二阶连续偏导数，且\n\\[\nf(1,y)=0,\\qquad f(x,1)=0,\n\\]\n并满足\n\\[\n\\iint_D f(x,y)\\,dx\\,dy=a,\\qquad\nD=\\{(x,y)\\mid 0\\le x\\le1,\\ 0\\le y\\le1\\}.\n\\]\n计算\n\\[\nI=\\iint_D xyf_{xy}''(x,y)\\,dx\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\(I=a\\)。",
+      "analysis": "按 \\(y\\) 先积分：\n\\[\nI=\\int_0^1x\\left[\\int_0^1y f_{xy}(x,y)\\,dy\\right]dx.\n\\]\n对内层关于 \\(y\\) 分部积分，\n\\[\n\\int_0^1y f_{xy}\\,dy\n=\\left.yf_x(x,y)\\right|_0^1-\\int_0^1f_x(x,y)\\,dy.\n\\]\n因为 \\(f(x,1)\\equiv0\\)，对 \\(x\\) 求导得\n\\[\nf_x(x,1)=0.\n\\]\n故\n\\[\nI=-\\int_0^1x\\left[\\int_0^1f_x(x,y)\\,dy\\right]dx.\n\\]\n令\n\\[\nG(x)=\\int_0^1f(x,y)\\,dy,\n\\]\n则 \\(G'(x)=\\int_0^1f_x(x,y)\\,dy\\)，并且由 \\(f(1,y)=0\\) 得 \\(G(1)=0\\)。于是\n\\[\nI=-\\int_0^1xG'(x)\\,dx\n=-\\left.xG(x)\\right|_0^1+\\int_0^1G(x)\\,dx.\n\\]\n边界项为零，因此\n\\[\nI=\\int_0^1\\int_0^1f(x,y)\\,dy\\,dx=a.\n\\]",
+      "errorCause": "分部积分时没有始终固定“当前对哪个变量积分”，把 \\(f_x(x,1)\\)、\\(f(x,1)\\) 和二重积分中的哑变量混写；也没有由边界恒等式推出相应切向偏导为零。",
+      "knowledgePoints": [
+        "二重积分中的分部积分",
+        "混合偏导",
+        "边界恒等式求导",
+        "参数积分求导"
+      ],
+      "similarQuestionPrompt": "设 \\(f\\in C^2([0,1]^2)\\)，且 \\(f(1,y)=f(x,1)=0\\)，已知 \\(\\iint f=b\\)。求 \\(\\iint x^2y f_{xy}\\)，要求分部积分两次并完整保留边界项。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_d6c56a3585048191910885f4dd7c409f",
+          "fileName": "B6D3DFD7-71CA-4817-B1A9-CFF61ABF7C7E.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_19c74b5e0b448191af5d86cf94d93b96",
+          "fileName": "IMG_13ABB259-2414-4BA5-96F6-473AFA1F8A68.jpeg",
+          "verification": "依据用户手写过程核对错因"
+        }
+      ],
+      "answerVerification": "按 y 后 x 分部积分，并以先 x 后 y 的对称次序复核",
+      "errorCauseEvidence": "手写过程在第一轮分部积分后把边界项与剩余积分混写，最终得到未闭合的负积分；用户要求“分析，帮助下次避免”。",
+      "reviewFocus": "卡壳位置：会想到分部积分，却不知道边界条件怎样消项。第一步在每个积分号旁标注“对 \\(y\\)”或“对 \\(x\\)”，并把外层变量当常数。正确突破口：边界上 \\(f(x,1)\\equiv0\\)，所以沿边界方向的导数 \\(f_x(x,1)=0\\)；同理 \\(f_y(1,y)=0\\)。考场信号：积分中有 \\(xyf_{xy}\\)，区域是矩形且题目给两条相邻边上 \\(f=0\\)，通常就是对两个变量各分部积分一次。易错点：\\(f_x(x,1)\\) 为零，但法向偏导 \\(f_y(x,1)\\) 不一定为零。防卡方法：每轮都完整写“边界项－剩余积分”，边界消失后再进入下一轮。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-17-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261017-prob-joint-distribution-constraint",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "questionNo": 22,
+      "sourceRef": "用户上传第22题（原卷年份未核实）· 2026-10-16 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 思路卡壳 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "二维离散分布",
+        "边缘分布",
+        "事件概率为1",
+        "乘积分布",
+        "相关系数",
+        "思路卡壳"
+      ],
+      "note": "用户在第一问不理解怎样由边缘分布与概率为1的约束唯一确定联合分布。",
+      "stem": "随机变量 \\(X,Y\\) 的边缘分布分别为\n\\[\nP(X=0)=\\frac13,\\qquad P(X=1)=\\frac23,\n\\]\n以及\n\\[\nP(Y=-1)=P(Y=0)=P(Y=1)=\\frac13.\n\\]\n又知\n\\[\nP\\{X^2=Y^2\\}=1.\n\\]\n(1) 求二维随机变量 \\((X,Y)\\) 的联合分布；  \n(2) 求 \\(Z=XY\\) 的分布；  \n(3) 求相关系数 \\(\\rho_{XY}\\)。",
+      "options": [],
+      "answer": "联合分布中\n\\[\nP(0,0)=P(1,-1)=P(1,1)=\\frac13,\n\\]\n其余概率均为 \\(0\\)。因此\n\\[\nP(Z=-1)=P(Z=0)=P(Z=1)=\\frac13,\n\\qquad \\rho_{XY}=0.\n\\]",
+      "analysis": "条件\n\\[\nP\\{X^2=Y^2\\}=1\n\\]\n表示不满足 \\(x^2=y^2\\) 的格点概率全部为零。由于 \\(X\\in\\{0,1\\}\\)，可行配对只有\n\\[\n(0,0),\\qquad(1,-1),\\qquad(1,1).\n\\]\n再用边缘分布：\n\\[\nP(X=0)=P(0,0)=\\frac13,\n\\]\n\\[\nP(Y=-1)=P(1,-1)=\\frac13,\\qquad\nP(Y=1)=P(1,1)=\\frac13.\n\\]\n三项和为 1，故联合分布唯一确定，其余单元格均为零。\n\n由 \\(Z=XY\\)：\n\\[\n(1,-1)\\mapsto-1,\\qquad(0,0)\\mapsto0,\\qquad(1,1)\\mapsto1,\n\\]\n所以 \\(Z=-1,0,1\\) 各以 \\(1/3\\) 的概率取得。\n\n最后\n\\[\nEX=\\frac23,\\qquad EY=0,\\qquad E(XY)=\\frac{-1+0+1}{3}=0,\n\\]\n从而\n\\[\n\\operatorname{Cov}(X,Y)=E(XY)-EX\\cdot EY=0.\n\\]\n又\n\\[\nDX=\\frac29>0,\\qquad DY=\\frac23>0,\n\\]\n故\n\\[\n\\rho_{XY}=\\frac{\\operatorname{Cov}(X,Y)}{\\sqrt{DX\\,DY}}=0.\n\\]\n注意：相关系数为零不表示 \\(X,Y\\) 独立；本题的联合分布显然不等于边缘概率之积。",
+      "errorCause": "没有把“事件以概率1发生”翻译为“联合分布表中所有不满足条件的格点都必须为0”，因此不知道如何把边缘概率填入剩余可行单元格。",
+      "knowledgePoints": [
+        "二维离散随机变量",
+        "由边缘分布反推联合分布",
+        "概率为1的约束",
+        "随机变量函数的分布",
+        "协方差与相关系数"
+      ],
+      "similarQuestionPrompt": "设 \\(X\\in\\{0,1,2\\}\\)、\\(Y\\in\\{-2,0,2\\}\\) 的边缘分布已知，且 \\(P(X^2=Y^2)=1\\)。设计一组使联合分布唯一的边缘概率，求联合分布、\\(X+Y\\) 的分布及相关系数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_9680a55fa7b881918189838dd18cd457",
+          "fileName": "E69134A7-E0A1-4712-8E62-7CD8D89DE5F1.png",
+          "verification": "题图目视转写并结合“第一问有点不理解”核对"
+        }
+      ],
+      "answerVerification": "由可行格点和边缘分布唯一填表，再直接计算 Z 分布及协方差复核",
+      "errorCauseEvidence": "用户明确表示“我第一问有点不理解”。",
+      "reviewFocus": "卡壳位置：看到边缘分布和 \\(P\\{X^2=Y^2\\}=1\\)，不知道从哪一条开始。第一步先列出所有 \\((x,y)\\) 格点，把不满足 \\(x^2=y^2\\) 的格子全部划零。正确突破口：约束筛格点，边缘分布定行和列和。考场信号：题目给两个边缘分布再附加一个概率为 1 的关系，通常是在用关系压缩联合分布的支持集。易错点：先假设独立会得到错误联合分布；零相关也不能反推独立。防卡方法：固定执行“列格点—筛支持—填边缘—验总和”四步。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-17-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261017-prob-normal-known-mean-variance-mle",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "questionNo": 23,
+      "sourceRef": "用户上传第23题（原卷年份未核实）· 2026-10-16 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 计算错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "正态总体",
+        "最大似然估计",
+        "均值已知",
+        "卡方分布",
+        "自由度",
+        "概念错误",
+        "计算错误"
+      ],
+      "note": "用户把关于已知均值 μ0 的离差平方和误写成 (n-1)S²，继而错误使用 n-1 个自由度计算期望和方差。",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\) 为来自正态总体\n\\[\nN(\\mu_0,\\sigma^2)\n\\]\n的简单随机样本，其中 \\(\\mu_0\\) 已知，\\(\\sigma^2>0\\) 未知，\\(\\overline X\\) 和\n\\[\nS^2=\\frac1{n-1}\\sum_{i=1}^n(X_i-\\overline X)^2\n\\]\n分别为样本均值和样本方差。  \n(1) 求 \\(\\sigma^2\\) 的最大似然估计量 \\(\\widehat{\\sigma^2}\\)；  \n(2) 求 \\(E(\\widehat{\\sigma^2})\\) 和 \\(D(\\widehat{\\sigma^2})\\)。",
+      "options": [],
+      "answer": "\\[\n\\widehat{\\sigma^2}=\\frac1n\\sum_{i=1}^n(X_i-\\mu_0)^2,\n\\qquad\nE(\\widehat{\\sigma^2})=\\sigma^2,\n\\qquad\nD(\\widehat{\\sigma^2})=\\frac{2\\sigma^4}{n}.\n\\]",
+      "analysis": "令 \\(\\theta=\\sigma^2\\)。似然函数为\n\\[\nL(\\theta)=(2\\pi\\theta)^{-n/2}\n\\exp\\left[-\\frac1{2\\theta}\\sum_{i=1}^n(X_i-\\mu_0)^2\\right].\n\\]\n对数似然为\n\\[\n\\ell(\\theta)=-\\frac n2\\ln(2\\pi)-\\frac n2\\ln\\theta\n-\\frac1{2\\theta}\\sum_{i=1}^n(X_i-\\mu_0)^2.\n\\]\n求导并令其为零：\n\\[\n\\ell'(\\theta)=-\\frac n{2\\theta}\n+\\frac1{2\\theta^2}\\sum_{i=1}^n(X_i-\\mu_0)^2=0,\n\\]\n故\n\\[\n\\widehat{\\sigma^2}=\\widehat\\theta\n=\\frac1n\\sum_{i=1}^n(X_i-\\mu_0)^2.\n\\]\n\n由于均值 \\(\\mu_0\\) 已知，标准化后有\n\\[\n\\frac{\\sum_{i=1}^n(X_i-\\mu_0)^2}{\\sigma^2}\\sim\\chi_n^2.\n\\]\n这里自由度是 \\(n\\)，没有因为估计均值而损失 1 个自由度。因此\n\\[\nE(\\widehat{\\sigma^2})\n=\\frac{\\sigma^2}{n}E(\\chi_n^2)\n=\\sigma^2,\n\\]\n\\[\nD(\\widehat{\\sigma^2})\n=\\frac{\\sigma^4}{n^2}D(\\chi_n^2)\n=\\frac{\\sigma^4}{n^2}\\cdot2n\n=\\frac{2\\sigma^4}{n}.\n\\]\n\n与样本方差的正确关系是\n\\[\n\\sum_{i=1}^n(X_i-\\mu_0)^2\n=\\sum_{i=1}^n(X_i-\\overline X)^2+n(\\overline X-\\mu_0)^2\n=(n-1)S^2+n(\\overline X-\\mu_0)^2.\n\\]\n因此不能把它直接写成 \\((n-1)S^2\\)。",
+      "errorCause": "把“围绕样本均值的离差平方和”与“围绕已知总体均值的离差平方和”等同，漏掉 \\(n(\\overline X-\\mu_0)^2\\)；求似然时又没有先明确参数是 \\(\\theta=\\sigma^2\\)，导致求导幂次混乱。",
+      "knowledgePoints": [
+        "正态总体方差的最大似然估计",
+        "均值已知与未知的区别",
+        "卡方分布自由度",
+        "离差平方和分解",
+        "估计量的期望与方差"
+      ],
+      "similarQuestionPrompt": "设样本来自 \\(N(\\mu_0,sigma^2)\\)，\\(\\mu_0\\) 已知。求 \\(\\sigma\\) 的最大似然估计量，并判断它是否无偏；要求对比 \\(\\sigma^2\\) 的 MLE 与样本方差 \\(S^2\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_9731ee835d908191b8a860ec8380ec12",
+          "fileName": "1753DDE0-862B-4EF7-ABE7-AF2ECC38E0D1.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-16",
+          "fileId": "libfile_53c4aa72cde08191a7296c3a6bf31555",
+          "fileName": "IMG_274D21DE-D996-4528-81C8-2EFE610EC0DE.jpeg",
+          "verification": "依据用户手写过程和红笔订正核对"
+        }
+      ],
+      "answerVerification": "用对数似然求导，并以 n 个标准正态平方和的卡方分布独立复核期望与方差",
+      "errorCauseEvidence": "用户手写把 \\(\\sum(X_i-\\mu_0)^2\\) 直接换成 \\((n-1)S^2\\)，并据此使用 n-1 自由度；要求“指出错误，并预防”。",
+      "reviewFocus": "卡壳位置：看到题中同时给 \\(\\mu_0\\) 和 \\(S^2\\)，就机械套用 \\((n-1)S^2\\)。第一步圈出“\\(\\mu_0\\) 已知”，并把未知参数记为 \\(\\theta=\\sigma^2\\)。正确突破口：似然里的平方和围绕 \\(\\mu_0\\)，故对应 \\(n\\) 个独立标准正态平方，自由度为 \\(n\\)。考场信号：均值已知时用 \\(\\sum(X_i-\\mu_0)^2\\)；均值未知并用 \\(\\overline X\\) 代替时才出现 \\(n-1\\)。易错点：\\(\\sum(X_i-\\mu_0)^2\\neq(n-1)S^2\\)，还差 \\(n(\\overline X-\\mu_0)^2\\)。防卡方法：凡要替换成 \\(S^2\\)，先写离差平方和分解式检查中心是否相同。"
+    }
+  ],
+  "enrichedQuestions": [
+    {
+      "id": "hist-20260920-calculus-stokes",
+      "sourceRef": "历史对话 2026-09-20 · 曲线曲面积分例18",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "errorCause": "把平面方程在曲线上的全微分关系与平面的法向量公式混为一谈，不知道何时应代入 \\(dz\\)，何时应构造 \\((-z_x,-z_y,1)\\,dx\\,dy\\)。",
+      "reviewFocus": "卡壳位置：看到平面 \\(z=x+y\\) 时，不清楚为什么一处写 \\(dz=dx+dy\\)，另一处写法向量 \\((-1,-1,1)\\)。第一步先选路线：若把线积分降为 \\(xy\\) 平面上的曲线积分，就求全微分；若直接用斯托克斯，就求旋度和有向面积元。考场识别信号：交线位于可写成 \\(z=z(x,y)\\) 的平面且投影区域简单，两条路线都可行。易错点：全微分是标量微分关系，法向量是三维向量，不能互相替代；方向须用右手定则核对。防卡方法：草稿固定写“降维：\\(dz=z_xdx+z_ydy\\)”与“斯托克斯：\\(\\mathbf n\\,dS=(-z_x,-z_y,1)dxdy\\)”两行再选其一。"
+    }
+  ]
+}
