@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 330,
+  "count": 337,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -16643,11 +16643,434 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "用对数似然求导，并以 n 个标准正态平方和的卡方分布独立复核期望与方差",
       "errorCauseEvidence": "用户手写把 \\(\\sum(X_i-\\mu_0)^2\\) 直接换成 \\((n-1)S^2\\)，并据此使用 n-1 自由度；要求“指出错误，并预防”。",
       "reviewFocus": "卡壳位置：看到题中同时给 \\(\\mu_0\\) 和 \\(S^2\\)，就机械套用 \\((n-1)S^2\\)。第一步圈出“\\(\\mu_0\\) 已知”，并把未知参数记为 \\(\\theta=\\sigma^2\\)。正确突破口：似然里的平方和围绕 \\(\\mu_0\\)，故对应 \\(n\\) 个独立标准正态平方，自由度为 \\(n\\)。考场信号：均值已知时用 \\(\\sum(X_i-\\mu_0)^2\\)；均值未知并用 \\(\\overline X\\) 代替时才出现 \\(n-1\\)。易错点：\\(\\sum(X_i-\\mu_0)^2\\neq(n-1)S^2\\)，还差 \\(n(\\overline X-\\mu_0)^2\\)。防卡方法：凡要替换成 \\(S^2\\)，先写离差平方和分解式检查中心是否相同。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-power-series-product-derivative",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2026-10-18 晚间对话 · 幂级数求和函数",
+      "questionType": "解答题",
+      "mistakeType": "计算错误 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "幂级数",
+        "和函数",
+        "逐项求导",
+        "乘积求导",
+        "收敛区间",
+        "计算错误"
+      ],
+      "note": "用户把 \\([xg(x)]'\\) 误写成 \\(xg'(x)\\)，从而多除一个 \\(x\\)，并引入不应出现的积分常数。",
+      "stem": "求幂级数\n\\[\ng(x)=\\sum_{n=0}^{\\infty}\\frac{2}{2n+1}x^{2n}\n\\]\n的收敛域与和函数。",
+      "options": [],
+      "answer": "收敛域为 \\((-1,1)\\)，且\n\\[\ng(x)=\\begin{cases}\n\\dfrac1x\\ln\\dfrac{1+x}{1-x},&0<|x|<1,\\\\[4pt]\n2,&x=0.\n\\end{cases}\n\\]",
+      "analysis": "先乘以 \\(x\\)：\n\\[\nxg(x)=\\sum_{n=0}^{\\infty}\\frac{2}{2n+1}x^{2n+1}.\n\\]\n在 \\(|x|<1\\) 内逐项求导，\n\\[\n[xg(x)]'=\\sum_{n=0}^{\\infty}2x^{2n}=\\frac{2}{1-x^2}.\n\\]\n注意左边必须按乘积求导：\\([xg(x)]'=g(x)+xg'(x)\\)，不能写成 \\(xg'(x)\\)。由 \\(xg(0)=0\\)，直接从 \\(0\\) 积到 \\(x\\)：\n\\[\nxg(x)=\\int_0^x\\frac{2}{1-t^2}\\,dt\n=\\ln\\frac{1+x}{1-x}.\n\\]\n故 \\(x\\ne0\\) 时得到所给表达式；而 \\(g(0)=2\\)。比值法给收敛半径 \\(1\\)，在 \\(x=\\pm1\\) 时均化为调和型正项级数而发散，所以收敛域为 \\((-1,1)\\)。",
+      "errorCause": "把整体 \\(xg(x)\\) 求导时漏掉 \\(g(x)\\) 项，误写 \\([xg(x)]'=xg'(x)\\)；随后积分时又使用不定积分常数，未利用 \\(xg(0)=0\\) 固定常数。",
+      "knowledgePoints": [
+        "幂级数逐项求导",
+        "和函数",
+        "乘积求导",
+        "收敛端点判别",
+        "定积分确定常数"
+      ],
+      "similarQuestionPrompt": "求 \\(h(x)=\\sum_{n=0}^{\\infty}\\frac{x^{2n}}{2n+3}\\) 的收敛域与和函数。要求先构造 \\(x^3h(x)\\)，逐项求导，并单独处理 \\(x=0\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-18",
+          "fileId": "libfile_879617ecc968819186eada09531f4dcf",
+          "fileName": "IMG_91992CAB-24BD-496A-A72B-190955D3F6D3.jpeg",
+          "verification": "依据用户手写过程与对话订正核对"
+        }
+      ],
+      "answerVerification": "由逐项积分反求原级数，并以 x→0 极限核对 g(0)=2",
+      "errorCauseEvidence": "用户手写把 [xg(x)]' 写成 xg'(x)，进而积分 2/[x(1-x^2)]。",
+      "reviewFocus": "卡壳位置：看到奇次幂分母后会想到先乘 \\(x\\)，但对乘积求导漏项。第一步固定写 \\([xg]'=g+xg'\\)。正确突破口：把 \\([xg]'\\) 看成一个整体直接从 \\(0\\) 积到 \\(x\\)，不必先求 \\(g'\\)。考场信号：系数含 \\(2n+1\\)、幂次为 \\(2n\\)，乘 \\(x\\) 后逐项求导会消掉分母。易错点：端点 \\(x=\\pm1\\) 都要另判；最终公式在 \\(x=0\\) 需补定义。防卡方法：求导前先给整体加括号，并优先使用定积分固定常数。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-parametric-tangent-area",
+      "subject": "高等数学",
+      "chapter": 9,
+      "chapterTitle": "定积分的应用",
+      "questionNo": 18,
+      "sourceRef": "用户上传第18题 · 2026-10-18 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 计算错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "参数方程",
+        "切线截距",
+        "曲边面积",
+        "定积分",
+        "微元混用",
+        "符号错误"
+      ],
+      "note": "求出 f(t) 后，用户在面积部分写成二重积分并同时代入 dx、dy，导致把一维面积公式误作二维变量替换，得到负面积。",
+      "stem": "已知曲线\n\\[\nL:\\begin{cases}x=f(t),\\\\y=\\cos t,\n\\end{cases}\\qquad 0\\le t<\\frac\\pi2,\n\\]\n其中 \\(f\\) 有连续导数，\\(f(0)=0\\)，且 \\(f'(t)>0\\)。若曲线 \\(L\\) 的切线与 \\(x\\) 轴的交点到切点的距离恒为 \\(1\\)，求 \\(f(t)\\)，并求由 \\(L\\)、\\(x\\) 轴和 \\(y\\) 轴围成区域的面积。",
+      "options": [],
+      "answer": "\\[\nf(t)=\\ln(\\sec t+\\tan t)-\\sin t,\n\\qquad S=\\frac\\pi4.\n\\]",
+      "analysis": "切点为 \\((f(t),\\cos t)\\)，切线斜率\n\\[\n\\frac{dy}{dx}=-\\frac{\\sin t}{f'(t)}.\n\\]\n令切线与 \\(x\\) 轴交于 \\((x_0,0)\\)，由切线方程得\n\\[\nx_0-f(t)=f'(t)\\cot t.\n\\]\n距离条件给出\n\\[\n[f'(t)\\cot t]^2+\\cos^2t=1.\n\\]\n结合 \\(f'(t)>0\\)，得\n\\[\nf'(t)=\\frac{\\sin^2t}{\\cos t}=\\sec t-\\cos t.\n\\]\n由 \\(f(0)=0\\)，\n\\[\nf(t)=\\int_0^t(\\sec u-\\cos u)\\,du\n=\\ln(\\sec t+\\tan t)-\\sin t.\n\\]\n面积是平面区域面积，按竖条应写\n\\[\nS=\\int_L y\\,dx=\\int_0^{\\pi/2}\\cos t\\,f'(t)\\,dt\n=\\int_0^{\\pi/2}\\sin^2t\\,dt=\\frac\\pi4.\n\\]\n这里没有 \\(dy\\)，更不能在 \\(\\iint y\\,dx\\,dy\\) 中把同一个参数曲线上的 \\(dx,dy\\) 同时代入。",
+      "errorCause": "把曲线下方面积 \\(S=\\int y\\,dx\\) 错写成二重积分 \\(\\iint y\\,dx\\,dy\\)，又把 \\(dx=f'(t)dt\\)、\\(dy=-\\sin tdt\\) 同时代入，产生多余负号和多余一个 \\(dt\\)。",
+      "knowledgePoints": [
+        "参数曲线切线",
+        "切线截距",
+        "曲边梯形面积",
+        "参数积分",
+        "微元含义"
+      ],
+      "similarQuestionPrompt": "设参数曲线 \\(x=f(t),y=\\sin t\\)（\\(0\\le t\\le\\pi/2\\)）满足切线到两坐标轴截距的某一恒定关系，并给出 \\(f(0)=0,f'>0\\)。设计可求出 \\(f\\) 的条件，再求曲线与坐标轴围成面积；强调只使用 \\(S=\\int y\\,dx\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-18",
+          "fileId": "libfile_78536689c0108191a14836d0fee64ef9",
+          "fileName": "33B824E2-54F6-4011-AC86-4FA6281129A9.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-18",
+          "fileId": "libfile_7d74c37e8ed081919f2ab86e9ddfa18e",
+          "fileName": "IMG_5EA810F6-C980-4872-A69C-42881D8F9273.jpeg",
+          "verification": "依据用户手写面积过程核对"
+        }
+      ],
+      "answerVerification": "由距离条件推导 f'，再用 S=∫y dx；以 integrand sin²t≥0 检查面积符号",
+      "errorCauseEvidence": "用户手写同时出现 S=∬y dxdy、dx=f'(t)dt、dy=-sin tdt，并得到 -π/4。",
+      "reviewFocus": "卡壳位置：参数曲线面积不知选一维还是二维微元。第一步画竖条并写 \\(S=\\int y\\,dx\\)。正确突破口：既然 \\(x=f(t)\\) 单调增加，直接把 \\(dx=f'(t)dt\\) 代入；\\(dy\\) 完全不参与。考场信号：题目问由一条曲线和坐标轴围成的平面面积，优先是一重积分；只有区域本身需要双重扫描时才写 \\(\\iint_D1\\,dA\\)。易错点：面积必须非负，算出负数应立即检查方向或微元。防卡方法：代参前先数积分维数——一个积分号只能留下一个参数微元 \\(dt\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-linear-rank-ata-columns",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "questionNo": 21,
+      "sourceRef": "用户上传第21题 · 2026-10-18 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "方法选择困难 / 计算错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "矩阵秩",
+        "A^TA",
+        "列向量线性相关",
+        "正交对角化",
+        "二次型",
+        "方法选择困难"
+      ],
+      "note": "用户直接展开 det(A^TA)，计算量大且未稳定得出参数。最短路径是 rank(A^TA)=rank(A)，用第三列由前两列线性表示。",
+      "stem": "已知\n\\[\nA=\\begin{pmatrix}\n1&0&1\\\\\n0&1&1\\\\\n-1&0&a\\\\\n0&a&-1\n\\end{pmatrix},\n\\]\n二次型 \\(f(x_1,x_2,x_3)=x^{\\mathsf T}(A^{\\mathsf T}A)x\\) 的秩为 \\(2\\)。\n(1) 求实数 \\(a\\)；\n(2) 求正交变换 \\(x=Qy\\) 将二次型化为标准形。",
+      "options": [],
+      "answer": "\\(a=-1\\)。可取\n\\[\nQ=\\begin{pmatrix}\n\\frac1{\\sqrt6}&\\frac1{\\sqrt2}&\\frac1{\\sqrt3}\\\\\n\\frac1{\\sqrt6}&-\\frac1{\\sqrt2}&\\frac1{\\sqrt3}\\\\\n\\frac2{\\sqrt6}&0&-\\frac1{\\sqrt3}\n\\end{pmatrix},\n\\]\n则标准形为\n\\[\nf=6y_1^2+2y_2^2.\n\\]",
+      "analysis": "利用恒等式\n\\[\n\\operatorname{rank}(A^{\\mathsf T}A)=\\operatorname{rank}(A),\n\\]\n所以只需令 \\(\\operatorname{rank}A=2\\)。前两列\n\\[\nc_1=(1,0,-1,0)^{\\mathsf T},\\qquad c_2=(0,1,0,a)^{\\mathsf T}\n\\]\n恒线性无关，因此秩为 \\(2\\) 当且仅当第三列 \\(c_3=(1,1,a,-1)^{\\mathsf T}\\) 属于 \\(\\operatorname{span}\\{c_1,c_2\\}\\)。设 \\(c_3=\\alpha c_1+\\beta c_2\\)，由前两行立得 \\(\\alpha=\\beta=1\\)，第三、四行均给出 \\(a=-1\\)。此时\n\\[\nA^{\\mathsf T}A=\\begin{pmatrix}2&0&2\\\\0&2&2\\\\2&2&4\\end{pmatrix},\n\\]\n特征值为 \\(6,2,0\\)，对应单位正交特征向量可取\n\\[\n\\frac1{\\sqrt6}(1,1,2)^{\\mathsf T},\\quad\n\\frac1{\\sqrt2}(1,-1,0)^{\\mathsf T},\\quad\n\\frac1{\\sqrt3}(1,1,-1)^{\\mathsf T}.\n\\]\n把它们依次作为 \\(Q\\) 的列，即得标准形。",
+      "errorCause": "看到二次型的秩就先完整计算 \\(A^{\\mathsf T}A\\) 并展开三阶行列式，忽略了 \\(\\operatorname{rank}(A^{\\mathsf T}A)=\\operatorname{rank}A\\)；既增加计算量，也容易把参数项乘错。",
+      "knowledgePoints": [
+        "A^TA的秩",
+        "列向量线性相关",
+        "含参矩阵秩",
+        "实对称矩阵正交对角化",
+        "二次型标准形"
+      ],
+      "similarQuestionPrompt": "给出一个 \\(4\\times3\\) 含参矩阵 \\(B\\)，已知二次型 \\(x^{\\mathsf T}B^{\\mathsf T}Bx\\) 的秩为 \\(2\\)。要求先用列相关求参数，再求 \\(B^{\\mathsf T}B\\) 的非零特征值和标准形。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-18",
+          "fileId": "libfile_75d8aa25d39081918dde8d2768db2740",
+          "fileName": "AC0C3A80-82FA-4D69-9957-70545660DC66.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-18",
+          "fileId": "libfile_f970ba0594708191ba8a1c4a6fec4491",
+          "fileName": "IMG_25861FFC-F76F-48AD-9C6B-92FD38D2FA85.jpeg",
+          "verification": "依据用户手写的行列式展开过程核对"
+        }
+      ],
+      "answerVerification": "用列相关求 a=-1，并直接计算 A^TA 的特征值 6、2、0 复核秩为2",
+      "errorCauseEvidence": "用户手写反复展开 det(A^TA)，出现多处参数乘法涂改且未形成稳定结论。",
+      "reviewFocus": "卡壳位置：被 \\(A^{\\mathsf T}A\\) 吓到，立即进入大计算。第一步写 \\(\\operatorname{rank}(A^{\\mathsf T}A)=\\operatorname{rank}A\\)。正确突破口：前两列显然无关，第三列必须是它们的线性组合；先看前两行就定出组合系数。考场信号：给长方矩阵 \\(A\\) 而题目只问 \\(A^{\\mathsf T}A\\) 的秩，优先回到 \\(A\\) 本身。易错点：只令 \\(\\det(A^{\\mathsf T}A)=0\\) 只能得到秩不满，还要确认恰为2。防卡方法：先锁定一个非零二阶子式，再处理剩余列相关。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-first-kind-circle-offset",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-19 对话 · 圆周上的第一类曲线积分",
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 计算错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲线积分",
+        "圆周参数化",
+        "弧长微元",
+        "坐标系混用",
+        "计算错误"
+      ],
+      "note": "用户把圆的极坐标方程 r=2cosθ 与平移后的圆参数式混在一起，导致把真实半径1误成速度2，算得4π。",
+      "stem": "设 \\(L\\) 为圆周\n\\[\nx^2+y^2=2x,\n\\]\n求\n\\[\nI=\\int_Lx\\,\\mathrm ds.\n\\]\nA. \\(2\\pi\\)　B. \\(\\pi\\)　C. \\(1\\)　D. \\(0\\)",
+      "options": [
+        "A. \\(2\\pi\\)",
+        "B. \\(\\pi\\)",
+        "C. \\(1\\)",
+        "D. \\(0\\)"
+      ],
+      "answer": "A，即 \\(I=2\\pi\\)。",
+      "analysis": "先配方：\n\\[\n(x-1)^2+y^2=1.\n\\]\n用圆心参数化\n\\[\nx=1+\\cos t,\\qquad y=\\sin t,qquad 0\\le t\\le2\\pi,\n\\]\n则\n\\[\n\\mathrm ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2}\\,dt=dt.\n\\]\n于是\n\\[\nI=\\int_0^{2\\pi}(1+\\cos t)\\,dt=2\\pi.\n\\]\n也可用对称性：圆周上 \\(x\\) 关于圆心的平均值为 \\(1\\)，周长为 \\(2\\pi\\)，故积分为 \\(1\\cdot2\\pi\\)。",
+      "errorCause": "先写出极坐标关系 \\(r=2\\cos\\theta\\)，又同时使用以 \\((1,0)\\) 为圆心的平移表达式，混用了两个坐标系；由此错误写出长度速度为2并得到4π。",
+      "knowledgePoints": [
+        "第一类曲线积分",
+        "圆的参数方程",
+        "弧长微元",
+        "对称性",
+        "极坐标与平移坐标"
+      ],
+      "similarQuestionPrompt": "设 \\(L:(x-a)^2+(y-b)^2=R^2\\)，求 \\(\\int_L(px+qy+c)\\,ds\\)。要求分别用参数化和“平均值×周长”求解。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_8c74a80b328c819180f78079fc5446fa",
+          "fileName": "29A5AFA4-6174-4F9A-BE1B-0BA713625016.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_f94c320c772c8191bf56925378299ade",
+          "fileName": "IMG_C8C57420-3887-4C65-B35F-EE7181F917CD.jpeg",
+          "verification": "依据用户手写过程核对"
+        }
+      ],
+      "answerVerification": "直接参数化与圆周对称平均值两种方法独立复核",
+      "errorCauseEvidence": "用户手写把 r=2cosθ 与 x=1+r cosθ 同时使用，并得到 4π。",
+      "reviewFocus": "卡壳位置：看到 \\(x^2+y^2=2x\\) 就直接套极坐标，却又按平移圆参数化。第一步先配方读圆心和半径。正确突破口：圆心式参数化后 \\(ds=Rdt\\) 一眼可得。考场信号：第一类积分 \\(\\int_Lf\\,ds\\) 与方向无关；若 \\(f\\) 是坐标的一次式，优先用圆周对称平均。易错点：同一次计算只能选一个坐标系，不能让 \\(r\\) 既表示原点极径又表示到圆心的半径。防卡方法：参数化后立刻代回圆方程自检。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-surface-integral-plane-disk-symmetry",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-19 对话 · 第一类曲面积分练习",
+      "questionType": "解答题",
+      "mistakeType": "计算错误 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲面积分",
+        "投影法",
+        "平面",
+        "圆柱截面",
+        "对称性",
+        "周期积分",
+        "计算错误"
+      ],
+      "note": "用户建立投影公式基本正确，但没有先利用圆盘对称性，且把完整周期上 sinθ、cosθ 的积分算成非零。",
+      "stem": "设 \\(S\\) 为平面\n\\[\nx+y+z=4\n\\]\n被柱面 \\(x^2+y^2=1\\) 所截下的部分，计算第一类曲面积分\n\\[\nI=\\iint_S z\\,\\mathrm dS.\n\\]",
+      "options": [],
+      "answer": "\\(I=4\\sqrt3\\,\\pi\\)。",
+      "analysis": "写成图形 \\(z=4-x-y\\)，其在 \\(xy\\) 平面上的投影为\n\\[\nD=\\{(x,y):x^2+y^2\\le1\\}.\n\\]\n由于 \\(z_x=z_y=-1\\)，\n\\[\n\\mathrm dS=\\sqrt{1+z_x^2+z_y^2}\\,dxdy=\\sqrt3\\,dxdy.\n\\]\n所以\n\\[\nI=\\sqrt3\\iint_D(4-x-y)\\,dxdy.\n\\]\n圆盘 \\(D\\) 关于两坐标轴对称，故\n\\[\n\\iint_Dx\\,dxdy=\\iint_Dy\\,dxdy=0.\n\\]\n于是\n\\[\nI=4\\sqrt3\\,\\operatorname{area}(D)=4\\sqrt3\\pi.\n\\]\n若用极坐标，\\(\\int_0^{2\\pi}\\sin\\theta\\,d\\theta=\\int_0^{2\\pi}\\cos\\theta\\,d\\theta=0\\)，结果相同。",
+      "errorCause": "投影与 \\(dS\\) 已基本写对，但对圆盘上的一次奇函数没有先用对称性；转极坐标后又把完整周期的 \\(\\sin\\theta+\\cos\\theta\\) 积分错误算成非零，最终多出 \\(-2\\sqrt3/3\\)。",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "曲面投影",
+        "面积微元",
+        "圆盘对称性",
+        "周期三角积分"
+      ],
+      "similarQuestionPrompt": "设 \\(S\\) 为平面 \\(2x-y+z=3\\) 被圆柱 \\(x^2+y^2=4\\) 截下的部分，计算 \\(\\iint_S(3+x-2y)\\,dS\\)，要求优先使用投影区域的对称性。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_d9331a0ce5fc8191aadd6f3a4de811c3",
+          "fileName": "IMG_ADA2D1A6-DB8A-4650-98B7-426E2392AF9F.jpeg",
+          "verification": "依据用户手写题设与全过程核对"
+        }
+      ],
+      "answerVerification": "投影法直接计算，并用圆盘上一次函数积分为零复核",
+      "errorCauseEvidence": "用户手写最终得到 4√3π-2√3/3，非零误差来自完整周期三角积分。",
+      "reviewFocus": "卡壳位置：公式会用，但进入极坐标后做了不必要的细算并丢掉周期性。第一步画出投影圆盘并检查奇偶对称。正确突破口：圆心在原点的整圆盘上，\\(x\\)、\\(y\\) 的积分都为0。考场信号：投影区域高度对称、被积函数含一次项时，先拆成常数项和奇函数项。易错点：\\(dS\\) 中的根号因子是常数 \\(\\sqrt3\\)，不能遗漏；完整周期的正弦余弦积分必为0。防卡方法：极坐标前先问一句“哪些项凭对称性直接消失”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-arc-ds-versus-dx-direction",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-19 对话 · 圆弧上第一类与第二类曲线积分",
+      "questionNo": 2,
+      "questionType": "填空题",
+      "mistakeType": "概念错误 / 计算错误 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲线积分",
+        "第二类曲线积分",
+        "圆弧参数化",
+        "方向性",
+        "弧长微元",
+        "符号错误"
+      ],
+      "note": "同一圆弧上，用户把 ds=Rdt 用在递减参数区间，得到负的第一类积分；第二类积分又漏掉 dx=-Rsin t dt 的负号。",
+      "stem": "设 \\(L\\) 为圆 \\(x^2+y^2=R^2\\) 的上半圆上由\n\\[\nA\\left(-\\frac R{\\sqrt2},\\frac R{\\sqrt2}\\right)\n\\]\n到 \\(B(R,0)\\) 的一段弧，方向从 \\(A\\) 到 \\(B\\)。计算\n\\[\n\\int_Ly\\,\\mathrm ds,\n\\qquad\n\\int_Ly\\,\\mathrm dx.\n\\]",
+      "options": [],
+      "answer": "\\[\n\\int_Ly\\,\\mathrm ds=R^2\\left(1+\\frac{\\sqrt2}{2}\\right),\n\\qquad\n\\int_Ly\\,\\mathrm dx=R^2\\left(\\frac{3\\pi}{8}+\\frac14\\right).\n\\]",
+      "analysis": "取\n\\[\nx=R\\cos t,qquad y=R\\sin t.\n\\]\n从 \\(A\\) 到 \\(B\\) 对应 \\(t:3\\pi/4\\to0\\)。第一类积分中\n\\[\n\\mathrm ds=R|dt|,\n\\]\n最稳妥是把上下限改为递增：\n\\[\n\\int_Ly\\,ds=R^2\\int_0^{3\\pi/4}\\sin t\\,dt\n=R^2\\left(1+\\frac{\\sqrt2}{2}\\right).\n\\]\n第二类积分保留原方向，且\n\\[\ndx=-R\\sin t\\,dt.\n\\]\n因此\n\\[\n\\int_Ly\\,dx\n=-R^2\\int_{3\\pi/4}^{0}\\sin^2t\\,dt\n=R^2\\int_0^{3\\pi/4}\\sin^2t\\,dt\n=R^2\\left(\\frac{3\\pi}{8}+\\frac14\\right).\n\\]",
+      "errorCause": "混淆 \\(ds\\) 与 \\(dt\\) 的符号：弧长微元非负，应为 \\(ds=R|dt|\\)；同时在第二类积分中把 \\(dx\\) 误写成 \\(R\\sin tdt\\)，漏掉对 \\(x=R\\cos t\\) 求导产生的负号。",
+      "knowledgePoints": [
+        "第一类曲线积分方向无关",
+        "第二类曲线积分方向相关",
+        "参数区间方向",
+        "弧长微元",
+        "圆弧积分"
+      ],
+      "similarQuestionPrompt": "在同一圆上取从 \\((R,0)\\) 到 \\((-R/2,\\sqrt3R/2)\\) 的上圆弧，分别计算 \\(\\int_Lx\\,ds\\) 与 \\(\\int_Lx\\,dy\\)，并说明反向后两者如何变化。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_e2adf3172cc08191a565455bd1f1a164",
+          "fileName": "C714D843-D392-4228-AC8F-6A1D386DE51A.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_37ac2bccf51081918dbdedcabfbec889",
+          "fileName": "IMG_F1AE76F9-36DA-4281-8DF4-517EA83563E9.jpeg",
+          "verification": "依据用户手写过程与连续追问核对"
+        }
+      ],
+      "answerVerification": "分别按 ds=R|dt| 与 dx=-Rsin tdt 独立计算，并以第一类积分非负、第二类积分方向性作符号检查",
+      "errorCauseEvidence": "用户手写第一问得负值，第二问也因漏负号得到负值，并追问第一部分为什么错。",
+      "reviewFocus": "卡壳位置：参数沿 A→B 递减时，不知道 \\(ds\\) 是否也带负号。第一步先分类：\\(ds\\) 是长度，永远非负；\\(dx,dy\\) 是有向微分，随参数方向带符号。正确突破口：第一类积分把参数上下限排成递增并用 \\(Rdt\\)；第二类保留方向并逐项求 \\(dx,dy\\)。考场信号：同一题同时出现 \\(\\int fds\\) 与 \\(\\int Pdx+Qdy\\)，通常就在考方向性区别。易错点：第一类积分若被积函数非负，结果不可能为负。防卡方法：参数化后分两行写“\\(ds=R|dt|\\)”和“\\(dx=-R\\sin tdt\\)”，不要共用一个微元公式。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-19-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261019-calc-great-circle-line-integral-symmetry",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-19 对话 · 球面与过原点平面的交线积分",
+      "questionNo": 3,
+      "questionType": "填空题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲线积分",
+        "空间曲线",
+        "大圆",
+        "中心对称",
+        "轮换对称",
+        "线积分与面积分辨析",
+        "概念错误"
+      ],
+      "note": "用户把空间曲线积分的 ds 当成曲面面积微元 dS，投影到圆盘做了二重积分。",
+      "stem": "设 \\(L\\) 为球面\n\\[\nx^2+y^2+z^2=R^2\n\\]\n与平面\n\\[\nx+y+z=0\n\\]\n的交线，计算\n\\[\nI=\\oint_L(z+x^2)\\,\\mathrm ds.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=\\frac{2\\pi R^3}{3}.\n\\]",
+      "analysis": "平面过球心，因此 \\(L\\) 是半径为 \\(R\\) 的大圆，长度为 \\(2\\pi R\\)。先用中心对称：点 \\((x,y,z)\\) 与 \\((-x,-y,-z)\\) 在 \\(L\\) 上成对出现，且 \\(ds\\) 相同，故\n\\[\n\\oint_Lz\\,ds=0.\n\\]\n再利用平面方程与球面对变量 \\(x,y,z\\) 的循环置换都不变，得到\n\\[\n\\oint_Lx^2\\,ds=\\oint_Ly^2\\,ds=\\oint_Lz^2\\,ds.\n\\]\n三式相加：\n\\[\n3\\oint_Lx^2\\,ds\n=\\oint_L(x^2+y^2+z^2)\\,ds\n=R^2\\cdot2\\pi R.\n\\]\n因此\n\\[\n\\oint_Lx^2\\,ds=\\frac{2\\pi R^3}{3},\n\\]\n即为所求。",
+      "errorCause": "把一维交线 \\(L\\) 上的弧长微元 \\(ds\\) 误当成曲面面积微元 \\(dS=\\sqrt{1+z_x^2+z_y^2}\\,dxdy\\)，从而错误地在圆盘上做二重积分；同时没有识别过球心截面是大圆及其对称性。",
+      "knowledgePoints": [
+        "第一类空间曲线积分",
+        "大圆",
+        "中心对称",
+        "变量轮换对称",
+        "ds与dS的区别"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为球面 \\(x^2+y^2+z^2=R^2\\) 与平面 \\(x+y+z=0\\) 的交线，计算 \\(\\oint_L(x^2+y^2+2z)\\,ds\\)，要求只用对称性和曲线长度。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_233a7390cecc8191b1e528f852f1bcf1",
+          "fileName": "1E46FFEE-1503-44E3-B22A-86D97ACB268F.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-19",
+          "fileId": "libfile_fbc7da8d80d48191bb8354601aa99144",
+          "fileName": "IMG_1BDAF77E-DD90-4A68-B659-4AB2965BE13C.jpeg",
+          "verification": "依据用户手写过程核对"
+        }
+      ],
+      "answerVerification": "由大圆长度与对称性求得，并与显式正交参数化的平均值结论一致",
+      "errorCauseEvidence": "用户手写直接使用 √(1+z_x²+z_y²)dxdy 并在投影圆盘上作二重积分。",
+      "reviewFocus": "卡壳位置：看到球面和平面就条件反射成曲面积分。第一步先看积分域字母：题目说“交线 \\(L\\)”且微元是小写 \\(ds\\)，这是1维曲线；若是曲面才写 \\(S\\) 与大写 \\(dS\\)。正确突破口：平面过原点，截球得到大圆；被积函数含一次奇项和平方项，立即尝试中心对称与轮换对称。考场信号：球面+过球心平面+第一类线积分，往往可用“大圆长度×平均值”。易错点：不能把 \\(z=-x-y\\) 后套曲面投影公式。防卡方法：动笔前写维数检查：\\(L\\Rightarrow1\\) 维、\\(ds\\)；\\(S\\Rightarrow2\\) 维、\\(dS\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-19",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -16663,7 +17086,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-11-v1",
     "daily-2026-10-13-v1",
     "daily-2026-10-14-q21-correction-v1",
-    "daily-2026-10-17-v1"
+    "daily-2026-10-17-v1",
+    "daily-2026-10-19-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
