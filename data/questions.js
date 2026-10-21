@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 337,
+  "count": 345,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -17066,11 +17066,490 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "由大圆长度与对称性求得，并与显式正交参数化的平均值结论一致",
       "errorCauseEvidence": "用户手写直接使用 √(1+z_x²+z_y²)dxdy 并在投影圆盘上作二重积分。",
       "reviewFocus": "卡壳位置：看到球面和平面就条件反射成曲面积分。第一步先看积分域字母：题目说“交线 \\(L\\)”且微元是小写 \\(ds\\)，这是1维曲线；若是曲面才写 \\(S\\) 与大写 \\(dS\\)。正确突破口：平面过原点，截球得到大圆；被积函数含一次奇项和平方项，立即尝试中心对称与轮换对称。考场信号：球面+过球心平面+第一类线积分，往往可用“大圆长度×平均值”。易错点：不能把 \\(z=-x-y\\) 后套曲面投影公式。防卡方法：动笔前写维数检查：\\(L\\Rightarrow1\\) 维、\\(ds\\)；\\(S\\Rightarrow2\\) 维、\\(dS\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-nonhom-solutions-linear-combination",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "常微分方程",
+      "questionNo": 10,
+      "sourceRef": "用户上传第10题 · 2026-10-20 晚间对话",
+      "questionType": "填空题",
+      "mistakeType": "方法选择困难 / 计算错误",
+      "tags": [
+        "当日对话导入",
+        "二阶常系数非齐次微分方程",
+        "解的线性组合",
+        "齐次解",
+        "特解",
+        "方法选择困难"
+      ],
+      "note": "题目已经给出三个非齐次方程的解，用户仍反推微分算子并重新设特解，既绕远又把已有特解的负号改错。",
+      "stem": "已知\n\\[\ny_1=e^{3x}-xe^{2x},\\qquad y_2=e^x-xe^{2x},\\qquad y_3=-xe^{2x}\n\\]\n是某二阶常系数非齐次线性微分方程的三个解，求该方程的通解。",
+      "options": [],
+      "answer": "\\[\ny=C_1e^{3x}+C_2e^x-xe^{2x},\n\\]\n其中 \\(C_1,C_2\\) 为任意常数。",
+      "analysis": "若 \\(y_a,y_b\\) 是同一非齐次线性方程的解，则它们的差满足对应齐次方程。因此\n\\[\ny_1-y_3=e^{3x},\\qquad y_2-y_3=e^x\n\\]\n是两个线性无关的齐次解，齐次通解为\n\\[\ny_h=C_1e^{3x}+C_2e^x.\n\\]\n而题目已经给出一个非齐次特解 \\(y_3=-xe^{2x}\\)，所以\n\\[\ny=y_h+y_3=C_1e^{3x}+C_2e^x-xe^{2x}.\n\\]\n无需反求原微分方程，也无需重新设待定系数。",
+      "errorCause": "没有识别“同一非齐次方程两个解之差是齐次解”，反而先由指数项猜特征方程，再把题目已给特解重新代入求系数；计算中又把 \\(-xe^{2x}\\) 写成 \\(+xe^{2x}\\)。",
+      "knowledgePoints": [
+        "非齐次线性方程解的结构",
+        "齐次解的线性无关性",
+        "特解",
+        "二阶常系数微分方程"
+      ],
+      "similarQuestionPrompt": "已知 \\(u_1=e^{2x}+x^2\\)、\\(u_2=e^{-x}+x^2\\)、\\(u_3=x^2\\) 是同一二阶常系数非齐次线性方程的三个解，求通解，并说明为什么不必反求方程。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_9ed074bec8808191bbfb9432fca25a20",
+          "fileName": "B19B2C9C-B5B5-4259-893D-AEFB9D226345.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_561d92e0b5dc8191baf66f35475219ac",
+          "fileName": "IMG_25F86264-941A-4052-82EC-A5ECA6ACE872.jpeg",
+          "verification": "依据用户手写过程核对"
+        }
+      ],
+      "answerVerification": "以解差法直接构造，并检查两个齐次解线性无关",
+      "errorCauseEvidence": "用户手写先建立特征方程并重新设 y*=Axe^{2x}，最终把已有特解负号写反。",
+      "reviewFocus": "卡壳位置：看到三个具体解就想先还原方程。第一步固定做差 \\(y_1-y_3,y_2-y_3\\)。正确突破口：同一非齐次方程的解相减，右端抵消，自动得到齐次解；任选一个原解作特解。考场信号：题目给出“同一非齐次线性方程的若干个解”，几乎一定考解的结构，不考待定系数。易错点：特解直接沿用，符号不能擅自改变。防卡方法：先写模板 \\(y=y_h+y_p\\)，再把“差”填进 \\(y_h\\)、把任一已知解填进 \\(y_p\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-linear-cofactor-adjugate-determinant",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "矩阵",
+      "questionNo": 13,
+      "sourceRef": "用户上传第13题 · 2026-10-20 晚间对话",
+      "questionType": "填空题",
+      "mistakeType": "概念错误 / 计算错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "代数余子式",
+        "伴随矩阵",
+        "行列式",
+        "零矩阵",
+        "秩",
+        "概念错误"
+      ],
+      "note": "用户混淆代数余子式矩阵与伴随矩阵，又把 adj(A)=|A|A^{-1} 写成 A^{-1}/|A|；随后追问零矩阵是否只需行列式为零。",
+      "stem": "设 \\(A=(a_{ij})\\) 是三阶非零矩阵，\\(A_{ij}\\) 为 \\(a_{ij}\\) 的代数余子式。若\n\\[\na_{ij}+A_{ij}=0\\qquad(i,j=1,2,3),\n\\]\n求 \\(|A|\\)。",
+      "options": [],
+      "answer": "\\[\n|A|=-1.\n\\]",
+      "analysis": "设代数余子式矩阵为 \\(C=(A_{ij})\\)，条件给出 \\(C=-A\\)。伴随矩阵是余子式矩阵的转置，因此\n\\[\nA^*=C^{\\mathsf T}=-A^{\\mathsf T}.\n\\]\n两边取行列式。三阶矩阵满足\n\\[\n|A^*|=|A|^{2},\n\\]\n而\n\\[\n|-A^{\\mathsf T}|=(-1)^3|A|=-|A|.\n\\]\n故\n\\[\n|A|^2=-|A|,\n\\]\n即 \\(|A|=0\\) 或 \\(-1\\)。若 \\(|A|=0\\)，由 \\(A^*=-A^{\\mathsf T}\\ne O\\) 得 \\(\\operatorname{rank}A=2\\)，于是 \\(\\operatorname{rank}A^*=1\\)，但右侧 \\(-A^{\\mathsf T}\\) 的秩应为2，矛盾。因此 \\(|A|\\ne0\\)，只能为 \\(-1\\)。",
+      "errorCause": "把 \\((A_{ij})\\) 直接当成伴随矩阵，漏掉转置；把 \\(A^*=|A|A^{-1}\\) 错写成 \\(A^{-1}/|A|\\)；还把“行列式为0”和“矩阵为零矩阵”混为一谈。",
+      "knowledgePoints": [
+        "代数余子式矩阵",
+        "伴随矩阵",
+        "伴随矩阵行列式",
+        "奇异矩阵的秩",
+        "零矩阵与行列式为零"
+      ],
+      "similarQuestionPrompt": "设 \\(A=(a_{ij})\\) 为三阶非零矩阵，若代数余子式满足 \\(A_{ij}=ka_{ij}\\)。讨论 \\(|A|\\) 的可能值，并说明何时必须排除 \\(|A|=0\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_2828cf1d638081919760bb81e47db768",
+          "fileName": "5D690A90-DF41-4D1A-A784-B217EB74E35D.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_5f098354ec548191a80c9899576eb7b3",
+          "fileName": "IMG_5D84DF12-8B4E-4F9B-83C3-D783D64DB31D.jpeg",
+          "verification": "依据用户手写过程和追问核对"
+        }
+      ],
+      "answerVerification": "由 |A*|=|A|² 求候选值，再以秩关系排除 |A|=0",
+      "errorCauseEvidence": "用户手写 A*=-A^T=A^{-1}/|A|，并追问“零矩阵要求行列式为0还是必须每一项都为0”。",
+      "reviewFocus": "卡壳位置：条件按元素给出，不知道怎样转成矩阵式。第一步先定义 \\(C=(A_{ij})\\)，写 \\(C=-A\\)，再记住 \\(A^*=C^T\\)。正确突破口：三阶时 \\(|A^*|=|A|^2\\)，而 \\(|-A^T|=-|A|\\)。考场信号：题目同时出现矩阵元素与代数余子式，优先整体化为伴随矩阵关系。易错点：行列式为0只表示不可逆，不代表每个元素为0；零矩阵才要求所有元素为0。防卡方法：每次写伴随矩阵都做两项检查：是否转置、公式是否为 \\(A^*=|A|A^{-1}\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-power-series-recurrence-ode",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "无穷级数",
+      "questionNo": 16,
+      "sourceRef": "用户上传第16题 · 2026-10-20 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "幂级数",
+        "系数递推",
+        "逐项求导",
+        "微分方程",
+        "换指标",
+        "思路卡壳"
+      ],
+      "note": "用户能由递推关系算出若干系数，却没有识别 n(n-1)a_n 正对应 S'' 的系数，因而停留在逐项猜和函数。",
+      "stem": "数列 \\(\\{a_n\\}\\) 满足\n\\[\na_0=3,\\qquad a_1=1,\\qquad a_{n-2}-n(n-1)a_n=0\\quad(n\\ge2).\n\\]\n设\n\\[\nS(x)=\\sum_{n=0}^{\\infty}a_nx^n.\n\\]\n(1) 证明 \\(S''(x)-S(x)=0\\)；\n(2) 求 \\(S(x)\\) 的表达式。",
+      "options": [],
+      "answer": "\\[\nS(x)=2e^x+e^{-x}.\n\\]",
+      "analysis": "逐项求二阶导数：\n\\[\nS''(x)=\\sum_{n=2}^{\\infty}n(n-1)a_nx^{n-2}.\n\\]\n由递推关系 \\(n(n-1)a_n=a_{n-2}\\)，得\n\\[\nS''(x)=\\sum_{n=2}^{\\infty}a_{n-2}x^{n-2}\n=\\sum_{k=0}^{\\infty}a_kx^k=S(x).\n\\]\n所以 \\(S''-S=0\\)。其通解为\n\\[\nS=C_1e^x+C_2e^{-x}.\n\\]\n又\n\\[\nS(0)=a_0=3,qquad S'(0)=a_1=1,\n\\]\n故 \\(C_1+C_2=3,\\ C_1-C_2=1\\)，得到 \\(C_1=2,C_2=1\\)。",
+      "errorCause": "只按递推式逐个计算 \\(a_2,a_3,a_4\\)，没有把 \\(n(n-1)a_n\\) 与幂级数二阶导数的系数对应起来；换指标时也反复移动 \\(n\\)，导致方法选择卡壳。",
+      "knowledgePoints": [
+        "幂级数逐项求导",
+        "系数递推",
+        "换指标",
+        "由幂级数构造微分方程",
+        "初值问题"
+      ],
+      "similarQuestionPrompt": "设 \\(b_0=2,b_1=-1\\)，且 \\(b_{n-2}=4n(n-1)b_n\\)。令 \\(T(x)=\\sum b_nx^n\\)，构造微分方程并求 \\(T(x)\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_b6df75f14cc0819181a450c66bd7b261",
+          "fileName": "91779746-5339-4A01-A578-9F7CD85A14A5.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_41ff9fdff62081919fb30673a4de56c3",
+          "fileName": "IMG_A3D128DA-DADE-4A13-96AD-095D2018A455.jpeg",
+          "verification": "依据用户手写系数递推过程核对"
+        }
+      ],
+      "answerVerification": "由 S''=S 与初值 S(0)=3,S'(0)=1 解出，并以展开前四项复核",
+      "errorCauseEvidence": "用户手写正确计算若干偶、奇项系数，但未写出 S'' 与 S 的对应关系；随后通过变式检测才确认一阶递推对应一阶导数。",
+      "reviewFocus": "卡壳位置：会算系数，却不知道为什么题目要求证明微分方程。第一步圈出递推式中的 \\(n(n-1)\\)，立刻联想到二阶导数。正确突破口：把 \\(S''\\) 完整写成级数，再用递推替换系数并令 \\(k=n-2\\)。考场信号：递推中出现 \\(na_n\\) 对应一阶导数，\\(n(n-1)a_n\\) 对应二阶导数。易错点：初值不是另求，直接由 \\(S(0)=a_0,S'(0)=a_1\\) 读出。防卡方法：建立固定字典“\\(na_n\\leftrightarrow S'\\)、\\(n(n-1)a_n\\leftrightarrow S''\\)”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-solid-of-revolution-centroid",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "重积分",
+      "questionNo": 19,
+      "sourceRef": "用户上传第19题 · 2026-10-20 晚间对话",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "旋转曲面",
+        "旋转体",
+        "空间直线",
+        "形心",
+        "截面法",
+        "三重积分",
+        "积分类型"
+      ],
+      "note": "用户把生成线所在平面当作旋转曲面方程，并把实体形心误按曲面量处理；最终还误判横向形心为1。",
+      "stem": "直线 \\(L\\) 过 \\(A(1,0,0)\\)、\\(B(0,1,1)\\) 两点。将 \\(L\\) 绕 \\(z\\) 轴旋转一周得到曲面 \\(\\Sigma\\)，\\(\\Sigma\\) 与平面 \\(z=0,z=2\\) 围成的立体为 \\(\\Omega\\)。\n(1) 求 \\(\\Sigma\\) 的方程；\n(2) 求 \\(\\Omega\\) 的形心坐标。",
+      "options": [],
+      "answer": "\\[\n\\Sigma:\\ x^2+y^2=2z^2-2z+1,\n\\qquad (\\bar x,\\bar y,\\bar z)=\\left(0,0,\\frac75\\right).\n\\]",
+      "analysis": "用 \\(z=t\\) 参数化直线：\n\\[\nx=1-t,qquad y=t,qquad z=t.\n\\]\n绕 \\(z\\) 轴旋转时，点到 \\(z\\) 轴的距离平方保持为\n\\[\nr^2=x^2+y^2=(1-z)^2+z^2=2z^2-2z+1.\n\\]\n因此曲面方程为所给结果。立体关于 \\(z\\) 轴旋转对称，故 \\(\\bar x=\\bar y=0\\)。高度 \\(z\\) 处的截面积为\n\\[\nA(z)=\\pi(2z^2-2z+1).\n\\]\n于是\n\\[\nV=\\int_0^2A(z)\\,dz=\\frac{10\\pi}{3},\n\\]\n\\[\nM_{xy}=\\int_0^2zA(z)\\,dz=\\frac{14\\pi}{3},\n\\]\n所以\n\\[\n\\bar z=\\frac{M_{xy}}V=\\frac75.\n\\]\n截面法本质上等价于对实体 \\(\\Omega\\) 做三重积分。",
+      "errorCause": "把只描述生成直线所在关系的平面方程当成旋转后的曲面方程，没有用到绕轴旋转保持 \\(x^2+y^2\\)；又因题目出现曲面 \\(\\Sigma\\) 就误认为第二问应做曲面积分，忽略求的是实体 \\(\\Omega\\) 的体积形心。",
+      "knowledgePoints": [
+        "空间直线参数方程",
+        "绕z轴旋转曲面",
+        "旋转体截面",
+        "三重积分",
+        "空间形心",
+        "对称性"
+      ],
+      "similarQuestionPrompt": "直线过 \\((2,0,0)\\)、\\((0,1,2)\\)，绕 \\(z\\) 轴旋转形成曲面，并与 \\(z=0,z=3\\) 围成立体。求曲面方程及立体形心。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_7482d49c4b848191861c2b31ab8c61e0",
+          "fileName": "3CFA30E0-6290-48CB-9B8F-F58A1E436CEB.png",
+          "verification": "题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_f33df910d2f081918bc640eefd800894",
+          "fileName": "IMG_6C1D7D84-F49C-4F0F-9A36-E879CE01C64B.jpeg",
+          "verification": "依据用户初始手写错误核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-20",
+          "fileId": "libfile_d45ebae53a648191a2918259d9806b17",
+          "fileName": "IMG_E770D8CB-DF15-4D87-969D-992495B30051.jpeg",
+          "verification": "依据订正后的旋转半径表达式核对"
+        }
+      ],
+      "answerVerification": "用截面法计算 V 与 Mxy，并以绕z轴对称性核对横向形心",
+      "errorCauseEvidence": "用户手写得到平面 2x+y+z-2=0 和形心 (1,ȳ,1)，随后连续追问等式右边如何表示、为何第二问是三重积分而不是曲面积分。",
+      "reviewFocus": "卡壳位置：不会把空间直线旋转成曲面，且看到“曲面”二字就选曲面积分。第一步写旋转不变量 \\(r^2=x^2+y^2\\)，再把生成线参数中的 \\(t\\) 用 \\(z\\) 消去。正确突破口：第二问研究的是 \\(\\Omega\\) 内部所有质量点，故用体积元 \\(dV\\)；\\(\\Sigma\\) 只是边界。考场信号：问实体的体积、质量、形心，使用三重积分或截面法；问薄壳曲面的质量才用第一类曲面积分。易错点：绕z轴后 \\(x,y\\) 不再保持原直线关系，但 \\(x^2+y^2\\) 保持。防卡方法：先判断积分对象维数——曲线1维、曲面2维、实体3维。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-second-kind-surface-projection",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-21 对话 · 第二类曲面积分投影公式检测",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲面积分",
+        "投影公式",
+        "上侧法向",
+        "有向面积元",
+        "概念错误"
+      ],
+      "note": "用户选择 C，只代入 R=z，漏掉由 dy dz、dz dx 两项产生的 -Pf_x、-Qf_y。",
+      "stem": "设 \\(\\Sigma:z=x^2+y^2\\) 取上侧，\\(D\\) 为其在 \\(xy\\) 平面上的投影。将\n\\[\nI=\\iint_\\Sigma x\\,dy\\,dz+y\\,dz\\,dx+z\\,dx\\,dy\n\\]\n化为 \\(D\\) 上的二重积分。",
+      "options": [],
+      "answer": "\\[\nI=-\\iint_D(x^2+y^2)\\,dx\\,dy.\n\\]",
+      "analysis": "写成 \\(z=f(x,y)=x^2+y^2\\)，上侧有向面积元对应\n\\[\ndy\\,dz=-f_x\\,dxdy,\\qquad dz\\,dx=-f_y\\,dxdy,\n\\qquad dx\\,dy=dxdy.\n\\]\n这里 \\(f_x=2x,f_y=2y\\)，且 \\(P=x,Q=y,R=z=x^2+y^2\\)。因此\n\\[\n-Pf_x-Qf_y+R\n=-2x^2-2y^2+x^2+y^2\n=-(x^2+y^2).\n\\]\n故得到答案。等价地，上侧法向量可取 \\((-f_x,-f_y,1)=(-2x,-2y,1)\\)。",
+      "errorCause": "把第二类曲面积分误当成只保留 \\(R\\,dxdy\\)，漏掉前两项的投影贡献；没有先标出 \\(P,Q,R\\) 与曲面偏导。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "xy平面投影",
+        "上侧法向量",
+        "有向面积元",
+        "曲面投影公式"
+      ],
+      "similarQuestionPrompt": "设 \\(\\Sigma:z=2x^2+y^2\\) 取下侧，把 \\(\\iint_\\Sigma (x+y)dy dz+x dz dx+z dx dy\\) 化成 \\(xy\\) 平面二重积分，重点检查整体换向符号。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-21",
+          "verification": "依据用户检测答案 C 与后续批改记录核对"
+        }
+      ],
+      "answerVerification": "分别用投影公式与向量面积元 (-fx,-fy,1)dxdy 复核",
+      "errorCauseEvidence": "用户在投影公式检测中选 C=x²+y²，正确项为 B=-(x²+y²)。",
+      "reviewFocus": "卡壳位置：只看见最后的 \\(z\\,dxdy\\)，认为投影后被积函数就是z。第一步按顺序圈出 \\(P,Q,R\\)，再写 \\(f_x,f_y\\)。正确突破口：上侧公式固定为 \\(-Pf_x-Qf_y+R\\)；下侧整体取反。考场信号：出现 \\(Pdy dz+Qdz dx+Rdxdy\\) 就是第二类曲面积分，三项都必须参与。易错点：上侧法向不是 \\((f_x,f_y,1)\\)，而是 \\((-f_x,-f_y,1)\\)。防卡方法：先写法向量的z分量必须为正，再决定符号。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-gauss-singularity-ellipsoid",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-21 对话 · 高斯公式奇点挖孔",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "高斯公式",
+        "奇点",
+        "挖孔法",
+        "第二类曲面积分",
+        "椭球体积",
+        "通量",
+        "思路卡壳"
+      ],
+      "note": "用户明确不会计算挖孔部分，并误以为封闭曲面积分或散度为零就可直接判积分为零；订正后得到正确结果12π。",
+      "stem": "设 \\(\\Sigma\\) 为椭球面\n\\[\n\\frac{x^2}{4}+y^2+z^2=1\n\\]\n的外侧，记 \\(r=\\sqrt{x^2+y^2+z^2}\\)。计算\n\\[\nI=\\iint_\\Sigma\\left(\\frac{x}{r^3}+x\\right)dy\\,dz\n+\\left(\\frac{y}{r^3}+y\\right)dz\\,dx\n+\\left(\\frac{z}{r^3}+z\\right)dx\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=12\\pi.\n\\]",
+      "analysis": "把向量场拆成奇点场与常规场：\n\\[\n\\mathbf F_1=\\frac{(x,y,z)}{r^3},qquad \\mathbf F_2=(x,y,z).\n\\]\n\\(\\mathbf F_1\\) 在原点无定义，不能直接对整个椭球内部使用高斯公式。挖去半径 \\(\\varepsilon\\) 的小球。球壳区域内 \\(\\nabla\\cdot\\mathbf F_1=0\\)，而内边界相对于剩余区域的法向指向球心。若小球取自身外法向，则\n\\[\n\\mathbf F_1\\cdot\\mathbf n=\\frac1{\\varepsilon^2},qquad\n\\iint_{S_\\varepsilon}\\mathbf F_1\\cdot\\mathbf n\\,dS=4\\pi.\n\\]\n因此外椭球上的奇点通量为 \\(4\\pi\\)。对 \\(\\mathbf F_2\\)，\n\\[\n\\nabla\\cdot\\mathbf F_2=3,\n\\]\n椭球体积为\n\\[\nV=\\frac43\\pi\\cdot2\\cdot1\\cdot1=\\frac{8\\pi}{3},\n\\]\n故常规部分通量为 \\(3V=8\\pi\\)。合计 \\(I=4\\pi+8\\pi=12\\pi\\)。",
+      "errorCause": "把“封闭曲面”误当成积分为零的充分条件；忽略原点奇点，想直接用散度为零推出通量为零；计算挖孔球面时不会处理内边界方向与方向余弦。",
+      "knowledgePoints": [
+        "高斯公式适用条件",
+        "奇点挖孔法",
+        "逆平方径向场通量",
+        "内边界方向",
+        "椭球体积"
+      ],
+      "similarQuestionPrompt": "设 \\(\\Sigma:x^2+y^2+z^2=R^2\\) 外侧，计算向量场 \\((x,y,z)/r^3+(2x,2y,2z)\\) 的通量，并分别说明奇点部分与常规部分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-21",
+          "fileId": "libfile_d4355e5bda148191a834585e95db1cb7",
+          "fileName": "IMG_62C4DA80-3CC6-4B0C-ADF5-4899756BF14F.jpeg",
+          "verification": "依据用户初始挖孔过程核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-21",
+          "fileId": "libfile_eaf82f673eac8191ad14ff0328202517",
+          "fileName": "IMG_61C94254-21C5-40C0-A78E-B053BE5760EC.jpeg",
+          "verification": "依据订正结果与红笔批注核对"
+        }
+      ],
+      "answerVerification": "奇点部分用任意包围原点曲面的通量4π复核；常规部分用散度3乘椭球体积复核",
+      "errorCauseEvidence": "用户连续追问“为什么等于0”“封闭空间积分为0吗”，并明确说“挖孔的部分怎么计算，我不会”。",
+      "reviewFocus": "卡壳位置：看到封闭曲面和散度0就想直接写积分0。第一步先查向量场在区域内部是否处处有定义；分母含 \\(r^3\\) 时立刻圈出原点。正确突破口：把场拆成奇点场+普通场，奇点场挖小球，普通场直接高斯。考场信号：\\((x,y,z)/r^3\\) 是三维典型点源场，任何包围原点的外向通量都是 \\(4\\pi\\)。易错点：内小球作为挖孔区域边界时法向指向球心，符号与小球自身外法向相反。防卡方法：固定写边界等式“外边界通量+内边界通量=体积分”，再代符号。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-stokes-triangle-orientation",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-21 对话 · 斯托克斯公式三角形边界",
+      "questionType": "解答题",
+      "mistakeType": "概念错误 / 计算错误 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "斯托克斯公式",
+        "右手法则",
+        "法向量",
+        "投影面积",
+        "空间曲线积分",
+        "方向判断"
+      ],
+      "note": "用户把上侧法向写成(-1,-1,1)，并把斜三角形面积√3/2与xy投影面积1/2混用。",
+      "stem": "设 \\(L\\) 为平面\n\\[\nx+y+z=1\n\\]\n与三个坐标面在第一卦限围成的三角形边界，从 \\(+z\\) 轴方向看沿逆时针方向。计算\n\\[\nI=\\oint_L y\\,dx+z\\,dy+x\\,dz.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=-\\frac32.\n\\]",
+      "analysis": "令 \\(\\mathbf F=(y,z,x)\\)，则\n\\[\n\\nabla\\times\\mathbf F=(-1,-1,-1).\n\\]\n题设从 \\(+z\\) 方向看逆时针，对应法向量的 \\(z\\) 分量为正。平面写成 \\(z=1-x-y\\)，上侧向量面积元为\n\\[\n\\mathbf n\\,dS=(-z_x,-z_y,1)dxdy=(1,1,1)dxdy.\n\\]\n投影区域\n\\[\nD=\\{(x,y):x\\ge0,y\\ge0,x+y\\le1\\}\n\\]\n面积为 \\(1/2\\)。故\n\\[\nI=\\iint_D(-1,-1,-1)\\cdot(1,1,1)dxdy\n=-3\\cdot\\frac12=-\\frac32.\n\\]\n若改用单位法向量，则必须同时乘斜三角形实际面积元；两种做法不可混用。",
+      "errorCause": "右手法则下应选z分量为正且垂直于平面的法向量 \\((1,1,1)\\)，用户写成 \\((-1,-1,1)\\)，它甚至不与平面平行方向正交；随后又把单位法向量方法和投影向量面积元方法混在一起。",
+      "knowledgePoints": [
+        "斯托克斯公式",
+        "旋度",
+        "右手法则",
+        "平面法向量",
+        "投影面积",
+        "空间闭曲线方向"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为平面 \\(2x+y+z=2\\) 在第一卦限内三角形边界，从 +z 方向看逆时针，计算 \\(\\oint_L(zdx+xdy+ydz)\\)。要求分别用向量面积元和单位法向量法核对。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-21",
+          "fileId": "libfile_a449c544c4388191b7f8384f7a5e13c9",
+          "fileName": "IMG_6A5BEB5B-39AD-4D0E-A527-785588656CFF.jpeg",
+          "verification": "依据用户手写法向量与投影计算核对"
+        }
+      ],
+      "answerVerification": "用xy投影向量面积元直接计算，并以旋度常向量×斜三角形向量面积复核",
+      "errorCauseEvidence": "用户手写法向量(-1,-1,1)并混用实际面积与投影面积；后续法向检测题又选择(2,3,1)而非上侧(-2,-3,1)。",
+      "reviewFocus": "卡壳位置：能算旋度，但法向量与面积选不稳。第一步用观察方向确定法向量z分量正负，再检查法向量必须垂直曲面。正确突破口：若投影到xy平面，直接用 \\((-f_x,-f_y,1)dxdy\\)，不要归一化；若用单位法向量，才配真实 \\(dS\\)。考场信号：“从+z看逆时针”就是选上侧。易错点：\\((2,3,1)\\) 不是 \\(z=2x+3y\\) 的上侧法向；正确是 \\((-2,-3,1)\\)。防卡方法：每次法向量都做两检：点乘切向量为0、指定分量符号正确。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-21-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261021-calc-stokes-singular-axis",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-21 对话 · 斯托克斯挖孔法奇点判断检测",
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "斯托克斯公式",
+        "奇点集合",
+        "z轴",
+        "换曲面",
+        "挖孔法",
+        "边界判断困难"
+      ],
+      "note": "用户把分母仅依赖x,y理解成整个xOy平面有奇点，未按“分母为0”联立求集合。",
+      "stem": "向量场\n\\[\n\\mathbf F(x,y,z)=\\left(-\\frac{y}{x^2+y^2},\\frac{x}{x^2+y^2},0\\right)\n\\]\n的奇点集合是（ ）。\n\nA. 仅原点；\nB. 整条 \\(z\\) 轴；\nC. 整个 \\(xOy\\) 平面。",
+      "options": [
+        "A. 仅原点",
+        "B. 整条 \\(z\\) 轴",
+        "C. 整个 \\(xOy\\) 平面"
+      ],
+      "answer": "B，整条 \\(z\\) 轴。",
+      "analysis": "向量场无定义当且仅当\n\\[\nx^2+y^2=0.\n\\]\n在实数范围内这等价于 \\(x=0,y=0\\)，而 \\(z\\) 可以任取，所以奇点为\n\\[\n\\{(0,0,z):z\\in\\mathbb R\\},\n\\]\n即整条 \\(z\\) 轴。使用斯托克斯公式换曲面时，不仅要保证新曲面边界相同，还要保证向量场在两曲面之间的相关区域光滑；若所选曲面穿过 \\(z\\) 轴，必须挖孔或改选避开奇轴的曲面。",
+      "errorCause": "看到分母中没有 \\(z\\) 就误判整个 \\(xOy\\) 平面都是奇点；没有真正解方程 \\(x^2+y^2=0\\)，也未区分“z任意”和“z=0”。",
+      "knowledgePoints": [
+        "向量场奇点",
+        "奇点集合",
+        "斯托克斯公式适用条件",
+        "换曲面",
+        "挖孔法"
+      ],
+      "similarQuestionPrompt": "判断 \\(\\mathbf G=(-z/(x^2+z^2),0,x/(x^2+z^2))\\) 的奇点集合，并说明以哪条坐标轴为边界的曲面替换需要特别检查。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-21",
+          "verification": "依据斯托克斯第四关检测题与用户答案C核对"
+        }
+      ],
+      "answerVerification": "直接求解分母为0的实数方程并保留自由变量z",
+      "errorCauseEvidence": "用户第四关第1题选择C，正确答案B。",
+      "reviewFocus": "卡壳位置：分母少一个变量，就把缺失变量的坐标平面当作奇点。第一步只做一件事：令所有分母为0并解方程组。正确突破口：\\(x=y=0,z\\)任意描述的是z轴；\\(z=0,x,y\\)任意才是xOy平面。考场信号：二维旋转场嵌入三维后，点奇性常会延伸成一条轴。易错点：旋度在轴外为0，不代表绕轴闭曲线积分为0；换曲面若穿轴，斯托克斯公式的光滑条件失败。防卡方法：把奇点集合写成参数形式 \\((0,0,z)\\)，不要只凭图形名称猜。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-21",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -17087,7 +17566,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-13-v1",
     "daily-2026-10-14-q21-correction-v1",
     "daily-2026-10-17-v1",
-    "daily-2026-10-19-v1"
+    "daily-2026-10-19-v1",
+    "daily-2026-10-21-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
