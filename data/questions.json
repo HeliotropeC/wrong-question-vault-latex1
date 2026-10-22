@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 345,
+  "count": 346,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -17545,11 +17545,67 @@
       "answerVerification": "直接求解分母为0的实数方程并保留自由变量z",
       "errorCauseEvidence": "用户第四关第1题选择C，正确答案B。",
       "reviewFocus": "卡壳位置：分母少一个变量，就把缺失变量的坐标平面当作奇点。第一步只做一件事：令所有分母为0并解方程组。正确突破口：\\(x=y=0,z\\)任意描述的是z轴；\\(z=0,x,y\\)任意才是xOy平面。考场信号：二维旋转场嵌入三维后，点奇性常会延伸成一条轴。易错点：旋度在轴外为0，不代表绕轴闭曲线积分为0；换曲面若穿轴，斯托克斯公式的光滑条件失败。防卡方法：把奇点集合写成参数形式 \\((0,0,z)\\)，不要只凭图形名称猜。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-22-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261022-calc-shifted-sphere-variable-density-mass",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "重积分",
+      "questionNo": 9,
+      "sourceRef": "用户上传第9题 · 2026-10-22 对话",
+      "questionType": "填空题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "三重积分",
+        "变密度立体质量",
+        "平移球体",
+        "对称性",
+        "截面法",
+        "思路卡壳"
+      ],
+      "note": "题图核实为右端 \\(2x\\)，球心是 \\((1,0,0)\\)。用户连续追问对称变量和质量公式，说明对“平移后谁是奇函数”及“密度乘体积元”仍不稳定。",
+      "stem": "设立体\n\\[\n\\Omega=\\{(x,y,z):x^2+y^2+z^2\\le 2x\\},\n\\]\n其密度为\n\\[\n\\rho(x,y,z)=x^2.\n\\]\n求 \\(\\Omega\\) 的质量。",
+      "options": [],
+      "answer": "\\[\nM=\\frac{8\\pi}{5}.\n\\]",
+      "analysis": "质量为密度对立体的三重积分：\n\\[\nM=\\iiint_\\Omega x^2\\,dV.\n\\]\n先配方：\n\\[\n(x-1)^2+y^2+z^2\\le1,\n\\]\n所以 \\(\\Omega\\) 是球心 \\((1,0,0)\\)、半径 \\(1\\) 的球。令\n\\[\nu=x-1,\n\\]\n则积分域变为单位球\n\\[\nB:u^2+y^2+z^2\\le1,\n\\]\n并且\n\\[\nx^2=(u+1)^2=u^2+2u+1.\n\\]\n单位球关于 \\(u=0\\) 对称，因此\n\\[\n\\iiint_B2u\\,dV=0.\n\\]\n又由 \\(u,y,z\\) 的轮换对称性，\n\\[\n\\iiint_Bu^2\\,dV\n=\\frac13\\iiint_B(u^2+y^2+z^2)\\,dV\n=\\frac13\\cdot4\\pi\\int_0^1r^4\\,dr\n=\\frac{4\\pi}{15}.\n\\]\n同时\n\\[\n\\iiint_B1\\,dV=\\frac{4\\pi}{3}.\n\\]\n故\n\\[\nM=\\frac{4\\pi}{15}+\\frac{4\\pi}{3}\n=\\frac{8\\pi}{5}.\n\\]\n\n也可沿 \\(x\\) 轴作截面复核。固定 \\(x\\in[0,2]\\) 时，\n\\[\ny^2+z^2\\le2x-x^2,\n\\]\n截面积为 \\(\\pi(2x-x^2)\\)，于是\n\\[\nM=\\pi\\int_0^2x^2(2x-x^2)\\,dx\n=\\frac{8\\pi}{5}.\n\\]",
+      "errorCause": "没有先把球面配方并围绕球心建立新坐标，因而把“原变量 z 关于 0 对称”和“含密度 x² 的积分可轮换”混在一起；同时对质量公式是否随题型变化不确定。",
+      "knowledgePoints": [
+        "变密度立体质量",
+        "三重积分的物理应用",
+        "平移换元",
+        "球体对称性",
+        "奇函数积分",
+        "截面法"
+      ],
+      "similarQuestionPrompt": "设\n\\[\n\\Omega=\\{(x,y,z):(x-a)^2+y^2+z^2\\le R^2\\},\n\\qquad \\rho=x^2.\n\\]\n求 \\(\\Omega\\) 的质量，并分别用平移对称法和垂直于 \\(x\\) 轴的截面法验证。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-22",
+          "fileId": "libfile_bf3a1e3ebfe48191a80613d829fcfde5",
+          "fileName": "F7C0869E-F8AF-4594-9931-F3FFFE13243C.png",
+          "verification": "题图目视转写；确认右端为2x、密度为x²"
+        }
+      ],
+      "answerVerification": "以球心平移后的对称性求解，并用x轴截面法独立复核",
+      "errorCauseEvidence": "用户在纠正题图后追问“z不是对称点”“质量公式是固定的吗”，显示对平移球体的对称中心、对称变量及质量积分公式掌握不稳。",
+      "reviewFocus": "卡壳位置：看到球体后想直接用 \\(x,y,z\\) 轮换对称，却忽略球心不在原点。第一步先配方，写出球心与半径；本题必须把 \\(u=x-1\\) 作为关于0对称的变量。正确突破口：质量公式固定为“密度乘对应几何微元”，立体质量就是 \\(M=\\iiint_\\Omega\\rho\\,dV\\)。考场信号：球面出现一次项 \\(2x\\)，立即配方并平移；密度恰含 \\(x^2\\)，不要漏掉平移后的常数项。易错点：原区域虽关于 \\(z=0\\) 对称，但这只能消掉含 \\(z\\) 的奇函数；不能由此把 \\(\\iiint x^2\\,dV\\) 判为0。防卡方法：使用对称性前明确写“关于哪个变量、哪个中心、被积函数奇偶性是什么”。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -17567,7 +17623,8 @@
     "daily-2026-10-14-q21-correction-v1",
     "daily-2026-10-17-v1",
     "daily-2026-10-19-v1",
-    "daily-2026-10-21-v1"
+    "daily-2026-10-21-v1",
+    "daily-2026-10-22-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
