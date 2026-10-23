@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 346,
+  "count": 348,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -17601,11 +17601,143 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "以球心平移后的对称性求解，并用x轴截面法独立复核",
       "errorCauseEvidence": "用户在纠正题图后追问“z不是对称点”“质量公式是固定的吗”，显示对平移球体的对称中心、对称变量及质量积分公式掌握不稳。",
       "reviewFocus": "卡壳位置：看到球体后想直接用 \\(x,y,z\\) 轮换对称，却忽略球心不在原点。第一步先配方，写出球心与半径；本题必须把 \\(u=x-1\\) 作为关于0对称的变量。正确突破口：质量公式固定为“密度乘对应几何微元”，立体质量就是 \\(M=\\iiint_\\Omega\\rho\\,dV\\)。考场信号：球面出现一次项 \\(2x\\)，立即配方并平移；密度恰含 \\(x^2\\)，不要漏掉平移后的常数项。易错点：原区域虽关于 \\(z=0\\) 对称，但这只能消掉含 \\(z\\) 的奇函数；不能由此把 \\(\\iiint x^2\\,dV\\) 判为0。防卡方法：使用对称性前明确写“关于哪个变量、哪个中心、被积函数奇偶性是什么”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-23-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261023-calc-path-independence-parameter-potential",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 8,
+      "sourceRef": "用户上传第8题 · 2026-10-23 对话",
+      "questionType": "解答题",
+      "mistakeType": "计算错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲线积分",
+        "路径无关",
+        "交叉偏导",
+        "求参数",
+        "势函数",
+        "端点公式",
+        "计算错误"
+      ],
+      "note": "用户知道路径无关要列 \\(P_y=Q_x\\)，但乘积/商式求导连续出错，最终把常数参数 \\(k\\) 算成随 \\(x,y\\) 变化的式子；第二问求势函数时仍需继续提示。",
+      "stem": "设\n\\[\nP(x,y)=\\frac{x\\bigl(\\sqrt{x^2+y^2}\\bigr)^k}{y},\\qquad\nQ(x,y)=-\\frac{x^2\\bigl(\\sqrt{x^2+y^2}\\bigr)^k}{y^2},\n\\]\n定义域\n\\[\nD=\\{(x,y)\\mid y>0\\}.\n\\]\n(1) 若曲线积分\n\\[\n\\int_L P\\,dx+Q\\,dy\n\\]\n在 \\(D\\) 内与路径无关，求 \\(k\\)；\n(2) 在 \\(D\\) 内求函数 \\(u(x,y)\\)，使\n\\[\ndu=P\\,dx+Q\\,dy,\n\\]\n并计算\n\\[\nI=\\int_{(1,1)}^{(2,2)}P\\,dx+Q\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nk=-1,\\qquad\nu(x,y)=\\frac{\\sqrt{x^2+y^2}}{y}+C,\\qquad\nI=0.\n\\]",
+      "analysis": "记 \\(r=\\sqrt{x^2+y^2}\\)。区域 \\(D=\\{y>0\\}\\) 单连通，且 \\(P,Q\\) 在 \\(D\\) 内具有连续偏导，因此路径无关等价于\n\\[\nP_y=Q_x.\n\\]\n计算\n\\[\nP=xr^ky^{-1},\n\\]\n故\n\\[\nP_y=x\\left(kr^{k-2}-\\frac{r^k}{y^2}\\right)\n=\\frac{xr^{k-2}}{y^2}\\left(ky^2-r^2\\right).\n\\]\n又\n\\[\nQ=-x^2r^ky^{-2},\n\\]\n故\n\\[\nQ_x=-\\frac{1}{y^2}\\left(2xr^k+kx^3r^{k-2}\\right)\n=-\\frac{xr^{k-2}}{y^2}\\left(2r^2+kx^2\\right).\n\\]\n令两者相等，整理得\n\\[\nky^2-r^2=-2r^2-kx^2,\n\\]\n即\n\\[\n(k+1)(x^2+y^2)=0.\n\\]\n在 \\(D\\) 内 \\(x^2+y^2>0\\)，所以\n\\[\nk=-1.\n\\]\n\n此时\n\\[\nP=\\frac{x}{y\\sqrt{x^2+y^2}},\\qquad\nQ=-\\frac{x^2}{y^2\\sqrt{x^2+y^2}}.\n\\]\n先对 \\(x\\) 积分：\n\\[\nu(x,y)=\\int P\\,dx\n=\\frac{\\sqrt{x^2+y^2}}{y}+\\varphi(y).\n\\]\n再对 \\(y\\) 求偏导：\n\\[\nu_y=-\\frac{x^2}{y^2\\sqrt{x^2+y^2}}+\\varphi'(y).\n\\]\n与 \\(Q\\) 比较得 \\(\\varphi'(y)=0\\)，故\n\\[\nu=\\frac{\\sqrt{x^2+y^2}}{y}+C.\n\\]\n最后用端点公式：\n\\[\nI=u(2,2)-u(1,1)\n=\\frac{\\sqrt8}{2}-\\sqrt2=0.\n\\]",
+      "errorCause": "计算 (Q_x) 时把乘积求导两项间误写成减号；计算 (P_y) 时对 (1/y) 和根式因子的求导、通分不完整，导致得到 (k=-1/(x^2+y^2))，没有用“题设参数必须为常数”及时自检。求势函数时又同时尝试分别积分 (P) 与 (Q)，未使用“先积一个分量，再补单变量函数”的固定步骤。",
+      "knowledgePoints": [
+        "第二类曲线积分路径无关",
+        "全微分充要条件",
+        "交叉偏导",
+        "含参数求导",
+        "势函数",
+        "端点公式"
+      ],
+      "similarQuestionPrompt": "在区域 \\(x>0\\) 内，设\n\\[\nP=-\\frac{y^2(\\sqrt{x^2+y^2})^m}{x^2},\\qquad\nQ=\\frac{y(\\sqrt{x^2+y^2})^m}{x}.\n\\]\n若 \\(\\int_LP\\,dx+Q\\,dy\\) 与路径无关，求 \\(m\\)、势函数，并计算两个给定端点间的积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-23",
+          "fileId": "libfile_d2718f19d69481919c37e047ae9edee4",
+          "fileName": "2554BB03-CC4A-45BF-BB10-0C038EBF108E.png",
+          "verification": "题目第(1)问题图目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-23",
+          "fileId": "libfile_f4964708aa988191a3cec5708278f6fb",
+          "fileName": "IMG_F699159C-95C0-4FB1-815F-17CD62657F5E.jpeg",
+          "verification": "依据用户交叉偏导手写过程核对计算错误"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-23",
+          "fileId": "libfile_c22fc7a55a2481919d1ed821945a2f8d",
+          "fileName": "6CC05B26-9AEF-4238-966E-80F4C26BF866.png",
+          "verification": "完整题干及第(2)问目视转写"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-23",
+          "fileId": "libfile_df6d25639d788191b6160c8b2f3a4702",
+          "fileName": "IMG_27106F71-9C89-4D46-A244-2596233D8B7A.jpeg",
+          "verification": "依据用户势函数手写过程与后续追问核对"
+        }
+      ],
+      "answerVerification": "由 (P_y=Q_x) 求得参数后，分别验证 (u_x=P,u_y=Q)，并沿直线 (y=x) 复核积分为0",
+      "errorCauseEvidence": "用户手写的 (Q_x) 乘积求导符号错误、(P_y) 漏项，最终写出 (k=-1/(x^2+y^2))；第二问随后要求“把积分给我”。",
+      "reviewFocus": "卡壳位置：知道要算 \\(P_y,Q_x\\)，但含 \\(r^k/y\\) 的求导失控；得到的 \\(k\\) 仍含 \\(x,y\\) 后也没有立即否定。第一步先令 \\(r=\\sqrt{x^2+y^2}\\)，把 \\(P,Q\\) 写成幂的乘积，再分项求导。正确突破口：把 \\(P_y,Q_x\\) 都提取公共因子 \\(xr^{k-2}/y^2\\)，只比较括号。考场信号：“在单连通区域内与路径无关并求参数”就是先查定义域，再列 \\(P_y=Q_x\\)。易错点：\\((r^k)_x=kxr^{k-2}\\)、\\((y^{-1})_y=-y^{-2}\\)；参数答案不能含变量。防卡方法：求势函数固定用“积分 \\(P\\)+补 \\(\\varphi(y)\\)+对照 \\(Q\\)”三步法，不要把 \\(\\int Pdx\\) 与 \\(\\int Qdy\\) 直接相加。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础概念题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-23-v1"
+      ],
+      "wrongSubquestions": [
+        2
+      ],
+      "id": "daily-20261023-calc-closed-line-integral-exact-differential",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-23 对话 · 闭曲线积分与全微分判断检测",
+      "questionType": "判断题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲线积分",
+        "闭曲线",
+        "全微分",
+        "路径无关",
+        "势函数",
+        "概念错误"
+      ],
+      "note": "用户三题作答为“不为、不为、零”，其中第2题漏认出 (2xy,dx+x^2,dy=d(x^2y))。",
+      "stem": "设 \\(L\\) 为任意分段光滑闭曲线，判断下列积分是否一定为零：\n\\[\n\\text{(1)}\\quad \\oint_Lxy\\,dx;\n\\]\n\\[\n\\text{(2)}\\quad \\oint_L\\left(2xy\\,dx+x^2\\,dy\\right);\n\\]\n\\[\n\\text{(3)}\\quad \\oint_L\\sin z\\,dz.\n\\]",
+      "options": [],
+      "answer": "(1) 不一定为零；(2) 一定为零；(3) 一定为零。",
+      "analysis": "(1) 写成 \\(P=xy,Q=0\\)，有\n\\[\nP_y=x,\\qquad Q_x=0,\n\\]\n一般不相等，所以它不是全微分；对任意闭曲线不能保证积分为零。\n\n(2) 直接由乘积微分公式\n\\[\nd(x^2y)=2xy\\,dx+x^2\\,dy.\n\\]\n因此\n\\[\n\\oint_L\\left(2xy\\,dx+x^2\\,dy\\right)\n=\\oint_Ld(x^2y)=0.\n\\]\n也可用交叉偏导复核：\n\\[\nP_y=2x=Q_x.\n\\]\n\n(3)\n\\[\n\\sin z\\,dz=d(-\\cos z),\n\\]\n沿闭曲线首尾点相同，故\n\\[\n\\oint_L\\sin z\\,dz=0.\n\\]",
+      "errorCause": "看到闭曲线后仍主要凭积分项外观判断，没有优先寻找势函数；对 (d(x^2y)=2xy,dx+x^2,dy) 的乘积微分结构不敏感，因此把第2题误判为不一定为零。",
+      "knowledgePoints": [
+        "全微分识别",
+        "闭曲线积分",
+        "路径无关",
+        "交叉偏导条件",
+        "势函数"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为任意闭曲线，分别判断\n\\[\n\\oint_L(3x^2y\\,dx+x^3\\,dy),\\qquad\n\\oint_L(y\\,dx+x\\,dy),\\qquad\n\\oint_Le^z\\,dz\n\\]\n是否一定为零，并同时用“识别全微分”和“交叉偏导”两种方法说明。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-23",
+          "verification": "依据检测题题干、用户答案“不为、不为、零”及逐题批改记录核对"
+        }
+      ],
+      "answerVerification": "第2、3题直接写成势函数的全微分，第1题用交叉偏导不等并可由格林公式构造反例",
+      "errorCauseEvidence": "用户第2题回答“不为”，正确结论为一定等于0；其余两题判断正确。",
+      "reviewFocus": "卡壳位置：没有把 \\(2xy\\) 与 \\(x^2\\) 看成同一个乘积 \\(x^2y\\) 的两个偏导。第一步先问“能否一眼拼成 \\(dF=F_xdx+F_ydy\\)”；看不出再算 \\(P_y,Q_x\\)。正确突破口：闭曲线积分为零不是因为“闭”，而是因为被积表达式是全微分且势函数单值。考场信号：两项分别像同一乘积对 \\(x,y\\) 求导时，优先试乘积微分。易错点：\\(P_y=Q_x\\) 还要结合区域条件；本题势函数是全平面上的多项式，无奇点。防卡方法：建立常见模板 \\(d(x^my^n)=mx^{m-1}y^n\\,dx+nx^my^{n-1}\\,dy\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -17624,7 +17756,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-17-v1",
     "daily-2026-10-19-v1",
     "daily-2026-10-21-v1",
-    "daily-2026-10-22-v1"
+    "daily-2026-10-22-v1",
+    "daily-2026-10-23-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
