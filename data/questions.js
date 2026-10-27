@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 348,
+  "count": 354,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -17733,11 +17733,326 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "第2、3题直接写成势函数的全微分，第1题用交叉偏导不等并可由格林公式构造反例",
       "errorCauseEvidence": "用户第2题回答“不为”，正确结论为一定等于0；其余两题判断正确。",
       "reviewFocus": "卡壳位置：没有把 \\(2xy\\) 与 \\(x^2\\) 看成同一个乘积 \\(x^2y\\) 的两个偏导。第一步先问“能否一眼拼成 \\(dF=F_xdx+F_ydy\\)”；看不出再算 \\(P_y,Q_x\\)。正确突破口：闭曲线积分为零不是因为“闭”，而是因为被积表达式是全微分且势函数单值。考场信号：两项分别像同一乘积对 \\(x,y\\) 求导时，优先试乘积微分。易错点：\\(P_y=Q_x\\) 还要结合区域条件；本题势函数是全平面上的多项式，无奇点。防卡方法：建立常见模板 \\(d(x^my^n)=mx^{m-1}y^n\\,dx+nx^my^{n-1}\\,dy\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-calc-green-circle-jacobian-trig",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-26 晚间对话（上次检查后）· 格林公式与极坐标复核",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "第二类曲线积分",
+        "格林公式",
+        "极坐标雅可比",
+        "三角函数积分",
+        "计算错误"
+      ],
+      "note": "用户先算得 3π/20，订正后又得到 -π/4；两次分别暴露了极坐标漏乘 r 和 cos⁴θ 周期积分取值错误。",
+      "stem": "设 \\(L\\) 为曲面\n\\[\nz=4-x^2-y^2\n\\]\n与平面 \\(z=3\\) 的交线，从 \\(+z\\) 轴方向看按逆时针方向。计算\n\\[\nI=\\oint_L\\left(x^2y^3\\,dx+3\\,dy\\right).\n\\]",
+      "options": [],
+      "answer": "\\[\nI=-\\frac{\\pi}{8}.\n\\]",
+      "analysis": "由交线条件得\n\\[\nx^2+y^2=1,\\qquad z=3,\n\\]\n故 \\(L\\) 在 \\(xOy\\) 平面上的投影是正向单位圆。由于 \\(\\oint_L3\\,dy=0\\)，由格林公式\n\\[\nI=\\iint_D\\left(\\frac{\\partial 3}{\\partial x}\n-\\frac{\\partial(x^2y^3)}{\\partial y}\\right)\\,dx\\,dy\n=-3\\iint_Dx^2y^2\\,dx\\,dy,\n\\]\n其中 \\(D:x^2+y^2\\le1\\)。\n\n取 \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\)，必须同时写\n\\[\ndx\\,dy=r\\,dr\\,d\\theta.\n\\]\n于是\n\\[\nI=-3\\int_0^{2\\pi}\\int_0^1\nr^5\\cos^2\\theta\\sin^2\\theta\\,dr\\,d\\theta.\n\\]\n又\n\\[\n\\sin^2\\theta\\cos^2\\theta\n=\\frac18(1-\\cos4\\theta),\n\\qquad\n\\int_0^{2\\pi}\\sin^2\\theta\\cos^2\\theta\\,d\\theta=\\frac{\\pi}{4}.\n\\]\n因此\n\\[\nI=-3\\cdot\\frac16\\cdot\\frac{\\pi}{4}\n=-\\frac{\\pi}{8}.\n\\]",
+      "errorCause": "极坐标换元时只替换了 \\(x,y\\)，漏写面积元中的雅可比 \\(r\\)；第二次订正又把 \\(\\int_0^{2\\pi}\\cos^4\\theta\\,d\\theta\\) 误算为 \\(\\pi/2\\)，正确值为 \\(3\\pi/4\\)。",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "格林公式",
+        "平面投影",
+        "极坐标雅可比",
+        "三角函数降幂"
+      ],
+      "similarQuestionPrompt": "设 \\(L:x^2+y^2=R^2\\) 取正向，计算 \\(\\oint_L x^2y^{2m+1}\\,dx\\)。要求用格林公式化为二重积分，并检查极坐标雅可比和三角函数周期积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-26",
+          "verification": "依据用户两次计算结果、逐步订正与后续追问核对"
+        }
+      ],
+      "answerVerification": "格林公式后用极坐标直接积分，并以单位圆四分之一对称矩独立复核",
+      "errorCauseEvidence": "用户先得到 3π/20，指出漏乘 r 后改得 -π/4；继续核对发现 cos⁴θ 的整周期积分取值错误。",
+      "reviewFocus": "卡壳位置：从直角坐标二重积分切到极坐标时只替换 \\(x,y\\)，没有把面积元作为整体换元。第一步先由两曲面联立看出 \\(L:x^2+y^2=1,z=3\\)，立即令 \\(dz=0\\) 并投影到平面。正确突破口：格林后奇函数项会消失，只剩单位圆上的偶次矩。考场信号：圆盘上出现 \\(x^{2m}y^{2n}\\)，优先极坐标或对称矩。易错点：\\(dx\\,dy=r\\,dr\\,d\\theta\\)；\\(\\int_0^{2\\pi}\\cos^4\\theta\\,d\\theta=3\\pi/4\\)。防卡方法：每次极坐标换元都按“被积函数、区域、雅可比”三行书写，最后用量纲检查 \\(r\\) 的总次数。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-calc-cone-cylinder-line-integral-shifted-disk",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-26 晚间对话（上次检查后）· 第10题",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 边界或范围判断困难 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "空间第二类曲线积分",
+        "格林公式",
+        "投影曲线",
+        "平移圆域",
+        "对称性",
+        "范围判断困难"
+      ],
+      "note": "用户在圆域平移后仍写 x=r cosθ，漏掉圆心平移的常数1；后续检测题能正确得到 8π，但原题应为0。",
+      "stem": "设 \\(L\\) 为圆锥面\n\\[\nz=\\sqrt{x^2+y^2}\n\\]\n与柱面\n\\[\nx^2+y^2=2x\n\\]\n的交线。从 \\(z\\) 轴正向往负向看，\\(L\\) 的方向为逆时针。计算\n\\[\nI=\\oint_L (y^2+z^2)\\,dx+(z^2-x^2)\\,dy+(x^2+y^2)\\,dz.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=0.\n\\]",
+      "analysis": "在 \\(L\\) 上\n\\[\nz^2=x^2+y^2=2x,\n\\]\n且投影圆盘为\n\\[\nD:\\ x^2+y^2\\le2x\n\\iff (x-1)^2+y^2\\le1.\n\\]\n第三项是全微分：\n\\[\n(x^2+y^2)\\,dz=z^2\\,dz=d\\!\\left(\\frac{z^3}{3}\\right),\n\\]\n沿闭曲线积分为0。前两项代入 \\(z^2=2x\\)，由格林公式\n\\[\nI=\\iint_D\\left[\n\\frac{\\partial(2x-x^2)}{\\partial x}\n-\\frac{\\partial(y^2+2x)}{\\partial y}\n\\right]dx\\,dy\n=2\\pi-2\\iint_D(x+y)\\,dx\\,dy.\n\\]\n令 \\(u=x-1,\\ v=y\\)，则 \\(u^2+v^2\\le1\\)，由对称性\n\\[\n\\iint_Dx\\,dA=\\iint_{u^2+v^2\\le1}(1+u)\\,du\\,dv=\\pi,\n\\qquad\n\\iint_Dy\\,dA=0.\n\\]\n故\n\\[\nI=2\\pi-2\\pi=0.\n\\]",
+      "errorCause": "把以 \\((1,0)\\) 为圆心的圆盘直接写成 \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\)，遗漏 \\(x=1+r\\cos\\theta\\) 中的常数1，从而把 \\(\\iint_Dx\\,dA\\) 的非零平均值丢掉。",
+      "knowledgePoints": [
+        "空间第二类曲线积分",
+        "投影降维",
+        "格林公式",
+        "平移圆域",
+        "对称性",
+        "全微分"
+      ],
+      "similarQuestionPrompt": "将柱面改为 \\(x^2+y^2=2ax\\)，保留同一圆锥面与方向，设计一个经格林公式后需要计算 \\(\\iint_D(x+y)\\,dA\\) 的线积分，并要求用平移对称法求值。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-26",
+          "verification": "依据原题、手写订正与平移圆域对称性检测核对"
+        }
+      ],
+      "answerVerification": "格林公式与平移圆域对称性推导，并用原坐标圆域的一阶矩复核",
+      "errorCauseEvidence": "用户在平移圆域后漏写 x=1+r cosθ 的常数1；后续对 D:(x-2)²+y²≤4 的检测题选择 8π 正确。",
+      "reviewFocus": "卡壳位置：看见圆方程后直接套原点极坐标，忽略圆心不在原点。第一步先配方写成 \\((x-1)^2+y^2=1\\)。正确突破口：若只需求一次函数在圆盘上的积分，用“圆心坐标×面积”最快，即 \\(\\iint_Dx\\,dA=1\\cdot\\pi\\)。考场信号：\\(x^2+y^2=2ax\\) 一出现，就先配方或令 \\(u=x-a\\)。易错点：平移极坐标是 \\(x=a+r\\cos\\theta\\)，不能写成 \\(x=r\\cos\\theta\\)。防卡方法：换元后把圆心 \\(r=0\\) 代回，若所得点不是原圆心，说明坐标式写错。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-calc-conical-surface-first-kind-angle-range",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-26 晚间对话（上次检查后）· 第11题",
+      "questionType": "计算题",
+      "mistakeType": "边界或范围判断困难 / 计算错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "第一类曲面积分",
+        "圆锥面",
+        "投影区域",
+        "极坐标角域",
+        "雅可比",
+        "对称性"
+      ],
+      "note": "用户前半段能用关于x轴的对称性消去含y项，但随后把θ写成0到2π，并漏乘r、漏掉cosθ与参数a，需要提示后继续。",
+      "stem": "设 \\(a>0\\)，曲面 \\(S\\) 为圆锥面\n\\[\nz=\\sqrt{x^2+y^2}\n\\]\n被柱面\n\\[\nx^2+y^2=2ax\n\\]\n所截的有限部分。计算第一类曲面积分\n\\[\nI=\\iint_S\\left(x^2y+yz^2+z^2x\\right)\\,dS.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=2\\sqrt2\\,\\pi a^5.\n\\]",
+      "analysis": "令 \\(z=f(x,y)=\\sqrt{x^2+y^2}\\)。除锥顶这一零面积点外，\n\\[\nf_x=\\frac{x}{\\sqrt{x^2+y^2}},\\qquad\nf_y=\\frac{y}{\\sqrt{x^2+y^2}},\n\\]\n故\n\\[\ndS=\\sqrt{1+f_x^2+f_y^2}\\,dx\\,dy=\\sqrt2\\,dx\\,dy.\n\\]\n投影区域\n\\[\nD:\\ x^2+y^2\\le2ax\n\\]\n关于 \\(x\\) 轴对称。又 \\(z^2=x^2+y^2\\)，所以含 \\(y\\) 的两项为关于 \\(y\\) 的奇函数，积分为0：\n\\[\nI=\\sqrt2\\iint_Dx(x^2+y^2)\\,dx\\,dy.\n\\]\n在原点极坐标中，圆的边界为 \\(r=2a\\cos\\theta\\)。由于 \\(r\\ge0\\)，必须有 \\(\\cos\\theta\\ge0\\)，故\n\\[\n-\\frac{\\pi}{2}\\le\\theta\\le\\frac{\\pi}{2},\n\\qquad\n0\\le r\\le2a\\cos\\theta.\n\\]\n于是\n\\[\nI=\\sqrt2\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2a\\cos\\theta}\nr^4\\cos\\theta\\,dr\\,d\\theta\n=\\frac{32\\sqrt2a^5}{5}\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta.\n\\]\n利用\n\\[\n\\int_{-\\pi/2}^{\\pi/2}\\cos^6\\theta\\,d\\theta=\\frac{5\\pi}{16},\n\\]\n得到\n\\[\nI=2\\sqrt2\\,\\pi a^5.\n\\]",
+      "errorCause": "没有由 \\(r=2a\\cos\\theta\\) 与 \\(r\\ge0\\) 判断角域，误把 \\(\\theta\\) 取为 \\(0\\) 到 \\(2\\pi\\)；换元时又漏乘面积元的 \\(r\\)，并在 \\(x=r\\cos\\theta\\) 与上限 \\(2a\\cos\\theta\\) 中漏掉 \\(\\cos\\theta\\) 或参数 \\(a\\)。",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "曲面面积元",
+        "投影区域",
+        "圆的极坐标方程",
+        "角域判断",
+        "对称性"
+      ],
+      "similarQuestionPrompt": "设 \\(S:z=\\sqrt{x^2+y^2}\\) 被 \\(x^2+y^2=2ax\\) 所截，计算 \\(\\iint_S xz^{2m}\\,dS\\)。要求先用对称性删项，再由 \\(r\\ge0\\) 确定角域。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-26",
+          "verification": "依据第11题原式、用户极坐标过程及逐项订正核对"
+        }
+      ],
+      "answerVerification": "按投影法化为二重积分，并用圆域关于x轴的对称性和余弦偶次积分复核",
+      "errorCauseEvidence": "用户需提示才能继续；θ范围写成0到2π，并出现漏雅可比r、漏cosθ和漏参数a。",
+      "reviewFocus": "卡壳位置：会写 \\(dS=\\sqrt2\\,dxdy\\)，但不会稳定确定偏心圆的极坐标范围。第一步先配方看图，再把边界写成 \\(r=2a\\cos\\theta\\)。正确突破口：由 \\(r\\ge0\\) 得 \\(\\cos\\theta\\ge0\\)，角域自然是 \\([-\\pi/2,\\pi/2]\\)。考场信号：圆过原点且圆心在正 \\(x\\) 轴时，原点极坐标常写成 \\(r=2a\\cos\\theta\\)，角域只有右半方向。易错点：总幂次应为 \\(r^4\\)：\\(x\\) 给一个 \\(r\\)，\\(x^2+y^2\\) 给 \\(r^2\\)，面积元再给 \\(r\\)。防卡方法：极坐标积分前逐项标注 \\(r\\) 的来源，并把上限中的参数量纲检查为长度。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-calc-integral-least-squares-trig-orthogonality",
+      "subject": "高等数学",
+      "chapter": 9,
+      "chapterTitle": "定积分的应用",
+      "sourceRef": "2026-10-27 对话 · 参数积分极值与补充知识取舍",
+      "questionType": "计算题",
+      "mistakeType": "方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "参数积分",
+        "二元函数极值",
+        "奇偶性",
+        "三角函数正交性",
+        "配方法",
+        "知识点取舍"
+      ],
+      "note": "用户追问该题是否由答案反推、补充的傅里叶知识是否值得背，说明对考场应使用的基础方法与扩展理论边界不确定。",
+      "stem": "对实参数 \\(a,b\\)，设\n\\[\nF(a,b)=\\int_{-\\pi}^{\\pi}\\left(x-a\\cos x-b\\sin x\\right)^2\\,dx.\n\\]\n求使 \\(F(a,b)\\) 取得最小值的 \\(a,b\\)，并写出相应的函数 \\(a\\cos x+b\\sin x\\) 与最小值。",
+      "options": [],
+      "answer": "\\[\na=0,\\qquad b=2,\n\\]\n相应函数为 \\(2\\sin x\\)，且\n\\[\nF_{\\min}=\\frac{2\\pi^3}{3}-4\\pi.\n\\]",
+      "analysis": "展开平方：\n\\[\nF=\\int_{-\\pi}^{\\pi}x^2\\,dx\n+a^2\\int_{-\\pi}^{\\pi}\\cos^2x\\,dx\n+b^2\\int_{-\\pi}^{\\pi}\\sin^2x\\,dx\n-2a\\int_{-\\pi}^{\\pi}x\\cos x\\,dx\n-2b\\int_{-\\pi}^{\\pi}x\\sin x\\,dx\n+2ab\\int_{-\\pi}^{\\pi}\\sin x\\cos x\\,dx.\n\\]\n利用奇偶性，\n\\[\n\\int_{-\\pi}^{\\pi}x\\cos x\\,dx=0,\\qquad\n\\int_{-\\pi}^{\\pi}\\sin x\\cos x\\,dx=0.\n\\]\n其余积分为\n\\[\n\\int_{-\\pi}^{\\pi}x^2\\,dx=\\frac{2\\pi^3}{3},\\quad\n\\int_{-\\pi}^{\\pi}\\cos^2x\\,dx\n=\\int_{-\\pi}^{\\pi}\\sin^2x\\,dx=\\pi,\n\\]\n以及\n\\[\n\\int_{-\\pi}^{\\pi}x\\sin x\\,dx\n=2\\int_0^\\pi x\\sin x\\,dx=2\\pi.\n\\]\n因此\n\\[\nF(a,b)=\\frac{2\\pi^3}{3}+\\pi a^2+\\pi b^2-4\\pi b\n=\\pi a^2+\\pi(b-2)^2+\\frac{2\\pi^3}{3}-4\\pi.\n\\]\n故结论成立。",
+      "errorCause": "把题目理解成需要记忆傅里叶级数的最小二乘结论，因而怀疑考场无法想到；实际上本题只需展开平方、用奇偶性/基础三角积分消去交叉项，再配方求二元参数最小值。",
+      "knowledgePoints": [
+        "含参定积分",
+        "二元函数极值",
+        "奇偶性",
+        "三角函数积分",
+        "配方法",
+        "正交性直观"
+      ],
+      "similarQuestionPrompt": "求实数 \\(a,b\\)，使 \\(\\int_{-\\pi}^{\\pi}(x^2-a-b\\cos x)^2\\,dx\\) 最小。要求只用展开、奇偶性与配方法，不调用傅里叶最小二乘定理。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "verification": "依据题式、用户关于补充知识取舍的追问及完整展开核对"
+        }
+      ],
+      "answerVerification": "直接展开积分并配方；再由对a、b求偏导得到同一驻点且二次型正定",
+      "errorCauseEvidence": "用户主动追问“是不是看着答案编的”“补充知识值不值得记”，并认为考到概率低，反映方法选择边界不稳定。",
+      "reviewFocus": "卡壳位置：看到 \\(\\cos x,\\sin x\\) 就把问题上升为傅里叶理论，忽略它本质是关于 \\(a,b\\) 的二次函数。第一步把平方完全展开，并先判断每个交叉项的奇偶性。正确突破口：积分后只剩 \\(\\pi a^2+\\pi b^2-4\\pi b+\\)常数，再配方即可。考场信号：被积式是“已知函数减参数线性组合”的平方，优先视为参数二次型。易错点：\\(x\\sin x\\) 是偶函数，不会在对称区间消失；\\(\\int_{-\\pi}^{\\pi}x\\sin x\\,dx=2\\pi\\)。防卡方法：在每个交叉项旁标“奇/偶”，只计算偶函数项；傅里叶最小二乘只作为理解，不必额外背诵。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-calc-tangent-plane-vs-normal-line",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2026-10-27 对话 · 切平面与法线辨析",
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "切平面",
+        "法线",
+        "梯度",
+        "显式曲面",
+        "隐式曲面",
+        "概念错误"
+      ],
+      "note": "用户把法线的对称式当成切平面方程，并另写了一个未经点法式检验的平面；随后对隐式曲面继续追问。",
+      "stem": "求下列曲面在给定点处的切平面，并写出相应法线：\n\n(1)\n\\[\nz=x^2(1-\\sin y)+y^2(1-\\sin x),\n\\qquad P(1,0,1).\n\\]\n\n(2)\n\\[\nx^2+xy+yz+z^2=4,\n\\qquad P(1,1,1).\n\\]",
+      "options": [],
+      "answer": "(1) 切平面\n\\[\n2x-y-z-1=0;\n\\]\n法线可写为\n\\[\n\\frac{x-1}{-2}=y=z-1.\n\\]\n\n(2) 切平面\n\\[\n3x+2y+3z-8=0;\n\\]\n法线可写为\n\\[\n\\frac{x-1}{3}=\\frac{y-1}{2}=\\frac{z-1}{3}.\n\\]",
+      "analysis": "(1) 令 \\(z=f(x,y)\\)。在 \\(P\\) 处\n\\[\nf_x=2x(1-\\sin y)-y^2\\cos x,\\qquad\nf_y=-x^2\\cos y+2y(1-\\sin x),\n\\]\n所以\n\\[\nf_x(1,0)=2,\\qquad f_y(1,0)=-1.\n\\]\n切平面公式\n\\[\nz-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)\n\\]\n给出\n\\[\nz-1=2(x-1)-y,\n\\]\n即 \\(2x-y-z-1=0\\)。法向量可取 \\((-2,1,1)\\)，故法线如答案。\n\n(2) 令\n\\[\nF(x,y,z)=x^2+xy+yz+z^2-4.\n\\]\n梯度\n\\[\n\\nabla F=(2x+y,\\ x+z,\\ y+2z),\n\\]\n在 \\(P(1,1,1)\\) 处为\n\\[\n\\nabla F(P)=(3,2,3).\n\\]\n因此切平面点法式为\n\\[\n3(x-1)+2(y-1)+3(z-1)=0,\n\\]\n即 \\(3x+2y+3z-8=0\\)，法线方向即 \\((3,2,3)\\)。",
+      "errorCause": "混淆了“一个法向量”“过点且以该向量为方向的法线”和“以该向量为法向量的切平面”三种对象；看到三个比例式后没有检查它描述的是一条直线，而平面应为一个一次方程。隐式曲面中也未优先使用梯度点法式。",
+      "knowledgePoints": [
+        "多元函数微分学",
+        "切平面",
+        "法线",
+        "梯度",
+        "显式曲面",
+        "隐式曲面"
+      ],
+      "similarQuestionPrompt": "分别对一个显式曲面 \\(z=f(x,y)\\) 和一个隐式曲面 \\(F(x,y,z)=0\\) 在给定点求切平面与法线；要求说明同一法向量如何分别写成平面点法式和直线对称式。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "verification": "依据用户手写法线/平面、后续隐式曲面追问与逐式批改核对"
+        }
+      ],
+      "answerVerification": "显式曲面用偏导公式、隐式曲面用梯度公式，并分别代入给定点验证平面过点",
+      "errorCauseEvidence": "用户把 (x-1)/(-2)=y=(z-1) 当作切平面，并写出错误平面 x+y+z-2=0；随后对隐式曲面继续求辨析。",
+      "reviewFocus": "卡壳位置：偏导数能算出，却不知道该把法向量放进“平面式”还是“直线式”。第一步先写模板：切平面 \\(\\mathbf n\\cdot(\\mathbf r-\\mathbf r_0)=0\\)，法线 \\(\\mathbf r=\\mathbf r_0+t\\mathbf n\\)。正确突破口：显式曲面 \\(z=f(x,y)\\) 可取 \\(\\mathbf n=(f_x,f_y,-1)\\)；隐式曲面直接取 \\(\\nabla F\\)。考场信号：一个等号连接三个分式通常是直线；单个一次方程 \\(Ax+By+Cz+D=0\\) 才是平面。易错点：法向量整体乘 \\(-1\\) 不改变几何对象。防卡方法：写完后做两次自检——给定点是否代入成立，平面系数是否与法线方向成比例。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-27-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261027-linear-independence-necessary-condition",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "向量及其线性相关性",
+      "sourceRef": "2026-10-27 对话 · 线性无关条件判断",
+      "questionType": "判断题",
+      "mistakeType": "概念错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "线性无关",
+        "充分条件",
+        "必要条件",
+        "反例",
+        "系数受约束",
+        "思路卡壳"
+      ],
+      "note": "用户在首次讲解后明确表示“没听懂”；核心障碍是把 ak+bl 误当成与a,b独立的任意第三个系数。",
+      "stem": "设向量 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 满足以下两个条件：\n\n① \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 线性无关；\n\n② 对任意实数 \\(k,l\\)，向量\n\\[\n\\alpha_1+k\\alpha_3,\\qquad\n\\alpha_2+l\\alpha_3\n\\]\n线性无关。\n\n判断条件②与条件①之间的充分、必要关系。",
+      "options": [],
+      "answer": "条件②是条件①的必要但不充分条件；原选择题答案为 A。",
+      "analysis": "先证 \\(①\\Rightarrow②\\)。任取 \\(k,l\\)，若\n\\[\na(\\alpha_1+k\\alpha_3)+b(\\alpha_2+l\\alpha_3)=0,\n\\]\n则\n\\[\na\\alpha_1+b\\alpha_2+(ak+bl)\\alpha_3=0.\n\\]\n由 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 线性无关，三个系数都为0，特别有\n\\[\na=0,\\qquad b=0.\n\\]\n故两向量线性无关，条件②成立。\n\n再看反向是否成立。取\n\\[\n\\alpha_1=(1,0,0)^{\\mathsf T},\\qquad\n\\alpha_2=(0,1,0)^{\\mathsf T},\\qquad\n\\alpha_3=(0,0,0)^{\\mathsf T}.\n\\]\n则对任意 \\(k,l\\)，\n\\[\n\\alpha_1+k\\alpha_3=\\alpha_1,\\qquad\n\\alpha_2+l\\alpha_3=\\alpha_2,\n\\]\n二者始终线性无关，所以②成立；但含零向量的\n\\(\\alpha_1,\\alpha_2,\\alpha_3\\) 线性相关，①不成立。\n\n因此\n\\[\n①\\Rightarrow②,\\qquad ②\\nRightarrow①.\n\\]\n所以②是①的必要非充分条件。",
+      "errorCause": "在展开后把 \\(\\alpha_3\\) 前的 \\(ak+bl\\) 当成可独立任取的第三个系数，试图由两个向量线性无关推出三个向量线性无关；实际上该系数受 \\(a,b\\) 约束，不能独立变化。并且没有用“先证蕴含、再找反例”的固定流程判断充分必要关系。",
+      "knowledgePoints": [
+        "向量线性无关",
+        "充分条件与必要条件",
+        "反例法",
+        "线性组合系数",
+        "零向量"
+      ],
+      "similarQuestionPrompt": "将条件②改为“存在某组 \\(k,l\\)，使 \\(\\alpha_1+k\\alpha_3,\\alpha_2+l\\alpha_3\\) 线性无关”，判断它与①的关系，并分别给出成立方向的证明和不成立方向的反例。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "verification": "依据原选择题、用户‘没听懂’及两轮讲解核对"
+        }
+      ],
+      "answerVerification": "直接证明①推出②，并以α3=0、α1与α2线性无关构造反例否定逆命题",
+      "errorCauseEvidence": "用户在首次解释后明确回复‘没听懂’，说明对受约束系数与充分必要方向仍不稳定。",
+      "reviewFocus": "卡壳位置：看到 \\(a\\alpha_1+b\\alpha_2+(ak+bl)\\alpha_3=0\\) 就把它误当成三个任意系数的线性组合。第一步把要判断的关系写成两个箭头 \\(①\\Rightarrow②\\)、\\(②\\Rightarrow①\\)，逐个处理。正确突破口：证明方向用定义展开；否定方向优先让 \\(\\alpha_3=0\\)，保留 \\(\\alpha_1,\\alpha_2\\) 无关。考场信号：题目问充分必要关系时，必须把两个方向分开；只证明一个方向不能结束。易错点：\\(ak+bl\\) 不是独立变量，它随 \\(a,b\\) 一起被限制。防卡方法：凡遇“两个组合向量对任意参数无关”，都检查是否能用零向量或重复向量构造反例。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-27",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -17757,7 +18072,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-19-v1",
     "daily-2026-10-21-v1",
     "daily-2026-10-22-v1",
-    "daily-2026-10-23-v1"
+    "daily-2026-10-23-v1",
+    "daily-2026-10-27-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
