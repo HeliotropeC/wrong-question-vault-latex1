@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 367,
+  "count": 368,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -18685,7 +18685,7 @@
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "考研真题难度",
-      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "mistakeType": "概念错误 / 方法选择困难",
       "tags": [
         "2014年数学一",
         "考研真题",
@@ -18694,14 +18694,14 @@
         "正项级数比较判别法",
         "三角不等式"
       ],
-      "note": "2014年数学一整卷63/150分；本题红笔记录扣10分，满分10分。未附原解题过程，不能据扣分自行判断错误步骤。",
+      "note": "用户第一问已能由夹逼得到 a_n→0；第二问误把通项趋于0当作级数收敛，并把等价无穷小关系写成不严谨的极限等式。",
       "sourceRef": "2014年全国硕士研究生招生考试数学（一）第19题（原卷第24页）",
       "questionType": "证明题",
       "stem": "设数列 \\(\\{a_n\\},\\{b_n\\}\\) 满足 \\(0<a_n<\\frac\\pi2,\\ 0<b_n<\\frac\\pi2\\)，\n\\[\n\\cos a_n-a_n=\\cos b_n,\n\\]\n且级数 \\(\\sum_{n=1}^{\\infty}b_n\\) 收敛。\n(1) 证明 \\(\\lim_{n\\to\\infty}a_n=0\\)；\n(2) 证明级数 \\(\\sum_{n=1}^{\\infty}\\frac{a_n}{b_n}\\) 收敛。",
       "options": [],
       "answer": "(1) \\(a_n\\to0\\)；(2) 级数 \\(\\sum a_n/b_n\\) 收敛。",
       "analysis": "由 \\(a_n=\\cos a_n-\\cos b_n>0\\) 且 \\(\\cos a_n\\le1\\)，得 \\(0<a_n\\le1-\\cos b_n\\le b_n^2/2\\)。\\(\\sum b_n\\) 收敛且 \\(b_n>0\\)，所以 \\(b_n\\to0\\)，于是 \\(a_n\\to0\\)；同时 \\(0<a_n/b_n\\le b_n/2\\)，由比较判别法知 \\(\\sum a_n/b_n\\) 收敛。",
-      "errorCause": "卷面显示失分，具体错误步骤未提供；复练后补充错误原因。",
+      "errorCause": "由 \\(\\lim a_n/b_n=0\\) 直接推出 \\(\\sum a_n/b_n\\) 收敛，混淆了级数收敛的必要条件与充分条件；同时把 \\((1-\\cos b_n)/b_n\\sim b_n/2\\) 写成“极限等于 \\(b_n/2\\)”，右端仍含随 \\(n\\) 变化的量，表达不严谨。",
       "knowledgePoints": [
         "数列极限",
         "正项级数比较判别法",
@@ -18733,7 +18733,19 @@
         "exam-2014-math1-20261027"
       ],
       "answerVerification": "根据所录题干独立推导；尚未与官方答案核对。",
-      "reviewFocus": "从等式隔离 a_n，目标构造 a_n≤Cb_n² ；再除以 b_n 与已知可求和的 b_n 比较。"
+      "reviewFocus": "卡壳位置：已经得到 \\(a_n/b_n\\to0\\)，却不知道这只能说明通项满足必要条件。第一步从原等式隔离\n\\[\na_n=\\cos a_n-\\cos b_n<1-\\cos b_n.\n\\]\n正确突破口：用恒等不等式\n\\[\n1-\\cos t\\le\\frac{t^2}{2}\n\\]\n得到 \\(0<a_n/b_n\\le b_n/2\\)，再与已知收敛级数 \\(\\sum b_n\\) 比较。考场信号：题设给出一个正项级数收敛，并要求证明另一个级数收敛，优先寻找逐项上界 \\(u_n\\le Cb_n\\)。易错点：\\(u_n\\to0\\) 不是级数收敛的充分条件；等价无穷小应写“\\(\\sim\\)”或写比值极限。防卡方法：凡证明级数收敛，结论前必须出现一个判别法名称及其条件。",
+      "errorCauseEvidence": "用户订正中第一问思路正确；第二问明确用通项极限为0判断级数收敛，随后需提示改用比较判别法。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "sourceLabel": "2014数一第19题订正",
+          "verification": "依据用户订正、错误论证与比较判别法讲解核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-28-v1"
+      ]
     },
     {
       "id": "exam-2014-math1-q20",
@@ -18745,7 +18757,7 @@
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "考研真题难度",
-      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "mistakeType": "计算错误 / 概念错误 / 思路卡壳",
       "tags": [
         "2014年数学一",
         "考研真题",
@@ -18755,14 +18767,14 @@
         "右逆矩阵",
         "特解与通解"
       ],
-      "note": "2014年数学一整卷63/150分；本题红笔记录扣10分，满分11分。未附原解题过程，不能据扣分自行判断错误步骤。",
+      "note": "用户行变换中出现计算错误，且一度把矩阵方程的解写成单个列向量；对每列独立参数、特解与通解的区别需要继续检测。",
       "sourceRef": "2014年全国硕士研究生招生考试数学（一）第20题（原卷第25页）",
       "questionType": "计算题",
       "stem": "设\n\\[\nA=\\begin{pmatrix}\n1&-2&3&-4\\\\\n0&1&-1&1\\\\\n1&2&0&-3\n\\end{pmatrix},\n\\]\n\\(E\\) 为3阶单位矩阵。\n(1) 求方程组 \\(Ax=0\\) 的一个基础解系；\n(2) 求满足 \\(AB=E\\) 的所有矩阵 \\(B\\)。",
       "options": [],
       "answer": "(1) 基础解系 \\(\\{(-1,2,3,1)^T\\}\\)。\n(2) 所有解为\n\\[\nB=\\begin{pmatrix}\n2&6&-1\\\\\n-1&-3&1\\\\\n-1&-4&1\\\\\n0&0&0\n\\end{pmatrix}+\n\\begin{pmatrix}-1\\\\2\\\\3\\\\1\\end{pmatrix}(s,t,u),\\quad s,t,u\\in\\mathbb R.\n\\]",
-      "analysis": "对 A 做行化简得 \\(\\operatorname{rref}(A)=\\begin{pmatrix}1&0&0&1\\\\0&1&0&-2\\\\0&0&1&-3\\end{pmatrix}\\)，零空间维数为1，基础解系如上。满足 AB=E 等价于分别解 \\(Ab_j=e_j\\)，特解可取上式首个4×3矩阵；三列各加任意 Ax=0 的解，即得 B 的全部形式。",
-      "errorCause": "卷面显示失分，具体错误步骤未提供；复练后补充错误原因。",
+      "analysis": "把 \\(B\\) 按列写成 \\(B=(b_1,b_2,b_3)\\)，则\n\\[\nAB=E_3\n\\iff\nAb_1=e_1,\\quad Ab_2=e_2,\\quad Ab_3=e_3.\n\\]\n对增广矩阵 \\([A\\mid E_3]\\) 行化简可得\n\\[\n\\left(\n\\begin{array}{cccc|ccc}\n1&0&0&1&2&6&-1\\\\\n0&1&0&-2&-1&-3&1\\\\\n0&0&1&-3&-1&-4&1\n\\end{array}\n\\right).\n\\]\n齐次方程 \\(Ax=0\\) 中令自由变量 \\(x_4=t\\)，得到\n\\[\nx=t\\begin{pmatrix}-1\\\\2\\\\3\\\\1\\end{pmatrix},\n\\]\n故基础解系为\n\\[\n\\xi=\\begin{pmatrix}-1\\\\2\\\\3\\\\1\\end{pmatrix}.\n\\]\n令三组非齐次方程的自由变量都先取0，可取特解矩阵\n\\[\nB_0=\n\\begin{pmatrix}\n2&6&-1\\\\\n-1&-3&1\\\\\n-1&-4&1\\\\\n0&0&0\n\\end{pmatrix}.\n\\]\n每一列都可以独立加上齐次解，因此全部解为\n\\[\nB=B_0+\\xi(k_1,k_2,k_3),\\qquad k_1,k_2,k_3\\in\\mathbb R.\n\\]\n若题目只要求一个 \\(B\\)，令 \\(k_1=k_2=k_3=0\\) 即得到特解 \\(B_0\\)；若要求所有 \\(B\\)，参数必须保留。",
+      "errorCause": "行化简过程不稳定；把 \\(AB=E_3\\) 当成一个列向量方程，忽略 \\(B\\) 应为 \\(4\\times3\\) 矩阵；又混淆“取一组固定参数得到一个特解”与“保留三组独立参数得到全部解”。",
       "knowledgePoints": [
         "齐次方程组基础解系",
         "矩阵方程",
@@ -18795,7 +18807,19 @@
         "exam-2014-math1-20261027"
       ],
       "answerVerification": "根据所录题干独立推导；尚未与官方答案核对。",
-      "reviewFocus": "AB=E 就是三组非齐次方程 Ab1=e1、Ab2=e2、Ab3=e3；每列=一个特解+齐次通解，不能把 B 误当唯一逆矩阵。"
+      "reviewFocus": "卡壳位置：会解单个 \\(Ax=b\\)，但面对 \\(AB=E_3\\) 不知道怎样开始。第一步先做维数检查：\\(A\\) 为 \\(3\\times4\\)，所以 \\(B\\) 必为 \\(4\\times3\\)，再把 \\(B\\) 按列拆开。正确突破口：同一个增广矩阵 \\([A\\mid E_3]\\) 同时完成三组方程；公共齐次解为 \\(\\xi\\)，但三列的系数 \\(k_1,k_2,k_3\\) 彼此独立。考场信号：宽矩阵 \\(A\\) 不可逆，却要求 \\(AB=E\\)，考的是右逆及“特解+齐次解”，不能写 \\(A^{-1}\\)。易错点：\\(B_0+k\\xi\\) 维数不匹配；正确形式是 \\(B_0+\\xi(k_1,k_2,k_3)\\)。防卡方法：写完立即检查 \\(AB\\) 的维数，并分别验证三列满足 \\(Ab_j=e_j\\)。",
+      "errorCauseEvidence": "用户要求给出增广矩阵具体过程并在后续表示“不知道”；手写中存在行变换错误、矩阵维数/表示错误。检测题选择A正确，说明已会用参数全取0得到一个特解，但仍需巩固通解参数应独立保留。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "sourceLabel": "2014数一第20题订正",
+          "verification": "依据增广矩阵批改、用户‘不知道’及特解/通解检测核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-28-v1"
+      ]
     },
     {
       "id": "exam-2014-math1-q21",
@@ -18807,7 +18831,7 @@
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "考研真题难度",
-      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "mistakeType": "概念错误 / 思路卡壳 / 知识点不熟",
       "tags": [
         "2014年数学一",
         "考研真题",
@@ -18817,14 +18841,14 @@
         "特征值",
         "可对角化"
       ],
-      "note": "2014年数学一整卷63/150分；本题红笔记录扣3分，满分11分。未附原解题过程，不能据扣分自行判断错误步骤。",
+      "note": "用户能比较特征值，但证明中缺少“二者均可相似对角化”这一关键环节，并把B的特征多项式中零特征值的重数写错。",
       "sourceRef": "2014年全国硕士研究生招生考试数学（一）第21题（原卷第25页）",
       "questionType": "证明题",
       "stem": "证明 \\(n\\) 阶矩阵\n\\[\nA=\\begin{pmatrix}\n1&1&\\cdots&1\\\\\n1&1&\\cdots&1\\\\\n\\vdots&\\vdots&&\\vdots\\\\\n1&1&\\cdots&1\n\\end{pmatrix}\n\\quad\\text{与}\\quad\nB=\\begin{pmatrix}\n0&\\cdots&0&1\\\\\n0&\\cdots&0&2\\\\\n\\vdots&&\\vdots&\\vdots\\\\\n0&\\cdots&0&n\n\\end{pmatrix}\n\\]\n相似。",
       "options": [],
       "answer": "二者均相似于 \\(\\operatorname{diag}(n,0,\\ldots,0)\\)，故相似。",
       "analysis": "两矩阵均秩为1，迹均为 n，并满足 \\(A^2=nA\\)、\\(B^2=nB\\)。因 \\(n\\ne0\\)，多项式 \\(t(t-n)\\) 无重根，故二矩阵均可对角化；特征值均为 n（1重）和 0（n−1重），因此都相似于同一对角矩阵。n=1时也成立。",
-      "errorCause": "卷面显示失分，具体错误步骤未提供；复练后补充错误原因。",
+      "errorCause": "仅由特征值相同就断言矩阵相似，漏证可对角化；计算 \\(B\\) 的特征多项式时把\n\\[\n|B-\\lambda E|=(n-\\lambda)(-\\lambda)^{n-1}\n\\]\n中的指数 \\(n-1\\) 写错，因而没有稳定识别零特征值的代数重数。",
       "knowledgePoints": [
         "矩阵相似",
         "秩一矩阵",
@@ -18857,7 +18881,19 @@
         "exam-2014-math1-20261027"
       ],
       "answerVerification": "根据所录题干独立推导；尚未与官方答案核对。",
-      "reviewFocus": "两个看似不同的秩一矩阵先比 rank 与 trace，再用 A²=tr(A)A 判断可对角化，最后归结为相同对角阵。"
+      "reviewFocus": "卡壳位置：算出相同特征值后直接结束，没有意识到“一般矩阵特征值相同不保证相似”。第一步先观察\n\\[\nA^2=nA,\\qquad B^2=nB.\n\\]\n正确突破口：二者的最小多项式都整除 \\(\\lambda(\\lambda-n)\\)，该多项式无重根，所以二者均可对角化；再结合秩1、迹 \\(n\\)，都相似于 \\(\\operatorname{diag}(n,0,\\ldots,0)\\)。考场信号：秩一矩阵且满足 \\(M^2=cM\\)，优先用最小多项式判可对角化。易错点：相同特征多项式只是必要条件；还需比较Jordan结构或证明可对角化。防卡方法：证明“\\(A\\sim B\\)”固定写成 \\(A\\sim D\\) 且 \\(B\\sim D\\) 两条链。",
+      "errorCauseEvidence": "用户要求指出证明缺少的部分；批改明确指出需补证两个矩阵都可相似对角化，并修正B特征多项式指数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "sourceLabel": "2014数一第21题补步骤",
+          "verification": "依据用户证明缺项、特征多项式修正与两种完整证明核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-28-v1"
+      ]
     },
     {
       "id": "exam-2014-math1-q22",
@@ -18869,7 +18905,7 @@
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "考研真题难度",
-      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "mistakeType": "概念错误 / 边界或范围判断困难 / 方法选择困难",
       "tags": [
         "2014年数学一",
         "考研真题",
@@ -18880,14 +18916,14 @@
         "分段分布函数",
         "全期望公式"
       ],
-      "note": "2014年数学一整卷63/150分；本题红笔记录扣11分，满分11分。未附原解题过程，不能据扣分自行判断错误步骤。",
+      "note": "用户不理解为何不同 i 的条件分布要合并；首道检测把累计长度当成目标区间长度，选D错误；第二道检测选C正确，但两种条件概率恰好相同，尚需继续复练。",
       "sourceRef": "2014年全国硕士研究生招生考试数学（一）第22题（原卷第25页）",
       "questionType": "计算题",
       "stem": "设随机变量 \\(X\\) 的概率分布为 \\(P(X=1)=P(X=2)=\\frac12\\)。在给定 \\(X=i\\) 的条件下，随机变量 \\(Y\\) 服从均匀分布 \\(U(0,i)\\)（\\(i=1,2\\)）。\n(1) 求 \\(Y\\) 的分布函数 \\(F_Y(y)\\)；\n(2) 求 \\(E(Y)\\)。",
       "options": [],
       "answer": "\\[\nF_Y(y)=\n\\begin{cases}\n0,&y\\le0,\\\\\n\\frac{3y}{4},&0<y<1,\\\\\n\\frac12+\\frac y4,&1\\le y<2,\\\\\n1,&y\\ge2.\n\\end{cases}\n\\qquad E(Y)=\\frac34.\n\\]",
-      "analysis": "由全概率公式 \\(F_Y(y)=\\frac12P(Y\\le y\\mid X=1)+\\frac12P(Y\\le y\\mid X=2)\\)。条件均匀分布在各自区间内的分布函数为截断的线性函数；按分界点 0、1、2 合并即得。全期望 \\(E(Y)=\\frac12E(Y\\mid X=1)+\\frac12E(Y\\mid X=2)=\\frac12\\cdot\\frac12+\\frac12\\cdot1=\\frac34\\)。",
-      "errorCause": "卷面显示失分，具体错误步骤未提供；复练后补充错误原因。",
+      "analysis": "无条件分布必须对所有可能的 \\(X\\) 分类加权：\n\\[\nF_Y(y)=\\sum_{i=1}^2P(X=i)P(Y\\le y\\mid X=i).\n\\]\n当 \\(Y\\mid X=i\\sim U(0,i)\\) 时，\n\\[\nP(Y\\le y\\mid X=i)=\n\\begin{cases}\n0,&y\\le0,\\\\\ny/i,&0<y<i,\\\\\n1,&y\\ge i.\n\\end{cases}\n\\]\n按公共分段点 \\(0,1,2\\) 合并：\n\\[\nF_Y(y)=\n\\begin{cases}\n0,&y\\le0,\\\\\n\\frac12y+\\frac12\\frac y2=\\frac{3y}{4},&0<y<1,\\\\\n\\frac12+\\frac12\\frac y2=\\frac12+\\frac y4,&1\\le y<2,\\\\\n1,&y\\ge2.\n\\end{cases}\n\\]\n再用全期望公式\n\\[\nE(Y)=\\sum_{i=1}^2P(X=i)E(Y\\mid X=i)\n=\\frac12\\cdot\\frac12+\\frac12\\cdot1=\\frac34.\n\\]\n\n检测1中\n\\[\nP(1<Y\\le2)=\\frac13\\cdot0+\\frac23\\cdot\\frac{2-1}{3}=\\frac29.\n\\]\n检测2中\n\\[\nP(1<Y\\le3)=\\frac14\\cdot\\frac{2-1}{2}+\\frac34\\cdot\\frac{3-1}{4}\n=\\frac12.\n\\]",
+      "errorCause": "把 \\(Y\\mid X=i\\) 的各个条件分布当成互不相关的答案，没有用全概率公式恢复 \\(Y\\) 的无条件分布；计算区间概率时又把\n\\[\nP(Y\\le2\\mid X=3)=\\frac23\n\\]\n误当成\n\\[\nP(1<Y\\le2\\mid X=3)=\\frac{2-1}{3}=\\frac13,\n\\]\n混淆累计区间长度与目标区间长度。",
       "knowledgePoints": [
         "条件均匀分布",
         "全概率公式",
@@ -18921,7 +18957,19 @@
         "exam-2014-math1-20261027"
       ],
       "answerVerification": "根据所录题干独立推导；尚未与官方答案核对。",
-      "reviewFocus": "分段点来自两个条件区间 (0,1),(0,2) 的端点；在每段分别写条件概率后按权重 1/2 相加，而不是只看某个 i。"
+      "reviewFocus": "卡壳位置：不知道不同 \\(i\\) 的条件分布为何要“连起来”，并在均匀分布中用终点长度代替区间长度。第一步先写目标是无条件概率还是条件概率；若条件变量未给定，就按 \\(X\\) 的所有取值用全概率公式加权。正确突破口：均匀分布 \\(U(0,i)\\) 在区间 \\((a,b]\\subset(0,i)\\) 上的概率是 \\((b-a)/i\\)。考场信号：题干出现“给定 \\(X=i\\) 时 \\(Y\\) 的分布”，而问题只问 \\(Y\\)，立即想到混合分布/全概率。易错点：重叠区间的密度贡献要相加；不能把 \\(P(Y\\le b)\\) 与 \\(P(a<Y\\le b)\\) 混用。防卡方法：先画各条件支持区间并标出所有端点，再逐段写加权和。",
+      "errorCauseEvidence": "用户明确追问‘为什么i不同情况需要连起来’；检测1选择D=4/9，正确为B=2/9；检测2选择C=1/2正确，但该题两支条件概率都为1/2，不能单凭结果确认已完全掌握。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-27",
+          "sourceLabel": "2014数一第22题复练与检测",
+          "verification": "依据原题讲解、用户两次选择及批改结果核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-28-v1"
+      ]
     },
     {
       "id": "exam-2014-math1-q23",
@@ -18986,11 +19034,63 @@
       ],
       "answerVerification": "根据所录题干独立推导；尚未与官方答案核对。",
       "reviewFocus": "先求密度，再看 x²/θ 的结构令 T=X²，能同时简化矩与似然；最后用样本均值依概率收敛来认出一致估计。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础概念题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-28-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261028-calc-max-directional-derivative-gradient",
+      "subject": "高等数学",
+      "chapter": 6,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2026-10-28 对话 · 最大方向导数",
+      "questionType": "概念题",
+      "mistakeType": "知识点不熟 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "方向导数",
+        "梯度",
+        "最大方向导数",
+        "最速上升方向",
+        "单位向量"
+      ],
+      "note": "用户直接询问“最大方向导数是什么”，未给出作答；按知识点不熟记录，不标记为计算错误。",
+      "stem": "设函数 \\(f(x,y)\\) 在点 \\(P\\) 可微。\n\n(1) 写出 \\(f\\) 在 \\(P\\) 处沿单位向量 \\(\\boldsymbol u\\) 的方向导数，并说明最大方向导数及其取得方向；\n\n(2) 对\n\\[\nf(x,y)=x^2+xy+y^2,\n\\]\n求其在点 \\(P(1,2)\\) 处的最大方向导数及对应的单位方向向量。",
+      "options": [],
+      "answer": "(1)\n\\[\nD_{\\boldsymbol u}f(P)=\\nabla f(P)\\cdot\\boldsymbol u,\n\\qquad\n\\max_{\\|\\boldsymbol u\\|=1}D_{\\boldsymbol u}f(P)=\\|\\nabla f(P)\\|,\n\\]\n最大值在梯度方向取得。\n\n(2)\n\\[\n\\nabla f(1,2)=(4,5),\n\\]\n故最大方向导数为\n\\[\n\\sqrt{41},\n\\]\n对应单位方向向量为\n\\[\n\\left(\\frac4{\\sqrt{41}},\\frac5{\\sqrt{41}}\\right).\n\\]",
+      "analysis": "对任意单位向量 \\(\\boldsymbol u\\)，设它与梯度 \\(\\nabla f(P)\\) 的夹角为 \\(\\theta\\)，则\n\\[\nD_{\\boldsymbol u}f(P)\n=\\nabla f(P)\\cdot\\boldsymbol u\n=\\|\\nabla f(P)\\|\\cos\\theta.\n\\]\n因为 \\(-1\\le\\cos\\theta\\le1\\)，所以当 \\(\\theta=0\\) 时取得最大值\n\\[\n\\|\\nabla f(P)\\|,\n\\]\n方向是梯度的单位方向\n\\[\n\\boldsymbol u_{\\max}=\\frac{\\nabla f(P)}{\\|\\nabla f(P)\\|}.\n\\]\n当 \\(\\theta=\\pi\\) 时取得最小值 \\(-\\|\\nabla f(P)\\|\\)，即最速下降方向为 \\(-\\nabla f(P)\\)。\n\n本题\n\\[\nf_x=2x+y,\\qquad f_y=x+2y,\n\\]\n故\n\\[\n\\nabla f(1,2)=(4,5),\n\\]\n结论如答案。",
+      "errorCause": "对“方向导数是一个给定方向上的变化率”和“最大方向导数是对所有单位方向取最大值”之间的关系不熟；容易把最大值 \\(\\|\\nabla f\\|\\) 与取得最大值的方向向量 \\(\\nabla f/\\|\\nabla f\\|\\) 混为一谈。",
+      "knowledgePoints": [
+        "方向导数",
+        "梯度",
+        "柯西—施瓦茨不等式",
+        "最速上升方向",
+        "单位方向向量"
+      ],
+      "similarQuestionPrompt": "设 \\(f(x,y,z)\\) 在点 \\(P\\) 的梯度为 \\((a,b,c)\\)。分别求最大、最小方向导数及对应单位方向；再给定一个非单位向量，计算沿该向量方向的方向导数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-28",
+          "sourceLabel": "最大方向导数概念追问",
+          "verification": "依据用户问题、梯度点积公式与例题核对"
+        }
+      ],
+      "answerVerification": "由梯度点积公式及柯西—施瓦茨不等式推导，并代入例题直接复核",
+      "errorCauseEvidence": "用户直接询问‘最大方向导数是什么’，显示该概念尚未形成稳定记忆；当次未提交检测题答案。",
+      "reviewFocus": "卡壳位置：不知道“最大”是对什么取最大，也容易把数值和方向混为一谈。第一步强制写\n\\[\nD_{\\boldsymbol u}f=\\nabla f\\cdot\\boldsymbol u,\\qquad \\|\\boldsymbol u\\|=1.\n\\]\n正确突破口：点积等于 \\(\\|\\nabla f\\|\\cos\\theta\\)，因此同向最大、反向最小。考场信号：题目问“最大变化率/增长最快方向”，立即求梯度。易错点：最大方向导数是标量 \\(\\|\\nabla f\\|\\)；对应方向必须单位化。防卡方法：答案固定分两行写“最大值”和“单位方向”，不要只写梯度向量。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -19011,7 +19111,8 @@
     "daily-2026-10-21-v1",
     "daily-2026-10-22-v1",
     "daily-2026-10-23-v1",
-    "daily-2026-10-27-v1"
+    "daily-2026-10-27-v1",
+    "daily-2026-10-28-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
