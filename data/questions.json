@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 409,
+  "count": 411,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -21344,7 +21344,7 @@
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "考研真题难度",
-      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "mistakeType": "思路卡壳 / 边界或范围判断困难 / 知识点不熟",
       "tags": [
         "2015年数学一",
         "考研真题",
@@ -21353,14 +21353,14 @@
         "四面体",
         "重心法"
       ],
-      "note": "2015年数学一原卷标注81/150分；本题扣4分。具体错误步骤未附。",
+      "note": "用户追问“二重积分的面积”，说明会利用四面体对称性，但对固定一个变量后剩余二重积分代表截面积尚未形成稳定几何解释。",
       "sourceRef": "2015年全国硕士研究生招生考试数学（一）第12题",
       "questionType": "填空题",
       "stem": "\\(\\Omega\\) 是平面 \\(x+y+z=1\\) 与三个坐标平面围成的空间区域。求 \\(\\displaystyle \\iiint_\\Omega(x+2y+3z)\\,dx\\,dy\\,dz\\)。",
       "options": [],
       "answer": "\\(\\frac14\\)",
-      "analysis": "\\(\\Omega\\) 为第一卦限四面体，体积\\(1/6\\)，重心\\((1/4,1/4,1/4)\\)。线性函数体积平均等于重心处函数值，故\\(I=(1/6)(6/4)=1/4\\)。",
-      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "analysis": "区域\n\\[\n\\Omega=\\{(x,y,z):x,y,z\\ge0,\\ x+y+z\\le1\\}\n\\]\n关于 \\(x,y,z\\) 完全对称，因此\n\\[\n\\iiint_\\Omega x\\,dV\n=\\iiint_\\Omega y\\,dV\n=\\iiint_\\Omega z\\,dV.\n\\]\n故\n\\[\nI=\\iiint_\\Omega(x+2y+3z)\\,dV\n=6\\iiint_\\Omega x\\,dV.\n\\]\n\n固定 \\(x\\in[0,1]\\) 后，\\(yz\\) 平面内的截面为\n\\[\nD_x=\\{(y,z):y\\ge0,\\ z\\ge0,\\ y+z\\le1-x\\},\n\\]\n它是两条直角边均为 \\(1-x\\) 的直角三角形。于是\n\\[\n\\iint_{D_x}dy\\,dz\n=\\iint_{D_x}1\\,dy\\,dz\n=S(D_x)=\\frac{(1-x)^2}{2}.\n\\]\n这里二重积分等于面积，是因为被积函数就是 \\(1\\)：每个微小面积元 \\(dy\\,dz\\) 累加起来正好得到截面面积。\n\n因此\n\\[\nI=6\\int_0^1x\\left[\\iint_{D_x}dy\\,dz\\right]dx\n=3\\int_0^1x(1-x)^2\\,dx\n=\\frac14.\n\\]\n\n也可用形心法复核：标准四面体体积为 \\(1/6\\)，形心为\n\\[\n\\left(\\frac14,\\frac14,\\frac14\\right),\n\\]\n故\n\\[\nI=\\frac16\\left(\\frac14+2\\cdot\\frac14+3\\cdot\\frac14\\right)=\\frac14.\n\\]",
+      "errorCause": "没有把\n\\[\n\\iint_{D_x}dy\\,dz=\\iint_{D_x}1\\,dy\\,dz\n\\]\n理解为固定 \\(x\\) 后截面 \\(D_x\\) 的面积；对“外层变量决定截面、内层二重积分累加面积元”的降维含义不熟，因而看见截面法时不知道 \\((1-x)^2/2\\) 从何而来。",
       "knowledgePoints": [
         "三重积分",
         "四面体",
@@ -21405,7 +21405,19 @@
         "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
-      "reviewFocus": "看到线性函数在标准四面体上积分，先写体积与重心，必要时用三次积分验算。"
+      "reviewFocus": "卡壳位置：能写出三重积分，却不理解固定 \\(x\\) 后为什么出现一个二重积分。第一步先画截面：\\(y,z\\ge0,\\ y+z\\le1-x\\)。正确突破口：\\(\\iint_D1\\,dA=\\text{区域面积}\\)，所以内层积分就是截面积。考场信号：被积函数只含外层变量 \\(x\\) 时，可先把内层积分替换为截面积 \\(S(x)\\)。易错点：截面的直角边是 \\(1-x\\)，面积为 \\((1-x)^2/2\\)，不能写成 \\(1-x\\)。防卡方法：每次截面法先写“固定谁—截面在哪个平面—边界是什么—面积是多少”四行。",
+      "errorCauseEvidence": "用户在完整解答后单独追问“二重积分的面积”，表明卡点不是最终计算，而是截面二重积分的几何意义。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "2015数一第12题截面法追问",
+          "verification": "依据三重积分讲解与用户‘二重积分的面积’追问核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ]
     },
     {
       "id": "exam-2015-math1-q13",
@@ -21925,6 +21937,114 @@
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "最大似然不能只求导；先写所有样本满足θ≤min Xi的支持集约束，再看边界。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研典型题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261029-prob-uncorrelated-nonlinear-dependence",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "sourceRef": "2026-10-29 对话 · 随机变量不相关检测",
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "协方差",
+        "不相关",
+        "独立性",
+        "标准正态矩",
+        "非线性相关"
+      ],
+      "note": "用户首道检测选A，误以为不相关可以推出独立；进阶题选择C正确，已能展开协方差并求参数，但仍需强化“函数关系意味着不独立”的判断。",
+      "stem": "设 \\(X\\sim N(0,1)\\)。\n\n(1) 令\n\\[\nY=X^2+aX.\n\\]\n求 \\(X\\) 与 \\(Y\\) 不相关时的 \\(a\\)，并判断此时 \\(X,Y\\) 是否独立。\n\n(2) 令\n\\[\nY=X^2+aX,\\qquad Z=X^2-aX.\n\\]\n求 \\(Y,Z\\) 不相关时的 \\(a\\)，并判断此时 \\(Y,Z\\) 是否独立。",
+      "options": [],
+      "answer": "(1)\n\\[\na=0,\n\\]\n此时 \\(X,Y\\) 不相关但不独立。\n\n(2)\n\\[\na=\\pm\\sqrt2,\n\\]\n此时 \\(Y,Z\\) 不相关但不独立。",
+      "analysis": "标准正态变量满足\n\\[\nE(X)=E(X^3)=0,\\qquad E(X^2)=1,\\qquad E(X^4)=3.\n\\]\n\n(1)\n\\[\n\\operatorname{Cov}(X,Y)\n=\\operatorname{Cov}(X,X^2+aX)\n=\\operatorname{Cov}(X,X^2)+aD(X).\n\\]\n其中\n\\[\n\\operatorname{Cov}(X,X^2)=E(X^3)-E(X)E(X^2)=0,\n\\]\n且 \\(D(X)=1\\)，故\n\\[\n\\operatorname{Cov}(X,Y)=a.\n\\]\n所以不相关当且仅当 \\(a=0\\)。此时 \\(Y=X^2\\)，\\(Y\\) 完全由 \\(X\\) 决定，显然不独立。\n\n(2)\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(Y,Z)\n&=\\operatorname{Cov}(X^2+aX,X^2-aX)\\\\\n&=D(X^2)-a^2D(X),\n\\end{aligned}\n\\]\n因为两个交叉协方差相消。又\n\\[\nD(X^2)=E(X^4)-[E(X^2)]^2=3-1=2,\n\\]\n所以\n\\[\n\\operatorname{Cov}(Y,Z)=2-a^2.\n\\]\n令其为0，得\n\\[\na=\\pm\\sqrt2.\n\\]\n但\n\\[\nY+Z=2X^2,\\qquad Y-Z=2aX,\n\\]\n从而\n\\[\n(Y-Z)^2=2a^2(Y+Z).\n\\]\n二者满足确定的非线性关系，故不独立。",
+      "errorCause": "把“不相关”理解成“没有任何关系”，从而误认为 \\(\\operatorname{Cov}=0\\) 可以推出独立；没有区分“协方差只检测线性关系”和“独立排除全部统计依赖”。首题在 \\(a=0\\) 时忽略了 \\(Y=X^2\\) 这一确定函数关系。",
+      "knowledgePoints": [
+        "协方差",
+        "不相关",
+        "独立性",
+        "标准正态分布的矩",
+        "协方差双线性",
+        "函数关系"
+      ],
+      "similarQuestionPrompt": "设 \\(X\\sim N(0,1)\\)，\\(Y=X^2+bX+c\\)。求 \\(b\\) 使 \\(X,Y\\) 不相关，并说明为何任何常数 \\(c\\) 都不能使 \\(X\\) 与 \\(Y\\) 独立。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "不相关概念与两轮检测",
+          "verification": "依据用户首题选择A、进阶题选择C及逐题批改核对"
+        }
+      ],
+      "answerVerification": "分别直接展开协方差，并用确定函数关系/支持集关系否定独立性",
+      "errorCauseEvidence": "用户首道检测选择A，正确答案要求a=0且不独立；进阶题选择C正确，得到a=±√2。",
+      "reviewFocus": "卡壳位置：算出协方差为0后就停止，默认不相关等于独立。第一步固定写定义\n\\[\n\\operatorname{Cov}(X,Y)=0.\n\\]\n正确突破口：算完参数后必须再单独检查是否存在 \\(Y=g(X)\\) 或其他确定关系。考场信号：一个变量由另一个变量的平方、绝对值等非线性函数构成，常见结论就是“不相关但不独立”。易错点：只有独立且二阶矩存在时必不相关；反向一般不成立，联合正态是重要例外。防卡方法：把结论分成两问作答——先用协方差判不相关，再用联合分布或函数关系判独立。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研典型题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261029-calc-paraboloid-flux-normal-symmetry",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-29 对话 · 抛物面第二类曲面积分",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 计算错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲面积分",
+        "通量",
+        "法向量分量顺序",
+        "投影法",
+        "奇偶对称性",
+        "高斯公式"
+      ],
+      "note": "用户把相对于(x,y,z)的法向量分量顺序写成(2x,2z,1)，并继续追问奇函数项为什么在圆域上积分为0。",
+      "stem": "设 \\(S\\) 为抛物面\n\\[\ny=4-x^2-z^2,\\qquad x^2+z^2\\le4\n\\]\n的曲面部分，取所围立体的外侧。计算\n\\[\nI=\\iint_S yz\\,dy\\,dz\n+(x^2+z^2)y\\,dz\\,dx\n+xy\\,dx\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=\\frac{32\\pi}{3}.\n\\]",
+      "analysis": "把曲面写成\n\\[\nF(x,y,z)=x^2+y+z^2-4=0.\n\\]\n对于立体 \\(0\\le y\\le4-x^2-z^2\\)，曲面外侧法向量可取\n\\[\n\\nabla F=(2x,1,2z).\n\\]\n注意三个分量始终按 \\((x,y,z)\\) 排列，不能写成 \\((2x,2z,1)\\)。\n\n投影到 \\(xOz\\) 平面：\n\\[\nD:x^2+z^2\\le4,\\qquad y=4-x^2-z^2.\n\\]\n有向面积向量为\n\\[\n(2x,1,2z)\\,dx\\,dz.\n\\]\n令\n\\[\nP=yz,\\quad Q=(x^2+z^2)y,\\quad R=xy,\n\\]\n则\n\\[\n\\begin{aligned}\nI\n&=\\iint_D(2xP+Q+2zR)\\,dx\\,dz\\\\\n&=\\iint_D\\left[4xyz+(x^2+z^2)y\\right]dx\\,dz.\n\\end{aligned}\n\\]\n代入 \\(y=4-x^2-z^2\\)。第一项\n\\[\n4xz(4-x^2-z^2)\n\\]\n关于 \\(x\\) 为奇函数，而圆盘 \\(D\\) 关于 \\(x\\mapsto-x\\) 对称，所以其积分为0。于是\n\\[\nI=\\iint_D(x^2+z^2)(4-x^2-z^2)\\,dx\\,dz.\n\\]\n在 \\(xOz\\) 平面取极坐标 \\(x=r\\cos\\theta,z=r\\sin\\theta\\)，得\n\\[\nI=\\int_0^{2\\pi}\\int_0^2r^2(4-r^2)\\,r\\,dr\\,d\\theta\n=\\frac{32\\pi}{3}.\n\\]\n\n也可补上底面 \\(y=0\\) 后用高斯公式复核；底面通量为0，散度积分得到同一结果。",
+      "errorCause": "求隐式曲面法向量时把梯度的第二、第三分量按投影变量 \\((x,z)\\) 的顺序排列，写成 \\((2x,2z,1)\\)，混淆了坐标顺序；化为二重积分后又不能判断含 \\(xz\\) 的项为何因圆域对称而为0。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "梯度法向量",
+        "投影公式",
+        "有向面积元",
+        "奇函数对称性",
+        "极坐标",
+        "高斯公式"
+      ],
+      "similarQuestionPrompt": "将曲面改为 \\(y=a^2-x^2-z^2\\)，被积向量场改为 \\((yz,(x^2+z^2)y,xy)\\)。求外侧通量，并分别用投影法与高斯补面法验证。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "抛物面通量订正",
+          "verification": "依据用户法向量手写、投影计算与‘怎么理解’追问核对"
+        }
+      ],
+      "answerVerification": "投影法直接计算，并用补底面后的高斯公式独立复核",
+      "errorCauseEvidence": "用户把法向量写成(2x,2z,1)，正确为(2x,1,2z)；随后追问4xz(4-x²-z²)在圆域上积分为0的原因。",
+      "reviewFocus": "卡壳位置：曲面投影到 \\(xOz\\) 平面后，就把法向量分量也按 \\((x,z,y)\\) 重排。第一步无论投影到哪个平面，都先按固定坐标顺序写 \\(\\nabla F=(F_x,F_y,F_z)\\)。正确突破口：外侧法向量的 \\(y\\) 分量应为正；再点乘向量场。考场信号：第二类曲面积分写成 \\(P\\,dy\\,dz+Q\\,dz\\,dx+R\\,dx\\,dy\\)，就是向量场 \\((P,Q,R)\\) 的通量。易错点：被积函数奇并不够，积分域也必须关于相应变量对称。防卡方法：使用对称性前写出变换 \\((x,z)\\mapsto(-x,z)\\)，核对区域不变且函数变号。"
     }
   ],
   "schemaVersion": 2,
@@ -21951,7 +22071,8 @@
     "daily-2026-10-22-v1",
     "daily-2026-10-23-v1",
     "daily-2026-10-27-v1",
-    "daily-2026-10-28-v1"
+    "daily-2026-10-28-v1",
+    "daily-2026-10-29-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
