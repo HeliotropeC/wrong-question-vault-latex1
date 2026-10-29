@@ -7421,10 +7421,23 @@
             2
           ],
           "recordScope": "历史原题已有第(1)问，本次补全第(2)问"
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 6,
+          "recordScope": "原题全文，第(1)问划线",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "lostPoints": 6,
       "maxPoints": 11,
@@ -21226,13 +21239,26 @@
           "printedPage": 26,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 1,
+          "pdfPage": 1,
+          "printedPage": 26,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "图形原题及图形文字描述",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 4,
       "maxPoints": 4,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "先把f''图像划分为正负区间，检查零点是否变号、以及f连续但f''可能不存在的点。"
@@ -21284,13 +21310,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 9,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 4,
       "maxPoints": 4,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "套用外层对数展开前，先确认内层cos x-1是二阶小量。"
@@ -21344,13 +21383,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 4,
       "maxPoints": 4,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "看到线性函数在标准四面体上积分，先写体积与重心，必要时用三次积分验算。"
@@ -21404,13 +21456,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 4,
       "maxPoints": 4,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "观察首行只有两个非零项，余子式符号要与下三角项相互抵消，先验算n=2、n=3。"
@@ -21464,13 +21529,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 4,
       "maxPoints": 10,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "等价于kx³要求消除更低次项，并保留三次项；展开至少到x³，不能只展开一两项。"
@@ -21524,13 +21602,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 10,
       "maxPoints": 10,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "每点最大方向导数是梯度模；转成约束曲线上的函数最大值，优先用x+y降维。"
@@ -21584,13 +21675,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 10,
       "maxPoints": 10,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "题目要求用定义，不能直接引用待证法则；先补减中间乘积，后一问用归纳法证明一般n项。"
@@ -21646,13 +21750,26 @@
           "printedPage": 27,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 10,
       "maxPoints": 10,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "先用z=x消掉一个微分并简化被积项，再取椭圆参数，严格按A→B设置参数范围。"
@@ -21708,13 +21825,26 @@
           "printedPage": 28,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [],
       "lostPoints": 10,
       "maxPoints": 11,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "出现“两个基下坐标相同”立刻写变换矩阵T和(T−I)c=0，不能把两组基的向量直接相等。"
@@ -21770,6 +21900,18 @@
           "printedPage": 28,
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
           "scoreDeduction": 3
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文，第(2)问标记",
+          "deductionCertainty": "红笔标有明确扣分数字"
         }
       ],
       "wrongSubquestions": [
@@ -21778,7 +21920,8 @@
       "lostPoints": 3,
       "maxPoints": 11,
       "examImportBatches": [
-        "exam-2015-math1-20261029"
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
       ],
       "answerVerification": "按照原卷题干独立推导核对",
       "reviewFocus": "最大似然不能只求导；先写所有样本满足θ≤min Xi的支持集约束，再看边界。"
@@ -21815,7 +21958,8 @@
     "exam-2010-math1-20261014",
     "exam-2014-math1-20261027",
     "exam-2011-2013-math1-upload-20261029",
-    "exam-2015-math1-20261029"
+    "exam-2015-math1-20261029",
+    "exam-2015-math1-upload-20261029-file7"
   ],
   "examImportAudits": [
     {
