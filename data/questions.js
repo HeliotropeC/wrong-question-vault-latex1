@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 368,
+  "count": 411,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -7367,21 +7367,25 @@ window.WRONG_QUESTIONS = {
         "历史对话导入",
         "指数分布",
         "负二项分布",
-        "停止试验"
+        "停止试验",
+        "2015年数学一",
+        "原卷红笔错题",
+        "负二项分布期望"
       ],
-      "note": "",
+      "note": "；2015数学一第22题扣6分；原题与历史记录去重后补充第(2)问。",
       "questionType": "计算题",
-      "stem": "随机变量 \\(X\\) 的概率密度为 \\[f(x)=\\begin{cases}2^{-x}\\ln2,&x>0,\\\\0,&\\text{其他}.\\end{cases}\\] 对 \\(X\\) 作独立重复观测，直到第 \\(2\\) 次出现观测值大于 \\(3\\) 时停止。以 \\(Y\\) 表示总观测次数，求 \\(Y\\) 的分布律。",
+      "stem": "随机变量 \\(X\\) 的概率密度为 \\[f(x)=\\begin{cases}2^{-x}\\ln2,&x>0,\\\\0,&\\text{其他}.\\end{cases}\\] 对 \\(X\\) 作独立重复观测，直到第 \\(2\\) 次出现观测值大于 \\(3\\) 时停止。以 \\(Y\\) 表示总观测次数，求 \\(Y\\) 的分布律。\n\n(2) 求 \\(E(Y)\\)。",
       "options": [],
       "knowledgePoints": [
         "随机变量及其分布",
         "指数分布尾概率",
-        "负二项分布"
+        "负二项分布",
+        "负二项分布期望"
       ],
-      "answer": "\\(P(Y=k)=\\binom{k-1}{1}\\left(\\frac18\\right)^2\\left(\\frac78\\right)^{k-2},\\quad k=2,3,\\ldots\\)。",
-      "analysis": "单次成功概率 \\(p=P(X>3)=\\int_3^\\infty2^{-x}\\ln2\\,\\mathrm dx=2^{-3}=\\frac18\\)。事件 \\(Y=k\\) 要求前 \\(k-1\\) 次中恰有一次成功且第 \\(k\\) 次成功，因此概率为 \\(\\binom{k-1}{1}p(1-p)^{k-2}p\\)。",
+      "answer": "\\(P(Y=k)=\\binom{k-1}{1}\\left(\\frac18\\right)^2\\left(\\frac78\\right)^{k-2},\\quad k=2,3,\\ldots\\)。\n\n(2) \\(E(Y)=16\\)。",
+      "analysis": "单次成功概率 \\(p=P(X>3)=\\int_3^\\infty2^{-x}\\ln2\\,\\mathrm dx=2^{-3}=\\frac18\\)。事件 \\(Y=k\\) 要求前 \\(k-1\\) 次中恰有一次成功且第 \\(k\\) 次成功，因此概率为 \\(\\binom{k-1}{1}p(1-p)^{k-2}p\\)。\n\n对取得第2次成功时的总试验次数Y，E(Y)=2/p=16。",
       "errorCause": "",
-      "reviewFocus": "停止时刻的最后一次必须成功，组合位置只在前 \\(k-1\\) 次中选择。",
+      "reviewFocus": "停止时刻的最后一次必须成功，组合位置只在前 \\(k-1\\) 次中选择。；补练第(2)问E(Y)=r/p。",
       "similarQuestionPrompt": "更换指数分布参数、阈值和目标成功次数，生成一道停止试验的负二项分布题。",
       "transcriptionStatus": "verified",
       "historySources": [
@@ -7398,7 +7402,49 @@ window.WRONG_QUESTIONS = {
         "history-2026-09-22-complete-search-v1"
       ],
       "contentFingerprint": "6a1efc52909cff75171c044f362c2e1411479020a7dc80c3da9f18953eccd573",
-      "questionNo": 9
+      "questionNo": 22,
+      "originalQuestionNo": 9,
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "sourceCategory": "考研真题",
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 6,
+          "wrongSubquestions": [
+            1,
+            2
+          ],
+          "recordScope": "历史原题已有第(1)问，本次补全第(2)问"
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 6,
+          "recordScope": "原题全文，第(1)问划线",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "lostPoints": 6,
+      "maxPoints": 11,
+      "wrongSubquestions": [
+        1,
+        2
+      ]
     },
     {
       "id": "hist-20260922-prob-symmetric-density",
@@ -19086,11 +19132,2924 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "由梯度点积公式及柯西—施瓦茨不等式推导，并代入例题直接复核",
       "errorCauseEvidence": "用户直接询问‘最大方向导数是什么’，显示该概念尚未形成稳定记忆；当次未提交检测题答案。",
       "reviewFocus": "卡壳位置：不知道“最大”是对什么取最大，也容易把数值和方向混为一谈。第一步强制写\n\\[\nD_{\\boldsymbol u}f=\\nabla f\\cdot\\boldsymbol u,\\qquad \\|\\boldsymbol u\\|=1.\n\\]\n正确突破口：点积等于 \\(\\|\\nabla f\\|\\cos\\theta\\)，因此同向最大、反向最小。考场信号：题目问“最大变化率/增长最快方向”，立即求梯度。易错点：最大方向导数是标量 \\(\\|\\nabla f\\|\\)；对应方向必须单位化。防卡方法：答案固定分两行写“最大值”和“单位方向”，不要只写梯度向量。"
+    },
+    {
+      "id": "exam-2011-math1-q07",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "sourceRef": "2011年数学一第7题（本次上传PDF第1页）",
+      "questionNo": 7,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "分布函数",
+        "概率密度",
+        "分布函数乘积求导",
+        "概率密度归一化"
+      ],
+      "note": "原试卷红笔圈题，但没有单题明确扣分数字；保留错题标记，不推断实际扣分。",
+      "stem": "设 \\(F_1(x)\\) 与 \\(F_2(x)\\) 为两个分布函数，相应的概率密度 \\(f_1(x)\\) 与 \\(f_2(x)\\) 是连续函数，则必为概率密度的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f_1(x)f_2(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2f_2(x)F_1(x)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(f_1(x)F_2(x)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(f_1(x)F_2(x)+f_2(x)F_1(x)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "分布函数",
+        "概率密度",
+        "分布函数乘积求导",
+        "概率密度归一化"
+      ],
+      "similarQuestionPrompt": "围绕“分布函数、概率密度、分布函数乘积求导”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 7,
+          "pdfPage": 1,
+          "printedPage": 14,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q09",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourceRef": "2011年数学一第9题（本次上传PDF第1页）",
+      "questionNo": 9,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "曲线弧长",
+        "变上限积分求导",
+        "三角恒等变换"
+      ],
+      "note": "原试卷红笔圈题，但没有单题明确扣分数字；保留错题标记，不推断实际扣分。",
+      "stem": "曲线 \\(y=\\displaystyle\\int_0^x\\tan t\\,dt\\;(0\\le x\\le\\pi/4)\\) 的弧长 \\(s=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "曲线弧长",
+        "变上限积分求导",
+        "三角恒等变换"
+      ],
+      "similarQuestionPrompt": "围绕“曲线弧长、变上限积分求导、三角恒等变换”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 9,
+          "pdfPage": 1,
+          "printedPage": 14,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q12",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2011年数学一第12题（本次上传PDF第2页）",
+      "questionNo": 12,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "第二类曲线积分",
+        "斯托克斯公式",
+        "空间曲线方向",
+        "曲面定向"
+      ],
+      "note": "原试卷红笔圈题，但没有单题明确扣分数字；保留错题标记，不推断实际扣分。",
+      "stem": "设 \\(L\\) 是柱面 \\(x^2+y^2=1\\) 与平面 \\(z=x+y\\) 的交线，从 \\(z\\) 轴正向往 \\(z\\) 轴负向看去为逆时针方向，则曲线积分 \\(\\displaystyle\\oint_L xz\\,dx+x\\,dy+\\frac{y^2}{2}\\,dz=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "斯托克斯公式",
+        "空间曲线方向",
+        "曲面定向"
+      ],
+      "similarQuestionPrompt": "围绕“第二类曲线积分、斯托克斯公式、空间曲线方向”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 15,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q13",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "sourceRef": "2011年数学一第13题（本次上传PDF第2页）",
+      "questionNo": 13,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "二次型矩阵",
+        "正交变换",
+        "特征值",
+        "二次曲面标准形"
+      ],
+      "note": "原试卷红笔圈题，但没有单题明确扣分数字；保留错题标记，不推断实际扣分。",
+      "stem": "若二次曲面的方程 \\(x^2+3y^2+z^2+2axy+2xz+2yz=4\\) 经正交变换化为 \\(y_1^2+4z_1^2=4\\)，则 \\(a=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二次型矩阵",
+        "正交变换",
+        "特征值",
+        "二次曲面标准形"
+      ],
+      "similarQuestionPrompt": "围绕“二次型矩阵、正交变换、特征值”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 2,
+          "printedPage": 15,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q15",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourceRef": "2011年数学一第15题（本次上传PDF第2页）",
+      "questionNo": 15,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "幂指函数极限",
+        "对数变换",
+        "泰勒展开",
+        "无穷小"
+      ],
+      "note": "原试卷红笔标记，标注扣5分。具体出错步骤尚未复盘。",
+      "stem": "求极限 \\(\\displaystyle\\lim_{x\\to0}\\left|\\frac{\\ln(1+x)}{x}\\right|^{\\frac{1}{e^x-1}}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "幂指函数极限",
+        "对数变换",
+        "泰勒展开",
+        "无穷小"
+      ],
+      "similarQuestionPrompt": "围绕“幂指函数极限、对数变换、泰勒展开”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": 5,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 15,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 5,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分值"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q17",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourceRef": "2011年数学一第17题（本次上传PDF第2页）",
+      "questionNo": 17,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "含参数方程根的个数",
+        "导数与单调性",
+        "函数图像",
+        "临界参数"
+      ],
+      "note": "原试卷红笔标记，标注扣3分。具体出错步骤尚未复盘。",
+      "stem": "求方程 \\(k\\arctan x-x=0\\) 不同实根的个数，其中 \\(k\\) 为参数。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "含参数方程根的个数",
+        "导数与单调性",
+        "函数图像",
+        "临界参数"
+      ],
+      "similarQuestionPrompt": "围绕“含参数方程根的个数、导数与单调性、函数图像”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": 3,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 15,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分值"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q19",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2011年数学一第19题（本次上传PDF第2页）",
+      "questionNo": 19,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "二重积分",
+        "分部积分",
+        "二阶混合偏导数",
+        "边界条件"
+      ],
+      "note": "原试卷红笔标记，标注扣7分。具体出错步骤尚未复盘。",
+      "stem": "已知函数 \\(f(x,y)\\) 具有二阶连续偏导数，且 \\(f(1,y)=0\\)，\\(f(x,1)=0\\)，\\(\\displaystyle\\iint_D f(x,y)\\,dx\\,dy=a\\)，其中 \\(D=\\{(x,y)\\mid0\\le x\\le1,\\;0\\le y\\le1\\}\\)。计算二重积分 \\(\\displaystyle I=\\iint_D xyf''_{xy}(x,y)\\,dx\\,dy\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二重积分",
+        "分部积分",
+        "二阶混合偏导数",
+        "边界条件"
+      ],
+      "similarQuestionPrompt": "围绕“二重积分、分部积分、二阶混合偏导数”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": 7,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 15,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 7,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分值"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "sourceRef": "2011年数学一第22题（本次上传PDF第3页）",
+      "questionNo": 22,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "二维离散型随机变量",
+        "联合概率分布",
+        "随机变量函数分布",
+        "相关系数",
+        "条件约束"
+      ],
+      "note": "原试卷红笔标记，标注扣7分。具体出错步骤尚未复盘。",
+      "stem": "设随机变量 \\(X\\) 的分布为 \\(P(X=0)=1/3,\\;P(X=1)=2/3\\)，随机变量 \\(Y\\) 的分布为 \\(P(Y=-1)=P(Y=0)=P(Y=1)=1/3\\)，且 \\(P\\{X^2=Y^2\\}=1\\)。\n\n(1) 求二维随机变量 \\((X,Y)\\) 的概率分布；\n\n(2) 求 \\(Z=XY\\) 的概率分布；\n\n(3) 求 \\(X\\) 与 \\(Y\\) 的相关系数 \\(\\rho_{XY}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二维离散型随机变量",
+        "联合概率分布",
+        "随机变量函数分布",
+        "相关系数",
+        "条件约束"
+      ],
+      "similarQuestionPrompt": "围绕“二维离散型随机变量、联合概率分布、随机变量函数分布”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": 7,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 16,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 7,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分值"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2011-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourceRef": "2011年数学一第23题（本次上传PDF第3页）",
+      "questionNo": 23,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2011年",
+        "数学一",
+        "红笔标记",
+        "正态总体参数估计",
+        "最大似然估计",
+        "估计量期望",
+        "估计量方差",
+        "卡方分布"
+      ],
+      "note": "原试卷红笔标记，标注扣6分。具体出错步骤尚未复盘。",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\) 为来自正态总体 \\(N(\\mu_0,\\sigma^2)\\) 的简单随机样本，其中 \\(\\mu_0\\) 已知、\\(\\sigma^2>0\\) 未知，\\(\\overline X\\) 和 \\(S^2\\) 分别表示样本均值和样本方差。\n\n(1) 求参数 \\(\\sigma^2\\) 的最大似然估计 \\(\\widehat{\\sigma}^2\\)；\n\n(2) 计算 \\(E(\\widehat{\\sigma}^2)\\) 和 \\(D(\\widehat{\\sigma}^2)\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "正态总体参数估计",
+        "最大似然估计",
+        "估计量期望",
+        "估计量方差",
+        "卡方分布"
+      ],
+      "similarQuestionPrompt": "围绕“正态总体参数估计、最大似然估计、估计量期望”设计一道略高于2011年数学一原题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [
+        2
+      ],
+      "reviewFocus": "此题属于红笔标记的失分题。复习时先独立列出起步依据、方法选择和易错环节，再对照标准解答判定具体错因。",
+      "examYear": 2011,
+      "examPaper": "数学一",
+      "lostPoints": 6,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2011,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 16,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 6,
+          "recordScope": "原题全文，标注第(2)问失分",
+          "deductionCertainty": "红笔有明确扣分值"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q03",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2012年数学一第3题（本次上传PDF第4页）",
+      "questionNo": 3,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "多元函数可微",
+        "连续与可微",
+        "多元极限",
+        "充分条件和必要条件"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "如果函数 \\(f(x,y)\\) 在点 \\((0,0)\\) 处连续，那么下列命题正确的是（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "若极限 \\(\\displaystyle\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{|x|+|y|}\\) 存在，则 \\(f(x,y)\\) 在点 \\((0,0)\\) 处可微"
+        },
+        {
+          "label": "B",
+          "text": "若极限 \\(\\displaystyle\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{x^2+y^2}\\) 存在，则 \\(f(x,y)\\) 在点 \\((0,0)\\) 处可微"
+        },
+        {
+          "label": "C",
+          "text": "若 \\(f(x,y)\\) 在点 \\((0,0)\\) 处可微，则极限 \\(\\displaystyle\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{|x|+|y|}\\) 存在"
+        },
+        {
+          "label": "D",
+          "text": "若 \\(f(x,y)\\) 在点 \\((0,0)\\) 处可微，则极限 \\(\\displaystyle\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{x^2+y^2}\\) 存在"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数可微",
+        "连续与可微",
+        "多元极限",
+        "充分条件和必要条件"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数可微、连续与可微、多元极限”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 3,
+          "pdfPage": 4,
+          "printedPage": 17,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q06",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "sourceRef": "2012年数学一第6题（本次上传PDF第4页）",
+      "questionNo": 6,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "相似对角化",
+        "特征向量线性组合",
+        "重特征值",
+        "过渡矩阵"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "设 \\(A\\) 为3阶矩阵，\\(P\\) 为3阶可逆矩阵，且 \\(P^{-1}AP=\\mathrm{diag}(1,1,2)\\)。若 \\(P=(\\alpha_1,\\alpha_2,\\alpha_3)\\)，\\(Q=(\\alpha_1+\\alpha_2,\\alpha_2,\\alpha_3)\\)，则 \\(Q^{-1}AQ=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathrm{diag}(1,2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathrm{diag}(1,1,2)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\mathrm{diag}(2,1,2)\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\mathrm{diag}(2,2,1)\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "相似对角化",
+        "特征向量线性组合",
+        "重特征值",
+        "过渡矩阵"
+      ],
+      "similarQuestionPrompt": "围绕“相似对角化、特征向量线性组合、重特征值”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 6,
+          "pdfPage": 4,
+          "printedPage": 17,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q07",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "sourceRef": "2012年数学一第7题（本次上传PDF第4页）",
+      "questionNo": 7,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "指数分布",
+        "独立性",
+        "二维随机变量概率",
+        "积分区域"
+      ],
+      "note": "原试卷红笔标记，标注扣4分；具体错因待复盘。",
+      "stem": "设随机变量 \\(X\\) 与 \\(Y\\) 相互独立，且分别服从参数为1与参数为4的指数分布，则 \\(P\\{X<Y\\}=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac13\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac23\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(\\frac45\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "指数分布",
+        "独立性",
+        "二维随机变量概率",
+        "积分区域"
+      ],
+      "similarQuestionPrompt": "围绕“指数分布、独立性、二维随机变量概率”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 7,
+          "pdfPage": 4,
+          "printedPage": 17,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q11",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2012年数学一第11题（本次上传PDF第5页）",
+      "questionNo": 11,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "梯度",
+        "多元偏导数",
+        "梯度向量表示"
+      ],
+      "note": "原试卷红笔标记，标注扣4分；具体错因待复盘。",
+      "stem": "\\(\\displaystyle\\mathrm{grad}\\left(xy+\\frac{z}{y}\\right)\\bigg|_{(2,1,1)}=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "梯度",
+        "多元偏导数",
+        "梯度向量表示"
+      ],
+      "similarQuestionPrompt": "围绕“梯度、多元偏导数、梯度向量表示”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 11,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q16",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2012年数学一第16题（本次上传PDF第5页）",
+      "questionNo": 16,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "多元函数极值",
+        "驻点",
+        "二阶偏导数",
+        "Hessian判别"
+      ],
+      "note": "原试卷红笔标记，标注扣6分；具体错因待复盘。",
+      "stem": "求函数 \\(\\displaystyle f(x,y)=xe^{-\\frac{x^2+y^2}{2}}\\) 的极值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数极值",
+        "驻点",
+        "二阶偏导数",
+        "Hessian判别"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数极值、驻点、二阶偏导数”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 6,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 6,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q17",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2012年数学一第17题（本次上传PDF第5页）",
+      "questionNo": 17,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "幂级数收敛域",
+        "逐项求导与积分",
+        "幂级数和函数",
+        "端点敛散性"
+      ],
+      "note": "原试卷红笔标记，标注扣5分；具体错因待复盘。",
+      "stem": "求幂级数 \\(\\displaystyle\\sum_{n=0}^{\\infty}\\frac{4n^2+4n+3}{2n+1}x^{2n}\\) 的收敛域及和函数。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "幂级数收敛域",
+        "逐项求导与积分",
+        "幂级数和函数",
+        "端点敛散性"
+      ],
+      "similarQuestionPrompt": "围绕“幂级数收敛域、逐项求导与积分、幂级数和函数”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 5,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 5,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q18",
+      "subject": "高等数学",
+      "chapter": 10,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourceRef": "2012年数学一第18题（本次上传PDF第5页）",
+      "questionNo": 18,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "参数曲线切线",
+        "切线截距",
+        "弧长与几何约束",
+        "参数曲线围成面积"
+      ],
+      "note": "原试卷红笔标记，标注扣3分；具体错因待复盘。",
+      "stem": "已知曲线 \\(L:\\begin{cases}x=f(t),\\\\y=\\cos t\\end{cases}\\;(0\\le t<\\pi/2)\\)，其中函数 \\(f(t)\\) 具有连续导数，且 \\(f(0)=0\\)，\\(f'(t)>0\\;(0<t<\\pi/2)\\)。若曲线 \\(L\\) 的切线与 \\(x\\) 轴的交点到切点的距离恒为1，求函数 \\(f(t)\\) 的表达式，并求以曲线 \\(L\\)、\\(x\\) 轴和 \\(y\\) 轴为边界的区域的面积。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "参数曲线切线",
+        "切线截距",
+        "弧长与几何约束",
+        "参数曲线围成面积"
+      ],
+      "similarQuestionPrompt": "围绕“参数曲线切线、切线截距、弧长与几何约束”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 3,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2012年数学一第19题（本次上传PDF第5页）",
+      "questionNo": 19,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "第二类曲线积分",
+        "格林公式",
+        "补线法",
+        "开放曲线路径"
+      ],
+      "note": "原试卷红笔标记，标注扣10分；具体错因待复盘。",
+      "stem": "已知 \\(L\\) 是第一象限中从点 \\((0,0)\\) 沿圆周 \\(x^2+y^2=2x\\) 到点 \\((2,0)\\)，再沿圆周 \\(x^2+y^2=4\\) 到点 \\((0,2)\\) 的曲线段，计算曲线积分 \\(\\displaystyle I=\\int_L 3x^2y\\,dx+(x^3+x-2y)\\,dy\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "格林公式",
+        "补线法",
+        "开放曲线路径"
+      ],
+      "similarQuestionPrompt": "围绕“第二类曲线积分、格林公式、补线法”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q20",
+      "subject": "线性代数",
+      "chapter": 4,
+      "chapterTitle": "线性方程组",
+      "sourceRef": "2012年数学一第20题（本次上传PDF第5页）",
+      "questionNo": 20,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "含参数行列式",
+        "矩阵秩",
+        "非齐次线性方程组",
+        "无穷多解条件",
+        "基础解系"
+      ],
+      "note": "原试卷红笔标记，标注扣7分；具体错因待复盘。",
+      "stem": "设 \\(\\displaystyle A=\\begin{pmatrix}1&a&0&0\\\\0&1&a&0\\\\0&0&1&a\\\\a&0&0&1\\end{pmatrix}\\)，\\(\\displaystyle\\beta=\\begin{pmatrix}1\\\\-1\\\\0\\\\0\\end{pmatrix}\\)。\n\n(1) 计算行列式 \\(|A|\\)；\n\n(2) 当实数 \\(a\\) 为何值时，方程组 \\(Ax=\\beta\\) 有无穷多解，并求其通解。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "含参数行列式",
+        "矩阵秩",
+        "非齐次线性方程组",
+        "无穷多解条件",
+        "基础解系"
+      ],
+      "similarQuestionPrompt": "围绕“含参数行列式、矩阵秩、非齐次线性方程组”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [
+        2
+      ],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 7,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 5,
+          "printedPage": 18,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 7,
+          "recordScope": "原题全文，第2问圈题",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2012-math1-q21",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "sourceRef": "2012年数学一第21题（本次上传PDF第6页）",
+      "questionNo": 21,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2012年",
+        "数学一",
+        "红笔标记",
+        "二次型秩",
+        "矩阵乘积A转置A",
+        "正交对角化",
+        "实对称矩阵特征值",
+        "特征向量正交化"
+      ],
+      "note": "原试卷红笔标记，标注扣11分；具体错因待复盘。",
+      "stem": "已知 \\(\\displaystyle A=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&a\\\\0&a&-1\\end{pmatrix}\\)，二次型 \\(f(x_1,x_2,x_3)=x^T(A^TA)x\\) 的秩为2。\n\n(1) 求实数 \\(a\\) 的值；\n\n(2) 求正交变换 \\(x=Qy\\) 将二次型 \\(f\\) 化为标准形。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二次型秩",
+        "矩阵乘积A转置A",
+        "正交对角化",
+        "实对称矩阵特征值",
+        "特征向量正交化"
+      ],
+      "similarQuestionPrompt": "围绕“二次型秩、矩阵乘积A转置A、正交对角化”设计一道略高于2012年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2012,
+      "examPaper": "数学一",
+      "lostPoints": 11,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2012,
+          "paper": "数学一",
+          "questionNo": 21,
+          "pdfPage": 6,
+          "printedPage": 19,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 11,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q03",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2013年数学一第3题（本次上传PDF第7页）",
+      "questionNo": 3,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "傅里叶正弦级数",
+        "周期延拓",
+        "奇延拓",
+        "狄利克雷收敛定理"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "设 \\(f(x)=\\left|x-\\frac12\\right|\\)，\\(\\displaystyle b_n=2\\int_0^1f(x)\\sin(n\\pi x)\\,dx\\;(n=1,2,\\ldots)\\)。令 \\(\\displaystyle S(x)=\\sum_{n=1}^{\\infty}b_n\\sin(n\\pi x)\\)，则 \\(S\\left(-\\frac94\\right)=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac34\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac14\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-\\frac14\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(-\\frac34\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "傅里叶正弦级数",
+        "周期延拓",
+        "奇延拓",
+        "狄利克雷收敛定理"
+      ],
+      "similarQuestionPrompt": "围绕“傅里叶正弦级数、周期延拓、奇延拓”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 3,
+          "pdfPage": 7,
+          "printedPage": 20,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q04",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2013年数学一第4题（本次上传PDF第7页）",
+      "questionNo": 4,
+      "questionType": "选择题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "格林公式",
+        "第二类曲线积分",
+        "不同积分区域比较",
+        "对称性"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "设 \\(L_1:x^2+y^2=1\\)，\\(L_2:x^2+y^2=2\\)，\\(L_3:x^2+2y^2=2\\)，\\(L_4:2x^2+y^2=2\\)，为四条逆时针方向的平面曲线。记 \\(\\displaystyle I_i=\\oint_{L_i}\\left(y+\\frac{y^3}{6}\\right)dx+\\left(2x-\\frac{x^3}{3}\\right)dy\\;(i=1,2,3,4)\\)，则 \\(\\max\\{I_1,I_2,I_3,I_4\\}=\\)（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I_1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I_2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(I_3\\)"
+        },
+        {
+          "label": "D",
+          "text": "\\(I_4\\)"
+        }
+      ],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "格林公式",
+        "第二类曲线积分",
+        "不同积分区域比较",
+        "对称性"
+      ],
+      "similarQuestionPrompt": "围绕“格林公式、第二类曲线积分、不同积分区域比较”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 4,
+          "pdfPage": 7,
+          "printedPage": 20,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q09",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourceRef": "2013年数学一第9题（本次上传PDF第7页）",
+      "questionNo": 9,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "隐函数求导",
+        "导数定义",
+        "数列极限",
+        "复合函数"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "设函数 \\(y=f(x)\\) 由方程 \\(y-x=e^{x(1-y)}\\) 确定，则 \\(\\displaystyle\\lim_{n\\to\\infty}n\\left[f\\left(\\frac1n\\right)-1\\right]=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "隐函数求导",
+        "导数定义",
+        "数列极限",
+        "复合函数"
+      ],
+      "similarQuestionPrompt": "围绕“隐函数求导、导数定义、数列极限”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 9,
+          "pdfPage": 7,
+          "printedPage": 20,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q10",
+      "subject": "高等数学",
+      "chapter": 15,
+      "chapterTitle": "微分方程",
+      "sourceRef": "2013年数学一第10题（本次上传PDF第8页）",
+      "questionNo": 10,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "二阶线性非齐次微分方程",
+        "通解结构",
+        "齐次解与特解",
+        "线性组合"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "已知 \\(y_1=e^{3x}-xe^{2x}\\)、\\(y_2=e^x-xe^{2x}\\)、\\(y_3=-xe^{2x}\\) 是某二阶常系数非齐次线性微分方程的3个解，则该方程的通解为 \\(y=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "二阶线性非齐次微分方程",
+        "通解结构",
+        "齐次解与特解",
+        "线性组合"
+      ],
+      "similarQuestionPrompt": "围绕“二阶线性非齐次微分方程、通解结构、齐次解与特解”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 10,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q13",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵",
+      "sourceRef": "2013年数学一第13题（本次上传PDF第8页）",
+      "questionNo": 13,
+      "questionType": "填空题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "红笔圈题 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "伴随矩阵",
+        "代数余子式",
+        "矩阵行列式",
+        "矩阵恒等式"
+      ],
+      "note": "原试卷红笔圈题，未看到明确单题扣分数；不推断实际扣分。",
+      "stem": "设 \\(A=(a_{ij})\\) 是3阶非零矩阵，\\(|A|\\) 为 \\(A\\) 的行列式，\\(A_{ij}\\) 为 \\(a_{ij}\\) 的代数余子式。若 \\(a_{ij}+A_{ij}=0\\;(i,j=1,2,3)\\)，则 \\(|A|=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "伴随矩阵",
+        "代数余子式",
+        "矩阵行列式",
+        "矩阵恒等式"
+      ],
+      "similarQuestionPrompt": "围绕“伴随矩阵、代数余子式、矩阵行列式”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔圈题，无单题扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q15",
+      "subject": "高等数学",
+      "chapter": 8,
+      "chapterTitle": "一元函数积分学的概念与性质",
+      "sourceRef": "2013年数学一第15题（本次上传PDF第8页）",
+      "questionNo": 15,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "累次积分交换次序",
+        "反常积分",
+        "变上限积分",
+        "定积分计算"
+      ],
+      "note": "原试卷红笔标记，标注扣5分；具体错因待复盘。",
+      "stem": "计算 \\(\\displaystyle\\int_0^1\\frac{f(x)}{\\sqrt{x}}\\,dx\\)，其中 \\(\\displaystyle f(x)=\\int_1^x\\frac{\\ln(t+1)}{t}\\,dt\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "累次积分交换次序",
+        "反常积分",
+        "变上限积分",
+        "定积分计算"
+      ],
+      "similarQuestionPrompt": "围绕“累次积分交换次序、反常积分、变上限积分”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 5,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 5,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q16",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2013年数学一第16题（本次上传PDF第8页）",
+      "questionNo": 16,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "幂级数系数递推",
+        "生成函数",
+        "逐项求导",
+        "微分方程初值问题"
+      ],
+      "note": "原试卷红笔标记，标注扣10分；具体错因待复盘。",
+      "stem": "设数列 \\(\\{a_n\\}\\) 满足条件 \\(a_0=3\\)，\\(a_1=1\\)，\\(a_{n-2}-n(n-1)a_n=0\\;(n\\ge2)\\)，\\(S(x)\\) 是幂级数 \\(\\displaystyle\\sum_{n=0}^{\\infty}a_nx^n\\) 的和函数。\n\n(1) 证明 \\(S''(x)-S(x)=0\\)；\n\n(2) 求 \\(S(x)\\) 的表达式。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "幂级数系数递推",
+        "生成函数",
+        "逐项求导",
+        "微分方程初值问题"
+      ],
+      "similarQuestionPrompt": "围绕“幂级数系数递推、生成函数、逐项求导”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 16,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q17",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2013年数学一第17题（本次上传PDF第8页）",
+      "questionNo": 17,
+      "questionType": "计算题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "多元函数极值",
+        "驻点",
+        "Hessian判别",
+        "指数函数求偏导"
+      ],
+      "note": "原试卷红笔标记，标注扣5分；具体错因待复盘。",
+      "stem": "求函数 \\(\\displaystyle f(x,y)=\\left(y+\\frac{x^3}{3}\\right)e^{x+y}\\) 的极值。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "多元函数极值",
+        "驻点",
+        "Hessian判别",
+        "指数函数求偏导"
+      ],
+      "similarQuestionPrompt": "围绕“多元函数极值、驻点、Hessian判别”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 5,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 5,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q19",
+      "subject": "高等数学",
+      "chapter": 11,
+      "chapterTitle": "一元函数积分学的应用（一）—几何应用",
+      "sourceRef": "2013年数学一第19题（本次上传PDF第8页）",
+      "questionNo": 19,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "旋转曲面方程",
+        "旋转体",
+        "形心",
+        "三重积分",
+        "柱坐标"
+      ],
+      "note": "原试卷红笔标记，标注扣8分；具体错因待复盘。",
+      "stem": "设直线 \\(L\\) 过 \\(A(1,0,0)\\)、\\(B(0,1,1)\\) 两点，将 \\(L\\) 绕 \\(z\\) 轴旋转一周得到曲面 \\(\\Sigma\\)，\\(\\Sigma\\) 与平面 \\(z=0\\)、\\(z=2\\) 所围成的立体为 \\(\\Omega\\)。\n\n(1) 求曲面 \\(\\Sigma\\) 的方程；\n\n(2) 求 \\(\\Omega\\) 的形心坐标。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "旋转曲面方程",
+        "旋转体",
+        "形心",
+        "三重积分",
+        "柱坐标"
+      ],
+      "similarQuestionPrompt": "围绕“旋转曲面方程、旋转体、形心”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 8,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 8,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q20",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵",
+      "sourceRef": "2013年数学一第20题（本次上传PDF第8页）",
+      "questionNo": 20,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "矩阵方程",
+        "交换子",
+        "线性方程组",
+        "参数取值",
+        "通解"
+      ],
+      "note": "原试卷红笔标记，标注扣3分；具体错因待复盘。",
+      "stem": "设 \\(\\displaystyle A=\\begin{pmatrix}1&a\\\\1&0\\end{pmatrix}\\)，\\(\\displaystyle B=\\begin{pmatrix}0&1\\\\1&b\\end{pmatrix}\\)。当 \\(a,b\\) 为何值时，存在矩阵 \\(C\\) 使得 \\(AC-CA=B\\)，并求所有矩阵 \\(C\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "矩阵方程",
+        "交换子",
+        "线性方程组",
+        "参数取值",
+        "通解"
+      ],
+      "similarQuestionPrompt": "围绕“矩阵方程、交换子、线性方程组”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 3,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 8,
+          "printedPage": 21,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q21",
+      "subject": "线性代数",
+      "chapter": 6,
+      "chapterTitle": "二次型",
+      "sourceRef": "2013年数学一第21题（本次上传PDF第9页）",
+      "questionNo": 21,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "秩一矩阵",
+        "二次型矩阵",
+        "正交相似对角化",
+        "特征值",
+        "标准形"
+      ],
+      "note": "原试卷红笔标记，标注扣3分；具体错因待复盘。",
+      "stem": "设二次型 \\(\\displaystyle f(x_1,x_2,x_3)=2(a_1x_1+a_2x_2+a_3x_3)^2+(b_1x_1+b_2x_2+b_3x_3)^2\\)，记 \\(\\alpha=(a_1,a_2,a_3)^T\\)，\\(\\beta=(b_1,b_2,b_3)^T\\)。\n\n(1) 证明二次型 \\(f\\) 对应的矩阵为 \\(2\\alpha\\alpha^T+\\beta\\beta^T\\)；\n\n(2) 若 \\(\\alpha,\\beta\\) 正交且均为单位向量，证明 \\(f\\) 在正交变换下的标准形为 \\(2y_1^2+y_2^2\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "秩一矩阵",
+        "二次型矩阵",
+        "正交相似对角化",
+        "特征值",
+        "标准形"
+      ],
+      "similarQuestionPrompt": "围绕“秩一矩阵、二次型矩阵、正交相似对角化”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 3,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 21,
+          "pdfPage": 9,
+          "printedPage": 22,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2013-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "sourceRef": "2013年数学一第22题（本次上传PDF第9页）",
+      "questionNo": 22,
+      "questionType": "综合题",
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "考研真题",
+        "2013年",
+        "数学一",
+        "红笔标记",
+        "随机变量函数的分布",
+        "离散连续混合分布",
+        "分布函数",
+        "分段区间",
+        "事件概率"
+      ],
+      "note": "原试卷红笔标记，标注扣7分；具体错因待复盘。",
+      "stem": "设随机变量 \\(X\\) 的概率密度为 \\(\\displaystyle f(x)=\\begin{cases}\\frac19x^2,&0<x<3,\\\\0,&\\text{其他},\\end{cases}\\) 令随机变量 \\(\\displaystyle Y=\\begin{cases}2,&X\\le1,\\\\X,&1<X<2,\\\\1,&X\\ge2.\\end{cases}\\)\n\n(1) 求 \\(Y\\) 的分布函数；\n\n(2) 求概率 \\(P\\{X\\le Y\\}\\)。",
+      "options": [],
+      "answer": "",
+      "analysis": "",
+      "errorCause": "",
+      "knowledgePoints": [
+        "随机变量函数的分布",
+        "离散连续混合分布",
+        "分布函数",
+        "分段区间",
+        "事件概率"
+      ],
+      "similarQuestionPrompt": "围绕“随机变量函数的分布、离散连续混合分布、分布函数”设计一道略高于2013年数学一真题难度的同型题，保留原题设问方式，附解答。",
+      "transcriptionStatus": "verified",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "红笔标记的错题；复习时先独立列出起步依据、方法选择和计算步骤，再对照标准解答定位具体原因。",
+      "examYear": 2013,
+      "examPaper": "数学一",
+      "lostPoints": 7,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2013,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 9,
+          "printedPage": 22,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(4).pdf",
+          "uploadFileId": "file_00000000aebc81fa9274b31c6146e998",
+          "scoreDeduction": 7,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔有明确扣分数字"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2011-2013-math1-upload-20261029"
+      ]
+    },
+    {
+      "id": "exam-2015-math1-q01",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用",
+      "sourcePage": 1,
+      "printedPage": 26,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "拐点",
+        "二阶导数符号",
+        "凹凸性"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣4分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第1题",
+      "questionType": "选择题",
+      "stem": "设函数 \\(f(x)\\) 在 \\((−\\infty,+\\infty)\\) 上连续，其二阶导函数 \\(f''(x)\\) 的图形如2015年数学一第1题图所示。图中左侧曲线在负半轴与横轴相切（两侧均在横轴上方），\\(x=0\\) 左右二阶导数符号由正转负，右侧曲线在正半轴穿过横轴由负转正。曲线 \\(y=f(x)\\) 的拐点数为（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C（2个）",
+      "analysis": "数二阶导数变号的位置，而不是数零点。负半轴切触横轴处不变号，不是拐点；0处两侧凹凸性发生变化，正半轴穿过横轴处再变化一次，共2个。原试题以图片为准。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "拐点",
+        "二阶导数符号",
+        "凹凸性"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第1题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 1,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 1,
+          "pdfPage": 1,
+          "printedPage": 26,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 1,
+          "pdfPage": 1,
+          "printedPage": 26,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "图形原题及图形文字描述",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "先把f''图像划分为正负区间，检查零点是否变号、以及f连续但f''可能不存在的点。"
+    },
+    {
+      "id": "exam-2015-math1-q09",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "泰勒展开",
+        "等价无穷小"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣4分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第9题",
+      "questionType": "填空题",
+      "stem": "求 \\(\\displaystyle \\lim_{x\\to0}\\frac{\\ln(\\cos x)}{x^2}\\)。",
+      "options": [],
+      "answer": "\\(-\\frac12\\)",
+      "analysis": "\\(\\cos x=1-\\frac{x^2}2+o(x^2)\\)，\\(\\ln(1+t)\\sim t\\)，所以\\(\\ln(\\cos x)=-\\frac{x^2}2+o(x^2)\\)。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "泰勒展开",
+        "等价无穷小"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第9题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 9,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 9,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 9,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "套用外层对数展开前，先确认内层cos x-1是二阶小量。"
+    },
+    {
+      "id": "exam-2015-math1-q12",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "三重积分",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "思路卡壳 / 边界或范围判断困难 / 知识点不熟",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "三重积分",
+        "四面体",
+        "重心法"
+      ],
+      "note": "用户追问“二重积分的面积”，说明会利用四面体对称性，但对固定一个变量后剩余二重积分代表截面积尚未形成稳定几何解释。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第12题",
+      "questionType": "填空题",
+      "stem": "\\(\\Omega\\) 是平面 \\(x+y+z=1\\) 与三个坐标平面围成的空间区域。求 \\(\\displaystyle \\iiint_\\Omega(x+2y+3z)\\,dx\\,dy\\,dz\\)。",
+      "options": [],
+      "answer": "\\(\\frac14\\)",
+      "analysis": "区域\n\\[\n\\Omega=\\{(x,y,z):x,y,z\\ge0,\\ x+y+z\\le1\\}\n\\]\n关于 \\(x,y,z\\) 完全对称，因此\n\\[\n\\iiint_\\Omega x\\,dV\n=\\iiint_\\Omega y\\,dV\n=\\iiint_\\Omega z\\,dV.\n\\]\n故\n\\[\nI=\\iiint_\\Omega(x+2y+3z)\\,dV\n=6\\iiint_\\Omega x\\,dV.\n\\]\n\n固定 \\(x\\in[0,1]\\) 后，\\(yz\\) 平面内的截面为\n\\[\nD_x=\\{(y,z):y\\ge0,\\ z\\ge0,\\ y+z\\le1-x\\},\n\\]\n它是两条直角边均为 \\(1-x\\) 的直角三角形。于是\n\\[\n\\iint_{D_x}dy\\,dz\n=\\iint_{D_x}1\\,dy\\,dz\n=S(D_x)=\\frac{(1-x)^2}{2}.\n\\]\n这里二重积分等于面积，是因为被积函数就是 \\(1\\)：每个微小面积元 \\(dy\\,dz\\) 累加起来正好得到截面面积。\n\n因此\n\\[\nI=6\\int_0^1x\\left[\\iint_{D_x}dy\\,dz\\right]dx\n=3\\int_0^1x(1-x)^2\\,dx\n=\\frac14.\n\\]\n\n也可用形心法复核：标准四面体体积为 \\(1/6\\)，形心为\n\\[\n\\left(\\frac14,\\frac14,\\frac14\\right),\n\\]\n故\n\\[\nI=\\frac16\\left(\\frac14+2\\cdot\\frac14+3\\cdot\\frac14\\right)=\\frac14.\n\\]",
+      "errorCause": "没有把\n\\[\n\\iint_{D_x}dy\\,dz=\\iint_{D_x}1\\,dy\\,dz\n\\]\n理解为固定 \\(x\\) 后截面 \\(D_x\\) 的面积；对“外层变量决定截面、内层二重积分累加面积元”的降维含义不熟，因而看见截面法时不知道 \\((1-x)^2/2\\) 从何而来。",
+      "knowledgePoints": [
+        "三重积分",
+        "四面体",
+        "重心法"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第12题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 12,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "卡壳位置：能写出三重积分，却不理解固定 \\(x\\) 后为什么出现一个二重积分。第一步先画截面：\\(y,z\\ge0,\\ y+z\\le1-x\\)。正确突破口：\\(\\iint_D1\\,dA=\\text{区域面积}\\)，所以内层积分就是截面积。考场信号：被积函数只含外层变量 \\(x\\) 时，可先把内层积分替换为截面积 \\(S(x)\\)。易错点：截面的直角边是 \\(1-x\\)，面积为 \\((1-x)^2/2\\)，不能写成 \\(1-x\\)。防卡方法：每次截面法先写“固定谁—截面在哪个平面—边界是什么—面积是多少”四行。",
+      "errorCauseEvidence": "用户在完整解答后单独追问“二重积分的面积”，表明卡点不是最终计算，而是截面二重积分的几何意义。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "2015数一第12题截面法追问",
+          "verification": "依据三重积分讲解与用户‘二重积分的面积’追问核对"
+        }
+      ],
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ]
+    },
+    {
+      "id": "exam-2015-math1-q13",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "行列式",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "n阶行列式",
+        "递推",
+        "按行展开"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣4分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第13题",
+      "questionType": "填空题",
+      "stem": "计算n阶行列式\\[D_n=\\begin{vmatrix}2&0&\\cdots&0&2\\\\-1&2&\\cdots&0&2\\\\\\vdots&\\vdots&\\ddots&\\vdots&\\vdots\\\\0&0&\\cdots&2&2\\\\0&0&\\cdots&-1&2\\end{vmatrix}.\\]前n−1列为主对角元2、下邻对角元−1的下双对角结构；最后一列全部为2。",
+      "options": [],
+      "answer": "\\(2^{n+1}-2\\)",
+      "analysis": "沿首行展开得到递推\\(D_n=2D_{n-1}+2\\)，初值\\(D_2=6\\)。解递推得\\(D_n=2^{n+1}-2\\)。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "n阶行列式",
+        "递推",
+        "按行展开"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第13题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 13,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "圈题及卷面总扣16分合计判断为每题4分"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 4,
+      "maxPoints": 4,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "观察首行只有两个非零项，余子式符号要与下三角项相互抵消，先验算n=2、n=3。"
+    },
+    {
+      "id": "exam-2015-math1-q15",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "等价无穷小",
+        "泰勒展开",
+        "待定系数"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣4分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第15题",
+      "questionType": "计算题",
+      "stem": "设\\(f(x)=x+a\\ln(1+x)+bx\\sin x\\)，\\(g(x)=kx^3\\)。若\\(f(x)\\)与\\(g(x)\\)在\\(x\\to0\\)时是等价无穷小，求\\(a,b,k\\)的值。",
+      "options": [],
+      "answer": "\\(a=-1,\\ b=-\\frac12,\\ k=-\\frac13\\)",
+      "analysis": "展开\\(f(x)=(1+a)x+(b-a/2)x^2+(a/3)x^3+O(x^4)\\)。为与\\(kx^3\\)等价，令一次、二次项系数为零，三次项系数等于k，得所求。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "等价无穷小",
+        "泰勒展开",
+        "待定系数"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第15题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 15,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 4
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 4,
+      "maxPoints": 10,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "等价于kx³要求消除更低次项，并保留三次项；展开至少到x³，不能只展开一两项。"
+    },
+    {
+      "id": "exam-2015-math1-q17",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "梯度",
+        "最大方向导数",
+        "约束极值"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣10分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第17题",
+      "questionType": "计算题",
+      "stem": "已知函数\\(f(x,y)=x+y+xy\\)，曲线\\(C:x^2+y^2+xy=3\\)。求\\(f(x,y)\\)在曲线\\(C\\)上的最大方向导数。",
+      "options": [],
+      "answer": "\\(3\\)",
+      "analysis": "梯度\\(\\nabla f=(1+y,1+x)\\)。设\\(u=x+y\\)，因\\(x^2+y^2=6-u^2\\)，有\\(\\|\\nabla f\\|^2=2+2u+x^2+y^2=9-(u-1)^2\\le9\\)。在\\((2,-1)\\)或\\((-1,2)\\)取等号，故最大方向导数3。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "梯度",
+        "最大方向导数",
+        "约束极值"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第17题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 17,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "每点最大方向导数是梯度模；转成约束曲线上的函数最大值，优先用x+y降维。"
+    },
+    {
+      "id": "exam-2015-math1-q18",
+      "subject": "高等数学",
+      "chapter": 4,
+      "chapterTitle": "一元函数微分学的计算",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "导数定义",
+        "乘积求导法则",
+        "数学归纳法"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣10分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第18题",
+      "questionType": "证明题",
+      "stem": "(1) 设\\(u(x),v(x)\\)可导，利用导数定义证明\\([u(x)v(x)]'=u'(x)v(x)+u(x)v'(x)\\)。(2) 设\\(u_1,\\ldots,u_n\\)可导，\\(f(x)=u_1(x)\\cdots u_n(x)\\)，写出\\(f'(x)\\)的求导公式。",
+      "options": [],
+      "answer": "\\(f'(x)=\\sum_{i=1}^nu'_i(x)\\prod_{j\\ne i}u_j(x)\\)",
+      "analysis": "第(1)问用差商\\([u(x+h)v(x+h)-u(x)v(x)]/h\\)补减\\(u(x+h)v(x)\\)，拆成两项后令h→0，注意可导蕴含连续。第(2)问对因子的个数使用数学归纳法或连续套用已证乘积法则。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "导数定义",
+        "乘积求导法则",
+        "数学归纳法"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第18题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 18,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "题目要求用定义，不能直接引用待证法则；先补减中间乘积，后一问用归纳法证明一般n项。"
+    },
+    {
+      "id": "exam-2015-math1-q19",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourcePage": 2,
+      "printedPage": 27,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面全失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "第二类曲线积分",
+        "交线参数化",
+        "曲线方向",
+        "对称性"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣10分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第19题",
+      "questionType": "计算题",
+      "stem": "曲线\\(L\\)由\\(z=\\sqrt{2-x^2-y^2}\\)、\\(z=x\\)相交确定，起点\\(A(0,\\sqrt2,0)\\)，终点\\(B(0,-\\sqrt2,0)\\)。计算\\[I=\\int_L(y+z)\\,dx+(z^2-x^2+y)\\,dy+x^2y^2\\,dz.\\]",
+      "options": [],
+      "answer": "\\(\\frac\\pi{\\sqrt2}\\)",
+      "analysis": "由z=x且z≥0，得2x²+y²=2、dz=dx，并有z²−x²=0。积分化为\\(\\int_L(y+x+x^2y^2)dx+y\\,dy\\)。其中x dx+y dy为全微分，端点贡献为0。取x=cos t,y=√2 sin t，t从π/2到−π/2，则x²y² dx是对称奇项积分为0，而\\(\\int y\\,dx=\\pi/\\sqrt2\\)。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "交线参数化",
+        "曲线方向",
+        "对称性"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第19题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 19,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 27,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "先用z=x消掉一个微分并简化被积项，再取椭圆参数，严格按A→B设置参数范围。"
+    },
+    {
+      "id": "exam-2015-math1-q20",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "向量及其线性相关性",
+      "sourcePage": 3,
+      "printedPage": 28,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "过渡矩阵",
+        "基",
+        "坐标变换",
+        "特征值1"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣10分。具体错误步骤未附。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第20题",
+      "questionType": "证明题",
+      "stem": "设\\(\\alpha_1,\\alpha_2,\\alpha_3\\)为\\(\\mathbb R^3\\)的一个基，\\(\\beta_1=2\\alpha_1+2k\\alpha_3\\)，\\(\\beta_2=2\\alpha_2\\)，\\(\\beta_3=\\alpha_1+(k+1)\\alpha_3\\)。(1) 证明\\(\\beta_1,\\beta_2,\\beta_3\\)也是一个基；(2) 求使存在非零向量\\(\\xi\\)在基\\(\\alpha\\)和\\(\\beta\\)下坐标相同的k，并求所有\\(\\xi\\)。",
+      "options": [],
+      "answer": "(1) 任意k均为基；(2) \\(k=0\\)，\\(\\xi=t(\\alpha_3-\\alpha_1)\\)，\\(t\\ne0\\)。",
+      "analysis": "基变换矩阵\\(T=\\begin{pmatrix}2&0&1\\\\0&2&0\\\\2k&0&k+1\\end{pmatrix}\\)，det T=4非零。坐标相同意味着Tc=c且c非零，即\\((T-I)c=0\\)。方程为c1+c3=0,c2=0,2kc1+kc3=0，存在非零解当且仅当k=0。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "过渡矩阵",
+        "基",
+        "坐标变换",
+        "特征值1"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第20题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 20,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 10
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [],
+      "lostPoints": 10,
+      "maxPoints": 11,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "出现“两个基下坐标相同”立刻写变换矩阵T和(T−I)c=0，不能把两组基的向量直接相等。"
+    },
+    {
+      "id": "exam-2015-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": 3,
+      "printedPage": 28,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "考研真题难度",
+      "mistakeType": "卷面部分失分 / 具体原因待复盘",
+      "tags": [
+        "2015年数学一",
+        "考研真题",
+        "原卷红笔错题",
+        "矩估计",
+        "最大似然估计",
+        "参数依赖支持集",
+        "次序统计量"
+      ],
+      "note": "2015年数学一原卷标注81/150分；本题扣3分。具体错误步骤未附。原卷单独圈出第(2)问。",
+      "sourceRef": "2015年全国硕士研究生招生考试数学（一）第23题",
+      "questionType": "计算题",
+      "stem": "总体\\(X\\)的概率密度为\\[f(x;\\theta)=\\begin{cases}\\frac1{1-\\theta},&\\theta\\le x\\le1,\\\\0,&\\text{其他},\\end{cases}\\]其中\\(\\theta<1\\)为未知参数，\\(X_1,\\ldots,X_n\\)为简单随机样本。(1) 求\\(\\theta\\)的矩估计量；(2) 求\\(\\theta\\)的最大似然估计量。",
+      "options": [],
+      "answer": "(1) \\(2\\overline X-1\\)；(2) \\(X_{(1)}=\\min\\{X_1,\\ldots,X_n\\}\\)。",
+      "analysis": "\\(X\\sim U(\\theta,1)\\)，\\(E(X)=(\\theta+1)/2\\)，令其等于\\(\\bar X\\)得矩估计。似然\\(L(\\theta)=(1-\\theta)^{-n}\\mathbf1_{\\{\\theta\\le X_{(1)}\\}}\\)，在允许区间随θ增大而增大，故θ帽为样本最小值。",
+      "errorCause": "有批注扣分，但缺少用户原答案；具体计算失误或方法原因须通过复练定位。",
+      "knowledgePoints": [
+        "矩估计",
+        "最大似然估计",
+        "参数依赖支持集",
+        "次序统计量"
+      ],
+      "similarQuestionPrompt": "仿照2015年数学一第23题生成与真题同等或略高难度的变式，保持原题结构并给出LaTeX解析。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "已依据用户上传2015年数学一试卷页面目视转写；答案是独立推导，未与官方答案逐字比对。",
+      "sourceCategory": "考研真题",
+      "sourceType": "user-uploaded-annotated-exam",
+      "examYear": 2015,
+      "examPaper": "数学一",
+      "questionNo": 23,
+      "examSources": [
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+          "scoreDeduction": 3
+        },
+        {
+          "year": 2015,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 28,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(7).pdf",
+          "uploadFileId": "file_00000000f5a081fa8b79775324e0621a",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文，第(2)问标记",
+          "deductionCertainty": "红笔标有明确扣分数字"
+        }
+      ],
+      "wrongSubquestions": [
+        2
+      ],
+      "lostPoints": 3,
+      "maxPoints": 11,
+      "examImportBatches": [
+        "exam-2015-math1-20261029",
+        "exam-2015-math1-upload-20261029-file7"
+      ],
+      "answerVerification": "按照原卷题干独立推导核对",
+      "reviewFocus": "最大似然不能只求导；先写所有样本满足θ≤min Xi的支持集约束，再看边界。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研典型题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261029-prob-uncorrelated-nonlinear-dependence",
+      "subject": "概率论与数理统计",
+      "chapter": 4,
+      "chapterTitle": "随机变量的数字特征",
+      "sourceRef": "2026-10-29 对话 · 随机变量不相关检测",
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "协方差",
+        "不相关",
+        "独立性",
+        "标准正态矩",
+        "非线性相关"
+      ],
+      "note": "用户首道检测选A，误以为不相关可以推出独立；进阶题选择C正确，已能展开协方差并求参数，但仍需强化“函数关系意味着不独立”的判断。",
+      "stem": "设 \\(X\\sim N(0,1)\\)。\n\n(1) 令\n\\[\nY=X^2+aX.\n\\]\n求 \\(X\\) 与 \\(Y\\) 不相关时的 \\(a\\)，并判断此时 \\(X,Y\\) 是否独立。\n\n(2) 令\n\\[\nY=X^2+aX,\\qquad Z=X^2-aX.\n\\]\n求 \\(Y,Z\\) 不相关时的 \\(a\\)，并判断此时 \\(Y,Z\\) 是否独立。",
+      "options": [],
+      "answer": "(1)\n\\[\na=0,\n\\]\n此时 \\(X,Y\\) 不相关但不独立。\n\n(2)\n\\[\na=\\pm\\sqrt2,\n\\]\n此时 \\(Y,Z\\) 不相关但不独立。",
+      "analysis": "标准正态变量满足\n\\[\nE(X)=E(X^3)=0,\\qquad E(X^2)=1,\\qquad E(X^4)=3.\n\\]\n\n(1)\n\\[\n\\operatorname{Cov}(X,Y)\n=\\operatorname{Cov}(X,X^2+aX)\n=\\operatorname{Cov}(X,X^2)+aD(X).\n\\]\n其中\n\\[\n\\operatorname{Cov}(X,X^2)=E(X^3)-E(X)E(X^2)=0,\n\\]\n且 \\(D(X)=1\\)，故\n\\[\n\\operatorname{Cov}(X,Y)=a.\n\\]\n所以不相关当且仅当 \\(a=0\\)。此时 \\(Y=X^2\\)，\\(Y\\) 完全由 \\(X\\) 决定，显然不独立。\n\n(2)\n\\[\n\\begin{aligned}\n\\operatorname{Cov}(Y,Z)\n&=\\operatorname{Cov}(X^2+aX,X^2-aX)\\\\\n&=D(X^2)-a^2D(X),\n\\end{aligned}\n\\]\n因为两个交叉协方差相消。又\n\\[\nD(X^2)=E(X^4)-[E(X^2)]^2=3-1=2,\n\\]\n所以\n\\[\n\\operatorname{Cov}(Y,Z)=2-a^2.\n\\]\n令其为0，得\n\\[\na=\\pm\\sqrt2.\n\\]\n但\n\\[\nY+Z=2X^2,\\qquad Y-Z=2aX,\n\\]\n从而\n\\[\n(Y-Z)^2=2a^2(Y+Z).\n\\]\n二者满足确定的非线性关系，故不独立。",
+      "errorCause": "把“不相关”理解成“没有任何关系”，从而误认为 \\(\\operatorname{Cov}=0\\) 可以推出独立；没有区分“协方差只检测线性关系”和“独立排除全部统计依赖”。首题在 \\(a=0\\) 时忽略了 \\(Y=X^2\\) 这一确定函数关系。",
+      "knowledgePoints": [
+        "协方差",
+        "不相关",
+        "独立性",
+        "标准正态分布的矩",
+        "协方差双线性",
+        "函数关系"
+      ],
+      "similarQuestionPrompt": "设 \\(X\\sim N(0,1)\\)，\\(Y=X^2+bX+c\\)。求 \\(b\\) 使 \\(X,Y\\) 不相关，并说明为何任何常数 \\(c\\) 都不能使 \\(X\\) 与 \\(Y\\) 独立。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "不相关概念与两轮检测",
+          "verification": "依据用户首题选择A、进阶题选择C及逐题批改核对"
+        }
+      ],
+      "answerVerification": "分别直接展开协方差，并用确定函数关系/支持集关系否定独立性",
+      "errorCauseEvidence": "用户首道检测选择A，正确答案要求a=0且不独立；进阶题选择C正确，得到a=±√2。",
+      "reviewFocus": "卡壳位置：算出协方差为0后就停止，默认不相关等于独立。第一步固定写定义\n\\[\n\\operatorname{Cov}(X,Y)=0.\n\\]\n正确突破口：算完参数后必须再单独检查是否存在 \\(Y=g(X)\\) 或其他确定关系。考场信号：一个变量由另一个变量的平方、绝对值等非线性函数构成，常见结论就是“不相关但不独立”。易错点：只有独立且二阶矩存在时必不相关；反向一般不成立，联合正态是重要例外。防卡方法：把结论分成两问作答——先用协方差判不相关，再用联合分布或函数关系判独立。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研典型题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-10-29-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261029-calc-paraboloid-flux-normal-symmetry",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-10-29 对话 · 抛物面第二类曲面积分",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 计算错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲面积分",
+        "通量",
+        "法向量分量顺序",
+        "投影法",
+        "奇偶对称性",
+        "高斯公式"
+      ],
+      "note": "用户把相对于(x,y,z)的法向量分量顺序写成(2x,2z,1)，并继续追问奇函数项为什么在圆域上积分为0。",
+      "stem": "设 \\(S\\) 为抛物面\n\\[\ny=4-x^2-z^2,\\qquad x^2+z^2\\le4\n\\]\n的曲面部分，取所围立体的外侧。计算\n\\[\nI=\\iint_S yz\\,dy\\,dz\n+(x^2+z^2)y\\,dz\\,dx\n+xy\\,dx\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=\\frac{32\\pi}{3}.\n\\]",
+      "analysis": "把曲面写成\n\\[\nF(x,y,z)=x^2+y+z^2-4=0.\n\\]\n对于立体 \\(0\\le y\\le4-x^2-z^2\\)，曲面外侧法向量可取\n\\[\n\\nabla F=(2x,1,2z).\n\\]\n注意三个分量始终按 \\((x,y,z)\\) 排列，不能写成 \\((2x,2z,1)\\)。\n\n投影到 \\(xOz\\) 平面：\n\\[\nD:x^2+z^2\\le4,\\qquad y=4-x^2-z^2.\n\\]\n有向面积向量为\n\\[\n(2x,1,2z)\\,dx\\,dz.\n\\]\n令\n\\[\nP=yz,\\quad Q=(x^2+z^2)y,\\quad R=xy,\n\\]\n则\n\\[\n\\begin{aligned}\nI\n&=\\iint_D(2xP+Q+2zR)\\,dx\\,dz\\\\\n&=\\iint_D\\left[4xyz+(x^2+z^2)y\\right]dx\\,dz.\n\\end{aligned}\n\\]\n代入 \\(y=4-x^2-z^2\\)。第一项\n\\[\n4xz(4-x^2-z^2)\n\\]\n关于 \\(x\\) 为奇函数，而圆盘 \\(D\\) 关于 \\(x\\mapsto-x\\) 对称，所以其积分为0。于是\n\\[\nI=\\iint_D(x^2+z^2)(4-x^2-z^2)\\,dx\\,dz.\n\\]\n在 \\(xOz\\) 平面取极坐标 \\(x=r\\cos\\theta,z=r\\sin\\theta\\)，得\n\\[\nI=\\int_0^{2\\pi}\\int_0^2r^2(4-r^2)\\,r\\,dr\\,d\\theta\n=\\frac{32\\pi}{3}.\n\\]\n\n也可补上底面 \\(y=0\\) 后用高斯公式复核；底面通量为0，散度积分得到同一结果。",
+      "errorCause": "求隐式曲面法向量时把梯度的第二、第三分量按投影变量 \\((x,z)\\) 的顺序排列，写成 \\((2x,2z,1)\\)，混淆了坐标顺序；化为二重积分后又不能判断含 \\(xz\\) 的项为何因圆域对称而为0。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "梯度法向量",
+        "投影公式",
+        "有向面积元",
+        "奇函数对称性",
+        "极坐标",
+        "高斯公式"
+      ],
+      "similarQuestionPrompt": "将曲面改为 \\(y=a^2-x^2-z^2\\)，被积向量场改为 \\((yz,(x^2+z^2)y,xy)\\)。求外侧通量，并分别用投影法与高斯补面法验证。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-10-29",
+          "sourceLabel": "抛物面通量订正",
+          "verification": "依据用户法向量手写、投影计算与‘怎么理解’追问核对"
+        }
+      ],
+      "answerVerification": "投影法直接计算，并用补底面后的高斯公式独立复核",
+      "errorCauseEvidence": "用户把法向量写成(2x,2z,1)，正确为(2x,1,2z)；随后追问4xz(4-x²-z²)在圆域上积分为0的原因。",
+      "reviewFocus": "卡壳位置：曲面投影到 \\(xOz\\) 平面后，就把法向量分量也按 \\((x,z,y)\\) 重排。第一步无论投影到哪个平面，都先按固定坐标顺序写 \\(\\nabla F=(F_x,F_y,F_z)\\)。正确突破口：外侧法向量的 \\(y\\) 分量应为正；再点乘向量场。考场信号：第二类曲面积分写成 \\(P\\,dy\\,dz+Q\\,dz\\,dx+R\\,dx\\,dy\\)，就是向量场 \\((P,Q,R)\\) 的通量。易错点：被积函数奇并不够，积分域也必须关于相应变量对称。防卡方法：使用对称性前写出变换 \\((x,z)\\mapsto(-x,z)\\)，核对区域不变且函数变号。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-29",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -19112,11 +22071,65 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-22-v1",
     "daily-2026-10-23-v1",
     "daily-2026-10-27-v1",
-    "daily-2026-10-28-v1"
+    "daily-2026-10-28-v1",
+    "daily-2026-10-29-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
     "exam-2010-math1-20261014",
-    "exam-2014-math1-20261027"
+    "exam-2014-math1-20261027",
+    "exam-2011-2013-math1-upload-20261029",
+    "exam-2015-math1-20261029",
+    "exam-2015-math1-upload-20261029-file7"
+  ],
+  "examImportAudits": [
+    {
+      "batch": "exam-2015-math1-20261029",
+      "year": 2015,
+      "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(6).pdf",
+      "annotatedScore": 81,
+      "totalScore": 150,
+      "markedQuestions": [
+        1,
+        9,
+        12,
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23
+      ],
+      "addedIds": [
+        "exam-2015-math1-q01",
+        "exam-2015-math1-q09",
+        "exam-2015-math1-q12",
+        "exam-2015-math1-q13",
+        "exam-2015-math1-q15",
+        "exam-2015-math1-q17",
+        "exam-2015-math1-q18",
+        "exam-2015-math1-q19",
+        "exam-2015-math1-q20",
+        "exam-2015-math1-q23"
+      ],
+      "linkedExistingId": "hist-20260922-prob-negative-binomial",
+      "deductions": {
+        "1": 4,
+        "9": 4,
+        "12": 4,
+        "13": 4,
+        "15": 4,
+        "17": 10,
+        "18": 10,
+        "19": 10,
+        "20": 10,
+        "22": 6,
+        "23": 3
+      },
+      "totalLostPoints": 69,
+      "verification": "四分题5道、十分题4道、11分题分别扣6与3分，合计69分；150−69=81，与卷首分数一致。"
+    }
   ]
 };
