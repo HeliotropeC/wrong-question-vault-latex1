@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 412,
+  "count": 413,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -22133,11 +22133,63 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "由凹函数切线性质推出割线斜率夹在两端导数之间，并用二阶导数法复核",
       "errorCauseEvidence": "用户直接要求“给出完整过程”，当次未提供可独立完成的证明，反映证明组织思路尚不稳定。",
       "reviewFocus": "卡壳位置：知道结论但不会起笔。第一步：任取 \\(x_1<x_2\\)，写两端切线不高于曲线的两个不等式。正确突破口：把割线斜率夹在 \\(f'(x_1)\\) 与 \\(f'(x_2)\\) 之间。考场信号：题目要求由凹凸性证明导数单调，优先联想到“切线位置/割线斜率单调”；若明确二阶可导，再用 \\(f''\\) 一步完成。易错点：把开口向上对应的符号写成 \\(f''\\le0\\)；把“单调递增”误写成必须严格增。防卡方法：记忆模板 \\(f'(x_1)\\le\\text{割线斜率}\\le f'(x_2)\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础计算题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-01-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261101-calc-first-kind-circle-symmetry",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲线积分",
+      "sourceRef": "2026-11-01 对话 · 第一类曲线积分解题过程纠错",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 概念错误 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲线积分",
+        "圆周参数化",
+        "对称性",
+        "弧长微元",
+        "系数拆分"
+      ],
+      "note": "用户已想到展开与利用圆周对称性，但在代数拆分中写错系数，并把曲线弧长微元 \\(ds\\) 混写成面积微元 \\(dx\\,dy\\)。",
+      "stem": "设 \\(L\\) 为单位圆\n\\[\nL:x^2+y^2=1,\n\\]\n计算第一类曲线积分\n\\[\nI=\\oint_L\\left[\\left(x+\\frac12\\right)^2+\\left(\\frac y2+1\\right)^2\\right]ds.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=\\frac{15\\pi}{4}.\n\\]",
+      "analysis": "先展开被积函数：\n\\[\n\\left(x+\\frac12\\right)^2+\\left(\\frac y2+1\\right)^2\n=x^2+x+\\frac14y^2+y+\\frac54.\n\\]\n单位圆关于两坐标轴对称，而 \\(ds\\) 在反射下不变，所以\n\\[\n\\oint_Lx\\,ds=0,\\qquad \\oint_Ly\\,ds=0.\n\\]\n因此\n\\[\nI=\\oint_L\\left(x^2+\\frac14y^2+\\frac54\\right)ds.\n\\]\n又因为圆周上 \\(x^2+y^2=1\\)，可写成\n\\[\nx^2+\\frac14y^2=\\frac14+\\frac34x^2.\n\\]\n故\n\\[\nI=\\frac34\\oint_Lx^2\\,ds+\\frac32\\oint_Lds.\n\\]\n参数化单位圆：\n\\[\nx=\\cos t,\\qquad y=\\sin t,qquad ds=dt,qquad 0\\le t\\le2\\pi.\n\\]\n于是\n\\[\n\\oint_Lx^2\\,ds=\\int_0^{2\\pi}\\cos^2t\\,dt=\\pi,\n\\qquad\n\\oint_Lds=2\\pi.\n\\]\n所以\n\\[\nI=\\frac34\\pi+\\frac32\\cdot2\\pi\n=\\frac{15\\pi}{4}.\n\\]\n\n也可直接参数化后积分：奇函数项 \\(\\cos t,\\sin t\\) 在完整周期上的积分为零，\\(\\cos^2t\\) 与 \\(\\sin^2t\\) 的积分均为 \\(\\pi\\)。",
+      "errorCause": "第一，利用 \\(x^2+y^2=1\\) 拆分 \\(x^2+\\frac14y^2\\) 时系数计算错误：正确为 \\(\\frac14+\\frac34x^2\\)，剩余 \\(x^2\\) 的系数不是1。第二，没有稳定区分一维曲线上的弧长微元 \\(ds\\) 与二维区域的面积微元 \\(dx\\,dy\\)。",
+      "knowledgePoints": [
+        "第一类曲线积分",
+        "圆周参数化",
+        "对称性",
+        "弧长微元",
+        "三角函数平方积分"
+      ],
+      "similarQuestionPrompt": "设 \\(L:x^2+y^2=R^2\\)，计算\n\\[\n\\oint_L\\left[(x+a)^2+(by+c)^2\\right]ds,\n\\]\n要求先用对称性消去奇函数项，再分别用圆周平均值和参数化两种方法求解。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-01",
+          "sourceLabel": "第一类曲线积分解题过程纠错",
+          "verification": "依据题目图片、用户手写展开过程与助手参数化复核"
+        }
+      ],
+      "answerVerification": "用圆周对称性与参数化 \\(x=\\cos t,y=\\sin t\\) 独立复算，结果均为 \\(15\\pi/4\\)",
+      "errorCauseEvidence": "用户手写过程已利用对称性消去一次项，但将 \\(x^2+\\frac14y^2\\) 的剩余系数写错，并把 \\(ds\\) 写成 \\(dx\\,dy\\)。",
+      "reviewFocus": "卡壳位置：对称性思路正确，但在用 \\(x^2+y^2=1\\) 化简时系数丢失，并混淆曲线与区域的微元。第一步：先确认积分域是曲线 \\(L\\)，全程保留 \\(ds\\)；展开后按奇偶性逐项判断。正确突破口：单位圆上 \\(x^2+\\frac14y^2=\\frac14+\\frac34x^2\\)，再用 \\(\\oint_Lx^2ds=\\pi\\)、圆周长 \\(2\\pi\\)。考场信号：完整圆周、第一类积分、被积函数为坐标多项式时，优先用轴对称消奇项和 \\(x^2,y^2\\) 等积分。易错点：\\(ds\\neq dx\\,dy\\)；代数拆分后必须展开回去检查。防卡方法：写完拆分立即验算 \\(\\frac14+\\frac34x^2=x^2+\\frac14y^2\\)（利用 \\(y^2=1-x^2\\)）。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-01",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -22161,7 +22213,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-27-v1",
     "daily-2026-10-28-v1",
     "daily-2026-10-29-v1",
-    "daily-2026-10-30-v1"
+    "daily-2026-10-30-v1",
+    "daily-2026-11-01-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
