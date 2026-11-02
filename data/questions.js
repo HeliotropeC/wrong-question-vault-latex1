@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 413,
+  "count": 417,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -22185,11 +22185,222 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "用圆周对称性与参数化 \\(x=\\cos t,y=\\sin t\\) 独立复算，结果均为 \\(15\\pi/4\\)",
       "errorCauseEvidence": "用户手写过程已利用对称性消去一次项，但将 \\(x^2+\\frac14y^2\\) 的剩余系数写错，并把 \\(ds\\) 写成 \\(dx\\,dy\\)。",
       "reviewFocus": "卡壳位置：对称性思路正确，但在用 \\(x^2+y^2=1\\) 化简时系数丢失，并混淆曲线与区域的微元。第一步：先确认积分域是曲线 \\(L\\)，全程保留 \\(ds\\)；展开后按奇偶性逐项判断。正确突破口：单位圆上 \\(x^2+\\frac14y^2=\\frac14+\\frac34x^2\\)，再用 \\(\\oint_Lx^2ds=\\pi\\)、圆周长 \\(2\\pi\\)。考场信号：完整圆周、第一类积分、被积函数为坐标多项式时，优先用轴对称消奇项和 \\(x^2,y^2\\) 等积分。易错点：\\(ds\\neq dx\\,dy\\)；代数拆分后必须展开回去检查。防卡方法：写完拆分立即验算 \\(\\frac14+\\frac34x^2=x^2+\\frac14y^2\\)（利用 \\(y^2=1-x^2\\)）。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研计算题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-02-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261102-calc-circle-line-integral-symmetry-green",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲线积分",
+      "sourceRef": "2026-11-01晚对话 · 圆周第二类曲线积分的对称性与格林公式",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "第二类曲线积分",
+        "格林公式",
+        "圆周对称性",
+        "奇点",
+        "顺时针方向"
+      ],
+      "note": "用户追问多项式部分能否凭奇偶性直接化为0，并在后续检测中误判；核心问题是把第二类曲线积分当成普通定积分，只看被积函数而忽略微元和方向。",
+      "stem": "设 \\(L\\) 为圆周\n\\[\nx^2+y^2=R^2\n\\]\n的顺时针方向，计算\n\\[\nI=\\oint_L\\frac{e^{x^2}-x^2y}{x^2+y^2}\\,dx\n+\\frac{xy^2-e^{y^2}}{x^2+y^2}\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=-\\frac{\\pi R^2}{2}.\n\\]",
+      "analysis": "在圆周 \\(L\\) 上，\\(x^2+y^2=R^2\\) 为常数，因此\n\\[\nI=\\frac1{R^2}\\oint_L\\left(e^{x^2}-x^2y\\right)dx\n+\\frac1{R^2}\\oint_L\\left(xy^2-e^{y^2}\\right)dy.\n\\]\n先看指数项。存在一元原函数 \\(F'(x)=e^{x^2}\\)、\\(G'(y)=e^{y^2}\\)，故闭曲线上\n\\[\n\\oint_Le^{x^2}dx=\\oint_LdF(x)=0,\n\\qquad\n\\oint_Le^{y^2}dy=\\oint_LdG(y)=0.\n\\]\n于是\n\\[\nI=\\frac1{R^2}\\oint_L\\left(-x^2y\\,dx+xy^2\\,dy\\right).\n\\]\n令 \\(P=-x^2y,\\ Q=xy^2\\)，则\n\\[\nQ_x-P_y=y^2+x^2.\n\\]\n由于 \\(L\\) 为顺时针，格林公式要加负号：\n\\[\nI=-\\frac1{R^2}\\iint_D(x^2+y^2)\\,dx\\,dy.\n\\]\n在极坐标下\n\\[\nI=-\\frac1{R^2}\\int_0^{2\\pi}\\int_0^Rr^3\\,dr\\,d\\theta\n=-\\frac{\\pi R^2}{2}.\n\\]\n\n不能仅因 \\(x^2y\\) 或 \\(xy^2\\) 含奇次幂就断言积分为0。第二类曲线积分还包含有向微元 \\(dx,dy\\)。例如取顺时针参数\n\\[\nx=R\\cos t,\\quad y=-R\\sin t,\n\\]\n则两个多项式积分都化为 \\(-R^4\\cos^2t\\sin^2t\\) 的积分，均不为0。",
+      "errorCause": "把平面区域上的奇函数二重积分规则机械套到第二类曲线积分，只检查 \\(x,y\\) 的奇偶性，没有同时跟踪路径反射后 \\(dx,dy\\) 如何变化；另外容易因为原式在原点有奇点而认为任何格林公式都不能使用，忽略了先利用圆周条件把分母化为常数后，剩余多项式场在圆盘内光滑。",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "圆周参数化",
+        "格林公式方向",
+        "奇偶对称性",
+        "闭路全微分",
+        "奇点与适用条件"
+      ],
+      "similarQuestionPrompt": "设 \\(L:x^2+y^2=a^2\\) 取逆时针方向，计算\n\\[\n\\oint_L\\frac{e^{x^2}+x^2y}{x^2+y^2}\\,dx+\frac{-xy^2+e^{y^2}}{x^2+y^2}\\,dy,\n\\]\n要求分别用格林公式和参数化验证，并解释哪些项可由闭路全微分直接消去。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-01",
+          "sourceLabel": "圆周第二类曲线积分对称性追问",
+          "verification": "依据原题图片、连续追问与参数化/格林公式独立复算"
+        }
+      ],
+      "answerVerification": "使用顺时针格林公式和圆周参数化两种方法复核，均得 \\(-\\pi R^2/2\\)",
+      "errorCauseEvidence": "用户明确追问剩余项能否用对称性化为0，并在检测题中把 \\(\\oint xy^2dx\\) 的对称性判断选错。",
+      "reviewFocus": "卡壳位置：看到 \\(x^2y\\)、\\(xy^2\\) 含奇次幂就想直接判零。第一步：先区分这是 \\(ds\\)、二重积分还是 \\(Pdx+Qdy\\)；第二类积分必须把微元和方向一起变换。正确突破口：圆周上先令分母为 \\(R^2\\)，指数项视为全微分闭路积分，多项式项再对光滑场用格林公式。考场信号：闭圆周、分母正好是 \\(x^2+y^2\\)、分子由一元函数和多项式组成时，优先“圆周恒等式＋全微分＋格林”。易错点：顺时针要加负号；不能对含原点奇点的原场直接在整圆盘用格林。防卡方法：若想用对称性，先参数化检查连同 \\(dx,dy\\) 后的三角函数奇偶性。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础计算题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-02-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261102-calc-green-ellipse-exact-differential",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲线积分",
+      "sourceRef": "2026-11-01晚对话 · 椭圆顺时针格林公式批改",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 方法选择困难 / 概念错误",
+      "tags": [
+        "当日对话导入",
+        "格林公式",
+        "椭圆面积",
+        "顺时针",
+        "全微分",
+        "混合偏导"
+      ],
+      "note": "用户方向判断正确，但把 \\(\\partial(-3y)/\\partial y\\) 错算成含 \\(y\\) 的式子，并对椭圆机械套普通极坐标。",
+      "stem": "设 \\(f(x,y)\\) 具有二阶连续偏导数，\\(L\\) 为椭圆\n\\[\n\\frac{x^2}{4}+y^2=1\n\\]\n的顺时针方向。计算\n\\[\nI=\\oint_L\\left[-3y+f_x(x,y)\\right]dx+f_y(x,y)\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=-6\\pi.\n\\]",
+      "analysis": "令\n\\[\nP=-3y+f_x,\\qquad Q=f_y.\n\\]\n因为 \\(f\\) 的二阶偏导连续，\\(f_{yx}=f_{xy}\\)，所以\n\\[\nQ_x-P_y=f_{yx}-(-3+f_{xy})=3.\n\\]\n椭圆半轴为 \\(a=2,b=1\\)，面积为\n\\[\nS=\\pi ab=2\\pi.\n\\]\n若取逆时针方向，格林公式给出 \\(3S=6\\pi\\)；题目取顺时针，故\n\\[\nI=-6\\pi.\n\\]\n\n也可先识别\n\\[\nf_xdx+f_ydy=df.\n\\]\n闭曲线上 \\(\\oint_Ldf=0\\)，只需计算\n\\[\n-3\\oint_Ly\\,dx.\n\\]\n由有向面积公式，顺时针方向 \\(\\oint_Ly\\,dx=2\\pi\\)，仍得 \\(-6\\pi\\)。",
+      "errorCause": "偏导计算时没有把 \\(-3y\\) 对 \\(y\\) 求导为常数 \\(-3\\)；同时面对椭圆区域仍想使用 \\(x=r\\cos\\theta,y=r\\sin\\theta\\) 的普通圆盘极坐标，没有先读出半轴和面积，或使用椭圆换元 \\(x=2r\\cos\\theta,y=r\\sin\\theta\\)。",
+      "knowledgePoints": [
+        "格林公式",
+        "顺逆时针方向",
+        "椭圆面积",
+        "全微分",
+        "混合偏导相等"
+      ],
+      "similarQuestionPrompt": "设 \\(L:x^2/a^2+y^2/b^2=1\\) 取逆时针方向，\\(f\\in C^2\\)。计算\n\\[\n\\oint_L\\left[cy+f_x(x,y)\\right]dx+f_y(x,y)dy,\n\\]\n并分别用格林公式和全微分法求解。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-01",
+          "sourceLabel": "椭圆顺时针格林公式解题批改",
+          "verification": "依据题目图片、用户手写过程与两种解法复核"
+        }
+      ],
+      "answerVerification": "格林公式与闭路全微分法交叉复算，结果均为 \\(-6\\pi\\)",
+      "errorCauseEvidence": "用户手写中方向符号处理正确，但将 \\((-3y)_y\\) 保留为含 \\(y\\) 的量，并在椭圆上错误套用普通极坐标。",
+      "reviewFocus": "卡壳位置：格林公式会写，但偏导和椭圆区域处理出错。第一步：把 \\(P,Q\\) 分开写，逐项标明对谁求偏导；同时先读椭圆半轴 \\(2,1\\)。正确突破口：\\(f_xdx+f_ydy=df\\) 的闭路积分为0，剩余旋度是常数3，只需乘椭圆面积并处理方向。考场信号：闭曲线积分中同时出现 \\(f_xdx+f_ydy\\)，立即寻找全微分；旋度为常数时不要做复杂换元。易错点：\\((-3y)_y=-3\\)；顺时针是格林公式正向的相反方向。防卡方法：计算完旋度后做量纲检查——若仍含不该出现的 \\(y\\)，重新核对偏导。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研方法题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-02-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261102-calc-line-integral-log-radius-angle",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲线积分",
+      "sourceRef": "2026-11-01晚对话 · 含奇点曲线积分与极角变化",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲线积分",
+        "极角变化",
+        "全微分",
+        "奇点",
+        "挖孔法"
+      ],
+      "note": "用户直接代入曲线方程后产生跨越 \\(x=0\\) 的 \\(\\int 1/x\\,dx\\)，并追问小圆上能否提出分母再用格林公式。",
+      "stem": "设曲线\n\\[\nL:y=\\pi\\cos x,\\qquad -\\pi\\le x\\le\\pi,\n\\]\n方向从 \\(A(\\pi,-\\pi)\\) 到 \\(B(-\\pi,-\\pi)\\)。计算\n\\[\nI=\\int_L\\frac{(x+y)dx-(x-y)dy}{x^2+y^2}.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=-\\frac{3\\pi}{2}.\n\\]",
+      "analysis": "把分子重新组合：\n\\[\n(x+y)dx-(x-y)dy\n=(x\\,dx+y\\,dy)+(y\\,dx-x\\,dy).\n\\]\n注意\n\\[\n\\frac{x\\,dx+y\\,dy}{x^2+y^2}=d\\ln r,\n\\qquad\n\\frac{x\\,dy-y\\,dx}{x^2+y^2}=d\\theta,\n\\]\n其中 \\(r=\\sqrt{x^2+y^2}\\)。因此\n\\[\nI=\\int_Ld\\ln r-\\int_Ld\\theta\n=\\ln\\frac{r_B}{r_A}-\\Delta\\theta.\n\\]\n两端点到原点距离相同，\\(r_A=r_B=\\sqrt2\\pi\\)，故第一项为0。\n\n沿题设方向，极角必须连续取值：\n\\[\n\\theta_A=-\\frac\\pi4,\n\\]\n曲线依次经过右半平面、上半平面和左半平面，终点 \\(B\\) 的连续极角应写为\n\\[\n\\theta_B=\\frac{5\\pi}{4},\n\\]\n而不是主值 \\(-3\\pi/4\\)。所以\n\\[\n\\Delta\\theta=\\frac{5\\pi}{4}-\\left(-\\frac\\pi4\\right)=\\frac{3\\pi}{2},\n\\qquad\nI=-\\frac{3\\pi}{2}.\n\\]\n\n若采用闭合路径与挖孔法：在小圆 \\(C_\\varepsilon:x^2+y^2=\\varepsilon^2\\) 上，分母确实可作为常数 \\(\\varepsilon^2\\) 提出；随后只能对分子对应的光滑多项式场用格林公式。若小圆取逆时针，积分为 \\(-2\\pi\\)；若作为挖孔区域的内边界取顺时针，则符号相反。不能把分母在整个小圆盘内也当成 \\(\\varepsilon^2\\)。",
+      "errorCause": "直接将 \\(y=\\pi\\cos x\\) 代入后做代数拆分，制造了跨越 \\(x=0\\) 的 \\(1/x\\) 项；该广义积分并不存在，不能用牛顿—莱布尼茨公式或仅取柯西主值。更根本的问题是未识别标准微分 \\(d\\ln r\\) 与 \\(d\\theta\\)，也未意识到极角沿路径要连续变化，不能只比较端点主值。",
+      "knowledgePoints": [
+        "第二类曲线积分",
+        "极坐标微分",
+        "极角连续变化",
+        "含奇点积分",
+        "挖孔法",
+        "格林公式适用条件"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为不经过原点、从 \\(A(1,1)\\) 到 \\(B(-1,1)\\) 且绕原点逆时针半周的光滑曲线，计算\n\\[\n\\int_L\\frac{(2x-y)dx+(x+2y)dy}{x^2+y^2},\n\\]\n要求拆成 \\(d\\ln r\\) 与 \\(d\\theta\\)，并说明若路径多绕原点一周答案如何变化。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-01",
+          "sourceLabel": "含奇点曲线积分错误分析与小圆追问",
+          "verification": "依据原题图片、端点方向、连续极角变化及小圆格林公式复核"
+        }
+      ],
+      "answerVerification": "用 \\(d\\ln r-d\\theta\\) 分解核对端点半径与连续极角变化，结果为 \\(-3\\pi/2\\)",
+      "errorCauseEvidence": "用户手写出现 \\(\\int_\\pi^{-\\pi}1/x\\,dx\\)，忽略了 \\(x=0\\) 奇点；随后追问小圆上能否先提出分母再用格林公式。",
+      "reviewFocus": "卡壳位置：参数代入后出现 \\(1/x\\) 仍继续跨越0积分。第一步：看到分母 \\(x^2+y^2\\) 与分子线性组合，先尝试配成 \\(x,dx+y,dy\\) 和 \\(x,dy-y,dx\\)。正确突破口：前者是 \\(d\\ln r\\)，后者是 \\(d\\theta\\)；端点等距消去径向项，只需判断路径的连续极角变化。考场信号：分母 \\(r^2\\)、分子含 \\(x,dx+y,dy\\) 或 \\(x,dy-y,dx\\)，优先极坐标微分而非硬参数化。易错点：极角主值会跳变，必须沿路径连续；含 \\(1/x\\) 的拆项不能跨0使用牛顿—莱布尼茨。防卡方法：若代入后产生原积分并不存在的奇点，立即判定拆分或换元有问题，回到几何微分结构。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础概念题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-02-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "daily-20261102-calc-absolute-convergence-test",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2026-11-02 对话 · 绝对收敛判别方法",
+      "questionType": "概念题",
+      "mistakeType": "知识点不熟 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "绝对收敛",
+        "条件收敛",
+        "比较判别法",
+        "比值判别法",
+        "交错级数"
+      ],
+      "note": "用户直接询问“绝对收敛怎么判别”，未提交具体题目或错误计算；按判别流程尚未稳定记录。",
+      "stem": "如何判断数项级数\n\\[\n\\sum_{n=1}^{\\infty}a_n\n\\]\n是否绝对收敛？说明标准判别流程，并判断下列级数属于绝对收敛、条件收敛还是发散：\n\n(1) \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^2+1}\\)；\n\n(2) \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n n}{2^n}\\)；\n\n(3) \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n}\\)；\n\n(4) \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{\\sqrt n}\\)。",
+      "options": [],
+      "answer": "判别绝对收敛的定义是检查\n\\[\n\\sum_{n=1}^{\\infty}|a_n|.\n\\]\n(1) 绝对收敛；(2) 绝对收敛；(3) 条件收敛；(4) 条件收敛。",
+      "analysis": "标准流程：\n\n1. 先去掉符号、正弦余弦等振荡，研究正项级数\n\\[\n\\sum|a_n|.\n\\]\n若它收敛，则原级数绝对收敛。\n\n2. 对 \\(\\sum|a_n|\\) 选择正项级数判别法：\n- 与 \\(1/n^p\\)、等比级数比较：优先比较或极限比较；\n- 含 \\(n!\\)、\\(a^n\\)、连乘：优先比值判别；\n- 含整体 \\(n\\) 次幂：优先根值判别；\n- 一般有理式：看最高次幂，化成 \\(p\\)-级数。\n\n3. 若 \\(\\sum|a_n|\\) 发散，再检查原级数是否因交错、狄利克雷或阿贝尔判别而收敛。原级数收敛但绝对值级数发散，才叫条件收敛；若原级数也发散，则不是条件收敛。\n\n具体判断：\n\n(1)\n\\[\n\\frac1{n^2+1}\\le\\frac1{n^2},\n\\]\n故绝对值级数收敛，原级数绝对收敛。\n\n(2) 对 \\(b_n=n/2^n\\) 用比值判别：\n\\[\n\\lim_{n\\to\\infty}\\frac{b_{n+1}}{b_n}\n=\\lim_{n\\to\\infty}\\frac{n+1}{2n}=\\frac12<1,\n\\]\n故绝对收敛。\n\n(3) 绝对值级数 \\(\\sum1/n\\) 发散，但原级数满足交错级数判别，故条件收敛。\n\n(4) 绝对值级数 \\(\\sum1/\\sqrt n\\) 发散，但 \\(1/\\sqrt n\\) 单调趋于0，原交错级数收敛，故条件收敛。",
+      "errorCause": "尚未形成固定顺序，容易一看到 \\((-1)^n\\) 就直接用莱布尼茨判别并停止，从而只能说明原级数收敛，不能回答是否绝对收敛；也容易把“绝对值级数发散”误说成“原级数发散”。",
+      "knowledgePoints": [
+        "绝对收敛",
+        "条件收敛",
+        "正项级数判别",
+        "比较判别法",
+        "比值判别法",
+        "交错级数判别"
+      ],
+      "similarQuestionPrompt": "判断级数\n\\[\n\\sum_{n=2}^{\\infty}(-1)^n\\frac{\\ln n}{n},\n\\qquad\n\\sum_{n=1}^{\\infty}(-1)^n\\frac{n^2}{3^n}\n\\]\n是绝对收敛、条件收敛还是发散，并明确写出先检查绝对值级数的步骤。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "绝对收敛判别方法追问",
+          "verification": "依据用户概念提问与比较、比值、交错级数例题核对"
+        }
+      ],
+      "answerVerification": "按绝对收敛定义，并分别用比较判别、比值判别与交错级数判别复核",
+      "errorCauseEvidence": "用户直接提问“绝对收敛怎么判别”，未提供可独立完成的判别过程，显示方法选择顺序尚未形成。",
+      "reviewFocus": "卡壳位置：不知道先判原级数还是先判绝对值级数。第一步固定写 \\(\\sum|a_n|\\)，把它当正项级数处理。正确突破口：绝对值级数收敛即可结束；若发散，才回头判断原级数，从而区分条件收敛与发散。考场信号：题目出现“绝对收敛/条件收敛/收敛性分类”，答案必须包含两层判断。易错点：莱布尼茨只能证明交错级数收敛，不能直接证明绝对收敛；\\(\\sum|a_n|\\) 发散不代表 \\(\\sum a_n\\) 一定发散。防卡方法：草稿固定画分叉：\\(\\sum|a_n|\\) 收敛→绝对收敛；发散→再判 \\(\\sum a_n\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -22214,7 +22425,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-28-v1",
     "daily-2026-10-29-v1",
     "daily-2026-10-30-v1",
-    "daily-2026-11-01-v1"
+    "daily-2026-11-01-v1",
+    "daily-2026-11-02-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
