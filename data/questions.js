@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 417,
+  "count": 429,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -22396,11 +22396,828 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "按绝对收敛定义，并分别用比较判别、比值判别与交错级数判别复核",
       "errorCauseEvidence": "用户直接提问“绝对收敛怎么判别”，未提供可独立完成的判别过程，显示方法选择顺序尚未形成。",
       "reviewFocus": "卡壳位置：不知道先判原级数还是先判绝对值级数。第一步固定写 \\(\\sum|a_n|\\)，把它当正项级数处理。正确突破口：绝对值级数收敛即可结束；若发散，才回头判断原级数，从而区分条件收敛与发散。考场信号：题目出现“绝对收敛/条件收敛/收敛性分类”，答案必须包含两层判断。易错点：莱布尼茨只能证明交错级数收敛，不能直接证明绝对收敛；\\(\\sum|a_n|\\) 发散不代表 \\(\\sum a_n\\) 一定发散。防卡方法：草稿固定画分叉：\\(\\sum|a_n|\\) 收敛→绝对收敛；发散→再判 \\(\\sum a_n\\)。"
+    },
+    {
+      "id": "exam-2016-math1-q04",
+      "subject": "高等数学",
+      "chapter": 1,
+      "chapterTitle": "函数极限与连续",
+      "sourcePage": 1,
+      "printedPage": 29,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "分段函数",
+        "间断点分类",
+        "导数定义",
+        "夹逼准则"
+      ],
+      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第4题",
+      "questionType": "选择题",
+      "stem": "已知函数\n\\[\nf(x)=\\begin{cases}\nx,&x\\le 0,\\\\\n\\dfrac1n,&\\dfrac1{n+1}<x\\le\\dfrac1n\\quad(n=1,2,\\ldots).\n\\end{cases}\n\\]\n则（ ）。",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0\\) 是 \\(f(x)\\) 的第一类间断点"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0\\) 是 \\(f(x)\\) 的第二类间断点"
+        },
+        {
+          "label": "C",
+          "text": "\\(f(x)\\) 在 \\(x=0\\) 处连续但不可导"
+        },
+        {
+          "label": "D",
+          "text": "\\(f(x)\\) 在 \\(x=0\\) 处可导"
+        }
+      ],
+      "answer": "D",
+      "analysis": "左右均有 \\(f(x)\\to0=f(0)\\)。当 \\(x>0\\) 且 \\(1/(n+1)<x\\le 1/n\\) 时，\n\\[\n1\\le \\frac{f(x)}x=\\frac1{nx}<1+\\frac1n\\to1.\n\\]\n右导数为1；当 \\(x<0\\) 时 \\(f(x)=x\\)，左导数为1，因此 \\(f'(0)=1\\)。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "分段函数",
+        "间断点分类",
+        "导数定义",
+        "夹逼准则"
+      ],
+      "similarQuestionPrompt": "令 \\(f(x)=x\\)（\\(x\\le0\\)），在 \\(1/(n+1)<x\\le1/n\\) 上令 \\(f(x)=1/(n+c)\\)，讨论参数 \\(c\\) 使0处连续与可导的条件，并分析正半轴间断点。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：先分左右判断连续性，再直接计算差商；阶梯函数虽在正半轴有跳点，但0处仍可能可导。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 4,
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 4,
+          "pdfPage": 1,
+          "printedPage": 29,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "无明确逐题标注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q12",
+      "subject": "高等数学",
+      "chapter": 3,
+      "chapterTitle": "一元函数微分学",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "泰勒展开",
+        "高阶导数",
+        "幂级数"
+      ],
+      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第12题",
+      "questionType": "填空题",
+      "stem": "设 \\(f(x)=\\arctan x-\\dfrac{x}{1+ax^2}\\)，且 \\(f'''(0)=1\\)，则 \\(a=\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\(\\displaystyle a=\\frac12\\)。",
+      "analysis": "在0处展开\n\\[\n\\arctan x=x-\\frac{x^3}{3}+O(x^5),\\qquad\n\\frac{x}{1+ax^2}=x-ax^3+O(x^5).\n\\]\n故 \\(f(x)=(a-\\frac13)x^3+O(x^5)\\)，由 \\(f'''(0)=6(a-\\frac13)=1\\)，得 \\(a=1/2\\)。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "泰勒展开",
+        "高阶导数",
+        "幂级数"
+      ],
+      "similarQuestionPrompt": "设 \\(f(x)=\\arctan (bx)-\\dfrac{bx}{1+ax^2}\\)，已知 \\(f'''(0)=2,\\ f^{(5)}(0)=0\\)，求 \\(a,b\\) 的可能取值。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：出现三阶导数且表达式含反三角和有理式，优先展开到三次项，不必连续求导三次。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 12,
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 12,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "无明确逐题标注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q13",
+      "subject": "线性代数",
+      "chapter": 1,
+      "chapterTitle": "行列式",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "四阶行列式",
+        "按行展开",
+        "伴随结构"
+      ],
+      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第13题",
+      "questionType": "填空题",
+      "stem": "计算行列式\n\\[\n\\begin{vmatrix}\n\\lambda&-1&0&0\\\\\n0&\\lambda&-1&0\\\\\n0&0&\\lambda&-1\\\\\n4&3&2&\\lambda+1\n\\end{vmatrix}.\n\\]",
+      "options": [],
+      "answer": "\\(\\lambda^4+\\lambda^3+2\\lambda^2+3\\lambda+4\\)。",
+      "analysis": "按末行展开，第四列对应的余子式为 \\(\\lambda^3\\)，前3列的余子式配上代数余子式符号分别给出 \\(4,3\\lambda,2\\lambda^2\\)。因此原式为\n\\[\n4+3\\lambda+2\\lambda^2+\\lambda^3(\\lambda+1).\n\\]\n要逐列跟踪代数余子式的正负号。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "四阶行列式",
+        "按行展开",
+        "伴随结构"
+      ],
+      "similarQuestionPrompt": "计算四阶行列式 \\(\\det\\begin{pmatrix}\\lambda&-2&0&0\\\\0&\\lambda&-1&0\\\\0&0&\\lambda&-3\\\\a&b&c&\\lambda+d\\end{pmatrix}\\)，并讨论其作为 \\(\\lambda\\) 的多项式的系数。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：上方三行是近似上三角结构，按末行展开或利用递推；特别注意代数余子式符号。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 13,
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 13,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "无明确逐题标注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q14",
+      "subject": "概率论与数理统计",
+      "chapter": 7,
+      "chapterTitle": "区间估计",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "双侧置信区间",
+        "样本均值",
+        "区间对称性"
+      ],
+      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第14题",
+      "questionType": "填空题",
+      "stem": "设 \\(X_1,X_2,\\ldots,X_n\\) 为来自总体 \\(N(\\mu,\\sigma^2)\\) 的简单随机样本，样本均值 \\(\\overline X=9.5\\)。参数 \\(\\mu\\) 的置信度为0.95的双侧置信区间的置信上限为10.8，则 \\(\\mu\\) 的置信度为0.95的双侧置信区间为 \\(\\underline{\\qquad}\\)。",
+      "options": [],
+      "answer": "\\((8.2,\\ 10.8)\\)。",
+      "analysis": "双侧正态总体均值置信区间一般形如 \\((\\bar X-d,\\bar X+d)\\)，关于样本均值对称。由 \\(d=10.8-9.5=1.3\\)，下限为 \\(9.5-1.3=8.2\\)。无需另查分位数。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "双侧置信区间",
+        "样本均值",
+        "区间对称性"
+      ],
+      "similarQuestionPrompt": "正态总体的双侧均值置信区间为 \\((L,U)\\)，已知 \\(\\bar X=6.4\\)、上限与下限之差为2.8。若置信度保持不变、样本量变为原来4倍（其他条件相同），求新区间宽度并讨论中心是否变化。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：看到双侧均值置信区间的一端和样本均值，先用“区间中心等于样本均值”求另一端。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 14,
+      "lostPoints": null,
+      "maxPoints": 4,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 14,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": null,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "无明确逐题标注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q15",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "二重积分",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "极坐标",
+        "二重积分",
+        "雅可比",
+        "三角函数积分"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣10分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第15题",
+      "questionType": "计算题",
+      "stem": "已知平面区域\n\\[\nD=\\{(r,\\theta)\\mid 2\\le r\\le 2(1+\\cos\\theta),\\ -\\tfrac{\\pi}{2}\\le\\theta\\le\\tfrac{\\pi}{2}\\},\n\\]\n计算二重积分 \\(\\displaystyle\\iint_D x\\,dx\\,dy\\)。",
+      "options": [],
+      "answer": "\\(\\displaystyle 5\\pi+\\frac{32}{3}\\)。",
+      "analysis": "用极坐标 \\(x=r\\cos\\theta,\\ dx\\,dy=r\\,dr\\,d\\theta\\)：\n\\[\nI=\\int_{-\\pi/2}^{\\pi/2}\\int_{2}^{2(1+\\cos\\theta)}r^2\\cos\\theta\\,dr\\,d\\theta\n=\\frac83\\int_{-\\pi/2}^{\\pi/2}\n(3\\cos^2\\theta+3\\cos^3\\theta+\\cos^4\\theta)d\\theta.\n\\]\n利用 \\(\\int_{-\\pi/2}^{\\pi/2}\\cos^2\\theta d\\theta=\\pi/2\\)、\\(\\int\\cos^3\\theta=4/3\\)、\\(\\int\\cos^4\\theta=3\\pi/8\\)，得 \\(I=5\\pi+32/3\\)。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "极坐标",
+        "二重积分",
+        "雅可比",
+        "三角函数积分"
+      ],
+      "similarQuestionPrompt": "区域 \\(D=\\{(r,\\theta):a\\le r\\le a(1+\\cos\\theta),-\\pi/2\\le\\theta\\le\\pi/2\\}\\)，计算 \\(\\iint_D (x+y^2)\\,dxdy\\)，并明确利用对称性消掉哪些项。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：区域已给成(r,θ)，先把x和面积微元一起变换：x=r cosθ，dxdy=r drdθ，别丢掉雅可比r。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 15,
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 15,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q17",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲线积分",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面部分失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "全微分",
+        "路径无关",
+        "曲线积分",
+        "参数最值"
+      ],
+      "note": "2016年数学一；旁注扣3分（题号未圈）。题旁红笔标注扣3分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第17题",
+      "questionType": "计算题",
+      "stem": "函数 \\(f(x,y)\\) 满足\n\\[\n\\frac{\\partial f(x,y)}{\\partial x}=(2x+1)e^{2x-y},\\qquad f(0,y)=y+1.\n\\]\n\\(L_t\\) 是从点 \\((0,0)\\) 到点 \\((1,t)\\) 的光滑曲线。计算曲线积分\n\\[\nI(t)=\\int_{L_t}\\frac{\\partial f(x,y)}{\\partial x}\\,dx+\n\\frac{\\partial f(x,y)}{\\partial y}\\,dy,\n\\]\n并求 \\(I(t)\\) 的最小值。",
+      "options": [],
+      "answer": "\\(I(t)=e^{2-t}+t\\)，在 \\(t=2\\) 时取最小值 \\(3\\)。",
+      "analysis": "因为被积形式是 \\(df=f_xdx+f_ydy\\)，积分与路径无关：\n\\[\nI(t)=f(1,t)-f(0,0).\n\\]\n对 \\(x\\) 积分得到 \\(f(x,y)=xe^{2x-y}+g(y)\\)，由 \\(f(0,y)=y+1\\) 得 \\(g(y)=y+1\\)。故 \\(I(t)=e^{2-t}+t\\)，再由 \\(I'(t)=1-e^{2-t}=0\\) 得 \\(t=2\\)，且 \\(I''(t)>0\\)。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "全微分",
+        "路径无关",
+        "曲线积分",
+        "参数最值"
+      ],
+      "similarQuestionPrompt": "已知 \\(f_x=(3x^2-2x)e^{x^3-x^2-y}\\)、\\(f(0,y)=\\ln(1+y^2)\\)。设 \\(L_t\\) 从(0,0)到(1,t)，求 \\(\\int_{L_t}df\\) 的最小值并判断是否存在唯一取最小值的t。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：看到f_x dx+f_y dy，第一反应应该是全微分，直接用端点差；不应参数化未知曲线。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 17,
+      "lostPoints": 3,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 17,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 3,
+          "recordScope": "原题全文",
+          "markingEvidence": "旁注扣3分（题号未圈）",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q18",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——曲面积分",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "第二类曲面积分",
+        "高斯公式",
+        "外法向",
+        "四面体体积",
+        "形心"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣10分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第18题",
+      "questionType": "计算题",
+      "stem": "设有界区域 \\(\\Omega\\) 由平面 \\(2x+y+2z=2\\) 与三个坐标平面围成，\\(\\Sigma\\) 为 \\(\\Omega\\) 整个表面的外侧，计算曲面积分\n\\[\nI=\\iint_\\Sigma(x^2+1)\\,dy\\,dz-2y\\,dz\\,dx+3z\\,dx\\,dy.\n\\]",
+      "options": [],
+      "answer": "\\(\\displaystyle I=\\frac12\\)。",
+      "analysis": "用高斯公式，散度为\n\\[\n\\frac{\\partial(x^2+1)}{\\partial x}\n+\\frac{\\partial(-2y)}{\\partial y}\n+\\frac{\\partial(3z)}{\\partial z}=2x+1.\n\\]\n\\(\\Omega\\) 为截距分别为 \\(1,2,1\\) 的四面体，体积 \\(V=1/3\\)，其形心 \\(x\\)-坐标是 \\(1/4\\)，故\n\\[\nI=\\iiint_\\Omega (2x+1)dV\n=2V\\bar x+V=\\frac16+\\frac13=\\frac12.\n\\]",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "高斯公式",
+        "外法向",
+        "四面体体积",
+        "形心"
+      ],
+      "similarQuestionPrompt": "截距为(a,b,c)的第一卦限四面体外表面Σ，计算 \\(\\iint_\\Sigma (x^2+yz)\\,dydz+(y^2+xz)\\,dzdx+(z^2+xy)\\,dxdy\\)，要求使用高斯公式并给出形心法。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：闭曲面+外侧+P dydz+Q dzdx+R dxdy，优先高斯公式；散度求完若只剩线性x，可用体积与形心捷径。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 18,
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 18,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q19",
+      "subject": "高等数学",
+      "chapter": 2,
+      "chapterTitle": "数列极限",
+      "sourcePage": 2,
+      "printedPage": 30,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "迭代数列",
+        "拉格朗日中值定理",
+        "压缩映射",
+        "级数绝对收敛",
+        "不动点"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣10分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第19题",
+      "questionType": "证明题",
+      "stem": "已知函数 \\(f(x)\\) 可导，且 \\(f(0)=1,\\ 0<f'(x)<\\dfrac12\\)。设数列 \\(\\{x_n\\}\\) 满足 \\(x_{n+1}=f(x_n)\\ (n=1,2,\\ldots)\\)。证明：\n(1) 级数 \\(\\displaystyle\\sum_{n=1}^\\infty(x_{n+1}-x_n)\\) 绝对收敛；\n(2) \\(\\displaystyle\\lim_{n\\to\\infty}x_n\\) 存在，且 \\(0<\\lim_{n\\to\\infty}x_n<2\\)。",
+      "options": [],
+      "answer": "(1) 差分级数绝对收敛；(2) 极限 \\(L\\) 存在，且 \\(0<L<2\\)。",
+      "analysis": "由拉格朗日中值定理，\n\\[\n|x_{n+2}-x_{n+1}|=|f(x_{n+1})-f(x_n)|<\\tfrac12|x_{n+1}-x_n|.\n\\]\n因此 \\(\\sum |x_{n+1}-x_n|\\) 被等比级数控制而收敛，故 \\(x_n\\) 收敛到L。由连续性 \\(L=f(L)\\)。设 \\(g(x)=f(x)-x\\)，则 \\(g'(x)=f'(x)-1<0\\)；又 \\(g(0)=1>0\\) 且 \\(g(2)=1+\\int_0^2 f'(t)dt-2<0\\)，所以g唯一零点落在(0,2)，即 \\(0<L<2\\)。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "迭代数列",
+        "拉格朗日中值定理",
+        "压缩映射",
+        "级数绝对收敛",
+        "不动点"
+      ],
+      "similarQuestionPrompt": "设 \\(f(0)=a>0\\)、\\(0<m\\le f'(x)\\le q<1\\)，\\(x_{n+1}=f(x_n)\\)。证明迭代收敛，并推导极限的上下界与误差 \\(|x_n-L|\\) 的显式估计。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：看到x_{n+1}=f(x_n)和|f'|<1，先研究相邻差的比例，再用绝对收敛推出极限存在；极限范围看g(x)=f(x)-x的变号。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 19,
+      "lostPoints": 10,
+      "maxPoints": 10,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 19,
+          "pdfPage": 2,
+          "printedPage": 30,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 10,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q20",
+      "subject": "线性代数",
+      "chapter": 4,
+      "chapterTitle": "线性方程组",
+      "sourcePage": 3,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面部分失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "参数矩阵方程",
+        "克拉默法则",
+        "矩阵秩",
+        "增广矩阵",
+        "解的分类"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣4分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第20题",
+      "questionType": "计算题",
+      "stem": "设矩阵\n\\[\nA=\\begin{pmatrix}\n1&-1&-1\\\\\n2&a&1\\\\\n-1&1&a\n\\end{pmatrix},\\qquad\nB=\\begin{pmatrix}\n2&2\\\\\n1&a\\\\\n-a-1&-2\n\\end{pmatrix}.\n\\]\n当 \\(a\\) 为何值时，矩阵方程 \\(AX=B\\) 无解、有唯一解、有无穷多解？在有解时，求解此方程。",
+      "options": [],
+      "answer": "\\(a=-2\\) 时无解；\\(a=1\\) 时有无穷多解；\\(a\\ne1,-2\\) 时唯一解。\n\\[\na\\ne1,-2:\\quad X=\\begin{pmatrix}1&\\frac{3a}{a+2}\\\\0&\\frac{a-4}{a+2}\\\\-1&0\\end{pmatrix}.\n\\]\n\\(a=1\\) 时\n\\[\nX=\\begin{pmatrix}1&1\\\\-1-s&-1-t\\\\s&t\\end{pmatrix},\\quad s,t\\in\\mathbb R.\n\\]",
+      "analysis": "先求 \\(\\det A=(a-1)(a+2)\\)。非零时可逆且唯一解如上。零点需要逐列检查增广秩：\\(a=-2\\) 时，A秩2而将B第二列加入后秩为3，故整个矩阵方程无解；\\(a=1\\) 时两列右端均相容，A秩2，故每一列各有一个自由参数，得到无穷多解。矩阵方程必须保证B的两列都能解。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "参数矩阵方程",
+        "克拉默法则",
+        "矩阵秩",
+        "增广矩阵",
+        "解的分类"
+      ],
+      "similarQuestionPrompt": "设 \\(A(t)=\\begin{pmatrix}1&1&t\\\\1&t&1\\\\t&1&1\\end{pmatrix}\\)，\\(B(t)\\) 为3×2矩阵，分别让两列在不同奇异参数处可能不相容。求AX=B随t变化时无解、唯一解或无穷多解的全部情形。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：先把AX=B看成两个同时要解的线性方程组；计算detA找临界参数，再逐列检查rank(A)与rank(A|b_j)，而非只看det=0就断定无穷解。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 20,
+      "lostPoints": 4,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 20,
+          "pdfPage": 3,
+          "printedPage": 31,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 4,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q21",
+      "subject": "线性代数",
+      "chapter": 2,
+      "chapterTitle": "矩阵",
+      "sourcePage": 3,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "矩阵高次幂",
+        "最小多项式",
+        "矩阵乘法顺序",
+        "矩阵列向量",
+        "递推恒等式"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣11分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第21题",
+      "questionType": "综合题",
+      "stem": "已知矩阵\n\\[\nA=\\begin{pmatrix}\n0&-1&1\\\\\n2&-3&0\\\\\n0&0&0\n\\end{pmatrix}.\n\\]\n(1) 求 \\(A^{99}\\)；\n(2) 设三阶矩阵 \\(B=(\\alpha_1,\\alpha_2,\\alpha_3)\\) 满足 \\(B^2=BA\\)。记 \\(B^{100}=(\\beta_1,\\beta_2,\\beta_3)\\)，将 \\(\\beta_1,\\beta_2,\\beta_3\\) 分别表示为 \\(\\alpha_1,\\alpha_2,\\alpha_3\\) 的线性组合。",
+      "options": [],
+      "answer": "记 \\(t=2^{98}\\)，则\n\\[\nA^{99}=\\begin{pmatrix}\n2t-2&1-2t&2-t\\\\\n4t-2&1-4t&2-2t\\\\\n0&0&0\n\\end{pmatrix}.\n\\]\n\\[\n\\begin{aligned}\n\\beta_1&=(2t-2)\\alpha_1+(4t-2)\\alpha_2,\\\\\n\\beta_2&=(1-2t)\\alpha_1+(1-4t)\\alpha_2,\\\\\n\\beta_3&=(2-t)\\alpha_1+(2-2t)\\alpha_2.\n\\end{aligned}\n\\]",
+      "analysis": "A的特征值为0、-1、-2，互不相同，且对n≥1，由插值或最小多项式\n\\[\nA^n=\\left(\\frac{(-2)^n}{2}-(-1)^n\\right)A^2+\n\\left(\\frac{(-2)^n}{2}-2(-1)^n\\right)A.\n\\]\n代入n=99可得答案。(2) 注意 \\(B^2=BA\\) 不意味着AB=BA，但可从左侧反复乘B归纳得 \\(B^n=BA^{n-1}\\)（n≥2）。故 \\(B^{100}=BA^{99}\\)，用B的列向量右乘A的各列，即得上述线性组合。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "矩阵高次幂",
+        "最小多项式",
+        "矩阵乘法顺序",
+        "矩阵列向量",
+        "递推恒等式"
+      ],
+      "similarQuestionPrompt": "给定3阶矩阵A的互异特征值0、-1、3，设B满足 \\(B^2=BA\\)。求 \\(B^{50}\\) 的列向量表达式，并证明在不知道AB是否等于BA时递推仍成立。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：(1) 先找特征值/最小多项式降幂；(2) B²=BA要固定从左乘B推出B^n=BA^{n−1}，不能擅自交换AB。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 21,
+      "lostPoints": 11,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 21,
+          "pdfPage": 3,
+          "printedPage": 31,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 11,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q22",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "二维随机变量及其分布",
+      "sourcePage": 3,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面部分失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "均匀联合分布",
+        "积分区域划分",
+        "条件分布",
+        "独立性",
+        "离散连续混合分布",
+        "分布函数"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣7分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第22题",
+      "questionType": "综合题",
+      "stem": "二维随机变量 \\((X,Y)\\) 在区域\n\\[\nD=\\{(x,y)\\mid 0<x<1,\\ x^2<y<\\sqrt{x}\\}\n\\]\n上服从均匀分布。令\n\\[\nU=\\begin{cases}\n1,&X\\le Y,\\\\\n0,&X>Y.\n\\end{cases}\n\\]\n(1) 写出 \\((X,Y)\\) 的概率密度；\n(2) 问 \\(U\\) 与 \\(X\\) 是否相互独立？并说明理由；\n(3) 求 \\(Z=U+X\\) 的分布函数 \\(F_Z(z)\\)。",
+      "options": [],
+      "answer": "(1) \\(f_{X,Y}(x,y)=3\\)（\\((x,y)\\in D\\)），其余为0。\n(2) 不独立。\n(3)\n\\[\nF_Z(z)=\\begin{cases}\n0,&z\\le0,\\\\\n\\frac32z^2-z^3,&0<z<1,\\\\\n\\frac12+2(z-1)^{3/2}-\\frac32(z-1)^2,&1\\le z<2,\\\\\n1,&z\\ge2.\n\\end{cases}\n\\]",
+      "analysis": "区域面积 \\(\\int_0^1(\\sqrt x-x^2)dx=1/3\\)，所以联合密度为3。固定x后，\n\\[\nP(U=1\\mid X=x)=\\frac{\\sqrt x-x}{\\sqrt x-x^2}=\\frac1{1+\\sqrt x+x},\n\\]\n依赖x，故不独立。按 \\(U=0,1\\) 分解：\\(f_{X,U=0}(x)=3(x-x^2)\\)、\\(f_{X,U=1}(x)=3(\\sqrt x-x)\\)（0<x<1）。\\(\\int_0^1 3(x-x^2)dx=1/2\\)。因Z=X(U=0)或X+1(U=1)，对0<z<1及1≤z<2分别积分上述两个联合密度，得到分段分布函数。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "均匀联合分布",
+        "积分区域划分",
+        "条件分布",
+        "独立性",
+        "离散连续混合分布",
+        "分布函数"
+      ],
+      "similarQuestionPrompt": "设(X,Y)在 \\(0<x<1,\\ x^3<y<x^{1/3}\\) 上均匀，\\(U=\\mathbf1_{\\{Y\\ge x\\}}\\)，令 \\(Z=X+2U\\)。求联合密度、判断U与X独立性，并求Z的分布函数（特别处理区间间隙）。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：第一问先算区域面积；第二问固定x并把y区间按y=x切开，比对P(U=1|X=x)是否常数；第三问务必按U=0与U=1分别计算，Z的取值区间分为(0,1)和(1,2)。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 22,
+      "lostPoints": 7,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 22,
+          "pdfPage": 3,
+          "printedPage": 31,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 7,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "id": "exam-2016-math1-q23",
+      "subject": "概率论与数理统计",
+      "chapter": 6,
+      "chapterTitle": "参数估计",
+      "sourcePage": 3,
+      "printedPage": 31,
+      "markerColor": "red",
+      "status": "未复习",
+      "difficulty": "2016年考研数学一真题",
+      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "tags": [
+        "考研真题",
+        "2016年数学一",
+        "原卷红笔错题",
+        "次序统计量",
+        "最大值分布",
+        "独立性",
+        "无偏估计",
+        "期望"
+      ],
+      "note": "2016年数学一；红圈题号。题旁红笔标注扣11分。未附具体作答步骤，不推断个人错误原因。",
+      "sourceRef": "2016年全国硕士研究生招生考试数学（一）第23题",
+      "questionType": "综合题",
+      "stem": "总体 \\(X\\) 的概率密度为\n\\[\nf(x;\\theta)=\\begin{cases}\n\\dfrac{3x^2}{\\theta^3},&0<x<\\theta,\\\\\n0,&\\text{其他},\n\\end{cases}\n\\]\n其中 \\(\\theta\\in(0,+\\infty)\\) 为未知参数，\\(X_1,X_2,X_3\\) 为来自总体 \\(X\\) 的简单随机样本，令 \\(T=\\max\\{X_1,X_2,X_3\\}\\)。\n(1) 求T的概率密度；\n(2) 确定a，使得aT为\\(\\theta\\)的无偏估计。",
+      "options": [],
+      "answer": "\\(\\displaystyle f_T(t)=\\begin{cases}\\frac{9t^8}{\\theta^9},&0<t<\\theta,\\\\0,&\\text{其他},\\end{cases}\\qquad a=\\frac{10}{9}.\\)",
+      "analysis": "先得单个样本的分布函数 \\(F_X(x)=(x/\\theta)^3\\)（0<x<θ），独立性给出\n\\[\nF_T(t)=P(X_1\\le t,X_2\\le t,X_3\\le t)=[F_X(t)]^3=\\frac{t^9}{\\theta^9}.\n\\]\n求导得密度 \\(f_T(t)=9t^8/\\theta^9\\)。再算\n\\[\nE(T)=\\int_0^\\theta t\\frac{9t^8}{\\theta^9}dt=\\frac9{10}\\theta.\n\\]\n要 \\(E(aT)=\\theta\\)，所以a=10/9。",
+      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "knowledgePoints": [
+        "次序统计量",
+        "最大值分布",
+        "独立性",
+        "无偏估计",
+        "期望"
+      ],
+      "similarQuestionPrompt": "设 \\(X_i\\) 独立同分布，\\(f(x;\\theta)=\\frac{kx^{k-1}}{\\theta^k}\\)（0<x<θ），\\(T=\\max(X_1,\\dots,X_n)\\)。求T的密度、使aT无偏的a，以及 \\(aT\\) 的均方误差，并与矩估计比较。",
+      "transcriptionStatus": "verified",
+      "transcriptionNote": "直接依据2026-11-03上传的2016年试卷扫描页逐项目视转写；答案及解析为独立推导，非官方答案原文。分数旁注仅在与题目位置明确对应时记录。",
+      "sourceType": "user-uploaded-annotated-exam",
+      "sourceCategory": "考研真题",
+      "wrongSubquestions": [],
+      "reviewFocus": "起步：最大值的CDF直接等于单个CDF的三次方，先分布函数后求密度；无偏系数来自E(T)而不是把最大值视作样本均值。",
+      "examYear": 2016,
+      "examPaper": "数学一",
+      "questionNo": 23,
+      "lostPoints": 11,
+      "maxPoints": 11,
+      "examSources": [
+        {
+          "year": 2016,
+          "paper": "数学一",
+          "questionNo": 23,
+          "pdfPage": 3,
+          "printedPage": 31,
+          "fileName": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+          "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+          "scoreDeduction": 11,
+          "recordScope": "原题全文",
+          "markingEvidence": "红圈题号",
+          "deductionCertainty": "题旁红色扣分批注"
+        }
+      ],
+      "examImportBatches": [
+        "exam-2016-math1-upload-20261103-file8"
+      ],
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -22434,7 +23251,8 @@ window.WRONG_QUESTIONS = {
     "exam-2014-math1-20261027",
     "exam-2011-2013-math1-upload-20261029",
     "exam-2015-math1-20261029",
-    "exam-2015-math1-upload-20261029-file7"
+    "exam-2015-math1-upload-20261029-file7",
+    "exam-2016-math1-upload-20261103-file8"
   ],
   "examImportAudits": [
     {
@@ -22484,6 +23302,75 @@ window.WRONG_QUESTIONS = {
       },
       "totalLostPoints": 69,
       "verification": "四分题5道、十分题4道、11分题分别扣6与3分，合计69分；150−69=81，与卷首分数一致。"
+    },
+    {
+      "batch": "exam-2016-math1-upload-20261103-file8",
+      "year": 2016,
+      "sourceFile": "【无间隔】数学一09-26年真题做题本6.10(8).pdf",
+      "uploadFileId": "file_0000000082a481fa86bb2da732f3c553",
+      "sourcePages": 3,
+      "printedPages": [
+        29,
+        30,
+        31
+      ],
+      "markedQuestions": [
+        4,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "circleMarkedQuestions": [
+        4,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "marginDeductionOnlyQuestions": [
+        17
+      ],
+      "addedIds": [
+        "exam-2016-math1-q04",
+        "exam-2016-math1-q12",
+        "exam-2016-math1-q13",
+        "exam-2016-math1-q14",
+        "exam-2016-math1-q15",
+        "exam-2016-math1-q17",
+        "exam-2016-math1-q18",
+        "exam-2016-math1-q19",
+        "exam-2016-math1-q20",
+        "exam-2016-math1-q21",
+        "exam-2016-math1-q22",
+        "exam-2016-math1-q23"
+      ],
+      "existingSameYearDuplicates": 0,
+      "individuallyReadableDeductions": {
+        "15": 10,
+        "17": 3,
+        "18": 10,
+        "19": 10,
+        "20": 4,
+        "21": 11,
+        "22": 7,
+        "23": 11
+      },
+      "unassignedNotation": "填空题版块右上角红笔−16，无法确定所有对应题号；未分配逐题扣分",
+      "verification": "12道题按原题目视转写；第17题无圈但有−3批注；所有题保留原设问、可检索LaTeX和独立求解，个人具体错误步骤待复盘。"
     }
   ]
 };
