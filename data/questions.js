@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 429,
+  "count": 430,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -22407,7 +22407,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "mistakeType": "概念错误 / 审题错误 / 方法选择困难",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -22417,7 +22417,7 @@ window.WRONG_QUESTIONS = {
         "导数定义",
         "夹逼准则"
       ],
-      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一红圈题。2026-11-02复盘时用户选择A，误把正半轴阶梯函数的无穷多个跳点累积到0理解成“0也是间断点”，并把区间内部导数为0混同于0处右导数。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第4题",
       "questionType": "选择题",
       "stem": "已知函数\n\\[\nf(x)=\\begin{cases}\nx,&x\\le 0,\\\\\n\\dfrac1n,&\\dfrac1{n+1}<x\\le\\dfrac1n\\quad(n=1,2,\\ldots).\n\\end{cases}\n\\]\n则（ ）。",
@@ -22441,7 +22441,7 @@ window.WRONG_QUESTIONS = {
       ],
       "answer": "D",
       "analysis": "左右均有 \\(f(x)\\to0=f(0)\\)。当 \\(x>0\\) 且 \\(1/(n+1)<x\\le 1/n\\) 时，\n\\[\n1\\le \\frac{f(x)}x=\\frac1{nx}<1+\\frac1n\\to1.\n\\]\n右导数为1；当 \\(x<0\\) 时 \\(f(x)=x\\)，左导数为1，因此 \\(f'(0)=1\\)。",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "errorCause": "没有把“函数在0附近有很多跳点”和“函数在0处是否连续/可导”分开判断；求右导数时试图沿阶梯内部看斜率，而没有回到差商定义。",
       "knowledgePoints": [
         "分段函数",
         "间断点分类",
@@ -22454,7 +22454,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：先分左右判断连续性，再直接计算差商；阶梯函数虽在正半轴有跳点，但0处仍可能可导。",
+      "reviewFocus": "卡壳位置：看到跳点 \\(1/n\\to0\\) 就直接判0为间断点。第一步：只针对0分别算函数极限和差商，不讨论其他点。正确突破口：当 \\(1/(n+1)<x\\le1/n\\) 时，\\(1\\le f(x)/x<(n+1)/n\\to1\\)，所以右导数为1；左侧 \\(f(x)=x\\)，左导数也为1。考场信号：阶梯函数的间断点向某点聚集，不代表聚点本身必间断。易错点：区间内部导数为0不能代替端点差商极限。防卡方法：凡问分段点可导，强制写 \\([f(x)-f(0)]/x\\) 并做夹逼。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 4,
@@ -22478,7 +22478,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户选择A“第一类间断点”；连续讲解中明确表现为认为邻近阶梯跳跃会使0处间断，并认为右侧每段常值所以右导数为0。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第4题分段函数复盘",
+          "verification": "依据用户选择A、连续追问与导数定义夹逼复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q12",
@@ -22554,7 +22566,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "红笔标记 / 具体错因待复盘",
+      "mistakeType": "方法选择困难 / 计算错误 / 概念错误",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -22563,14 +22575,14 @@ window.WRONG_QUESTIONS = {
         "按行展开",
         "伴随结构"
       ],
-      "note": "2016年数学一；红圈题号。卷面未提供可确定归属本题的扣分数。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一红圈题。2026-11-02复盘时用户算得 \\(\\lambda^2(\\lambda^2+\\lambda+2)\\)，并询问能否把四阶行列式划成四个二阶矩阵计算。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第13题",
       "questionType": "填空题",
       "stem": "计算行列式\n\\[\n\\begin{vmatrix}\n\\lambda&-1&0&0\\\\\n0&\\lambda&-1&0\\\\\n0&0&\\lambda&-1\\\\\n4&3&2&\\lambda+1\n\\end{vmatrix}.\n\\]",
       "options": [],
       "answer": "\\(\\lambda^4+\\lambda^3+2\\lambda^2+3\\lambda+4\\)。",
-      "analysis": "按末行展开，第四列对应的余子式为 \\(\\lambda^3\\)，前3列的余子式配上代数余子式符号分别给出 \\(4,3\\lambda,2\\lambda^2\\)。因此原式为\n\\[\n4+3\\lambda+2\\lambda^2+\\lambda^3(\\lambda+1).\n\\]\n要逐列跟踪代数余子式的正负号。",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "analysis": "若按左上、右上、左下、右下划成 \\(2\\times2\\) 分块，两个非对角块都不为零，不能直接写成两个对角块行列式的乘积；一般分块行列式公式还需要可逆、可交换等条件，本题最稳妥是按末行展开。\n\n按第4行展开：\n\\[\nD=4C_{41}+3C_{42}+2C_{43}+(\\lambda+1)C_{44}.\n\\]\n对应的代数余子式依次为\n\\[\nC_{41}=1,\\qquad C_{42}=\\lambda,\\qquad C_{43}=\\lambda^2,\\qquad C_{44}=\\lambda^3.\n\\]\n因此\n\\[\nD=4+3\\lambda+2\\lambda^2+(\\lambda+1)\\lambda^3\n=\\lambda^4+\\lambda^3+2\\lambda^2+3\\lambda+4.\n\\]",
+      "errorCause": "把四阶矩阵机械分成四个二阶块后，只计算两个对角块行列式的乘积，相当于忽略了右上、左下分块的耦合项，因而丢失 \\(3\\lambda+4\\)。",
       "knowledgePoints": [
         "四阶行列式",
         "按行展开",
@@ -22582,7 +22594,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：上方三行是近似上三角结构，按末行展开或利用递推；特别注意代数余子式符号。",
+      "reviewFocus": "卡壳位置：看到4阶矩阵就想套分块行列式乘法。第一步：先检查分块后是否为块三角矩阵；若上下两个非对角块都不为零，不可直接乘对角块行列式。正确突破口：前三行近似上三角、末行元素多，按末行展开会得到四个简单三角余子式。考场信号：Hessenberg/伴随式结构且某一行含参数多项式，优先按特殊行展开或递推。易错点：代数余子式符号；把分块当普通数相乘。防卡方法：任何分块公式使用前先写适用条件；最后用 \\(\\lambda=0\\) 验算，原行列式应为4，而错误答案给0。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 13,
@@ -22606,7 +22618,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户结果为 \\(\\lambda^2(\\lambda^2+\\lambda+2)\\)，恰好等于左上块行列式与右下块行列式的乘积；并追问“划成四个二阶矩阵可以算吗”。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第13题四阶行列式复盘",
+          "verification": "依据用户错误多项式与分块提问，按末行展开并代值复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q14",
@@ -22682,7 +22706,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "mistakeType": "概念错误 / 计算错误 / 方法选择困难",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -22692,14 +22716,14 @@ window.WRONG_QUESTIONS = {
         "雅可比",
         "三角函数积分"
       ],
-      "note": "2016年数学一；红圈题号。题旁红笔标注扣10分。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一扣10分。2026-11-02复盘时用户认为对称区间上的 \\(\\cos^3\\theta\\) 可消去，混淆了“奇次幂”和“奇函数”。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第15题",
       "questionType": "计算题",
       "stem": "已知平面区域\n\\[\nD=\\{(r,\\theta)\\mid 2\\le r\\le 2(1+\\cos\\theta),\\ -\\tfrac{\\pi}{2}\\le\\theta\\le\\tfrac{\\pi}{2}\\},\n\\]\n计算二重积分 \\(\\displaystyle\\iint_D x\\,dx\\,dy\\)。",
       "options": [],
       "answer": "\\(\\displaystyle 5\\pi+\\frac{32}{3}\\)。",
       "analysis": "用极坐标 \\(x=r\\cos\\theta,\\ dx\\,dy=r\\,dr\\,d\\theta\\)：\n\\[\nI=\\int_{-\\pi/2}^{\\pi/2}\\int_{2}^{2(1+\\cos\\theta)}r^2\\cos\\theta\\,dr\\,d\\theta\n=\\frac83\\int_{-\\pi/2}^{\\pi/2}\n(3\\cos^2\\theta+3\\cos^3\\theta+\\cos^4\\theta)d\\theta.\n\\]\n利用 \\(\\int_{-\\pi/2}^{\\pi/2}\\cos^2\\theta d\\theta=\\pi/2\\)、\\(\\int\\cos^3\\theta=4/3\\)、\\(\\int\\cos^4\\theta=3\\pi/8\\)，得 \\(I=5\\pi+32/3\\)。",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "errorCause": "只看到三次幂便判为奇函数，没有检查复合函数关于变量 \\(\\theta\\) 的奇偶性；\\(\\cos(-\\theta)=\\cos\\theta\\)，所以 \\(\\cos^3\\theta\\) 是偶函数。",
       "knowledgePoints": [
         "极坐标",
         "二重积分",
@@ -22712,7 +22736,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：区域已给成(r,θ)，先把x和面积微元一起变换：x=r cosθ，dxdy=r drdθ，别丢掉雅可比r。",
+      "reviewFocus": "卡壳位置：把“幂次为奇数”直接等同于“关于 \\(\\theta\\) 的奇函数”。第一步：对待判项实际代入 \\(-\\theta\\)，不要只看指数。正确突破口：\\(\\cos\\theta\\) 本身是偶函数，所以任意整数次幂仍为偶函数；只有含 \\(\\sin\\theta\\) 的奇次因子时才可能关于 \\(\\theta\\) 为奇函数。考场信号：积分区间关于0对称时，先做 \\(g(-\\theta)\\) 检验。易错点：区域关于 \\(x\\) 轴对称只能消去关于 \\(y\\) 的奇函数；本题被积函数是 \\(x\\)，并不消失。防卡方法：草稿固定写“\\(\\cos(-\\theta)=\\cos\\theta\\Rightarrow\\cos^3\\theta\\) 偶”。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 15,
@@ -22736,7 +22760,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户明确追问“中间一项不是可以约掉吗”“我为什么会想约掉”，并把 \\(\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta d\\theta\\) 误判为0。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第15题二重积分奇偶性复盘",
+          "verification": "依据用户对cos³项的连续追问与极坐标积分复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q17",
@@ -22814,7 +22850,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "卷面全失分 / 具体错因待复盘",
+      "mistakeType": "方法选择困难 / 概念错误 / 计算错误",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -22825,14 +22861,14 @@ window.WRONG_QUESTIONS = {
         "四面体体积",
         "形心"
       ],
-      "note": "2016年数学一；红圈题号。题旁红笔标注扣10分。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一扣10分。2026-11-02复盘中，用户把高斯公式得到的三重积分与斜面投影法混用，误把积分变量 \\(dz\\) 替换成斜面方程，并漏掉坐标面通量。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第18题",
       "questionType": "计算题",
       "stem": "设有界区域 \\(\\Omega\\) 由平面 \\(2x+y+2z=2\\) 与三个坐标平面围成，\\(\\Sigma\\) 为 \\(\\Omega\\) 整个表面的外侧，计算曲面积分\n\\[\nI=\\iint_\\Sigma(x^2+1)\\,dy\\,dz-2y\\,dz\\,dx+3z\\,dx\\,dy.\n\\]",
       "options": [],
       "answer": "\\(\\displaystyle I=\\frac12\\)。",
       "analysis": "用高斯公式，散度为\n\\[\n\\frac{\\partial(x^2+1)}{\\partial x}\n+\\frac{\\partial(-2y)}{\\partial y}\n+\\frac{\\partial(3z)}{\\partial z}=2x+1.\n\\]\n\\(\\Omega\\) 为截距分别为 \\(1,2,1\\) 的四面体，体积 \\(V=1/3\\)，其形心 \\(x\\)-坐标是 \\(1/4\\)，故\n\\[\nI=\\iiint_\\Omega (2x+1)dV\n=2V\\bar x+V=\\frac16+\\frac13=\\frac12.\n\\]",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "errorCause": "没有先根据“整个闭曲面、外侧”锁定高斯公式，导致在三重积分中又套第二类曲面积分投影公式；把 \\(z=1-x-y/2\\) 当成 \\(dz\\)，而正确做法是把它作为积分上限 \\(0\\le z\\le1-x-y/2\\)。若改走分面投影法，又漏算三个坐标面并写错斜面第一项符号。",
       "knowledgePoints": [
         "第二类曲面积分",
         "高斯公式",
@@ -22846,7 +22882,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：闭曲面+外侧+P dydz+Q dzdx+R dxdy，优先高斯公式；散度求完若只剩线性x，可用体积与形心捷径。",
+      "reviewFocus": "卡壳位置：用了高斯公式后仍想把 \\(dz\\) 按斜面微分替换。第一步：看到“整个表面＋外侧”立即写散度 \\(2x-2+3=2x+1\\)，此后只做体积分。正确突破口：四面体截距为 \\(1,2,1\\)，体积 \\(1/3\\)，形心横坐标 \\(1/4\\)，故 \\(\\iiint(2x+1)dV=1/2\\)。考场信号：闭曲面第二类积分且散度简单，优先高斯；线性被积函数可用体积×形心。易错点：曲面方程只能给积分边界，不能替代微元；若分面算必须包含全部四个面。防卡方法：选定高斯或投影其中一条路线后，不在中途切换公式体系。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 18,
@@ -22870,7 +22906,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户手写过程将 \\(dz\\) 直接替换为平面表达式，混合使用高斯公式和投影法；其局部二重积分算出 \\(-5/6\\) 虽计算无误，但对象并非完整闭曲面通量。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第18题第二类曲面积分复盘",
+          "verification": "依据用户手写错误、投影/高斯混用与独立计算复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q19",
@@ -22950,7 +22998,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "卷面部分失分 / 具体错因待复盘",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 概念错误",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -22961,14 +23009,14 @@ window.WRONG_QUESTIONS = {
         "增广矩阵",
         "解的分类"
       ],
-      "note": "2016年数学一；红圈题号。题旁红笔标注扣4分。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一扣4分。2026-11-02复盘时用户明确表示不会判断多列右端的无解情形，未把 \\(AX=B\\) 拆成两个方程组逐列检查。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第20题",
       "questionType": "计算题",
       "stem": "设矩阵\n\\[\nA=\\begin{pmatrix}\n1&-1&-1\\\\\n2&a&1\\\\\n-1&1&a\n\\end{pmatrix},\\qquad\nB=\\begin{pmatrix}\n2&2\\\\\n1&a\\\\\n-a-1&-2\n\\end{pmatrix}.\n\\]\n当 \\(a\\) 为何值时，矩阵方程 \\(AX=B\\) 无解、有唯一解、有无穷多解？在有解时，求解此方程。",
       "options": [],
       "answer": "\\(a=-2\\) 时无解；\\(a=1\\) 时有无穷多解；\\(a\\ne1,-2\\) 时唯一解。\n\\[\na\\ne1,-2:\\quad X=\\begin{pmatrix}1&\\frac{3a}{a+2}\\\\0&\\frac{a-4}{a+2}\\\\-1&0\\end{pmatrix}.\n\\]\n\\(a=1\\) 时\n\\[\nX=\\begin{pmatrix}1&1\\\\-1-s&-1-t\\\\s&t\\end{pmatrix},\\quad s,t\\in\\mathbb R.\n\\]",
       "analysis": "先求 \\(\\det A=(a-1)(a+2)\\)。非零时可逆且唯一解如上。零点需要逐列检查增广秩：\\(a=-2\\) 时，A秩2而将B第二列加入后秩为3，故整个矩阵方程无解；\\(a=1\\) 时两列右端均相容，A秩2，故每一列各有一个自由参数，得到无穷多解。矩阵方程必须保证B的两列都能解。",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "errorCause": "把矩阵方程 \\(AX=B\\) 当作一个普通单右端方程，或只看 \\(\\det A=0\\) 就试图判断无穷多解；没有意识到 \\(B=(b_1,b_2)\\) 时必须同时满足 \\(Ax_1=b_1\\)、\\(Ax_2=b_2\\)，任一列不相容都会使整个矩阵方程无解。",
       "knowledgePoints": [
         "参数矩阵方程",
         "克拉默法则",
@@ -22982,7 +23030,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：先把AX=B看成两个同时要解的线性方程组；计算detA找临界参数，再逐列检查rank(A)与rank(A|b_j)，而非只看det=0就断定无穷解。",
+      "reviewFocus": "卡壳位置：\\(\\det A=0\\) 后不知道怎样区分无解和无穷多解，尤其右端有两列。第一步：写 \\(X=(x_1,x_2),B=(b_1,b_2)\\)，把原式拆成两个方程组。正确突破口：先由 \\(\\det A=(a-1)(a+2)\\) 找临界参数；对 \\(a=1,-2\\) 分别逐列做增广秩。\\(a=-2\\) 时第二列不相容，整体无解；\\(a=1\\) 时两列都相容且各有自由变量，整体无穷多解。考场信号：参数矩阵方程＋多列右端，临界值必须逐列验相容性。易错点：\\(\\det A=0\\) 不等于无穷多解；只验证一列不足以证明矩阵方程有解。防卡方法：在草稿上固定写“任一列无解→整体无解；全部列相容→再按秩判断自由度”。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 20,
@@ -23006,7 +23054,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户明确说“这种多项的无解该怎么做我不会”；随后需要提示把 \\(B\\) 的两列拆开，并分别比较 \\(r(A)\\) 与 \\(r(A|b_j)\\)。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第20题多列矩阵方程复盘",
+          "verification": "依据用户不会判无解的表述与逐列增广秩方法复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q21",
@@ -23086,7 +23146,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "未复习",
       "difficulty": "2016年考研数学一真题",
-      "mistakeType": "卷面部分失分 / 具体错因待复盘",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
       "tags": [
         "考研真题",
         "2016年数学一",
@@ -23098,14 +23158,14 @@ window.WRONG_QUESTIONS = {
         "离散连续混合分布",
         "分布函数"
       ],
-      "note": "2016年数学一；红圈题号。题旁红笔标注扣7分。未附具体作答步骤，不推断个人错误原因。",
+      "note": "2016年数学一扣7分。2026-11-02复盘时用户从第(2)问开始完全不会，质疑辅助图形并追问为什么要用条件分布判断独立性；第(3)问也需按U分支提示后才能继续。",
       "sourceRef": "2016年全国硕士研究生招生考试数学（一）第22题",
       "questionType": "综合题",
       "stem": "二维随机变量 \\((X,Y)\\) 在区域\n\\[\nD=\\{(x,y)\\mid 0<x<1,\\ x^2<y<\\sqrt{x}\\}\n\\]\n上服从均匀分布。令\n\\[\nU=\\begin{cases}\n1,&X\\le Y,\\\\\n0,&X>Y.\n\\end{cases}\n\\]\n(1) 写出 \\((X,Y)\\) 的概率密度；\n(2) 问 \\(U\\) 与 \\(X\\) 是否相互独立？并说明理由；\n(3) 求 \\(Z=U+X\\) 的分布函数 \\(F_Z(z)\\)。",
       "options": [],
       "answer": "(1) \\(f_{X,Y}(x,y)=3\\)（\\((x,y)\\in D\\)），其余为0。\n(2) 不独立。\n(3)\n\\[\nF_Z(z)=\\begin{cases}\n0,&z\\le0,\\\\\n\\frac32z^2-z^3,&0<z<1,\\\\\n\\frac12+2(z-1)^{3/2}-\\frac32(z-1)^2,&1\\le z<2,\\\\\n1,&z\\ge2.\n\\end{cases}\n\\]",
       "analysis": "区域面积 \\(\\int_0^1(\\sqrt x-x^2)dx=1/3\\)，所以联合密度为3。固定x后，\n\\[\nP(U=1\\mid X=x)=\\frac{\\sqrt x-x}{\\sqrt x-x^2}=\\frac1{1+\\sqrt x+x},\n\\]\n依赖x，故不独立。按 \\(U=0,1\\) 分解：\\(f_{X,U=0}(x)=3(x-x^2)\\)、\\(f_{X,U=1}(x)=3(\\sqrt x-x)\\)（0<x<1）。\\(\\int_0^1 3(x-x^2)dx=1/2\\)。因Z=X(U=0)或X+1(U=1)，对0<z<1及1≤z<2分别积分上述两个联合密度，得到分段分布函数。",
-      "errorCause": "已依据红圈或扣分批注确认需要复盘；原卷没有用户完整解题过程，具体错因暂待复练判定。",
+      "errorCause": "不会把指示变量 \\(U\\) 的事件翻译成区域 \\(y\\ge x\\) 与 \\(y<x\\)，也没有建立“独立等价于条件分布不随已知变量改变”的判断框架；求 \\(Z=X+U\\) 时未意识到应按离散变量 \\(U=0,1\\) 分支，并按 \\(z\\) 的取值区间拼接分布函数。",
       "knowledgePoints": [
         "均匀联合分布",
         "积分区域划分",
@@ -23120,7 +23180,7 @@ window.WRONG_QUESTIONS = {
       "sourceType": "user-uploaded-annotated-exam",
       "sourceCategory": "考研真题",
       "wrongSubquestions": [],
-      "reviewFocus": "起步：第一问先算区域面积；第二问固定x并把y区间按y=x切开，比对P(U=1|X=x)是否常数；第三问务必按U=0与U=1分别计算，Z的取值区间分为(0,1)和(1,2)。",
+      "reviewFocus": "卡壳位置：看到 \\(U=\\mathbf1_{\\{X\\le Y\\}}\\) 不知道从哪里下手。第一步：固定 \\(x\\)，在纵向区间 \\((x^2,\\sqrt x)\\) 中用 \\(y=x\\) 分成 \\(U=0,1\\) 两段。正确突破口：若独立，则 \\(P(U=1\\mid X=x)\\) 应等于常数 \\(P(U=1)\\)；实际为 \\((\\sqrt x-x)/(\\sqrt x-x^2)=1/(1+\\sqrt x+x)\\)，随 \\(x\\) 变化，故不独立。第(3)问写 \\(Z=X\\)（U=0）或 \\(Z=X+1\\)（U=1），再按 \\(0<z<1\\)、\\(1\\le z<2\\) 分段积分。考场信号：连续变量＋0/1指示变量的和，必须按指示变量分支。易错点：辅助图若不准确，应以不等式区域为准；独立性不能只看边缘概率。防卡方法：先列两行事件表“U=0:y<x”“U=1:y\\ge x”，再处理概率或分布函数。",
       "examYear": 2016,
       "examPaper": "数学一",
       "questionNo": 22,
@@ -23144,7 +23204,19 @@ window.WRONG_QUESTIONS = {
       "examImportBatches": [
         "exam-2016-math1-upload-20261103-file8"
       ],
-      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+      "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。",
+      "errorCauseEvidence": "用户明确说“第二问开始我完全不会”，连续要求用可理解方式重讲，并追问“为什么要用条件分布判断独立性”；随后图形画错时主动指出，第三问仍需分支提示。",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-02",
+          "sourceLabel": "2016数一第22题条件分布与混合分布复盘",
+          "verification": "依据用户连续追问、图形纠正与完整分段答案复核"
+        }
+      ]
     },
     {
       "id": "exam-2016-math1-q23",
@@ -23213,6 +23285,64 @@ window.WRONG_QUESTIONS = {
         "exam-2016-math1-upload-20261103-file8"
       ],
       "answerVerification": "已根据题目条件独立推导；具体个人失误待复练核实。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-03-v1"
+      ],
+      "wrongSubquestions": [
+        2
+      ],
+      "id": "daily-20261103-calc-paraboloid-centroid-tangent-distance",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——三重积分与多元微分",
+      "sourceRef": "2026-11-03 对话 · 抛物面立体质心与切平面距离",
+      "questionType": "综合题",
+      "mistakeType": "计算错误 / 思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "质心",
+        "三重积分",
+        "柱坐标",
+        "对称性",
+        "切平面",
+        "点到平面距离",
+        "一元化"
+      ],
+      "note": "用户第(1)问没有先用旋转对称性，算错体积和角积分；第(2)问未动笔，缺少“动点—切平面—距离—一元化”的起步链条。",
+      "stem": "设均匀立体\n\\[\n\\Omega=\\{(x,y,z)\\mid x^2+y^2\\le z\\le1\\}.\n\\]\n\n(1) 求 \\(\\Omega\\) 的质心；\n\n(2) 设 \\(M\\) 为抛物面 \\(z=x^2+y^2\\) 且 \\(z\\le1\\) 上的动点。当该曲面在 \\(M\\) 处的切平面到质心的距离最小时，求点 \\(M\\) 的轨迹。",
+      "options": [],
+      "answer": "(1)\n\\[\n(\\bar x,\\bar y,\\bar z)=\\left(0,0,\\frac23\\right).\n\\]\n\n(2) 点 \\(M\\) 的轨迹为\n\\[\nL:\\quad x^2+y^2=\\frac16,qquad z=\\frac16.\n\\]",
+      "analysis": "(1) 立体关于 \\(z\\) 轴旋转对称，所以无需积分即可得到\n\\[\n\\bar x=\\bar y=0.\n\\]\n在高度 \\(z\\in[0,1]\\) 处，截面为 \\(x^2+y^2\\le z\\)，面积为 \\(A(z)=\\pi z\\)。因此体积\n\\[\nV=\\int_0^1\\pi z\\,dz=\\frac\\pi2.\n\\]\n关于 \\(xy\\) 平面的一阶矩为\n\\[\n\\iiint_\\Omega z\\,dV=\\int_0^1z\\cdot\\pi z\\,dz=\\frac\\pi3.\n\\]\n故\n\\[\n\\bar z=\\frac{\\pi/3}{\\pi/2}=\\frac23.\n\\]\n\n(2) 设\n\\[\nM(a,b,a^2+b^2),\\qquad a^2+b^2\\le1.\n\\]\n曲面写为 \\(F=x^2+y^2-z=0\\)，在 \\(M\\) 处法向量为 \\((2a,2b,-1)\\)，切平面为\n\\[\n2ax+2by-z-a^2-b^2=0.\n\\]\n质心 \\(G=(0,0,2/3)\\) 到该平面的距离为\n\\[\nd=\\frac{a^2+b^2+2/3}{\\sqrt{4a^2+4b^2+1}}.\n\\]\n令 \\(t=a^2+b^2\\in[0,1]\\)，则\n\\[\nd(t)=\\frac{t+2/3}{\\sqrt{4t+1}},\n\\qquad\nd'(t)=\\frac{2t-1/3}{(4t+1)^{3/2}}.\n\\]\n故距离在 \\(t=1/6\\) 时最小。此时 \\(z=t=1/6\\)，所以轨迹为所给圆周。",
+      "errorCause": "第(1)问没有先观察绕 \\(z\\) 轴的旋转对称性，仍对 \\(\\bar y\\) 做复杂柱坐标积分，并误认为 \\(\\int_0^{2\\pi}\\sin\\theta d\\theta=2\\)；同时混淆体积 \\(\\pi/2\\) 与一阶矩 \\(\\pi/3\\)。第(2)问不会把动点坐标写成参数并用梯度写切平面，因而无法进入点面距离最值。",
+      "knowledgePoints": [
+        "旋转体质心",
+        "三重积分",
+        "柱坐标",
+        "截面法",
+        "切平面",
+        "点到平面距离",
+        "降元最值"
+      ],
+      "similarQuestionPrompt": "设均匀立体 \\(x^2+y^2\\le z\\le h\\)。先求质心，再求抛物面 \\(z=x^2+y^2\\) 上切平面到质心距离最小时切点的轨迹，并讨论轨迹随 \\(h\\) 的变化。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-03",
+          "sourceLabel": "抛物面立体质心计算批改",
+          "verification": "依据题目图片、用户手写过程与截面法/点面距求导复核"
+        }
+      ],
+      "answerVerification": "质心用截面法与柱坐标复核；切平面距离化为单变量 \\(t=a^2+b^2\\) 后求导验证",
+      "errorCauseEvidence": "用户手写 \\(\\bar y=4/(5\\pi)\\)、\\(V=\\pi/3\\)，并把 \\(\\int_0^{2\\pi}\\sin\\theta d\\theta\\) 算为2；第(2)问未动笔。",
+      "reviewFocus": "卡壳位置：质心计算没有先看对称性，第(2)问完全不会起步。第一步：(1) 先写 \\(\\bar x=\\bar y=0\\)，再用水平截面面积 \\(\\pi z\\)；(2) 设动点 \\(M(a,b,a^2+b^2)\\)。正确突破口：用梯度写切平面、用点面距离公式，再令 \\(t=a^2+b^2\\) 把二元最值降成一元。考场信号：旋转对称立体的横向质心必在轴上；抛物面问题中只通过 \\(a^2+b^2\\) 出现时应立即降元。易错点：\\(\\pi/3\\) 是 \\(\\iiint z,dV\\)，不是体积；完整周期的 \\(\\sin\\theta\\) 积分为0。防卡方法：质心题固定顺序“对称性—体积—一阶矩”；动切平面题固定顺序“设点—法向量—平面—距离—降元”。"
     }
   ],
   "schemaVersion": 2,
@@ -23243,7 +23373,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-29-v1",
     "daily-2026-10-30-v1",
     "daily-2026-11-01-v1",
-    "daily-2026-11-02-v1"
+    "daily-2026-11-02-v1",
+    "daily-2026-11-03-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
