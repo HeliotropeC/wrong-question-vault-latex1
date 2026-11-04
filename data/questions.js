@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 430,
+  "count": 436,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -14605,20 +14605,21 @@ window.WRONG_QUESTIONS = {
         "曲面方向"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "2018年数学一试卷第17题，题号红圈；未提供完整作答过程，个人具体错因待归类。",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
+      "note": "2026-11-04专项复习在“非闭曲面如何补面并用高斯公式”处卡壳。",
       "tags": [
         "考研真题",
         "2018年",
         "数学一",
         "第二类曲面积分",
         "高斯公式",
-        "曲面方向"
+        "曲面方向",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "原卷仅提供圈选标记，暂无逐题解答过程，不推断具体错因。",
+      "errorCause": "未能由“半椭球前侧”识别这是非闭曲面，也没有先补上平面圆盘 \\(x=0\\)；对补面方向和补面通量是否为零缺少判断。",
+      "errorCauseEvidence": "用户在2026-11-04专项复习中明确反馈“思路卡壳”；提示后才沿“补面—高斯—扣补面”的路线继续。",
       "similarQuestionPrompt": "仿2018年数学一第17题，围绕第二类曲面积分、高斯公式生成一道典型考研数学一同类型题，题目条件完整、难度相近；给出答案、分步解析及常见易错点。",
       "transcriptionStatus": "verified",
       "answerVerification": "按原卷人工核对题干，并独立演算、复核结论",
@@ -14635,7 +14636,29 @@ window.WRONG_QUESTIONS = {
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
         }
       ],
-      "reviewFocus": "优先复练：第二类曲面积分、高斯公式、曲面方向。请先不看答案独立完成，再对照推导核对。"
+      "reviewFocus": "卡壳位置：曲面不是闭合的，直接使用高斯公式无法起步。第一步：把 \\(x=\\sqrt{1-3y^2-3z^2}\\) 识别为椭球 \\(x^2+3y^2+3z^2=1\\) 的前半面，并补上 \\(x=0\\) 的圆盘。正确突破口：补面上外法向沿 \\(-x\\) 方向，但 \\(F_x=x=0\\)，故补面通量为0；原积分等于半椭球体内散度积分。考场信号：第二类曲面积分给“某个半面/前侧/上侧”，且散度易算时，优先检查能否补平面后用高斯。易错点：补面方向必须先定，但本题通量为0不能据此省略方向判断；柱坐标中 \\(y^2+z^2=r^2\\)，\\(x\\) 的范围为 \\([0,\\sqrt{1-3r^2}]\\)。防卡方法：草稿固定写“是否闭合→补什么面→补面通量→散度积分”。",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2018年数学一第17题专项复习反馈",
+          "verification": "用户反馈“思路卡壳”，提示补x=0圆盘后用高斯公式"
+        }
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-line-surface-integral-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分专项复习卷",
+          "scope": "全题",
+          "result": "思路卡壳",
+          "verification": "用户当日逐题反馈"
+        }
+      ],
+      "lastReviewResult": "2026-11-04专项复习：思路卡壳。"
     },
     {
       "id": "exam-2018-math1-q18",
@@ -14821,9 +14844,9 @@ window.WRONG_QUESTIONS = {
       "sourcePage": 2,
       "printedPage": 27,
       "markerColor": "daily",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "考研真题",
-      "note": "纳入当日真题批改、不会起步或方法选择不稳的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "note": "纳入当日真题批改、不会起步或方法选择不稳的考研数学题；题图仅用于核对，正文已转写为 LaTeX。 2026-11-04专项复习再次卡壳，需继续按“参数化—合并被积式—分部积分”固定流程训练。",
       "options": [],
       "transcriptionStatus": "verified",
       "sourceType": "exam",
@@ -14831,7 +14854,8 @@ window.WRONG_QUESTIONS = {
       "examYear": 2008,
       "examPaper": "数学一",
       "historyImportBatches": [
-        "daily-2026-10-13-v1"
+        "daily-2026-10-13-v1",
+        "daily-2026-11-04-v1"
       ],
       "id": "exam-2008-math1-q16",
       "subject": "高等数学",
@@ -14849,7 +14873,8 @@ window.WRONG_QUESTIONS = {
         "第二类曲线积分",
         "参数方程",
         "分部积分",
-        "方法选择困难"
+        "方法选择困难",
+        "当日对话复盘"
       ],
       "stem": "计算曲线积分\n\\[\nI=\\int_L \\sin 2x\\,\\mathrm dx+2(x^2-1)y\\,\\mathrm dy,\n\\]\n其中 \\(L\\) 是曲线 \\(y=\\sin x\\) 上从点 \\((0,0)\\) 到点 \\((\\pi,0)\\) 的一段。",
       "answer": "\\(\\displaystyle I=-\\frac{\\pi^2}{2}\\)。",
@@ -14867,10 +14892,16 @@ window.WRONG_QUESTIONS = {
           "kind": "daily-conversation",
           "date": "2026-10-13",
           "verification": "原题题图、用户手写过程与“公式换成 sin 是否适用”的连续追问交叉核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2008年数学一第16题专项复习反馈",
+          "verification": "用户反馈“思路卡壳”，并获取参数化与分部积分起步提示"
         }
       ],
       "answerVerification": "直接参数化并对 \\(\\int_0^\\pi t^2\\sin2t\\,dt\\) 分部积分两次复核",
-      "errorCauseEvidence": "用户手写已得到正确答案 \\(-\\pi^2/2\\)，但连续追问指数型表格积分公式换成 \\(\\sin x\\) 是否仍适用，说明方法迁移与符号控制不稳定。",
+      "errorCauseEvidence": "用户手写已得到正确答案 \\(-\\pi^2/2\\)，但连续追问指数型表格积分公式换成 \\(\\sin x\\) 是否仍适用，说明方法迁移与符号控制不稳定。 2026-11-04专项复习中用户明确反馈“思路卡壳”。",
       "wrongSubquestions": [],
       "examSources": [
         {
@@ -14884,7 +14915,18 @@ window.WRONG_QUESTIONS = {
         }
       ],
       "reviewFocus": "卡壳位置：把 \\(\\int t^2e^t dt\\) 的表格分部积分机械类比到 \\(\\int t^2\\sin2t dt\\)。第一步：按曲线写 \\(x=t,y=\\sin t,0\\le t\\le\\pi\\)，先化成一元定积分。正确突破口：被积式合并成 \\(t^2\\sin2t\\)，再分部积分两次。考场信号：题目直接给 \\(y=\\varphi(x)\\) 及起终点时，优先令 \\(x=t\\)；出现“多项式×三角函数”就让多项式不断求导、三角函数不断积分。易错点：\\(\\int\\sin2t,dt=-\\frac12\\cos2t\\)，每次积分都带 \\(1/2\\)。防卡方法：写两列表格并逐行检查导数、原函数和交错符号。",
-      "contentFingerprint": "fab32e21d0e60ba6e2a7deab4cce7b601e49d2e59c1582aae9e079df93cd3104"
+      "contentFingerprint": "fab32e21d0e60ba6e2a7deab4cce7b601e49d2e59c1582aae9e079df93cd3104",
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-line-surface-integral-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分专项复习卷",
+          "scope": "全题",
+          "result": "思路卡壳",
+          "verification": "用户当日逐题反馈"
+        }
+      ],
+      "lastReviewResult": "2026-11-04专项复习：思路卡壳。"
     },
     {
       "sourcePage": 2,
@@ -15536,10 +15578,10 @@ window.WRONG_QUESTIONS = {
         "椭球面"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "方法选择困难 / 边界或范围判断困难 / 计算错误",
-      "note": "当日第一问能写出梯度，但不确定投影时应保留哪个变量；第二问漏乘椭圆伸缩换元的雅可比系数，得到 \\(2\\sqrt3\\pi\\) 而非 \\(2\\pi\\)。",
+      "note": "当日第一问能写出梯度，但不确定投影时应保留哪个变量；第二问漏乘椭圆伸缩换元的雅可比系数，得到 \\(2\\sqrt3\\pi\\) 而非 \\(2\\pi\\)。 2026-11-04专项复习反馈“完全不会”，该题需作为高优先级重练题。",
       "tags": [
         "当日对话复盘",
         "方法选择困难",
@@ -15548,7 +15590,7 @@ window.WRONG_QUESTIONS = {
         "雅可比"
       ],
       "errorCause": "没有由分子中的 \\(|y-2z|=|G_z|\\) 反向选择向 \\(xOy\\) 面投影，因而在保留 \\(y\\) 还是 \\(z\\) 上犹豫；把椭圆 \\(x^2+\\frac34y^2\\le1\\) 化为单位圆时，写了 \\(x=r\\cos\\theta,\\ y=\\frac2{\\sqrt3}r\\sin\\theta\\)，却仍用 \\(r\\,\\mathrm dr\\,\\mathrm d\\theta\\)，漏掉伸缩因子 \\(\\frac2{\\sqrt3}\\)。",
-      "errorCauseEvidence": "用户连续追问“保留 \\(y\\) 还是 \\(z\\)”“第二问完全没有思路”“怎么得到”，手写解答最终因漏乘雅可比得到 \\(2\\sqrt3\\pi\\)。",
+      "errorCauseEvidence": "用户连续追问“保留 \\(y\\) 还是 \\(z\\)”“第二问完全没有思路”“怎么得到”，手写解答最终因漏乘雅可比得到 \\(2\\sqrt3\\pi\\)。 2026-11-04专项复习中用户明确反馈“完全不会”。",
       "similarQuestionPrompt": "仿2010年数学一第19题，围绕隐式曲面切平面、第二类坐标投影生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
       "transcriptionStatus": "verified",
       "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
@@ -15567,15 +15609,33 @@ window.WRONG_QUESTIONS = {
       ],
       "reviewFocus": "卡壳位置：不知道选哪个坐标面投影，且椭圆换元漏雅可比。第一步：令 \\(G=x^2+y^2+z^2-yz-1\\)，先找分子绝对值对应的偏导；因 \\(|y-2z|=|G_z|\\)，优先向 \\(xOy\\) 面投影，保留 \\(x,y\\) 而消去 \\(z\\)。正确突破口：\n\\[\n\\frac{|G_z|}{|\\nabla G|}\\,\\mathrm dS=\\mathrm dx\\,\\mathrm dy,\n\\]\n积分立即化为椭圆域上的 \\(\\iint(x+\\sqrt3)\\mathrm dA\\)。考场信号：第一类曲面积分中出现“某个偏导的绝对值/梯度模”，就是投影面积元。易错点：\\(x=r\\cos\\theta,\\ y=\\frac2{\\sqrt3}r\\sin\\theta\\) 的雅可比是 \\(\\frac2{\\sqrt3}r\\)，不能仍写 \\(r\\)。防卡方法：椭圆换元先用半轴面积 \\(\\pi ab\\) 快速复核，域面积应为 \\(2\\pi/\\sqrt3\\)，从而 \\(I=2\\pi\\)。",
       "historyImportBatches": [
-        "daily-2026-10-15-v1"
+        "daily-2026-10-15-v1",
+        "daily-2026-11-04-v1"
       ],
       "historySources": [
         {
           "kind": "daily-conversation",
           "date": "2026-10-15",
           "verification": "原题、用户两页手写过程及投影变量、雅可比的连续追问交叉核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2010年数学一第19题专项复习反馈",
+          "verification": "用户反馈“完全不会”，重点提示F_z=0与由|G_z|反选xOy投影"
         }
-      ]
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-line-surface-integral-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分专项复习卷",
+          "scope": "全题",
+          "result": "完全不会",
+          "verification": "用户当日逐题反馈"
+        }
+      ],
+      "lastReviewResult": "2026-11-04专项复习：完全不会。"
     },
     {
       "id": "exam-2010-math1-q20",
@@ -16006,16 +16066,17 @@ window.WRONG_QUESTIONS = {
     },
     {
       "markerColor": "daily",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "考研真题",
-      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。",
+      "note": "纳入当日对话中做错、不会起步、方法选择不稳或主动追问“为什么/考场如何分析”的考研数学题；题图仅用于核对，正文已转写为 LaTeX。 2026-11-04专项复习仍在曲面元投影与方向判断处卡壳。",
       "transcriptionStatus": "verified",
       "sourceType": "exam",
       "sourceCategory": "考研真题",
       "examYear": 2008,
       "examPaper": "数学一",
       "historyImportBatches": [
-        "daily-2026-10-14-v1"
+        "daily-2026-10-14-v1",
+        "daily-2026-11-04-v1"
       ],
       "id": "exam-2008-math1-q12",
       "subject": "高等数学",
@@ -16034,7 +16095,8 @@ window.WRONG_QUESTIONS = {
         "投影法",
         "上侧定向",
         "奇偶对称",
-        "边界或范围判断困难"
+        "边界或范围判断困难",
+        "当日对话复盘"
       ],
       "stem": "设曲面 \\(\\Sigma\\) 是\n\\[\nz=\\sqrt{4-x^2-y^2}\n\\]\n的上侧，求\n\\[\n\\iint_{\\Sigma}xy\\,\\mathrm dy\\,\\mathrm dz+x\\,\\mathrm dz\\,\\mathrm dx+x^2\\,\\mathrm dx\\,\\mathrm dy.\n\\]",
       "options": [],
@@ -16054,10 +16116,16 @@ window.WRONG_QUESTIONS = {
           "kind": "daily-conversation",
           "date": "2026-10-14",
           "verification": "题图与用户点名“第12题”并继续表示“没看明白”的追问核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2008年数学一第12题专项复习反馈",
+          "verification": "用户反馈“思路卡壳”，提示先按上侧向xOy面投影再判奇偶性"
         }
       ],
       "answerVerification": "分别用投影法与闭合曲面高斯公式补底面复核",
-      "errorCauseEvidence": "用户在讲解后仍表示未看明白，说明曲面元方向、投影区域和对称性判断均不稳定。",
+      "errorCauseEvidence": "用户在讲解后仍表示未看明白，说明曲面元方向、投影区域和对称性判断均不稳定。 2026-11-04专项复习中用户明确反馈“思路卡壳”。",
       "wrongSubquestions": [],
       "examSources": [
         {
@@ -16068,7 +16136,18 @@ window.WRONG_QUESTIONS = {
           "fileName": "当日对话中的2008年数学（一）真题题图"
         }
       ],
-      "reviewFocus": "卡壳位置：不知道 \\(\\mathrm dy\\,\\mathrm dz,\\mathrm dz\\,\\mathrm dx,\\mathrm dx\\,\\mathrm dy\\) 怎样统一成 \\(\\mathrm dx\\,\\mathrm dy\\)。第一步：由“上侧且 \\(z=z(x,y)\\)”写出 \\((-z_x,-z_y,1)\\mathrm dx\\mathrm dy\\)，并画出投影圆盘 \\(x^2+y^2\\le4\\)。正确突破口：化成平面积分后先看奇偶性，\\(\\frac{2x^2y}{z}\\) 关于 \\(y\\) 为奇函数。考场信号：曲面显式给成 \\(z=z(x,y)\\) 且方向为上侧，优先投影法。易错点：上侧是 \\((-z_x,-z_y,1)\\)，不是 \\((z_x,z_y,-1)\\)。防卡方法：先写法向量第三分量为正，再补前两分量。"
+      "reviewFocus": "卡壳位置：不知道 \\(\\mathrm dy\\,\\mathrm dz,\\mathrm dz\\,\\mathrm dx,\\mathrm dx\\,\\mathrm dy\\) 怎样统一成 \\(\\mathrm dx\\,\\mathrm dy\\)。第一步：由“上侧且 \\(z=z(x,y)\\)”写出 \\((-z_x,-z_y,1)\\mathrm dx\\mathrm dy\\)，并画出投影圆盘 \\(x^2+y^2\\le4\\)。正确突破口：化成平面积分后先看奇偶性，\\(\\frac{2x^2y}{z}\\) 关于 \\(y\\) 为奇函数。考场信号：曲面显式给成 \\(z=z(x,y)\\) 且方向为上侧，优先投影法。易错点：上侧是 \\((-z_x,-z_y,1)\\)，不是 \\((z_x,z_y,-1)\\)。防卡方法：先写法向量第三分量为正，再补前两分量。",
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-line-surface-integral-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分专项复习卷",
+          "scope": "全题",
+          "result": "思路卡壳",
+          "verification": "用户当日逐题反馈"
+        }
+      ],
+      "lastReviewResult": "2026-11-04专项复习：思路卡壳。"
     },
     {
       "markerColor": "daily",
@@ -23343,11 +23422,350 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "质心用截面法与柱坐标复核；切平面距离化为单变量 \\(t=a^2+b^2\\) 后求导验证",
       "errorCauseEvidence": "用户手写 \\(\\bar y=4/(5\\pi)\\)、\\(V=\\pi/3\\)，并把 \\(\\int_0^{2\\pi}\\sin\\theta d\\theta\\) 算为2；第(2)问未动笔。",
       "reviewFocus": "卡壳位置：质心计算没有先看对称性，第(2)问完全不会起步。第一步：(1) 先写 \\(\\bar x=\\bar y=0\\)，再用水平截面面积 \\(\\pi z\\)；(2) 设动点 \\(M(a,b,a^2+b^2)\\)。正确突破口：用梯度写切平面、用点面距离公式，再令 \\(t=a^2+b^2\\) 把二元最值降成一元。考场信号：旋转对称立体的横向质心必在轴上；抛物面问题中只通过 \\(a^2+b^2\\) 出现时应立即降元。易错点：\\(\\pi/3\\) 是 \\(\\iiint z,dV\\)，不是体积；完整周期的 \\(\\sin\\theta\\) 积分为0。防卡方法：质心题固定顺序“对称性—体积—一阶矩”；动切平面题固定顺序“设点—法向量—平面—距离—降元”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261104-calc-closed-surface-zds-cylinder",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-04 对话 · 封闭曲面第一类曲面积分",
+      "questionType": "计算题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲面积分",
+        "分片曲面",
+        "曲面参数化",
+        "圆柱侧面",
+        "积分限"
+      ],
+      "note": "用户追问圆柱侧面为何使用 \\(dz\\)，以及这是否属于投影法，说明对竖直柱面参数化和变量范围的来源不稳定。",
+      "stem": "设 \\(S\\) 是由圆柱面 \\(x^2+y^2=R^2\\)、平面 \\(z=0\\) 与平面 \\(z-x=R\\) 所围成的封闭曲面，计算\n\\[\nI=\\iint_S z\\,\\mathrm dS.\n\\]",
+      "answer": "\\[\nI=\\frac{(2\\sqrt2+3)\\pi R^3}{2}.\n\\]",
+      "analysis": "将 \\(S\\) 分成底面 \\(S_1:z=0\\)、斜平面 \\(S_2:z=x+R\\) 和圆柱侧面 \\(S_3\\)。底面上 \\(z=0\\)，故 \\(I_1=0\\)。斜平面向 \\(xOy\\) 面投影，\\(\\mathrm dS=\\sqrt{1+z_x^2+z_y^2}\\,\\mathrm dx\\mathrm dy=\\sqrt2\\,\\mathrm dx\\mathrm dy\\)，于是\n\\[\nI_2=\\sqrt2\\iint_{x^2+y^2\\le R^2}(x+R)\\,\\mathrm dx\\mathrm dy=\\sqrt2\\pi R^3.\n\\]\n圆柱侧面参数化为\n\\[\n\\boldsymbol r(\\theta,z)=(R\\cos\\theta,R\\sin\\theta,z),\n\\]\n故 \\(\\mathrm dS=R\\,\\mathrm d\\theta\\mathrm dz\\)。由上平面得 \\(0\\le z\\le R(1+\\cos\\theta)\\)，所以\n\\[\nI_3=R\\int_0^{2\\pi}\\int_0^{R(1+\\cos\\theta)}z\\,\\mathrm dz\\mathrm d\\theta=\\frac32\\pi R^3.\n\\]\n三部分相加即得结论。",
+      "errorCause": "把圆柱侧面误当成可直接向 \\(xOy\\) 面单值投影的曲面，不理解 \\(dz\\) 是参数化中沿轴向的第二个自由变量。",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "分片曲面",
+        "显式曲面投影",
+        "圆柱侧面参数化",
+        "积分区域"
+      ],
+      "similarQuestionPrompt": "设封闭曲面由 \\(x^2+y^2=a^2\\)、\\(z=0\\) 与 \\(z=2x+2a\\) 围成，计算 \\(\\iint_S z\\,dS\\)，并分别指出平面部分与柱面部分所用参数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "圆柱侧面为何用dz",
+          "verification": "依据题图转写、分片结果与用户关于参数化/投影法的追问复核"
+        }
+      ],
+      "answerVerification": "分别以平面投影和圆柱参数化直接积分复核",
+      "errorCauseEvidence": "用户主动追问“第三个侧面积怎么会想到 dz 的使用，这是投影法吗？”",
+      "reviewFocus": "卡壳位置：第三块圆柱侧面不知道为何出现 \\(dz\\)。第一步：看到圆柱方程不含 \\(z\\)，立即用“圆周角 \\(\\theta\\)+高度 \\(z\\)”作参数。正确突破口：\\(\\boldsymbol r_\\theta\\times\\boldsymbol r_z\\) 的模为 \\(R\\)，所以 \\(dS=R\\,d\\theta dz\\)。考场信号：竖直柱面投影到 \\(xOy\\) 只剩边界曲线而非面积域，通常不能用普通 \\(dxdy\\) 投影，应参数化。易错点：上限随 \\(\\theta\\) 变化，\\(z\\le x+R=R(1+\\cos\\theta)\\)。防卡方法：参数化后固定检查“两个自由参数—面积元—每个参数范围”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261104-calc-sphere-cylinder-surface-distinction",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-04 对话 · 球面部分与柱面部分辨析",
+      "questionType": "概念辨析题",
+      "mistakeType": "概念错误 / 审题错误 / 思路卡壳",
+      "tags": [
+        "当日对话导入",
+        "球面",
+        "柱面",
+        "曲面与立体",
+        "积分曲面识别",
+        "不等式"
+      ],
+      "note": "用户连续表示“题目是什么意思”“没看懂”“看不出区别”，核心是无法区分球面在柱体内的部分与柱面在球体内的部分。",
+      "stem": "给定球面\n\\[\n\\Gamma_s:x^2+y^2+z^2=R^2\n\\]\n与柱面\n\\[\n\\Gamma_c:x^2+y^2=Rx.\n\\]\n设 \\(S_1\\) 为球面位于柱体内部的部分，\\(S_2\\) 为柱面位于球体内部的部分。分别用等式与不等式准确描述 \\(S_1,S_2\\)，并说明二者的几何对象有何不同。",
+      "answer": "\\[\nS_1:\\begin{cases}x^2+y^2+z^2=R^2,\\\\x^2+y^2\\le Rx,\n\\end{cases}\n\\qquad\nS_2:\\begin{cases}x^2+y^2=Rx,\\\\x^2+y^2+z^2\\le R^2.\n\\end{cases}\n\\]\n\\(S_1\\) 是球皮的一部分，\\(S_2\\) 是圆柱侧壁的一部分。",
+      "analysis": "判断一个曲面片时，等号决定“点落在哪个曲面上”，不等式只负责把该曲面截取出有限部分。对 \\(S_1\\)，球面方程取等号，柱面对应的柱体内部取 \\(x^2+y^2\\le Rx\\)；对 \\(S_2\\)，柱面方程取等号，球体内部取 \\(x^2+y^2+z^2\\le R^2\\)。两者具有同一条交界线，但承载曲面不同，面积元和参数化也不同。",
+      "errorCause": "把“球面/球体”和“柱面/柱体”混为一谈，只看到两组方程相同，未用“等号定曲面，不等式定截取范围”辨别积分对象。",
+      "knowledgePoints": [
+        "曲面与立体的区别",
+        "球面与球体",
+        "柱面与柱体",
+        "曲面片描述",
+        "审题"
+      ],
+      "similarQuestionPrompt": "给定抛物面 \\(z=x^2+y^2\\) 与平面 \\(z=1\\)，分别描述“抛物面在平面下方的部分”和“平面在抛物面内部投影上的部分”，并指出两者面积元。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "球面与柱面对象辨析",
+          "verification": "依据两曲面方程及用户连续三次理解追问整理为概念复盘卡"
+        }
+      ],
+      "answerVerification": "按集合定义逐项核对等式承载曲面与不等式截取范围",
+      "errorCauseEvidence": "用户连续追问“题目是什么意思”“没看懂”“看不出区别”。",
+      "reviewFocus": "卡壳位置：看见同一球面和柱面，却分不清 \\(S_1,S_2\\)。第一步：先圈出题干中“谁的部分”，它对应的方程必须取等号。正确突破口：另一对象只提供“内部”限制，因此写不等式。考场信号：“A面在B体内”固定翻译为“A方程=0，B内部≤0”。易错点：球面不含内部、柱面也不等于柱体；共享边界不代表曲面片相同。防卡方法：每题先写一句中文标签——“点在谁上、被谁截”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261104-calc-spherical-cap-max-area",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数微分学与空间几何",
+      "sourceRef": "2026-11-04 对话 · 两球相交的球冠面积最值",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "球冠面积",
+        "两球相交",
+        "一元函数最值",
+        "投影面积辨析"
+      ],
+      "note": "用户把交圆的平面投影面积当成球冠曲面积，并连续追问为何不能直接用投影圆面积。",
+      "stem": "定球为\n\\[\nx^2+y^2+z^2=a^2.\n\\]\n另一球的球心为 \\((a,0,0)\\)，半径为 \\(R\\)：\n\\[\n(x-a)^2+y^2+z^2=R^2.\n\\]\n求第二个球位于定球内部的球冠面积最大时的 \\(R\\)。",
+      "answer": "\\[\nR=\\frac{4a}{3}.\n\\]",
+      "analysis": "两球方程相减得交平面\n\\[\nx=a-\\frac{R^2}{2a}.\n\\]\n第二球位于定球内的是靠左的球冠，其顶点横坐标为 \\(a-R\\)，故球冠高\n\\[\nh=\\left(a-\\frac{R^2}{2a}\\right)-(a-R)=R-\\frac{R^2}{2a}.\n\\]\n球冠曲面积为\n\\[\nS(R)=2\\pi Rh=2\\pi R^2-\\frac{\\pi R^3}{a},\\qquad 0<R\\le2a.\n\\]\n求导得\n\\[\nS'(R)=\\pi R\\left(4-\\frac{3R}{a}\\right),\n\\]\n内部驻点为 \\(R=4a/3\\)，且此时取得最大值。",
+      "errorCause": "用 \\(\\iint_Ddxdy\\) 计算交圆的平面面积，却把它当成球冠曲面积；没有先求交平面和球冠高。",
+      "knowledgePoints": [
+        "两球交面",
+        "球冠高",
+        "球冠面积公式",
+        "一元函数最值",
+        "投影面积与曲面积"
+      ],
+      "similarQuestionPrompt": "定球半径为 \\(a\\)，动球球心在 \\((ka,0,0)\\) 且半径为 \\(R\\)。求动球位于定球内部的球冠面积表达式，并讨论其关于 \\(R\\) 的最大值。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "球冠面积计算解析",
+          "verification": "依据两球方程、用户投影面积误解与求导结果复核"
+        }
+      ],
+      "answerVerification": "由交平面、球冠高和球冠面积公式推导，并检验端点与驻点",
+      "errorCauseEvidence": "用户主动追问“为什么”，并把 \\(\\iint_Ddxdy\\) 得到的交圆面积当成目标球冠面积。",
+      "reviewFocus": "卡壳位置：不知道目标是曲面面积还是投影圆面积。第一步：两球方程相减求交平面。正确突破口：在动球上用“顶点到交平面”的距离得到球冠高，再套 \\(S=2\\pi Rh\\)。考场信号：题目出现“两球相交＋某球在另一球内部的表面积”，优先联立求交平面和球冠高。易错点：\\(\\iint_Ddxdy\\) 是投影面积，不是球冠曲面积；还要检查 \\(0<R\\le2a\\)。防卡方法：计算前先标注目标量单位和对象——“球皮面积”，并画出轴截面。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261104-calc-centroid-shifted-circular-sections",
+      "subject": "高等数学",
+      "chapter": 14,
+      "chapterTitle": "多元函数积分学——三重积分与质心",
+      "sourceRef": "2026-11-04 对话 · 平移圆截面立体的质心",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 思路卡壳 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "三重积分",
+        "质心",
+        "截面法",
+        "配方法",
+        "平移圆",
+        "极坐标雅可比"
+      ],
+      "note": "用户极坐标计算漏雅可比、角度范围错误且只算一阶矩未除体积；改用截面法后又卡在“原式含x，为何截面积不含x”。",
+      "stem": "设均匀立体\n\\[\nD=\\{(x,y,z)\\mid x^2+y^2\\le2x(1-z),\\ 0\\le z\\le1\\}.\n\\]\n求立体 \\(D\\) 的质心。",
+      "answer": "\\[\n(\\bar x,\\bar y,\\bar z)=\\left(\\frac34,0,\\frac14\\right).\n\\]",
+      "analysis": "固定 \\(z\\)，配方得\n\\[\n[x-(1-z)]^2+y^2\\le(1-z)^2.\n\\]\n截面是圆心 \\((1-z,0)\\)、半径 \\(1-z\\) 的圆盘，面积 \\(A(z)=\\pi(1-z)^2\\)。故\n\\[\nV=\\int_0^1A(z)\\,dz=\\frac\\pi3.\n\\]\n由关于 \\(xOz\\) 面对称知 \\(\\bar y=0\\)。截面形心的横坐标为 \\(x_c=1-z\\)，所以\n\\[\n\\iiint_Dx\\,dV=\\int_0^1x_cA(z)\\,dz=\\pi\\int_0^1(1-z)^3dz=\\frac\\pi4,\n\\]\n从而 \\(\\bar x=(\\pi/4)/(\\pi/3)=3/4\\)。又\n\\[\n\\iiint_Dz\\,dV=\\pi\\int_0^1z(1-z)^2dz=\\frac\\pi{12},\n\\]\n故 \\(\\bar z=(\\pi/12)/(\\pi/3)=1/4\\)。",
+      "errorCause": "极坐标换元漏乘雅可比 \\(r\\)，角度范围没有由右半平面确定为 \\([-\\pi/2,\\pi/2]\\)，并把一阶矩直接当质心坐标；转用截面法后未理解配方已完成对 \\(x,y\\) 区域的几何识别。",
+      "knowledgePoints": [
+        "三重积分",
+        "质心",
+        "水平截面法",
+        "配方法",
+        "截面形心",
+        "雅可比"
+      ],
+      "similarQuestionPrompt": "设 \\(D=\\{x^2+y^2\\le2kx(h-z),0\\le z\\le h\\}\\)，求均匀立体的质心，并比较直接柱坐标与截面法的计算量。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "第14题质心计算",
+          "verification": "依据用户手写错误、截面法追问与独立积分复核"
+        }
+      ],
+      "answerVerification": "用水平截面法计算，并以柱坐标三重积分核对三个坐标",
+      "errorCauseEvidence": "用户计算中漏雅可比、角度范围取错且漏除总体积；随后连续追问“为什么”“原式子不是含x吗”“第二问”。",
+      "reviewFocus": "卡壳位置：方程含 \\(x\\)，却不理解为何截面积只写成 \\(z\\) 的函数。第一步：固定 \\(z\\) 后对 \\(x,y\\) 配方，识别圆心和半径。正确突破口：截面积 \\(A(z)\\) 已把 \\(x,y\\) 在整块圆盘上积分完；求 \\(x\\) 的一阶矩时再用 \\(\\iint x\\,dxdy=x_cA(z)\\)。考场信号：截面不经过原点但能配成平移圆时，截面法通常比直接极坐标简洁。易错点：质心坐标=一阶矩/总体积；极坐标面积元必须有 \\(r\\)。防卡方法：固定写四行“配方—圆心半径—面积—截面形心”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261104-calc-first-kind-surface-projection-cancel",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-04 对话 · 第一类曲面积分的投影抵消",
+      "questionType": "计算题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲面积分",
+        "曲面投影",
+        "面积元抵消",
+        "投影区域",
+        "配圆"
+      ],
+      "note": "用户会看到面积元与被积式抵消，但不理解由 \\(0\\le z\\le1\\) 推出投影圆盘的全过程。",
+      "stem": "设曲面\n\\[\n\\Sigma:x^2+y^2=-2x(z-1),\\qquad 0\\le z\\le1.\n\\]\n计算\n\\[\nI=\\iint_\\Sigma\\frac{2x^2}{\\sqrt{4x^4+(x^2+y^2)^2}}\\,dS.\n\\]",
+      "answer": "\\[\nI=\\pi.\n\\]",
+      "analysis": "除零面积的退化点外可写\n\\[\nz=1-\\frac{x^2+y^2}{2x}.\n\\]\n计算可得\n\\[\ndS=\\sqrt{1+z_x^2+z_y^2}\\,dxdy=\frac{\\sqrt{4x^4+(x^2+y^2)^2}}{2x^2}\\,dxdy.\n\\]\n因此被积函数与面积因子抵消，\\(I=\\iint_Ddxdy\\)。由 \\(z\\le1\\) 得 \\(x\\ge0\\)；由 \\(z\\ge0\\) 得 \\(x^2+y^2\\le2x\\)，于是\n\\[\nD:\\ (x-1)^2+y^2\\le1.\n\\]\n故 \\(I\\) 等于该圆盘面积，即 \\(\\pi\\)。",
+      "errorCause": "知道投影法公式，却不会把曲面上的 \\(z\\) 范围翻译为 \\(xOy\\) 平面的不等式，尤其不清楚为何先得到 \\(x\\ge0\\)，再得到 \\(x^2+y^2\\le2x\\)。",
+      "knowledgePoints": [
+        "第一类曲面积分",
+        "显式曲面投影",
+        "曲面面积元",
+        "投影区域",
+        "配方法"
+      ],
+      "similarQuestionPrompt": "设 \\(\\Sigma:x^2+y^2=2ax(h-z),0\\le z\\le h\\)，构造一个被积函数使其与 \\(dS\\) 抵消，并求相应第一类曲面积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "第一类曲面积分第二问",
+          "verification": "依据完整题干、投影推导与用户追问“为什么”复核"
+        }
+      ],
+      "answerVerification": "直接计算两个偏导验证面积元，并以圆盘面积复核结果",
+      "errorCauseEvidence": "用户在得到答案后继续追问“为什么”，具体卡在 \\(x\\ge0\\) 与投影区域不等式的来源。",
+      "reviewFocus": "卡壳位置：不会由 \\(0\\le z\\le1\\) 确定投影域。第一步：先解出 \\(z=z(x,y)\\)，再逐条翻译上下界。正确突破口：\\(z\\le1\\) 迫使 \\(x\\ge0\\)，在此前提下 \\(z\\ge0\\iff x^2+y^2\\le2x\\)。考场信号：被积式分母与 \\(dS\\) 的根式高度相似时，优先检查是否完全抵消成投影面积。易错点：除以 \\(x\\) 前必须先判断符号；原点处退化但面积为零，不影响积分。防卡方法：投影域固定按“解函数—看分母符号—代上下界—配方画图”四步写。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "复习中",
+      "difficulty": "考研真题",
+      "sourceType": "exam",
+      "sourceCategory": "考研真题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-04-v1"
+      ],
+      "wrongSubquestions": [],
+      "id": "exam-2014-math1-q12",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "questionNo": 12,
+      "examYear": 2014,
+      "examPaper": "数学一",
+      "sourceRef": "2014年全国硕士研究生招生考试数学（一）第12题",
+      "questionType": "填空题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "考研真题",
+        "2014年",
+        "数学一",
+        "第二类曲线积分",
+        "空间曲线降维",
+        "格林公式",
+        "方向判断"
+      ],
+      "note": "2026-11-04专项复习反馈“完全不会”，核心是不会利用平面约束把空间曲线积分降为平面闭曲线积分。",
+      "stem": "设 \\(L\\) 为柱面 \\(x^2+y^2=1\\) 与平面 \\(y+z=0\\) 的交线，从 \\(z\\) 轴正向往负向看去为逆时针方向，计算\n\\[\nI=\\oint_L z\\,dx+y\\,dz.\n\\]",
+      "options": [],
+      "answer": "\\[\nI=\\pi.\n\\]",
+      "analysis": "沿 \\(L\\) 有 \\(z=-y\\)，故 \\(dz=-dy\\)。于是\n\\[\nI=\\oint_L(-y\\,dx-y\\,dy).\n\\]\n把 \\(L\\) 投影到 \\(xOy\\) 平面，得到按逆时针方向的单位圆 \\(C:x^2+y^2=1\\)。令 \\(P=-y,Q=-y\\)，由格林公式\n\\[\nI=\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q_x-P_y)\\,dxdy=\\iint_D1\\,dxdy=\\pi.\n\\]",
+      "errorCause": "看到空间交线后没有先用平面关系 \\(z=-y\\)、\\(dz=-dy\\) 消去 \\(z\\)，因而无法把问题转化为单位圆上的平面第二类曲线积分。",
+      "knowledgePoints": [
+        "空间曲线积分",
+        "约束降维",
+        "第二类曲线积分",
+        "格林公式",
+        "投影方向"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为柱面 \\(x^2+y^2=a^2\\) 与平面 \\(z=x-y\\) 的交线，给定从 \\(+z\\) 方向观察的方向，计算 \\(\\oint_L(z\\,dx+x\\,dz)\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2014年数学一第12题专项复习",
+          "verification": "题干、答案与用户“完全不会”的反馈交叉核对"
+        }
+      ],
+      "answerVerification": "利用格林公式计算，并用参数化 \\(x=\\cos t,y=\\sin t,z=-\\sin t\\) 复核",
+      "errorCauseEvidence": "用户在8题专项复习反馈中将本题标为“完全不会”。",
+      "reviewFocus": "卡壳位置：空间曲线让人误以为必须做三维参数化。第一步：从平面方程写出 \\(z=-y\\) 与 \\(dz=-dy\\)，把所有微元统一为 \\(dx,dy\\)。正确突破口：柱面投影到 \\(xOy\\) 正好是单位圆，再用格林公式。考场信号：空间闭曲线由“柱面＋平面”给出，且积分只含一个可由平面消去的变量时，优先约束降维。易错点：方向必须随投影核对；从 \\(+z\\) 往 \\(-z\\) 看为逆时针，对应 \\(xOy\\) 平面正向。防卡方法：草稿固定写“平面消元→微分消元→投影曲线→方向→格林”。",
+      "examSources": [
+        {
+          "year": 2014,
+          "paper": "数学一",
+          "questionNo": 12,
+          "wrongSubquestions": [],
+          "fileName": "2026-11-04线积分与曲面积分专项复习卷"
+        }
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-line-surface-integral-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分专项复习卷",
+          "practiceQuestionNumber": 3,
+          "scope": "全题",
+          "result": "完全不会",
+          "verification": "用户当日逐题反馈"
+        }
+      ],
+      "lastReviewResult": "2026-11-04专项复习：完全不会。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -23374,7 +23792,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-10-30-v1",
     "daily-2026-11-01-v1",
     "daily-2026-11-02-v1",
-    "daily-2026-11-03-v1"
+    "daily-2026-11-03-v1",
+    "daily-2026-11-04-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
