@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 436,
+  "count": 439,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -14430,27 +14430,28 @@ window.WRONG_QUESTIONS = {
       "stem": "设 \\(L\\) 为球面 \\(x^2+y^2+z^2=1\\) 与平面 \\(x+y+z=0\\) 的交线，则 \\(\\displaystyle\\oint_L xy\\,\\mathrm ds=\\underline{\\qquad}\\)。",
       "options": [],
       "answer": "\\(-\\dfrac{\\pi}{3}\\)。",
-      "analysis": "交线为过原点、半径为 1 的大圆。取平面内正交单位基 \\(\\boldsymbol u=(1,-1,0)/\\sqrt2,\\ \\boldsymbol v=(1,1,-2)/\\sqrt6\\)，参数化 \\(\\boldsymbol r(t)=\\boldsymbol u\\cos t+\\boldsymbol v\\sin t\\ (0\\le t\\le2\\pi)\\)。于是 \\(x=\\cos t/\\sqrt2+\\sin t/\\sqrt6,\\ y=-\\cos t/\\sqrt2+\\sin t/\\sqrt6,\\ \\mathrm ds=\\mathrm dt\\)，故 \\(\\int_0^{2\\pi}xy\\,\\mathrm dt=-\\frac12\\pi+\\frac16\\pi=-\\pi/3\\)。",
+      "analysis": "交线为过原点、半径为 1 的大圆。取平面内正交单位基 \\(\\boldsymbol u=(1,-1,0)/\\sqrt2,\\ \\boldsymbol v=(1,1,-2)/\\sqrt6\\)，参数化 \\(\\boldsymbol r(t)=\\boldsymbol u\\cos t+\\boldsymbol v\\sin t\\ (0\\le t\\le2\\pi)\\)。于是 \\(x=\\cos t/\\sqrt2+\\sin t/\\sqrt6,\\ y=-\\cos t/\\sqrt2+\\sin t/\\sqrt6,\\ \\mathrm ds=\\mathrm dt\\)，故 \\(\\int_0^{2\\pi}xy\\,\\mathrm dt=-\\frac12\\pi+\\frac16\\pi=-\\pi/3\\)。\n\n**对称性解法：** 曲线 \\(L\\) 在 \\(x,y,z\\) 的循环置换下保持不变，故三个交叉项的曲线积分相等。又在 \\(L\\) 上\n\\[\nxy+yz+zx=-\\frac12(x^2+y^2+z^2)=-\\frac12.\n\\]\n于是\n\\[\n3\\oint_Lxy\\,ds=\\oint_L(xy+yz+zx)\\,ds=-\\frac12\\cdot2\\pi=-\\pi,\n\\]\n所以 \\(\\oint_Lxy\\,ds=-\\pi/3\\)。",
       "knowledgePoints": [
         "第一类曲线积分",
         "球面与平面交线",
         "圆的参数化"
       ],
       "markerColor": "red",
-      "status": "未复习",
+      "status": "复习中",
       "difficulty": "未标注",
-      "mistakeType": "待归类",
-      "note": "2018年数学一试卷第12题，题号红圈；未提供完整作答过程，个人具体错因待归类。",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "note": "用户尝试由平面方程做对称化简，但没有先证明三个平方项或三个交叉项的积分相等；同时一度把第一类曲线积分误认成第二类。",
       "tags": [
         "考研真题",
         "2018年",
         "数学一",
         "第一类曲线积分",
         "球面与平面交线",
-        "圆的参数化"
+        "圆的参数化",
+        "当日对话复盘"
       ],
-      "errorCause": "",
-      "errorCauseEvidence": "原卷仅提供圈选标记，暂无逐题解答过程，不推断具体错因。",
+      "errorCause": "只看到 \\(x+y+z=0\\) 就把某些组合直接判零，未利用曲线在坐标轮换下的不变性严格建立 \\(\\oint x^2ds=\\oint y^2ds=\\oint z^2ds\\) 以及 \\(\\oint xyds=\\oint yzds=\\oint zxds\\)；也没有先确认 \\(ds\\) 表明这是与方向无关的第一类曲线积分。",
+      "errorCauseEvidence": "用户手写把 \\((x+y+z)^2=0\\) 与各项积分直接混用，得到错误中间值；随后明确表示训练卷第一题不会，并混淆第一类、第二类曲线积分。",
       "similarQuestionPrompt": "仿2018年数学一第12题，围绕第一类曲线积分、球面与平面交线生成一道典型考研数学一同类型题，题目条件完整、难度相近；给出答案、分步解析及常见易错点。",
       "transcriptionStatus": "verified",
       "answerVerification": "按原卷人工核对题干，并独立演算、复核结论",
@@ -14467,7 +14468,29 @@ window.WRONG_QUESTIONS = {
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
         }
       ],
-      "reviewFocus": "优先复练：第一类曲线积分、球面与平面交线、圆的参数化。请先不看答案独立完成，再对照推导核对。"
+      "reviewFocus": "卡壳位置：想用对称性，却没有说明“哪些量在什么变换下相等”。第一步：先识别 \\(ds\\) 为第一类曲线积分，再验证曲线在 \\(x\\to y\\to z\\to x\\) 的循环置换下不变。正确突破口：由 \\((x+y+z)^2=0\\) 与 \\(x^2+y^2+z^2=1\\) 得 \\(xy+yz+zx=-1/2\\)，再用三项积分相等。考场信号：球面与过球心、对坐标对称的平面交成大圆，优先找置换对称性或在平面内构造正交基。易错点：关于原点中心对称时 \\(xy\\) 不变，不能判奇函数积分为0；第一类积分没有方向。防卡方法：每次使用对称性都写出具体变量替换及积分域不变性。",
+      "historyImportBatches": [
+        "daily-2026-11-05-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2018数一第12题对称性复盘",
+          "verification": "原题图、手写代数化简与“是否可直接用对称性”的追问核对"
+        }
+      ],
+      "reviewAttempts": [
+        {
+          "sessionKey": "2026-11-04-exam-2018-math1-q12-late-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分错题突破训练",
+          "scope": "全题",
+          "result": "思路卡壳并出现代数判断错误",
+          "verification": "题图、手写过程与连续追问交叉核对"
+        }
+      ],
+      "lastReviewResult": "2026-11-04复盘：思路卡壳并出现代数判断错误。"
     },
     {
       "id": "exam-2018-math1-q15",
@@ -14607,8 +14630,8 @@ window.WRONG_QUESTIONS = {
       "markerColor": "red",
       "status": "复习中",
       "difficulty": "未标注",
-      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难",
-      "note": "2026-11-04专项复习在“非闭曲面如何补面并用高斯公式”处卡壳。",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 边界或范围判断困难 / 计算错误",
+      "note": "2026-11-04专项复习在“非闭曲面如何补面并用高斯公式”处卡壳。 手写已能补面并使用高斯公式，但在椭球缩放后的二次矩积分中算错，得到 \\(2\\pi/15\\)。",
       "tags": [
         "考研真题",
         "2018年",
@@ -14618,8 +14641,8 @@ window.WRONG_QUESTIONS = {
         "曲面方向",
         "当日对话复盘"
       ],
-      "errorCause": "未能由“半椭球前侧”识别这是非闭曲面，也没有先补上平面圆盘 \\(x=0\\)；对补面方向和补面通量是否为零缺少判断。",
-      "errorCauseEvidence": "用户在2026-11-04专项复习中明确反馈“思路卡壳”；提示后才沿“补面—高斯—扣补面”的路线继续。",
+      "errorCause": "未能由“半椭球前侧”识别这是非闭曲面，也没有先补上平面圆盘 \\(x=0\\)；对补面方向和补面通量是否为零缺少判断。 掌握补面后，在变换 \\(u=\\sqrt3y,v=\\sqrt3z\\) 及半球二次矩计算中漏掉缩放雅可比或半球系数，导致数值错误。",
+      "errorCauseEvidence": "用户在2026-11-04专项复习中明确反馈“思路卡壳”；提示后才沿“补面—高斯—扣补面”的路线继续。 手写结果为 \\(2\\pi/15\\)，红笔订正为 \\(14\\pi/45\\)；错误集中于散度体积分的球坐标计算。",
       "similarQuestionPrompt": "仿2018年数学一第17题，围绕第二类曲面积分、高斯公式生成一道典型考研数学一同类型题，题目条件完整、难度相近；给出答案、分步解析及常见易错点。",
       "transcriptionStatus": "verified",
       "answerVerification": "按原卷人工核对题干，并独立演算、复核结论",
@@ -14636,9 +14659,10 @@ window.WRONG_QUESTIONS = {
           "fileName": "【无间隔】数学一09-26年真题做题本6.10(2).pdf"
         }
       ],
-      "reviewFocus": "卡壳位置：曲面不是闭合的，直接使用高斯公式无法起步。第一步：把 \\(x=\\sqrt{1-3y^2-3z^2}\\) 识别为椭球 \\(x^2+3y^2+3z^2=1\\) 的前半面，并补上 \\(x=0\\) 的圆盘。正确突破口：补面上外法向沿 \\(-x\\) 方向，但 \\(F_x=x=0\\)，故补面通量为0；原积分等于半椭球体内散度积分。考场信号：第二类曲面积分给“某个半面/前侧/上侧”，且散度易算时，优先检查能否补平面后用高斯。易错点：补面方向必须先定，但本题通量为0不能据此省略方向判断；柱坐标中 \\(y^2+z^2=r^2\\)，\\(x\\) 的范围为 \\([0,\\sqrt{1-3r^2}]\\)。防卡方法：草稿固定写“是否闭合→补什么面→补面通量→散度积分”。",
+      "reviewFocus": "卡壳位置：补面高斯思路已会，但椭球缩放后二次矩算错。第一步：令 \\(u=\\sqrt3y,v=\\sqrt3z\\)，明确 \\(dy,dz=\\frac13du,dv\\)，区域变为半单位球。正确突破口：\\(I=\\frac13\\iiint_{B_+}(1+u^2+v^2)dV\\)；半球体积为 \\(2\\pi/3\\)，半球上 \\(\\iiint(u^2+v^2)dV=4\\pi/15\\)。考场信号：椭球域出现坐标平方矩时，优先缩放为单位球并利用对称矩。易错点：每缩放一个坐标都要乘相应雅可比；半球只取全球的一半。防卡方法：先单独写变量变换、区域和雅可比三行，再代入积分。",
       "historyImportBatches": [
-        "daily-2026-11-04-v1"
+        "daily-2026-11-04-v1",
+        "daily-2026-11-05-v1"
       ],
       "historySources": [
         {
@@ -14646,6 +14670,12 @@ window.WRONG_QUESTIONS = {
           "date": "2026-11-04",
           "sourceLabel": "2018年数学一第17题专项复习反馈",
           "verification": "用户反馈“思路卡壳”，提示补x=0圆盘后用高斯公式"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2018数一第17题手写计算复盘",
+          "verification": "手写补面思路已建立，但球坐标二次矩计算得2π/15而非14π/45"
         }
       ],
       "reviewAttempts": [
@@ -14656,9 +14686,17 @@ window.WRONG_QUESTIONS = {
           "scope": "全题",
           "result": "思路卡壳",
           "verification": "用户当日逐题反馈"
+        },
+        {
+          "sessionKey": "2026-11-04-exam-2018-math1-q17-late-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分错题突破训练",
+          "scope": "全题",
+          "result": "方法正确但计算错误",
+          "verification": "题图、手写过程与连续追问交叉核对"
         }
       ],
-      "lastReviewResult": "2026-11-04专项复习：思路卡壳。"
+      "lastReviewResult": "2026-11-04复盘：方法正确但计算错误。"
     },
     {
       "id": "exam-2018-math1-q18",
@@ -14846,7 +14884,7 @@ window.WRONG_QUESTIONS = {
       "markerColor": "daily",
       "status": "复习中",
       "difficulty": "考研真题",
-      "note": "纳入当日真题批改、不会起步或方法选择不稳的考研数学题；题图仅用于核对，正文已转写为 LaTeX。 2026-11-04专项复习再次卡壳，需继续按“参数化—合并被积式—分部积分”固定流程训练。",
+      "note": "纳入当日真题批改、不会起步或方法选择不稳的考研数学题；题图仅用于核对，正文已转写为 LaTeX。 2026-11-04专项复习再次卡壳，需继续按“参数化—合并被积式—分部积分”固定流程训练。 手写订正还显示曾把开放曲线积分直接写成二重积分，误用格林公式。",
       "options": [],
       "transcriptionStatus": "verified",
       "sourceType": "exam",
@@ -14855,7 +14893,8 @@ window.WRONG_QUESTIONS = {
       "examPaper": "数学一",
       "historyImportBatches": [
         "daily-2026-10-13-v1",
-        "daily-2026-11-04-v1"
+        "daily-2026-11-04-v1",
+        "daily-2026-11-05-v1"
       ],
       "id": "exam-2008-math1-q16",
       "subject": "高等数学",
@@ -14864,7 +14903,7 @@ window.WRONG_QUESTIONS = {
       "questionNo": 16,
       "sourceRef": "2008年全国硕士研究生招生考试数学（一）第16题",
       "questionType": "计算题",
-      "mistakeType": "方法选择困难 / 知识点不熟",
+      "mistakeType": "方法选择困难 / 概念错误 / 知识点不熟",
       "tags": [
         "当日对话导入",
         "考研真题",
@@ -14879,7 +14918,7 @@ window.WRONG_QUESTIONS = {
       "stem": "计算曲线积分\n\\[\nI=\\int_L \\sin 2x\\,\\mathrm dx+2(x^2-1)y\\,\\mathrm dy,\n\\]\n其中 \\(L\\) 是曲线 \\(y=\\sin x\\) 上从点 \\((0,0)\\) 到点 \\((\\pi,0)\\) 的一段。",
       "answer": "\\(\\displaystyle I=-\\frac{\\pi^2}{2}\\)。",
       "analysis": "令 \\(x=t,y=\\sin t,0\\le t\\le\\pi\\)，则 \\(\\mathrm dx=\\mathrm dt,\\mathrm dy=\\cos t\\,\\mathrm dt\\)。所以\n\\[\n\\begin{aligned}\nI&=\\int_0^\\pi[\\sin2t+2(t^2-1)\\sin t\\cos t]dt\\\\\n&=\\int_0^\\pi t^2\\sin2t\\,dt.\n\\end{aligned}\n\\]\n分部积分两次：\n\\[\n\\int t^2\\sin2t\\,dt=-\\frac12t^2\\cos2t+\\frac12t\\sin2t+\\frac14\\cos2t+C.\n\\]\n代入端点得 \\(I=-\\pi^2/2\\)。用户原结果正确，需要巩固的是“多项式乘三角函数”的分部积分规则。",
-      "errorCause": "曲线参数化及最终数值均正确，但对用于 \\(t^2e^t\\) 的表格分部积分法能否迁移到 \\(t^2\\sin2t\\) 缺乏把握。指数函数求导不循环，而正弦、余弦求导会循环并改变符号；可以用同一框架，但必须按真实导数链记录系数与正负号。",
+      "errorCause": "曲线参数化及最终数值均正确，但对用于 \\(t^2e^t\\) 的表格分部积分法能否迁移到 \\(t^2\\sin2t\\) 缺乏把握。指数函数求导不循环，而正弦、余弦求导会循环并改变符号；可以用同一框架，但必须按真实导数链记录系数与正负号。 此外，路径从 \\((0,0)\\) 到 \\((\\pi,0)\\) 并不闭合，不能不补线就直接用格林公式。",
       "knowledgePoints": [
         "第二类曲线积分的参数化",
         "曲线方向与参数范围",
@@ -14898,10 +14937,16 @@ window.WRONG_QUESTIONS = {
           "date": "2026-11-04",
           "sourceLabel": "2008年数学一第16题专项复习反馈",
           "verification": "用户反馈“思路卡壳”，并获取参数化与分部积分起步提示"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2008数一第16题手写订正",
+          "verification": "手写过程显示曾对非闭曲线误用格林公式，随后才改为参数化"
         }
       ],
       "answerVerification": "直接参数化并对 \\(\\int_0^\\pi t^2\\sin2t\\,dt\\) 分部积分两次复核",
-      "errorCauseEvidence": "用户手写已得到正确答案 \\(-\\pi^2/2\\)，但连续追问指数型表格积分公式换成 \\(\\sin x\\) 是否仍适用，说明方法迁移与符号控制不稳定。 2026-11-04专项复习中用户明确反馈“思路卡壳”。",
+      "errorCauseEvidence": "用户手写已得到正确答案 \\(-\\pi^2/2\\)，但连续追问指数型表格积分公式换成 \\(\\sin x\\) 是否仍适用，说明方法迁移与符号控制不稳定。 2026-11-04专项复习中用户明确反馈“思路卡壳”。 手写中出现 \\(I=\\iint 4xy\\,dxdy\\) 的步骤，说明曾忽略格林公式要求闭曲线。",
       "wrongSubquestions": [],
       "examSources": [
         {
@@ -14914,7 +14959,7 @@ window.WRONG_QUESTIONS = {
           "fileName": "当日对话中的2008年数学（一）真题题图"
         }
       ],
-      "reviewFocus": "卡壳位置：把 \\(\\int t^2e^t dt\\) 的表格分部积分机械类比到 \\(\\int t^2\\sin2t dt\\)。第一步：按曲线写 \\(x=t,y=\\sin t,0\\le t\\le\\pi\\)，先化成一元定积分。正确突破口：被积式合并成 \\(t^2\\sin2t\\)，再分部积分两次。考场信号：题目直接给 \\(y=\\varphi(x)\\) 及起终点时，优先令 \\(x=t\\)；出现“多项式×三角函数”就让多项式不断求导、三角函数不断积分。易错点：\\(\\int\\sin2t,dt=-\\frac12\\cos2t\\)，每次积分都带 \\(1/2\\)。防卡方法：写两列表格并逐行检查导数、原函数和交错符号。",
+      "reviewFocus": "卡壳位置：一看到 \\(Pdx+Qdy\\) 就想套格林公式，但 \\(L\\) 是开放曲线。第一步：先检查路径是否闭合；本题直接令 \\(x=t,y=\\sin t\\)。正确突破口：代入 \\(dx=dt,dy=\\cos tdt\\) 后合并为 \\(\\int_0^\\pi t^2\\sin2t\\,dt\\)，再分部积分两次。考场信号：题目直接给函数图像上的起点和终点时，直接参数化通常最短。易错点：格林公式只适用于闭曲线；\\(\\int\\sin2t\\,dt=-\\frac12\\cos2t\\)。防卡方法：第二类曲线积分固定先问三件事——是否闭合、是否路径无关、能否直接参数化。",
       "contentFingerprint": "fab32e21d0e60ba6e2a7deab4cce7b601e49d2e59c1582aae9e079df93cd3104",
       "reviewAttempts": [
         {
@@ -14924,9 +14969,17 @@ window.WRONG_QUESTIONS = {
           "scope": "全题",
           "result": "思路卡壳",
           "verification": "用户当日逐题反馈"
+        },
+        {
+          "sessionKey": "2026-11-04-exam-2008-math1-q16-late-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分错题突破训练",
+          "scope": "全题",
+          "result": "方法选择错误后订正",
+          "verification": "题图、手写过程与连续追问交叉核对"
         }
       ],
-      "lastReviewResult": "2026-11-04专项复习：思路卡壳。"
+      "lastReviewResult": "2026-11-04复盘：方法选择错误后订正。"
     },
     {
       "sourcePage": 2,
@@ -15581,7 +15634,7 @@ window.WRONG_QUESTIONS = {
       "status": "复习中",
       "difficulty": "未标注",
       "mistakeType": "方法选择困难 / 边界或范围判断困难 / 计算错误",
-      "note": "当日第一问能写出梯度，但不确定投影时应保留哪个变量；第二问漏乘椭圆伸缩换元的雅可比系数，得到 \\(2\\sqrt3\\pi\\) 而非 \\(2\\pi\\)。 2026-11-04专项复习反馈“完全不会”，该题需作为高优先级重练题。",
+      "note": "当日第一问能写出梯度，但不确定投影时应保留哪个变量；第二问漏乘椭圆伸缩换元的雅可比系数，得到 \\(2\\sqrt3\\pi\\) 而非 \\(2\\pi\\)。 2026-11-04专项复习反馈“完全不会”，该题需作为高优先级重练题。 最新手写能得到 \\(y=2z\\)，但未独立完成投影域和第二问积分。",
       "tags": [
         "当日对话复盘",
         "方法选择困难",
@@ -15590,7 +15643,7 @@ window.WRONG_QUESTIONS = {
         "雅可比"
       ],
       "errorCause": "没有由分子中的 \\(|y-2z|=|G_z|\\) 反向选择向 \\(xOy\\) 面投影，因而在保留 \\(y\\) 还是 \\(z\\) 上犹豫；把椭圆 \\(x^2+\\frac34y^2\\le1\\) 化为单位圆时，写了 \\(x=r\\cos\\theta,\\ y=\\frac2{\\sqrt3}r\\sin\\theta\\)，却仍用 \\(r\\,\\mathrm dr\\,\\mathrm d\\theta\\)，漏掉伸缩因子 \\(\\frac2{\\sqrt3}\\)。",
-      "errorCauseEvidence": "用户连续追问“保留 \\(y\\) 还是 \\(z\\)”“第二问完全没有思路”“怎么得到”，手写解答最终因漏乘雅可比得到 \\(2\\sqrt3\\pi\\)。 2026-11-04专项复习中用户明确反馈“完全不会”。",
+      "errorCauseEvidence": "用户连续追问“保留 \\(y\\) 还是 \\(z\\)”“第二问完全没有思路”“怎么得到”，手写解答最终因漏乘雅可比得到 \\(2\\sqrt3\\pi\\)。 2026-11-04专项复习中用户明确反馈“完全不会”。 最新手写只停留在法向量与 \\(y=2z\\)，印证卡点位于从轨迹到投影积分的衔接。",
       "similarQuestionPrompt": "仿2010年数学一第19题，围绕隐式曲面切平面、第二类坐标投影生成一道考研数学一同类型题，题目条件完整、难度相近、非偏怪题；给出答案、解题起步提示、分步解析与易错点。",
       "transcriptionStatus": "verified",
       "answerVerification": "基于用户提供的原卷逐题人工识读并独立复核",
@@ -15610,7 +15663,8 @@ window.WRONG_QUESTIONS = {
       "reviewFocus": "卡壳位置：不知道选哪个坐标面投影，且椭圆换元漏雅可比。第一步：令 \\(G=x^2+y^2+z^2-yz-1\\)，先找分子绝对值对应的偏导；因 \\(|y-2z|=|G_z|\\)，优先向 \\(xOy\\) 面投影，保留 \\(x,y\\) 而消去 \\(z\\)。正确突破口：\n\\[\n\\frac{|G_z|}{|\\nabla G|}\\,\\mathrm dS=\\mathrm dx\\,\\mathrm dy,\n\\]\n积分立即化为椭圆域上的 \\(\\iint(x+\\sqrt3)\\mathrm dA\\)。考场信号：第一类曲面积分中出现“某个偏导的绝对值/梯度模”，就是投影面积元。易错点：\\(x=r\\cos\\theta,\\ y=\\frac2{\\sqrt3}r\\sin\\theta\\) 的雅可比是 \\(\\frac2{\\sqrt3}r\\)，不能仍写 \\(r\\)。防卡方法：椭圆换元先用半轴面积 \\(\\pi ab\\) 快速复核，域面积应为 \\(2\\pi/\\sqrt3\\)，从而 \\(I=2\\pi\\)。",
       "historyImportBatches": [
         "daily-2026-10-15-v1",
-        "daily-2026-11-04-v1"
+        "daily-2026-11-04-v1",
+        "daily-2026-11-05-v1"
       ],
       "historySources": [
         {
@@ -15623,6 +15677,12 @@ window.WRONG_QUESTIONS = {
           "date": "2026-11-04",
           "sourceLabel": "2010年数学一第19题专项复习反馈",
           "verification": "用户反馈“完全不会”，重点提示F_z=0与由|G_z|反选xOy投影"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2010数一第19题手写复盘",
+          "verification": "手写只能由法向量第三分量为零得到y=2z，后续投影和积分仍需提示"
         }
       ],
       "reviewAttempts": [
@@ -15633,9 +15693,17 @@ window.WRONG_QUESTIONS = {
           "scope": "全题",
           "result": "完全不会",
           "verification": "用户当日逐题反馈"
+        },
+        {
+          "sessionKey": "2026-11-04-exam-2010-math1-q19-late-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分错题突破训练",
+          "scope": "全题",
+          "result": "第一问部分完成，第二问仍卡壳",
+          "verification": "题图、手写过程与连续追问交叉核对"
         }
       ],
-      "lastReviewResult": "2026-11-04专项复习：完全不会。"
+      "lastReviewResult": "2026-11-04复盘：第一问部分完成，第二问仍卡壳。"
     },
     {
       "id": "exam-2010-math1-q20",
@@ -23692,7 +23760,8 @@ window.WRONG_QUESTIONS = {
       "sourceCategory": "考研真题",
       "transcriptionStatus": "verified",
       "historyImportBatches": [
-        "daily-2026-11-04-v1"
+        "daily-2026-11-04-v1",
+        "daily-2026-11-05-v1"
       ],
       "wrongSubquestions": [],
       "id": "exam-2014-math1-q12",
@@ -23713,14 +23782,15 @@ window.WRONG_QUESTIONS = {
         "第二类曲线积分",
         "空间曲线降维",
         "格林公式",
-        "方向判断"
+        "方向判断",
+        "当日对话复盘"
       ],
-      "note": "2026-11-04专项复习反馈“完全不会”，核心是不会利用平面约束把空间曲线积分降为平面闭曲线积分。",
+      "note": "2026-11-04专项复习反馈“完全不会”，核心是不会利用平面约束把空间曲线积分降为平面闭曲线积分。 随后用户追问斯托克斯公式解法，说明旋度与有向面积元的配合仍不稳定。",
       "stem": "设 \\(L\\) 为柱面 \\(x^2+y^2=1\\) 与平面 \\(y+z=0\\) 的交线，从 \\(z\\) 轴正向往负向看去为逆时针方向，计算\n\\[\nI=\\oint_L z\\,dx+y\\,dz.\n\\]",
       "options": [],
       "answer": "\\[\nI=\\pi.\n\\]",
-      "analysis": "沿 \\(L\\) 有 \\(z=-y\\)，故 \\(dz=-dy\\)。于是\n\\[\nI=\\oint_L(-y\\,dx-y\\,dy).\n\\]\n把 \\(L\\) 投影到 \\(xOy\\) 平面，得到按逆时针方向的单位圆 \\(C:x^2+y^2=1\\)。令 \\(P=-y,Q=-y\\)，由格林公式\n\\[\nI=\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q_x-P_y)\\,dxdy=\\iint_D1\\,dxdy=\\pi.\n\\]",
-      "errorCause": "看到空间交线后没有先用平面关系 \\(z=-y\\)、\\(dz=-dy\\) 消去 \\(z\\)，因而无法把问题转化为单位圆上的平面第二类曲线积分。",
+      "analysis": "沿 \\(L\\) 有 \\(z=-y\\)，故 \\(dz=-dy\\)。于是\n\\[\nI=\\oint_L(-y\\,dx-y\\,dy).\n\\]\n把 \\(L\\) 投影到 \\(xOy\\) 平面，得到按逆时针方向的单位圆 \\(C:x^2+y^2=1\\)。令 \\(P=-y,Q=-y\\)，由格林公式\n\\[\nI=\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q_x-P_y)\\,dxdy=\\iint_D1\\,dxdy=\\pi.\n\\]\n\n**斯托克斯解法：** 令 \\(\\mathbf F=(z,0,y)\\)，则\n\\[\n\\nabla\\times\\mathbf F=(1,1,0).\n\\]\n取 \\(L\\) 所在平面 \\(z=-y\\) 内的圆盘为积分面。按题目方向选取 \\(z\\) 分量为正的有向面积元\n\\[\n\\mathbf n\\,dS=(0,1,1)\\,dxdy.\n\\]\n其在 \\(xOy\\) 面的投影为单位圆盘 \\(D\\)，故\n\\[\nI=\\iint_D(1,1,0)\\cdot(0,1,1)\\,dxdy=\\iint_D1\\,dxdy=\\pi.\n\\]",
+      "errorCause": "看到空间交线后没有先用平面关系 \\(z=-y\\)、\\(dz=-dy\\) 消去 \\(z\\)，因而无法把问题转化为单位圆上的平面第二类曲线积分。 对斯托克斯路线还不清楚应选原平面作曲面，并把旋度与未单位化的有向面积元直接点乘。",
       "knowledgePoints": [
         "空间曲线积分",
         "约束降维",
@@ -23735,11 +23805,17 @@ window.WRONG_QUESTIONS = {
           "date": "2026-11-04",
           "sourceLabel": "2014年数学一第12题专项复习",
           "verification": "题干、答案与用户“完全不会”的反馈交叉核对"
+        },
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "2014数一第12题斯托克斯解法追问",
+          "verification": "用户主动追问“斯托克斯怎么做”，补充与约束降维不同的第二条路线"
         }
       ],
       "answerVerification": "利用格林公式计算，并用参数化 \\(x=\\cos t,y=\\sin t,z=-\\sin t\\) 复核",
-      "errorCauseEvidence": "用户在8题专项复习反馈中将本题标为“完全不会”。",
-      "reviewFocus": "卡壳位置：空间曲线让人误以为必须做三维参数化。第一步：从平面方程写出 \\(z=-y\\) 与 \\(dz=-dy\\)，把所有微元统一为 \\(dx,dy\\)。正确突破口：柱面投影到 \\(xOy\\) 正好是单位圆，再用格林公式。考场信号：空间闭曲线由“柱面＋平面”给出，且积分只含一个可由平面消去的变量时，优先约束降维。易错点：方向必须随投影核对；从 \\(+z\\) 往 \\(-z\\) 看为逆时针，对应 \\(xOy\\) 平面正向。防卡方法：草稿固定写“平面消元→微分消元→投影曲线→方向→格林”。",
+      "errorCauseEvidence": "用户在8题专项复习反馈中将本题标为“完全不会”。 用户明确追问“斯托克斯怎么做”。",
+      "reviewFocus": "卡壳位置：会用平面关系降维，但不知道斯托克斯公式从哪里起步。第一步：把积分写成 \\(\\oint_L\\mathbf F\\cdot d\\mathbf r\\)，先算旋度。正确突破口：直接取交线所在平面 \\(z=-y\\) 内的圆盘；上向有向面积元是 \\((0,1,1)dxdy\\)，无需单位化。考场信号：空间闭曲线是柱面与平面的交线，旋度简单且投影为圆盘时，斯托克斯通常一步化为面积。易错点：若用未单位化面积元就不能再额外乘 \\(dS\\)；方向由题目观察方向决定。防卡方法：固定写“旋度—选面—定向—投影—点乘”五步。",
       "examSources": [
         {
           "year": 2014,
@@ -23758,14 +23834,178 @@ window.WRONG_QUESTIONS = {
           "scope": "全题",
           "result": "完全不会",
           "verification": "用户当日逐题反馈"
+        },
+        {
+          "sessionKey": "2026-11-04-exam-2014-math1-q12-late-review",
+          "date": "2026-11-04",
+          "practiceSet": "线积分与曲面积分错题突破训练",
+          "scope": "全题",
+          "result": "需要提示后能继续",
+          "verification": "题图、手写过程与连续追问交叉核对"
         }
       ],
-      "lastReviewResult": "2026-11-04专项复习：完全不会。"
+      "lastReviewResult": "2026-11-04复盘：需要提示后能继续。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-05-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261105-calc-great-circle-xy-ds-variant",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-04 晚间错题突破训练 · 倾斜大圆第一类曲线积分",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "第一类曲线积分",
+        "球面与平面交线",
+        "大圆参数化",
+        "正交基"
+      ],
+      "note": "用户把 \\(ds\\) 型积分误认成第二类曲线积分，不会为倾斜平面内的大圆建立参数方程。",
+      "stem": "设 \\(L\\) 为球面 \\(x^2+y^2+z^2=1\\) 与平面 \\(x+y+2z=0\\) 的交线，计算\n\\[\nI=\\oint_Lxy\\,ds.\n\\]",
+      "answer": "\\[\nI=-\\frac{\\pi}{6}.\n\\]",
+      "analysis": "交线是过原点的平面截单位球所得的大圆。取平面内一组正交单位向量\n\\[\ne_1=\\frac1{\\sqrt2}(1,-1,0),\\qquad e_2=\\frac1{\\sqrt3}(1,1,-1).\n\\]\n参数化为 \\(r(t)=e_1\\cos t+e_2\\sin t\\), \\(0\\le t\\le2\\pi\\)。因为 \\(|r'(t)|=1\\)，故 \\(ds=dt\\)。于是\n\\[\nx=\\frac{\\cos t}{\\sqrt2}+\\frac{\\sin t}{\\sqrt3},\\quad y=-\\frac{\\cos t}{\\sqrt2}+\\frac{\\sin t}{\\sqrt3},\n\\]\n从而 \\(xy=-\\frac12\\cos^2t+\\frac13\\sin^2t\\)。积分得\n\\[\nI=-\\frac12\\pi+\\frac13\\pi=-\\frac\\pi6.\n\\]",
+      "errorCause": "未先按微元分类，误以为闭曲线都应使用格林或斯托克斯；面对倾斜圆也不会在其平面内构造正交基。",
+      "knowledgePoints": [
+        "第一类曲线积分",
+        "倾斜圆",
+        "平面内正交基",
+        "参数化",
+        "弧长微元"
+      ],
+      "similarQuestionPrompt": "设 \\(L\\) 为单位球与平面 \\(2x-y+2z=0\\) 的交线，计算 \\(\\oint_Lxz\\,ds\\)，要求用平面内正交基参数化并用投影矩阵法复核。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "错题突破训练第1题",
+          "verification": "训练题题干、用户“不会”反馈及参数化解答交叉核对"
+        }
+      ],
+      "answerVerification": "用平面内正交基参数化；另由圆上二阶矩矩阵 \\(\\pi(I-nn^T)\\) 复核",
+      "errorCauseEvidence": "用户明确表示第一题不会，并把 \\(\\oint xy\\,ds\\) 混淆为第二类曲线积分。",
+      "reviewFocus": "卡壳位置：不会处理倾斜平面内的圆。第一步：看到 \\(ds\\) 先确认是第一类积分，与方向无关；再判断交线是过球心的大圆。正确突破口：在平面内找两条正交单位向量，用 \\(e_1\\cos t+e_2\\sin t\\) 参数化。考场信号：单位球＋过原点平面＝半径1的大圆。易错点：所选向量必须都垂直于平面法向量且彼此正交；\\(ds=|r'|dt\\)。防卡方法：参数化前做三项点积检查。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-05-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261105-calc-half-ellipsoid-gauss-variant",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-04 晚间错题突破训练 · 半椭球高斯公式变式",
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "当日对话导入",
+        "第二类曲面积分",
+        "高斯公式",
+        "补面",
+        "椭球缩放",
+        "雅可比",
+        "球体二次矩"
+      ],
+      "note": "用户已能补 \\(x=0\\) 平面，但把缩放后的半球体积和二次矩系数算错，最终得到 \\(64\\pi/15\\)。",
+      "stem": "设 \\(\\Sigma\\) 是曲面\n\\[\nx=\\sqrt{1-2y^2-2z^2}\n\\]\n的前侧，计算\n\\[\nI=\\iint_\\Sigma x\\,dy\\,dz+(y^3+2)\\,dz\\,dx+z^3\\,dx\\,dy.\n\\]",
+      "answer": "\\[\nI=\\frac{8\\pi}{15}.\n\\]",
+      "analysis": "补上 \\(x=0\\) 的椭圆圆盘使曲面闭合。补面上 \\(F_x=x=0\\)，故补面通量为0。散度为 \\(1+3y^2+3z^2\\)，于是\n\\[\nI=\\iiint_\\Omega(1+3y^2+3z^2)dV,\n\\]\n其中 \\(\\Omega:\\ x\\ge0,x^2+2y^2+2z^2\\le1\\)。令 \\(u=\\sqrt2y,v=\\sqrt2z\\)，则 \\(dV=\\frac12dx,du,dv\\)，区域化为半单位球 \\(B_+\\)。因此\n\\[\nI=\\frac12\\iiint_{B_+}\\left(1+\\frac32u^2+\\frac32v^2\\right)dV.\n\\]\n利用 \\(\\operatorname{Vol}(B_+)=2\\pi/3\\) 且 \\(\\iiint_{B_+}(u^2+v^2)dV=4\\pi/15\\)，得到\n\\[\nI=\\frac12\\cdot\\frac{2\\pi}{3}+\\frac34\\cdot\\frac{4\\pi}{15}=\\frac{8\\pi}{15}.\n\\]",
+      "errorCause": "坐标缩放后没有把 \\(dy,dz=\\frac12du,dv\\) 贯彻到每一项，并把半单位球体积、平方矩与原椭球量混算。",
+      "knowledgePoints": [
+        "高斯公式",
+        "补面法",
+        "椭球线性缩放",
+        "雅可比",
+        "球体二次矩"
+      ],
+      "similarQuestionPrompt": "将曲面改为 \\(x=\\sqrt{1-ay^2-az^2}\\)，向量场改为 \\((x,y^3+c,z^3)\\)，求前侧通量并写出关于 \\(a,c\\) 的结果。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-04",
+          "sourceLabel": "半椭球补面变式手写订正",
+          "verification": "根据手写曲面方程、散度、变量缩放与错误结果独立复核"
+        }
+      ],
+      "answerVerification": "高斯公式与线性缩放计算；用柱坐标直接积分复核",
+      "errorCauseEvidence": "用户手写已补面并令 \\(u=\\sqrt2y,v=\\sqrt2z\\)，但最终得到 \\(64\\pi/15\\)，暴露雅可比和半球矩系数错误。",
+      "reviewFocus": "卡壳位置：方法已经选对，却在椭球缩放后失去系数控制。第一步：变量变换时把反解和雅可比单列：\\(y=u/\\sqrt2,z=v/\\sqrt2,dy,dz=\\frac12du,dv\\)。正确突破口：把半球体积与二次矩作为两个独立标准量计算。考场信号：椭球只在坐标平方系数上不同，优先线性缩放到单位球。易错点：被积函数中的 \\(y^2,z^2\\) 也要同步缩放；半球是全球的一半。防卡方法：每次换元按“变量—被积函数—微元—区域”四栏核对。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-05-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261105-linear-adjugate-quadratic-definite",
+      "subject": "线性代数",
+      "chapter": 22,
+      "chapterTitle": "二次型与正定性",
+      "sourceRef": "2026-11-05 对话 · 正交变换、伴随矩阵与二次型符号",
+      "questionType": "选择题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "二次型",
+        "正交变换",
+        "伴随矩阵",
+        "特征值",
+        "正定"
+      ],
+      "note": "用户已写出 \\(A^*=|A|A^{-1}\\)，但卡在如何由两个对角阵比较求出参数 \\(a\\)。",
+      "stem": "已知二次型 \\(f(x_1,x_2,x_3)=x^TAx\\) 经正交变换 \\(x=Qy\\) 化为\n\\[\ng(y_1,y_2,y_3)=y_1^2+2y_2^2+ay_3^2\\quad(a\\ne0),\n\\]\n且\n\\[\nQ^{-1}A^*Q=\\operatorname{diag}\\left(1,\\frac12,\\frac1a\\right),\n\\]\n其中 \\(A^*\\) 为 \\(A\\) 的伴随矩阵。则对任意 \\(x\\ne0\\)，下列结论正确的是（ ）。\n\nA. \\(f(x_1,x_2,x_3)>0\\)\n\nB. \\(f(x_1,x_2,x_3)=0\\)\n\nC. \\(f(x_1,x_2,x_3)<0\\)\n\nD. \\(f(x_1,x_2,x_3)\\le0\\)",
+      "answer": "A。由 \\(a=\\frac12\\) 得二次型正定。",
+      "analysis": "正交变换给出\n\\[\nQ^{-1}AQ=Q^TAQ=D=\\operatorname{diag}(1,2,a).\n\\]\n相似变换保持伴随矩阵关系，因此\n\\[\nQ^{-1}A^*Q=D^*=\\operatorname{diag}(2a,a,2).\n\\]\n与题给 \\(\\operatorname{diag}(1,1/2,1/a)\\) 比较，得 \\(2a=1\\)，即 \\(a=1/2\\)；其余两项也一致。于是 \\(D\\) 的三个对角元均为正，故 \\(A\\) 正定，对任意非零 \\(x\\) 有 \\(x^TAx>0\\)。",
+      "errorCause": "虽然记得 \\(A^*=|A|A^{-1}\\)，但没有把 \\(A\\) 的对角化结果直接传递给 \\(A^*\\)，导致在行列式与逆矩阵之间来回变形，无法快速比较对角元。",
+      "knowledgePoints": [
+        "实对称矩阵正交对角化",
+        "二次型正定",
+        "伴随矩阵",
+        "特征值变换",
+        "相似不变量"
+      ],
+      "similarQuestionPrompt": "设实对称矩阵 \\(A\\) 正交相似于 \\(\\operatorname{diag}(p,q,r)\\)，且 \\(A^*\\) 正交相似于给定对角阵。反求 \\(p,q,r\\)，判断原二次型的正负惯性指数。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-05",
+          "sourceLabel": "二次型第9题手写推导",
+          "verification": "依据原题图片、用户手写矩阵推导与伴随矩阵公式复核"
+        }
+      ],
+      "answerVerification": "直接比较 \\(D^*\\) 的对角元；另用 \\(A^*=|A|A^{-1}\\) 与 \\(|A|=2a\\) 复核",
+      "errorCauseEvidence": "用户手写已得到 \\(Q^TAQ=\\operatorname{diag}(1,2,a)\\) 并写出 \\(A^*=|A|A^{-1}\\)，但未完成参数比较。",
+      "reviewFocus": "卡壳位置：会写公式，却不知道如何把伴随矩阵也对角化。第一步：先记 \\(D=Q^{-1}AQ=\\operatorname{diag}(1,2,a)\\)。正确突破口：对可逆对角阵，\\(D^*\\) 的每个对角元等于另外两个对角元的乘积，所以 \\(D^*=\\operatorname{diag}(2a,a,2)\\)。考场信号：题目同时给 \\(A\\) 与 \\(A^*\\) 的相似/正交相似对角阵时，直接在特征值层面比较。易错点：伴随矩阵的特征值不是简单取倒数，而是 \\(|A|/\\lambda_i\\)。防卡方法：先写 \\(|A|=\\lambda_1\\lambda_2\\lambda_3\\)，再逐项写 \\(|A|/\\lambda_i\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -23793,7 +24033,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-11-01-v1",
     "daily-2026-11-02-v1",
     "daily-2026-11-03-v1",
-    "daily-2026-11-04-v1"
+    "daily-2026-11-04-v1",
+    "daily-2026-11-05-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
