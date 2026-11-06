@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 439,
+  "count": 442,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -24001,11 +24001,173 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "直接比较 \\(D^*\\) 的对角元；另用 \\(A^*=|A|A^{-1}\\) 与 \\(|A|=2a\\) 复核",
       "errorCauseEvidence": "用户手写已得到 \\(Q^TAQ=\\operatorname{diag}(1,2,a)\\) 并写出 \\(A^*=|A|A^{-1}\\)，但未完成参数比较。",
       "reviewFocus": "卡壳位置：会写公式，却不知道如何把伴随矩阵也对角化。第一步：先记 \\(D=Q^{-1}AQ=\\operatorname{diag}(1,2,a)\\)。正确突破口：对可逆对角阵，\\(D^*\\) 的每个对角元等于另外两个对角元的乘积，所以 \\(D^*=\\operatorname{diag}(2a,a,2)\\)。考场信号：题目同时给 \\(A\\) 与 \\(A^*\\) 的相似/正交相似对角阵时，直接在特征值层面比较。易错点：伴随矩阵的特征值不是简单取倒数，而是 \\(|A|/\\lambda_i\\)。防卡方法：先写 \\(|A|=\\lambda_1\\lambda_2\\lambda_3\\)，再逐项写 \\(|A|/\\lambda_i\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-06-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "I"
+      ],
+      "id": "daily-20261106-calc-directional-derivative-surface-area",
+      "subject": "高等数学",
+      "chapter": 13,
+      "chapterTitle": "多元函数微分学",
+      "sourceRef": "2026-11-06 对话 · 最大方向导数与旋转抛物面面积",
+      "questionNo": 16,
+      "questionType": "解答题",
+      "mistakeType": "审题错误 / 思路卡壳 / 计算错误",
+      "tags": [
+        "当日对话导入",
+        "方向导数",
+        "梯度",
+        "最大方向导数",
+        "单位方向向量",
+        "曲面面积"
+      ],
+      "note": "用户在第(I)问把方向 \\((-3,-4)\\) 的第二个分量误写成正号，并在梯度模长平方中出现系数错误；第(II)问按完整题目补全规范解法。",
+      "stem": "设 \\(a,b\\) 为实数，函数\n\\[\nz=2+ax^2+by^2\n\\]\n在点 \\((3,4)\\) 处的所有方向导数中，沿方向 \\(\\boldsymbol l=-3\\boldsymbol i-4\\boldsymbol j\\) 的方向导数最大，且最大值为 \\(10\\)。\n\n(1) 求 \\(a,b\\)；\n\n(2) 求曲面\n\\[\nz=2+ax^2+by^2\\quad(z\\ge0)\n\\]\n的面积。",
+      "answer": "\\[\na=b=-1,\\qquad S=\\frac{13\\pi}{3}.\n\\]",
+      "analysis": "在 \\((3,4)\\) 处\n\\[\n\\nabla z=(2ax,2by)\\big|_{(3,4)}=(6a,8b).\n\\]\n方向 \\((-3,-4)\\) 的单位向量为\n\\[\n\\boldsymbol e_l=\\left(-\\frac35,-\\frac45\\right).\n\\]\n最大方向导数等于梯度的模，并且在梯度方向取得。题目已说明最大方向就是 \\(\\boldsymbol l\\)，故不仅有 \\(\\|\\nabla z\\|=10\\)，还应写\n\\[\n\\nabla z(3,4)=10\\boldsymbol e_l=(-6,-8).\n\\]\n所以\n\\[\n6a=-6,\\qquad 8b=-8,\n\\]\n从而 \\(a=b=-1\\)。\n\n曲面变为\n\\[\nz=2-x^2-y^2,\n\\]\n由 \\(z\\ge0\\) 得投影域 \\(D:x^2+y^2\\le2\\)。又\n\\[\nz_x=-2x,\\qquad z_y=-2y,\n\\]\n因此\n\\[\nS=\\iint_D\\sqrt{1+z_x^2+z_y^2}\\,dxdy\n=\\int_0^{2\\pi}\\int_0^{\\sqrt2}\\sqrt{1+4r^2}\\,r\\,dr\\,d\\theta\n=\\frac{13\\pi}{3}.\n\\]",
+      "errorCause": "把方向向量的符号看错，导致把单位方向写成 \\((-3/5,4/5)\\)；同时只想用梯度模长方程，忽略了“该方向取得最大值”还给出了梯度的方向信息。",
+      "knowledgePoints": [
+        "方向导数",
+        "梯度",
+        "最大方向导数",
+        "单位方向向量",
+        "曲面面积",
+        "极坐标"
+      ],
+      "similarQuestionPrompt": "将方向改为 \\((3,-4)\\)，最大方向导数改为 \\(5\\)，先反求二次曲面的参数，再求其在 \\(z\\ge0\\) 部分的面积；要求分别写出“最大值条件”和“方向条件”。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-06",
+          "sourceLabel": "第16题题面、手写过程与方向符号追问",
+          "verification": "题面图与手写图逐项核对，梯度关系和曲面积分独立复算"
+        }
+      ],
+      "answerVerification": "用梯度与最大方向一致的向量等式复核 \\(a,b\\)，再以极坐标直接计算曲面面积",
+      "errorCauseEvidence": "手写稿将 \\(-3\\boldsymbol i-4\\boldsymbol j\\) 的单位方向第二分量写成正号，并把 \\((6a)^2\\) 的系数误写；随后需要提示才能继续。",
+      "reviewFocus": "卡壳位置：只记得“最大方向导数等于梯度模”，没有把题目给出的最大方向也用上。第一步：圈出方向 \\((-3,-4)\\)，先单位化为 \\((-3/5,-4/5)\\)。正确突破口：直接写向量等式 \\(\\nabla z=10\\boldsymbol e_l\\)，一次得到两个参数。考场信号：题目同时给“最大值”和“在哪个方向最大”，必有模长与方向两层信息。易错点：每个分量的正负号、单位化以及 \\((6a)^2=36a^2\\)。防卡方法：先抄原方向，再写单位向量，最后才代梯度；不要先展开模长平方。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础概念题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-06-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261106-calc-inflection-point-coordinate-writing",
+      "subject": "高等数学",
+      "chapter": 5,
+      "chapterTitle": "一元函数微分学的应用（一）—几何应用",
+      "sourceRef": "2026-11-06 对话 · 拐点坐标写法",
+      "questionType": "概念题",
+      "mistakeType": "概念错误 / 审题错误",
+      "tags": [
+        "当日对话导入",
+        "拐点",
+        "凹凸性",
+        "二阶导数",
+        "规范作答"
+      ],
+      "note": "用户主动追问“拐点只需要写横坐标还是点的坐标”，反映对拐点定义与答题口径不稳定。",
+      "stem": "求曲线 \\(y=f(x)\\) 的拐点时，最终答案应写横坐标 \\(x_0\\)，还是写点坐标 \\((x_0,f(x_0))\\)？并说明如何确认 \\(x_0\\) 确实对应拐点。",
+      "answer": "若题目问“拐点”，应写完整坐标\n\\[\n\\bigl(x_0,f(x_0)\\bigr).\n\\]\n只有题目明确问“拐点的横坐标（横坐标值）”时，才只写 \\(x_0\\)。确认拐点的本质条件是曲线在该点两侧凹凸性发生改变；常用判据是 \\(f''(x)\\) 在 \\(x_0\\) 两侧异号。",
+      "analysis": "拐点是曲线上的点，不是单独的自变量数值。因此找到候选横坐标 \\(x_0\\) 后，还要计算 \\(y_0=f(x_0)\\)，最终写成 \\((x_0,y_0)\\)。\n\n判断时应先保证该点在曲线上，并考察其邻域两侧的凹凸性。若 \\(f''\\) 在 \\(x_0\\) 两侧由正变负或由负变正，则 \\((x_0,f(x_0))\\) 是拐点。仅有\n\\[\nf''(x_0)=0\n\\]\n或 \\(f''(x_0)\\) 不存在，只能说明 \\(x_0\\) 是候选点，不能单独推出它是拐点。例如 \\(f(x)=x^4\\) 在 \\(x=0\\) 处有 \\(f''(0)=0\\)，但两侧均向上凹，不是拐点。",
+      "errorCause": "把“拐点的横坐标”和“曲线的拐点”混为同一种答案格式，同时容易把二阶导数等于零误当成充分条件。",
+      "knowledgePoints": [
+        "拐点定义",
+        "凹凸性",
+        "二阶导数符号",
+        "审题与规范作答"
+      ],
+      "similarQuestionPrompt": "给出一个含有 \\(f''(x)=0\\) 点和 \\(f''(x)\\) 不存在点的分段函数，要求逐个判断是否为拐点，并把答案分别写成横坐标集合与完整点坐标集合。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-06",
+          "sourceLabel": "拐点坐标写法追问",
+          "verification": "按拐点定义、二阶导数符号判据与反例核对"
+        }
+      ],
+      "answerVerification": "由拐点定义直接确认，并用 \\(f(x)=x^4\\) 反例检验“二阶导数为零并非充分条件”",
+      "errorCauseEvidence": "用户明确追问“拐点只需要x坐标还是点的坐标”。",
+      "reviewFocus": "卡壳位置：算出候选 \\(x_0\\) 后不知道答案写法。第一步：先看设问关键词——“拐点”还是“拐点横坐标”。正确突破口：拐点是曲线上的点，所以默认写 \\((x_0,f(x_0))\\)。考场信号：若题目出现“求拐点”，最后必须回代求纵坐标。易错点：\\(f''(x_0)=0\\) 只是候选条件；必须检查两侧凹凸性是否改变。防卡方法：固定写三步“找候选—验异号—回代纵坐标”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-06-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "II"
+      ],
+      "id": "daily-20261106-linear-similarity-eigenvector-bases",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "sourceRef": "2026-11-06 对话 · 相似矩阵与两组特征向量的拼接",
+      "questionNo": 21,
+      "questionType": "解答题",
+      "mistakeType": "思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "矩阵相似",
+        "特征值",
+        "特征向量",
+        "过渡矩阵",
+        "按列比较"
+      ],
+      "note": "用户已分别求出 \\(A,B\\) 的特征向量，但追问“两组特征向量需要处理吗”，卡在如何由两套特征基构造 \\(P\\)。",
+      "stem": "已知矩阵\n\\[\nA=\\begin{pmatrix}\n-2&-2&1\\\\\n2&x&-2\\\\\n0&0&-2\n\\end{pmatrix},\\qquad\nB=\\begin{pmatrix}\n2&1&0\\\\\n0&-1&0\\\\\n0&0&y\n\\end{pmatrix}\n\\]\n相似。\n\n(1) 求 \\(x,y\\)；\n\n(2) 求可逆矩阵 \\(P\\)，使得 \\(P^{-1}AP=B\\)。",
+      "answer": "\\[\nx=3,qquad y=-2.\n\\]\n一组可取的过渡矩阵为\n\\[\nP=\\begin{pmatrix}\n1&1&1\\\\\n-2&-1&-2\\\\\n0&0&-4\n\\end{pmatrix},\n\\]\n它满足 \\(AP=PB\\)，故 \\(P^{-1}AP=B\\)。",
+      "analysis": "由于 \\(A\\) 为分块上三角矩阵，\\(-2\\) 是其特征值；而 \\(B\\) 的特征值为 \\(2,-1,y\\)。相似矩阵特征值（含重数）相同，故 \\(y=-2\\)。余下的 \\(2\\times2\\) 块\n\\[\n\\begin{pmatrix}-2&-2\\\\2&x\\end{pmatrix}\n\\]\n的特征值为 \\(2,-1\\)，比较迹得\n\\[\n-2+x=2+(-1)=1,\n\\]\n所以 \\(x=3\\)。行列式 \\(-2x+4=-2\\) 也与 \\(2\\cdot(-1)\\) 一致。\n\n把两矩阵按同一特征值顺序 \\(2,-1,-2\\) 选取特征向量：\n\\[\nS_A=\\begin{pmatrix}\n1&-2&1\\\\\n-2&1&-2\\\\\n0&0&-4\n\\end{pmatrix},\\qquad\nS_B=\\begin{pmatrix}\n1&1&0\\\\\n0&-3&0\\\\\n0&0&1\n\\end{pmatrix}.\n\\]\n于是\n\\[\nS_A^{-1}AS_A=S_B^{-1}BS_B=\\operatorname{diag}(2,-1,-2).\n\\]\n因此\n\\[\nP=S_AS_B^{-1}\n=\\begin{pmatrix}\n1&1&1\\\\\n-2&-1&-2\\\\\n0&0&-4\n\\end{pmatrix}.\n\\]\n也可直接令 \\(P=(p_1,p_2,p_3)\\)，由 \\(AP=PB\\) 得\n\\[\nAp_1=2p_1,\\qquad Ap_2=p_1-p_2,\\qquad Ap_3=-2p_3,\n\\]\n逐列求解。",
+      "errorCause": "分别得到两组特征向量后，不清楚它们不是直接并排或逐项相减，而应先按相同特征值对齐，分别组成特征向量矩阵，再用 \\(P=S_AS_B^{-1}\\) 连接两套特征基。",
+      "knowledgePoints": [
+        "矩阵相似",
+        "特征值与迹",
+        "特征向量",
+        "相似对角化",
+        "过渡矩阵",
+        "按列比较"
+      ],
+      "similarQuestionPrompt": "给定两个具有三个不同特征值的三阶相似矩阵，分别求出两套特征向量；要求先按特征值对齐构造 \\(S_A,S_B\\)，再求 \\(P=S_AS_B^{-1}\\)，最后用 \\(AP=PB\\) 验证。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-06",
+          "sourceLabel": "第21题题面与“两组特征向量需要处理吗”追问",
+          "verification": "题面矩阵逐项转写，并以特征值、特征向量和 AP=PB 三种方式交叉复核"
+        }
+      ],
+      "answerVerification": "计算 \\(P\\) 可逆，且逐列验证 \\(AP=PB\\)",
+      "errorCauseEvidence": "用户在分别得到 \\(A,B\\) 的两组特征向量后主动追问是否还需处理，说明过渡矩阵的构造步骤未形成稳定流程。",
+      "reviewFocus": "卡壳位置：会求两套特征向量，却不知道怎样得到 \\(P\\)。第一步：给每个特征向量标上对应特征值，并把两边按同一顺序排好。正确突破口：若 \\(A=S_ADS_A^{-1}\\)、\\(B=S_BDS_B^{-1}\\)，则 \\(P=S_AS_B^{-1}\\)。考场信号：题目给 \\(A\\sim B\\) 且要求具体 \\(P\\)，若两者都可对角化，优先找共同对角阵 \\(D\\)。易错点：特征值顺序必须一致；特征向量可缩放，但组成的矩阵必须可逆；结论不是 \\(S_A^{-1}S_B\\)。防卡方法：最后强制做一次 \\(AP=PB\\) 的逐列校验。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-06",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -24034,7 +24196,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-11-02-v1",
     "daily-2026-11-03-v1",
     "daily-2026-11-04-v1",
-    "daily-2026-11-05-v1"
+    "daily-2026-11-05-v1",
+    "daily-2026-11-06-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
