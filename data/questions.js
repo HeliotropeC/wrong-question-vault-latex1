@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 442,
+  "count": 446,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -24163,11 +24163,229 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "计算 \\(P\\) 可逆，且逐列验证 \\(AP=PB\\)",
       "errorCauseEvidence": "用户在分别得到 \\(A,B\\) 的两组特征向量后主动追问是否还需处理，说明过渡矩阵的构造步骤未形成稳定流程。",
       "reviewFocus": "卡壳位置：会求两套特征向量，却不知道怎样得到 \\(P\\)。第一步：给每个特征向量标上对应特征值，并把两边按同一顺序排好。正确突破口：若 \\(A=S_ADS_A^{-1}\\)、\\(B=S_BDS_B^{-1}\\)，则 \\(P=S_AS_B^{-1}\\)。考场信号：题目给 \\(A\\sim B\\) 且要求具体 \\(P\\)，若两者都可对角化，优先找共同对角阵 \\(D\\)。易错点：特征值顺序必须一致；特征向量可缩放，但组成的矩阵必须可逆；结论不是 \\(S_A^{-1}S_B\\)。防卡方法：最后强制做一次 \\(AP=PB\\) 的逐列校验。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-07-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "1"
+      ],
+      "id": "daily-20261107-linear-four-planes-rank-geometry",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "线性方程组与矩阵的秩",
+      "sourceRef": "2026-11-06 晚间对话 · 四平面几何位置与矩阵秩",
+      "questionType": "几何判断题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "补录对话",
+        "四平面",
+        "线性方程组",
+        "系数矩阵",
+        "增广矩阵",
+        "秩",
+        "几何意义"
+      ],
+      "note": "补录上次同步后发生的数学对话。用户第(1)问选A而正确为C；第(2)问选A正确，但不能稳定说明加入第四平面后两个秩为何同时增加。",
+      "stem": "空间中有四个平面 \\(\\Pi_1,\\Pi_2,\\Pi_3,\\Pi_4\\)。前三个平面两两相交，三条交线互相平行且彼此不重合；第四个平面 \\(\\Pi_4\\) 分别与这三条平行交线相交。把四个平面方程组成线性方程组，系数矩阵记为 \\(A\\)，增广矩阵记为 \\(\\bar A\\)。\n\n(1) 四个平面同时存在时，\\((r(A),r(\\bar A))\\) 为（ ）。\n\nA. \\((2,3)\\)　B. \\((3,3)\\)　C. \\((3,4)\\)　D. \\((2,4)\\)\n\n(2) 删除 \\(\\Pi_4\\)，只保留前三个平面时，\\((r(A),r(\\bar A))\\) 为（ ）。\n\nA. \\((2,3)\\)　B. \\((2,2)\\)　C. \\((3,3)\\)　D. \\((1,2)\\)",
+      "answer": "(1) C，即\n\\[\nr(A)=3,\\qquad r(\\bar A)=4.\n\\]\n\n(2) A，即\n\\[\nr(A)=2,\\qquad r(\\bar A)=3.\n\\]",
+      "analysis": "前三个平面的三条交线互相平行，说明它们具有同一个公共方向。三个法向量都垂直于该方向，落在同一二维子空间内；又因平面并非全平行，故法向量张成二维空间，即\n\\[\nr(A_3)=2.\n\\]\n三条交线彼此不重合，前三个平面没有公共点，所以方程组无解。由\n\\[\nr(A_3)<r(\\bar A_3)\n\\]\n得\n\\[\nr(\\bar A_3)=3.\n\\]\n\n加入 \\(\\Pi_4\\) 后，它分别截过三条平行交线，其法向量不再受前三个法向量的二维约束，故系数秩升为3。四个平面仍没有公共点；四行增广向量线性无关，于是\n\\[\nr(A)=3<r(\\bar A)=4.\n\\]\n这正对应“3个未知量、4个独立矛盾条件”。",
+      "errorCause": "把“每个平面都能分别相交”误当成“四个平面存在公共点”，并且没有区分法向量的线性关系决定 \\(r(A)\\)、常数项是否制造矛盾决定 \\(r(\\bar A)\\)。",
+      "knowledgePoints": [
+        "线性方程组的几何意义",
+        "系数矩阵的秩",
+        "增广矩阵的秩",
+        "平面法向量",
+        "无解判定"
+      ],
+      "similarQuestionPrompt": "给出三组空间平面示意：三平面共一条直线、两两相交但无公共点、四平面任意三个共点但四个无公共点；分别判断 \\(r(A)\\) 与 \\(r(\\bar A)\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-06",
+          "sourceLabel": "四平面图形判秩检测",
+          "verification": "依据图形文字描述、选项与批改结论复核"
+        }
+      ],
+      "answerVerification": "用法向量张成空间判断系数秩，再用是否存在公共点判断增广秩；与方程组相容判据交叉验证",
+      "errorCauseEvidence": "用户第(1)问选择A、第(2)问选择A，并明确表示对图形与秩的联系没有稳定思路；正确答案分别为C、A。",
+      "reviewFocus": "卡壳位置：看到 \\(\\Pi_4\\) 分别与三条交线相交，就误判四平面相容。第一步：先完全忽略常数项，只看各平面法向量张成几维，确定 \\(r(A)\\)。正确突破口：再问所有平面是否有同一个公共点；没有公共点就是 \\(r(A)<r(\\bar A)\\)。考场信号：题目出现“分别相交”不等于“共同相交”。易错点：三未知量使 \\(r(A)\\le3\\)，但四个方程的增广矩阵可以有秩4。防卡方法：固定使用“法向量判系数秩—公共点判相容性—无解时增广秩更大”三步。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "基础概念题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-07-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261107-prob-half-normal-normalization",
+      "subject": "概率论与数理统计",
+      "chapter": 2,
+      "chapterTitle": "随机变量及其分布",
+      "sourceRef": "2026-11-06 晚间对话 · 半正态密度的归一化常数",
+      "questionType": "计算题",
+      "mistakeType": "概念错误 / 审题错误 / 知识点不熟",
+      "tags": [
+        "补录对话",
+        "概率密度",
+        "归一化",
+        "正态分布",
+        "半正态分布",
+        "标准化"
+      ],
+      "note": "补录上次同步后的概念追问。用户问“为什么不能直接套正态分布函数”，卡在完整正态密度与只保留均值右侧的半正态密度之区别。",
+      "stem": "设随机变量 \\(X\\) 的概率密度为\n\\[\nf(x;\\sigma^2)=\n\\begin{cases}\n\\dfrac{A}{\\sigma}\\exp\\!\\left[-\\dfrac{(x-\\mu)^2}{2\\sigma^2}\\right],&x\\ge\\mu,\\\\[6pt]\n0,&x<\\mu,\n\\end{cases}\n\\qquad \\sigma>0.\n\\]\n求归一化常数 \\(A\\)，并说明为什么不能直接把完整正态分布的系数 \\(1/\\sqrt{2\\pi}\\) 当作 \\(A\\)。",
+      "answer": "\\[\nA=\\sqrt{\\frac2\\pi}.\n\\]",
+      "analysis": "概率密度必须满足总积分为1：\n\\[\n1=\\int_\\mu^{\\infty}\\frac A\\sigma e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\\,dx.\n\\]\n令\n\\[\nt=\\frac{x-\\mu}{\\sigma},\\qquad dx=\\sigma\\,dt,\n\\]\n则\n\\[\n1=A\\int_0^{\\infty}e^{-t^2/2}\\,dt\n=A\\cdot\\frac{\\sqrt{2\\pi}}2.\n\\]\n因此\n\\[\nA=\\frac2{\\sqrt{2\\pi}}=\\sqrt{\\frac2\\pi}.\n\\]\n\n完整的 \\(N(\\mu,\\sigma^2)\\) 密度在整个实轴上的积分为1；本题只保留 \\(x\\ge\\mu\\) 的右半部分，原正态密度在该区间的面积仅为 \\(1/2\\)，所以系数必须加倍。可以使用标准正态分布函数，但应写\n\\[\nP(Z\\ge0)=1-\\Phi(0)=\\frac12,\n\\]\n不能忽略截断后的重新归一化。",
+      "errorCause": "看到指数核与正态密度相同，就直接套完整正态分布的归一化系数，没有先检查密度的支持集已经从 \\(( -\\infty,\\infty)\\) 截成 \\([\\mu,\\infty)\\)。",
+      "knowledgePoints": [
+        "概率密度归一化",
+        "正态分布",
+        "半正态分布",
+        "变量标准化",
+        "截断分布"
+      ],
+      "similarQuestionPrompt": "若支持集改为 \\(x\\ge\\mu+c\\sigma\\)，求 \\(A\\)。答案应写成 \\(A=[\\sqrt{2\\pi}(1-\\Phi(c))]^{-1}\\)，并比较 \\(c=0\\) 与一般 \\(c\\) 的区别。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-06",
+          "sourceLabel": "截断正态常数A的追问",
+          "verification": "依据题干公式、密度归一化和标准正态右尾概率复核"
+        }
+      ],
+      "answerVerification": "直接积分得到 \\(A\\sqrt{2\\pi}/2=1\\)，并用半正态密度系数复核",
+      "errorCauseEvidence": "用户明确追问“A的值为什么不可以直接套正态分布函数”。",
+      "reviewFocus": "卡壳位置：只识别到“长得像正态”，没有检查积分区间。第一步：先写 \\(\\int f(x)\\,dx=1\\)，再看支持集。正确突破口：截断点恰好在均值处，利用正态分布对称性知道右半面积为 \\(1/2\\)。考场信号：密度写成分段式、支持集不是全实轴时，必须重新归一化。易错点：\\(A\\) 是指数核前的系数，不是直接等于标准正态密度系数。防卡方法：固定做“看支持集—标准化—算尾概率—令总面积为1”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-07-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "III"
+      ],
+      "id": "daily-20261107-prob-hidden-pit-transform-comprehensive",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "sourceRef": "2026-11-07 对话 · 隐藏的概率积分变换与非单调函数",
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "当日对话导入",
+        "概率积分变换",
+        "均匀分布",
+        "随机变量函数",
+        "非单调变换",
+        "条件概率"
+      ],
+      "note": "用户在简单变式 \\(f_X(x)=2xe^{-x^2},Y=e^{-X^2}\\) 中选D，未识别 \\(Y=1-F_X(X)\\)；综合题第(III)问明确表示没有思路。",
+      "stem": "随机变量 \\(X\\) 的概率密度为\n\\[\nf_X(x)=\n\\begin{cases}\n3x^2e^{-x^3},&x>0,\\\\\n0,&x\\le0.\n\\end{cases}\n\\]\n令\n\\[\nY=\\left|1-2e^{-X^3}\\right|,\n\\qquad\nZ=4e^{-X^3}\\left(1-e^{-X^3}\\right).\n\\]\n\n(1) 求 \\(Y\\) 的分布，并判断其是否服从均匀分布；\n\n(2) 求 \\(Z\\) 的分布函数与概率密度；\n\n(3) 求\n\\[\nP\\!\\left(Z>\\frac12\\mid Y>\\frac12\\right).\n\\]",
+      "answer": "\\[\nY\\sim U(0,1).\n\\]\n\n\\[\nF_Z(z)=\n\\begin{cases}\n0,&z\\le0,\\\\\n1-\\sqrt{1-z},&0<z<1,\\\\\n1,&z\\ge1,\n\\end{cases}\n\\qquad\nf_Z(z)=\n\\begin{cases}\n\\dfrac1{2\\sqrt{1-z}},&0<z<1,\\\\\n0,&\\text{其他}.\n\\end{cases}\n\\]\n\n\\[\nP\\!\\left(Z>\\frac12\\mid Y>\\frac12\\right)=\\sqrt2-1.\n\\]",
+      "analysis": "先求分布函数\n\\[\nF_X(x)=1-e^{-x^3}\\quad(x>0).\n\\]\n令\n\\[\nU=F_X(X)\\sim U(0,1),\n\\]\n则\n\\[\ne^{-X^3}=1-U.\n\\]\n因此\n\\[\nY=|1-2(1-U)|=|2U-1|,\n\\qquad\nZ=4U(1-U).\n\\]\n\n对 \\(0<y<1\\)，\n\\[\nP(Y\\le y)=P\\!\\left(\\frac{1-y}{2}\\le U\\le\\frac{1+y}{2}\\right)=y,\n\\]\n故 \\(Y\\sim U(0,1)\\)。\n\n对 \\(0<z<1\\)，不等式 \\(4U(1-U)\\le z\\) 的解为\n\\[\nU\\le\\frac{1-\\sqrt{1-z}}2\n\\quad\\text{或}\\quad\nU\\ge\\frac{1+\\sqrt{1-z}}2.\n\\]\n两段区间总长度为 \\(1-\\sqrt{1-z}\\)，得到 \\(F_Z\\)；求导得 \\(f_Z\\)。\n\n最关键的结构关系是\n\\[\nZ=4U(1-U)=1-(2U-1)^2=1-Y^2.\n\\]\n故\n\\[\nZ>\\frac12\\iff Y<\\frac1{\\sqrt2}.\n\\]\n由于 \\(Y\\sim U(0,1)\\)，\n\\[\nP\\!\\left(Z>\\frac12\\mid Y>\\frac12\\right)\n=\\frac{\\frac1{\\sqrt2}-\\frac12}{1-\frac12}\n=\\sqrt2-1.\n\\]",
+      "errorCause": "只会识别字面形式 \\(F_X(X)\\)，没有主动先算 \\(F_X(x)\\) 再寻找 \\(1-F_X(X)\\) 等等价形式；遇到 \\(U(1-U)\\) 非单调时也没有先划分两个反函数分支。",
+      "knowledgePoints": [
+        "概率积分变换",
+        "均匀分布",
+        "随机变量函数的分布",
+        "非单调变换",
+        "条件概率",
+        "事件等价变形"
+      ],
+      "similarQuestionPrompt": "设 \\(X\\sim N(0,1)\\)，\\(U=\\Phi(X)\\)，求 \\(W=U(1-U)\\) 的分布函数；要求明确写出取值范围和两个反函数分支。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "概率积分变换与知识迁移系列检测",
+          "verification": "依据多轮用户作答、提示与概率积分变换公式复核"
+        }
+      ],
+      "answerVerification": "分别用分布函数法和变量代换法复核 \\(Y,Z\\)，并用恒等式 \\(Z=1-Y^2\\) 独立复核条件概率",
+      "errorCauseEvidence": "用户在 \\(Y=e^{-X^2}=1-F_X(X)\\) 的检测题中选择“无法确定”，随后反复追问为何服从均匀分布；综合题第(III)问明确表示没有思路。",
+      "reviewFocus": "卡壳位置：变换不是直接写成 \\(F_X(X)\\) 时就识别不出均匀变量，且非单调函数不知道如何求分布。第一步：先由密度积分求 \\(F_X(x)\\)，强制检查题中指数项能否写成 \\(F_X(X)\\) 或 \\(1-F_X(X)\\)。正确突破口：统一令 \\(U=F_X(X)\\)，把所有变量都改写为 \\(U\\) 的函数；非单调时用分布函数法解不等式并保留所有分支。考场信号：密度形如 \\(g'(x)e^{-g(x)}\\) 时，优先识别 \\(1-e^{-g(x)}\\)。易错点：\\(U\\) 均匀不代表 \\(U^2\\) 或 \\(U(1-U)\\) 仍均匀。防卡方法：执行“求 \\(F_X\\)—设 \\(U\\)—改写新变量—定值域—解不等式”五步。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-07-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261107-calc-power-series-endpoint-subseries",
+      "subject": "高等数学",
+      "chapter": 16,
+      "chapterTitle": "无穷级数",
+      "sourceRef": "2026-11-07 对话 · 2020数一第4题与端点子级数迁移",
+      "questionNo": 4,
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "当日对话导入",
+        "2020数学一",
+        "幂级数",
+        "收敛半径",
+        "端点",
+        "子级数",
+        "条件收敛"
+      ],
+      "note": "用户原题先选C后改为A；第一道半径内变式选C正确，但后续在端点条件收敛场景中连续误判，说明“绝对收敛可任意抽取、条件收敛不可任意抽取”尚未稳定迁移。",
+      "stem": "设 \\(R\\) 为幂级数\n\\[\n\\sum_{n=1}^{\\infty}a_nx^n\n\\]\n的收敛半径，\\(r\\) 为实数，则必然正确的是（ ）。\n\nA. 当 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\) 发散时，\\(|r|\\ge R\\)；\n\nB. 当 \\(\\displaystyle\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\) 收敛时，\\(|r|\\le R\\)；\n\nC. 当 \\(|r|\\ge R\\) 时，\\(\\displaystyle\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\) 发散；\n\nD. 当 \\(|r|\\le R\\) 时，\\(\\displaystyle\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\) 收敛。",
+      "answer": "A。",
+      "analysis": "当 \\(|r|<R\\) 时，原幂级数绝对收敛：\n\\[\n\\sum_{n=1}^{\\infty}|a_nr^n|<\\infty.\n\\]\n从绝对收敛级数中抽取偶数项仍绝对收敛，所以\n\\[\n|r|<R\\Longrightarrow\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\ \\text{收敛}.\n\\]\n取逆否命题即\n\\[\n\\sum_{n=1}^{\\infty}a_{2n}r^{2n}\\ \\text{发散}\n\\Longrightarrow |r|\\ge R,\n\\]\n故A正确。\n\nB错误：偶数项子级数可能收敛，但奇数项决定原级数半径，故不能反推 \\(|r|\\le R\\)。C错误：\\(|r|=R\\) 时端点可收敛；即使 \\(|r|>R\\)，原级数发散也不保证偶数项部分必发散。D错误：\\(|r|=R\\) 是端点，不能由收敛半径直接判定。\n\n迁移时应区分三种强度：\n\n1. \\(|x|<R\\)：绝对收敛，任意子级数都绝对收敛；\n2. \\(|x|=R\\)：必须单独判别，若只知条件收敛，不能任意抽取子级数；\n3. 若 \\(\\sum a_n\\) 与 \\(\\sum(-1)^na_n\\) 都收敛，令\n\\[\nE_N=\\sum_{n=1}^N a_{2n},\\qquad O_N=\\sum_{n=1}^N a_{2n-1},\n\\]\n则 \\(E_N+O_N\\) 与 \\(E_N-O_N\\) 都有极限，从而偶数项、奇数项级数分别收敛，但不一定绝对收敛。\n\n反之，若 \\(\\sum a_n\\) 收敛而 \\(\\sum(-1)^na_n\\) 发散，则偶数项与奇数项级数都不可能单独收敛；不过成对级数\n\\[\n\\sum_{n=1}^{\\infty}(a_{2n-1}+a_{2n})\n\\]\n仍收敛。",
+      "errorCause": "把原级数的收敛与任意抽取子级数的收敛混为一谈；没有区分半径内部的绝对收敛、端点的条件收敛以及由两端点信息联立得到的奇偶项结论。",
+      "knowledgePoints": [
+        "幂级数收敛半径",
+        "端点判别",
+        "绝对收敛",
+        "条件收敛",
+        "子级数",
+        "逆否命题",
+        "奇偶项分离"
+      ],
+      "similarQuestionPrompt": "设 \\(R=1\\)，\\(\\sum a_n\\) 收敛而 \\(\\sum(-1)^na_n\\) 发散。判断偶数项级数、奇数项级数与成对级数 \\(\\sum(a_{2n-1}+a_{2n})\\) 的敛散性；再讨论若 \\(\\sum a_{3n}\\) 收敛，能否推出 \\(\\sum a_{6n}\\) 收敛。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "2020数学一第4题及三轮端点迁移检测",
+          "verification": "依据原题图片、用户选择与逐项批改结论复核"
+        }
+      ],
+      "answerVerification": "用半径内绝对收敛的子级数性质证明A，并以端点反例逻辑排除B、C、D；奇偶项结论由部分和线性组合复核",
+      "errorCauseEvidence": "用户原题先选C后改A；在“\\(\\sum a_n\\)条件收敛”检测中选A而正确为D；在“两端点均收敛”检测中选C而正确为B；在“整体收敛但交错变号发散”检测中又选B而正确为成对级数收敛的C。",
+      "reviewFocus": "卡壳位置：看到原级数收敛就默认偶数项、奇数项也收敛。第一步：先标记当前点属于 \\(|x|<R\\)、\\(|x|=R\\) 还是 \\(|x|>R\\)。正确突破口：只有绝对收敛才能无条件保留到任意子级数；端点条件收敛时要用部分和关系，不能直接抽取。考场信号：题目出现 \\(a_{2n},a_{2n-1},a_{3n}\\) 等抽取项，立即检查是否掌握绝对收敛。易错点：原级数发散不等于每个子级数都发散；原级数条件收敛也不等于每个子级数都收敛。防卡方法：奇偶项统一写 \\(S_N=E_N+O_N\\)、\\(T_N=E_N-O_N\\)，有两条独立收敛信息才能解出 \\(E_N,O_N\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-07",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -24197,7 +24415,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-11-03-v1",
     "daily-2026-11-04-v1",
     "daily-2026-11-05-v1",
-    "daily-2026-11-06-v1"
+    "daily-2026-11-06-v1",
+    "daily-2026-11-07-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
