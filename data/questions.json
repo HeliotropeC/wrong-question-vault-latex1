@@ -2,7 +2,7 @@
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 446,
+  "count": 449,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -3647,25 +3647,48 @@
       "printedPage": 113,
       "markerColor": "red",
       "status": "未复习",
-      "difficulty": "未标注",
-      "mistakeType": "待归类",
+      "difficulty": "基础计算题",
+      "mistakeType": "计算错误 / 概念错误 / 方法选择困难",
       "tags": [
-        "多元函数微分学"
+        "多元函数微分学",
+        "当日对话补强",
+        "变限积分",
+        "混合偏导",
+        "莱布尼茨公式",
+        "求导顺序"
       ],
-      "note": "",
+      "note": "2026-11-07 对话补强：用户先对 \\(x\\) 求偏导时只处理了上限 \\(xy\\)，漏掉被积函数 \\(e^{xt^2}\\) 对参数 \\(x\\) 的偏导项；原答案写成 \\(3e\\)，正确为 \\(4e\\)。",
       "sourceRef": "P299",
       "questionType": "填空题",
       "stem": "设函数 \\(f(x,y)=\\displaystyle\\int_0^{xy}e^{xt^2}\\,dt\\)，则 \\(\\left.\\dfrac{\\partial^2f}{\\partial x\\partial y}\\right|_{(1,1)}=\\underline{\\qquad}\\)。",
       "options": [],
-      "answer": "",
-      "analysis": "",
-      "errorCause": "",
+      "answer": "\\[\n\\left.\\frac{\\partial^2f}{\\partial x\\partial y}\\right|_{(1,1)}=4e.\n\\]",
+      "analysis": "题目中的记号\n\\[\n\\frac{\\partial^2 f}{\\partial x\\partial y}\n\\]\n可利用混合偏导连续性选择更简便的顺序。先对 \\(y\\) 求导时，参数 \\(x\\) 在被积函数中保持不变，只有上限 \\(xy\\) 依赖于 \\(y\\)：\n\\[\nf_y(x,y)=e^{x(xy)^2}\\frac{\\partial(xy)}{\\partial y}\n=xe^{x^3y^2}.\n\\]\n再对 \\(x\\) 求导：\n\\[\nf_{yx}(x,y)=e^{x^3y^2}+x\\cdot e^{x^3y^2}\\cdot3x^2y^2\n=(1+3x^3y^2)e^{x^3y^2}.\n\\]\n代入 \\((1,1)\\) 得\n\\[\nf_{yx}(1,1)=4e.\n\\]\n\n若先对 \\(x\\) 求导，则必须同时处理积分上限和被积函数中的参数：\n\\[\nf_x(x,y)=ye^{x^3y^2}+\\int_0^{xy}t^2e^{xt^2}\\,dt.\n\\]\n这正是手写过程漏掉的项。",
+      "errorCause": "把变限积分求导机械地理解为“被积函数代上限乘以上限导数”，忽略积分核本身也含待求导参数 \\(x\\)；同时没有主动比较两种求导顺序的复杂度。",
       "knowledgePoints": [
-        "多元函数微分学"
+        "变限积分求导",
+        "多元复合函数求导",
+        "混合偏导",
+        "莱布尼茨积分求导公式",
+        "求导顺序选择"
       ],
-      "similarQuestionPrompt": "围绕“多元函数微分学”的核心考点，保持原题题型与难度，替换参数、函数或情境，生成一道可独立求解的新题；使用 LaTeX，并给出答案与分步解析。",
+      "similarQuestionPrompt": "设 \\(g(x,y)=\\int_0^{x+y}e^{x t}\\,dt\\)，求 \\(g_{xy}(0,1)\\)。要求分别写出先对 \\(x\\) 与先对 \\(y\\) 的起步式，并判断哪一条路线更简洁。",
       "transcriptionStatus": "verified",
-      "questionNo": 10
+      "questionNo": 10,
+      "historyImportBatches": [
+        "daily-2026-11-08-v1"
+      ],
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "第12题混合偏导手写纠错",
+          "verification": "依据原题截图、用户手写漏项与两种求导顺序复核"
+        }
+      ],
+      "answerVerification": "先对 \\(y\\) 后对 \\(x\\) 得 \\(4e\\)；另以莱布尼茨公式先求 \\(f_x\\) 可交叉验证",
+      "errorCauseEvidence": "用户把 \\(f_x\\) 只写成 \\(ye^{x^3y^2}\\)，漏掉 \\(\\int_0^{xy}t^2e^{xt^2}dt\\)，由此得到错误答案 \\(3e\\)。",
+      "reviewFocus": "卡壳位置：只看见积分上限含 \\(x\\)，没看见被积函数也含 \\(x\\)。第一步：圈出“上限中的变量”和“积分核中的参数”，再选求导顺序。正确突破口：本题先对 \\(y\\) 时积分核不随 \\(y\\) 变化，只需处理上限，最省事。考场信号：变限积分同时在上限和积分核中出现同一变量时，直接套单一上限公式会漏项。易错点：先对 \\(x\\) 必须写边界项加积分项；混合偏导顺序只能在相应连续性成立时交换。防卡方法：每次先问“积分核是否也含当前求导变量”。"
     },
     {
       "id": "高等数学-ch13-u101-p112",
@@ -24381,11 +24404,181 @@
       "answerVerification": "用半径内绝对收敛的子级数性质证明A，并以端点反例逻辑排除B、C、D；奇偶项结论由部分和线性组合复核",
       "errorCauseEvidence": "用户原题先选C后改A；在“\\(\\sum a_n\\)条件收敛”检测中选A而正确为D；在“两端点均收敛”检测中选C而正确为B；在“整体收敛但交错变号发散”检测中又选B而正确为成对级数收敛的C。",
       "reviewFocus": "卡壳位置：看到原级数收敛就默认偶数项、奇数项也收敛。第一步：先标记当前点属于 \\(|x|<R\\)、\\(|x|=R\\) 还是 \\(|x|>R\\)。正确突破口：只有绝对收敛才能无条件保留到任意子级数；端点条件收敛时要用部分和关系，不能直接抽取。考场信号：题目出现 \\(a_{2n},a_{2n-1},a_{3n}\\) 等抽取项，立即检查是否掌握绝对收敛。易错点：原级数发散不等于每个子级数都发散；原级数条件收敛也不等于每个子级数都收敛。防卡方法：奇偶项统一写 \\(S_N=E_N+O_N\\)、\\(T_N=E_N-O_N\\)，有两条独立收敛信息才能解出 \\(E_N,O_N\\)。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-08-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [],
+      "id": "daily-20261108-calc-cone-flux-direct-projection",
+      "subject": "高等数学",
+      "chapter": 17,
+      "chapterTitle": "曲线积分与曲面积分",
+      "sourceRef": "2026-11-07 晚间对话 · 第18题圆锥侧面第二类曲面积分",
+      "questionNo": 18,
+      "questionType": "计算题",
+      "mistakeType": "计算错误 / 方法选择困难 / 边界或范围判断困难",
+      "tags": [
+        "补录对话",
+        "第二类曲面积分",
+        "圆锥侧面",
+        "直接投影",
+        "取向",
+        "任意连续函数抵消",
+        "极坐标"
+      ],
+      "note": "用户尝试用高斯公式，但只补了一个边界面，并错误地把含任意连续函数 \\(f(xy)\\) 的项按对称性消去；本题直接投影可发生代数抵消。",
+      "stem": "设 \\(\\Sigma\\) 为曲面\n\\[\nz=\\sqrt{x^2+y^2},\\qquad 1\\le x^2+y^2\\le4\n\\]\n的下侧，\\(f\\) 为连续函数。计算\n\\[\nI=\\iint_{\\Sigma}[xf(xy)+2x-y]\\,dy\\,dz\n+[yf(xy)+2y+x]\\,dz\\,dx\n+[zf(xy)+z]\\,dx\\,dy.\n\\]",
+      "answer": "\\[\nI=\\frac{14\\pi}{3}.\n\\]",
+      "analysis": "记\n\\[\nP=xf(xy)+2x-y,\\quad Q=yf(xy)+2y+x,\\quad R=zf(xy)+z.\n\\]\n曲面可写成 \\(z=z(x,y)=r=\\sqrt{x^2+y^2}\\)，投影域为\n\\[\nD:\\ 1\\le x^2+y^2\\le4.\n\\]\n对下侧，第二类曲面积分的直接投影公式为\n\\[\nI=\\iint_D\\left(Pz_x+Qz_y-R\\right)dxdy,\n\\]\n其中\n\\[\nz_x=\\frac{x}{r},\\qquad z_y=\\frac{y}{r}.\n\\]\n代入后\n\\[\n\\begin{aligned}\nPz_x+Qz_y-R\n&=\\frac{x^2+y^2}{r}f(xy)\n +\\frac{2x^2+2y^2}{r}\n +\\frac{-xy+xy}{r}\n -rf(xy)-r\\\\\n&=r.\n\\end{aligned}\n\\]\n这里 \\(f(xy)\\) 项和交叉项都是代数抵消，不需要猜测奇偶性。故\n\\[\nI=\\iint_D r\\,dxdy\n=\\int_0^{2\\pi}\\int_1^2 r\\cdot r\\,dr\\,d\\theta\n=2\\pi\\left[\\frac{r^3}{3}\\right]_1^2\n=\\frac{14\\pi}{3}.\n\\]",
+      "errorCause": "面对开曲面习惯性使用高斯公式，却没有先检查需要补几个边界面；计算散度后又在 \\(f\\) 任意的情况下擅自用对称性消项，且下侧取向符号不稳定。",
+      "knowledgePoints": [
+        "第二类曲面积分",
+        "曲面直接投影公式",
+        "法向取向",
+        "圆锥侧面",
+        "极坐标",
+        "代数抵消"
+      ],
+      "similarQuestionPrompt": "把曲面改为 \\(z=k\\sqrt{x^2+y^2}\\) 的下侧，投影域仍为环域，构造含任意连续函数 \\(f(xy)\\) 的三分量，使其在投影后抵消，并计算剩余积分。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "第18题题面与高斯公式手写纠错",
+          "verification": "题面截图、用户手写过程与直接投影独立复算"
+        }
+      ],
+      "answerVerification": "直接投影得 \\(14\\pi/3\\)，并检查下侧有向面积元 \\((z_x,z_y,-1)dxdy\\) 的三个分量",
+      "errorCauseEvidence": "手写稿先写“下侧=-1”并尝试补面使用高斯公式，只处理了一个补面；随后把含 \\(f(xy)\\)、\\(xyf'(xy)\\) 的体积分项按对称性划去，结果被批改。",
+      "reviewFocus": "卡壳位置：一看到第二类曲面积分就优先高斯，未比较直接投影。第一步：曲面已显式写成 \\(z=z(x,y)\\)，先写投影公式；下侧对应 \\((z_x,z_y,-1)dxdy\\)。正确突破口：把三项同时代入后再化简，任意函数 \\(f(xy)\\) 会精确抵消。考场信号：题目含“任意连续函数”且三分量结构对称，通常提示代数抵消。易错点：下侧的符号；极坐标中被积函数 \\(r\\) 还要乘雅可比 \\(r\\)。防卡方法：按“定取向—写有向面积元—整式代入—最后化简”四步，不提前猜对称性。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研综合题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-08-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "II"
+      ],
+      "id": "daily-20261108-linear-cyclic-basis-ap-pb",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "特征值、特征向量与相似",
+      "sourceRef": "2026-11-07 晚间对话 · 循环基与 AP=PB",
+      "questionType": "证明与计算题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "补录对话",
+        "AP=PB",
+        "列向量线性组合",
+        "循环向量",
+        "相似变换",
+        "特征值",
+        "可对角化"
+      ],
+      "note": "用户把作用在单个向量上的多项式关系错误地拆成矩阵恒等式；经连续追问后能正确完成 AP=PB 检测与变式前两问，但对可对角化判定仍需提示。",
+      "stem": "设 \\(A\\) 为二阶矩阵，非零向量 \\(\\alpha\\) 不是 \\(A\\) 的特征向量，令\n\\[\nP=(\\alpha,A\\alpha).\n\\]\n\n(1) 证明 \\(P\\) 可逆；\n\n(2) 若\n\\[\nA^2\\alpha+A\\alpha-6\\alpha=0,\n\\]\n求 \\(P^{-1}AP\\)，并判断 \\(A\\) 是否可以相似对角化。",
+      "answer": "\\[\nP^{-1}AP=\n\\begin{pmatrix}\n0&6\\\\\n1&-1\n\\end{pmatrix}.\n\\]\n该矩阵的特征值为 \\(2,-3\\)，互不相同，因此 \\(A\\) 可以相似对角化。",
+      "analysis": "因为 \\(\\alpha\\) 不是 \\(A\\) 的特征向量，所以 \\(\\alpha\\) 与 \\(A\\alpha\\) 线性无关；它们组成二阶矩阵 \\(P\\) 的两列，故 \\(P\\) 可逆。\n\n由题设\n\\[\nA^2\\alpha=6\\alpha-A\\alpha.\n\\]\n对 \\(P\\) 左乘 \\(A\\)，按列计算：\n\\[\nAP=(A\\alpha,A^2\\alpha)\n=(A\\alpha,6\\alpha-A\\alpha).\n\\]\n每一列都在基 \\((\\alpha,A\\alpha)\\) 下写坐标：\n\\[\nA\\alpha=0\\alpha+1A\\alpha,\n\\qquad\nA^2\\alpha=6\\alpha-1A\\alpha.\n\\]\n故系数按列排列为\n\\[\nAP=P\n\\begin{pmatrix}\n0&6\\\\\n1&-1\n\\end{pmatrix}.\n\\]\n左乘 \\(P^{-1}\\) 即得结论。\n\n特征多项式为\n\\[\n\\lambda^2+\\lambda-6=(\\lambda-2)(\\lambda+3),\n\\]\n有两个不同实特征值，所以可相似对角化。\n\n不能由\n\\[\n(A+3E)(A-2E)\\alpha=0\n\\]\n推出 \\(A=-3E\\) 或 \\(A=2E\\)；该等式只说明矩阵多项式作用在这一个向量 \\(\\alpha\\) 上为零。",
+      "errorCause": "把“矩阵多项式作用于某个向量为零”误当成“矩阵多项式本身为零”，并且最初不理解右乘矩阵的每一列正是原列向量的线性组合系数。",
+      "knowledgePoints": [
+        "矩阵按列乘法",
+        "AP=PB",
+        "相似变换",
+        "循环基",
+        "特征值",
+        "相似对角化",
+        "矩阵多项式"
+      ],
+      "similarQuestionPrompt": "设 \\(A^2\\alpha-4A\\alpha+3\\alpha=0\\)，\\(Q=(\\alpha+A\\alpha,A\\alpha-\\alpha)\\)。证明 \\(Q\\) 可逆，求 \\(Q^{-1}AQ\\)，并判断 \\(A\\) 是否可相似对角化。答案为 \\(\\begin{pmatrix}1&0\\\\4&3\\end{pmatrix}\\)，特征值 \\(1,3\\)。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "矩阵相似原题、列组合检测与提高变式",
+          "verification": "依据原题截图、用户手写、AP=PB逐列关系与特征值复核"
+        }
+      ],
+      "answerVerification": "逐列验证 \\(AP=PB\\)，并以 \\(B\\) 的特征多项式和不同特征值复核可对角化性",
+      "errorCauseEvidence": "用户曾由 \\((A+3E)(A-2E)\\alpha=0\\) 推出 \\(A=-3E\\) 或 \\(A=2E\\)，随后连续追问右乘矩阵为何按列给出线性组合；检测题选B正确，提高变式前两问正确、第三问未完成。",
+      "reviewFocus": "卡壳位置：不会从 \\(A^2\\alpha\\) 的线性关系读出相似矩阵。第一步：写 \\(AP=(A\\alpha,A^2\\alpha)\\)，绝不先求 \\(P^{-1}\\)。正确突破口：分别把每一列写成 \\(\\alpha,A\\alpha\\) 的线性组合，系数竖着放进对应列。考场信号：题目给 \\(P=(\\alpha,A\\alpha,\\ldots)\\) 并要求 \\(P^{-1}AP\\)，立即使用 \\(AP=PB\\)。易错点：向量等式不能拆成矩阵等式；第二列系数 \\((6,-1)^T\\) 不能横着放。防卡方法：每求出一列都写“第几列坐标”，最后用 \\(AP=PB\\) 回乘校验。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-08-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "I",
+        "III"
+      ],
+      "id": "daily-20261108-prob-bernoulli-selector-joint-cdf",
+      "subject": "概率论与数理统计",
+      "chapter": 3,
+      "chapterTitle": "多维随机变量及其分布",
+      "sourceRef": "2026-11-07 晚间对话 · 伯努利变量随机选择两个正态变量",
+      "questionNo": 22,
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 计算错误 / 思路卡壳",
+      "tags": [
+        "补录对话",
+        "全概率公式",
+        "联合分布函数",
+        "混合分布",
+        "正态分布",
+        "独立性",
+        "奇异分布"
+      ],
+      "note": "用户按 \\(X_3=0,1\\) 分类的方向正确，但在 \\(X_3=1\\) 时仍把 \\(Y=X_1\\) 当作与 \\(X_1\\) 独立；\\(Y\\) 的边缘分布结论正确，联合分布与独立性判断不稳。",
+      "stem": "随机变量 \\(X_1,X_2,X_3\\) 相互独立，其中 \\(X_1,X_2\\sim N(0,1)\\)，且\n\\[\nP(X_3=0)=P(X_3=1)=\\frac12.\n\\]\n令\n\\[\nY=X_3X_1+(1-X_3)X_2.\n\\]\n\n(1) 求二维随机变量 \\((X_1,Y)\\) 的联合分布函数；\n\n(2) 求 \\(Y\\) 的分布；\n\n(3) 判断 \\(X_1\\) 与 \\(Y\\) 是否相互独立。",
+      "answer": "设 \\(\\Phi\\) 为标准正态分布函数，则\n\\[\nF_{X_1,Y}(x,y)\n=\\frac12\\Phi(x)\\Phi(y)\n+\\frac12\\Phi(\\min\\{x,y\\}).\n\\]\n\n\\[\nY\\sim N(0,1).\n\\]\n\n\\(X_1\\) 与 \\(Y\\) 不独立。",
+      "analysis": "按 \\(X_3\\) 分类。若 \\(X_3=0\\)，则 \\(Y=X_2\\)，且 \\(X_1,X_2\\) 独立；若 \\(X_3=1\\)，则 \\(Y=X_1\\)，两个分量是同一个随机变量。因此\n\\[\n\\begin{aligned}\nF_{X_1,Y}(x,y)\n&=\\frac12P(X_1\\le x,X_2\\le y)\n +\\frac12P(X_1\\le x,X_1\\le y)\\\\\n&=\\frac12\\Phi(x)\\Phi(y)\n +\\frac12\\Phi(\\min\\{x,y\\}).\n\\end{aligned}\n\\]\n\n边缘分布同样用全概率公式：\n\\[\nF_Y(y)=\\frac12P(X_2\\le y)+\\frac12P(X_1\\le y)=\\Phi(y),\n\\]\n故 \\(Y\\sim N(0,1)\\)。\n\n虽然 \\(X_1\\) 与 \\(Y\\) 的边缘分布都为标准正态，但它们不独立。例如在 \\((0,0)\\) 处，\n\\[\nF_{X_1,Y}(0,0)=\\frac12\\cdot\\frac14+\\frac12\\cdot\\frac12=\\frac38,\n\\]\n而\n\\[\nF_{X_1}(0)F_Y(0)=\\frac12\\cdot\\frac12=\\frac14.\n\\]\n两者不相等。联合分布还在直线 \\(y=x\\) 上含有概率质量，不能用普通二维密度完整描述。",
+      "errorCause": "分类后没有随着条件改变变量关系：在 \\(X_3=1\\) 分支中 \\(Y=X_1\\)，却仍套用独立变量的乘积公式；同时把边缘分布相同误当成独立。",
+      "knowledgePoints": [
+        "全概率公式",
+        "联合分布函数",
+        "混合分布",
+        "标准正态分布",
+        "随机变量独立性",
+        "奇异分布"
+      ],
+      "similarQuestionPrompt": "令 \\(Z=X_3(2X_1)+(1-X_3)(X_1+X_2)\\)。求 \\(Z\\) 的分布函数，并说明为何它是两个不同方差正态分布的混合而不是单一正态分布。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-07",
+          "sourceLabel": "第22题题面、手写联合分布与后续混合正态变式",
+          "verification": "依据题图、用户手写与全概率公式逐分支复核"
+        }
+      ],
+      "answerVerification": "联合分布函数在 \\((0,0)\\) 处与边缘乘积比较，独立性结论可直接复核；对 \\(Y\\) 两分支边缘分布相同",
+      "errorCauseEvidence": "用户能按 \\(X_3=0,1\\) 分类，但联合分布中把 \\(X_3=1\\) 分支写成独立概率乘积；求 \\(Y\\) 时结论 \\(N(0,1)\\) 正确，却使用了不规范的 \\(P(Y=X_i)\\) 表达。",
+      "reviewFocus": "卡壳位置：会分类，却没有在每一类中重新写清 \\(Y\\) 到底等于谁。第一步：画两行表格：\\(X_3=0\\Rightarrow Y=X_2\\)，\\(X_3=1\\Rightarrow Y=X_1\\)。正确突破口：对每个分支分别写事件，再乘分支概率相加；同一个随机变量的联合事件化成 \\(X_1\\le\\min(x,y)\\)。考场信号：伯努利变量出现在系数中，通常表示“随机选择”，优先用全概率公式。易错点：边缘分布相同不代表独立；混合联合分布可能含直线上的奇异部分。防卡方法：每个条件分支先写变量关系，再写概率，禁止直接照搬统一公式。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -24416,7 +24609,8 @@
     "daily-2026-11-04-v1",
     "daily-2026-11-05-v1",
     "daily-2026-11-06-v1",
-    "daily-2026-11-07-v1"
+    "daily-2026-11-07-v1",
+    "daily-2026-11-08-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
