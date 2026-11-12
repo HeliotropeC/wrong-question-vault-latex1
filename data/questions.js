@@ -2,7 +2,7 @@ window.WRONG_QUESTIONS = {
   "title": "考研数学错题库（练习题 + 历史对话 + 考研真题）",
   "source": "27张宇《1000题_强化篇》数一做题本【留空】4.7.pdf",
   "generatedAt": "2026-09-17",
-  "count": 454,
+  "count": 457,
   "questions": [
     {
       "id": "高等数学-ch01-u001-p003",
@@ -24915,11 +24915,189 @@ window.WRONG_QUESTIONS = {
       "answerVerification": "用混合公式 \\(F_Z=\\frac12F_X(z)+\\frac12F_X(z-1)\\) 在四个临界点逐段核对，并验证分布函数连续且极限为1",
       "errorCauseEvidence": "批改中第(1)问满分，第(2)问漏边缘分布和 \\(z=2\\) 分段，第(3)问只找到 \\(X\\le1/2\\) 未完成；估分8/16，用户随后追问“详细过程”。",
       "reviewFocus": "卡壳位置：知道按 \\(U=0,1\\) 分类，却没有把两支统一写成分布函数公式。第一步：先求 \\(F_X\\)，再写 \\(F_Z(z)=\\frac12F_X(z)+\\frac12F_X(z-1)\\)。正确突破口：把 \\(F_X(z)\\) 的断点 \\(0,2\\) 与 \\(F_X(z-1)\\) 的断点 \\(1,3\\) 合并。考场信号：连续变量加0/1指示变量，分布函数的临界点来自原变量支撑端点及其平移。易错点：漏掉饱和点 \\(z=2\\)；条件概率必须除以 \\(P(Z\\le3/2)\\)。防卡方法：固定写“边缘分布—独立性—两支混合—合并断点—条件概率分子/分母”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-12-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "第5题",
+        "迁移检测"
+      ],
+      "id": "daily-20261112-linear-inertia-reversible-transform",
+      "subject": "线性代数",
+      "chapter": 5,
+      "chapterTitle": "二次型",
+      "sourceRef": "2021年数学（一）真题第5题及当日迁移检测",
+      "questionNo": 5,
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "2021数学一",
+        "二次型",
+        "正惯性指数",
+        "负惯性指数",
+        "可逆线性变换",
+        "规范形",
+        "秩",
+        "迁移训练"
+      ],
+      "note": "用户主动追问原题“为什么”，说明虽然知道答案为B，但对如何从三个平方项识别惯性指数并不稳定；随后迁移题又选C，把三元变量与秩3混为一谈。",
+      "stem": "设二次型\n\\[\nf(x_1,x_2,x_3)=(x_1+x_2)^2+(x_2+x_3)^2-(x_3-x_1)^2,\n\\]\n则其正惯性指数与负惯性指数依次为（　）。\n\nA. \\(2,0\\)\n\nB. \\(1,1\\)\n\nC. \\(2,1\\)\n\nD. \\(1,2\\)",
+      "answer": "选 B。正惯性指数为 \\(1\\)，负惯性指数为 \\(1\\)，二次型的秩为 \\(2\\)。",
+      "analysis": "令\n\\[\ny_1=x_1+x_2,\\qquad y_2=x_2+x_3.\n\\]\n注意\n\\[\nx_3-x_1=y_2-y_1,\n\\]\n所以\n\\[\n\\begin{aligned}\nf&=y_1^2+y_2^2-(y_2-y_1)^2\\\\\n&=2y_1y_2.\n\\end{aligned}\n\\]\n再令\n\\[\nu=y_1+y_2,\\qquad v=y_1-y_2,\n\\]\n则\n\\[\nf=\\frac12u^2-\\frac12v^2.\n\\]\n为保证变量替换可逆，可补充 \\(w=x_2\\)。从 \\((x_1,x_2,x_3)\\) 到 \\((u,v,w)\\) 的变换矩阵为\n\\[\n\\begin{pmatrix}\n1&2&1\\\\\n1&0&-1\\\\\n0&1&0\n\\end{pmatrix},\n\\]\n其行列式为 \\(2\\ne0\\)。因此规范形含一个正平方、一个负平方和一个零项，故正、负惯性指数均为1，秩为2。\n\n迁移检测\n\\[\ng=(x_1+x_2)^2-(x_2+x_3)^2+2(x_1+x_2)(x_2+x_3)\n\\]\n同样令 \\(y_1=x_1+x_2,\\ y_2=x_2+x_3\\)，则\n\\[\ng=(y_1+y_2)^2-2y_2^2.\n\\]\n补充第三个变量使变换可逆后，仍只有一个正平方和一个负平方，故 \\((p,q,r)=(1,1,2)\\)，而不是因有三个原变量就判秩为3。",
+      "errorCause": "把“原二次型有三个变量”误当成“二次型秩必为3”，并且没有先检查新变量之间的独立性与变量替换是否可逆。平方项的个数、原变量个数都不能直接决定惯性指数；应以可逆合同变换后的非零平方项为准。",
+      "knowledgePoints": [
+        "二次型规范形",
+        "正负惯性指数",
+        "合同变换",
+        "可逆变量替换",
+        "二次型的秩",
+        "Sylvester惯性定律"
+      ],
+      "similarQuestionPrompt": "设 \\(h=(x_1+x_2)^2+2(x_1+x_2)(x_2+x_3)+(x_2+x_3)^2-(x_1-x_3)^2\\)。先判断三个括号内线性式是否独立，再求正、负惯性指数与秩。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-12",
+          "sourceLabel": "2021数学一第5题“为什么”追问及惯性指数迁移检测",
+          "verification": "原题截图、连续追问、迁移题作答与完整推导交叉核对"
+        }
+      ],
+      "answerVerification": "以可逆变换化为 \\(\\frac12u^2-\\frac12v^2+0w^2\\)，并核验变换矩阵行列式为2",
+      "errorCauseEvidence": "用户对原题主动追问原因；在结构相同的迁移题中选择C，明确暴露出“有三个变量所以秩为3”的误判。",
+      "reviewFocus": "卡壳位置：看到三个原变量、三个括号平方时直接数项。第一步：把重复出现的线性式整体记作新变量，并先写出它们之间的关系。正确突破口：把交叉项配成平方，再补一个变量验证整体变换可逆。考场信号：题目只问惯性指数时，优先寻找少数线性组合并用配方法，而不是硬算三阶特征值。易错点：非独立线性式不能直接当作新坐标；零项也要保留以判断秩。防卡方法：固定执行“代整体—查独立—配平方—补变量—验行列式—数正负零项”。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-12-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "第7题",
+        "行变换与列空间追问"
+      ],
+      "id": "daily-20261112-linear-block-rank-ba-columnspace",
+      "subject": "线性代数",
+      "chapter": 4,
+      "chapterTitle": "线性方程组与矩阵的秩",
+      "sourceRef": "2021年数学（一）真题第7题",
+      "questionNo": 7,
+      "questionType": "选择题",
+      "mistakeType": "概念错误 / 思路卡壳 / 方法选择困难 / 知识点不熟",
+      "tags": [
+        "2021数学一",
+        "分块矩阵",
+        "矩阵的秩",
+        "行变换",
+        "列空间",
+        "AB与BA",
+        "反例"
+      ],
+      "note": "用户误选A，正确答案为C；随后反复追问“C只是对A做了行变化，为什么不成立”，说明混淆了“左乘保持秩”与“左乘保持原列空间”，也没有把分块矩阵的消元看成必须对整块行统一实施的可逆变换。",
+      "stem": "设 \\(A,B\\) 为 \\(n\\) 阶实矩阵，下列结论不成立的是（　）。\n\nA. \\[\nr\\begin{pmatrix}A&O\\\\O&A^TA\\end{pmatrix}=2r(A).\n\\]\n\nB. \\[\nr\\begin{pmatrix}A&AB\\\\O&A^T\\end{pmatrix}=2r(A).\n\\]\n\nC. \\[\nr\\begin{pmatrix}A&BA\\\\O&AA^T\\end{pmatrix}=2r(A).\n\\]\n\nD. \\[\nr\\begin{pmatrix}A&O\\\\BA&A^T\\end{pmatrix}=2r(A).\n\\]",
+      "answer": "选 C。A、B、D 恒成立，C 不一定成立。",
+      "analysis": "A 中分块对角矩阵的秩为\n\\[\nr(A)+r(A^TA)=r(A)+r(A)=2r(A).\n\\]\n\nB 可作可逆分块列变换\n\\[\nC_2\\leftarrow C_2-C_1B,\n\\]\n即右乘\n\\[\n\\begin{pmatrix}I&-B\\\\O&I\\end{pmatrix},\n\\]\n从而\n\\[\n\\begin{pmatrix}A&AB\\\\O&A^T\\end{pmatrix}sim\n\\begin{pmatrix}A&O\\\\O&A^T\\end{pmatrix},\n\\]\n故秩为 \\(2r(A)\\)。\n\nD 可作可逆分块行变换\n\\[\nR_2\\leftarrow R_2-BR_1,\n\\]\n即左乘\n\\[\n\\begin{pmatrix}I&O\\\\-B&I\\end{pmatrix},\n\\]\n同样化为分块对角矩阵，故成立。\n\nC 的右上块是 \\(BA\\)，一般不能写成 \\(AX\\)，不能用第一块列消去。取\n\\[\nA=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},\\qquad\nB=\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}.\n\\]\n则 \\(r(A)=1\\)，且\n\\[\nBA=\\begin{pmatrix}0&0\\\\0&1\\end{pmatrix},\\qquad\nAA^T=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}.\n\\]\n于是\n\\[\n\\begin{pmatrix}A&BA\\\\O&AA^T\\end{pmatrix}\n=\n\\begin{pmatrix}\n0&1&0&0\\\\\n0&0&0&1\\\\\n0&0&1&0\\\\\n0&0&0&0\n\\end{pmatrix},\n\\]\n其秩为3，而 \\(2r(A)=2\\)，故C不成立。\n\n“\\(BA\\) 是对 \\(A\\) 的行作线性组合”只说明 \\(r(BA)\\le r(A)\\)。左乘可逆矩阵即使保持秩，也会把每个列向量整体映射到另一个方向，一般不保持 \\(\\operatorname{Col}(A)\\) 这个具体子空间；而分块消元必须对整块行或整块列统一作可逆变换，不能只把某个局部块视作可随意替换。",
+      "errorCause": "把左乘矩阵理解成“对A做了行变化，所以不会增加任何新信息”，进而误以为右上块 \\(BA\\) 总能被左上块 \\(A\\) 消去。实际需要的是 \\(\\operatorname{Col}(BA)\\subseteq\\operatorname{Col}(A)\\)，即存在 \\(X\\) 使 \\(BA=AX\\)，这对任意 \\(A,B\\) 不成立。",
+      "knowledgePoints": [
+        "分块矩阵的秩",
+        "可逆分块初等变换",
+        "r(A^TA)=r(A)",
+        "行变换",
+        "列空间",
+        "AB与BA",
+        "反例法"
+      ],
+      "similarQuestionPrompt": "判断 \\(r(A,AB)=r(A)\\) 与 \\(r(A,BA)=r(A)\\) 是否恒成立，并分别用列空间包含关系或二阶反例说明。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-12",
+          "sourceLabel": "2021数学一第7题及“C只是行变化”连续追问",
+          "verification": "真题截图、用户选择、反复追问与显式反例复核"
+        }
+      ],
+      "answerVerification": "用分块初等变换分别验证A、B、D，并以二阶矩阵反例直接算得C左端秩3、右端2",
+      "errorCauseEvidence": "用户原选A；看到正确答案C后仍追问“C只是对A做了行变化，为什么会不成立”，随后还需要列空间判断检测。",
+      "reviewFocus": "卡壳位置：把局部块 \\(BA\\) 看成由 \\(A\\) 行变换得到，就直接认为整个分块矩阵的秩不变。第一步：先问能否用一个可逆的整块行/列变换把非对角块消掉。正确突破口：右上块要靠列变换消去，必须具有 \\(AX\\) 结构；左下块要靠行变换消去，必须具有 \\(XA\\) 结构。考场信号：选项同时出现 \\(AB\\) 与 \\(BA\\) 时，重点检查乘法次序是否匹配块消元。易错点：行变换保持秩但一般不保持列空间；\\(r(BA)\\le r(A)\\) 不等于 \\(\\operatorname{Col}(BA)\\subseteq\\operatorname{Col}(A)\\)。防卡方法：先尝试写出明确的分块初等矩阵；写不出时立刻用 \\(2\\times2\\) 秩1矩阵构造反例。"
+    },
+    {
+      "markerColor": "daily",
+      "status": "未复习",
+      "difficulty": "考研提高题",
+      "sourceType": "history",
+      "sourceCategory": "当日错题",
+      "transcriptionStatus": "verified",
+      "historyImportBatches": [
+        "daily-2026-11-12-v1"
+      ],
+      "options": [],
+      "wrongSubquestions": [
+        "I",
+        "II"
+      ],
+      "id": "daily-20261112-linear-orthogonal-diagonalization-positive-square-root",
+      "subject": "线性代数",
+      "chapter": 3,
+      "chapterTitle": "特征值与实对称矩阵",
+      "sourceRef": "2026-11-12 当日上传批改照片第21题",
+      "questionNo": 21,
+      "questionType": "综合题",
+      "mistakeType": "概念错误 / 计算错误 / 思路卡壳 / 方法选择困难",
+      "tags": [
+        "实对称矩阵",
+        "正交对角化",
+        "重特征值",
+        "Schmidt正交化",
+        "正定矩阵",
+        "矩阵平方根",
+        "谱分解",
+        "坐标还原"
+      ],
+      "note": "用户特征值求对，但同一重特征值下只取了两个线性无关特征向量，没有继续正交化；第(II)问又把对角坐标系中的平方根直接当成原坐标系矩阵，未作 \\(PDP^T\\) 还原。",
+      "stem": "已知\n\\[\nA=\\begin{pmatrix}\na&1&-1\\\\\n1&a&-1\\\\\n-1&-1&a\n\\end{pmatrix}.\n\\]\n\n(I) 求正交矩阵 \\(P\\)，使得 \\(P^TAP\\) 为对角矩阵；\n\n(II) 求正定矩阵 \\(C\\)，使得\n\\[\nC^2=(a+3)E-A,\n\\]\n其中 \\(E\\) 为3阶单位矩阵。",
+      "answer": "可取\n\\[\nP=\\begin{pmatrix}\n-\\frac1{\\sqrt3}&\\frac1{\\sqrt2}&-\\frac1{\\sqrt6}\\\\\n-\\frac1{\\sqrt3}&0&\\frac2{\\sqrt6}\\\\\n\\frac1{\\sqrt3}&\\frac1{\\sqrt2}&\\frac1{\\sqrt6}\n\\end{pmatrix},\n\\]\n则\n\\[\nP^TAP=\\operatorname{diag}(a+2,a-1,a-1).\n\\]\n并且\n\\[\nC=\\frac13\\begin{pmatrix}\n5&-1&1\\\\\n-1&5&1\\\\\n1&1&5\n\\end{pmatrix}.\n\\]",
+      "analysis": "特征多项式为\n\\[\n|\\lambda E-A|=(\\lambda-a-2)(\\lambda-a+1)^2,\n\\]\n故特征值为 \\(a+2\\) 与二重特征值 \\(a-1\\)。\n\n对 \\(\\lambda=a+2\\)，可取特征向量\n\\[\nv_1=(-1,-1,1)^T.\n\\]\n对 \\(\\lambda=a-1\\)，特征子空间满足 \\(x_1+x_2-x_3=0\\)，可先取\n\\[\nv_2=(1,0,1)^T,\\qquad v_3=(-1,1,0)^T.\n\\]\n两者虽线性无关，但\n\\[\nv_2^Tv_3=-1\\ne0,\n\\]\n不能直接作为正交矩阵的两列。对它们施密特正交化，可改取\n\\[\nw_2=(1,0,1)^T,qquad w_3=(-1,2,1)^T.\n\\]\n三个向量两两正交，单位化后按列排成答案中的 \\(P\\)。\n\n由谱分解\n\\[\nA=P\\operatorname{diag}(a+2,a-1,a-1)P^T,\n\\]\n所以\n\\[\n(a+3)E-A=P\\operatorname{diag}(1,4,4)P^T.\n\\]\n正定平方根唯一，故\n\\[\nC=P\\operatorname{diag}(1,2,2)P^T.\n\\]\n记 \\(u_1=v_1/\\sqrt3\\)，则后两个特征方向张成 \\(u_1^\\perp\\)，因此\n\\[\nC=u_1u_1^T+2(I-u_1u_1^T)=2I-u_1u_1^T,\n\\]\n代入 \\(u_1=(-1,-1,1)^T/\\sqrt3\\) 即得\n\\[\nC=\\frac13\\begin{pmatrix}5&-1&1\\\\-1&5&1\\\\1&1&5\\end{pmatrix}.\n\\]",
+      "errorCause": "第(I)问把“同一特征值下线性无关”误当成“可直接组成正交矩阵”，漏掉重特征空间内部的施密特正交化；第(II)问混淆了对角坐标系和原坐标系，\\(\\operatorname{diag}(1,2,2)\\) 只是 \\(C\\) 在特征基下的表示，必须用 \\(PDP^T\\) 变回原坐标。",
+      "knowledgePoints": [
+        "实对称矩阵正交对角化",
+        "重特征值",
+        "Schmidt正交化",
+        "谱分解",
+        "正定矩阵平方根",
+        "相似变换",
+        "坐标系还原"
+      ],
+      "similarQuestionPrompt": "设实对称矩阵 \\(A=Q\\operatorname{diag}(\\lambda_1,\\lambda_2,\\lambda_2)Q^T\\)，且 \\(\\mu I-A\\) 正定。求其唯一正定平方根，并说明为什么只知道对角元平方根还不能直接写出原坐标矩阵。",
+      "historySources": [
+        {
+          "kind": "daily-conversation",
+          "date": "2026-11-12",
+          "sourceLabel": "第21题手写解答批改",
+          "verification": "题面照片、两张手写解答、特征向量计算与矩阵平方复核"
+        }
+      ],
+      "answerVerification": "核验 \\(P^TP=I\\)、\\(P^TAP=\\operatorname{diag}(a+2,a-1,a-1)\\)，并直接验证 \\(C^2=(a+3)E-A\\) 且 \\(C\\) 的特征值为1、2、2",
+      "errorCauseEvidence": "用户手写中将未正交的两个 \\(a-1\\) 特征向量单位化后直接放入 \\(P\\)；第(II)问直接写 \\(C=\\operatorname{diag}(1,2,2)\\)，并被批改为约6/12分。",
+      "reviewFocus": "卡壳位置：特征值和特征向量算完后，未检查 \\(P^TP=I\\)；求矩阵平方根时停在特征基坐标。第一步：重特征值对应多个向量时先计算内积，非零就施密特正交化。正确突破口：任何对角函数运算都遵循 \\(f(A)=P f(\\Lambda)P^T\\)。考场信号：题目要求“正交矩阵”或“正定平方根”，必须同时出现单位正交基与坐标还原。易错点：线性无关不等于正交；\\(P^{-1}=P^T\\) 只在 \\(P\\) 真正正交时成立；对角阵是新坐标表示，不是原矩阵。防卡方法：固定做三次验算：列向量范数、两两内积、最终平方 \\(C^2\\)。"
     }
   ],
   "schemaVersion": 2,
   "contentFormat": "markdown+latex",
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "historyImportBatches": [
     "history-2026-09-21-v1",
     "history-2026-09-22-complete-search-v1",
@@ -24953,7 +25131,8 @@ window.WRONG_QUESTIONS = {
     "daily-2026-11-07-v1",
     "daily-2026-11-08-v1",
     "daily-2026-11-10-v1",
-    "daily-2026-11-11-v1"
+    "daily-2026-11-11-v1",
+    "daily-2026-11-12-v1"
   ],
   "examImportBatches": [
     "exam-2017-math1-20261005",
